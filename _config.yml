@@ -41,12 +41,12 @@ defaults:
       layout: post
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - smart
-    - tables
-    - with_toc_data # automatic heading ids
+#markdown: redcarpet
+#redcarpet:
+#  extensions:
+#    - smart
+#    - tables
+#    - with_toc_data # automatic heading ids
 
 gems:
   - jekyll-redirect-from
