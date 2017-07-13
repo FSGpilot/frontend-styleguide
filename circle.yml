@@ -1,0 +1,18 @@
+machine:
+  node:
+    version: 6
+
+dependencies:
+  pre:
+    - bundle install
+
+test:
+  pre:
+    - gulp -v
+    - scss-lint -v
+    - jekyll -v
+  override:
+    - npm run build # Build site files
+    - npm test # Run the package and test suite
+  post:
+    - ls -agolf _site/ # Ensure that build worked

@@ -1,0 +1,69 @@
+# Site settings
+title:  POC version 1.0 - Frontend styleguide
+version: 1.0.0
+#google_analytics_ua: UA-48605964-43
+
+# this is for pages that don't have a permalink (primarily posts)
+permalink: /whats-new/updates/:year/:month/:day/:title/
+
+# this ensure that posts with future dates are published
+future: true
+
+encoding: utf-8
+
+incremental_regeneration_fixer:
+  interdependent_files:
+    - "_components/colors/*"
+    - "_components/form-controls/*"
+    - "_components/form-templates/*"
+    - "_components/typography/*"
+
+sass:
+  load_paths:
+    - css
+    - assets/css
+
+collections:
+  components:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: components
+    values:
+      layout: component
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - smart
+    - tables
+    - with_toc_data # automatic heading ids
+
+gems:
+  - jekyll-redirect-from
+
+exclude:
+  - ".ruby-version"
+  - ".sass-cache"
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - config
+  - js
+  - vendor
+  - manifest.yml
+  - node_modules
+  - package.json
+  - gulpfile.js
+  - circle.yml

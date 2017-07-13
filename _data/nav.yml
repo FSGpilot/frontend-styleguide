@@ -1,0 +1,46 @@
+primary:
+  - href: /components/
+  - href: /page-templates/
+  - href: /getting-started/
+  - href: /faellesoffentlige-krav/
+  - href: /whats-new/
+
+mobile:
+  - href: /components/
+    collapsible: true
+  - href: /page-templates/
+  - href: /getting-started/
+    collapsible: true
+  - href: /faellesoffentlige-krav/
+  - href: /whats-new/
+    collapsible: true
+
+UI components:
+  - text: Overview
+    href: /components/
+  - href: /components/fundament/
+  - href: /components/styling/
+  - href: /components/komponenter/
+  - href: /components/strukturer/
+
+Getting started:
+  - text: Overview
+    href: /getting-started/
+  - href: /getting-started/developers/
+  - href: /getting-started/designers/
+  - href: /getting-started/projectmanagers/
+  - href: /getting-started/integration-til-portalerne/
+  - href: /getting-started/bidrag-til-designsystemet/
+  - href: /getting-started/video-tutorials/
+  - href: /getting-started/loesninger/
+
+Page templates:
+  - href: /page-templates/
+
+What’s new:
+  - text: Overview
+    href: /whats-new/
+  - href: /whats-new/releases/
+  - href: /whats-new/updates/
+  - href: /whats-new/product-roadmap/
+  - href: /whats-new/research/
