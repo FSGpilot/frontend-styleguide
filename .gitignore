@@ -6,5 +6,4 @@ _site/
 node_modules/
 npm-debug.log
 .bundle/
-assets/
 .jekyll_get_cache/
