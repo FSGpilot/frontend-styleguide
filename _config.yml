@@ -9,6 +9,8 @@ permalink: /whats-new/updates/:year/:month/:day/:title/
 # this ensure that posts with future dates are published
 future: true
 
+baseurl: /frontend-styleguide-poc
+
 encoding: utf-8
 
 incremental_regeneration_fixer:

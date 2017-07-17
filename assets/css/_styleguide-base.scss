@@ -1767,7 +1767,7 @@ $color-blue-50: #3572b0; //Added by mgb - used for links
 
 //////////////////// Material design compare do donts /////////////////
 .figure{
-  width: 360px;
+  // width: 360px;
   margin-right: 40px;
   display: inline-block;
   padding-bottom: 20px;
@@ -1802,4 +1802,9 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
 .s-tag-caption.do, figure.s-tag-media figcaption .s-tag-caption.do {
     border-color: #4caf50;
     color: #2e7b32;
+}
+
+.s-tag-caption.dont, figure.s-tag-media figcaption .s-tag-caption.dont {
+    border-color: #d32f2f;
+    color: #d32f2f;
 }
