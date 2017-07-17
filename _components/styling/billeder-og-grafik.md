@@ -26,7 +26,7 @@ Both illustration and photography can live within the same product. Photography 
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/style_imagery_bestpractices_mediums1.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/style_imagery_bestpractices_mediums1.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -41,7 +41,7 @@ Both illustration and photography can live within the same product. Photography 
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/style_imagery_bestpractices_mediums2.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/style_imagery_bestpractices_mediums2.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">
@@ -65,7 +65,7 @@ For specific entities or branded content, use specific imagery. For more abstrac
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/style_imagery_bestpractices_stock1.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/style_imagery_bestpractices_stock1.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -80,7 +80,7 @@ For specific entities or branded content, use specific imagery. For more abstrac
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/style_imagery_bestpractices_stock2.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/style_imagery_bestpractices_stock2.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">
@@ -98,7 +98,7 @@ For specific entities or branded content, use specific imagery. For more abstrac
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/style_imagery_bestpractices_stock3.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/style_imagery_bestpractices_stock3.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -113,7 +113,7 @@ For specific entities or branded content, use specific imagery. For more abstrac
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/style_imagery_bestpractices_stock4.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/style_imagery_bestpractices_stock4.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">
@@ -135,7 +135,7 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/style_imagery_bestpractices_focus1.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/style_imagery_bestpractices_focus1.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -150,7 +150,7 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/style_imagery_bestpractices_focus2.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/style_imagery_bestpractices_focus2.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">
@@ -168,7 +168,7 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/style_imagery_bestpractices_focus3.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/style_imagery_bestpractices_focus3.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -183,7 +183,7 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/style_imagery_bestpractices_focus4.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/style_imagery_bestpractices_focus4.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">
@@ -201,7 +201,7 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/style_imagery_bestpractices_focus5.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/style_imagery_bestpractices_focus5.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -216,7 +216,7 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/style_imagery_bestpractices_focus6.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/style_imagery_bestpractices_focus6.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">
@@ -240,7 +240,7 @@ Make sure your images are appropriately sized for displays and across platforms.
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/style_imagery_integration_resolution1.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/style_imagery_integration_resolution1.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -255,7 +255,7 @@ Make sure your images are appropriately sized for displays and across platforms.
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/style_imagery_integration_resolution2.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/style_imagery_integration_resolution2.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">

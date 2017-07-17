@@ -35,7 +35,7 @@ The W3C recommends the following contrast ratios for body text and image text:
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/accessibility_color1_do.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/accessibility_color1_do.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -50,7 +50,7 @@ The W3C recommends the following contrast ratios for body text and image text:
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/accessibility_color2_dont.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/accessibility_color2_dont.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">
@@ -92,7 +92,7 @@ Place items on the screen according to their relative level of importance.
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/accessibility_hierarchy_1_do.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/accessibility_hierarchy_1_do.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -107,7 +107,7 @@ Place items on the screen according to their relative level of importance.
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/accessibility_hierarchy_2_dont.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/accessibility_hierarchy_2_dont.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">
@@ -135,7 +135,7 @@ Focus traversal between screens and tasks should be as continuous as possible.
 
 If a task is interrupted and then resumed, place focus on the element that was previously focused.
 
-<img src="/img/accessibility_hierarchy_3.png">
+<img src="{{ site.baseurl }}/img/accessibility_hierarchy_3.png">
 
 ## Writing
 
@@ -198,7 +198,7 @@ Ensure an element has the same description everywhere it’s used.
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame">
-                    <img src="/img/accessibility_writing_edit_do.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
+                    <img src="{{ site.baseurl }}/img/accessibility_writing_edit_do.png" aria-describedby="color-contrast-figure-caption-1" alt="Correct color contrast" >
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-1">
@@ -213,7 +213,7 @@ Ensure an element has the same description everywhere it’s used.
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
                 <div class="frame ">
-                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="/img/accessibility_writing_edit_dont.png">
+                    <img alt="Incorrect color contrast" aria-describedby="color-contrast-figure-caption-2" src="{{ site.baseurl }}/img/accessibility_writing_edit_dont.png">
                 </div>
             </div>
             <figcaption id="color-contrast-figure-caption-2">

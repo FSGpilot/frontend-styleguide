@@ -12,15 +12,15 @@ order: 25
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
-    <img src="/img/img-timing.svg" style="display:block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/img/img-timing.svg" style="display:block; margin: 0 auto;">
     <p>TIMING: A “grid of time” creates consistent rhythm. Animation is defined as multiples of a base grid.</p>  
   </div>
    <div class="usa-width-one-third">
-    <img src="/img/img-elevation.svg" style="display:block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/img/img-elevation.svg" style="display:block; margin: 0 auto;">
     <p>ELEVATION: Utilizing the Z-axis to support spatial organization aids in creating a visual hierarchy we refer to as “atmosphere”.</p>  
   </div>
   <div class="usa-width-one-third">
-    <img src="/img/img-effects.svg" style="display:block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/img/img-effects.svg" style="display:block; margin: 0 auto;">
     <p>EFFECTS: Attributes are animated over time to create a vocabulary of effects.</p>  
   </div>
 </div>
@@ -29,15 +29,15 @@ order: 25
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
-    <img src="/img/img-timing.svg" style="display:block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/img/img-timing.svg" style="display:block; margin: 0 auto;">
     <p>ENTER AND EXIT: The appearance or disappearance of an object on the screen.</p>
   </div>
   <div class="usa-width-one-third">
-    <img src="/img/img-emphasis.svg" style="display:block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/img/img-emphasis.svg" style="display:block; margin: 0 auto;">
     <p>EMPHASIS: Drawing attention to an object that is already on the screen.</p>  
   </div>
    <div class="usa-width-one-third">
-    <img src="/img/img-transitional.svg" style="display:block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/img/img-transitional.svg" style="display:block; margin: 0 auto;">
     <p>TRANSITIONAL: Informing the user that a context change is taking place.</p>  
   </div>
 </div>

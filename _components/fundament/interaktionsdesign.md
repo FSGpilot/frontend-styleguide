@@ -19,14 +19,14 @@ For instance, if your app is a restaurant guide, your users may want to make res
 #### Take inventory
 
 Identify your app’s users and their potential roles, such as consumer, business owner, or journalist. Identify the most common tasks they may want to perform.
-<img src="/img/inventory.png">
+<img src="{{ site.baseurl }}/img/inventory.png">
 
 ### Prioritize
 
 Assign priority levels of high, medium, or low to common user tasks. Give prominence in the UI to paths and destinations with high priority levels and frequent use.
 
 Adjust priority levels as user needs change over time.
-<img src="/img/prioritize.png">
+<img src="{{ site.baseurl }}/img/prioritize.png">
 
 ### Sequence
 
@@ -35,14 +35,14 @@ Identify the different paths that users take through your app and use those path
 * List frequent destinations prominently in your navigation
 * Group related tasks together and use those groupings to structure your navigation
 
-<img src="/img/sequence.png">
+<img src="{{ site.baseurl }}/img/sequence.png">
 
 ### Deconstruct
 
 Divide complex, broad, or vague use cases into smaller activities. These smaller tasks may be frequently used, more easily understood, or better meet user goals.
 
 For example, dividing search into smaller activities that differentiate searching by name, location, or popularity may reveal the need to surface those smaller activities as part of navigation.
-<img src="/img/deconstruct.png">
+<img src="{{ site.baseurl }}/img/deconstruct.png">
 
 ### Nested Navigation
 When you have multiple levels of navigation, sibling views should be nested underneath their parent.
@@ -60,4 +60,4 @@ Recommended for:
       <li>Enabling quick navigation between unrelated views</li>
 </ul>
 
-<img src="/img/patterns_navigation_patterns_nested1.png">
+<img src="{{ site.baseurl }}/img/patterns_navigation_patterns_nested1.png">

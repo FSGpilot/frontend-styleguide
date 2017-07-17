@@ -12,7 +12,7 @@ order: 25
 
 <div class="usa-grid-full">
     <div class="usa-width-one-third">
-        <img src="/img/interaction-touch_loop3.gif" style="max-width: 200px;">
+        <img src="{{ site.baseurl }}/img/interaction-touch_loop3.gif" style="max-width: 200px;">
     </div>
     <div class="usa-width-one-half">
         <p>Touch aids users in understanding where they can physically interact with the screen simply and naturally.</p>
@@ -25,13 +25,13 @@ People often touch with more than one finger. Touch interactions should be simil
 
 Avoid interactions that require compound gestures such as double-tap or timed press-and-hold interactions. They are often triggered accidentally and are difficult to time correctly.
 
-<img src="/img/gestures.PNG" style="max-width: 670px;">
+<img src="{{ site.baseurl }}/img/gestures.PNG" style="max-width: 670px;">
 
 ## Feedback
 
 Increase users’ confidence by providing immediate visual feedback when they touch the screen. Interactive elements react by changing color, size or by moving.
 
-<img src="/img/feedback.PNG" style="max-width: 670px;">
+<img src="{{ site.baseurl }}/img/feedback.PNG" style="max-width: 670px;">
 
 ## Targets
 
@@ -39,7 +39,7 @@ A well-designed touch experience balances size, spacing and visuals to make cont
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
-    <img src="/img/touchpoint.gif">
+    <img src="{{ site.baseurl }}/img/touchpoint.gif">
   </div>
   <div class="usa-width-one-half">
     <ul class="usa-content-list">
@@ -58,7 +58,7 @@ A well-designed touch experience balances size, spacing and visuals to make cont
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
-    <img src="/img/targets-grid.svg">
+    <img src="{{ site.baseurl }}/img/targets-grid.svg">
   </div>
   <div class="usa-width-one-half">
     <ul class="usa-content-list">
@@ -84,7 +84,7 @@ There’s no perfect size for touch targets. Different sizes work for different 
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
-    <img src="/img/targets-sizes.svg">
+    <img src="{{ site.baseurl }}/img/targets-sizes.svg">
   </div>
   <div class="usa-width-one-half">
     <ul class="usa-content-list">
@@ -104,7 +104,7 @@ Designing touch experiences requires knowledge of how the devices are held by di
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
-    <img src="/img/flip.gif">
+    <img src="{{ site.baseurl }}/img/flip.gif">
   </div>
   <div class="usa-width-one-half">
     <ul class="usa-content-list">
@@ -134,11 +134,11 @@ Designing touch experiences requires knowledge of how the devices are held by di
 
 Tablets are most often held along the side, making the bottom corners ideal for interactive elements. Most users hold a tablet with the left hand and touch it with the right. Place interactive elements within reach of the thumbs.
 
-<img src="/img/postures-interaction-area2.svg" style="max-width: 670px;">
+<img src="{{ site.baseurl }}/img/postures-interaction-area2.svg" style="max-width: 670px;">
 
 ### Reading areas
 
 Content in the top half of the screen is easier to see than content on the bottom half where it can be blocked by the hands or ignored.
 
-<img src="/img/postures-interaction-area2.svg" style="postures-reading-area2.svg">
+<img src="{{ site.baseurl }}/img/postures-interaction-area2.svg" style="postures-reading-area2.svg">
 

@@ -17,12 +17,12 @@ subnav:
 
 <h2 class="usa-heading" id="lille-blanket">Template: Den lille blanket</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
-<img src="/img/lille.PNG" style="max-width: 1000%; width: 1018px">
+<img src="{{ site.baseurl }}/img/lille.PNG" style="max-width: 1000%; width: 1018px">
 
 {% include code/accordion.html component="template-landing" %}
 
 <h2 class="usa-heading" id="stor-blanket">Template: Den store blanket</h2>
-<img src="/img/stor.png" style="max-width: 1000%; width: 1018px">
+<img src="{{ site.baseurl }}/img/stor.png" style="max-width: 1000%; width: 1018px">
 
 {% include code/accordion.html component="template-landing" %}
 

@@ -10,7 +10,7 @@ lead: These templates for a landing page and a documentation page are built from
 
 Siden med bred central kolonne og tringuide har et bredt område til hovedindhold, og bruges i forbindelse med trininddelte indberetninger.
 
-<img src="/img/bred_trin.png">
+<img src="{{ site.baseurl }}/img/bred_trin.png">
 
 ### Krav
 
