@@ -8,10 +8,3 @@
   }
   @return $shape-size-spec;
 }
-$value == "cover") or ($value == "contain") {
-      $value: null;
-    }
-    $shape-size-spec: "#{$shape-size-spec} #{$value}";
-  }
-  @return $shape-size-spec;
-}

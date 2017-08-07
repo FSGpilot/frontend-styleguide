@@ -24,8 +24,3 @@
   }
   @return $vendor-gradients;
 }
-: "#{$gradient-type}-gradient(#{$spec} #{$gradients})";
-    $vendor-gradients: unquote($vendor-gradients);
-  }
-  @return $vendor-gradients;
-}
