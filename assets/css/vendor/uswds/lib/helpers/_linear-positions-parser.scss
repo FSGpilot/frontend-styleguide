@@ -59,3 +59,21 @@
          if($pos == top, bottom, null)
          if($pos == bottom, top, null);
 }
+unquote($spec + ",");
+
+  $output-bourbon-deprecation-warnings: $user-deprecation-warnings-setting !global;
+
+  @return $degree $spec;
+}
+
+@function _position-flipper($pos) {
+  @if $output-bourbon-deprecation-warnings == true {
+    @warn "[Bourbon] [Deprecation] `_position-flipper` is " +
+    "deprecated and will be removed in 5.0.0.";
+  }
+
+  @return if($pos == left, right, null)
+         if($pos == right, left, null)
+         if($pos == top, bottom, null)
+         if($pos == bottom, top, null);
+}

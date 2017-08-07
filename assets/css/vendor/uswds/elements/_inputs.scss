@@ -22,7 +22,9 @@ select {
   margin: 0.2em 0;
   max-width: $input-max-width;
   outline: none;
-  padding: $input-padding-vertical 0.7em;
+  //padding: $input-padding-vertical 0.7em; //text wasn't visible
+  padding-top: 0;
+  padding-bottom: 0;
   width: 100%;
   background-color: $input-background-color;
 

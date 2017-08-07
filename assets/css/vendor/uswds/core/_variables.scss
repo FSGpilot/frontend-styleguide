@@ -12,6 +12,7 @@
 // value from Bourbon.
 $em-base:             10px;
 $base-font-size:      rem(17px) !default;
+$input-font-size:     rem(17px) !default;
 $small-font-size:     rem(14px) !default;
 $lead-font-size:      rem(20px) !default;
 $title-font-size:     rem(52px) !default;
@@ -121,3 +122,62 @@ $nav-width:           951px !default;
 // 44 x 44 pixels hit target following Apple iOS Human Interface
 // Guidelines
 $hit-area: 4.4rem !default;
+
+
+
+// New variables introducted in POC (to make the scss themable) 
+$sidenav-current:                  #0071bc !default;
+
+$input-background-color:           white !default;
+$input-border-radius:              0 !default;
+$input-border-color:               $color-gray !default;
+$only-left-border:                 false !default;
+$color-error:                      $color-secondary-dark !default;
+$color-success:                    $color-base !default; 
+$input-error-border-normal:        3px solid $color-error !default; 
+$input-error-border-large:         4px solid $color-error !default;
+$input-success-border:             3px solid $color-green-light !default; 
+
+$table-th-border-bottom: 1px solid $color-gray !default;
+$table-th-border-left: 1px solid $color-gray !default; 
+$table-th-border-right: 1px solid $color-gray !default;
+$table-th-border-top: 1px solid $color-gray !default;
+
+$table-td-border-bottom:        1px solid $color-gray !default;
+$table-td-border-left:          1px solid $color-gray !default;
+$table-td-border-right:         1px solid $color-gray !default;
+$table-td-border-top:           1px solid $color-gray !default;
+
+$nav-bg-color: white !default;
+$nav-border: 0.7rem solid $color-primary !default;
+$nav-border-padding: 1rem !default;
+$nav-button-expanded-bg-color: $color-primary-darkest !default;
+$nav-button-expanded-bg-hover-color: $color-primary-darkest !default;
+$nav-button-expanded-txt-color: $color-white !default;
+$nav-submenu-txt-color: $color-white !default;
+$nav-submenu-bg-color: $color-primary-darkest !default;
+$nav-submenu-bg-hover-color: $color-primary-darkest !default;
+
+$backdrop-color: $color-primary-darkest !default;
+$backdrop-opacity: 1 !default;
+
+$button-primary-alt-color:    $color-base !default;
+
+////////Copied from _inputs.scss
+$input-line-height: 1.3 !default;
+$input-border-width: 1px !default;
+$input-padding-vertical: 1rem !default;
+
+// input heights will vary by browser and type
+// if height not explicitly set
+$input-height-exact: (
+  ($base-font-size * $input-line-height) +
+  (rem($input-padding-vertical) * 2) +
+  (rem($input-border-width * 2))
+) !default;
+
+// truncated to 1 decimal place
+// (i.e., 1.21rem -> 1.2rem)
+$input-height: floor($input-height-exact * 10) / 10 !default;
+
+$tringuide-bg-color:          white !default;

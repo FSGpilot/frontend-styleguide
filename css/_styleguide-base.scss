@@ -1757,12 +1757,24 @@ $color-blue-50: #3572b0; //Added by mgb - used for links
     float: right;
     margin-right: 29px;
     max-width: 200px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .site-header-navbar .style-switcher{
   @include media($nav-width) {
     display: none;
   }
+}
+
+//////////////////// version-switcher /////////////////////
+.version-switcher {
+  float: right;
+  margin-right: 29px;
+  margin-top: 19px;
+  max-width: 200px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 //////////////////// Material design compare do donts /////////////////
