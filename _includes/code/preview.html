@@ -42,10 +42,13 @@
         <li class="components__resizer-item components__desktop showtext">Preview size: 1024px <span class="components__resizer-desc">(Desktop / Laptop)</span></li>
         <li class="components__resizer-item components__full">Preview size: 100% <span class="components__resizer-desc">(Full Screen)</span></li>
     </ul>
-    <select name="version" id="version" class="version-switcher">
-        <option value="1">Version 1.0</option>
-        <option value="1.1">Version 1.1</option>
-    </select>
+    <span class="version-switcher-wrapper">
+      <select name="version" id="version" class="version-switcher">
+         <option value="1">Version 1.0</option>
+         <option value="1.1">Version 1.1</option>
+      </select>
+      <span class="checkmark"></span>
+    </span>
 </nav>
 
 <div class="preview fs-view {{ include.classes }}">

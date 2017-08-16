@@ -5,24 +5,42 @@ title: Eksemplariske eksempler
 category: Page templates
 lead: Vi opererer med 4 typer af løsninger - lille, mellem, stor og hyper. I den endelige guide skal der på denne side vises eksempler for hvordan styleguiden er anvendt til at bygge alt lige fra den simpleste blanket til store offentlige portaler. Nedenfor ser i hvordan US Web Design Standards har vist en Landing page og en Documentation page.
 subnav:
-- text: Den lille blanket
+- text: Den lille løsning
   href: '#lille-blanket'
-- text: Den store blanket
+- text: Den mellem løsning
+  href: '#mellem-blanket'
+- text: Den store løsning
   href: '#stor-blanket'
+- text: Hyper løsningen
+  href: '#hyper-blanket'
 - text: Landing page
   href: '#landing-page'
 - text: Documentation page
   href: '#documentation-page'
+- text: Signering
+  href: '#signering'
 ---
 
-<h2 class="usa-heading" id="lille-blanket">Template: Den lille blanket</h2>
+<h2 class="usa-heading" id="lille-blanket">Template: Den lille løsning</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
-<img src="{{ site.baseurl }}/img/lille.PNG" style="max-width: 1000%; width: 1018px">
+<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__simpel__-_desktop"><img src="{{ site.baseurl }}/img/lille.PNG" style="max-width: 1000%; width: 1018px"></a>
 
 {% include code/accordion.html component="template-landing" %}
 
-<h2 class="usa-heading" id="stor-blanket">Template: Den store blanket</h2>
-<img src="{{ site.baseurl }}/img/stor.png" style="max-width: 1000%; width: 1018px">
+<h2 class="usa-heading" id="mellem-blanket">Template: Den mellem løsning</h2>
+<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
+<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/stor.PNG" style="max-width: 1000%; width: 1018px"></a>
+
+{% include code/accordion.html component="template-landing" %}
+
+<h2 class="usa-heading" id="store-blanket">Template: Den store løsning</h2>
+<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
+<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/stor.PNG" style="max-width: 1000%; width: 1018px"></a>
+
+{% include code/accordion.html component="template-landing" %}
+
+<h2 class="usa-heading" id="hyper-blanket">Template: Den hyper løsning</h2>
+<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/hyper.png" style="max-width: 1000%; width: 1018px"></a>
 
 {% include code/accordion.html component="template-landing" %}
 
@@ -120,3 +138,9 @@ subnav:
     </ul>
   </div>
 </div>
+
+<h2 class="usa-heading" id="signering">Template: Signering</h2>
+<p>Her kunne der komme et eksempel på hvordan man implementere signering, f.eks. via NemID.</p>
+<!-- <img src="{{ site.baseurl }}/img/lille.PNG" style="max-width: 1000%; width: 1018px"> -->
+
+<!-- {% include code/accordion.html component="template-landing" %} -->

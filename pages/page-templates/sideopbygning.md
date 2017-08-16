@@ -4,9 +4,24 @@ layout: styleguide
 title: Sideopbygning
 category: Page templates
 lead: These templates for a landing page and a documentation page are built from some of the components of the U.S. Web Design Standards. Each of these pages is flexible; you can add or remove components or sub-components to suit your needs. These templates are great starting point for prototyping or for trying the Standards to see if they’re a good fit for you.
+subnav:
+- text: Bred central kolonne
+  href: '#Bred-central-kolonne'
+- text: Sidetype med annoteringer
+  href: '#annoteringer'
+- text: Indberetningsside
+  href: '#'
+- text: Oversigtsside
+  href: '#'
+- text: Kvitteringsside
+  href: '#'
+- text: Opsummeringsside
+  href: '#'
+- text: Kladdeside
+  href: '#'
 ---
 
-## Bred central kolonne med tringuide
+<h2 class="usa-heading" id="Bred-central-kolonne">Bred central kolonne med tringuide</h2>
 
 Siden med bred central kolonne og tringuide har et bredt område til hovedindhold, og bruges i forbindelse med trininddelte indberetninger.
 
@@ -21,7 +36,7 @@ Siden med bred central kolonne og tringuide har et bredt område til hovedindhol
 
 <a href="http://designmanual.virk.dk/virkdesign/designmanualv201/eksempel03-1.html" target="_blank" title="Eksemplarisk løsning">Se eksempel i eksemplarisk løsning</a>
 
-## Eksempel på Sidetyper med annoteringer
+<h2 class="usa-heading" id="annoteringer">Eksempel på Sidetyper med annoteringer</h2>
 
 Disse eksempler kommer fra "the Federal Reserve Bank of San Francisco"'s <a href="https://sfwebteam.github.io/public-web-front-end/out/section-4.html" target="_blank" title="FRBSF pattern library annotations">pattern library</a>. Hold musen over tallene for at se dokumentationen.
 

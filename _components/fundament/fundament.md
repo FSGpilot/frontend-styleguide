@@ -1,9 +1,9 @@
 ---
 permalink: /components/fundament/
 layout: styleguide
-title: Fundament (partikler)
+title: Retningslinjer
 category: UI components
-subcategory: Partikler - Retningslinjer
+subcategory: Designsystem
 lead: Accessibility tips to help you deliver delightful experiences to all users.
 subnav:
 - text: Grid

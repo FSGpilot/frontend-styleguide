@@ -1768,11 +1768,24 @@ $color-blue-50: #3572b0; //Added by mgb - used for links
 }
 
 //////////////////// version-switcher /////////////////////
-.version-switcher {
+.version-switcher-wrapper{
+  position: relative;
   float: right;
   margin-right: 29px;
   margin-top: 19px;
   max-width: 200px;
+  min-width: 145px;
+
+   .checkmark{
+      content: url('../../img/check-mark.svg'); 
+      width: 40px; 
+      height: 40px;
+      position: absolute;
+      right: 27px;
+      top: 5px;
+  }
+}
+.version-switcher {
   padding-top: 0;
   padding-bottom: 0;
 }
