@@ -1774,11 +1774,12 @@ $color-blue-50: #3572b0; //Added by mgb - used for links
   margin-right: 29px;
   margin-top: 19px;
   max-width: 200px;
+  min-width: 145px;
 
-   &:after{
-      content: url('/img/checkmark.svg'); 
-      width: 200px; 
-      height: 200px;
+   .checkmark{
+      content: url('../../img/check-mark.svg'); 
+      width: 40px; 
+      height: 40px;
       position: absolute;
       right: 27px;
       top: 5px;
