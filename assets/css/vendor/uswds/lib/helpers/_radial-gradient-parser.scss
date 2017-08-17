@@ -48,12 +48,3 @@
 
   @return $gradients;
 }
-lse {
-    $gradients: (
-      webkit-image: -webkit- + $image,
-      spec-image: $image
-    );
-  }
-
-  @return $gradients;
-}

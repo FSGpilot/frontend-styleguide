@@ -94,15 +94,3 @@
     #{$all}: $vals;
   }
 }
-: nth($vals, 3); }
-      @if nth($vals, 2) { #{$left}:   nth($vals, 2); }
-    } @else if length($vals) == 4 {
-      @if nth($vals, 3) { #{$bottom}: nth($vals, 3); }
-      @if nth($vals, 4) { #{$left}:   nth($vals, 4); }
-    }
-  } @else {
-    #{$all}: $vals;
-  }
-
-  $output-bourbon-deprecation-warnings: $user-deprecation-warnings-setting !global;
-}
