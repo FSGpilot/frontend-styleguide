@@ -372,6 +372,14 @@ body {
   }
 }
 
+.styleguide-content-default-width {
+  max-width: $site-max-width;    
+}
+
+.styleguide-content-full-width {
+  max-width: 100%;    
+}
+
 // Label links
 
 %label-maturity {
@@ -1627,10 +1635,6 @@ $color-blue-50: #3572b0; //Added by mgb - used for links
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   margin-bottom: 20px;
-
-  &.fs-view {
-    //padding: 5px;
-  }
 }
 
 .components__description {
@@ -1665,6 +1669,7 @@ $color-blue-50: #3572b0; //Added by mgb - used for links
   float: left;
   margin: 10px 0;
   list-style: none;
+  margin-bottom: auto;
 }
 
 .components__resizer-item {
@@ -1832,4 +1837,12 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
 .s-tag-caption.dont, figure.s-tag-media figcaption .s-tag-caption.dont {
     border-color: #d32f2f;
     color: #d32f2f;
+}
+
+.preview-iframe {
+  border: none;
+}
+
+.fs-view {
+  text-align: center;
 }

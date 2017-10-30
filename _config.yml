@@ -29,7 +29,9 @@ collections:
   components:
     output: true
     permalink: /:path/
-
+  preview-components:
+    output: true
+    permalink: /:path/
 defaults:
   - scope:
       path: ''
