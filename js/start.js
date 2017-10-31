@@ -8,6 +8,13 @@ require('./sidenav');
 require('./vendor/politespace');
 require('./vendor/stickyfill.min.js');
 
+$(document).ready(function () {
+  var currentlyClicked = Cookies.get('selected-preview');
+  if (currentlyClicked  == null) {
+    currentlyClicked = 'mobil';
+  }
+  $('#' + currentlyClicked).trigger('click');
+});
 
 // Initialize sticky fill
 var stickyElements = document.getElementsByClassName('sticky');
@@ -47,10 +54,9 @@ $('.preview-iframe').on('load', function () {
     var $body = $iframe.contents().find('body');
     var $marigin = 60;
     var $height = $body.prop('scrollHeight') + $marigin;
-    $iframe.css('height', $height + 'px');    
+    $iframe.css('height', $height + 'px');
   });
 
-  $iframe.attr({ width: '375px' });
   $('.loader-container').hide();
   $(this).show();
 });
@@ -80,12 +86,19 @@ $('.components__resizer-button').on('click', function () {
       return;
   }
 
+  Cookies.set('selected-preview', this.id);
   $iframe.attr({ width: $width });
 
-  $('.is-active').removeClass('is-active');
+  var active = $('.is-active')
+  if (active) {
+    active.removeClass('is-active');
+  }
   $(this).addClass('is-active');
 
-  $('.showtext').removeClass('showtext');
+  var activeShowtext = $('.showtext');
+  if (activeShowtext) {
+    activeShowtext.removeClass('showtext');
+  }
   $('.components__' + this.id).addClass('showtext');
 });
 
