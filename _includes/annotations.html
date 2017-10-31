@@ -1,0 +1,15 @@
+<div>
+{% for image in include.annotations %}
+	{% if include.img == image.id %}
+		<ol class="anno-text">
+			{% for annotation in image.points %}
+			<li class="marker" tabindex="0" id="1" style="z-index: auto;  left: {{ annotation.x }}; top: {{ annotation.y }}; ">
+				<div class="desc" style="display: none; z-index: -1;">
+					{{ annotation.html }}
+				</div>
+				</li>
+			{% endfor %}
+		</ol>
+	{% endif %}
+{% endfor %}
+</div>

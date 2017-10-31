@@ -19,6 +19,7 @@ For instance, if your app is a restaurant guide, your users may want to make res
 #### Take inventory
 
 Identify your app’s users and their potential roles, such as consumer, business owner, or journalist. Identify the most common tasks they may want to perform.
+{% include annotations.html annotations=site.data.annotations img="Inventory" %}
 <img src="{{ site.baseurl }}/img/inventory.png">
 
 ### Prioritize
