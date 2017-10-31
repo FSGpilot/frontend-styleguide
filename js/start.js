@@ -52,8 +52,8 @@ $('.preview-iframe').on('load', function () {
 
   $(this.contentWindow).on('resize', function () {
     var $body = $iframe.contents().find('body');
-    var $marigin = 60;
-    var $height = $body.prop('scrollHeight') + $marigin;
+    var $margin = 70;
+    var $height = $body.prop('scrollHeight') + $margin;
     $iframe.css('height', $height + 'px');
   });
 
