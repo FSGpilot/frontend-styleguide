@@ -16,29 +16,6 @@ for (var i = stickyElements.length - 1; i >= 0; i--) {
   Stickyfill.add(stickyElements[i]);
 }
 
-// // Styling switching
-// var changeStyle = function (val) {
-//   var styleToSwitchTo = val;
-//   $('link[rel=stylesheet]').attr('href', styleToSwitchTo);
-//   Cookies.remove('style', { path: '/' });
-//   Cookies.set('style', styleToSwitchTo, { path: '/' }); 
-//   $('.style-switcher').val(styleToSwitchTo);
-// };
-
-// var cookieStyleValue = Cookies.get('style', { path: '/' });
-
-// if(cookieStyleValue !== '' && cookieStyleValue !== undefined){
-//   changeStyle(cookieStyleValue);
-// }else{
-//   Cookies.set('style', '/css/styleguide.css', { path: '/' });
-// }
-
-// $('.style-switcher').on('change', function () {
-//   var curStyle = Cookies.get('style', { path: '/' });
-//   if(curStyle !== this.value){
-//     changeStyle(this.value);
-//   }
-// });
 $('.style-switcher').val(window.curStyle);
 
 $('.style-switcher').on('change', function () {
@@ -53,13 +30,6 @@ $('a').on('click', function (e) {
   window.location.href = $(this).attr('href') + '?s=' + window.curStyle;
 });
 
-function fitIframeToContentHeight(iframe) {
-  var $marigin = 35;
-  var $body = iframe.contents().find('body');
-  var $height = $body.prop('scrollHeight') + $marigin;
-  iframe.css('height', $height + 'px');
-}
-
 function setContentWidthToDefault() {
   $('.styleguide-content').removeClass('styleguide-content-full-width');
   $('.styleguide-content').addClass('styleguide-content-default-width');
@@ -71,8 +41,18 @@ function setContentWidthToFull() {
 }
 
 $('.preview-iframe').on('load', function () {
-  fitIframeToContentHeight($(this));
-  $(this).attr({ width: '375px' });
+  var $iframe = $(this);
+
+  $(this.contentWindow).on('resize', function () {
+    var $body = $iframe.contents().find('body');
+    var $marigin = 60;
+    var $height = $body.prop('scrollHeight') + $marigin;
+    $iframe.css('height', $height + 'px');    
+  });
+
+  $iframe.attr({ width: '375px' });
+  $('.loader-container').hide();
+  $(this).show();
 });
 
 $('.components__resizer-button').on('click', function () {
@@ -101,7 +81,6 @@ $('.components__resizer-button').on('click', function () {
   }
 
   $iframe.attr({ width: $width });
-  fitIframeToContentHeight($iframe);
 
   $('.is-active').removeClass('is-active');
   $(this).addClass('is-active');
