@@ -89,7 +89,7 @@ $('.components__resizer-button').on('click', function () {
   Cookies.set('selected-preview', this.id);
   $iframe.attr({ width: $width });
 
-  var active = $('.is-active')
+  var active = $('.is-active');
   if (active) {
     active.removeClass('is-active');
   }
