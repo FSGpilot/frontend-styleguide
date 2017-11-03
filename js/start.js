@@ -113,17 +113,19 @@ $('.components__resizer-button').on('click', function () {
   Cookies.set('selected-preview', this.id);
   $iframe.attr({ width: $width });
 
-  var active = $('.is-active');
-  if (active) {
-    active.removeClass('is-active');
-  }
-  $(this).addClass('is-active');
+  $('.is-active').each(function () {
+    $(this).removeClass('is-active');
+  });
+  $('button[id=' + this.id + ']').each(function () {
+    $(this).addClass('is-active');
+  });
 
-  var activeShowtext = $('.showtext');
-  if (activeShowtext) {
-    activeShowtext.removeClass('showtext');
-  }
-  $('.components__' + this.id).addClass('showtext');
+  $('.showtext').each(function () {
+    $(this).removeClass('showtext');
+  });
+  $('.components__' + this.id).each(function () {
+    $(this).addClass('showtext');
+  });
 });
 
 
