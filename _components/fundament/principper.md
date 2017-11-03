@@ -1,7 +1,7 @@
 ---
 permalink: /components/fundament/principper/
 layout: styleguide
-title: Principper
+title: Principper (DEPRICATED)
 category: UI components
 subcategory: Partikler - Retningslinjer
 lead: "Frontend Styleguiden er designet for at hjælpe dig med at skabe bedre brugeroplevelser for danskerne. Her er hvordan Frontend Styleguiden kan hjælpe dig:"

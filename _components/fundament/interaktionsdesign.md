@@ -4,61 +4,107 @@ layout: styleguide
 title: Interaktionsdesign
 category: UI components
 subcategory: Partikler - Retningslinjer
-lead: Interaktionsdesign tips to help you deliver delightful experiences to all users.
+lead: Målet med et godt interaktionsdesign på en offentlig selvbetjeningsløsning, er at gøre brugeroplevelsen så friktionsfri som muligt. Det væsentligste i denne disciplin, er at bygge løsninger med omtanke for brugerens behov, mål og brugspraksisser. Selvom der er mange facetter af et godt interaktionsdesign, kan du nå langt ved blot at følge disse grundlæggende retningslinjer. 
 order: 25
 ---
 
-## Interaktionsdesign for Navigation
+## TILPAS LØSNINGEN TIL BRUGERENS PRAKSIS
 
-Navigation organizes content so that it’s easier to find important destinations in your app. Navigation may include frequently visited places, contain settings, or encourage specific actions.
+Brugeren er som udgangspunkt utålmodig og laver mange små fejl. Mange brugere vil anvende en slags ”trial and error” praksis til at navigere løsningen, fremfor at læse de instrukser du giver. 
 
-To determine the type of navigation best suited to your app, identify your app’s users, typical paths they might take through your app, and actions you want them to perform.
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Gør det muligt at fortryde og gå tilbage</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
 
-For instance, if your app is a restaurant guide, your users may want to make reservations, post menus, or write reviews. By identifying the goals most users will have, you’ll be able to better define a navigation structure that meets their priorities.
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Gør muligt at træffe en informeret beslutning ved blot at ‘scanne’ siden</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
 
-#### Take inventory
 
-Identify your app’s users and their potential roles, such as consumer, business owner, or journalist. Identify the most common tasks they may want to perform.
-{% include annotations.html annotations=site.data.annotations img="Inventory" %}
-<img src="{{ site.baseurl }}/img/inventory.png">
+## BRUG VELKENDTE PRINCIPPER
 
-### Prioritize
+Brugeren har opbygget vaner og praksisser ud fra de interaktionsprincipper, som  kendes fra andre løsninger. Tag derfor altid udgangspunkt i gængse og genkendelige principper. På den måde vil din løsning føles ”rigtig” for brugeren.
 
-Assign priority levels of high, medium, or low to common user tasks. Give prominence in the UI to paths and destinations with high priority levels and frequent use.
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Vær klassisk fremfor eksotisk</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
 
-Adjust priority levels as user needs change over time.
-<img src="{{ site.baseurl }}/img/prioritize.png">
 
-### Sequence
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Vær forudsigelig og konsistent</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
 
-Identify the different paths that users take through your app and use those paths to define your navigation:
 
-* List frequent destinations prominently in your navigation
-* Group related tasks together and use those groupings to structure your navigation
 
-<img src="{{ site.baseurl }}/img/sequence.png">
+## IDENTIFICER DIT VIGTIGE INDHOLD
 
-### Deconstruct
+I interaktionsdesign siger man: ”20 % af løsningens funktionalitet anvendes 80 % af tiden”. Med andre ord er det ofte de samme få funktioner, som brugeren har behov for. Derfor bør de mest hyppige funktioner være lettest at finde. Ligeledes bør funktioner, som anvendes sjældent, ikke støje for meget i layoutet, men blot være til at finde, når brugeren rent faktisk ønsker at finde dem. 
 
-Divide complex, broad, or vague use cases into smaller activities. These smaller tasks may be frequently used, more easily understood, or better meet user goals.
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Gør det let at navigere til hyppige funktioner</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
 
-For example, dividing search into smaller activities that differentiate searching by name, location, or popularity may reveal the need to surface those smaller activities as part of navigation.
-<img src="{{ site.baseurl }}/img/deconstruct.png">
 
-### Nested Navigation
-When you have multiple levels of navigation, sibling views should be nested underneath their parent.
 
-On desktop, a secondary level of navigation may be nested within the navigation drawer.
+## GØR DIT INDHOLD OVERSKUELIGT
 
-Appropriate for these hierarchies:
-<ul class="usa-content-list">
-      <li>Lateral navigation</li>
-      <li>Parents with siblings or peers</li>
-</ul>
-Recommended for:
-<ul class="usa-content-list">
-      <li>Deep navigation structures with many views</li>
-      <li>Enabling quick navigation between unrelated views</li>
-</ul>
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Indel tekster i små afsnit med beskrivende overskrifter.</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
 
-<img src="{{ site.baseurl }}/img/patterns_navigation_patterns_nested1.png">
+
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Præsentér indholdet bid for bid</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
+
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Gruppér dit indhold</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>

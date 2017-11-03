@@ -1,41 +1,93 @@
 ---
-permalink: /components/fundament/touch/
+permalink: /components/fundament/mobile/
 layout: styleguide
-title: Touch
+title: Mobile First
 category: UI components
 subcategory: Partikler - Retningslinjer
-lead: Create thoughtful mobile designs with easy touch targets, awareness of how users hold devices and optimal interaction areas.
+lead: For at gøre offentlige selvbetjeningsløsninger brugbare på tværs af forskellige enheder og skærmstørrelser, kan man med fordel arbejde ud fra en ‘mobile first’ tankegang. Kort sagt går dette ud på, at ét og samme site fungerer på både smartphones, tablets, laptops og stationære computere. Den mest effektive måde at sikre tilgængelighed på tværs af enheder og skærmstørrelser, er at starte nedefra - heraf termet “mobile first”. 
 order: 25
 ---
 
-## Fit for fingers
+## DESIGN NEDE FRA OG OP 
+
+Design og byg med omtanke for de værste betingelser helt fra starten - tag derfor udgangspunkt i den mindste skærmstørrelse, laveste processorkraft og værste forbindelse. Der vil unægteligt opstå problematikker, hvis der først tages højde for disse betingelser sent i processen. 
+
+- Hvis indholdet loades med en rimelig hastighed på en enhed uden særlig processorkraft og med dårlig forbindelse, så loades den rimeligt overalt.
+- Hvis indholdet kan vises fornuftigt og meningsfuldt på en helt lille skærm, så kan det vises fornuftigt og meningsfuldt på alle skærme.
+
+
+## VÆR KNIVSKARP I DIN PRIORITERING
+
+Mobile first tankegangen tvinger dig til at udvælge det indhold, som reelt bidrager kerneydelsen. På små skærme er der nemlig kun plads til det mest elementære indhold. Det er tilladt at tilføje mere indhold på større skærme, men løsningen skal tilbyde samme funktionalitet på alle skærmstørrelser. 
+
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Gør titel, svar og handling synlig på første side</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
+
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Drop udenomssnak</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
+
+<div class="usa-grid-full">
+    <div class="usa-width-one-third">
+        <p><strong>Undgå tung grafik</strong></p>
+    </div>
+    <div class="usa-width-two-thirds">
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
+        style="">
+    </div>
+</div>
+
+# Touch
+
+Skab gennemtænkede mobile designs med nemme touch-flader, bevidsthed om hvordan brugere holder deres enheder og optimale interaktionsområder. 
+
+## VÆR TOMMELFINGER-VENLIG
+
+Sammenlignet med muse-interaktion, er nøjagtigheden med finger-interaktion nedsat betydeligt. For at gøre løsningen egnet til touch, skal størrelse, placering og afstand mellem interaktive elementer tilpasses en mere ‘klodset’ interaktion.
+
+<img src="{{ site.baseurl }}/img/retningslinjer/dodont.png">
+
+## Tilpasset til fingrene
 
 <div class="usa-grid-full">
     <div class="usa-width-one-third">
         <img src="{{ site.baseurl }}/img/interaction-touch_loop3.gif" style="max-width: 200px;">
     </div>
     <div class="usa-width-one-half">
-        <p>Touch aids users in understanding where they can physically interact with the screen simply and naturally.</p>
+        <p>Touch hjælper brugere til nemt at forstå hvor de fysisk kan interagere med skærmen.</p>
     </div>
 </div>
 
-## Gestures
+## Interaktioner
 
-People often touch with more than one finger. Touch interactions should be similar no matter the number of fingers touching the screen.
+Folk trykker ofte med mere end en finger ad gang. Touch-interaktioner skal være uændrede lige meget antallet af fingre der berør skærmen.
 
-Avoid interactions that require compound gestures such as double-tap or timed press-and-hold interactions. They are often triggered accidentally and are difficult to time correctly.
+Undgå interaktioner der kræver sammensatte bevægelser som double-tap eller press-and-hold interaktioner. De er ofte aktiveret ved uheld og er besværlige korrekt at indstille. 
 
 <img src="{{ site.baseurl }}/img/gestures.PNG" style="max-width: 670px;">
 
 ## Feedback
 
-Increase users’ confidence by providing immediate visual feedback when they touch the screen. Interactive elements react by changing color, size or by moving.
+Øg brugernes forståelse ved at give øjeblikkelig feedback når de trykker på skærmen. Interaktive elementer reagerer ved at skifte farve, størrelse eller ved bevægelse.
 
 <img src="{{ site.baseurl }}/img/feedback.PNG" style="max-width: 670px;">
 
-## Targets
+## Touch-flader
 
-A well-designed touch experience balances size, spacing and visuals to make controls easier to press.
+En veldesignet touch-oplevelse er afbalanceret i størrelse, mellemrum og visuelle elementer for at give brugeren bedre kontrol.
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
@@ -44,13 +96,13 @@ A well-designed touch experience balances size, spacing and visuals to make cont
   <div class="usa-width-one-half">
     <ul class="usa-content-list">
       <li>
-        Touch screens sense the geometric center of a user’s contact point.
+        Touch-skærme opfanger det geometriske centrum af en brugers berøringspunkt
       </li>
       <li>
-       Users are imprecise in their movements.
+       Brugere er upræcise i deres bevægelser.
       </li>
       <li>
-        Touch targets are not visible and can be larger than the related visual element.
+        Touch-flader er ikke synlige og kan være større end det relaterede visuelle element.
       </li>
     </ul>
   </div>
@@ -63,24 +115,24 @@ A well-designed touch experience balances size, spacing and visuals to make cont
   <div class="usa-width-one-half">
     <ul class="usa-content-list">
         <li>
-            Frequently touched areas should have larger touch targets.
+            Ofte berørte områder bør have store touch-flader.
         </li>
         <li>
-        A user interface element should be 60 to 100 percent of the touch target.
+            Et brugergrænsefladeelement bør være mellem 60 og 100 procent af dets touch-område.
         </li>
-        <li>
+        <!--<li>
             Sequential tasks, such as multi-delete, require additional space for precision.
-        </li>
+        </li>-->
         <li>
-        Design grids provide adequate space between tangible user interface elements.
+            Gridsystemet sikrer tilstrækelig afstand mellem de forskellige elementer.
         </li>
     </ul>
   </div>
 </div>
 
-### Target sizes
+### Størrelse på Touch-flader
 
-There’s no perfect size for touch targets. Different sizes work for different situations. Actions with severe consequences or frequently used actions require large touch targets with enough padding to avoid accidental taps.
+Der er ikke en perfekt størrelse til touch-flader. Forskellige størrelser passer til forskellige situationer. Handlinger der har stor betydning skal have tilhørende store touch-flader for at undgå utilsigtede tryk.
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
@@ -89,18 +141,20 @@ There’s no perfect size for touch targets. Different sizes work for different 
   <div class="usa-width-one-half">
     <ul class="usa-content-list">
         <li>
-            7 by 7 mm is a good size if touching the wrong target can be corrected in one or two gestures.
+            7 gange 7 mm er en god størrelse hvis et tryk på en forkert touch-flade kan korrigeres med få efterfølgende tryk.
         </li>
         <li>
-        At 326 PPI, 90 px is equal to 7 mm.
+            Ved 326 PPI, er 90 px svarende til 7 mm.
         </li>
     </ul>
   </div>
 </div>
 
-## Postures
+## Stillinger
 
 Designing touch experiences requires knowledge of how the devices are held by different users. The user’s environment and physical comfort affect how long a grip is used and how often it’s changed.
+
+For at designe gode touch-oplevelser kræves der viden om hvordan enhederne bliver holdt af forskellige brugere. Brugerens omgivelser og fysiske komfort påvirker hvordan brugeren holder fast i enheden og hvor lang tid der går før enheden rykkes på.   
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
@@ -109,36 +163,36 @@ Designing touch experiences requires knowledge of how the devices are held by di
   <div class="usa-width-one-half">
     <ul class="usa-content-list">
         <li>
-            Optimize the interface for different kinds of grips.
+            Optimer brugergrænsefladen for forskellige måder at holde på.
         </li>
         <li>
-            Think about how landscape or portrait modes affect your content.
+            Tænk over hvordan landskabs- eller portrætvisning af din brugergrænseflade påvirker dit indhold.
+        </li>
+        <!--<li>
+            Anchored thumbs increase touching accuracy. 
+        </li>-->
+        <!--<li>
+            Touching top of screen might knock a docked device off balance 
+        </li>-->
+        <li>
+            Elementer placeret i midten af skærmen kan være svære at nå.
         </li>
         <li>
-            Anchored thumbs increase touching accuracy.
-        </li>
-        <li>
-            Touching top of screen might knock a docked device off balance.
-        </li>
-        <li>
-            Anything in the middle of the screen is difficult to reach.
-        </li>
-        <li>
-            Interaction at a distance reduces readability and accuracy.
+            Ved interaktion fra en afstand reduceres læsbarheden og præcisionen. 
         </li>
     </ul>
   </div>
 </div>
 
-### Interaction areas
+### Interaktionsområder
 
-Tablets are most often held along the side, making the bottom corners ideal for interactive elements. Most users hold a tablet with the left hand and touch it with the right. Place interactive elements within reach of the thumbs.
+Tablets bliver oftest holdt i siderne hvilket gør de nederste hjørner ideelle for interaktive elementer. De fleste brugere holder en tablet med venstre hånd mens de trykker og navigerer med den højre. Placer altid de interaktive elementer inden for rækkevidde af tommelfingrerne. 
 
 <img src="{{ site.baseurl }}/img/postures-interaction-area2.svg" style="max-width: 670px;">
 
-### Reading areas
+### Læseområder
 
-Content in the top half of the screen is easier to see than content on the bottom half where it can be blocked by the hands or ignored.
+Indhold i den øverste halvdel af skærmen er nemmere at se end indhold på den nederste halvdel af skærmen, hvor det kan være skjult bag hænder eller ignoreret.
 
 <img src="{{ site.baseurl }}/img/postures-interaction-area2.svg" style="postures-reading-area2.svg">
 

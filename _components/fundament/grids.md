@@ -1,7 +1,7 @@
 ---
 permalink: /components/fundament/grids/
 layout: styleguide
-title: Grids
+title: Grids (DEPRICATED)
 category: UI components
 subcategory: Partikler - Retningslinjer
 lead: This 12-column, responsive grid provides structure for website content.
