@@ -24,8 +24,7 @@ subnav:
 <h2 class="usa-heading" id="Bred-central-kolonne">Bred central kolonne med tringuide</h2>
 
 Siden med bred central kolonne og tringuide har et bredt område til hovedindhold, og bruges i forbindelse med trininddelte indberetninger.
-
-<img src="{{ site.baseurl }}/img/bred_trin.png">
+{% include annotations.html annotations=site.data.annotations id="bred_trin" %}
 
 ### Krav
 

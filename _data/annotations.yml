@@ -1,36 +1,33 @@
 - id: "DesignsystemAtomicDesign"
+  path: "/img/Designsystem-Atomic-Design.jpg"
+  image-style: "max-width: 100%;"
   points: 
     - number: 1
-      x: "30px"
-      y: "60px"
+      style: "left: 0px; top: 0px;"
       html: "Mauris eget finibus nulla, sit amet porta nibh. Proin et ultricies arcu."
-    - number: 2
-      x: "90px"
-      y: "45px"
+    - number: 7
+      style: "right: 0px; bottom: 0px;"
       html: "Etiam a imperdiet sapien. Suspendisse ut commodo odio. "
     - number: 3
-      x: "0px"
-      y: "0px"
+      style: "left: 50%; top: 50%;"   
       html: "<h2> Subtitle </h2>"
     - number: 4
-      x: "1018px"
-      y: "514px"
+      style: "left: 25%; bottom: 25%;"
       html: "<h1> Title </h1> "
 
-- id: "Inventory"
+- id: "bred_trin"
+  path: "/img/bred_trin.png"
+  image-style: "max-width: 100%;"
   points: 
     - number: 1
-      x: "50px"
-      y: "50px"
+      style: "left: 30px; top: 60px;"
       html: "Ut justo risus, pulvinar vel sapien ut, euismod cursus lacus.
         Nam sed magna fringilla nulla luctus congue vitae rhoncus mauris."
-    - number: 2
-      x: "100px"
-      y: "100px"
+    - number: 6
+      style: "right: 90px; bottom: 45px;"
       html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt velit quis volutpat ornare."
-    - number: 3
-      x: "0px"
-      y: "0px"
+    - number: 8
+      style: "left: 50%; top: 50%;"   
       html: " <h1> Title </h1> <br/><br/><br/><br/>
       <button>do nothing</button> 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt velit quis volutpat ornare.

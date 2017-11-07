@@ -1898,10 +1898,9 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
 //////////////////// Annotations /////////////////
 
 .anno-text {
-  counter-reset: li;
   list-style-type: none;
   padding-left: 0;
-  position: absolute;
+  position: relative;
   margin: 0;
 }
 
@@ -1963,10 +1962,18 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
 
 .anno-text li:after, .annotated li {
   box-sizing: border-box;
-  content: counter(li);
-  counter-increment: li;
+  content: attr(value);
   font-weight: 400;
   height: 2em;
   text-align: center;
   color: #fff;
+}
+
+ul.anno-text {
+  position: initial;
+}
+
+div.annotaions-container {
+  position: relative;
+  display: inline-block;
 }

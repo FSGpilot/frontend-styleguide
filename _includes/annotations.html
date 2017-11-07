@@ -1,15 +1,17 @@
-<div>
+
+<div class="annotaions-container">			
 {% for image in include.annotations %}
-	{% if include.img == image.id %}
-		<ol class="anno-text">
-			{% for annotation in image.points %}
-			<li class="marker" tabindex="0" id="1" style="z-index: auto;  left: {{ annotation.x }}; top: {{ annotation.y }}; ">
-				<div class="desc" style="display: none; z-index: -1;">
-					{{ annotation.html }}
-				</div>
+	{% if include.id == image.id %}
+		<img src="{{ site.baseurl }}{{ image.path }}" style="{{ image.image-style }}">					
+		<ul class="anno-text">
+			{% for point in image.points %}
+				<li class="marker" value="{{point.number}}" style="z-index: auto; {{ point.style }} ">
+					<div class="desc" style="display: none; z-index: -1;">
+						{{ point.html }}
+					</div>
 				</li>
 			{% endfor %}
-		</ol>
+		</ul>
 	{% endif %}
 {% endfor %}
 </div>
