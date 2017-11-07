@@ -6,6 +6,8 @@ require( './config/gulp/fonts' );
 require( './config/gulp/images' );
 require( './config/gulp/javascript' );
 require( './config/gulp/sass' );
+require( './config/gulp/html' );
+
 
 var gulp  = require( 'gulp' );
 var dutil = require( './config/gulp/doc-util' );
