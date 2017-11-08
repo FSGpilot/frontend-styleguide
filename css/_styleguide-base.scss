@@ -1905,22 +1905,20 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
 }
 
 .anno-text li {
-  position: relative;
-  top: auto;
-  left: auto;
-  margin: 16px 2em;
-  padding: 0 0 0 16px;
+  width: 2em;
+  height: 2em;
 }
 
 .anno-text li:after {
+  position: absolute;
   background-color: #79b8d5;
   border-radius: 50%;
-  left: -2em;
-  margin-right: .8em;
-  padding: .2em 0 0;
-  position: absolute;
+  margin: 0;
+  left: 0;
   top: 0;
   width: 2em;
+  height: 2em;
+  line-height: 2em;
 }
 
 .anno-text li:focus {
@@ -1936,7 +1934,7 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
 
 .anno-text li {
   position: absolute;
-  margin: 0 0 0 2em;
+  margin: 0;
   padding: 0;
   cursor: pointer;
 }
@@ -1947,7 +1945,7 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
   box-shadow: 0 17px 50px 0 rgba(0, 0, 0, .19);
   box-sizing: border-box;
   border: 0;
-  margin: -20px 0 0 -40px;
+  margin: -10px 0 0 -10px;
   overflow: hidden;
   padding: 20px 20px 20px 60px;
   z-index: 1;
@@ -1964,7 +1962,6 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
   box-sizing: border-box;
   content: attr(value);
   font-weight: 400;
-  height: 2em;
   text-align: center;
   color: #fff;
 }
@@ -1973,7 +1970,8 @@ ul.anno-text {
   position: initial;
 }
 
-div.annotaions-container {
+div.anno-container {
   position: relative;
-  display: inline-block;
+  display: grid;
+  display: -ms-grid; /* IE */
 }

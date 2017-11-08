@@ -113,7 +113,7 @@ dfn {
 
 .usa-content {
   p:not(.usa-font-lead),
-  ul:not(.usa-accordion):not(.usa-accordion-bordered),
+  ul:not(.usa-accordion):not(.usa-accordion-bordered):not(.anno-text),
   ol:not(.usa-accordion):not(.usa-accordion-bordered) {
     max-width: $text-max-width;
   }

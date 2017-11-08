@@ -1,5 +1,5 @@
 
-<div class="annotaions-container">			
+<div class="anno-container">			
 {% for image in include.annotations %}
 	{% if include.id == image.id %}
 		<img src="{{ site.baseurl }}{{ image.path }}" style="{{ image.image-style }}">					
