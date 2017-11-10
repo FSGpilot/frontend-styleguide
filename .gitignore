@@ -8,5 +8,8 @@ npm-debug.log
 .bundle/
 .jekyll_get_cache/
 
-# Preview components are fetched and genereted from components repository 
+# Preview components are fetched and generated from components repository 
 _preview-components
+
+# Assets are generated during building process
+assets
