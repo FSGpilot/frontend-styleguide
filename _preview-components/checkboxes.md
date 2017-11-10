@@ -1,30 +1,33 @@
----
-permalink: /preview-components/checkboxes/
-layout: base
+--- 
+permalink: /preview-components/checkboxes
+layout: base 
 title: Checkboxes
 ---
 
-<fieldset class="usa-fieldset-inputs usa-sans">
 
-  <legend class="usa-sr-only">Historical figures 1</legend>
+  <fieldset class="usa-fieldset-inputs usa-sans">
 
-  <ul class="usa-unstyled-list">
-    <li>
-      <input id="truth" type="checkbox" name="historical-figures-1" value="truth" checked>
-      <label for="truth">Sojourner Truth</label>
-    </li>
-    <li>
-      <input id="douglass" type="checkbox" name="historical-figures-1" value="douglass">
-      <label for="douglass">Frederick Douglass</label>
-    </li>
-    <li>
-      <input id="washington" type="checkbox" name="historical-figures-1" value="washington">
-      <label for="washington">Booker T. Washington</label>
-    </li>
-    <li>
-      <input id="carver" type="checkbox" name="historical-figures-1" disabled>
-      <label for="carver">George Washington Carver</label>
-    </li>
-  </ul>
+    <legend class="usa-sr-only">Historical figures 1</legend>
 
-</fieldset>
+    <ul class="usa-unstyled-list">
+      <li>
+        <input id="truth" type="checkbox" name="historical-figures-1" value="truth" checked>
+        <label for="truth">Sojourner Truth</label>
+      </li>
+      <li>
+        <input id="douglass" type="checkbox" name="historical-figures-1" value="douglass">
+        <label for="douglass">Frederick Douglass</label>
+      </li>
+      <li>
+        <input id="washington" type="checkbox" name="historical-figures-1" value="washington">
+        <label for="washington">Booker T. Washington</label>
+      </li>
+      <li>
+        <input id="carver" type="checkbox" name="historical-figures-1" disabled>
+        <label for="carver">George Washington Carver</label>
+      </li>
+    </ul>
+
+  </fieldset>
+
+

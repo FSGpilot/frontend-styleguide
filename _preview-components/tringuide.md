@@ -1,6 +1,6 @@
----
-permalink: /preview-components/tringuide/
-layout: base
+--- 
+permalink: /preview-components/tringuide
+layout: base 
 title: Tringuide
 ---
 

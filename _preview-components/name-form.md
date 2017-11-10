@@ -1,27 +1,25 @@
----
-permalink: /preview-components/name-form/
-layout: base
+--- 
+permalink: /preview-components/name-form
+layout: base 
 title: Name-form
 ---
 
-<form class="usa-form">
-  <fieldset>
-    <legend>Name</legend>
-    <label for="title">Title</label>
-    <input class="usa-input-tiny" id="title" name="title" type="text">
 
-    <label for="first-name" class="usa-input-required">First name</label>
-    <input id="first-name" name="first-name" type="text" required="" aria-required="true">
+  <form class="usa-form">
+    <fieldset>
+      <legend>Name</legend>
+      <label for="title" class="usa-input-optional">Title</label>
+      <input class="usa-input-tiny" id="title" name="title" type="text">
 
-    <label for="middle-name">Middle name</label>
-    <input id="middle-name" name="middle-name" type="text">
+      <label for="first-name">First name</label>
+      <input id="first-name" name="first-name" type="text" required="" aria-required="true">
 
-    <label for="last-name" class="usa-input-required">Last name</label>
-    <input id="last-name" name="last-name" type="text" required="" aria-required="true">
+      <label for="middle-name" class="usa-input-optional">Middle name</label>
+      <input id="middle-name" name="middle-name" type="text">
 
-    <label for="suffix">Suffix</label>
-    <input class="usa-input-tiny" id="suffix" name="suffix" type="text">
+      <label for="last-name">Last name</label>
+      <input id="last-name" name="last-name" type="text" required="" aria-required="true">
 
-    <input type="submit" value="Submit">
-  </fieldset>
-</form>
+    </fieldset>
+  </form>
+

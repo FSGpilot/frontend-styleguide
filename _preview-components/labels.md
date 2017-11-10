@@ -1,11 +1,8 @@
----
-permalink: /preview-components/labels/
-layout: base
+--- 
+permalink: /preview-components/labels
+layout: base 
 title: Labels
 ---
 
-<h6>Small</h6>
-<span class="usa-label">New</span>
+<span class="usa-label ">New</span>
 
-<h6>Large</h6>
-<span class="usa-label-big">New</span>

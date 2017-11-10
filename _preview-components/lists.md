@@ -1,31 +1,34 @@
----
-permalink: /preview-components/lists/
-layout: base
+--- 
+permalink: /preview-components/lists
+layout: base 
 title: Lists
 ---
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-third">
 
-    <h6 class="usa-heading-alt">Unordered list</h6>
+  <div class="usa-grid-full">
+    <div class="usa-width-one-third">
 
-    <ul>
-      <li>Unordered list item</li>
-      <li>Unordered list item</li>
-      <li>Unordered list item</li>
-    </ul>
+      <h6 class="usa-heading-alt">Unordered list</h6>
 
+      <ul>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+      </ul>
+
+    </div>
+
+    <div class="usa-width-one-third">
+
+      <h6 class="usa-heading-alt mt0">Ordered list</h6>
+
+      <ol>
+        <li>Ordered list item</li>
+        <li>Ordered list item</li>
+        <li>Ordered list item</li>
+      </ol>
+
+    </div>
   </div>
 
-  <div class="usa-width-one-third">
 
-    <h6 class="usa-heading-alt mt0">Ordered list</h6>
-
-    <ol>
-      <li>Ordered list item</li>
-      <li>Ordered list item</li>
-      <li>Ordered list item</li>
-    </ol>
-
-  </div>
-</div>

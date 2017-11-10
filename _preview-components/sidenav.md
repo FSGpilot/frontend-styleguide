@@ -1,104 +1,110 @@
----
-permalink: /preview-components/sidenav/
-layout: base
+--- 
+permalink: /preview-components/sidenav
+layout: base 
 title: Sidenav
 ---
 
-<h6 class="usa-heading-alt">Single level</h6>
 
-<div class="usa-grid-full">
-  <aside class="usa-width-one-fourth">
-    <ul class="usa-sidenav-list">
-      <li>
-        <a class="usa-current" href="javascript:void(0);">Current page</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">Parent link</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">Parent link</a>
-      </li>
+
+<ul class="usa-sidenav-list">
+  
+  
+  <li>
+    <a href="">
+      Parent link
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="" class="usa-current">
+      Current page
+    </a>
+    
+    <ul class="usa-sidenav-sub_list">
+      
+  
+  <li>
+    <a href="">
+      Child link
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="" class="usa-current">
+      Child link
+    </a>
+    
+    <ul class="usa-sidenav-sub_list">
+      
+  
+  <li>
+    <a href="">
+      Grandchild link
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="">
+      Grandchild link
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="" class="usa-current">
+      Grandchild link
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="">
+      Grandchild link
+    </a>
+    
+  </li>
+  
+
     </ul>
-  </aside>
-</div>
+    
+  </li>
+  
+  <li>
+    <a href="">
+      Child link
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="">
+      Child link
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="">
+      Child link
+    </a>
+    
+  </li>
+  
 
-<h6 class="usa-heading-alt">Two levels</h6>
-
-<div class="usa-grid-full">
-  <aside class="usa-width-one-fourth">
-    <ul class="usa-sidenav-list">
-      <li>
-        <a href="javascript:void(0);">Parent link</a>
-      </li>
-      <li>
-        <a class="usa-current" href="javascript:void(0);">Current page</a>
-        <ul class="usa-sidenav-sub_list">
-          <li>
-            <a href="javascript:void(0);">Child link</a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">Child link</a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">Child link</a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">Child link</a>
-          </li>
-          <li>
-            <a class="usa-current" href="javascript:void(0);">Child Link</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="javascript:void(0);">Parent link</a>
-      </li>
     </ul>
-  </aside>
-</div>
+    
+  </li>
+  
+  <li>
+    <a href="">
+      Another link
+    </a>
+    
+  </li>
+  
 
-<h6 class="usa-heading-alt">Three levels</h6>
+</ul>
 
-<div class="usa-grid-full">
-  <aside class="usa-width-one-fourth">
-    <ul class="usa-sidenav-list">
-      <li>
-        <a href="javascript:void(0);">Parent link</a>
-      </li>
-      <li>
-        <a class="usa-current" href="javascript:void(0);">Current page</a>
-        <ul class="usa-sidenav-sub_list">
-          <li>
-            <a href="javascript:void(0);">Child link</a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">Child link</a>
-            <ul class="usa-sidenav-sub_list">
-              <li>
-                <a href="javascript:void(0);">Grandchild link</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">Grandchild link</a>
-              </li>
-              <li>
-                <a class="usa-current" href="javascript:void(0);">Grandchild link</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript:void(0);">Child link</a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">Child link</a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">Child link</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="javascript:void(0);">Parent link</a>
-      </li>
-    </ul>
-  </aside>
-</div>

@@ -1,6 +1,6 @@
----
-permalink: /preview-components/icons/
-layout: base
+--- 
+permalink: /preview-components/icons
+layout: base 
 title: Icons
 ---
 

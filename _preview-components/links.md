@@ -1,6 +1,6 @@
----
-permalink: /preview-components/links/
-layout: base
+--- 
+permalink: /preview-components/links
+layout: base 
 title: Links
 ---
 
@@ -13,3 +13,4 @@ title: Links
 <div class="usa-background-dark">
   <p><a href="javascript:void(0);">This</a> is a text link on a dark background.</p>
 </div>
+
