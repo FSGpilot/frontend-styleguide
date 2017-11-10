@@ -1,7 +1,4 @@
-var download = require("gulp-download");
-var edit = require('gulp-edit');
 var remoteSrc = require('gulp-remote-src');
-var all = require('gulp-all')
 var rename = require("gulp-rename");
 var modifyFile = require('gulp-modify-file');
 
@@ -97,13 +94,18 @@ title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
 }
 
 gulp.task(task, function (done) {
-    var url =  process.env.FRACTAL_BASE_URL + '/components/render/';
+    var baseUrl = process.env.FRACTAL_BASE_URL;
+    if (baseUrl == null) {
+        baseUrl = "https://github.com/jonasjensen77/frontend-styleguide-components"
+        dutil.logMessage(task, 'Environment variable not found. Fetching components from github');        
+    }
+    var url =  baseUrl + '/components/render/';
     dutil.logMessage(task, 'Creating mardown files from url: ' + url);
     remoteSrc(pages, { 
         base : url,
 		followAllRedirects:true
     })
-    .on('error',dutil.logError)
+    .on('error', dutil.logError)
     .pipe(modifyFile(createMarkdown))
     .pipe(rename(function(path){
         path.extname = ".md";
