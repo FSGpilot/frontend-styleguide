@@ -1,11 +1,16 @@
-var remoteSrc = require('gulp-remote-src');
-var rename = require("gulp-rename");
-var modifyFile = require('gulp-modify-file');
-
-
 var gulp = require('gulp');
 var dutil = require('./doc-util');
 var task = 'html';
+
+var remoteSrc = require('gulp-remote-src');
+var rename = require("gulp-rename");
+var modifyFile = require('gulp-modify-file');
+var plumber = require('gulp-plumber');
+
+var suffix = '/components/render/';
+var envVariable = process.env.FRACTAL_BASE_URL;
+var localUrl = envVariable + suffix; 
+var onlineUrl = 'https://jonasjensen77.github.io/frontend-styleguide-components/' + suffix;
 
 var pages = ['accordion--bordered',
 'accordion--default',
@@ -93,23 +98,47 @@ title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
     return header + content;
 }
 
-gulp.task(task, function (done) {
-    var baseUrl = process.env.FRACTAL_BASE_URL;
-    if (baseUrl == null) {
-        baseUrl = "https://github.com/jonasjensen77/frontend-styleguide-components"
-        dutil.logMessage(task, 'Environment variable not found. Fetching components from github');        
-    }
-    var url =  baseUrl + '/components/render/';
-    dutil.logMessage(task, 'Creating mardown files from url: ' + url);
+function FetchAndCreateMarkdowns(url, errorCallback) {
+    var success = true;
     remoteSrc(pages, { 
         base : url,
 		followAllRedirects:true
     })
-    .on('error', dutil.logError)
+    .on('error', function(obj, callback) {
+        if (success) {
+            errorCallback();   
+            success = false;            
+        }
+    })
     .pipe(modifyFile(createMarkdown))
     .pipe(rename(function(path){
-        path.extname = ".md";
+        path.extname = ".md";        
     }))
     .pipe(gulp.dest('_preview-components'));
-    done;
+}
+
+function FetchLocal() {
+    dutil.logMessage(task, 'Fetching from: ' + localUrl); 
+    FetchAndCreateMarkdowns(localUrl, function() {
+        dutil.logError(task, 'Failed fetching from: ' + localUrl);  
+        FetchOnline();       
+    });
+}
+
+function FetchOnline() {
+    dutil.logMessage(task, 'Fetching from: ' + onlineUrl);  
+    FetchAndCreateMarkdowns(onlineUrl, function() {
+        dutil.logError(task, 'Failed fetching from: ' + localUrl);  
+    });     
+}
+
+gulp.task(task, function (done) {
+    if (envVariable == null) {
+        dutil.logMessage(task, 'Environment variable FRACTAL_BASE_URL not found.');         
+        FetchOnline();
+    } else {
+        dutil.logMessage(task, 'Environment variable FRACTAL_BASE_URL found: ' + envVariable);                 
+        FetchLocal();
+    }
+    done();
 });
