@@ -6,7 +6,7 @@ body {
 // sass-lint:disable-all
 // Imports
 @import 'variables';
-@import 'vendor/uswds/dkwds-borgerdk';
+@import 'vendor/dkwds/dkwds-borgerdk';
 @import 'styleguide-base';
 
 ///////// in the following im overwriting stuff hack-n-slash. In the "real" product this should be done in a smarter way ////////

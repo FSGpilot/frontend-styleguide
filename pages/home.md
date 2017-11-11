@@ -57,13 +57,13 @@ piece of cake. You can also read about customization in our
   <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
   Ask us about customization
 </a>
-{% endcapture %}
+{% endcapture %} 
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="row">
+  <div class="col-sm-6">
     {{ training | markdownify }}
   </div>
-  <div class="usa-width-one-half">
+  <div class="col-sm-6">
     {{ customization | markdownify }}
   </div>
 </div>

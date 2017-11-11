@@ -20,5 +20,7 @@ subnav:
   href: '/components/fundament/dengodetabel/'
 - text: Den Gode Formular
   href: '/components/fundament/dengodeformular/'
+- text: Grids
+  href: '/components/fundament/grids/'
 ---
 

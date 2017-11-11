@@ -7,8 +7,10 @@ var rename = require("gulp-rename");
 var modifyFile = require('gulp-modify-file');
 var plumber = require('gulp-plumber');
 
+var useRemoteHtml = false;
 var suffix = '/components/render/';
 var envVariable = process.env.FRACTAL_BASE_URL;
+// dutil.logMessage(task, 'process.env: ' + JSON.stringify(process.env)); 
 var localUrl = envVariable + suffix; 
 var onlineUrl = 'https://jonasjensen77.github.io/frontend-styleguide-components/' + suffix;
 
@@ -118,11 +120,12 @@ function FetchAndCreateMarkdowns(url, errorCallback) {
 }
 
 function FetchLocal() {
-    dutil.logMessage(task, 'Fetching from: ' + localUrl); 
-    FetchAndCreateMarkdowns(localUrl, function() {
-        dutil.logError(task, 'Failed fetching from: ' + localUrl);  
-        FetchOnline();       
-    });
+    gulp.src('./node_modules/dkwds/build/components/render/**/*')
+    .pipe(modifyFile(createMarkdown))
+    .pipe(rename(function(path){
+        path.extname = ".md";        
+    }))
+    .pipe(gulp.dest('_preview-components'));
 }
 
 function FetchOnline() {
@@ -133,11 +136,11 @@ function FetchOnline() {
 }
 
 gulp.task(task, function (done) {
-    if (envVariable == null) {
-        dutil.logMessage(task, 'Environment variable FRACTAL_BASE_URL not found.');         
+    if (useRemoteHtml) {
+        dutil.logMessage(task, 'Using remote HTML');         
         FetchOnline();
     } else {
-        dutil.logMessage(task, 'Environment variable FRACTAL_BASE_URL found: ' + envVariable);                 
+        dutil.logMessage(task, 'Fetching html locally');                 
         FetchLocal();
     }
     done();

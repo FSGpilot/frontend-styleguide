@@ -37,8 +37,8 @@ Then, add the following folders into a relevant place in your code base — like
 ```
 uswds-{{ site.version }}/
 ├── js/
-│   ├── uswds.min.js.map
-│   ├── uswds.min.js
+│   ├── dkwds.min.js.map
+│   ├── dkwds.min.js
 │   └── uswds.js
 ├── css/
 │   ├── uswds.min.css.map
@@ -60,7 +60,7 @@ Add this to your `<head>` element:
 Add this before the closing `</body>` tag:
 
 ```html
-<script src="/path/to/your/assets/js/lib/uswds.min.js"></script>
+<script src="/path/to/your/assets/js/lib/dkwds.min.js"></script>
 ```
 
 We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size

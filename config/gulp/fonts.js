@@ -4,9 +4,9 @@ var task  = 'fonts';
 
 gulp.task(task, function (done) {
 
-  dutil.logMessage(task, 'Copying fonts from uswds');
+  dutil.logMessage(task, 'Copying fonts from dkwds');
 
-  var stream = gulp.src('./node_modules/uswds/src/fonts/**/*')
+  var stream = gulp.src('./node_modules/dkwds/src/fonts/**/*')
     .pipe(gulp.dest('assets/fonts'));
 
   return stream;

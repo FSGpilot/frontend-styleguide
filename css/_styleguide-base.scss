@@ -1774,6 +1774,7 @@ $color-blue-50: #3572b0; //Added by mgb - used for links
 
 //////////////////// version-switcher /////////////////////
 .version-switcher-wrapper{
+  display:none; //we're not implementing this untill later
   position: relative;
   float: right;
   margin-right: 29px;
