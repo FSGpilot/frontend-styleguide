@@ -13,6 +13,9 @@ var envVariable = process.env.FRACTAL_BASE_URL;
 // dutil.logMessage(task, 'process.env: ' + JSON.stringify(process.env)); 
 var localUrl = envVariable + suffix; 
 var onlineUrl = 'https://jonasjensen77.github.io/frontend-styleguide-components/' + suffix;
+var distComponentCode = '_includes/code/components';
+var distComponentPreview = '_includes/code/components-preview';
+var distJekyllComponentPreview = '_preview-components';
 
 var pages = ['accordion--bordered',
 'accordion--default',
@@ -119,13 +122,21 @@ function FetchAndCreateMarkdowns(url, errorCallback) {
     .pipe(gulp.dest('_preview-components'));
 }
 
+/**
+ * For this function to work properly, you need to run npm link in your local component-library
+ * Then run 'npm run fb' to create the build/render folder with all the component html.
+ * This function copies the html to first the "code" folder for display in the "code-accordions" on the doc-site
+ * Then it copies the html into .md files for use in the previews. To make this work the md-files need to be placed many placed so jekyll doesn't complain (...)
+ */
 function FetchLocal() {
     gulp.src('./node_modules/dkwds/build/components/render/**/*')
+    .pipe(gulp.dest(distComponentCode))
     .pipe(modifyFile(createMarkdown))
     .pipe(rename(function(path){
         path.extname = ".md";        
     }))
-    .pipe(gulp.dest('_preview-components'));
+    .pipe(gulp.dest(distComponentPreview))
+    .pipe(gulp.dest(distJekyllComponentPreview));
 }
 
 function FetchOnline() {

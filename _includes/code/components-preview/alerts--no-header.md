@@ -1,0 +1,19 @@
+--- 
+permalink: /preview-components/alerts--no-header.html
+layout: base 
+title: Alerts--no-header.html
+---
+
+
+
+
+
+
+<div class="usa-alert  usa-alert-info" >
+  <div class="usa-alert-body"><p class="usa-alert-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+  </div>
+</div>
+
+
+
+

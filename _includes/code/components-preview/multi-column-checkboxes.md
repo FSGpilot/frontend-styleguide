@@ -1,0 +1,24 @@
+--- 
+permalink: /preview-components/multi-column-checkboxes.html
+layout: base 
+title: Multi-column-checkboxes.html
+---
+
+<main class="usa-grid usa-section">
+  <fieldset class="usa-fieldset-inputs usa-sans">
+    <legend class="usa-sr-only">Historical figures 1</legend>
+    <div class="usa-width-one-third">
+      <input id="washington" type="checkbox" name="historical-figures-1" value="washington">
+      <label for="washington">Booker T. Washington</label>
+    </div>
+    <div class="usa-width-one-third">
+      <input id="douglass" type="checkbox" name="historical-figures-1" value="douglass">
+      <label for="douglass">Frederick Douglass</label>
+    </div>
+    <div class="usa-width-one-third">
+      <input id="truth" type="checkbox" name="historical-figures-1" value="truth" checked>
+      <label for="truth">Sojourner Truth</label>
+    </div>
+  </fieldset>
+</main>
+

@@ -15,8 +15,8 @@ subnav:
   href: '#slim-footer'
 ---
 
-{% include code/preview.html component="footers" %}
-{% include code/accordion.html component="footers" %}
+{% include code/preview.html component="footer.html" %}
+{% include code/accordion.html component="footer" %}
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="footer-docs">

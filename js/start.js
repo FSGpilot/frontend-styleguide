@@ -11,7 +11,7 @@ require('./vendor/stickyfill.min.js');
 $(document).ready(function () {
   var currentlyClicked = Cookies.get('selected-preview');
   if (currentlyClicked == null) {
-    currentlyClicked = 'mobil';
+    currentlyClicked = 'tablet'; //mobil, tablet, desktop, full
   }
   $('#' + currentlyClicked).trigger('click');
 

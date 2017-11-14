@@ -242,7 +242,7 @@ body {
   }
 
   em {
-    font-family: $font-serif;
+    font-family: $font-sans;
     font-size: 1.4rem;
     line-height: 4rem;
 
@@ -1138,7 +1138,7 @@ code {
   &.serif-body {
     .usa-font-example {
       p {
-        font-family: $font-serif;
+        font-family: $font-heading; //TODO: this is confusing serif --> sans / heading etc. Update this code based on the new fonts ...
         font-size: rem(15px);
         line-height: $lead-line-height;
       }
@@ -1208,7 +1208,7 @@ code {
   &.serif-body {
     .usa-font-example {
       p {
-        font-family: $font-serif;
+        font-family: $font-heading; //$font-serif;
         font-size: rem(15px);
         line-height: $lead-line-height;
       }
