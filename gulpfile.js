@@ -52,6 +52,11 @@ gulp.task( 'default', function ( done ) {
     'This task generates the code snippets based off of uswds package html files.'
   );
 
+  dutil.logCommand(
+    'gulp publish',
+    'This task generates a /docs folder with the same content as in /_site/, ready for publishing on Github Pages (just push it to the master-branch).'
+  );
+
   done();
 
 } );

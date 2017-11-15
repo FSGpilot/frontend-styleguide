@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Text-input.html | POC version 1.0 - Frontend styleguide</title>
+<meta property="og:title" content="Text-input.html | POC version 1.0 - Frontend styleguide">
+
+
+<meta name="description" content="&amp;lt;label for=&quot;input-type-text&quot; class=&quot;&quot;&amp;gt;Text input label&amp;lt;/label&amp;gt;
+ &amp;lt;input class=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;">
+<meta property="og:description" content="&amp;lt;label for=&quot;input-type-text&quot; class=&quot;&quot;&amp;gt;Text input label&amp;lt;/label&amp;gt;
+ &amp;lt;input class=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="http://localhost:4000/preview-components/text-input.html">
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide-poc/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide-poc/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide-poc/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide-poc/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide-poc/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide-poc/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>  
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide-poc';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+
+  </head>
+  <body class="page-text-input-html layout-base">
+    <div class="highlighter-rouge"><pre class="highlight"><code> &lt;label for="input-type-text" class=""&gt;Text input label&lt;/label&gt;
+ &lt;input class="" id="input-type-text" name="" type="text"&gt;
+  
+
+
+  
+   
+ &lt;label for="input-focus" class=""&gt;Text input focused&lt;/label&gt;
+ &lt;input class="usa-focus" id="input-focus" name="" type="text"&gt;
+</code></pre>
+</div>
+
+<div class="usa-input-error">
+    <label class="usa-input-error-label" for="input-error">Text input error</label>
+    <span class="usa-input-error-message" id="input-error-message" role="alert">Helpful error message</span>
+    <input id="input-error" name="" type="text" aria-describedby="input-error-message" />
+  </div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> &lt;label for="input-success" class=""&gt;Text input success&lt;/label&gt;
+ &lt;input class="usa-input-success" id="input-success" name="" type="text"&gt;
+  
+
+
+  
+   
+ &lt;label for="input-type-textarea" class=""&gt;Text area label&lt;/label&gt;
+ &lt;input class="" id="input-type-textarea" name="" type="text"&gt;
+</code></pre>
+</div>
+
+
+    <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
+<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+
+  </body>
+</html>

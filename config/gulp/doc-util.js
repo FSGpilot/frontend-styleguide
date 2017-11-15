@@ -129,7 +129,7 @@ module.exports = {
 
   logIntroduction: function (message) {
 
-    message = message || 'U.S. Web Design Standards Documentation';
+    message = message || 'Frontend Styleguide Documentation';
 
     gutil.log(
       chalk.yellow('v' + pkg.version),

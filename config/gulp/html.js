@@ -129,7 +129,7 @@ function FetchAndCreateMarkdowns(url, errorCallback) {
  * Then it copies the html into .md files for use in the previews. To make this work the md-files need to be placed many placed so jekyll doesn't complain (...)
  */
 function FetchLocal() {
-    gulp.src('./node_modules/dkwds/build/components/render/**/*')
+    return gulp.src('./node_modules/dkwds/build/components/render/**/*')
     .pipe(gulp.dest(distComponentCode))
     .pipe(modifyFile(createMarkdown))
     .pipe(rename(function(path){

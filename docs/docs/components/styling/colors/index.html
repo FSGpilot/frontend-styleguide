@@ -1,0 +1,2157 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Farver | POC version 1.0 - Frontend styleguide</title>
+<meta property="og:title" content="Farver | POC version 1.0 - Frontend styleguide">
+
+
+<meta name="description" content="Palette
+  
+  This palette is designed to support a range of distinct visual styles that continue to feel connected. The intent of the palette is to convey a warm and open American spirit, with bright saturated tints of blue and red, grounded in sophisticated deeper shades of cool blues and grays. These colors — combined with clear hierarchy, good information design, and ample white space — should leave users feeling welcomed and in good hands.
+
+This is a simple, minimalist color palette. Shades of blue dominate, providing a neutral backdrop on which brighter shades, clean type treatment, and bright white content areas &quot;pop&quot; on the page.
+
+Primary colors
+
+This palette’s primary colors are blue, gray, and white. Blue is commonly associated with trust, confidence, and sincerity; it is also used to represent calmness and responsibility.
+
+
+  
+    
+      #0071bc
+      $color-primary
+    
+  
+  
+    
+      #205493
+      $color-primary-darker
+    
+  
+  
+    
+      #112e51
+      $color-primary-darkest
+    
+  
+  
+    
+      #212121
+      $color-base
+    
+  
+
+
+
+  
+    
+      #323a45
+      $color-gray-dark
+    
+  
+  
+    
+      #aeb0b5
+      $color-gray-light
+    
+  
+  
+    
+      #ffffff
+      $color-white
+    
+  
+
+
+Secondary colors
+
+These are accent colors to provide additional lightness and style to pages looking for a more modern flair. These colors should be used to highlight important features on a page, such as buttons, or for visual style elements, such as illustrations. They should be used sparingly and never draw the eye to more than one piece of information at a time.
+
+
+  
+    
+    
+      #02bfe7
+      $color-primary-alt
+  
+  
+    
+    
+      #046b99
+      $color-primary-alt-darkest
+  
+  
+    
+    
+      #00a6d2
+      $color-primary-alt-dark
+  
+  
+    
+    
+      #9bdaf1
+      $color-primary-alt-light
+  
+  
+    
+    
+      #e1f3f8
+      $color-primary-alt-lightest
+  
+
+
+
+  
+    
+    
+      #e31c3d
+      $color-secondary
+  
+  
+    
+    
+      #981b1e
+      $color-secondary-darkest
+  
+  
+    
+    
+      #cd2026
+      $color-secondary-dark
+  
+  
+    
+    
+      #e59393
+      $color-secondary-light
+  
+  
+    
+    
+      #f9dede
+      $color-secondary-lightest
+  
+
+
+Background colors
+
+These colors are used largely for background blocks and large content areas. When alternating between tones, be sure to use enough contrast between adjacent colors.
+
+
+  
+    
+    
+      #323a45
+      $color-gray-dark
+  
+  
+    
+    
+      #5b616b
+      $color-gray
+  
+  
+    
+    
+      #aeb0b5
+      $color-gray-light
+  
+  
+    
+    
+      #d6d7d9
+      $color-gray-lighter
+  
+  
+    
+    
+      #f1f1f1
+      $color-gray-lightest
+  
+
+
+
+  
+    
+    
+      #494440
+      $color-gray-warm-dark
+  
+  
+    
+    
+      #e4e2e0
+      $color-gray-warm-light
+  
+
+
+
+  
+    
+    
+      #112e51
+      $color-primary-darkest
+  
+  
+    
+    
+      #dce4ef
+      $color-gray-cool-light
+  
+
+
+Tertiary colors
+
+These colors are used primarily for content-specific needs, such as alerts and illustrations. They should never overpower the primary colors.
+
+
+  
+    
+    
+      #fdb81e
+      $color-gold
+  
+  
+    
+    
+      #f9c642
+      $color-gold-light
+  
+  
+    
+    
+      #fad980
+      $color-gold-lighter
+  
+  
+    
+    
+      #fff1d2
+      $color-gold-lightest
+  
+
+
+
+  
+    
+    
+      #2e8540
+      $color-green
+  
+  
+    
+    
+      #4aa564
+      $color-green-light
+  
+  
+    
+    
+      #94bfa2
+      $color-green-lighter
+  
+  
+    
+    
+      #e7f4e4
+      $color-green-lightest
+  
+
+
+
+  
+    
+    
+      #205493
+      $color-cool-blue
+  
+  
+    
+    
+      #4773aa
+      $color-cool-blue-light
+  
+  
+    
+    
+      #8ba6ca
+      $color-cool-blue-lighter
+  
+  
+    
+    
+      #dce4ef
+      $color-cool-blue-lightest
+  
+
+
+Special state colors
+
+
+  
+    
+    
+    #3e94cf
+    $color-focus
+  
+
+
+
+  
+    
+    
+    #4c2c92
+    $color-visited
+  
+
+
+
+
+
+  Text accessibility
+  
+  WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of at least 4.5:1. This ensures that viewers who cannot see the full color spectrum are able to read the text.
+The options below offer color palette combinations that fall within the range of Section 508 compliant foreground/background color contrast ratios. To ensure that text remains accessible, use only these permitted color combinations.
+If you choose to customize beyond this palette, this color contrast tool is a useful resource for testing the compliance of any color combination.
+Fully accessible combinations
+
+Colors on a white background
+
+
+  
+    
+      primary-darkest on white
+    
+    
+      primary-darker on white
+    
+    
+      primary on white
+    
+    
+      cool-blue-light on white
+    
+    
+      primary-alt-darkest on white
+    
+    
+      green on white
+    
+    
+      visited on white
+    
+  
+  
+    
+      base on white
+    
+    
+      gray-dark on white
+    
+    
+      gray on white
+    
+    
+      gray-warm-dark on white
+    
+    
+      secondary-darkest on white
+    
+    
+      secondary-dark on white
+    
+    
+      secondary on white
+    
+  
+
+
+Neutrals on a colored background
+
+
+  
+    
+      white on base
+    
+    
+      white on gray-warm-dark
+    
+    
+      white on gray-dark
+    
+    
+      white on gray
+    
+    
+      white on primary-darkest
+    
+    
+      white on primary-darker
+    
+    
+      white on primary
+    
+    
+      white on cool-blue-light
+    
+    
+      white on primary-alt-darkest
+    
+    
+      base on primary-alt-dark
+    
+    
+      base on primary-alt
+    
+    
+      white on green
+    
+    
+      base on green-light
+    
+    
+      base on gold
+    
+    
+      base on gold-light
+    
+    
+      white on secondary-darkest
+    
+    
+      white on secondary-dark
+    
+    
+      white on secondary
+    
+  
+  
+    
+      base on gray-light
+    
+    
+      base on gray-lighter
+    
+    
+      base on gray-warm-light
+    
+    
+      base on cool-blue-lighter
+    
+    
+      base on cool-blue-lightest
+    
+    
+      base on primary-alt-lightest
+    
+    
+      base on green-lighter
+    
+    
+      base on green-lightest
+    
+    
+      base on gold-lighter
+    
+    
+      base on gold-lightest
+    
+    
+      base on secondary-lightest">
+<meta property="og:description" content="Palette
+  
+  This palette is designed to support a range of distinct visual styles that continue to feel connected. The intent of the palette is to convey a warm and open American spirit, with bright saturated tints of blue and red, grounded in sophisticated deeper shades of cool blues and grays. These colors — combined with clear hierarchy, good information design, and ample white space — should leave users feeling welcomed and in good hands.
+
+This is a simple, minimalist color palette. Shades of blue dominate, providing a neutral backdrop on which brighter shades, clean type treatment, and bright white content areas &quot;pop&quot; on the page.
+
+Primary colors
+
+This palette’s primary colors are blue, gray, and white. Blue is commonly associated with trust, confidence, and sincerity; it is also used to represent calmness and responsibility.
+
+
+  
+    
+      #0071bc
+      $color-primary
+    
+  
+  
+    
+      #205493
+      $color-primary-darker
+    
+  
+  
+    
+      #112e51
+      $color-primary-darkest
+    
+  
+  
+    
+      #212121
+      $color-base
+    
+  
+
+
+
+  
+    
+      #323a45
+      $color-gray-dark
+    
+  
+  
+    
+      #aeb0b5
+      $color-gray-light
+    
+  
+  
+    
+      #ffffff
+      $color-white
+    
+  
+
+
+Secondary colors
+
+These are accent colors to provide additional lightness and style to pages looking for a more modern flair. These colors should be used to highlight important features on a page, such as buttons, or for visual style elements, such as illustrations. They should be used sparingly and never draw the eye to more than one piece of information at a time.
+
+
+  
+    
+    
+      #02bfe7
+      $color-primary-alt
+  
+  
+    
+    
+      #046b99
+      $color-primary-alt-darkest
+  
+  
+    
+    
+      #00a6d2
+      $color-primary-alt-dark
+  
+  
+    
+    
+      #9bdaf1
+      $color-primary-alt-light
+  
+  
+    
+    
+      #e1f3f8
+      $color-primary-alt-lightest
+  
+
+
+
+  
+    
+    
+      #e31c3d
+      $color-secondary
+  
+  
+    
+    
+      #981b1e
+      $color-secondary-darkest
+  
+  
+    
+    
+      #cd2026
+      $color-secondary-dark
+  
+  
+    
+    
+      #e59393
+      $color-secondary-light
+  
+  
+    
+    
+      #f9dede
+      $color-secondary-lightest
+  
+
+
+Background colors
+
+These colors are used largely for background blocks and large content areas. When alternating between tones, be sure to use enough contrast between adjacent colors.
+
+
+  
+    
+    
+      #323a45
+      $color-gray-dark
+  
+  
+    
+    
+      #5b616b
+      $color-gray
+  
+  
+    
+    
+      #aeb0b5
+      $color-gray-light
+  
+  
+    
+    
+      #d6d7d9
+      $color-gray-lighter
+  
+  
+    
+    
+      #f1f1f1
+      $color-gray-lightest
+  
+
+
+
+  
+    
+    
+      #494440
+      $color-gray-warm-dark
+  
+  
+    
+    
+      #e4e2e0
+      $color-gray-warm-light
+  
+
+
+
+  
+    
+    
+      #112e51
+      $color-primary-darkest
+  
+  
+    
+    
+      #dce4ef
+      $color-gray-cool-light
+  
+
+
+Tertiary colors
+
+These colors are used primarily for content-specific needs, such as alerts and illustrations. They should never overpower the primary colors.
+
+
+  
+    
+    
+      #fdb81e
+      $color-gold
+  
+  
+    
+    
+      #f9c642
+      $color-gold-light
+  
+  
+    
+    
+      #fad980
+      $color-gold-lighter
+  
+  
+    
+    
+      #fff1d2
+      $color-gold-lightest
+  
+
+
+
+  
+    
+    
+      #2e8540
+      $color-green
+  
+  
+    
+    
+      #4aa564
+      $color-green-light
+  
+  
+    
+    
+      #94bfa2
+      $color-green-lighter
+  
+  
+    
+    
+      #e7f4e4
+      $color-green-lightest
+  
+
+
+
+  
+    
+    
+      #205493
+      $color-cool-blue
+  
+  
+    
+    
+      #4773aa
+      $color-cool-blue-light
+  
+  
+    
+    
+      #8ba6ca
+      $color-cool-blue-lighter
+  
+  
+    
+    
+      #dce4ef
+      $color-cool-blue-lightest
+  
+
+
+Special state colors
+
+
+  
+    
+    
+    #3e94cf
+    $color-focus
+  
+
+
+
+  
+    
+    
+    #4c2c92
+    $color-visited
+  
+
+
+
+
+
+  Text accessibility
+  
+  WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of at least 4.5:1. This ensures that viewers who cannot see the full color spectrum are able to read the text.
+The options below offer color palette combinations that fall within the range of Section 508 compliant foreground/background color contrast ratios. To ensure that text remains accessible, use only these permitted color combinations.
+If you choose to customize beyond this palette, this color contrast tool is a useful resource for testing the compliance of any color combination.
+Fully accessible combinations
+
+Colors on a white background
+
+
+  
+    
+      primary-darkest on white
+    
+    
+      primary-darker on white
+    
+    
+      primary on white
+    
+    
+      cool-blue-light on white
+    
+    
+      primary-alt-darkest on white
+    
+    
+      green on white
+    
+    
+      visited on white
+    
+  
+  
+    
+      base on white
+    
+    
+      gray-dark on white
+    
+    
+      gray on white
+    
+    
+      gray-warm-dark on white
+    
+    
+      secondary-darkest on white
+    
+    
+      secondary-dark on white
+    
+    
+      secondary on white
+    
+  
+
+
+Neutrals on a colored background
+
+
+  
+    
+      white on base
+    
+    
+      white on gray-warm-dark
+    
+    
+      white on gray-dark
+    
+    
+      white on gray
+    
+    
+      white on primary-darkest
+    
+    
+      white on primary-darker
+    
+    
+      white on primary
+    
+    
+      white on cool-blue-light
+    
+    
+      white on primary-alt-darkest
+    
+    
+      base on primary-alt-dark
+    
+    
+      base on primary-alt
+    
+    
+      white on green
+    
+    
+      base on green-light
+    
+    
+      base on gold
+    
+    
+      base on gold-light
+    
+    
+      white on secondary-darkest
+    
+    
+      white on secondary-dark
+    
+    
+      white on secondary
+    
+  
+  
+    
+      base on gray-light
+    
+    
+      base on gray-lighter
+    
+    
+      base on gray-warm-light
+    
+    
+      base on cool-blue-lighter
+    
+    
+      base on cool-blue-lightest
+    
+    
+      base on primary-alt-lightest
+    
+    
+      base on green-lighter
+    
+    
+      base on green-lightest
+    
+    
+      base on gold-lighter
+    
+    
+      base on gold-lightest
+    
+    
+      base on secondary-lightest">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="http://localhost:4000/components/styling/colors/">
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide-poc/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide-poc/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide-poc/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide-poc/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide-poc/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide-poc/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>  
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide-poc';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+
+  </head>
+  <body class="page-farver layout-styleguide">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header" role="banner">
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
+          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  <select class="style-switcher" name="Style switcher">
+    <option value="styleguide">Basis theme</option>
+    <option value="virkdk">Virk.dk theme</option>
+    <option value="borgerdk">Borger.dk theme</option>
+  </select>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-designsystem"
+  
+  class="usa-current"
+  aria-expanded="true"
+  >
+  Designsystem
+</button>
+<ul id="nav-designsystem" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/" class="usa-current">Styling</a>
+
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
+  
+  aria-expanded="false"
+  >
+  Kom godt i gang
+</button>
+<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/developers/">Til udviklerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
+  
+  aria-expanded="false"
+  >
+  Om designsystemet
+</button>
+<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky">
+  
+  
+  <ul class="usa-sidenav-list">
+    
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/" class="usa-current">Styling</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="usa-sidenav-sub_list">
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/billeder-og-grafik/">Billeder og grafik</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/colors/" class="usa-current">Farver</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="usa-sidenav-sub_list">
+  
+  <li>
+    
+      
+
+
+<a href="#palette">Palette</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#text-accessibility">Text accessibility</a>
+
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/ikoner/">Ikoner</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/kanter/">Kanter, streger og skygger</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/mikrointeraktioner/">Mikrointeraktioner</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/typography/">Typography</a>
+
+
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      
+        
+      <p class="site-subheading">Atomer</p>
+        
+      
+      <h1 id="farver">Farver</h1>
+    </header>
+
+    
+<p class="usa-font-lead">A flexible, yet distinctly American palette designed to communicate warmth and trustworthiness while meeting the highest standards of 508 color contrast requirements.</p>
+
+
+
+
+    
+<section id="section-/styling/colors/01-palette">
+  <h2 class="usa-heading heading-margin-alt" id="palette">Palette</h2>
+  
+  <p>This palette is designed to support a range of distinct visual styles that continue to feel connected. The intent of the palette is to convey a warm and open American spirit, with bright saturated tints of blue and red, grounded in sophisticated deeper shades of cool blues and grays. These colors — combined with clear hierarchy, good information design, and ample white space — should leave users feeling welcomed and in good hands.</p>
+
+<p>This is a simple, minimalist color palette. Shades of blue dominate, providing a neutral backdrop on which brighter shades, clean type treatment, and bright white content areas "pop" on the page.</p>
+
+<h4 class="usa-heading">Primary colors</h4>
+
+<p>This palette’s primary colors are blue, gray, and white. Blue is commonly associated with trust, confidence, and sincerity; it is also used to represent calmness and responsibility.</p>
+
+<div class="usa-grid-full usa-color-row usa-primary-color-section">
+  <div class="usa-color-square usa-color-primary">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#0071bc</p>
+      <p class="usa-color-name">$color-primary</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-primary-darker usa-mobile-end-row">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#205493</p>
+      <p class="usa-color-name">$color-primary-darker</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-primary-darkest">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#112e51</p>
+      <p class="usa-color-name">$color-primary-darkest</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-base usa-end-row">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#212121</p>
+      <p class="usa-color-name">$color-base</p>
+    </div>
+  </div>
+</div>
+
+<div class="usa-grid-full usa-color-row usa-primary-color-section">
+  <div class="usa-color-square usa-color-gray-dark">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#323a45</p>
+      <p class="usa-color-name">$color-gray-dark</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-gray-light usa-mobile-end-row">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#aeb0b5</p>
+      <p class="usa-color-name">$color-gray-light</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-white">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#ffffff</p>
+      <p class="usa-color-name">$color-white</p>
+    </div>
+  </div>
+</div>
+
+<h4 class="usa-heading">Secondary colors</h4>
+
+<p>These are accent colors to provide additional lightness and style to pages looking for a more modern flair. These colors should be used to highlight important features on a page, such as buttons, or for visual style elements, such as illustrations. They should be used sparingly and never draw the eye to more than one piece of information at a time.</p>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-primary-alt">
+    </div>
+      <p class="usa-color-hex">#02bfe7</p>
+      <p class="usa-color-name">$color-primary-alt</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-darkest">
+    </div>
+      <p class="usa-color-hex">#046b99</p>
+      <p class="usa-color-name">$color-primary-alt-darkest</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-dark">
+    </div>
+      <p class="usa-color-hex">#00a6d2</p>
+      <p class="usa-color-name">$color-primary-alt-dark</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-light">
+    </div>
+      <p class="usa-color-hex">#9bdaf1</p>
+      <p class="usa-color-name">$color-primary-alt-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-lightest">
+    </div>
+      <p class="usa-color-hex">#e1f3f8</p>
+      <p class="usa-color-name">$color-primary-alt-lightest</p>
+  </div>
+</div>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-secondary">
+    </div>
+      <p class="usa-color-hex">#e31c3d</p>
+      <p class="usa-color-name">$color-secondary</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary-darkest">
+    </div>
+      <p class="usa-color-hex">#981b1e</p>
+      <p class="usa-color-name">$color-secondary-darkest</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary-dark">
+    </div>
+      <p class="usa-color-hex">#cd2026</p>
+      <p class="usa-color-name">$color-secondary-dark</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary-light">
+    </div>
+      <p class="usa-color-hex">#e59393</p>
+      <p class="usa-color-name">$color-secondary-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary-lightest">
+    </div>
+      <p class="usa-color-hex">#f9dede</p>
+      <p class="usa-color-name">$color-secondary-lightest</p>
+  </div>
+</div>
+
+<h4 class="usa-heading">Background colors</h4>
+
+<p>These colors are used largely for background blocks and large content areas. When alternating between tones, be sure to use enough contrast between adjacent colors.</p>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-gray-dark">
+    </div>
+      <p class="usa-color-hex">#323a45</p>
+      <p class="usa-color-name">$color-gray-dark</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-gray">
+    </div>
+      <p class="usa-color-hex">#5b616b</p>
+      <p class="usa-color-name">$color-gray</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-gray-light">
+    </div>
+      <p class="usa-color-hex">#aeb0b5</p>
+      <p class="usa-color-name">$color-gray-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-gray-lighter">
+    </div>
+      <p class="usa-color-hex">#d6d7d9</p>
+      <p class="usa-color-name">$color-gray-lighter</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-gray-lightest">
+    </div>
+      <p class="usa-color-hex">#f1f1f1</p>
+      <p class="usa-color-name">$color-gray-lightest</p>
+  </div>
+</div>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-gray-warm-dark">
+    </div>
+      <p class="usa-color-hex">#494440</p>
+      <p class="usa-color-name">$color-gray-warm-dark</p>
+  </div>
+  <div class="color-small usa-end-row">
+    <div class="usa-color-short usa-color-gray-warm-light">
+    </div>
+      <p class="usa-color-hex">#e4e2e0</p>
+      <p class="usa-color-name">$color-gray-warm-light</p>
+  </div>
+</div>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-primary-darkest">
+    </div>
+      <p class="usa-color-hex">#112e51</p>
+      <p class="usa-color-name">$color-primary-darkest</p>
+  </div>
+  <div class="color-small usa-end-row">
+    <div class="usa-color-short usa-color-gray-cool-light">
+    </div>
+      <p class="usa-color-hex">#dce4ef</p>
+      <p class="usa-color-name">$color-gray-cool-light</p>
+  </div>
+</div>
+
+<h4 class="usa-heading">Tertiary colors</h4>
+
+<p>These colors are used primarily for content-specific needs, such as alerts and illustrations. They should never overpower the primary colors.</p>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-gold">
+    </div>
+      <p class="usa-color-hex">#fdb81e</p>
+      <p class="usa-color-name">$color-gold</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-gold-light">
+    </div>
+      <p class="usa-color-hex">#f9c642</p>
+      <p class="usa-color-name">$color-gold-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-gold-lighter">
+    </div>
+      <p class="usa-color-hex">#fad980</p>
+      <p class="usa-color-name">$color-gold-lighter</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-gold-lightest usa-end-row">
+    </div>
+      <p class="usa-color-hex">#fff1d2</p>
+      <p class="usa-color-name">$color-gold-lightest</p>
+  </div>
+</div>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-green">
+    </div>
+      <p class="usa-color-hex">#2e8540</p>
+      <p class="usa-color-name">$color-green</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-green-light">
+    </div>
+      <p class="usa-color-hex">#4aa564</p>
+      <p class="usa-color-name">$color-green-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-green-lighter">
+    </div>
+      <p class="usa-color-hex">#94bfa2</p>
+      <p class="usa-color-name">$color-green-lighter</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-green-lightest usa-end-row">
+    </div>
+      <p class="usa-color-hex">#e7f4e4</p>
+      <p class="usa-color-name">$color-green-lightest</p>
+  </div>
+</div>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-cool-blue">
+    </div>
+      <p class="usa-color-hex">#205493</p>
+      <p class="usa-color-name">$color-cool-blue</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-cool-blue-light">
+    </div>
+      <p class="usa-color-hex">#4773aa</p>
+      <p class="usa-color-name">$color-cool-blue-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-cool-blue-lighter">
+    </div>
+      <p class="usa-color-hex">#8ba6ca</p>
+      <p class="usa-color-name">$color-cool-blue-lighter</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-cool-blue-lightest">
+    </div>
+      <p class="usa-color-hex">#dce4ef</p>
+      <p class="usa-color-name">$color-cool-blue-lightest</p>
+  </div>
+</div>
+
+<h4 class="usa-heading">Special state colors</h4>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-focus">
+    </div>
+    <p class="usa-color-hex">#3e94cf</p>
+    <p class="usa-color-name">$color-focus</p>
+  </div>
+</div>
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-visited">
+    </div>
+    <p class="usa-color-hex">#4c2c92</p>
+    <p class="usa-color-name">$color-visited</p>
+  </div>
+</div>
+
+</section>
+
+<section id="section-/styling/colors/02-text-accessibility">
+  <h2 class="usa-heading heading-margin-alt" id="text-accessibility">Text accessibility</h2>
+  
+  <p>WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">at least 4.5:1</a>. This ensures that viewers who cannot see the full color spectrum are able to read the text.</p>
+<p>The options below offer color palette combinations that fall within the range of Section 508 compliant foreground/background color contrast ratios. To ensure that text remains accessible, use only these permitted color combinations.</p>
+<p>If you choose to customize beyond this palette, this <a href="http://webaim.org/resources/contrastchecker/">color contrast tool</a> is a useful resource for testing the compliance of any color combination.</p>
+<h4 class="usa-heading">Fully accessible combinations</h4>
+
+<h5>Colors on a white background</h5>
+
+<div class="usa-grid-full usa-color-outline">
+  <div class="usa-width-one-half">
+    <div class="usa-color-text usa-color-text-primary-darkest">
+      primary-darkest on white
+    </div>
+    <div class="usa-color-text usa-color-text-primary-darker">
+      primary-darker on white
+    </div>
+    <div class="usa-color-text usa-color-text-primary">
+      primary on white
+    </div>
+    <div class="usa-color-text usa-color-text-cool-blue-light">
+      cool-blue-light on white
+    </div>
+    <div class="usa-color-text usa-color-text-primary-alt-darkest">
+      primary-alt-darkest on white
+    </div>
+    <div class="usa-color-text usa-color-text-green">
+      green on white
+    </div>
+    <div class="usa-color-text usa-color-text-visited">
+      visited on white
+    </div>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <div class="usa-color-text usa-color-text-gray-dark">
+      base on white
+    </div>
+    <div class="usa-color-text usa-color-text-gray-dark">
+      gray-dark on white
+    </div>
+    <div class="usa-color-text usa-color-text-gray">
+      gray on white
+    </div>
+    <div class="usa-color-text usa-color-text-gray-warm-dark">
+      gray-warm-dark on white
+    </div>
+    <div class="usa-color-text usa-color-text-secondary-darkest">
+      secondary-darkest on white
+    </div>
+    <div class="usa-color-text usa-color-text-secondary-dark">
+      secondary-dark on white
+    </div>
+    <div class="usa-color-text usa-color-text-secondary">
+      secondary on white
+    </div>
+  </div>
+</div>
+
+<h5>Neutrals on a colored background</h5>
+
+<div class="usa-grid-full">
+  <div class="usa-width-one-half">
+    <div class="usa-color-text usa-color-base usa-color-text-white">
+      white on base
+    </div>
+    <div class="usa-color-text usa-color-gray-warm-dark usa-color-text-white">
+      white on gray-warm-dark
+    </div>
+    <div class="usa-color-text usa-color-gray-dark usa-color-text-white">
+      white on gray-dark
+    </div>
+    <div class="usa-color-text usa-color-gray usa-color-text-white">
+      white on gray
+    </div>
+    <div class="usa-color-text usa-color-primary-darkest usa-color-text-white">
+      white on primary-darkest
+    </div>
+    <div class="usa-color-text usa-color-primary-darker usa-color-text-white">
+      white on primary-darker
+    </div>
+    <div class="usa-color-text usa-color-primary usa-color-text-white">
+      white on primary
+    </div>
+    <div class="usa-color-text usa-color-cool-blue-light usa-color-text-white">
+      white on cool-blue-light
+    </div>
+    <div class="usa-color-text usa-color-primary-alt-darkest usa-color-text-white">
+      white on primary-alt-darkest
+    </div>
+    <div class="usa-color-text usa-color-primary-alt-dark">
+      base on primary-alt-dark
+    </div>
+    <div class="usa-color-text usa-color-primary-alt">
+      base on primary-alt
+    </div>
+    <div class="usa-color-text usa-color-green usa-color-text-white">
+      white on green
+    </div>
+    <div class="usa-color-text usa-color-green-light">
+      base on green-light
+    </div>
+    <div class="usa-color-text usa-color-gold">
+      base on gold
+    </div>
+    <div class="usa-color-text usa-color-gold-light">
+      base on gold-light
+    </div>
+    <div class="usa-color-text usa-color-secondary-darkest usa-color-text-white">
+      white on secondary-darkest
+    </div>
+    <div class="usa-color-text usa-color-secondary-dark usa-color-text-white">
+      white on secondary-dark
+    </div>
+    <div class="usa-color-text usa-color-secondary usa-color-text-white">
+      white on secondary
+    </div>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <div class="usa-color-text usa-color-gray-light">
+      base on gray-light
+    </div>
+    <div class="usa-color-text usa-color-gray-lighter">
+      base on gray-lighter
+    </div>
+    <div class="usa-color-text usa-color-gray-warm-light">
+      base on gray-warm-light
+    </div>
+    <div class="usa-color-text usa-color-cool-blue-lighter">
+      base on cool-blue-lighter
+    </div>
+    <div class="usa-color-text usa-color-cool-blue-lightest">
+      base on cool-blue-lightest
+    </div>
+    <div class="usa-color-text usa-color-primary-alt-lightest">
+      base on primary-alt-lightest
+    </div>
+    <div class="usa-color-text usa-color-green-lighter">
+      base on green-lighter
+    </div>
+    <div class="usa-color-text usa-color-green-lightest">
+      base on green-lightest
+    </div>
+    <div class="usa-color-text usa-color-gold-lighter">
+      base on gold-lighter
+    </div>
+    <div class="usa-color-text usa-color-gold-lightest">
+      base on gold-lightest
+    </div>
+    <div class="usa-color-text usa-color-secondary-lightest">
+      base on secondary-lightest
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+  </div>
+
+</main>
+
+
+<footer class="footer site" role="contentinfo">
+  <div class="container footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="footer-primary-section">
+    <div class="container">
+      <nav class="footer-nav row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Ansvarlig myndighed</h4>
+            </li>
+            <li><a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Kontakt</h4>
+            </li>
+            <address>
+              <li><a href="tel:70707070">70707070</a></li>
+              <li><a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a></li>
+            </address>
+          </ul>
+          
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Lovgivning og jura</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Dette er reglerne for denne løsning</a></li>
+            
+            <li><a href="javascript:void(0);">Hvis du vil klage og lidt om dine pligter og rettigheder for at gøre linket langt</a></li>
+            
+            <li><a href="javascript:void(0);">Og et kort link</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Hjælp</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Link der kan hjælpe brugere</a></li>
+            
+            <li><a href="javascript:void(0);">Et kort link</a></li>
+            
+            <li><a href="javascript:void(0);">Endnu et link til et hjælpested</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-secondary_section">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="footer-logo-img col-12">En del af</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
+<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+
+  </body>
+</html>
