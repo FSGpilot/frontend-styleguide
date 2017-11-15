@@ -13,3 +13,4 @@ _preview-components
 
 # Assets are generated during building process
 assets
+!docs/assets
