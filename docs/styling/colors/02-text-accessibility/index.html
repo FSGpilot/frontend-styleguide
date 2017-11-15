@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Text accessibility | POC version 1.0 - Frontend styleguide</title>
+<meta property="og:title" content="Text accessibility | POC version 1.0 - Frontend styleguide">
+
+
+<meta name="description" content="WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of at least 4.5:1. This ensures that viewers who cannot see the full color spectrum are able to read the text.
+The options below offer color palette combinations that fall within the range of Section 508 compliant foreground/background color contrast ratios. To ensure that text remains accessible, use only these permitted color combinations.
+If you choose to customize beyond this palette, this color contrast tool is a useful resource for testing the compliance of any color combination.
+Fully accessible combinations">
+<meta property="og:description" content="WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of at least 4.5:1. This ensures that viewers who cannot see the full color spectrum are able to read the text.
+The options below offer color palette combinations that fall within the range of Section 508 compliant foreground/background color contrast ratios. To ensure that text remains accessible, use only these permitted color combinations.
+If you choose to customize beyond this palette, this color contrast tool is a useful resource for testing the compliance of any color combination.
+Fully accessible combinations">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="http://localhost:4000/styling/colors/02-text-accessibility/">
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide-poc/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide-poc/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide-poc/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide-poc/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide-poc/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide-poc/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>  
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide-poc';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+
+  </head>
+  <body class="page-text-accessibility layout-component">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header" role="banner">
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
+          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  <select class="style-switcher" name="Style switcher">
+    <option value="styleguide">Basis theme</option>
+    <option value="virkdk">Virk.dk theme</option>
+    <option value="borgerdk">Borger.dk theme</option>
+  </select>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-designsystem"
+  
+  aria-expanded="false"
+  >
+  Designsystem
+</button>
+<ul id="nav-designsystem" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
+  
+  aria-expanded="false"
+  >
+  Kom godt i gang
+</button>
+<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/developers/">Til udviklerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
+  
+  aria-expanded="false"
+  >
+  Om designsystemet
+</button>
+<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky">
+  
+  
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      
+      <h1 id="text-accessibility">Text accessibility</h1>
+    </header>
+
+    
+
+
+    <p>WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">at least 4.5:1</a>. This ensures that viewers who cannot see the full color spectrum are able to read the text.</p>
+<p>The options below offer color palette combinations that fall within the range of Section 508 compliant foreground/background color contrast ratios. To ensure that text remains accessible, use only these permitted color combinations.</p>
+<p>If you choose to customize beyond this palette, this <a href="http://webaim.org/resources/contrastchecker/">color contrast tool</a> is a useful resource for testing the compliance of any color combination.</p>
+<h4 class="usa-heading">Fully accessible combinations</h4>
+
+<h5>Colors on a white background</h5>
+
+<div class="usa-grid-full usa-color-outline">
+  <div class="usa-width-one-half">
+    <div class="usa-color-text usa-color-text-primary-darkest">
+      primary-darkest on white
+    </div>
+    <div class="usa-color-text usa-color-text-primary-darker">
+      primary-darker on white
+    </div>
+    <div class="usa-color-text usa-color-text-primary">
+      primary on white
+    </div>
+    <div class="usa-color-text usa-color-text-cool-blue-light">
+      cool-blue-light on white
+    </div>
+    <div class="usa-color-text usa-color-text-primary-alt-darkest">
+      primary-alt-darkest on white
+    </div>
+    <div class="usa-color-text usa-color-text-green">
+      green on white
+    </div>
+    <div class="usa-color-text usa-color-text-visited">
+      visited on white
+    </div>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <div class="usa-color-text usa-color-text-gray-dark">
+      base on white
+    </div>
+    <div class="usa-color-text usa-color-text-gray-dark">
+      gray-dark on white
+    </div>
+    <div class="usa-color-text usa-color-text-gray">
+      gray on white
+    </div>
+    <div class="usa-color-text usa-color-text-gray-warm-dark">
+      gray-warm-dark on white
+    </div>
+    <div class="usa-color-text usa-color-text-secondary-darkest">
+      secondary-darkest on white
+    </div>
+    <div class="usa-color-text usa-color-text-secondary-dark">
+      secondary-dark on white
+    </div>
+    <div class="usa-color-text usa-color-text-secondary">
+      secondary on white
+    </div>
+  </div>
+</div>
+
+<h5>Neutrals on a colored background</h5>
+
+<div class="usa-grid-full">
+  <div class="usa-width-one-half">
+    <div class="usa-color-text usa-color-base usa-color-text-white">
+      white on base
+    </div>
+    <div class="usa-color-text usa-color-gray-warm-dark usa-color-text-white">
+      white on gray-warm-dark
+    </div>
+    <div class="usa-color-text usa-color-gray-dark usa-color-text-white">
+      white on gray-dark
+    </div>
+    <div class="usa-color-text usa-color-gray usa-color-text-white">
+      white on gray
+    </div>
+    <div class="usa-color-text usa-color-primary-darkest usa-color-text-white">
+      white on primary-darkest
+    </div>
+    <div class="usa-color-text usa-color-primary-darker usa-color-text-white">
+      white on primary-darker
+    </div>
+    <div class="usa-color-text usa-color-primary usa-color-text-white">
+      white on primary
+    </div>
+    <div class="usa-color-text usa-color-cool-blue-light usa-color-text-white">
+      white on cool-blue-light
+    </div>
+    <div class="usa-color-text usa-color-primary-alt-darkest usa-color-text-white">
+      white on primary-alt-darkest
+    </div>
+    <div class="usa-color-text usa-color-primary-alt-dark">
+      base on primary-alt-dark
+    </div>
+    <div class="usa-color-text usa-color-primary-alt">
+      base on primary-alt
+    </div>
+    <div class="usa-color-text usa-color-green usa-color-text-white">
+      white on green
+    </div>
+    <div class="usa-color-text usa-color-green-light">
+      base on green-light
+    </div>
+    <div class="usa-color-text usa-color-gold">
+      base on gold
+    </div>
+    <div class="usa-color-text usa-color-gold-light">
+      base on gold-light
+    </div>
+    <div class="usa-color-text usa-color-secondary-darkest usa-color-text-white">
+      white on secondary-darkest
+    </div>
+    <div class="usa-color-text usa-color-secondary-dark usa-color-text-white">
+      white on secondary-dark
+    </div>
+    <div class="usa-color-text usa-color-secondary usa-color-text-white">
+      white on secondary
+    </div>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <div class="usa-color-text usa-color-gray-light">
+      base on gray-light
+    </div>
+    <div class="usa-color-text usa-color-gray-lighter">
+      base on gray-lighter
+    </div>
+    <div class="usa-color-text usa-color-gray-warm-light">
+      base on gray-warm-light
+    </div>
+    <div class="usa-color-text usa-color-cool-blue-lighter">
+      base on cool-blue-lighter
+    </div>
+    <div class="usa-color-text usa-color-cool-blue-lightest">
+      base on cool-blue-lightest
+    </div>
+    <div class="usa-color-text usa-color-primary-alt-lightest">
+      base on primary-alt-lightest
+    </div>
+    <div class="usa-color-text usa-color-green-lighter">
+      base on green-lighter
+    </div>
+    <div class="usa-color-text usa-color-green-lightest">
+      base on green-lightest
+    </div>
+    <div class="usa-color-text usa-color-gold-lighter">
+      base on gold-lighter
+    </div>
+    <div class="usa-color-text usa-color-gold-lightest">
+      base on gold-lightest
+    </div>
+    <div class="usa-color-text usa-color-secondary-lightest">
+      base on secondary-lightest
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+</main>
+
+
+<footer class="footer site" role="contentinfo">
+  <div class="container footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="footer-primary-section">
+    <div class="container">
+      <nav class="footer-nav row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Ansvarlig myndighed</h4>
+            </li>
+            <li><a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Kontakt</h4>
+            </li>
+            <address>
+              <li><a href="tel:70707070">70707070</a></li>
+              <li><a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a></li>
+            </address>
+          </ul>
+          
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Lovgivning og jura</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Dette er reglerne for denne løsning</a></li>
+            
+            <li><a href="javascript:void(0);">Hvis du vil klage og lidt om dine pligter og rettigheder for at gøre linket langt</a></li>
+            
+            <li><a href="javascript:void(0);">Og et kort link</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Hjælp</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Link der kan hjælpe brugere</a></li>
+            
+            <li><a href="javascript:void(0);">Et kort link</a></li>
+            
+            <li><a href="javascript:void(0);">Endnu et link til et hjælpested</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-secondary_section">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="footer-logo-img col-12">En del af</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
+<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+
+  </body>
+</html>

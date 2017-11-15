@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>NASA’s journey with the Standards | POC version 1.0 - Frontend styleguide</title>
+<meta property="og:title" content="NASA’s journey with the Standards | POC version 1.0 - Frontend styleguide">
+
+
+<meta name="description" content="The U.S. Web Design Standards are currently implemented on hundreds of government sites, with an audience of more than 26 million monthly users, and they’ve  been recommended by the Office of Management and Budget for all government agencies. We chatted with Brandon Ruffridge, Senior Software Developer at NASA’s Glenn Research Center, to talk about his team’s use of the U.S. Web Design Standards.">
+<meta property="og:description" content="The U.S. Web Design Standards are currently implemented on hundreds of government sites, with an audience of more than 26 million monthly users, and they’ve  been recommended by the Office of Management and Budget for all government agencies. We chatted with Brandon Ruffridge, Senior Software Developer at NASA’s Glenn Research Center, to talk about his team’s use of the U.S. Web Design Standards.">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="http://localhost:4000/whats-new/updates/2017/03/21/nasa-journey-with-us-web-design-standards/">
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide-poc/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide-poc/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide-poc/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide-poc/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide-poc/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide-poc/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>  
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide-poc';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+
+  </head>
+  <body class="page-nasa-s-journey-with-the-standards layout-post">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header" role="banner">
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
+          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  <select class="style-switcher" name="Style switcher">
+    <option value="styleguide">Basis theme</option>
+    <option value="virkdk">Virk.dk theme</option>
+    <option value="borgerdk">Borger.dk theme</option>
+  </select>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-designsystem"
+  
+  aria-expanded="false"
+  >
+  Designsystem
+</button>
+<ul id="nav-designsystem" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
+  
+  aria-expanded="false"
+  >
+  Kom godt i gang
+</button>
+<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/developers/">Til udviklerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
+  
+  aria-expanded="false"
+  >
+  Om designsystemet
+</button>
+<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/updates/" class="usa-current">News and updates</a>
+
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky" style="top: 5rem; margin-bottom: 525px;">
+  
+  <ul class="usa-sidenav-list">
+    
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/updates/" class="usa-current">News and updates</a>
+
+  
+    
+    
+    
+    
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
+
+
+    
+  </li>
+
+
+  </ul>
+</aside>
+
+<main id="main-content" class="main-content">
+  <div class="styleguide-content usa-content">
+  
+    
+<article id="whats-new-updates-2017-03-21-nasa-journey-with-us-web-design-standards">
+  <header class="post-meta">
+    <p class="post-category site-subheading">
+      case study
+    </p>
+
+    <h1 class="post-title">
+      
+      NASA’s journey with the Standards
+      
+    </h1>
+
+    <time class="post-date site-subheading" datetime="2017-03-21T00:00:00">
+      March 21, 2017
+    </time>
+  </header>
+
+  <div class="post-content">
+  
+    <p><a href="https://standards.usa.gov/">The U.S. Web Design Standards</a> were created by the government, for the government. They’re currently implemented on hundreds of government sites, with an audience of more than 26 million monthly users. They’ve also been recommended by the <a href="https://policy.cio.gov/web-policy/look/">Office of Management and Budget</a> for all government agencies to ensure a consistent look and feel of their public-facing digital services. Over the coming months, the team will be doing a series of blog posts to share information about the how different agencies are using the Standards. We chatted with Brandon Ruffridge, Senior Software Developer at NASA’s Glenn Research Center, to talk about his team’s use of the U.S. Web Design Standards.</p>
+
+<p><strong>Standards team:</strong> What motivated you to use the U.S. Web Design Standards?</p>
+
+<p><strong>Brandon Ruffridge:</strong> We wanted to develop a set of standards so when people visit one of our sites, they immediately recognize they are on an official NASA website. We’re also in the early stages of updating our public web presence and were looking for a User Interface (UI) toolkit that would allow us to create a modern, responsive website. The U.S. Web Design Standards seemed like a good place to start, since they are built by government with government-specific needs in mind. Our team liked the fact that the Standards weren’t developed in a vacuum, but were refined through user research and testing, and have been used successfully by other government agencies.</p>
+
+<p><strong>Standards team:</strong> What were the benefits you gained by using the Standards?</p>
+
+<p><strong>Ruffridge</strong>: The Standards allowed us to create our own set of web standards specific to NASA with very little effort. They provided all the basic UI components that we needed, and it is all Section 508 compliant, which is the accessibility requirement all federal agencies must follow when building a website.</p>
+
+<p><strong>Standards team:</strong> What were the unintended consequences or surprises?</p>
+
+<p><strong>Ruffridge:</strong> It was fun! I even published a node package. I learned some new things like gulp, jekyll, node, and color contrast accessibility requirements.</p>
+
+<p><strong>Standards team:</strong> What advice would you have for other agencies?</p>
+
+<p><strong>Ruffridge:</strong> The Standards are a great place to start if your agency wants to provide a consistent, modern, and user-friendly website. If you don’t have much in-house UI/UX and front-end development expertise, or don’t want to spend time creating your own style standards and toolkit from scratch, they are a great resource built by many talented people from government and the open source community who are consistently working to improve them. It provides a look and feel that will become increasingly familiar to the public as they become used on more and more government websites. Slight tweaks to the color palette may be all you need to tailor them to your agency.</p>
+
+<p>We’re looking to learn more <a href="https://github.com/18F/web-design-standards/blob/develop/WHO_IS_USING_USWDS.md">from agencies that have used the Standards</a>; if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>. You can also chat with the team in the new <a href="https://chat.18f.gov./">public Slack channel for the Standards</a>!</p>
+
+<p>Also, on January 25th, we <a href="https://www.youtube.com/watch?v=VUPbn1phbxk">hosted a webinar</a> to share more information about the features and <a href="https://18f.gsa.gov/2016/12/22/charting-the-future-of-the-draft-us-web-design-standards/">future of the Standards</a>, including the 1.0 release. Check it out to learn more or follow along at <a href="https://standards.usa.gov/">standards.usa.gov</a>.</p>
+
+  
+  </div>
+</article>
+
+  
+  </div>
+</main>
+
+
+<footer class="footer site" role="contentinfo">
+  <div class="container footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="footer-primary-section">
+    <div class="container">
+      <nav class="footer-nav row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Ansvarlig myndighed</h4>
+            </li>
+            <li><a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Kontakt</h4>
+            </li>
+            <address>
+              <li><a href="tel:70707070">70707070</a></li>
+              <li><a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a></li>
+            </address>
+          </ul>
+          
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Lovgivning og jura</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Dette er reglerne for denne løsning</a></li>
+            
+            <li><a href="javascript:void(0);">Hvis du vil klage og lidt om dine pligter og rettigheder for at gøre linket langt</a></li>
+            
+            <li><a href="javascript:void(0);">Og et kort link</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Hjælp</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Link der kan hjælpe brugere</a></li>
+            
+            <li><a href="javascript:void(0);">Et kort link</a></li>
+            
+            <li><a href="javascript:void(0);">Endnu et link til et hjælpested</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-secondary_section">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="footer-logo-img col-12">En del af</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
+<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+
+  </body>
+</html>

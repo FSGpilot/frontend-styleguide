@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Retningslinjer | POC version 1.0 - Frontend styleguide</title>
+<meta property="og:title" content="Retningslinjer | POC version 1.0 - Frontend styleguide">
+
+
+<meta name="description" content="">
+<meta property="og:description" content="">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="http://localhost:4000/components/fundament/">
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide-poc/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide-poc/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide-poc/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide-poc/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide-poc/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide-poc/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>  
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide-poc';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+
+  </head>
+  <body class="page-retningslinjer layout-styleguide">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header" role="banner">
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
+          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  <select class="style-switcher" name="Style switcher">
+    <option value="styleguide">Basis theme</option>
+    <option value="virkdk">Virk.dk theme</option>
+    <option value="borgerdk">Borger.dk theme</option>
+  </select>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-designsystem"
+  
+  class="usa-current"
+  aria-expanded="true"
+  >
+  Designsystem
+</button>
+<ul id="nav-designsystem" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/" class="usa-current">Retningslinjer</a>
+
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
+  
+  aria-expanded="false"
+  >
+  Kom godt i gang
+</button>
+<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/developers/">Til udviklerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
+  
+  aria-expanded="false"
+  >
+  Om designsystemet
+</button>
+<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky">
+  
+  
+  <ul class="usa-sidenav-list">
+    
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/" class="usa-current">Retningslinjer</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="usa-sidenav-sub_list">
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/layout/">Layout</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/interaktionsdesign/">Interaktionsdesign</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/stilogtone/">Stil og tone</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/accessibility/">Tilgængelighed</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/mobile/">Mobile First</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/dengodetabel/">Den Gode Tabel</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/dengodeformular/">Den Gode Formular</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/grids/">Grids</a>
+
+
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      
+        
+      <p class="site-subheading">Designsystem</p>
+        
+      
+      <h1 id="retningslinjer">Retningslinjer</h1>
+    </header>
+
+    
+<p class="usa-font-lead">Designtips der hjælper dig med at bygge den gode brugeroplevelse</p>
+
+
+
+
+    
+
+  </div>
+
+</main>
+
+
+<footer class="footer site" role="contentinfo">
+  <div class="container footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="footer-primary-section">
+    <div class="container">
+      <nav class="footer-nav row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Ansvarlig myndighed</h4>
+            </li>
+            <li><a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Kontakt</h4>
+            </li>
+            <address>
+              <li><a href="tel:70707070">70707070</a></li>
+              <li><a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a></li>
+            </address>
+          </ul>
+          
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Lovgivning og jura</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Dette er reglerne for denne løsning</a></li>
+            
+            <li><a href="javascript:void(0);">Hvis du vil klage og lidt om dine pligter og rettigheder for at gøre linket langt</a></li>
+            
+            <li><a href="javascript:void(0);">Og et kort link</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Hjælp</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Link der kan hjælpe brugere</a></li>
+            
+            <li><a href="javascript:void(0);">Et kort link</a></li>
+            
+            <li><a href="javascript:void(0);">Endnu et link til et hjælpested</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-secondary_section">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="footer-logo-img col-12">En del af</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
+<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+
+  </body>
+</html>

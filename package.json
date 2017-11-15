@@ -70,6 +70,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
+    "gulp-count": "^0.3.0",
     "gulp-plumber": "^1.1.0",
     "gulp-remote-src": "^0.4.3"
   }

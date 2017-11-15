@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Headers | POC version 1.0 - Frontend styleguide</title>
+<meta property="og:title" content="Headers | POC version 1.0 - Frontend styleguide">
+
+
+<meta name="description" content="Accessibility
+
+  Include skip navigation links to allow users with screen readers to bypass long navigation lists. Make sure you include an id at the beginning of your main content and that it matches the skipnav link. Find more information here: http://webaim.org/techniques/skipnav/
+  Include Tab focus for all top-level navigation navigation items — this will allow keyboard-reliant users to easily navigate interactive items.
+  Ensure your horizontal navigation is keyboard compatible; test to make sure users can use Tab to navigate and Space (or Enter) to open pages.
+  Avoid using hover to expand dropdown lists. Hover is difficult for some users and won't work on touch screens. Drop downs should expand on click or with keyboard navigation.
+  We use semantic header and nav elements with role=&quot;banner&quot; and role=&quot;navigation&quot; respectively. role=&quot;banner&quot; is your masthead.
+  You can use multiple nav elements for groups of navigation links, but you should only use one role=&quot;navigation&quot; for the main nav of a page.
+  Use lists for your nav links — this enables screen readers to decipher header contents.
+  If you’re using a logo that’s an image rather than text, make sure you include alternative text for screen readers.
+  If you’re using a logo that’s text, use an em, not an h1, unless it’s the homepage. Find more information here: http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/">
+<meta property="og:description" content="Accessibility
+
+  Include skip navigation links to allow users with screen readers to bypass long navigation lists. Make sure you include an id at the beginning of your main content and that it matches the skipnav link. Find more information here: http://webaim.org/techniques/skipnav/
+  Include Tab focus for all top-level navigation navigation items — this will allow keyboard-reliant users to easily navigate interactive items.
+  Ensure your horizontal navigation is keyboard compatible; test to make sure users can use Tab to navigate and Space (or Enter) to open pages.
+  Avoid using hover to expand dropdown lists. Hover is difficult for some users and won't work on touch screens. Drop downs should expand on click or with keyboard navigation.
+  We use semantic header and nav elements with role=&quot;banner&quot; and role=&quot;navigation&quot; respectively. role=&quot;banner&quot; is your masthead.
+  You can use multiple nav elements for groups of navigation links, but you should only use one role=&quot;navigation&quot; for the main nav of a page.
+  Use lists for your nav links — this enables screen readers to decipher header contents.
+  If you’re using a logo that’s an image rather than text, make sure you include alternative text for screen readers.
+  If you’re using a logo that’s text, use an em, not an h1, unless it’s the homepage. Find more information here: http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="http://localhost:4000/components/strukturer/headers/">
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide-poc/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide-poc/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide-poc/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide-poc/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide-poc/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide-poc/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>  
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide-poc';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+
+  </head>
+  <body class="page-headers layout-styleguide">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header" role="banner">
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
+          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  <select class="style-switcher" name="Style switcher">
+    <option value="styleguide">Basis theme</option>
+    <option value="virkdk">Virk.dk theme</option>
+    <option value="borgerdk">Borger.dk theme</option>
+  </select>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-designsystem"
+  
+  class="usa-current"
+  aria-expanded="true"
+  >
+  Designsystem
+</button>
+<ul id="nav-designsystem" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/" class="usa-current">Mønstre</a>
+
+  
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
+  
+  aria-expanded="false"
+  >
+  Kom godt i gang
+</button>
+<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/developers/">Til udviklerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
+  
+  aria-expanded="false"
+  >
+  Om designsystemet
+</button>
+<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
+      Download kode og designfiler
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="#">
+      Se på GitHub
+    </a>
+  </li>
+  <li>
+    <select class="style-switcher" name="Style switcher">
+      <option value="styleguide">Basis theme</option>
+      <option value="virkdk">Virk.dk theme</option>
+      <option value="borgerdk">Borger.dk theme</option>
+    </select>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky">
+  
+  
+  <ul class="usa-sidenav-list">
+    
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/" class="usa-current">Mønstre</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="usa-sidenav-sub_list">
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/footers/">Footers</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/form-templates/">Form templates</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/headers/" class="usa-current">Headers</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="usa-sidenav-sub_list">
+  
+  <li>
+    
+      
+
+
+<a href="#basic">Basic header</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#basic-mega-menu">Basic header with mega menu</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#extended">Extended header</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#extended-mega-menu">Extended header with mega menu</a>
+
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/modalvinduer/">Modalvinduer</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/strukturer/liste/">Struktureret liste</a>
+
+
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+
+  </ul>
+  
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      
+        
+      <p class="site-subheading">Strukturer (organismer)</p>
+        
+      
+      <h1 id="headers">Headers</h1>
+    </header>
+
+    
+<p class="usa-font-lead">Headers help users identify where they are and provide a quick, organized way to reach the main sections of a website. Our headers include branding to identify the site and horizontal navigation.</p>
+
+
+
+
+    <h3 class="usa-heading heading-margin-alt">Accessibility</h3>
+<ul class="usa-content-list">
+  <li>Include skip navigation links to allow users with screen readers to bypass long navigation lists. Make sure you include an id at the beginning of your main content and that it matches the skipnav link. Find more information here: <a href="http://webaim.org/techniques/skipnav/">http://webaim.org/techniques/skipnav/</a></li>
+  <li>Include Tab focus for all top-level navigation navigation items — this will allow keyboard-reliant users to easily navigate interactive items.</li>
+  <li>Ensure your horizontal navigation is keyboard compatible; test to make sure users can use Tab to navigate and Space (or Enter) to open pages.</li>
+  <li>Avoid using hover to expand dropdown lists. Hover is difficult for some users and won't work on touch screens. Drop downs should expand on click or with keyboard navigation.</li>
+  <li>We use semantic header and nav elements with <code>role="banner"</code> and <code>role="navigation"</code> respectively. <code>role="banner"</code> is your masthead.</li>
+  <li>You can use multiple nav elements for groups of navigation links, but you should only use one <code>role="navigation"</code> for the main nav of a page.</li>
+  <li>Use lists for your nav links — this enables screen readers to decipher header contents.</li>
+  <li>If you’re using a logo that’s an image rather than text, make sure you include alternative text for screen readers.</li>
+  <li>If you’re using a logo that’s text, use an <code>em</code>, not an <code>h1</code>, unless it’s the homepage. Find more information here: <a href="http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/">http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/</a></li>
+</ul>
+
+<h3 class="usa-heading">Usability</h3>
+<h4>When to use</h4>
+<ul class="usa-content-list">
+  <li>We recommend that all federal government sites include the “official government site” banner and a logo or site name.</li>
+  <li>Most sites will require some form of navigation to help users find the information they’re looking for. While a horizontal navigation bar is just one option for navigation design, it is one of the most visible and familiar ways of helping users navigate a site.</li>
+</ul>
+
+<h4>Guidance</h4>
+<ul class="usa-content-list">
+  <li>List all important website sections as links in the horizontal navigation bar.</li>
+  <li>For large websites, use drop-down menus to help users preview lower-level content. If lower-level sections are closely related and users will need to quickly jump between them, consider using a side navigation instead of — or in addition to — a drop down.</li>
+  <li>Use descriptive, recognizable link labels. Don’t label links with jargon or unfamiliar terms.</li>
+  <li>Left-justify link labels to make them more easily scannable.</li>
+  <li>Present links in priority order: Higher-demand links should appear farther to the left, and lower-demand links should appear farther to the right.</li>
+  <li>Don’t model your navigation after your agency’s org structure. Instead, structure it according to the tasks and information your users most frequently need to access.</li>
+  <li>Show users where they are within the menu options by highlighting the current section.</li>
+  <li>Conduct research with your users and base decisions about your site’s information architecture and navigation structure on your findings. Continue researching to confirm that updates meet your users’ needs.</li>
+</ul>
+
+<h4>For further reading</h4>
+<ul>
+  <li><a href="https://www.nngroup.com/articles/menu-design/">https://www.nngroup.com/articles/menu-design/</a></li>
+  <li><a href="https://www.usertesting.com/blog/2015/03/19/site-navigation-tree-testing/">https://www.usertesting.com/blog/2015/03/19/site-navigation-tree-testing/</a></li>
+</ul>
+
+<h3 class="usa-heading">The “official government site” banner</h3>
+<p>We recommend that all federal government sites include the “official government site” banner and a logo or site name. The banner helps people identify that your organization is part of the government, while the logo or site name helps visitors understand what your site is and what it does.</p>
+<h4>Building with HTTPS</h4>
+<p><a href="https://18f.gsa.gov/2014/11/13/why-we-use-https-in-every-gov-website-we-make/">HTTPS is a best practice</a> for all websites: It’s secure, private, and fast, and search engines prefer encrypted sites. But it’s especially important for government websites. The .gov in government websites carries a lot of weight. The public expects the contents of .gov websites to be official and accurate, and they expect any information they submit to that website to be private. The U.S. CIO provides guidance to implementing HTTPS for government websites at <a href="https://https.cio.gov/">https://https.cio.gov/</a></p>
+
+<h2 class="usa-heading" id="basic">Basic header</h2>
+<div class="preview">
+  <a class="media_link" href="/frontend-styleguide-poc/components/headers/basic/">
+    <img src="/frontend-styleguide-poc/assets/img/headers/header-basic.png" alt="Basic header">
+  </a>
+  <a class="usa-button" href="/frontend-styleguide-poc/components/headers/basic/">Demo basic header</a>
+</div>
+<div class="usa-accordion-bordered usa-code-sample">
+  
+  <button class="usa-accordion-button" aria-controls="code-header-basic">Code</button>
+  <div id="code-header-basic" class="usa-accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-skipnav"</span> <span class="na">href=</span><span class="s">"#main-content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"usa-header usa-header-basic"</span> <span class="na">role=</span><span class="s">"banner"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-navbar"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-menu-btn"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-logo"</span> <span class="na">id=</span><span class="s">"logo"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"usa-logo-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">accesskey=</span><span class="s">"1"</span> <span class="na">title=</span><span class="s">"Home"</span> <span class="na">aria-label=</span><span class="s">"Home"</span><span class="nt">&gt;</span>Department of <span class="nt">&lt;br&gt;</span>Web Standards<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/em&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"usa-nav"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-nav-close"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/close.svg"</span> <span class="na">alt=</span><span class="s">"close"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-primary usa-accordion"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"
+          usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"side-nav-1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"side-nav-1"</span> <span class="na">class=</span><span class="s">"usa-nav-submenu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"sidenav-2"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"sidenav-2"</span> <span class="na">class=</span><span class="s">"usa-nav-submenu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"sidenav-3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"sidenav-3"</span> <span class="na">class=</span><span class="s">"usa-nav-submenu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-search usa-search-small"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span> <span class="na">for=</span><span class="s">"search-field-small"</span><span class="nt">&gt;</span>Search small<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-field-small"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;main</span> <span class="na">id=</span><span class="s">"main-content"</span><span class="nt">&gt;&lt;/main&gt;</span>
+
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="usa-accordion-bordered">
+  <button class="usa-button-unstyled usa-accordion-button"
+    aria-expanded="true" aria-controls="docs-header-basic">
+    Documentation
+  </button>
+  <div id="docs-header-basic" class="usa-accordion-content">
+    <h4 class="usa-heading">What it does</h4>
+    <p>The basic header is great if you have a modest number of sections in your main navigation. You can customize it (depending on your site structure) and use it with:</p>
+    <ul>
+      <li>A text or image logo</li>
+      <li>With or without dropdown menus</li>
+      <li>With or without a search bar</li>
+      <li>With or without call-to-action buttons in place of the search bar</li>
+    </ul>
+    <h4 class="usa-heading">Why use it</h4>
+    <p>Use the basic header if you have few enough sections in your main navigation to fit comfortably next to your logo; this will depend on the length of your text and whether you include a search bar. You may also use it if you’d like to include the full search bar in your header, or if each main section listed in the horizontal navigation has six or fewer subsections that you’d like to include in a dropdown menu.</p>
+    <h4 class="usa-heading">When not to use it</h4>
+    <p>Consider using the extended header if you have more sections in your horizontal navigation than will fit comfortably next to your logo, or if you have complex sections that require the use of a mega menu.</p>
+  </div>
+</div>
+
+<h2 class="usa-heading" id="basic-mega-menu">Basic header with mega menu</h2>
+<div class="preview">
+  <a class="media_link" href="/frontend-styleguide-poc/components/headers/basic-mega/">
+    <img src="/frontend-styleguide-poc/assets/img/headers/header-basic-mega-menu.png" alt="Basic header with mega menu">
+  </a>
+  <a class="usa-button" href="/frontend-styleguide-poc/components/headers/basic-mega/">Demo basic header with mega menu</a>
+</div>
+<div class="usa-accordion-bordered usa-code-sample">
+  
+  <button class="usa-accordion-button" aria-controls="code-header-basic-mega">Code</button>
+  <div id="code-header-basic-mega" class="usa-accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-skipnav"</span> <span class="na">href=</span><span class="s">"#main-content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"usa-header usa-header-basic usa-header-basic-megamenu"</span> <span class="na">role=</span><span class="s">"banner"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-navbar"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-menu-btn"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-logo"</span> <span class="na">id=</span><span class="s">"logo"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"usa-logo-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">accesskey=</span><span class="s">"1"</span> <span class="na">title=</span><span class="s">"Home"</span> <span class="na">aria-label=</span><span class="s">"Home"</span><span class="nt">&gt;</span>Department of <span class="nt">&lt;br&gt;</span>Web Standards<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/em&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"usa-nav"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav-inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-nav-close"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/close.svg"</span> <span class="na">alt=</span><span class="s">"close"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-primary usa-accordion"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"megamenu-1"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-submenu usa-megamenu usa-grid-full"</span> <span class="na">id=</span><span class="s">"megamenu-1"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"megamenu-2"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-submenu usa-megamenu usa-grid-full"</span> <span class="na">id=</span><span class="s">"megamenu-2"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"megamenu-3"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-submenu usa-megamenu usa-grid-full"</span> <span class="na">id=</span><span class="s">"megamenu-3"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+              <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-search usa-search-small"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span> <span class="na">for=</span><span class="s">"search-field-small"</span><span class="nt">&gt;</span>Search small<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-field-small"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;main</span> <span class="na">id=</span><span class="s">"main-content"</span><span class="nt">&gt;&lt;/main&gt;</span>
+
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="usa-accordion-bordered">
+  <button class="usa-button-unstyled usa-accordion-button"
+    aria-expanded="true" aria-controls="docs-header-basic-mega">
+    Documentation
+  </button>
+  <div id="docs-header-basic-mega" class="usa-accordion-content">
+    <h4 class="usa-heading">What it does</h4>
+    <p>The basic header with mega menu is similar to our basic header — it simply allows for the inclusion of more links in the dropdown menus. You can customize it (depending on your site structure) and use it with:</p>
+    <ul>
+      <li>A text or image logo</li>
+      <li>With or without a search bar</li>
+      <li>With or without call-to-action buttons in place of the search bar</li>
+    </ul>
+    <h4 class="usa-heading">Why use it</h4>
+    <p>Use the basic header with mega menu if you’d like to include more than six links in any of your dropdown menus, and if you have few enough main sections to allow your horizontal navigation to fit comfortably in the basic header.</p>
+    <h4 class="usa-heading">When not to use it</h4>
+    <p>Consider using a basic dropdown rather than a mega menu unless you need to link to a very large number of sub pages.</p>
+  </div>
+</div>
+
+<h2 class="usa-heading" id="extended">Extended header</h2>
+<div class="preview">
+  <a class="media_link" href="/frontend-styleguide-poc/components/headers/extended/">
+    <img src="/frontend-styleguide-poc/assets/img/headers/header-extended.png" alt="Extended header">
+  </a>
+  <a class="usa-button" href="/frontend-styleguide-poc/components/headers/extended/">Demo extended header</a>
+</div>
+<div class="usa-accordion-bordered usa-code-sample">
+  
+  <button class="usa-accordion-button" aria-controls="code-header-extended">Code</button>
+  <div id="code-header-extended" class="usa-accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-skipnav"</span> <span class="na">href=</span><span class="s">"#main-content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"usa-header usa-header-extended"</span> <span class="na">role=</span><span class="s">"banner"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-navbar"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-menu-btn"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-logo"</span> <span class="na">id=</span><span class="s">"logo"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"usa-logo-text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">accesskey=</span><span class="s">"1"</span> <span class="na">title=</span><span class="s">"Home"</span> <span class="na">aria-label=</span><span class="s">"Home"</span><span class="nt">&gt;</span>Department of Web Standards<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/em&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"usa-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav-inner"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-nav-close"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/close.svg"</span> <span class="na">alt=</span><span class="s">"close"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-primary usa-accordion"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"
+          usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"side-nav-1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"side-nav-1"</span> <span class="na">class=</span><span class="s">"usa-nav-submenu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"sidenav-2"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"sidenav-2"</span> <span class="na">class=</span><span class="s">"usa-nav-submenu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"sidenav-3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"sidenav-3"</span> <span class="na">class=</span><span class="s">"usa-nav-submenu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav-secondary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-search usa-search-small js-search-form"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span> <span class="na">for=</span><span class="s">"search-field-small"</span><span class="nt">&gt;</span>Search small<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-field-small"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-unstyled-list usa-nav-secondary-links"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"js-search-button-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-header-search-button js-search-button"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Secondary link<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Secondary link<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;main</span> <span class="na">id=</span><span class="s">"main-content"</span><span class="nt">&gt;&lt;/main&gt;</span>
+
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="usa-accordion-bordered">
+  <button class="usa-button-unstyled usa-accordion-button"
+    aria-expanded="true" aria-controls="docs-header-extended">
+    Documentation
+  </button>
+  <div id="docs-header-extended" class="usa-accordion-content">
+    <h4 class="usa-heading">What it does</h4>
+    <p>The extended header allows for inclusion of more sections in the horizontal navigation. You can customize the header (depending on your site structure) and use it:</p>
+    <ul>
+      <li>With a text or image logo</li>
+      <li>With or without dropdown menus</li>
+      <li>With or without the expandable search bar</li>
+      <li>With or without call-to-action buttons in place of the secondary links featured in your horizontal navigation</li>
+    </ul>
+    <h4 class="usa-heading">Why use it</h4>
+    <p>Use the extended header if you have too many sections in your horizontal navigation to fit comfortably in the basic header format. You may also consider using it if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example Log in and Sign up links.</p>
+    <h4 class="usa-heading">When not to use it</h4>
+    <p>Consider using the basic header if you have less information — the basic header takes up less space.</p>
+  </div>
+</div>
+
+<h2 class="usa-heading" id="extended-mega-menu">Extended header with mega menu</h2>
+<div class="preview">
+  <a class="media_link" href="/frontend-styleguide-poc/components/headers/extended-mega/">
+    <img src="/frontend-styleguide-poc/assets/img/headers/header-extended-mega-menu.png" alt="Extended header with mega menu">
+  </a>
+  <a class="usa-button" href="/frontend-styleguide-poc/components/headers/extended-mega/">Demo extended header with mega menu</a>
+</div>
+<div class="usa-accordion-bordered usa-code-sample">
+  
+  <button class="usa-accordion-button" aria-controls="code-header-extended-mega">Code</button>
+  <div id="code-header-extended-mega" class="usa-accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-skipnav"</span> <span class="na">href=</span><span class="s">"#main-content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"usa-header usa-header-extended"</span> <span class="na">role=</span><span class="s">"banner"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-navbar"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-menu-btn"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-logo"</span> <span class="na">id=</span><span class="s">"logo"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"usa-logo-text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">accesskey=</span><span class="s">"1"</span> <span class="na">title=</span><span class="s">"Home"</span> <span class="na">aria-label=</span><span class="s">"Home"</span><span class="nt">&gt;</span>Department of Web Standards<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/em&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">"usa-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav-inner"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-nav-close"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/img/close.svg"</span> <span class="na">alt=</span><span class="s">"close"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-primary usa-accordion"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"megamenu-1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-submenu usa-megamenu usa-grid-full"</span> <span class="na">id=</span><span class="s">"megamenu-1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"megamenu-2"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-submenu usa-megamenu usa-grid-full"</span> <span class="na">id=</span><span class="s">"megamenu-2"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion-button usa-nav-link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"megamenu-3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Section title<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav-submenu usa-megamenu usa-grid-full"</span> <span class="na">id=</span><span class="s">"megamenu-3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-megamenu-col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Subsection title<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav-secondary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-search usa-search-small js-search-form"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span> <span class="na">for=</span><span class="s">"search-field-small"</span><span class="nt">&gt;</span>Search small<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-field-small"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-unstyled-list usa-nav-secondary-links"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"js-search-button-container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-header-search-button js-search-button"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Secondary link<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Secondary link<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;main</span> <span class="na">id=</span><span class="s">"main-content"</span><span class="nt">&gt;&lt;/main&gt;</span>
+
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="usa-accordion-bordered">
+  <button class="usa-button-unstyled usa-accordion-button"
+    aria-expanded="true" aria-controls="docs-header-extended-mega">
+    Documentation
+  </button>
+  <div id="docs-header-extended-mega" class="usa-accordion-content">
+    <h4 class="usa-heading">What it does</h4>
+    <p>Like the extended header, the extended header with mega menu allows for inclusion of more sections in your horizontal navigation; it also allows you to include more links in any of your dropdowns. You can customize the header (depending on your site structure) and use it:</p>
+    <ul>
+      <li>With a text or image logo</li>
+      <li>With or without the expandable search bar</li>
+      <li>With or without call-to-action buttons in place of the secondary links in the horizontal navigation</li>
+    </ul>
+    <h4 class="usa-heading">Why use it</h4>
+    <p>Use an extended header with mega menu if you have too many sections in your horizontal navigation to fit comfortably in the basic header format. It’s also useful if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example Log in and Sign up links — or if you’d like to include more than six links in any of your dropdowns.</p>
+    <h4 class="usa-heading">When not to use it</h4>
+    <P>Consider using a basic dropdown rather than a mega menu unless you need to link to a very large number of sub pages.</P>
+  </div>
+</div>
+
+  </div>
+
+</main>
+
+
+<footer class="footer site" role="contentinfo">
+  <div class="container footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="footer-primary-section">
+    <div class="container">
+      <nav class="footer-nav row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Ansvarlig myndighed</h4>
+            </li>
+            <li><a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Kontakt</h4>
+            </li>
+            <address>
+              <li><a href="tel:70707070">70707070</a></li>
+              <li><a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a></li>
+            </address>
+          </ul>
+          
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Lovgivning og jura</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Dette er reglerne for denne løsning</a></li>
+            
+            <li><a href="javascript:void(0);">Hvis du vil klage og lidt om dine pligter og rettigheder for at gøre linket langt</a></li>
+            
+            <li><a href="javascript:void(0);">Og et kort link</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="usa-unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Hjælp</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Link der kan hjælpe brugere</a></li>
+            
+            <li><a href="javascript:void(0);">Et kort link</a></li>
+            
+            <li><a href="javascript:void(0);">Endnu et link til et hjælpested</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-secondary_section">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="footer-logo-img col-12">En del af</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
+<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+
+  </body>
+</html>

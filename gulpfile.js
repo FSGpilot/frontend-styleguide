@@ -7,6 +7,7 @@ require( './config/gulp/images' );
 require( './config/gulp/javascript' );
 require( './config/gulp/sass' );
 require( './config/gulp/html' );
+require( './config/gulp/publish' );
 
 
 var gulp  = require( 'gulp' );
