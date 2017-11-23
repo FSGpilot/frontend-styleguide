@@ -20,8 +20,8 @@ When using illustration and photography to enhance the user experience, choose i
 
 Both illustration and photography can live within the same product. Photography automatically implies a degree of specificity and should be used to showcase specific entities and stories. Illustration is effective for representing concepts and metaphors where specific photography might be alienating.
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -36,7 +36,7 @@ Both illustration and photography can live within the same product. Photography 
         </figure>
     </div>
   </div>
-  <div class="usa-width-one-half">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -59,8 +59,8 @@ Use imagery to express a distinctive voice and exemplify creative excellence.
 
 For specific entities or branded content, use specific imagery. For more abstract content, be interpretive. Photographic stock and clipart is neither specific nor interpretive.
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -75,7 +75,7 @@ For specific entities or branded content, use specific imagery. For more abstrac
         </figure>
     </div>
   </div>
-  <div class="usa-width-one-half">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -92,8 +92,8 @@ For specific entities or branded content, use specific imagery. For more abstrac
   </div>
 </div>
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -108,7 +108,7 @@ For specific entities or branded content, use specific imagery. For more abstrac
         </figure>
     </div>
   </div>
-  <div class="usa-width-one-half">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -129,8 +129,8 @@ For specific entities or branded content, use specific imagery. For more abstrac
 
 Have an iconic point of focus in your imagery. Focus ranges from a single entity to an overarching composition. Ensure that a clear concept is conveyed to the user in a memorable way.
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -145,7 +145,7 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
         </figure>
     </div>
   </div>
-  <div class="usa-width-one-half">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -162,8 +162,8 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
   </div>
 </div>
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -178,7 +178,7 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
         </figure>
     </div>
   </div>
-  <div class="usa-width-one-half">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -195,8 +195,8 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
   </div>
 </div>
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -211,7 +211,7 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
         </figure>
     </div>
   </div>
-  <div class="usa-width-one-half">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -234,8 +234,8 @@ Have an iconic point of focus in your imagery. Focus ranges from a single entity
 
 Make sure your images are appropriately sized for displays and across platforms. Material design emphasizes large images. Ideally, the assets should not appear pixelated. Test appropriate resolution sizes for specific ratios and devices.
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">
@@ -250,7 +250,7 @@ Make sure your images are appropriately sized for displays and across platforms.
         </figure>
     </div>
   </div>
-  <div class="usa-width-one-half">
+  <div class="width-one-half">
     <div class="figure">
         <figure class="s-tag-media">
             <div class="media" style="max-width: 720px">

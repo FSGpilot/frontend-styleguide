@@ -12,10 +12,10 @@ title: Dkwds-header.html
   </head>
   <body>
     
-<header class="usa-header usa-header-extended" role="banner">
-  <div class="usa-navbar">
-  <div class="usa-logo" id="logo">
-    <em class="usa-logo-text">
+<header class="header header-extended" role="banner">
+  <div class="navbar">
+  <div class="logo" id="logo">
+    <em class="logo-text">
       <a href="/"
         title="Home"
         aria-label="Home">
@@ -23,17 +23,17 @@ title: Dkwds-header.html
       </a>
     </em>
   </div>
-  <button class="usa-menu-btn">Menu</button>
+  <button class="menu-btn">Menu</button>
 </div>
 
-  <nav role="navigation" class="usa-nav">
+  <nav role="navigation" class="nav">
     <div class="header-mask"></div>
-    <div class="usa-nav-inner">
+    <div class="nav-inner">
       
     </div>
   </nav>
 </header>
-<div class="usa-overlay"></div>
+<div class="overlay"></div>
 
 <style scoped>
   .header-mask {
@@ -46,14 +46,14 @@ title: Dkwds-header.html
     z-index: 999;
   }
 
-  .usa-nav-inner,
-  .usa-nav-secondary {
+  .nav-inner,
+  .nav-secondary {
     background-color: white;
     z-index: 1000;
   }
 </style>
 
-    <script src="../../dist/js/dkwds.min.js"></script>
+    <script src="../../dist/js/dkwds.js"></script>
     <script>
     window.addEventListener('load', function() {
       document.body.addEventListener('submit', function(e) {

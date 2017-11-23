@@ -9,8 +9,8 @@ title: Alerts--info.html
 
 
 
-<div class="usa-alert usa-alert-success" >
-  <div class="usa-alert-body"><h3 class="usa-alert-heading">Success Status</h3><p class="usa-alert-text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+<div class="alert alert-success" >
+  <div class="alert-body"><h3 class="alert-heading">Success Status</h3><p class="alert-text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
   </div>
 </div>
 

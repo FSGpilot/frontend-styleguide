@@ -8,7 +8,7 @@ title: Name-form.html
 
 
 
-<form class="usa-form-large">
+<form class="form-large">
   <fieldset>
     <legend>Navn</legend>
     

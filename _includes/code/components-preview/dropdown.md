@@ -6,8 +6,9 @@ title: Dropdown.html
 
 
 
-<form class="usa-form">
-  
+<div class="container">
+  <form class="form">
+    
   <label for="options">Dropdown titel</label>
   <select name="options" id="options">
     <option value>- Vælg -</option>
@@ -20,5 +21,6 @@ title: Dropdown.html
     
   </select>
 
-</form>
+  </form>
+</div>
 

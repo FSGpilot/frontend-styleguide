@@ -9,8 +9,8 @@ title: Alerts--no-header.html
 
 
 
-<div class="usa-alert  usa-alert-info" >
-  <div class="usa-alert-body"><p class="usa-alert-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+<div class="alert  alert-info" >
+  <div class="alert-body"><p class="alert-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
 

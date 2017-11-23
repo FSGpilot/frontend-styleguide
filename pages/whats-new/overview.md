@@ -22,7 +22,7 @@ You can read more about the Standards on the 18F blog, where we cover the
 latest development releases as well as interviews with the teams from across
 government who have successfully implemented the Standards at their agencies.
 
-<a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read the latest blog posts</a>
+<a href="https://18f.gsa.gov/tags/web-design-standards/" class="button">Read the latest blog posts</a>
 {% endcapture %}
 
 {% capture in_wild %}
@@ -34,14 +34,14 @@ maintain a list of sites in our GitHub repo. Feel free to
 or [email us](mailto:uswebdesignstandards@gsa.gov) if you’d like to add your
 project to our list.
 
-<a href="https://github.com/18F/web-design-standards/blob/develop/WHO_IS_USING_USWDS.md" class="usa-button">View our list on GitHub</a>
+<a href="https://github.com/18F/web-design-standards/blob/develop/WHO_IS_USING_USWDS.md" class="button">View our list on GitHub</a>
 {% endcapture %}
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     {{ blog | markdownify }}
   </div>
-  <div class="usa-width-one-half">
+  <div class="width-one-half">
     {{ in_wild | markdownify }}
   </div>
 </div>

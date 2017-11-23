@@ -12,21 +12,21 @@ order: 25
 
 Brugeren er som udgangspunkt utålmodig og laver mange små fejl. Mange brugere vil anvende en slags ”trial and error” praksis til at navigere løsningen, fremfor at læse de instrukser du giver. 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Gør det muligt at fortryde og gå tilbage</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
 </div>
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Gør muligt at træffe en informeret beslutning ved blot at ‘scanne’ siden</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
@@ -37,22 +37,22 @@ Brugeren er som udgangspunkt utålmodig og laver mange små fejl. Mange brugere 
 
 Brugeren har opbygget vaner og praksisser ud fra de interaktionsprincipper, som  kendes fra andre løsninger. Tag derfor altid udgangspunkt i gængse og genkendelige principper. På den måde vil din løsning føles ”rigtig” for brugeren.
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Vær klassisk fremfor eksotisk</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
 </div>
 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Vær forudsigelig og konsistent</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
@@ -64,11 +64,11 @@ Brugeren har opbygget vaner og praksisser ud fra de interaktionsprincipper, som 
 
 I interaktionsdesign siger man: ”20 % af løsningens funktionalitet anvendes 80 % af tiden”. Med andre ord er det ofte de samme få funktioner, som brugeren har behov for. Derfor bør de mest hyppige funktioner være lettest at finde. Ligeledes bør funktioner, som anvendes sjældent, ikke støje for meget i layoutet, men blot være til at finde, når brugeren rent faktisk ønsker at finde dem. 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Gør det let at navigere til hyppige funktioner</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
@@ -78,32 +78,32 @@ I interaktionsdesign siger man: ”20 % af løsningens funktionalitet anvendes 8
 
 ## GØR DIT INDHOLD OVERSKUELIGT
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Indel tekster i små afsnit med beskrivende overskrifter.</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
 </div>
 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Præsentér indholdet bid for bid</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
 </div>
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Gruppér dit indhold</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>

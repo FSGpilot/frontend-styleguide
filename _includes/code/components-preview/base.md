@@ -16,25 +16,25 @@ title: Base.html
     
   </head>
   <body>
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <a class="skipnav" href="#main-content">Skip to main content</a>
     
 
-    <div class="usa-banner">
-  <div class="usa-accordion">
-    <header class="usa-banner-header">
-      <div class="usa-grid usa-banner-inner">
+    <div class="banner">
+  <div class="accordion">
+    <header class="banner-header">
+      <div class="grid banner-inner">
       <img src="../../dist/img/favicons/favicon-57.png" alt="U.S. flag">
       <p>An official website of the United States government</p>
-      <button class="usa-accordion-button usa-banner-button"
+      <button class="accordion-button banner-button"
         aria-expanded="false" aria-controls="gov-banner">
-        <span class="usa-banner-button-text">Here's how you know</span>
+        <span class="banner-button-text">Here's how you know</span>
       </button>
       </div>
     </header>
-    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
-      <div class="usa-banner-guidance-gov usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="../../dist/img/icon-dot-gov.svg" alt="Dot gov">
-        <div class="usa-media_block-body">
+    <div class="banner-content grid accordion-content" id="gov-banner">
+      <div class="banner-guidance-gov width-one-half">
+        <img class="banner-icon media_block-img" src="../../dist/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="media_block-body">
           <p>
             <strong>The .gov means it’s official.</strong>
             <br>
@@ -42,9 +42,9 @@ title: Base.html
           </p>
         </div>
       </div>
-      <div class="usa-banner-guidance-ssl usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="../../dist/img/icon-https.svg" alt="Https">
-        <div class="usa-media_block-body">
+      <div class="banner-guidance-ssl width-one-half">
+        <img class="banner-icon media_block-img" src="../../dist/img/icon-https.svg" alt="Https">
+        <div class="media_block-body">
           <p>
             <strong>The site is secure.</strong>
             <br>
@@ -58,11 +58,11 @@ title: Base.html
 
     
 
-    <header class="usa-header usa-header-basic" role="banner">
-  <div class="usa-nav-container">
-    <div class="usa-navbar">
-  <div class="usa-logo" id="basic-logo">
-    <em class="usa-logo-text">
+    <header class="header header-basic" role="banner">
+  <div class="nav-container">
+    <div class="navbar">
+  <div class="logo" id="basic-logo">
+    <em class="logo-text">
       <a href="/"
         title="Home"
         aria-label="Home">
@@ -70,49 +70,17 @@ title: Base.html
       </a>
     </em>
   </div>
-  <button class="usa-menu-btn">Menu</button>
+  <button class="menu-btn">Menu</button>
 </div>
 
-    <nav role="navigation" class="usa-nav">
+    <nav role="navigation" class="nav">
       
-      <button class="usa-nav-close">
-  <img src="../../dist/img/close.svg" alt="close">
-</button>
-<ul class="usa-nav-primary usa-accordion"><li><button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="basic-nav-section-one">
-      <span>Section title</span>
-    </button>
-    <ul id="basic-nav-section-one" class="usa-nav-submenu"><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li></ul></li><li><button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="basic-nav-section-two">
-      <span>Simple terms</span>
-    </button>
-    <ul id="basic-nav-section-two" class="usa-nav-submenu"><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li></ul></li><li><a class="usa-nav-link" href="javascript:void(0)">
-      <span>Distinct from each other</span>
-    </a></li></ul><form class="usa-search usa-search-small ">
-  <div role="search">
-    <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
-    <input id="basic-search-field-small" type="search" name="search">
-    <button type="submit">
-      <span class="usa-sr-only">Search</span>
-    </button>
-  </form>
-</div>
-
+      
       
     </nav>
   </div>
 </header>
-<div class="usa-overlay"></div>
+<div class="overlay"></div>
 
     
 
@@ -133,7 +101,7 @@ title: Base.html
     <div class="container">
       <nav class="footer-nav row">
         <div class="col-12 col-sm-4 col-md-6">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Ansvarlig myndighed</h4>
             </li>
@@ -142,7 +110,7 @@ title: Base.html
         </div>
 
         <div class="col-12 col-sm-4 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Kontakt</h4>
             </li>
@@ -155,7 +123,7 @@ title: Base.html
         </div>
 
         <div class="col-12 col-sm-4 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Emne</h4> 
             </li>

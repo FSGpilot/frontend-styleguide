@@ -9,8 +9,8 @@ title: Alerts--slim.html
 
 
 
-<div class="usa-alert usa-alert-info usa-alert-slim" >
-  <div class="usa-alert-body"><p class="usa-alert-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+<div class="alert alert-info alert-slim" >
+  <div class="alert-body"><p class="alert-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
   </div>
 </div>
 

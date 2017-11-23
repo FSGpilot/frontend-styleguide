@@ -16,25 +16,25 @@ title: Layout--docs.html
     
   </head>
   <body>
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <a class="skipnav" href="#main-content">Skip to main content</a>
     
 
-    <div class="usa-banner">
-  <div class="usa-accordion">
-    <header class="usa-banner-header">
-      <div class="usa-grid usa-banner-inner">
+    <div class="banner">
+  <div class="accordion">
+    <header class="banner-header">
+      <div class="grid banner-inner">
       <img src="../../dist/img/favicons/favicon-57.png" alt="U.S. flag">
       <p>An official website of the United States government</p>
-      <button class="usa-accordion-button usa-banner-button"
+      <button class="accordion-button banner-button"
         aria-expanded="false" aria-controls="gov-banner">
-        <span class="usa-banner-button-text">Here's how you know</span>
+        <span class="banner-button-text">Here's how you know</span>
       </button>
       </div>
     </header>
-    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
-      <div class="usa-banner-guidance-gov usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="../../dist/img/icon-dot-gov.svg" alt="Dot gov">
-        <div class="usa-media_block-body">
+    <div class="banner-content grid accordion-content" id="gov-banner">
+      <div class="banner-guidance-gov width-one-half">
+        <img class="banner-icon media_block-img" src="../../dist/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="media_block-body">
           <p>
             <strong>The .gov means it’s official.</strong>
             <br>
@@ -42,9 +42,9 @@ title: Layout--docs.html
           </p>
         </div>
       </div>
-      <div class="usa-banner-guidance-ssl usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="../../dist/img/icon-https.svg" alt="Https">
-        <div class="usa-media_block-body">
+      <div class="banner-guidance-ssl width-one-half">
+        <img class="banner-icon media_block-img" src="../../dist/img/icon-https.svg" alt="Https">
+        <div class="media_block-body">
           <p>
             <strong>The site is secure.</strong>
             <br>
@@ -58,11 +58,11 @@ title: Layout--docs.html
 
     
 
-    <header class="usa-header usa-header-basic" role="banner">
-  <div class="usa-nav-container">
-    <div class="usa-navbar">
-  <div class="usa-logo" id="basic-logo">
-    <em class="usa-logo-text">
+    <header class="header header-basic" role="banner">
+  <div class="nav-container">
+    <div class="navbar">
+  <div class="logo" id="basic-logo">
+    <em class="logo-text">
       <a href="/"
         title="Home"
         aria-label="Home">
@@ -70,49 +70,27 @@ title: Layout--docs.html
       </a>
     </em>
   </div>
-  <button class="usa-menu-btn">Menu</button>
+  <button class="menu-btn">Menu</button>
 </div>
 
-    <nav role="navigation" class="usa-nav">
+    <nav role="navigation" class="nav">
       
-      <button class="usa-nav-close">
-  <img src="../../dist/img/close.svg" alt="close">
-</button>
-<ul class="usa-nav-primary usa-accordion"><li><button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="basic-nav-section-one">
-      <span>Sections</span>
-    </button>
-    <ul id="basic-nav-section-one" class="usa-nav-submenu"><li>
-              <a href="#section-heading-h2">Section heading (h2)</a>
-            </li><li>
-              <a href="#section-heading-h3">Subsection heading (h3)</a>
-            </li><li>
-              <a href="#section-heading-h4">Subsection heading (h4)</a>
-            </li></ul></li><li><button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="basic-nav-section-two">
-      <span>Simple terms</span>
-    </button>
-    <ul id="basic-nav-section-two" class="usa-nav-submenu"><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li></ul></li><li><a class="usa-nav-link" href="javascript:void(0)">
-      <span>Distinct from each other</span>
-    </a></li></ul>
+      
       
     </nav>
   </div>
 </header>
-<div class="usa-overlay"></div>
+<div class="overlay"></div>
 
     
 
     
-  <main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
-    <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
-      
+  <main class="container section content layout-docs" id="main-content">
+    <div class="row">
+      <aside class="col-3 layout-docs-sidenav">
+        
 
-<ul class="usa-sidenav-list">
+<ul class="sidenav-list">
   
   
   <li>
@@ -123,11 +101,11 @@ title: Layout--docs.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Current page
     </a>
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
       
   
   <li>
@@ -138,11 +116,11 @@ title: Layout--docs.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Child link
     </a>
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
       
   
   <li>
@@ -160,7 +138,7 @@ title: Layout--docs.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Grandchild link
     </a>
     
@@ -214,28 +192,29 @@ title: Layout--docs.html
 
 </ul>
 
-    </aside>
+      </aside>
 
-    <div class="usa-width-three-fourths usa-layout-docs-main_content">
-      <h1>Page heading (h1)</h1>
+      <div class="col-9 layout-docs-main_content">
+        <h1>Page heading (h1)</h1>
 
-      <p class="usa-font-lead">The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.</p>
+        <p class="font-lead">The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.</p>
 
-      <h2 id="section-heading-h2">Section heading (h2)</h2>
+        <h2 id="section-heading-h2">Section heading (h2)</h2>
 
-      <p>These headings introduce, respectively, sections and subsections within your body copy. As you create these headings, follow the same guidelines that you use when writing section headings: Be succinct, descriptive, and precise.</p>
+        <p>These headings introduce, respectively, sections and subsections within your body copy. As you create these headings, follow the same guidelines that you use when writing section headings: Be succinct, descriptive, and precise.</p>
 
-      <h3 id="section-heading-h3">Subsection heading (h3)</h3>
+        <h3 id="section-heading-h3">Subsection heading (h3)</h3>
 
-      <p>The particulars of your body copy will be determined by the topic of your page. Regardless of topic, it’s a good practice to follow the inverted pyramid structure when writing copy: Begin with the information that’s most important to your users and then present information of less importance.</p>
+        <p>The particulars of your body copy will be determined by the topic of your page. Regardless of topic, it’s a good practice to follow the inverted pyramid structure when writing copy: Begin with the information that’s most important to your users and then present information of less importance.</p>
 
-      <p>Keep each section and subsection focused — a good approach is to include one theme (topic) per section.</p>
+        <p>Keep each section and subsection focused — a good approach is to include one theme (topic) per section.</p>
 
-      <h4 id="section-heading-h4">Subsection heading (h4)</h4>
+        <h4 id="section-heading-h4">Subsection heading (h4)</h4>
 
-      <p>Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.</p>
+        <p>Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.</p>
 
-      <p>Read the full documentation on our side navigation on the component page.</p>
+        <p>Read the full documentation on our side navigation on the component page.</p>
+      </div>
     </div>
   </main>
 
@@ -253,7 +232,7 @@ title: Layout--docs.html
     <div class="container">
       <nav class="footer-nav row">
         <div class="col-12 col-sm-4 col-md-6">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Ansvarlig myndighed</h4>
             </li>
@@ -262,7 +241,7 @@ title: Layout--docs.html
         </div>
 
         <div class="col-12 col-sm-4 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Kontakt</h4>
             </li>
@@ -275,7 +254,7 @@ title: Layout--docs.html
         </div>
 
         <div class="col-12 col-sm-4 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Emne</h4> 
             </li>

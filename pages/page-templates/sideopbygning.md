@@ -21,7 +21,7 @@ subnav:
   href: '#'
 ---
 
-<h2 class="usa-heading" id="Bred-central-kolonne">Bred central kolonne med tringuide</h2>
+<h2 class="heading" id="Bred-central-kolonne">Bred central kolonne med tringuide</h2>
 
 Siden med bred central kolonne og tringuide har et bredt område til hovedindhold, og bruges i forbindelse med trininddelte indberetninger.
 {% include annotations.html annotations=site.data.annotations id="bred_trin" %}
@@ -35,7 +35,7 @@ Siden med bred central kolonne og tringuide har et bredt område til hovedindhol
 
 <a href="http://designmanual.virk.dk/virkdesign/designmanualv201/eksempel03-1.html" target="_blank" title="Eksemplarisk løsning">Se eksempel i eksemplarisk løsning</a>
 
-<h2 class="usa-heading" id="annoteringer">Eksempel på Sidetyper med annoteringer</h2>
+<h2 class="heading" id="annoteringer">Eksempel på Sidetyper med annoteringer</h2>
 
 Disse eksempler kommer fra "the Federal Reserve Bank of San Francisco"'s <a href="https://sfwebteam.github.io/public-web-front-end/out/section-4.html" target="_blank" title="FRBSF pattern library annotations">pattern library</a>. Hold musen over tallene for at se dokumentationen.
 

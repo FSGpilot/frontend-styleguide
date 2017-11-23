@@ -1,30 +1,36 @@
 ---
 layout: default
 ---
-<aside class="sidenav sticky">
-  {% assign sidenav = site.data.nav[page.category] %}
-  {% if sidenav %}
-  <ul class="usa-sidenav-list">
-    {% include nav/list.html links=sidenav %}
-  </ul>
-  {% endif %}
-</aside>
 
-<main id="main-content" class="main-content">
 
-  <div class="styleguide-content usa-content">
-    <header>
-      {% if page.category != null %}
-        {% unless page.path contains 'overview' %}
-      <p class="site-subheading">{{ page.subcategory }}</p>
-        {% endunless %}
-      {% endif %}
-      <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
-    </header>
+<main class="container section" id="main-content">
+  <div class="row">
 
-    {% include lead.html text=page.lead %}
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        {% assign sidenav = site.data.nav[page.category] %}
+        {% if sidenav %}
+        <ul class="sidenav-list">
+          {% include nav/list.html links=sidenav %}
+        </ul>
+        {% endif %}
+      </aside>
+    </div>
 
-    {{ content }}
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <header>
+        {% if page.category != null %}
+          {% unless page.path contains 'overview' %}
+        <p class="site-subheading">{{ page.subcategory }}</p>
+          {% endunless %}
+        {% endif %}
+        <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+      </header>
+
+      {% include lead.html text=page.lead %}
+
+      {{ content }}
+    </div>
+
   </div>
-
 </main>

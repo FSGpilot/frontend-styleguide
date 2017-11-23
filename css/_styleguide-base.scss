@@ -5,25 +5,25 @@ body {
 
 // USWDS Overrides
 
-.usa-footer-secondary_section {
-  background-color: $color-primary-alt-lightest;
-}
+// .footer-secondary_section {
+//   background-color: $color-primary-alt-lightest;
+// }
 
-.usa-graphic_list .usa-media_block-img {
+.graphic_list .media_block-img {
   max-width: 7rem;
 }
 
-.usa-hero {
+.hero {
   background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
   padding-bottom: 7.2rem;
   padding-top: 3.5rem;
 }
 
-.usa-hero-callout .usa-button {
+.hero-callout .button {
   margin-top: 2em;
 }
 
-.usa-hero-callout {
+.hero-callout {
   border-radius: 0.3rem;
   max-width: 46rem;
   padding: 3.6rem 3rem;
@@ -33,11 +33,11 @@ body {
   }
 }
 
-.usa-hero-callout-alt {
+.hero-callout-alt {
   font-size: 2.7rem;
 }
 
-.usa-media_block-body {
+.media_block-body {
   & > *:first-child {
     font-size: $media-block-header-font-size;
     margin-top: 0;
@@ -50,133 +50,133 @@ body {
   }
 }
 
-.usa-media_block-img {
+.media_block-img {
   float: none;
   margin-bottom: 1rem;
 }
 
-.usa-section-dark p {
+.section-dark p {
   margin-top: 0.8rem;
   font-weight: $font-light;
 }
 
 // Override for 4x1 media grid when it collapses to 2x2
 @media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
-  .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
+  .graphic_list .graphic_list-row .media_block:nth-child(-n+2) {
     margin-bottom: 6rem;
   }
 }
 
 // Fancy Horizontal Rule //
 
-.homepage-rule {
-  border: 0;
-  height: 1px;
-  width: 100%;
-  position: relative;
+// .homepage-rule {
+//   border: 0;
+//   height: 1px;
+//   width: 100%;
+//   position: relative;
 
-  &.center-diamond {
-    background: $color-primary;
-    text-align: center;
+//   &.center-diamond {
+//     background: $color-primary;
+//     text-align: center;
 
-    &:before {
-      content: "◆";
-      display: inline-block;
-      position: relative;
-      top: -0.7em;
-      font-size: 1.5em;
-      padding: 0 0.25em;
-      color: $color-secondary;
-      background: $color-white;
-    }
-  }
-}
+//     &:before {
+//       content: "◆";
+//       display: inline-block;
+//       position: relative;
+//       top: -0.7em;
+//       font-size: 1.5em;
+//       padding: 0 0.25em;
+//       color: $color-secondary;
+//       background: $color-white;
+//     }
+//   }
+// }
 
 // Header -------------- //
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+// .sticky {
+//   position: -webkit-sticky;
+//   position: sticky;
+//   top: 0;
 
-  &:before,
-  &:after {
-    content: '';
-    display: table;
-  }
-}
+//   &:before,
+//   &:after {
+//     content: '';
+//     display: table;
+//   }
+// }
 
-.site-header {
+// .site-header {
 
-  background-color: $color-primary-darkest;
+//   background-color: $color-primary-darkest;
 
-  @include media($nav-width) {
-    border-bottom: none;
-  }
+//   @include media($nav-width) {
+//     border-bottom: none;
+//   }
 
-  .site-logo {
-    margin-left: $site-margins-mobile;
+//   .site-logo {
+//     margin-left: $site-margins-mobile;
 
-    @include media($nav-width) {
-      margin-left: $site-margins;
-    }
-  }
+//     @include media($nav-width) {
+//       margin-left: $site-margins;
+//     }
+//   }
 
-  .usa-banner-inner {
-    max-width: 100%;
-  }
+//   .banner-inner {
+//     max-width: 100%;
+//   }
 
-  .usa-banner-content {
-    margin-left: 0;
-  }
+//   .banner-content {
+//     margin-left: 0;
+//   }
 
-  .usa-button-list {
-    float: right;
-    display: none;
-    margin-top: -5px;
+//   .button-list {
+//     float: right;
+//     display: none;
+//     margin-top: -5px;
 
-    @include media($nav-width) {
-      line-height: 8rem;
-      margin-top: 0;
-      display: block;
-      padding-right: $site-margins;
-    }
+//     @include media($nav-width) {
+//       line-height: 8rem;
+//       margin-top: 0;
+//       display: block;
+//       padding-right: $site-margins;
+//     }
 
-    // scss-lint:disable SelectorDepth, NestingDepth
-    li {
-      display: inline;
-      font-family: $font-sans;
+//     // scss-lint:disable SelectorDepth, NestingDepth
+//     li {
+//       display: inline;
+//       font-family: $font-sans;
 
-      &:last-child .usa-button {
-        margin-right: 0;
-      }
-    }
+//       &:last-child .button {
+//         margin-right: 0;
+//       }
+//     }
 
-    .usa-button {
-      @include margin(0 null);
-    }
-  }
-}
+//     .button {
+//       @include margin(0 null);
+//     }
+//   }
+// }
 
-.site-header-navbar {
-  border-bottom: none;
+// .site-header-navbar {
+//   border-bottom: none;
 
-  @include media($nav-width) {
-    height: 8rem;
-    width: 100%;
-    display: block;
-  }
+//   @include media($nav-width) {
+//     height: 8rem;
+//     width: 100%;
+//     display: block;
+//   }
 
-  // Firefox fix so that navbar buttons to align right
-  @-moz-document url-prefix() {
-    @include media($nav-width) {
-      padding-top: 1px;
-    }
-  }
-}
+//   // Firefox fix so that navbar buttons to align right
+//   @-moz-document url-prefix() {
+//     @include media($nav-width) {
+//       padding-top: 1px;
+//     }
+//   }
+// }
 
 @mixin outline-inverse-button {
   // TODO: Fix this with button mixin
-  .usa-button.usa-button-outline-inverse {
+  .button.button-outline-inverse {
     box-shadow: inset 0 0 0 2px $color-primary;
     color: $color-primary;
 
@@ -187,140 +187,140 @@ body {
   }
 }
 
-.sidenav-mobile {
-  @include outline-inverse-button;
+// .sidenav-mobile {
+//   @include outline-inverse-button;
 
-  @include media($nav-width) {
-    display: none;
-  }
+//   @include media($nav-width) {
+//     display: none;
+//   }
 
-  .usa-sidenav-sub_list {
-    &[aria-hidden=true] {
-      display: none;
-    }
-  }
+//   .sidenav-sub_list {
+//     &[aria-hidden=true] {
+//       display: none;
+//     }
+//   }
 
-  li > button {
-    @include button-unstyled;
-    font-weight: $font-normal;
-    padding: 1.4rem 1.5rem 1rem 1.8rem;
+//   li > button {
+//     @include button-unstyled;
+//     font-weight: $font-normal;
+//     padding: 1.4rem 1.5rem 1rem 1.8rem;
 
-    &:hover {
-      background-color: $color-gray-lightest;
-      color: $color-primary;
-    }
+//     &:hover {
+//       background-color: $color-gray-lightest;
+//       color: $color-primary;
+//     }
 
-    &[aria-expanded=false] {
-      background-image: url('#{$image-path}/plus-alt.png');
-      background-image: url('#{$image-path}/plus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
-    }
+//     &[aria-expanded=false] {
+//       background-image: url('#{$image-path}/plus-alt.png');
+//       background-image: url('#{$image-path}/plus-alt.svg');
+//       background-repeat: no-repeat;
+//       background-position: right 0 center;
+//       background-size: 1rem;
+//     }
 
-    &[aria-expanded=true] {
-      background-image: url('#{$image-path}/minus-alt.png');
-      background-image: url('#{$image-path}/minus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
-    }
-  }
+//     &[aria-expanded=true] {
+//       background-image: url('#{$image-path}/minus-alt.png');
+//       background-image: url('#{$image-path}/minus-alt.svg');
+//       background-repeat: no-repeat;
+//       background-position: right 0 center;
+//       background-size: 1rem;
+//     }
+//   }
 
-  .usa-button-list {
-    margin-top: 4rem;
-  }
-}
+//   .button-list {
+//     margin-top: 4rem;
+//   }
+// }
 
-.site-logo {
-  @include media($nav-width) {
-    margin-top: 0;
-  }
+// .site-logo {
+//   @include media($nav-width) {
+//     margin-top: 0;
+//   }
 
-  a {
-    color: $color-white;
-  }
+//   a {
+//     color: $color-white;
+//   }
 
-  em {
-    font-family: $font-sans;
-    font-size: 1.4rem;
-    line-height: 4rem;
+//   em {
+//     font-family: $font-sans;
+//     font-size: 1.4rem;
+//     line-height: 4rem;
 
-    @include media($nav-width) {
-      font-size: $h3-font-size;
-      line-height: 8rem;
-    }
-  }
-}
+//     @include media($nav-width) {
+//       font-size: $h3-font-size;
+//       line-height: 8rem;
+//     }
+//   }
+// }
 
-.site-nav-secondary {
-  display: none;
+// .site-nav-secondary {
+//   display: none;
 
-  @include media($nav-width) {
-    background-color: $color-white;
-    border-bottom: 1px solid $color-gray-light;
-    clear: both;
-    display: block;
-    height: $height-nav-secondary;
-    padding-left: 3rem;
-    z-index: $z-nav-secondary;
-  }
+//   @include media($nav-width) {
+//     background-color: $color-white;
+//     border-bottom: 1px solid $color-gray-light;
+//     clear: both;
+//     display: block;
+//     height: $height-nav-secondary;
+//     padding-left: 3rem;
+//     z-index: $z-nav-secondary;
+//   }
 
-  ul {
-    @include unstyled-list;
+//   ul {
+//     @include unstyled-list;
 
-    li {
-      display: inline;
-      padding-right: 3rem;
-    }
-  }
+//     li {
+//       display: inline;
+//       padding-right: 3rem;
+//     }
+//   }
 
-  a {
-    color: $color-gray-dark;
-    font-size: $site-nav-font-size;
-    font-weight: normal;
-    letter-spacing: 0.3px;
-    line-height: $height-nav-secondary;
-    text-decoration: none;
+//   a {
+//     color: $color-gray-dark;
+//     font-size: $site-nav-font-size;
+//     font-weight: normal;
+//     letter-spacing: 0.3px;
+//     line-height: $height-nav-secondary;
+//     text-decoration: none;
 
-    &:hover {
-      color: $color-primary;
-      text-decoration: underline;
-    }
+//     &:hover {
+//       color: $color-primary;
+//       text-decoration: underline;
+//     }
 
-    &.usa-current {
-      color: $color-primary;
-    }
-  }
-}
+//     &.current {
+//       color: $color-primary;
+//     }
+//   }
+// }
 
 // Sidebar Nav --------- //
 
-.sidenav {
-  display: none;
+// .sidenav {
+//   display: none;
 
-  @include media($nav-width) {
-    display: block;
-    float: left;
-    margin-bottom: 525px;
-    margin-top: 50px;
-    padding-right: 1rem;
-    padding-left: 3rem;
-    overflow-y: auto;
-    top: 5rem;
-    width: $width-nav-sidebar;
-  }
+//   @include media($nav-width) {
+//     display: block;
+//     float: left;
+//     margin-bottom: 525px;
+//     margin-top: 50px;
+//     padding-right: 1rem;
+//     padding-left: 3rem;
+//     overflow-y: auto;
+//     top: 5rem;
+//     width: $width-nav-sidebar;
+//   }
 
-  .lt-ie9 & {
-    width: 25%;
-  }
+//   .lt-ie9 & {
+//     width: 25%;
+//   }
 
-  .usa-navigation-submenu {
-    &[aria-hidden="false"] {
-      display: block;
-    }
-  }
-}
+//   .navigation-submenu {
+//     &[aria-hidden="false"] {
+//       display: block;
+//     }
+//   }
+// }
 
 // Main Content --------- //
 
@@ -410,17 +410,17 @@ body {
 }
 
 .label-alpha {
-  @include label-link($color-gold-lightest, $color-gold-lighter);
+  @include label-link($color-error-background, $color-error-background);
 }
 
 .label-beta,
 .label-in-progress {
-  @include label-link($color-primary-alt-lightest, $color-primary-alt-light);
+  @include label-link($color-warning-background, $color-warning-background);
 }
 
 .label-recommended,
 .label-done {
-  @include label-link($color-green-lightest, $color-green-lighter);
+  @include label-link($color-success-background, $color-success-background);
 }
 
 h1 + .tooltip {
@@ -460,49 +460,49 @@ a.cta {
 
 // Footer --------------- //
 
-footer.site {
+// footer.site {
 
-  clear: both;
+//   clear: both;
 
-  .logo-links {
-    margin-bottom: 3rem;
-    margin-right: 1rem;
+//   .logo-links {
+//     margin-bottom: 3rem;
+//     margin-right: 1rem;
 
-    @include media($medium-screen) {
-      float: left;
-      margin-bottom: 0;
-    }
+//     @include media($medium-screen) {
+//       float: left;
+//       margin-bottom: 0;
+//     }
 
-    img {
-      margin-right: 1.2rem;
-      width: 3.2rem;
-    }
+//     img {
+//       margin-right: 1.2rem;
+//       width: 3.2rem;
+//     }
 
-    a {
-      @include media-link;
-      color: $color-gray-lighter;
+//     a {
+//       @include media-link;
+//       color: $color-gray-lighter;
 
-      &:hover {
-        color: $color-white;
-      }
-    }
-  }
+//       &:hover {
+//         color: $color-white;
+//       }
+//     }
+//   }
 
-  .usa-footer-contact-links {
-    text-align: left;
+//   .footer-contact-links {
+//     text-align: left;
 
-    h4 {
-      margin-top: 1em;
-    }
+//     h4 {
+//       margin-top: 1em;
+//     }
 
-    .usa-button {
-      color: $color-white;
-      margin-bottom: 0;
-      margin-top: 0;
-      width: 100%;
-    }
-  }
-}
+//     .button {
+//       color: $color-white;
+//       margin-bottom: 0;
+//       margin-top: 0;
+//       width: 100%;
+//     }
+//   }
+// }
 
 // Pattern Preview Boxes -------- //
 
@@ -514,7 +514,7 @@ footer.site {
   padding: $site-margins;
   border: 1px solid #eeeeee; // scss-lint:disable ColorVariable
 
-  .usa-background-dark {
+  .background-dark {
     @include padding(null 1em);
     display: inline-block;
   }
@@ -535,7 +535,7 @@ footer.site {
 .preview-lists {
   padding-bottom: 0;
 
-  .usa-heading-alt {
+  .heading-alt {
     margin-top: 0;
   }
 }
@@ -547,7 +547,7 @@ footer.site {
 // Search bar grid --------- //
 
 .preview-search-bar {
-  .usa-grid {
+  .grid {
     padding: 0;
   }
 }
@@ -555,7 +555,7 @@ footer.site {
 // Custom styles to illustrate invisible grid for web design standards
 
 .grid-example {
-  .usa-grid {
+  .grid {
     background: $color-grid-light;
 
     > * {
@@ -566,7 +566,7 @@ footer.site {
     }
   }
 
-  .usa-width-one-twelfth {
+  .width-one-twelfth {
     @include media($medium-screen) {
       @include padding(null 0);
     }
@@ -574,13 +574,13 @@ footer.site {
 }
 
 .grid-example-blank {
-  .usa-grid {
+  .grid {
     text-align: center;
   }
 }
 
 .grid-text {
-  .usa-grid {
+  .grid {
     background: $color-grid-dark;
 
     > * {
@@ -621,18 +621,18 @@ h3 + .button_wrapper {
   background: $color-gray-dark;
 }
 
-.usa-heading {
+.heading {
   color: $color-primary-darker;
 }
 
 // Colors -------------- //
 
-.usa-color-short {
+.color-short {
   height: 7rem;
   margin-bottom: 1rem;
 }
 
-.usa-color-name {
+.color-name {
   font-size: 1.2rem;
 
   @include media($medium-screen) {
@@ -642,7 +642,7 @@ h3 + .button_wrapper {
   @include margin(0 null 1em);
 }
 
-.usa-color-row {
+.color-row {
   margin-bottom: 3rem;
 
   .color-big {
@@ -673,14 +673,14 @@ h3 + .button_wrapper {
   }
 }
 
-.usa-primary-color-section {
+.primary-color-section {
   margin-bottom: 0;
 
   @include media($medium-screen) {
     margin-bottom: 8rem;
   }
 
-  .usa-color-square {
+  .color-square {
     @include span-columns(6);
     margin-bottom: 7rem;
     padding-bottom: 50%;
@@ -693,7 +693,7 @@ h3 + .button_wrapper {
     }
   }
 
-  .usa-mobile-end-row {
+  .mobile-end-row {
     margin-right: 0;
 
     @include media($medium-screen) {
@@ -701,261 +701,261 @@ h3 + .button_wrapper {
     }
   }
 
-  .usa-color-name {
+  .color-name {
     margin: 0;
   }
 }
 
-.usa-color-inner-content {
+.color-inner-content {
   position: absolute;
   top: 100%;
 }
 
-.usa-color-hex {
+.color-hex {
   @include margin(1rem null 0);
   font-weight: $font-bold;
 }
 
-.usa-color-text {
+.color-text {
   @include padding(1rem 2rem);
   font-weight: $font-bold;
   margin-bottom: .4rem;
 }
 
-.usa-color-outline {
-  .usa-color-text {
+.color-outline {
+  .color-text {
     box-shadow: inset 0 0 0 1px $color-gray;
   }
 }
 
 // Color background helpers
+// TODO: change all of these classes to use the new colors and their names!!! - JJE
+// .color-primary {
+//   background-color: $color-primary;
+// }
 
-.usa-color-primary {
-  background-color: $color-primary;
-}
+// .color-primary-darker {
+//   background-color: $color-primary-darker;
+// }
 
-.usa-color-primary-darker {
-  background-color: $color-primary-darker;
-}
+// .color-primary-darkest {
+//   background-color: $color-primary-darkest;
+// }
 
-.usa-color-primary-darkest {
-  background-color: $color-primary-darkest;
-}
+// .color-base {
+//   background-color: $color-base;
+// }
 
-.usa-color-base {
-  background-color: $color-base;
-}
+// .color-gray-dark {
+//   background-color: $color-gray-dark;
+// }
 
-.usa-color-gray-dark {
-  background-color: $color-gray-dark;
-}
+// .color-gray-light {
+//   background-color: $color-gray-light;
+// }
 
-.usa-color-gray-light {
-  background-color: $color-gray-light;
-}
+// .color-white {
+//   background-color: $color-white;
+//   box-shadow: inset 0 0 0 1px $color-gray;
+// }
 
-.usa-color-white {
-  background-color: $color-white;
-  box-shadow: inset 0 0 0 1px $color-gray;
-}
+// .color-primary-alt {
+//   background-color: $color-primary-alt;
+// }
 
-.usa-color-primary-alt {
-  background-color: $color-primary-alt;
-}
+// .color-primary-alt-dark {
+//   background-color: $color-primary-alt-dark;
+// }
 
-.usa-color-primary-alt-dark {
-  background-color: $color-primary-alt-dark;
-}
+// .color-primary-alt-darkest {
+//   background-color: $color-primary-alt-darkest;
+// }
 
-.usa-color-primary-alt-darkest {
-  background-color: $color-primary-alt-darkest;
-}
+// .color-primary-alt-light {
+//   background-color: $color-primary-alt-light;
+// }
 
-.usa-color-primary-alt-light {
-  background-color: $color-primary-alt-light;
-}
+// .color-primary-alt-lightest {
+//   background-color: $color-primary-alt-lightest;
+// }
 
-.usa-color-primary-alt-lightest {
-  background-color: $color-primary-alt-lightest;
-}
+// .color-secondary {
+//   background-color: $color-secondary;
+// }
 
-.usa-color-secondary {
-  background-color: $color-secondary;
-}
+// .color-secondary-dark {
+//   background-color: $color-secondary-dark;
+// }
 
-.usa-color-secondary-dark {
-  background-color: $color-secondary-dark;
-}
+// .color-secondary-darkest {
+//   background-color: $color-secondary-darkest;
+// }
 
-.usa-color-secondary-darkest {
-  background-color: $color-secondary-darkest;
-}
+// .color-secondary-light {
+//   background-color: $color-secondary-light;
+// }
 
-.usa-color-secondary-light {
-  background-color: $color-secondary-light;
-}
+// .color-secondary-lightest {
+//   background-color: $color-secondary-lightest;
+// }
 
-.usa-color-secondary-lightest {
-  background-color: $color-secondary-lightest;
-}
+// .color-gray {
+//   background-color: $color-gray;
+// }
 
-.usa-color-gray {
-  background-color: $color-gray;
-}
+// .color-gray-lighter {
+//   background-color: $color-gray-lighter;
+// }
 
-.usa-color-gray-lighter {
-  background-color: $color-gray-lighter;
-}
+// .color-gray-lightest {
+//   background-color: $color-gray-lightest;
+// }
 
-.usa-color-gray-lightest {
-  background-color: $color-gray-lightest;
-}
+// .color-gray-warm-dark {
+//   background-color: $color-gray-warm-dark;
+// }
 
-.usa-color-gray-warm-dark {
-  background-color: $color-gray-warm-dark;
-}
+// .color-gray-warm-light {
+//   background-color: $color-gray-warm-light;
+// }
 
-.usa-color-gray-warm-light {
-  background-color: $color-gray-warm-light;
-}
+// .color-gray-cool-light {
+//   background-color: $color-gray-cool-light;
+// }
 
-.usa-color-gray-cool-light {
-  background-color: $color-gray-cool-light;
-}
+// .color-gold {
+//   background-color: $color-gold;
+// }
 
-.usa-color-gold {
-  background-color: $color-gold;
-}
+// .color-gold-light {
+//   background-color: $color-gold-light;
+// }
 
-.usa-color-gold-light {
-  background-color: $color-gold-light;
-}
+// .color-gold-lighter {
+//   background-color: $color-gold-lighter;
+// }
 
-.usa-color-gold-lighter {
-  background-color: $color-gold-lighter;
-}
+// .color-gold-lightest {
+//   background-color: $color-gold-lightest;
+// }
 
-.usa-color-gold-lightest {
-  background-color: $color-gold-lightest;
-}
+// .color-green {
+//   background-color: $color-green;
+// }
 
-.usa-color-green {
-  background-color: $color-green;
-}
+// .color-green-light {
+//   background-color: $color-green-light;
+// }
 
-.usa-color-green-light {
-  background-color: $color-green-light;
-}
+// .color-green-lighter {
+//   background-color: $color-green-lighter;
+// }
 
-.usa-color-green-lighter {
-  background-color: $color-green-lighter;
-}
+// .color-green-lightest {
+//   background-color: $color-green-lightest;
+// }
 
-.usa-color-green-lightest {
-  background-color: $color-green-lightest;
-}
+// .color-cool-blue {
+//   background-color: $color-cool-blue;
+// }
 
-.usa-color-cool-blue {
-  background-color: $color-cool-blue;
-}
+// .color-cool-blue-light {
+//   background-color: $color-cool-blue-light;
+// }
 
-.usa-color-cool-blue-light {
-  background-color: $color-cool-blue-light;
-}
+// .color-cool-blue-lighter {
+//   background-color: $color-cool-blue-lighter;
+// }
 
-.usa-color-cool-blue-lighter {
-  background-color: $color-cool-blue-lighter;
-}
+// .color-cool-blue-lightest {
+//   background-color: $color-cool-blue-lightest;
+// }
 
-.usa-color-cool-blue-lightest {
-  background-color: $color-cool-blue-lightest;
-}
+// .color-focus {
+//   background-color: $color-focus;
+// }
 
-.usa-color-focus {
-  background-color: $color-focus;
-}
+// .color-visited {
+//   background-color: $color-visited;
+// }
 
-.usa-color-visited {
-  background-color: $color-visited;
-}
+// // Color text helpers
 
-// Color text helpers
+// .color-text-primary-darkest {
+//   color: $color-primary-darkest;
+// }
 
-.usa-color-text-primary-darkest {
-  color: $color-primary-darkest;
-}
+// .color-text-primary-darker {
+//   color: $color-primary-darker;
+// }
 
-.usa-color-text-primary-darker {
-  color: $color-primary-darker;
-}
+// .color-text-primary {
+//   color: $color-primary;
+// }
 
-.usa-color-text-primary {
-  color: $color-primary;
-}
+// .color-text-cool-blue-light {
+//   color: $color-cool-blue-light;
+// }
 
-.usa-color-text-cool-blue-light {
-  color: $color-cool-blue-light;
-}
+// .color-text-primary-alt-darkest {
+//   color: $color-primary-alt-darkest;
+// }
 
-.usa-color-text-primary-alt-darkest {
-  color: $color-primary-alt-darkest;
-}
+// .color-text-green {
+//   color: $color-green;
+// }
 
-.usa-color-text-green {
-  color: $color-green;
-}
+// .color-text-visited {
+//   color: $color-visited;
+// }
 
-.usa-color-text-visited {
-  color: $color-visited;
-}
+// .color-text-gray-dark {
+//   color: $color-gray-dark;
+// }
 
-.usa-color-text-gray-dark {
-  color: $color-gray-dark;
-}
+// .color-text-gray {
+//   color: $color-gray;
+// }
 
-.usa-color-text-gray {
-  color: $color-gray;
-}
+// .color-text-gray-warm-dark {
+//   color: $color-gray-warm-dark;
+// }
 
-.usa-color-text-gray-warm-dark {
-  color: $color-gray-warm-dark;
-}
+// .color-text-secondary-darkest {
+//   color: $color-secondary-darkest;
+// }
 
-.usa-color-text-secondary-darkest {
-  color: $color-secondary-darkest;
-}
+// .color-text-secondary-dark {
+//   color: $color-secondary-dark;
+// }
 
-.usa-color-text-secondary-dark {
-  color: $color-secondary-dark;
-}
+// .color-text-secondary {
+//   color: $color-secondary;
+// }
 
-.usa-color-text-secondary {
-  color: $color-secondary;
-}
+// .color-text-white {
+//   color: $color-white;
+// }
 
-.usa-color-text-white {
-  color: $color-white;
-}
-
-.usa-heading-alt {
+.heading-alt {
   border-bottom: 1px solid $color-gray;
   padding-bottom: .8rem;
 }
 
 // scss-lint:disable QualifyingElement
-h6.usa-heading-alt {
+h6.heading-alt {
   margin-top: 4rem;
 }
 // scss-lint:enable QualifyingElement
 
-.usa-typography-example-font {
+.typography-example-font {
   h1,
   h2,
   h3,
   h4,
   h5,
   h6,
-  .usa-font-example p {
+  .font-example p {
     margin: 0;
   }
 }
@@ -966,14 +966,14 @@ h6.usa-heading-alt {
   }
 }
 
-.usa-typography-example {
-  .usa-monospace {
+.typography-example {
+  .monospace {
     @include margin(0 null 3rem);
     font-size: 1.2rem;
   }
 }
 
-.usa-monospace {
+.monospace {
   font-family: $font-monospace;
 }
 
@@ -1015,7 +1015,7 @@ code {
 
 // Code snippet boxes
 
-.usa-code-sample {
+.code-sample {
   pre,
   code {
     background: none;
@@ -1024,11 +1024,11 @@ code {
     padding: 0;
   }
 
-  .usa-unstyled-list {
+  .unstyled-list {
     @include unstyled-list;
   }
 
-  .usa-accordion-content {
+  .accordion-content {
     // padding: 0;
   }
 }
@@ -1046,7 +1046,7 @@ code {
   .token.constant,
   .token.symbol,
   .token.deleted {
-    color: $color-primary-alt-darkest;
+    color: $color-gray-darkest;
   }
 
   .na,
@@ -1056,18 +1056,18 @@ code {
   .token.char,
   .token.builtin,
   .token.inserted {
-    color: $color-secondary;
+    color: $color-gray-dark;
   }
 
   .s,
   .token.atrule,
   .token.attr-value,
   .token.keyword {
-    color: $color-green;
+    color: $color-text-positive;
   }
 
   .token.punctuation {
-    color: $color-primary-alt-darkest;
+    color: $color-neutral-darkest;
   }
 }
 
@@ -1122,21 +1122,21 @@ code {
 }
 
 .serif-robust {
-  .usa-display-alt {
+  .display-alt {
     font-size: $h1-font-size;
     font-weight: $font-light;
   }
 
-  .usa-font-lead {
+  .font-lead {
     font-weight: $font-light;
 
-    .usa-font-lead-alt {
+    .font-lead-alt {
       @include font-lead-alt;
     }
   }
 
   &.serif-body {
-    .usa-font-example {
+    .font-example {
       p {
         font-family: $font-heading; //TODO: this is confusing serif --> sans / heading etc. Update this code based on the new fonts ...
         font-size: rem(15px);
@@ -1144,10 +1144,10 @@ code {
       }
 
       // scss-lint:disable SelectorDepth, NestingDepth
-      .usa-font-lead {
+      .font-lead {
         font-size: $h3-font-size;
 
-        .usa-font-lead-alt {
+        .font-lead-alt {
           @include font-lead-alt;
         }
       }
@@ -1189,16 +1189,16 @@ code {
     font-size: rem(13px);
   }
 
-  .usa-display {
+  .display {
     font-size: rem(59px);
   }
 
-  .usa-display-alt {
+  .display-alt {
     font-size: rem(44px);
     font-weight: $font-light;
   }
 
-  .usa-font-lead {
+  .font-lead {
     font-family: $font-sans;
     font-size: rem(22px);
     font-weight: $font-light;
@@ -1206,14 +1206,14 @@ code {
   }
 
   &.serif-body {
-    .usa-font-example {
+    .font-example {
       p {
         font-family: $font-heading; //$font-serif;
         font-size: rem(15px);
         line-height: $lead-line-height;
       }
 
-      .usa-font-lead {
+      .font-lead {
         font-family: $font-sans;
         font-size: rem(22px);
         font-weight: $font-light;
@@ -1229,13 +1229,13 @@ code {
   }
 }
 
-.usa-accordion-docs {
+.accordion-docs {
   margin-bottom: 6rem;
 }
 
 // This adds styleguide-only right and left margins for our disclaimer
 // Since the layout we use is not in a grid
-.usa-banner {
+.banner {
   &.is-scrolled {
     @media (min-width: $medium-screen + $width-nav-sidebar) {
       display: none;
@@ -1243,7 +1243,7 @@ code {
   }
 }
 
-.usa-disclaimer-stage {
+.disclaimer-stage {
   @media (min-width: $medium-screen + $width-nav-sidebar) {
     display: block;
   }
@@ -1255,7 +1255,7 @@ code {
   @include external-link(external-link, external-link-hover);
 }
 
-.usa-button,
+.button,
 .link-download,
 .media_link {
   &#{$external-href}::after {
@@ -1264,7 +1264,7 @@ code {
 }
 
 .logo-links,
-.usa-disclaimer-stage {
+.disclaimer-stage {
   #{$external-href} {
     &::after {
       display: none;
@@ -1275,7 +1275,7 @@ code {
 // Page styles
 .page-ui-components {
 
-  .usa-font-lead {
+  .font-lead {
     &:first-of-type {
       margin-top: 3.2rem;
     }
@@ -1284,7 +1284,7 @@ code {
 
 .page-design-principles {
   @include media($medium-screen) {
-    .main-content .usa-grid-full {
+    .main-content .grid-full {
       @include margin(4rem null 3rem null);
     }
   }
@@ -1343,8 +1343,8 @@ code {
 .page-for-developers,
 .page-for-designers,
 .page-component-maturity-scale {
-  .usa-content {
-    > ul:not(.usa-content-list) {
+  .content {
+    > ul:not(.content-list) {
       max-width: $text-max-width;
     }
   }
@@ -1361,13 +1361,13 @@ code {
 }
 
 .page-product-roadmap {
-  .usa-label {
+  .label {
     display: inline-block;
     position: relative;
   }
 }
 
-.usa-center {
+.center {
   text-align: center;
 }
 
@@ -1447,7 +1447,7 @@ code {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
-  .usa-button {
+  .button {
     background-image: url('#{$site-image-path}/angle-arrow-left-inverse.png');
     background-image: url('#{$site-image-path}/angle-arrow-left-inverse.svg');
     background-repeat: no-repeat;
@@ -1751,25 +1751,11 @@ $color-blue-50: #3572b0; //Added by mgb - used for links
 }
 
 /////////////////// styleswitcher //////////////////////
-.site-nav-secondary ul {
-  float: left;
-}
-
 .style-switcher{
-  margin-top: 10px;
-
-  @include media($nav-width) {
-    float: right;
-    margin-right: 29px;
-    max-width: 200px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-.site-header-navbar .style-switcher{
-  @include media($nav-width) {
-    display: none;
-  }
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
 }
 
 //////////////////// version-switcher /////////////////////

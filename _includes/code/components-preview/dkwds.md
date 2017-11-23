@@ -12,7 +12,7 @@ title: Dkwds.html
   </head>
   <body>
     
-    <script src="../../dist/js/dkwds.min.js"></script>
+    <script src="../../dist/js/dkwds.js"></script>
     <script>
     window.addEventListener('load', function() {
       document.body.addEventListener('submit', function(e) {

@@ -4,5 +4,5 @@ layout: base
 title: Labels--default.html
 ---
 
-<span class="usa-label ">New</span>
+<span class="label ">New</span>
 

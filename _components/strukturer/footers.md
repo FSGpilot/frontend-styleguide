@@ -17,30 +17,30 @@ subnav:
 
 {% include code/preview.html component="footer.html" %}
 {% include code/accordion.html component="footer" %}
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="footer-docs">
     Documentation
   </button>
-  <div id="footer-docs" aria-hidden="false" class="usa-accordion-content">
-    <h4 class="usa-heading">Accessibility</h4>
-    <ul class="usa-content-list">
+  <div id="footer-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Accessibility</h4>
+    <ul class="content-list">
       <li>Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.</li>
       <li>On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.</li>
     </ul>
-    <h4 class="usa-heading">Usability</h4>
+    <h4 class="heading">Usability</h4>
     <h5>When to use</h5>
-    <ul class="usa-content-list">
+    <ul class="content-list">
       <li>Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.</li>
       <li>Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.</li>
       <li>Use the slim footer when you only want to offer a few footer links and nothing else.</li>
     </ul>
     <h5>When to consider something else</h5>
-    <ul class="usa-content-list">
+    <ul class="content-list">
       <li>Avoid using the medium and slim footers when your footer has more than five links.</li>
     </ul>
     <h5>Guidance</h5>
-    <ul class="usa-content-list">
+    <ul class="content-list">
       <li>Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.</li>
       <li>Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).</li>
       <li>Include the newsletter sign up if one of your website’s goals is getting visitors to sign up for a newsletter.</li>

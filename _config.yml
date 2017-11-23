@@ -15,10 +15,10 @@ encoding: utf-8
 
 incremental_regeneration_fixer:
   interdependent_files:
-    - "_components/colors/*"
-    - "_components/form-controls/*"
-    - "_components/form-templates/*"
-    - "_components/typography/*"
+#     - "_components/colors/*"
+    - "_components/komponenter/form-controls/*"
+#     - "_components/form-templates/*"
+#     - "_components/typography/*"
 
 sass:
   load_paths:
@@ -55,15 +55,25 @@ defaults:
 gems:
   - jekyll-redirect-from
 
+# The site maybe using some static files and they should be copied as-is while building the site. For example images folder. Jekyll has nothing to do with those images. Static files that do not need any Jekyll intervention can be kept as-is using these parameters in the configuration.
+keep_files: 
+  - _includes/code/components
+  - assets/img
+  - assets/fonts
+  - img
+
 exclude:
   - ".ruby-version"
   - ".sass-cache"
+  - ".github"
+  - ".vscode"
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
   - README.md
   - config
+  - docs
   - js
   - vendor
   - manifest.yml

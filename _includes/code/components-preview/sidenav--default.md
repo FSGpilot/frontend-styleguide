@@ -6,7 +6,7 @@ title: Sidenav--default.html
 
 
 
-<ul class="usa-sidenav-list">
+<ul class="sidenav-list">
   
   
   <li>
@@ -17,11 +17,11 @@ title: Sidenav--default.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Current page
     </a>
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
       
   
   <li>
@@ -32,11 +32,11 @@ title: Sidenav--default.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Child link
     </a>
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
       
   
   <li>
@@ -54,7 +54,7 @@ title: Sidenav--default.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Grandchild link
     </a>
     

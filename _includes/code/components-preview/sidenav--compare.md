@@ -4,17 +4,18 @@ layout: base
 title: Sidenav--compare.html
 ---
 
-<section class="usa-grid">
+<section class="container">
+  <div class="row">
 
-  <div class="usa-width-one-third">
-    <h6 class="usa-heading-alt">1 level</h6>
-    
+    <div class="col-4">
+      <h6 class="heading-alt">1 level</h6>
+      
 
-<ul class="usa-sidenav-list">
+<ul class="sidenav-list">
   
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Current page
     </a>
     
@@ -37,13 +38,13 @@ title: Sidenav--compare.html
 
 </ul>
 
-  </div>
+    </div>
 
-  <div class="usa-width-one-third">
-    <h6 class="usa-heading-alt">2 levels</h6>
-    
+    <div class="col-4">
+      <h6 class="heading-alt">2 levels</h6>
+      
 
-<ul class="usa-sidenav-list">
+<ul class="sidenav-list">
   
   
   <li>
@@ -54,11 +55,11 @@ title: Sidenav--compare.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Current page
     </a>
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
       
   
   <li>
@@ -97,13 +98,13 @@ title: Sidenav--compare.html
 
 </ul>
 
-  </div>
+    </div>
 
-  <div class="usa-width-one-third">
-    <h6 class="usa-heading-alt">3 levels</h6>
-    
+    <div class="col-4">
+      <h6 class="heading-alt">3 levels</h6>
+      
 
-<ul class="usa-sidenav-list">
+<ul class="sidenav-list">
   
   
   <li>
@@ -114,11 +115,11 @@ title: Sidenav--compare.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Current page
     </a>
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
       
   
   <li>
@@ -129,11 +130,11 @@ title: Sidenav--compare.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Child link
     </a>
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
       
   
   <li>
@@ -151,7 +152,7 @@ title: Sidenav--compare.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Grandchild link
     </a>
     
@@ -205,7 +206,8 @@ title: Sidenav--compare.html
 
 </ul>
 
-  </div>
+    </div>
 
+  </div>
 </section>
 

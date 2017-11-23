@@ -22,7 +22,7 @@ $gray-background: #F5F5F5;
       color: $color-base;
       border-bottom: 3px solid $borgerdk-green;
 }
-.site-header .usa-button-list .usa-button.usa-button-outline-inverse{
+.site-header .button-list .button.button-outline-inverse{
       box-shadow: inset 0 0 0 2px $borgerdk-green;
       color: $borgerdk-green;
 }
@@ -30,21 +30,21 @@ $gray-background: #F5F5F5;
       color: $color-base;
 }
 
-.usa-hero{
+.hero{
      background-image: url(../img/home/wds-home-new-2x-green.png); 
 }
-.usa-section-dark {
+.section-dark {
       background-color: #fff;
       color: $color-base;
       p {
             color: $color-base;
       }
 }
-.usa-hero-callout-alt {
+.hero-callout-alt {
       color: $color-base;
 }
 
 
-.usa-footer-secondary_section {
+.footer-secondary_section {
       background-color: $gray-background;
 }

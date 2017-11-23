@@ -4,9 +4,9 @@ layout: base
 title: Site-title.html
 ---
 
-<div class="usa-navbar">
-  <div class="usa-logo" id="logo">
-    <em class="usa-logo-text">
+<div class="navbar">
+  <div class="logo" id="logo">
+    <em class="logo-text">
       <a href="/"
         title="Home"
         aria-label="Home">
@@ -14,6 +14,6 @@ title: Site-title.html
       </a>
     </em>
   </div>
-  <button class="usa-menu-btn">Menu</button>
+  <button class="menu-btn">Menu</button>
 </div>
 

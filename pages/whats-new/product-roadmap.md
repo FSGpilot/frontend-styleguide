@@ -20,7 +20,7 @@ worked on or queued up to work on in our sprint milestones below. These are
 two-week increments of work that we commit to finishing, using Agile Product
 Development practices.
 
-<a href="https://github.com/18F/web-design-standards/milestones" class="usa-button">View our sprint milestones</a>
+<a href="https://github.com/18F/web-design-standards/milestones" class="button">View our sprint milestones</a>
 
 ### Future work: our product roadmap
 
@@ -37,7 +37,7 @@ high-level future requests and ideas.
     <li>
       {{ task.title }}
       {% if task.status %}
-          <a class="usa-label label-{{ task.status | slugify }}" href="{{ task.url }}" aria-describedby="tooltip-text-{{ task.title | slugify }}">
+          <a class="label label-{{ task.status | slugify }}" href="{{ task.url }}" aria-describedby="tooltip-text-{{ task.title | slugify }}">
             {{ task.status }}
           </a>
       {% endif %}

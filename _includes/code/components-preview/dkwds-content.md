@@ -12,13 +12,15 @@ title: Dkwds-content.html
   </head>
   <body>
     
-  <div class="usa-grid" style="padding: 2em">
-    <div class="usa-width-one-whole">
-      
+  <div class="container" style="padding: 2em">
+    <div class="row">
+      <div class="col-12">
+        
+      </div>
     </div>
   </div>
 
-    <script src="../../dist/js/dkwds.min.js"></script>
+    <script src="../../dist/js/dkwds.js"></script>
     <script>
     window.addEventListener('load', function() {
       document.body.addEventListener('submit', function(e) {

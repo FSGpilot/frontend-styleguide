@@ -50,7 +50,7 @@ Other allowed include parameters for `nav/list.html` include:
     be highlighted.
 * `flat` if truthy, disables subnavigation rendering.
 * `subnav_class` is the class to use for subnavigation lists, and defaults
-  to `usa-sidenav-sub_list`.
+  to `sidenav-sub_list`.
 
 ### Subnavigation
 
@@ -100,8 +100,8 @@ and would look something like:
 ```html
 <ul>
   <li>
-    <a href="/page-one/" class="usa-current">Page one</a>
-    <ul class="usa-sidenav-sub_list">
+    <a href="/page-one/" class="current">Page one</a>
+    <ul class="sidenav-sub_list">
       <li><a href="#section-one">Section one</a></li>
       <li><a href="#section-two">Section two</a></li>
     </ul>
@@ -176,7 +176,7 @@ links:
   # presents as a plain link
 - href: /page-two/
 ---
-<ul class="usa-accordion">
+<ul class="accordion">
 {% include nav/sections.html links=page.links %}
 </ul>
 ```

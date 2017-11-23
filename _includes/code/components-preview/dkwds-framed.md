@@ -12,11 +12,11 @@ title: Dkwds-framed.html
   </head>
   <body>
     
-  <div class="usa-grid" style="padding: 2em 0">
+  <div class="container" style="padding: 2em 0">
     
   </div>
 
-    <script src="../../dist/js/dkwds.min.js"></script>
+    <script src="../../dist/js/dkwds.js"></script>
     <script>
     window.addEventListener('load', function() {
       document.body.addEventListener('submit', function(e) {

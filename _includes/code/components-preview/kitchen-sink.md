@@ -16,25 +16,25 @@ title: Kitchen-sink.html
     
   </head>
   <body>
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <a class="skipnav" href="#main-content">Skip to main content</a>
     
 
-    <div class="usa-banner">
-  <div class="usa-accordion">
-    <header class="usa-banner-header">
-      <div class="usa-grid usa-banner-inner">
+    <div class="banner">
+  <div class="accordion">
+    <header class="banner-header">
+      <div class="grid banner-inner">
       <img src="../../dist/img/favicons/favicon-57.png" alt="U.S. flag">
       <p>An official website of the United States government</p>
-      <button class="usa-accordion-button usa-banner-button"
+      <button class="accordion-button banner-button"
         aria-expanded="false" aria-controls="gov-banner">
-        <span class="usa-banner-button-text">Here's how you know</span>
+        <span class="banner-button-text">Here's how you know</span>
       </button>
       </div>
     </header>
-    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
-      <div class="usa-banner-guidance-gov usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="../../dist/img/icon-dot-gov.svg" alt="Dot gov">
-        <div class="usa-media_block-body">
+    <div class="banner-content grid accordion-content" id="gov-banner">
+      <div class="banner-guidance-gov width-one-half">
+        <img class="banner-icon media_block-img" src="../../dist/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="media_block-body">
           <p>
             <strong>The .gov means it’s official.</strong>
             <br>
@@ -42,9 +42,9 @@ title: Kitchen-sink.html
           </p>
         </div>
       </div>
-      <div class="usa-banner-guidance-ssl usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="../../dist/img/icon-https.svg" alt="Https">
-        <div class="usa-media_block-body">
+      <div class="banner-guidance-ssl width-one-half">
+        <img class="banner-icon media_block-img" src="../../dist/img/icon-https.svg" alt="Https">
+        <div class="media_block-body">
           <p>
             <strong>The site is secure.</strong>
             <br>
@@ -58,11 +58,11 @@ title: Kitchen-sink.html
 
     
 
-    <header class="usa-header usa-header-basic" role="banner">
-  <div class="usa-nav-container">
-    <div class="usa-navbar">
-  <div class="usa-logo" id="basic-logo">
-    <em class="usa-logo-text">
+    <header class="header header-basic" role="banner">
+  <div class="nav-container">
+    <div class="navbar">
+  <div class="logo" id="basic-logo">
+    <em class="logo-text">
       <a href="/"
         title="Home"
         aria-label="Home">
@@ -70,82 +70,51 @@ title: Kitchen-sink.html
       </a>
     </em>
   </div>
-  <button class="usa-menu-btn">Menu</button>
+  <button class="menu-btn">Menu</button>
 </div>
 
-    <nav role="navigation" class="usa-nav">
+    <nav role="navigation" class="nav">
       
-      <button class="usa-nav-close">
-  <img src="../../dist/img/close.svg" alt="close">
-</button>
-<ul class="usa-nav-primary usa-accordion"><li><button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="basic-nav-section-one">
-      <span>Section title</span>
-    </button>
-    <ul id="basic-nav-section-one" class="usa-nav-submenu"><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li></ul></li><li><button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="basic-nav-section-two">
-      <span>Simple terms</span>
-    </button>
-    <ul id="basic-nav-section-two" class="usa-nav-submenu"><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li><li>
-              <a href="#">Subsection title</a>
-            </li></ul></li><li><a class="usa-nav-link" href="javascript:void(0)">
-      <span>Distinct from each other</span>
-    </a></li></ul><form class="usa-search usa-search-small ">
-  <div role="search">
-    <label class="usa-sr-only" for="basic-search-field-small">Search small</label>
-    <input id="basic-search-field-small" type="search" name="search">
-    <button type="submit">
-      <span class="usa-sr-only">Search</span>
-    </button>
-  </form>
-</div>
-
+      
       
     </nav>
   </div>
 </header>
-<div class="usa-overlay"></div>
+<div class="overlay"></div>
 
     
 
     
 
   
-    <section class="usa-hero">
-  <div class="usa-grid">
-    <div class="usa-hero-callout usa-section-dark">
+    <section class="hero">
+  <div class="container">
+    <div class="hero-callout section-dark">
       <h2>
         
-          <span class="usa-hero-callout-alt">Hero callout:</span>
+          <span class="hero-callout-alt">Hero callout:</span>
         
         Call attention to a current priority
       </h2>
 
       
-      <a class="usa-hero-link" href="javascript:void(0)">Link to more about that priority</a>
+      <a class="hero-link" href="javascript:void(0)">Link to more about that priority</a>
       
 
       
-      <a class="usa-button usa-button-big" href="javascript:void(0)">Learn about what we do</a>
+      <a class="button button-big" href="javascript:void(0)">Learn about what we do</a>
       
     </div>
   </div>
 </section>
   
 
-  <main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
-    <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
-      
+  <main class="container section content layout-docs" id="main-content">
+    <div class="row">
+      <aside class="col-3 layout-docs-sidenav">
+        
 
-<ul class="usa-sidenav-list">
+<ul class="sidenav-list">
   
   
   <li>
@@ -156,11 +125,11 @@ title: Kitchen-sink.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Current page
     </a>
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
       
   
   <li>
@@ -171,11 +140,11 @@ title: Kitchen-sink.html
   </li>
   
   <li>
-    <a href="" class="usa-current">
+    <a href="" class="current">
       Second section
     </a>
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
       
   
   <li>
@@ -219,104 +188,143 @@ title: Kitchen-sink.html
 
 </ul>
 
-    </aside>
+      </aside>
 
-    <div class="usa-width-three-fourths usa-layout-docs-main_content">
-      <h1>This is your page title</h1>
+      <div class="col-9 layout-docs-main_content">
+        <h1>This is your page title</h1>
 
-      <p class="usa-font-lead">The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.</p>
+        <p class="font-lead">The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.</p>
 
-      <p class="usa-content">
-        This is the content body where we will test some ordered and unordered lists. Just long enough to wrap to a new line to test content width.
+        <p class="content">
+          This is the content body where we will test some ordered and unordered lists. Just long enough to wrap to a new line to test content width.
 
-        <ul>
+          <ul>
+          
+            <li>This is a very long sentence that should go to a new line when it is among other pieces of paragraph text.</li>
+          
+            <li>This is a short sentence that isn't long enough to go to a new line.</li>
+          
+            <li>This is the third sentence.</li>
+          
+          </ul>
+
+          <ol>
+          
+            <li>This is a very long sentence that should go to a new line when it is among other pieces of paragraph text.</li>
+          
+            <li>This is a short sentence that isn't long enough to go to a new line.</li>
+          
+            <li>This is the third sentence.</li>
+          
+          </ol>
+        </p>
+
         
-          <li>This is a very long sentence that should go to a new line when it is among other pieces of paragraph text.</li>
-        
-          <li>This is a short sentence that isn't long enough to go to a new line.</li>
-        
-          <li>This is the third sentence.</li>
-        
-        </ul>
-
-        <ol>
-        
-          <li>This is a very long sentence that should go to a new line when it is among other pieces of paragraph text.</li>
-        
-          <li>This is a short sentence that isn't long enough to go to a new line.</li>
-        
-          <li>This is the third sentence.</li>
-        
-        </ol>
-      </p>
-
-      
-      <section id="accordions">
-        <h2>Accordions - Borderless</h2>
-        
-          <!--
-
--->
+        <section id="accordions">
+          <h2>Accordions - Borderless</h2>
+          
+            
 
 
 
-<ul class="usa-accordion">
+
+<ul class="accordion">
   
   <li>
-    <button class="usa-accordion-button"
+    <button class="accordion-button"
       aria-expanded="true"
       aria-controls="a1">
       First Amendment
+
+      
+        <span class="accordion-icon icon-bg-success ">
+          
+  <i class="mdi mdi-check"></i>
+
+        </span>
+      
     </button>
-    <div id="a1" class="usa-accordion-content">
+    <div id="a1" class="accordion-content">
       Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.
 
     </div>
   </li>
   
   <li>
-    <button class="usa-accordion-button"
+    <button class="accordion-button"
       aria-expanded="false"
       aria-controls="a2">
       Second Amendment
+
+      
+        <span class="accordion-icon icon-bg-warning ">
+          
+  <i class="mdi mdi-exclamation"></i>
+
+        </span>
+      
     </button>
-    <div id="a2" class="usa-accordion-content">
+    <div id="a2" class="accordion-content">
       A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.
 
     </div>
   </li>
   
   <li>
-    <button class="usa-accordion-button"
+    <button class="accordion-button"
       aria-expanded="false"
       aria-controls="a3">
       Third Amendment
+
+      
+        <span class="accordion-icon icon-bg-info ">
+          
+  <i class="mdi mdi-help"></i>
+
+        </span>
+      
     </button>
-    <div id="a3" class="usa-accordion-content">
+    <div id="a3" class="accordion-content">
       No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.
 
     </div>
   </li>
   
   <li>
-    <button class="usa-accordion-button"
+    <button class="accordion-button"
       aria-expanded="false"
       aria-controls="a4">
       Fourth Amendment
+
+      
+        <span class="accordion-icon icon-bg-primary ">
+          
+  <i class="mdi mdi-check"></i>
+
+        </span>
+      
     </button>
-    <div id="a4" class="usa-accordion-content">
+    <div id="a4" class="accordion-content">
       The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
 
     </div>
   </li>
   
   <li>
-    <button class="usa-accordion-button"
+    <button class="accordion-button"
       aria-expanded="false"
       aria-controls="a5">
       Fifth Amendment
+
+      
+        <span class="accordion-icon icon-bg-error ">
+          
+  <i class="mdi mdi-close"></i>
+
+        </span>
+      
     </button>
-    <div id="a5" class="usa-accordion-content">
+    <div id="a5" class="accordion-content">
       No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.
 
     </div>
@@ -325,63 +333,59 @@ title: Kitchen-sink.html
 </ul>
 
 
-
-
+          
+        </section>
         
-      </section>
-      
-      <section id="accordions-bordered">
-        <h2>Accordions - Bordered</h2>
-        
-          <!--
-
--->
+        <section id="accordions-bordered">
+          <h2>Accordions - Bordered</h2>
+          
+            
 
 
 
-<ul class="usa-accordion">
+
+<ul class="accordion">
   
 </ul>
 
 
-
-
+          
+        </section>
         
-      </section>
-      
 
+      </div>
     </div>
   </main>
 
   
-    <section class="usa-section usa-section-dark usa-graphic_list">
-  <div class="usa-grid usa-graphic_list-row">
-    <div class="usa-width-one-half usa-media_block">
-      <img class="usa-media_block-img"  src="../../dist/img/circle-124.png" alt="Alt text">
-      <div class="usa-media_block-body">
+    <section class="section section-dark graphic_list">
+  <div class="grid graphic_list-row">
+    <div class="width-one-half media_block">
+      <img class="media_block-img"  src="../../dist/img/circle-124.png" alt="Alt text">
+      <div class="media_block-body">
         <h3>Graphic headings can vary.</h3>
         <p>Graphic headings can be used a few different ways, depending on what your landing page is for. Highlight your values, specific program areas, or results.</p>
       </div>
     </div>
-    <div class="usa-width-one-half usa-media_block">
-      <img class="usa-media_block-img"  src="../../dist/img/circle-124.png" alt="Alt text">
-      <div class="usa-media_block-body">
+    <div class="width-one-half media_block">
+      <img class="media_block-img"  src="../../dist/img/circle-124.png" alt="Alt text">
+      <div class="media_block-body">
         <h3>Stick to 6 or fewer words.</h3>
         <p>Keep body text to about 30. They can be shorter, but try to be somewhat balanced across all four. It creates a clean appearance with good spacing.</p>
       </div>
     </div>
   </div>
-  <div class="usa-grid usa-graphic_list-row">
-    <div class="usa-width-one-half usa-media_block">
-      <img class="usa-media_block-img"  src="../../dist/img/circle-124.png" alt="Alt text">
-      <div class="usa-media_block-body">
+  <div class="grid graphic_list-row">
+    <div class="width-one-half media_block">
+      <img class="media_block-img"  src="../../dist/img/circle-124.png" alt="Alt text">
+      <div class="media_block-body">
         <h3>Never highlight anything without a goal.</h3>
         <p>For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.</p>
       </div>
     </div>
-    <div class="usa-width-one-half usa-media_block">
-      <img class="usa-media_block-img"  src="../../dist/img/circle-124.png" alt="Alt text">
-      <div class="usa-media_block-body">
+    <div class="width-one-half media_block">
+      <img class="media_block-img"  src="../../dist/img/circle-124.png" alt="Alt text">
+      <div class="media_block-body">
         <h3>Could also have 2 or 6.</h3>
         <p>In addition to your goal, find out your users’ goals. What do they want to know or do that supports your mission? Use these headings to show those.</p>
       </div>
@@ -406,7 +410,7 @@ title: Kitchen-sink.html
     <div class="container">
       <nav class="footer-nav row">
         <div class="col-12 col-sm-4 col-md-6">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Ansvarlig myndighed</h4>
             </li>
@@ -415,7 +419,7 @@ title: Kitchen-sink.html
         </div>
 
         <div class="col-12 col-sm-4 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Kontakt</h4>
             </li>
@@ -428,7 +432,7 @@ title: Kitchen-sink.html
         </div>
 
         <div class="col-12 col-sm-4 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Emne</h4> 
             </li>

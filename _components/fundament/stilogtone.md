@@ -14,11 +14,11 @@ Løsningen bør være tidssvarende, men det er vigtigt at den ikke baseres på f
 
 Når du kommunikerer med brugeren, bør tonen være hjælpsom, letforståelig, og med fokus på den gode relation mellem brugeren og myndigheden. 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Vær vedkommende</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
@@ -29,21 +29,21 @@ Når du kommunikerer med brugeren, bør tonen være hjælpsom, letforståelig, o
 Hvis brugeren skal udfylde besværlig eller følsom information, bør du kort forklare hvad hensigten er, eller hvordan dette kommer brugeren til gode. 
 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Vær betryggende</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
 </div>
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Motiver brugeren</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
@@ -54,21 +54,21 @@ Hvis brugeren skal udfylde besværlig eller følsom information, bør du kort fo
 Hvis brugeren modtager advarsler, som er ude af proportioner med de reelle konsekvenser, vil den digitale løsning føles irriterende og uintelligent. Brug advarsler som passer til problemets omfang og hjælp brugeren med at tage en informeret beslutning.  
 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Undgå unødvendig stress</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont_stilogtone_1.png"
         style="">
     </div>
 </div>
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Vær Løsningsorienteret</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont_stilogtone_1.png"
         style="">
     </div>
@@ -80,11 +80,11 @@ Hvis brugeren modtager advarsler, som er ude af proportioner med de reelle konse
 Hvis kommunikationen med brugeren er præget af gentagelser og unødvendige forklaringer, vil myndigheden fremstå besværlig og uintelligent. 
 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Kom til sagen</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
@@ -95,11 +95,11 @@ Hvis kommunikationen med brugeren er præget af gentagelser og unødvendige fork
 Brugeren danner sig et indtryk af myndigheden, gennem en Brugen af billeder med mennesker på, vil dermed betydeligt præge opfattelsen af hele den digitale løsning. 
 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Undgå uautentiske stock-billeder</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>

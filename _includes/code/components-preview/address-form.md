@@ -9,11 +9,11 @@ title: Address-form.html
 
 
 
-<form class="usa-form-large">
+<form class="form-large">
   <fieldset>
     <legend>Adresse</legend>
     
-  <div class="usa-input-grid usa-input-grid-small">
+  <div class="input-grid input-grid-small">
     
    
      <label for="input-text-postnummer" class="">Postnummer</label>
@@ -22,7 +22,7 @@ title: Address-form.html
 
   </div>
 
-  <div class="usa-input-grid usa-input-grid-medium">
+  <div class="input-grid input-grid-medium">
     
    
      <label for="input-text-by" class="">By</label>
@@ -38,7 +38,7 @@ title: Address-form.html
   
 
 
-  <div class="usa-input-grid usa-input-grid-small">
+  <div class="input-grid input-grid-small">
     
    
      <label for="input-text-husnummer" class="">Husnummer</label>
@@ -46,7 +46,7 @@ title: Address-form.html
   
 
   </div>
-  <div class="usa-input-grid usa-input-grid-small">
+  <div class="input-grid input-grid-small">
     
    
      <label for="input-text-dør" class="">Dør</label>
@@ -54,10 +54,10 @@ title: Address-form.html
   
 
   </div>
-  <div class="usa-input-grid usa-input-grid-large" >
+  <div class="input-grid input-grid-large" >
     
    
-     <label for="input-text-coadresse" class="usa-input-optional">C/O-adresse</label>
+     <label for="input-text-coadresse" class="input-optional">C/O-adresse</label>
      <input class="" id="input-text-coadresse" name="input-text-coadresse" type="text">
   
 

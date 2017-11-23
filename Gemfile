@@ -13,3 +13,5 @@ gem 'jekyll-compose', group: [:jekyll_plugins]
 
 gem 'rspec-core'
 gem 'rspec-expectations'
+
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?

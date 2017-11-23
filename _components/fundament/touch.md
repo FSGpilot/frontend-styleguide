@@ -20,31 +20,31 @@ Design og byg med omtanke for de værste betingelser helt fra starten - tag derf
 
 Mobile first tankegangen tvinger dig til at udvælge det indhold, som reelt bidrager kerneydelsen. På små skærme er der nemlig kun plads til det mest elementære indhold. Det er tilladt at tilføje mere indhold på større skærme, men løsningen skal tilbyde samme funktionalitet på alle skærmstørrelser. 
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Gør titel, svar og handling synlig på første side</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
 </div>
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Drop udenomssnak</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
 </div>
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <p><strong>Undgå tung grafik</strong></p>
     </div>
-    <div class="usa-width-two-thirds">
+    <div class="width-two-thirds">
         <img src="{{ site.baseurl }}/img/retningslinjer/dodont.png"
         style="">
     </div>
@@ -62,11 +62,11 @@ Sammenlignet med muse-interaktion, er nøjagtigheden med finger-interaktion neds
 
 ## Tilpasset til fingrene
 
-<div class="usa-grid-full">
-    <div class="usa-width-one-third">
+<div class="grid-full">
+    <div class="width-one-third">
         <img src="{{ site.baseurl }}/img/interaction-touch_loop3.gif" style="max-width: 200px;">
     </div>
-    <div class="usa-width-one-half">
+    <div class="width-one-half">
         <p>Touch hjælper brugere til nemt at forstå hvor de fysisk kan interagere med skærmen.</p>
     </div>
 </div>
@@ -89,12 +89,12 @@ Undgå interaktioner der kræver sammensatte bevægelser som double-tap eller pr
 
 En veldesignet touch-oplevelse er afbalanceret i størrelse, mellemrum og visuelle elementer for at give brugeren bedre kontrol.
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-third">
+<div class="grid-full">
+  <div class="width-one-third">
     <img src="{{ site.baseurl }}/img/touchpoint.gif">
   </div>
-  <div class="usa-width-one-half">
-    <ul class="usa-content-list">
+  <div class="width-one-half">
+    <ul class="content-list">
       <li>
         Touch-skærme opfanger det geometriske centrum af en brugers berøringspunkt
       </li>
@@ -108,12 +108,12 @@ En veldesignet touch-oplevelse er afbalanceret i størrelse, mellemrum og visuel
   </div>
 </div>
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-third">
+<div class="grid-full">
+  <div class="width-one-third">
     <img src="{{ site.baseurl }}/img/targets-grid.svg">
   </div>
-  <div class="usa-width-one-half">
-    <ul class="usa-content-list">
+  <div class="width-one-half">
+    <ul class="content-list">
         <li>
             Ofte berørte områder bør have store touch-flader.
         </li>
@@ -134,12 +134,12 @@ En veldesignet touch-oplevelse er afbalanceret i størrelse, mellemrum og visuel
 
 Der er ikke en perfekt størrelse til touch-flader. Forskellige størrelser passer til forskellige situationer. Handlinger der har stor betydning skal have tilhørende store touch-flader for at undgå utilsigtede tryk.
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-third">
+<div class="grid-full">
+  <div class="width-one-third">
     <img src="{{ site.baseurl }}/img/targets-sizes.svg">
   </div>
-  <div class="usa-width-one-half">
-    <ul class="usa-content-list">
+  <div class="width-one-half">
+    <ul class="content-list">
         <li>
             7 gange 7 mm er en god størrelse hvis et tryk på en forkert touch-flade kan korrigeres med få efterfølgende tryk.
         </li>
@@ -156,12 +156,12 @@ Designing touch experiences requires knowledge of how the devices are held by di
 
 For at designe gode touch-oplevelser kræves der viden om hvordan enhederne bliver holdt af forskellige brugere. Brugerens omgivelser og fysiske komfort påvirker hvordan brugeren holder fast i enheden og hvor lang tid der går før enheden rykkes på.   
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-third">
+<div class="grid-full">
+  <div class="width-one-third">
     <img src="{{ site.baseurl }}/img/flip.gif">
   </div>
-  <div class="usa-width-one-half">
-    <ul class="usa-content-list">
+  <div class="width-one-half">
+    <ul class="content-list">
         <li>
             Optimer brugergrænsefladen for forskellige måder at holde på.
         </li>
