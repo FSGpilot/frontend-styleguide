@@ -5,300 +5,388 @@ parent: colors
 order: 01
 ---
 
-<p>This palette is designed to support a range of distinct visual styles that continue to feel connected. The intent of the palette is to convey a warm and open American spirit, with bright saturated tints of blue and red, grounded in sophisticated deeper shades of cool blues and grays. These colors — combined with clear hierarchy, good information design, and ample white space — should leave users feeling welcomed and in good hands.</p>
+<p>Her vil alle farverne i frontend styleguiden være specificeret</p>
 
-<p>This is a simple, minimalist color palette. Shades of blue dominate, providing a neutral backdrop on which brighter shades, clean type treatment, and bright white content areas "pop" on the page.</p>
+<h4 class="heading">Primær farver</h4>
 
-<h4 class="heading">Primary colors</h4>
+<p>Følgende farver er primærfarverne i styleguiden</p>
 
-<p>This palette’s primary colors are blue, gray, and white. Blue is commonly associated with trust, confidence, and sincerity; it is also used to represent calmness and responsibility.</p>
-
-<div class="grid-full color-row primary-color-section">
-  <div class="color-square color-primary">
-    <div class="color-inner-content">
-      <p class="color-hex">#0071bc</p>
-      <p class="color-name">$color-primary</p>
+<div class="container color-row-container "> 
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-primary"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#0071bc</strong></p>
+        <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>
+        <p>$color-primary</p>
+      </div>
     </div>
-  </div>
-  <div class="color-square color-primary-darker mobile-end-row">
-    <div class="color-inner-content">
-      <p class="color-hex">#205493</p>
-      <p class="color-name">$color-primary-darker</p>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-primary-darker"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#205493</strong></p>
+        <p class="is-virk"><strong>#D8770E</strong></p>
+        <p class="is-borger"><strong>#405E0D</strong></p>
+        <p>$color-primary-darker</p>
+      </div>
     </div>
-  </div>
-  <div class="color-square color-primary-darkest">
-    <div class="color-inner-content">
-      <p class="color-hex">#112e51</p>
-      <p class="color-name">$color-primary-darkest</p>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-primary-darkest"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#112e51</strong></p>
+        <p class="is-virk"><strong>#B4630C</strong></p>
+        <p class="is-borger"><strong>#283A08</strong></p>
+        <p>$color-primary-darkest</p>
+      </div>
     </div>
-  </div>
-  <div class="color-square color-base end-row">
-    <div class="color-inner-content">
-      <p class="color-hex">#212121</p>
-      <p class="color-name">$color-base</p>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-primary-lightest"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#0071bc</strong></p>
+        <p class="is-virk"><strong>#F8C996</strong></p>
+        <p class="is-borger"><strong>#BEE678</strong></p>
+        <p>$color-primary-lightest</p>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="grid-full color-row primary-color-section">
-  <div class="color-square color-gray-dark">
-    <div class="color-inner-content">
-      <p class="color-hex">#323a45</p>
-      <p class="color-name">$color-gray-dark</p>
+
+<h4 class="heading">Baggrundsfarver</h4>
+
+<p>Her er alle baggrundsfarverne</p>
+
+<div class="container color-row-container "> 
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray-darkest"></div>
+      <div class="color-text-container">
+        <p><strong>#212121</strong></p>
+        <p>$color-gray-darkest</p>
+      </div>
+    </div>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray-dark"></div>
+      <div class="color-text-container">
+        <p><strong>#323A45</strong></p>
+        <p>$color-gray-dark</p>
+      </div>
+    </div>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray"></div>
+      <div class="color-text-container">
+        <p><strong>#5B616B</strong></p>
+        <p>$gray</p>
+      </div>
     </div>
   </div>
-  <div class="color-square color-gray-light mobile-end-row">
-    <div class="color-inner-content">
-      <p class="color-hex">#aeb0b5</p>
-      <p class="color-name">$color-gray-light</p>
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray-light"></div>
+      <div class="color-text-container">
+        <p><strong>#AEB0B5</strong></p> 
+        <p>$gray-light</p>
+      </div>
     </div>
-  </div>
-  <div class="color-square color-white">
-    <div class="color-inner-content">
-      <p class="color-hex">#ffffff</p>
-      <p class="color-name">$color-white</p>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray-lighter"></div>
+      <div class="color-text-container">
+        <p><strong>#D6D7D9</strong></p>
+        <p>$gray-lighter</p>
+      </div>
+    </div>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray-lightest"></div>
+      <div class="color-text-container">
+        <p><strong>#F1F1F1</strong></p>
+        <p>$gray-lightest</p>
+      </div>
     </div>
   </div>
 </div>
 
-<h4 class="heading">Secondary colors</h4>
+<h4 class="heading">Tekstfarver</h4>
 
-<p>These are accent colors to provide additional lightness and style to pages looking for a more modern flair. These colors should be used to highlight important features on a page, such as buttons, or for visual style elements, such as illustrations. They should be used sparingly and never draw the eye to more than one piece of information at a time.</p>
+<p>Følgende farver er brugt til forskellig slags tekst</p>
 
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-primary-alt">
+<div class="container color-row-container "> 
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-text"></div>
+      <div class="color-text-container">
+        <p><strong>#212121</strong></p>
+        <p>$color-text</p>
+      </div>
     </div>
-      <p class="color-hex">#02bfe7</p>
-      <p class="color-name">$color-primary-alt</p>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-text-secondary"></div>
+      <div class="color-text-container">
+        <p><strong>#5b616b</strong></p>
+        <p>$color-text-secondary</p>
+      </div>
+    </div>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-text-bright"></div>
+      <div class="color-text-container">
+        <p><strong>#ffffff</strong></p>
+        <p>$color-text-bright</p>
+      </div>
+    </div>
   </div>
-  <div class="color-small">
-    <div class="color-short color-primary-alt-darkest">
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-text-neutral-18"></div>
+      <div class="color-text-container">
+        <p><strong>#1B86C3</strong></p> 
+        <p>$color-text-neutral-18</p>
+      </div>
     </div>
-      <p class="color-hex">#046b99</p>
-      <p class="color-name">$color-primary-alt-darkest</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-primary-alt-dark">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-text-negative"></div>
+      <div class="color-text-container">
+        <p><strong>#CE1415</strong></p>
+        <p>$color-text-negative</p>
+      </div>
     </div>
-      <p class="color-hex">#00a6d2</p>
-      <p class="color-name">$color-primary-alt-dark</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-primary-alt-light">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-text-positive"></div>
+      <div class="color-text-container">
+        <p><strong>#588012</strong></p>
+        <p>$color-text-positive</p>
+      </div>
     </div>
-      <p class="color-hex">#9bdaf1</p>
-      <p class="color-name">$color-primary-alt-light</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-primary-alt-lightest">
-    </div>
-      <p class="color-hex">#e1f3f8</p>
-      <p class="color-name">$color-primary-alt-lightest</p>
   </div>
 </div>
 
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-secondary">
+<h4 class="heading">Linkfarver</h4>
+
+<p>Følgende farver bruges til forskellige typer links</p>
+
+<div class="container color-row-container "> 
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-link"></div>
+      <div class="color-text-container">
+        <p><strong>#125880</strong></p>
+        <p>$color-link</p>
+      </div>
     </div>
-      <p class="color-hex">#e31c3d</p>
-      <p class="color-name">$color-secondary</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-secondary-darkest">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-link-hover"></div>
+      <div class="color-text-container">
+        <p><strong>#1B86C3</strong></p>
+        <p>$color-link-hover</p>
+      </div>
     </div>
-      <p class="color-hex">#981b1e</p>
-      <p class="color-name">$color-secondary-darkest</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-secondary-dark">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-focus"></div>
+      <div class="color-text-container">
+        <p><strong>#AEB0B5</strong></p>
+        <p>$color-focus</p>
+      </div>
     </div>
-      <p class="color-hex">#cd2026</p>
-      <p class="color-name">$color-secondary-dark</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-secondary-light">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-visited"></div>
+      <div class="color-text-container">
+        <p><strong>#801258</strong></p>
+        <p>$color-visited</p>
+      </div>
     </div>
-      <p class="color-hex">#e59393</p>
-      <p class="color-name">$color-secondary-light</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-secondary-lightest">
-    </div>
-      <p class="color-hex">#f9dede</p>
-      <p class="color-name">$color-secondary-lightest</p>
   </div>
 </div>
 
-<h4 class="heading">Background colors</h4>
+<h4 class="heading">Sidefarver</h4>
 
-<p>These colors are used largely for background blocks and large content areas. When alternating between tones, be sure to use enough contrast between adjacent colors.</p>
+<p>Følgende farver bruges til forskellige dele af en side, som f.eks. farverne til header og footer</p>
 
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-gray-dark">
+<div class="container color-row-container "> 
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-header-background"></div>
+      <div class="color-text-container">
+        <p><strong>#F1F1F1</strong></p>
+        <p>$color-header-background</p>
+      </div>
     </div>
-      <p class="color-hex">#323a45</p>
-      <p class="color-name">$color-gray-dark</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-gray">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-footer-background"></div>
+      <div class="color-text-container">
+        <p><strong>#323A45</strong></p>
+        <p>$color-footer-background</p>
+      </div>
     </div>
-      <p class="color-hex">#5b616b</p>
-      <p class="color-name">$color-gray</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-gray-light">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-topmenu-background"></div>
+      <div class="color-text-container">
+        <p><strong>#323A45</strong></p>
+        <p>$color-topmenu-background</p>
+      </div>
     </div>
-      <p class="color-hex">#aeb0b5</p>
-      <p class="color-name">$color-gray-light</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-gray-lighter">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-page"></div>
+      <div class="color-text-container">
+        <p><strong>#ffffff</strong></p>
+        <p>$color-page</p>
+      </div>
     </div>
-      <p class="color-hex">#d6d7d9</p>
-      <p class="color-name">$color-gray-lighter</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-gray-lightest">
-    </div>
-      <p class="color-hex">#f1f1f1</p>
-      <p class="color-name">$color-gray-lightest</p>
   </div>
 </div>
 
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-gray-warm-dark">
+
+<h4 class="heading">Borderfarver</h4>
+  
+<p>Følgende farver bruges til kanten af de elementer der har en</p>
+  
+<div class="container color-row-container "> 
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-border"></div>
+      <div class="color-text-container">
+        <p><strong>#5B616B</strong></p>
+        <p>$color-border</p>
+      </div>
     </div>
-      <p class="color-hex">#494440</p>
-      <p class="color-name">$color-gray-warm-dark</p>
-  </div>
-  <div class="color-small end-row">
-    <div class="color-short color-gray-warm-light">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-border-light"></div>
+      <div class="color-text-container">
+        <p><strong>#D6D7D9</strong></p>
+        <p>$color-border-light</p>
+      </div>
     </div>
-      <p class="color-hex">#e4e2e0</p>
-      <p class="color-name">$color-gray-warm-light</p>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-border-lightest"></div>
+      <div class="color-text-container">
+        <p><strong>#F1F1F1</strong></p>
+        <p>$color-border-lightest</p>
+      </div>
+    </div>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-border-focus"></div>
+      <div class="color-text-container">
+        <p><strong>#AEB0B5</strong></p>
+        <p>$color-border-focus</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-primary-darkest">
+<h4 class="heading">Alertfarver</h4>
+
+<p>Følgende farver bruges til beskeder</p>
+
+<div class="container color-row-container "> 
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-error"></div>
+      <div class="color-text-container">
+        <p><strong>#E92021</strong></p>
+        <p>$color-error</p>
+      </div>
     </div>
-      <p class="color-hex">#112e51</p>
-      <p class="color-name">$color-primary-darkest</p>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-success"></div>
+      <div class="color-text-container">
+        <p><strong>#87C51C</strong></p>
+        <p>$color-success</p>
+      </div>
+    </div>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-warning"></div>
+      <div class="color-text-container">
+        <p><strong>#FEBB30</strong></p>
+        <p>$color-warning</p>
+      </div>
+    </div>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-info"></div>
+      <div class="color-text-container">
+        <p><strong>#1B86C3</strong></p>
+        <p>$color-info</p>
+      </div>
+    </div>
   </div>
-  <div class="color-small end-row">
-    <div class="color-short color-gray-cool-light">
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-error-background"></div>
+      <div class="color-text-container">
+        <p><strong>#FBD3D3</strong></p>
+        <p>$color-error-background</p>
+      </div>
     </div>
-      <p class="color-hex">#dce4ef</p>
-      <p class="color-name">$color-gray-cool-light</p>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-success-background"></div>
+      <div class="color-text-container">
+        <p><strong>#E7FBE4</strong></p>
+        <p>$color-success-background</p>
+      </div>
+    </div>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-warning-background"></div>
+      <div class="color-text-container">
+        <p><strong>#FFEECC</strong></p>
+        <p>$alert-warning-color</p>
+      </div>
+    </div>
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-info-background"></div>
+      <div class="color-text-container">
+        <p><strong>#E2F2FB</strong></p>
+        <p>$color-info-background</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<h4 class="heading">Tertiary colors</h4>
+<h4 class="heading">Specialfarver</h4>
 
-<p>These colors are used primarily for content-specific needs, such as alerts and illustrations. They should never overpower the primary colors.</p>
+<p>Følgende farver bruges i specielle tilfælde</p>
 
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-gold">
+<div class="container color-row-container "> 
+  <div class="row color-row">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-alt-background"></div>
+      <div class="color-text-container">
+        <p><strong>#F5FBFE</strong></p>
+        <p>$color-alt-background</p>
+      </div>
     </div>
-      <p class="color-hex">#fdb81e</p>
-      <p class="color-name">$color-gold</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-gold-light">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-alt-background-hover"></div>
+      <div class="color-text-container">
+        <p><strong>#E2F2FB</strong></p>
+        <p>$color-alt-background-hover</p>
+      </div>
     </div>
-      <p class="color-hex">#f9c642</p>
-      <p class="color-name">$color-gold-light</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-gold-lighter">
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-alt-table-header"></div>
+      <div class="color-text-container">
+        <p><strong>#0D405E</strong></p>
+        <p>$color-alt-table-header</p>
+      </div>
     </div>
-      <p class="color-hex">#fad980</p>
-      <p class="color-name">$color-gold-lighter</p>
   </div>
-  <div class="color-small">
-    <div class="color-short color-gold-lightest end-row">
+  <div class="row color-row">
+      <div class="col-md-3 color-col ">
+        <div class="color-container color-required"></div>
+        <div class="color-text-container">
+          <p><strong>#981b1e</strong></p>
+          <p>$color-required</p>
+        </div>
+      </div>
+      <div class="col-md-3 color-col ">
+        <div class="color-container color-shadow"></div>
+        <div class="color-text-container">
+          <p><strong>#0000004d</strong></p>
+          <p>$color-shadow</p>
+        </div>
+      </div>
+      <div class="col-md-3 color-col ">
+        <div class="color-container color-transparent"></div>
+        <div class="color-text-container">
+          <p><strong>#00000000</strong></p>
+          <p>$color-transparent</p>
+        </div>
+      </div>
     </div>
-      <p class="color-hex">#fff1d2</p>
-      <p class="color-name">$color-gold-lightest</p>
-  </div>
-</div>
-
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-green">
-    </div>
-      <p class="color-hex">#2e8540</p>
-      <p class="color-name">$color-green</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-green-light">
-    </div>
-      <p class="color-hex">#4aa564</p>
-      <p class="color-name">$color-green-light</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-green-lighter">
-    </div>
-      <p class="color-hex">#94bfa2</p>
-      <p class="color-name">$color-green-lighter</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-green-lightest end-row">
-    </div>
-      <p class="color-hex">#e7f4e4</p>
-      <p class="color-name">$color-green-lightest</p>
-  </div>
-</div>
-
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-cool-blue">
-    </div>
-      <p class="color-hex">#205493</p>
-      <p class="color-name">$color-cool-blue</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-cool-blue-light">
-    </div>
-      <p class="color-hex">#4773aa</p>
-      <p class="color-name">$color-cool-blue-light</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-cool-blue-lighter">
-    </div>
-      <p class="color-hex">#8ba6ca</p>
-      <p class="color-name">$color-cool-blue-lighter</p>
-  </div>
-  <div class="color-small">
-    <div class="color-short color-cool-blue-lightest">
-    </div>
-      <p class="color-hex">#dce4ef</p>
-      <p class="color-name">$color-cool-blue-lightest</p>
-  </div>
-</div>
-
-<h4 class="heading">Special state colors</h4>
-
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-focus">
-    </div>
-    <p class="color-hex">#3e94cf</p>
-    <p class="color-name">$color-focus</p>
-  </div>
-</div>
-
-<div class="grid-full color-row">
-  <div class="color-big">
-    <div class="color-short color-visited">
-    </div>
-    <p class="color-hex">#4c2c92</p>
-    <p class="color-name">$color-visited</p>
-  </div>
 </div>

@@ -6,7 +6,7 @@ layout: styleguide
 title: Farver
 category: UI components
 subcategory: Atomer
-lead: A flexible, yet distinctly American palette designed to communicate warmth and trustworthiness while meeting the highest standards of 508 color contrast requirements.
+lead: Farver, farver, farver. Her kan du se alle de specificerede farver
 subnav:
 - text: Palette
   href: '#palette'

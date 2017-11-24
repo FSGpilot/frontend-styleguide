@@ -728,6 +728,219 @@ h3 + .button_wrapper {
   }
 }
 
+
+// New colors
+// Base colors
+.color-white {
+  background-color: $color-white;
+}
+
+.color-base {
+  background-color: $color-base;
+}
+
+.color-white {
+  background-color: $color-black;
+}
+
+// Gray-scales
+.color-gray-darkest {
+  background-color: $color-gray-darkest;
+}
+.color-gray-dark {
+  background-color: $color-gray-dark;
+}
+.color-gray {
+  background-color: $color-gray;
+}
+.color-gray-light {
+  background-color: $color-gray-light;
+}
+.color-gray-lighter {
+  background-color: $color-gray-lighter;
+}
+.color-gray-lightest {
+  background-color: $color-gray-lightest;
+}
+.color-gray-brightest {
+  background-color: $color-gray-brightest;
+}
+
+// Text color
+.color-text {
+  background-color: $color-text;
+}
+.color-text-secondary {
+  background-color: $color-text-secondary;
+}
+.color-text-bright {
+  background-color: $color-text-bright;
+}
+
+// Links color
+.color-link {
+  background-color: $color-link;
+}
+.color-link-hover {
+  background-color: $color-link-hover;
+}
+.color-focus {
+  background-color: $color-focus;
+}
+.color-visited {
+  background-color: $color-visited;
+}
+
+// Neutral color
+.color-neutral {
+  background-color: $color-neutral;
+}
+.color-neutral-darker {
+  background-color: $color-neutral-darker;
+}
+.color-neutral-darkest {
+  background-color: $color-neutral-darkest;
+}
+.color-neutral {
+  background-color: $color-neutral-lightest;
+}
+
+// Functional theme colors
+.color-primary {
+  background-color: $color-primary;
+}
+.color-primary-darker {
+  background-color: $color-primary-darker;
+}
+.color-primary-darkest {
+  background-color: $color-primary-darkest;
+}
+.color-primary-lightest {
+  background-color: $color-primary-lightest;
+}
+.color-background {
+  background-color: $color-background;
+}
+
+// Special text colors
+.color-text-neutral-18 {
+  background-color: $color-text-neutral-18;
+}
+.color-text-positive {
+  background-color: $color-text-positive;
+}
+.color-text-negative {
+  background-color: $color-text-negative;
+}
+
+// Colors used for alert boxes
+.color-error {
+  background-color: $color-error;
+}
+.color-success {
+  background-color: $color-success;
+}
+.color-warning {
+  background-color: $color-warning;
+}
+.color-info {
+  background-color: $color-info;
+}
+
+.color-error-background {
+  background-color: $color-error-background;
+}
+.color-success-background {
+  background-color: $color-success-background;
+}
+.color-warning-background {
+  background-color: $color-warning-background;
+}
+.color-info-background {
+  background-color: $color-info-background;
+}
+
+// Header, fotter & navigation colors
+.color-header-background {
+  background-color: $color-header-background;
+}
+.color-footer-background {
+  background-color: $color-footer-background;
+}
+.color-topmenu-background {
+  background-color: $color-topmenu-background;
+}
+.color-page {
+  background-color: $color-page;
+}
+
+// Colors for borders
+.color-border {
+  background-color: $color-border;
+}
+.color-border-light {
+  background-color: $color-border-light;
+}
+.color-border-bright {
+  background-color: $color-border-bright;
+}
+.color-border-focus {
+  background-color: $color-border-focus;
+}
+
+// Special colors
+.color-alt-background {
+  background-color: $color-alt-background;
+}
+.color-alt-background-hover {
+  background-color: $color-alt-background-hover;
+}
+.color-alt-table-header {
+  background-color: $color-alt-table-header;
+}
+.color-required {
+  background-color: $color-required;
+}
+.color-shadow {
+  background-color: $color-shadow;
+}
+.color-transparent {
+  background-color: $color-transparent;
+}
+
+.color-container {
+  height: 140px;
+}
+
+.color-text-container {
+  margin-bottom: $spacing-medium;
+  margin-top: $spacing-small;
+  p {
+    margin: 0px;
+  }
+}
+@media screen and (min-width:768px) {
+  .color-col {
+    
+    &:first-child {
+      padding-left: 0px;
+    }
+  
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+}
+
+.is-neutral{ display:block }
+.is-virk { display:none }
+.is-borger{ display:none }
+
+
+
+
+
+
 // Color background helpers
 // TODO: change all of these classes to use the new colors and their names!!! - JJE
 // .color-primary {
