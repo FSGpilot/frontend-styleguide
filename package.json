@@ -29,16 +29,16 @@
     "./js/**/*.js": [
       "build-js"
     ],
-    "./node_modules/uswds/src/stylesheets": [
+    "./node_modules/dkwds/src/stylesheets": [
       "build-css"
     ],
-    "./node_modules/uswds/src/fonts": [
+    "./node_modules/dkwds/src/fonts": [
       "build-fonts"
     ],
-    "./node_modules/uswds/src/img": [
+    "./node_modules/dkwds/src/img": [
       "build-img"
     ],
-    "./node_modules/uswds/src/js": [
+    "./node_modules/dkwds/src/js": [
       "build-js"
     ]
   },
