@@ -26,7 +26,9 @@ title: Frontend Styleguiden
             <p>Få inspiration og hjælp</p>
         </div>
         <div class="card-block card-content card-center">
-            <i class="mdi mdi-thumb-up-outline mdi-48px"></i>
+          <div>
+            <i class="mdi mdi-thumb-up-outline mdi-48px"></i>              
+          </div>
         </div>
         <div class="card-action">
             <a href="{{ site.baseurl }}/getting-started/">Kom godt i gang</a>
