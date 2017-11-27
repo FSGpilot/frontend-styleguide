@@ -3,51 +3,7 @@ layout: default
 ---
 
 <main id="">
-  {% if page.hero %}
-  <section class="hero">
-    <div class="container">
-      <div class="hero-callout section-dark">
-        {% if page.hero.callout %}
-        <h2><span class="hero-callout-alt">{{ page.hero.callout }}</h2>
-        {% endif %}
-
-        {{ page.hero.content | markdownify }}
-
-        {% if page.hero.button %}
-          <a class="button button-big button-secondary" href="{{ page.hero.button.href }}">
-            {{ page.hero.button.text }}
-          </a>
-        {% endif %}
-      </div>  
-    </div>
-    </div>
-  </section>
-  {% endif %}
-
-  {% if page.graphic_list %}
-  <section class="section graphic_list">
-    <div class="container graphic_list-row">
-      <div class="row">
-         {% for list_item in page.graphic_list.list_item %}
-        <div class="col-sm-3 col-xs-12 media_block">
-          <img class="media_block-img"  src="{{ list_item.image.src | relative_url }}" alt="{{ list_item.image.alt }}">
-          <div class="media_block-body">
-            {% if list_item.topic %}<h3>{{ list_item.topic }}</h3>{% endif %}
-            {{ list_item.description | markdownify }}
-          </div>
-        </div>
-      {% endfor %}
-      </div>
-    </div>
-  </section>
-  {% endif %}
-
-  <div class="container">
-    <hr class="homepage-rule center-diamond">
-  </div>
-
-  <section class="container section">
+  <section class="container section ">
     {{ content }}
   </section>
-
 </main>

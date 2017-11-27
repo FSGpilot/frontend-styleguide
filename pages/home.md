@@ -1,69 +1,106 @@
 ---
 permalink: /
 layout: landing
-title: POC version 1.0 - Frontend styleguide
-hero:
-  callout: Frontend styleguide 1.0 POC
-  content: Frontend styleguiden er et design system der facilitere hurtig prototyping og konsistent design på tvær af offentlige myndigheder.
-graphic_list:
-  list_item:
-    - topic: Kom godt i gang !!! hej 4
-      description: Learn how to get started using the Frontend styleguide 1.0 POC for your project, regardless of your technical stack.
-      image:
-        src: img/home/get-started.svg
-        alt:
-    - topic: Tilpas designssystemet
-      description: Discover all the different components that the Standards provide as both design and development assets.
-      image:
-        src: img/home/ui-component.svg
-        alt:
-    - topic: Hvad er nyt?
-      description: Keep up to date with the current news and product development updates for the Frontend styleguide.
-      image:
-        src: img/home/new.svg
-        alt:
-    - topic: De gode eksempler
-      description: Explore the different page templates that have been created to jump start your product development.
-      image:
-        src: img/home/page-templates.svg
-        alt:
+title: Frontend Styleguiden
 ---
 
-## Nye services og træningstilbud
-
-{% capture training %}
-### Lad os hjælpe dig
-
-We offer a customized training program to fit your team’s needs. The
-product team will provide guidance for getting up and running with
-the Frontend Styleguide and kick-start your design and
-development.
-
-<a href="mailto:uswebdesignstandards@gsa.gov" class="button cta" onclick="ga('send', 'event', 'Clicked Training CTA', 'Clicked training call to action');">
-  <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
-  Email us about training
-</a>
-{% endcapture %}
-
-{% capture customization %}
-### Tilpas designsystemet 
-
-The product team will partner with you to determine the appropriate
-level of help and customization to make adopting the Standards a
-piece of cake. You can also read about customization in our
-[developer guide](getting-started/developers/#customization-and-theming).
-
-<a href="mailto:uswebdesignstandards@gsa.gov" class="button cta" onclick="ga('send', 'event', 'Clicked Customization CTA', 'Clicked customization call to action');">
-  <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
-  Ask us about customization
-</a>
-{% endcapture %} 
-
 <div class="row">
-  <div class="col-sm-6">
-    {{ training | markdownify }}
+  <div class="col-12 styleguide-content content">
+    <header>
+      <h1>Designsystemet er åbent</h1>
+    </header>
+    
+    <p class="font-lead">
+      Noget med Open Source her. Kløgtigt ikke sandt? sit amet, tellus lacus lectus pretium, magna at sed, ligula
+      hendrerit suspendisse eu justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor
+    </p>
+
+    <p class="font-lead">
+      <a href="{{ site.baseurl }}/components/">Se designsystemet</a>
+    </p>
   </div>
-  <div class="col-sm-6">
-    {{ customization | markdownify }}
+  <div class="md-col-4">
+    <div class="card card-medium">
+        <div class="card-header">
+            <h3>Kom godt i gang</h3>
+            <p>Få inspiration og hjælp</p>
+        </div>
+        <div class="card-block card-content card-center">
+            <i class="mdi mdi-thumb-up-outline mdi-48px"></i>
+        </div>
+        <div class="card-action">
+            <a href="{{ site.baseurl }}/getting-started/">Kom godt i gang</a>
+        </div>
+    </div>
+  </div>
+  <div class="md-col-4">
+    <div class="card card-medium">
+        <div class="card-header">
+            <h3>Opdateringer</h3>
+            <p>Følg med i hvad der er på trapperne</p>
+        </div>
+        <div class="card-block card-content card-center">
+            <i class="mdi mdi-autorenew mdi-48px"></i>
+        </div>
+        <div class="card-action">
+            <a href="{{ site.baseurl }}/whats-new/product-roadmap/">Opdateringer</a>
+        </div>
+    </div>
+  </div>
+  <div class="md-col-4">
+    <div class="card card-medium">
+        <div class="card-header">
+            <h3>Bidrag til designsystemet</h3>
+            <p>Giv input og byg tingene der mangler</p>
+        </div>
+        <div class="card-block card-content card-center">
+            <i class="mdi mdi-source-branch mdi-48px"></i>
+        </div>
+        <div class="card-action">
+            <a href="{{ site.baseurl }}/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
+        </div>
+    </div>
+  </div>  
+
+  <div class="col-8 styleguide-content content">
+    <h2>
+      Github for ikke teknikere
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, tellus lacus lectus pretium, magna at sed, ligula hendrerit suspendisse eu
+      justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor tellus quis sit, duis
+      proin libero eu diam, vestibulum venenatis, senectus lectus sed a egestas molestie feugiat,
+      consectetuer vel vivamus penatibus viverra. In nec magna sagittis interdum nec in, sociosqu tellus nec
+      senectus cum, lorem lorem dolor, commodo ut eu ac. Vestibulum pellentesque volutpat mus rhoncus
+      sem, mattis in nonummy libero vel commodo, arcu dui maecenas purus placerat vitae.
+    </p>
+    <p>
+      <a href="http://github.com">Dokumentationen til opsætning af GitHub</a>
+    </p>
+  
+    <h2>Få hjælp og inspiration</h2>
+    <p>
+      Lorem ipsum dolor sit amet, tellus lacus lectus pretium, magna at sed, ligula hendrerit suspendisse eu
+      justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor tellus quis sit, duis
+      proin libero eu diam, vestibulum venenatis, senectus lectus sed a egestas molestie feugiat,
+      consectetuer vel vivamus penatibus viverra. In nec magna sagittis interdum nec in, sociosqu tellus nec
+      senectus cum, lorem lorem dolor, commodo ut eu ac. Vestibulum pellentesque volutpat mus rhoncus
+      sem, mattis in nonummy libero vel commodo, arcu dui maecenas purus placerat vitae.
+    </p>
+    <p>
+      In nec magna sagittis interdum nec in, sociosqu tellus nec senectus cum, lorem lorem dolor, commodo
+      ut eu ac. Vestibulum pellentesque volutpat mus rhoncus sem, mattis in nonummy libero vel commodo,
+      arcu dui maecenas purus placerat vitae.
+    </p>
+    <p>
+      <a href="http://github.com">Skriv til os via GitHub</a>     
+    </p>
   </div>
 </div>
+
+
+
+
+
+
+
