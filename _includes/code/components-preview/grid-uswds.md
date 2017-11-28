@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid-uswds.html
-layout: base 
+layout: iframed 
 title: Grid-uswds.html
 ---
 

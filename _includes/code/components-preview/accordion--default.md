@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/accordion--default.html
-layout: base 
+layout: iframed 
 title: Accordion--default.html
 ---
 

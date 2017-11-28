@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/radiobutton.html
-layout: base 
+layout: iframed 
 title: Radiobutton.html
 ---
 

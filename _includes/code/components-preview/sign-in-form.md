@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/sign-in-form.html
-layout: base 
+layout: iframed 
 title: Sign-in-form.html
 ---
 

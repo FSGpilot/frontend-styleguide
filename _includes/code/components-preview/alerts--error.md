@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alerts--error.html
-layout: base 
+layout: iframed 
 title: Alerts--error.html
 ---
 

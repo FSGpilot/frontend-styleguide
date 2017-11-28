@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/typesetting.html
-layout: base 
+layout: iframed 
 title: Typesetting.html
 ---
 

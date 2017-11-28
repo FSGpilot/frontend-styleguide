@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid-uswds--offsets.html
-layout: base 
+layout: iframed 
 title: Grid-uswds--offsets.html
 ---
 

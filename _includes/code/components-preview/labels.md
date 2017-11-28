@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/labels.html
-layout: base 
+layout: iframed 
 title: Labels.html
 ---
 

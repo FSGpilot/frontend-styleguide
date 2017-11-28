@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/links.html
-layout: base 
+layout: iframed 
 title: Links.html
 ---
 

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/overflow-menu.html
-layout: base 
+layout: iframed 
 title: Overflow-menu.html
 ---
 

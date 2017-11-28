@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/header--extended-mega.html
-layout: base 
+layout: iframed 
 title: Header--extended-mega.html
 ---<!DOCTYPE html>
 <html lang="en-US" dir="ltr" class="no-js">

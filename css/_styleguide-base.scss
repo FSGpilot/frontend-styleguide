@@ -9,63 +9,63 @@ body {
 //   background-color: $color-primary-alt-lightest;
 // }
 
-.graphic_list .media_block-img {
-  max-width: 7rem;
-}
+// .graphic_list .media_block-img {
+//   max-width: 7rem;
+// }
 
-.hero {
-  background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
-  padding-bottom: 7.2rem;
-  padding-top: 3.5rem;
-}
+// .hero {
+//   background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
+//   padding-bottom: 7.2rem;
+//   padding-top: 3.5rem;
+// }
 
-.hero-callout .button {
-  margin-top: 2em;
-}
+// .hero-callout .button {
+//   margin-top: 2em;
+// }
 
-.hero-callout {
-  border-radius: 0.3rem;
-  max-width: 46rem;
-  padding: 3.6rem 3rem;
+// .hero-callout {
+//   border-radius: 0.3rem;
+//   max-width: 46rem;
+//   padding: 3.6rem 3rem;
 
-  & > *:first-child {
-    margin-bottom: 0;
-  }
-}
+//   & > *:first-child {
+//     margin-bottom: 0;
+//   }
+// }
 
-.hero-callout-alt {
-  font-size: 2.7rem;
-}
+// .hero-callout-alt {
+//   font-size: 2.7rem;
+// }
 
-.media_block-body {
-  & > *:first-child {
-    font-size: $media-block-header-font-size;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+// .media_block-body {
+//   & > *:first-child {
+//     font-size: $media-block-header-font-size;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//   }
 
-  & > p {
-    margin: 0.5rem 0;
-    font-size: $media-block-body-font-size;
-  }
-}
+//   & > p {
+//     margin: 0.5rem 0;
+//     font-size: $media-block-body-font-size;
+//   }
+// }
 
-.media_block-img {
-  float: none;
-  margin-bottom: 1rem;
-}
+// .media_block-img {
+//   float: none;
+//   margin-bottom: 1rem;
+// }
 
 .section-dark p {
   margin-top: 0.8rem;
   font-weight: $font-light;
 }
 
-// Override for 4x1 media grid when it collapses to 2x2
-@media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
-  .graphic_list .graphic_list-row .media_block:nth-child(-n+2) {
-    margin-bottom: 6rem;
-  }
-}
+// // Override for 4x1 media grid when it collapses to 2x2
+// @media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
+//   .graphic_list .graphic_list-row .media_block:nth-child(-n+2) {
+//     margin-bottom: 6rem;
+//   }
+// }
 
 // Fancy Horizontal Rule //
 
@@ -932,13 +932,9 @@ h3 + .button_wrapper {
   }
 }
 
-
-
 .is-neutral{ display:block }
 .is-virk { display:none }
 .is-borger{ display:none }
-
-
 
 
 
@@ -1004,217 +1000,6 @@ h3 + .button_wrapper {
 
 
 
-
-
-
-// Color background helpers
-// TODO: change all of these classes to use the new colors and their names!!! - JJE
-// .color-primary {
-//   background-color: $color-primary;
-// }
-
-// .color-primary-darker {
-//   background-color: $color-primary-darker;
-// }
-
-// .color-primary-darkest {
-//   background-color: $color-primary-darkest;
-// }
-
-// .color-base {
-//   background-color: $color-base;
-// }
-
-// .color-gray-dark {
-//   background-color: $color-gray-dark;
-// }
-
-// .color-gray-light {
-//   background-color: $color-gray-light;
-// }
-
-// .color-white {
-//   background-color: $color-white;
-//   box-shadow: inset 0 0 0 1px $color-gray;
-// }
-
-// .color-primary-alt {
-//   background-color: $color-primary-alt;
-// }
-
-// .color-primary-alt-dark {
-//   background-color: $color-primary-alt-dark;
-// }
-
-// .color-primary-alt-darkest {
-//   background-color: $color-primary-alt-darkest;
-// }
-
-// .color-primary-alt-light {
-//   background-color: $color-primary-alt-light;
-// }
-
-// .color-primary-alt-lightest {
-//   background-color: $color-primary-alt-lightest;
-// }
-
-// .color-secondary {
-//   background-color: $color-secondary;
-// }
-
-// .color-secondary-dark {
-//   background-color: $color-secondary-dark;
-// }
-
-// .color-secondary-darkest {
-//   background-color: $color-secondary-darkest;
-// }
-
-// .color-secondary-light {
-//   background-color: $color-secondary-light;
-// }
-
-// .color-secondary-lightest {
-//   background-color: $color-secondary-lightest;
-// }
-
-// .color-gray {
-//   background-color: $color-gray;
-// }
-
-// .color-gray-lighter {
-//   background-color: $color-gray-lighter;
-// }
-
-// .color-gray-lightest {
-//   background-color: $color-gray-lightest;
-// }
-
-// .color-gray-warm-dark {
-//   background-color: $color-gray-warm-dark;
-// }
-
-// .color-gray-warm-light {
-//   background-color: $color-gray-warm-light;
-// }
-
-// .color-gray-cool-light {
-//   background-color: $color-gray-cool-light;
-// }
-
-// .color-gold {
-//   background-color: $color-gold;
-// }
-
-// .color-gold-light {
-//   background-color: $color-gold-light;
-// }
-
-// .color-gold-lighter {
-//   background-color: $color-gold-lighter;
-// }
-
-// .color-gold-lightest {
-//   background-color: $color-gold-lightest;
-// }
-
-// .color-green {
-//   background-color: $color-green;
-// }
-
-// .color-green-light {
-//   background-color: $color-green-light;
-// }
-
-// .color-green-lighter {
-//   background-color: $color-green-lighter;
-// }
-
-// .color-green-lightest {
-//   background-color: $color-green-lightest;
-// }
-
-// .color-cool-blue {
-//   background-color: $color-cool-blue;
-// }
-
-// .color-cool-blue-light {
-//   background-color: $color-cool-blue-light;
-// }
-
-// .color-cool-blue-lighter {
-//   background-color: $color-cool-blue-lighter;
-// }
-
-// .color-cool-blue-lightest {
-//   background-color: $color-cool-blue-lightest;
-// }
-
-// .color-focus {
-//   background-color: $color-focus;
-// }
-
-// .color-visited {
-//   background-color: $color-visited;
-// }
-
-// // Color text helpers
-
-// .color-text-primary-darkest {
-//   color: $color-primary-darkest;
-// }
-
-// .color-text-primary-darker {
-//   color: $color-primary-darker;
-// }
-
-// .color-text-primary {
-//   color: $color-primary;
-// }
-
-// .color-text-cool-blue-light {
-//   color: $color-cool-blue-light;
-// }
-
-// .color-text-primary-alt-darkest {
-//   color: $color-primary-alt-darkest;
-// }
-
-// .color-text-green {
-//   color: $color-green;
-// }
-
-// .color-text-visited {
-//   color: $color-visited;
-// }
-
-// .color-text-gray-dark {
-//   color: $color-gray-dark;
-// }
-
-// .color-text-gray {
-//   color: $color-gray;
-// }
-
-// .color-text-gray-warm-dark {
-//   color: $color-gray-warm-dark;
-// }
-
-// .color-text-secondary-darkest {
-//   color: $color-secondary-darkest;
-// }
-
-// .color-text-secondary-dark {
-//   color: $color-secondary-dark;
-// }
-
-// .color-text-secondary {
-//   color: $color-secondary;
-// }
-
-// .color-text-white {
-//   color: $color-white;
-// }
 
 .heading-alt {
   border-bottom: 1px solid $color-gray;
@@ -1530,9 +1315,9 @@ code {
 
 // External link styles
 
-#{$external-href} {
-  @include external-link(external-link, external-link-hover);
-}
+// #{$external-href} {
+//   @include external-link(external-link, external-link-hover);
+// }
 
 .button,
 .link-download,
@@ -1809,190 +1594,58 @@ article {
 
 
 /////////////////// component preview //////////////////////
-$color-grey-20: #d4d4d4; //mgb
-$color-grey-50: #cccbcb; //added by mgb
-$color-grey-60: #999;
-$color-grey-70: #666; // from design
-$color-blue-50: #3572b0; //Added by mgb - used for links
 
-
-.components__nav {
-  // min-width: 800px;
-  clear: both;
-  background: #f5f5f5;
-  border-radius: 4px 4px 0 0;
-  // padding: 0 10px;
-  height: 60px;
-}
-
-.components__brands {
-  float: right;
-  margin-top: 10px;
-  height: 40px;
-  line-height: 40px;
-}
-
-.components__brands-title {
-  display: none;
-
-  @media only screen and (min-width: 1380px) {
-    margin-right: 30px;
-    display: inline-block;
-  }
-}
-
-.components__brands-brand {
-  display: inline-block;
-  margin: 0 20px 0 0;
-}
-
-.components__brands-button {
+.component-preview {
+  border: $accordion-border;
+  margin-bottom: $spacing-small;
   position: relative;
+  padding-left: $spacing-small;
+  padding-right: $spacing-small;
+}
+
+.preview-buttons {
+  position: absolute;
+  top: $spacing-small;
+  right: 0;
+}
+
+.preview-iframe {
+  border: none;
   display: block;
-  color: $color-grey-60;
-  border: 0;
-  padding: 0 5px;
-  line-height: 40px;
-  background: 0;
-  font: inherit;
-  cursor: not-allowed;
-  outline: none;
-  border-radius: 5px;
-
-  .components.is-available {
-    color: $color-black;
-    cursor: pointer;
-
-    &:before {
-      content: url('/build/styleguide/gfx/check.png');
-      padding-right: 5px;
-      vertical-align: middle;
-    }
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .components.is-selected {
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 10px 12px 10px;
-      border-color: transparent transparent $color-grey-60 transparent;
-    }
-  }
+  margin: 4.2rem auto $spacing-small auto;
+  max-width: 100%;
 }
 
-
-.components__preview,
-.components__code,
-.components__description {
-  clear: both;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  //background: $color-grey-60;
-  border: 1px solid #ddd;
-  min-width: 800px;
-
-  iframe {
-    transition: height .3s ease-in;
-    transition: width .5s ease-in-out;
-  }
-}
-
-.components__preview {
-  text-align: center;
-  padding: 20px 0;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  margin-bottom: 20px;
-}
-
-.components__description {
-  background: transparent;
-
-  a {
-    color: $color-blue-50 !important;
-  }
-}
-
-.components__code,
-.components__description {
-
-  iframe {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.components__code {
-  background-color: $color-white;
-  border-radius: 4px;
-}
-
-#preview-frame {
-  display: block;
-  margin: 0 auto;
-}
-
-
-.components__resizer {
+.component-preview-item {
   float: left;
-  margin: 10px 0;
-  list-style: none;
-  margin-bottom: auto;
+  height: $spacing-medium;
 }
 
-.components__resizer-item {
-  float: left;
-  height: 40px;
-  line-height: 20px;
-}
-
-.components__resizer-desc {
-  display: block;
-  font-style: italic;
-}
-
-.components__mobil,
-.components__tablet,
-.components__desktop,
-.components__full {
-  display: none;
-  margin-left: 10px;
-
-  &.showtext {
-    display: inline-block;
-    font-weight: 100;
-  }
-}
-
-.components__resizer-button {
-  background: $color-grey-20;
-  border: 0;
+.component-preview-button {
+  background: $color-gray-lightest;
+  border: 1px solid $color-gray-darkest;
   outline: none;
-  height: 40px;
-  width: 40px;
-  padding: 4px;
+  height: $spacing-medium;
+  width: $spacing-medium;
+  padding: 1px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 50%;
   margin-right: 10px;
   margin-top: 0;
 
+  .icon-color{
+    fill: $color-gray-darkest;
+  }
+
   &:hover {
-    background-color: $color-grey-50;
+    background-color: $color-gray-darkest;
+    .icon-color{
+      fill: $color-white;
+    }
   }
 
   &.is-active {
-    background-color: $color-grey-70;
+    background-color: $color-gray-dark;
 
     svg * {
       fill: $color-white;
@@ -2029,37 +1682,29 @@ $color-blue-50: #3572b0; //Added by mgb - used for links
   }
 }
 
-/////////////////// styleswitcher //////////////////////
-.style-switcher{
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 200px;
-}
-
 //////////////////// version-switcher /////////////////////
-.version-switcher-wrapper{
-  display:none; //we're not implementing this untill later
-  position: relative;
-  float: right;
-  margin-right: 29px;
-  margin-top: 19px;
-  max-width: 200px;
-  min-width: 145px;
+// .version-switcher-wrapper{
+//   display:none; //we're not implementing this untill later
+//   position: relative;
+//   float: right;
+//   margin-right: 29px;
+//   margin-top: 19px;
+//   max-width: 200px;
+//   min-width: 145px;
 
-   .checkmark{
-      content: url('../../img/check-mark.svg'); 
-      width: 40px; 
-      height: 40px;
-      position: absolute;
-      right: 27px;
-      top: 5px;
-  }
-}
-.version-switcher {
-  padding-top: 0;
-  padding-bottom: 0;
-}
+//    .checkmark{
+//       content: url('../../img/check-mark.svg'); 
+//       width: 40px; 
+//       height: 40px;
+//       position: absolute;
+//       right: 27px;
+//       top: 5px;
+//   }
+// }
+// .version-switcher {
+//   padding-top: 0;
+//   padding-bottom: 0;
+// }
 
 //////////////////// Material design compare do donts /////////////////
 .figure{
@@ -2103,11 +1748,6 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
 .s-tag-caption.dont, figure.s-tag-media figcaption .s-tag-caption.dont {
     border-color: #d32f2f;
     color: #d32f2f;
-}
-
-.preview-iframe {
-  border: none;
-  display: none;
 }
 
 .fs-view {

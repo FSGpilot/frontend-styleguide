@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/hero.html
-layout: base 
+layout: iframed 
 title: Hero.html
 ---
 

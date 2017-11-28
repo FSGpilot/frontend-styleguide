@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/card.html
-layout: base 
+layout: iframed 
 title: Card.html
 ---
 
@@ -10,10 +10,7 @@ title: Card.html
 
 <div class="container">
   <div class="row">
-
     
-      
-
 <div class="card card-large card-fit">
   <div class="card-header">
     <h2>Min eIndkomst</h2>
@@ -58,19 +55,12 @@ title: Card.html
 </table>
 
   </div>
-  
-    <div class="card-action">
+  <div class="card-action">
       <button class="button-primary">Se beregning</button>
-    </div>
-  
-    <div class="card-action">
+    </div><div class="card-action">
       <button class="button-secondary">Læs mere</button>
     </div>
-  
 </div>  
-
-    
-      
 
 <div class="card card-large card-fit">
   <div class="card-header">
@@ -97,15 +87,10 @@ title: Card.html
 </table>
 
   </div>
-  
-    <div class="card-action">
+  <div class="card-action">
       <button class="button-primary">Se flere informationer</button>
     </div>
-  
 </div>  
-
-    
-      
 
 <div class="card card-large card-fit">
   <div class="card-header">
@@ -135,14 +120,10 @@ title: Card.html
 <p>Du kan se, hvilke vacciner børn født efter 27. maj 2004 har fået i <a href="#">Det fælles medicinkort (nytvindue)</a>
 
   </div>
-  
-    <div class="card-action">
+  <div class="card-action">
       <button class="button-primary">Læs mere</button>
     </div>
-  
 </div>  
-
-    
 
   </div>
 </div>

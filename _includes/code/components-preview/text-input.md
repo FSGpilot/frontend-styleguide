@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/text-input.html
-layout: base 
+layout: iframed 
 title: Text-input.html
 ---
 

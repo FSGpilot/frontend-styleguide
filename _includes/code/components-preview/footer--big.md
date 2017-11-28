@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/footer--big.html
-layout: base 
+layout: iframed 
 title: Footer--big.html
 ---
 

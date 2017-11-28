@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/embed-container.html
-layout: base 
+layout: iframed 
 title: Embed-container.html
 ---
 

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/sidebar.html
-layout: base 
+layout: iframed 
 title: Sidebar.html
 ---
 

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/icons.html
-layout: base 
+layout: iframed 
 title: Icons.html
 ---
 

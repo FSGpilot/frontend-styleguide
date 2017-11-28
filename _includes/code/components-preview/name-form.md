@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/name-form.html
-layout: base 
+layout: iframed 
 title: Name-form.html
 ---
 

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/plain.html
-layout: base 
+layout: iframed 
 title: Plain.html
 ---
 

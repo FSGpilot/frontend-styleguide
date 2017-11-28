@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/buttons.html
-layout: base 
+layout: iframed 
 title: Buttons.html
 ---
 

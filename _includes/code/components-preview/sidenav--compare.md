@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/sidenav--compare.html
-layout: base 
+layout: iframed 
 title: Sidenav--compare.html
 ---
 

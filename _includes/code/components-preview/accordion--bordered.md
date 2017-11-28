@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/accordion--bordered.html
-layout: base 
+layout: iframed 
 title: Accordion--bordered.html
 ---
 

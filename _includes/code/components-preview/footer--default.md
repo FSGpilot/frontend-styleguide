@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/footer--default.html
-layout: base 
+layout: iframed 
 title: Footer--default.html
 ---
 

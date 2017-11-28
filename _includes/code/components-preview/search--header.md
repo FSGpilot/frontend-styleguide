@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/search--header.html
-layout: base 
+layout: iframed 
 title: Search--header.html
 ---
 

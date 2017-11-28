@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--default.html
-layout: base 
+layout: iframed 
 title: Grid--default.html
 ---
 

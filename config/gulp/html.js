@@ -97,7 +97,7 @@ function createMarkdown(content, path, file) {
     var fileName = path.split("\\").pop();    
     var header = `--- 
 permalink: /preview-components/` + fileName + `
-layout: base 
+layout: iframed 
 title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
 ---`
     return header + content;

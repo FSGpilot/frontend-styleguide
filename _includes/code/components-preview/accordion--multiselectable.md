@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/accordion--multiselectable.html
-layout: base 
+layout: iframed 
 title: Accordion--multiselectable.html
 ---
 

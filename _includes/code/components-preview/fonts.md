@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/fonts.html
-layout: base 
+layout: iframed 
 title: Fonts.html
 ---
 

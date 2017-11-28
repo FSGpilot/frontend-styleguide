@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/header--default.html
-layout: base 
+layout: iframed 
 title: Header--default.html
 ---<!DOCTYPE html>
 <html lang="en-US" dir="ltr" class="no-js">
@@ -44,8 +44,7 @@ title: Header--default.html
     at Object.exports.prettifyError (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\nunjucks\src\lib.js:34:15)
     at C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\nunjucks\src\environment.js:486:31
     at eval (eval at _compile (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:18:11)
-    at entity.render.then.catch.err (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\@frctl\nunjucks\src\extensions\render.js:46:21)
-    at process._tickCallback (internal/process/next_tick.js:109:7)</pre>
+    at entity.render.then.catch.err (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\@frctl\nunjucks\src\extensions\render.js:46:21)</pre>
     </code>
     
 </div>

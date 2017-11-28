@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alerts--slim.html
-layout: base 
+layout: iframed 
 title: Alerts--slim.html
 ---
 

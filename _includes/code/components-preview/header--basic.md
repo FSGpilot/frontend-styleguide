@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/header--basic.html
-layout: base 
+layout: iframed 
 title: Header--basic.html
 ---
 

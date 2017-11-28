@@ -32,9 +32,20 @@
         </ul>
       </div>
 
-      <button class="nav-close">
-        <img src="{{ dkwds.path }}/img/close.svg" alt="close">
-      </button>
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg theme -</option>
+              <option value="styleguide">Basis theme</option>
+              <option value="virkdk">Virk.dk theme</option>
+              <option value="borgerdk">Borger.dk theme</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
 
       <ul class="nav-primary accordion">
         {%
@@ -45,11 +56,7 @@
         %}
       </ul>
 
-      <select class="style-switcher" name="Style switcher">
-        <option value="styleguide">Basis theme</option>
-        <option value="virkdk">Virk.dk theme</option>
-        <option value="borgerdk">Borger.dk theme</option>
-      </select>
+      
       
     </div> <!-- nav-inner end -->
   </nav> 

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alerts--no-header.html
-layout: base 
+layout: iframed 
 title: Alerts--no-header.html
 ---
 

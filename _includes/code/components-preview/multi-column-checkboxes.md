@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/multi-column-checkboxes.html
-layout: base 
+layout: iframed 
 title: Multi-column-checkboxes.html
 ---
 

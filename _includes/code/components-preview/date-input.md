@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/date-input.html
-layout: base 
+layout: iframed 
 title: Date-input.html
 ---
 

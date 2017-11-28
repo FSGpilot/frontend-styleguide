@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/password-reset-form.html
-layout: base 
+layout: iframed 
 title: Password-reset-form.html
 ---
 

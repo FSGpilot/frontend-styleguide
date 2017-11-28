@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/dkwds-header.html
-layout: base 
+layout: iframed 
 title: Dkwds-header.html
 ---
 

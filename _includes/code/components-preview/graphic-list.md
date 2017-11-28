@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/graphic-list.html
-layout: base 
+layout: iframed 
 title: Graphic-list.html
 ---
 

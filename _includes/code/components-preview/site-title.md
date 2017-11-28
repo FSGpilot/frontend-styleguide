@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/site-title.html
-layout: base 
+layout: iframed 
 title: Site-title.html
 ---
 

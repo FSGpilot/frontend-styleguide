@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/address-form.html
-layout: base 
+layout: iframed 
 title: Address-form.html
 ---
 

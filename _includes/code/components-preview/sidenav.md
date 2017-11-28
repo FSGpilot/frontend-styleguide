@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/sidenav.html
-layout: base 
+layout: iframed 
 title: Sidenav.html
 ---
 

@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/datatable.html
-layout: base 
+layout: iframed 
 title: Datatable.html
 ---
 

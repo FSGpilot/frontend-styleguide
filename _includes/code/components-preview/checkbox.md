@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/checkbox.html
-layout: base 
+layout: iframed 
 title: Checkbox.html
 ---
 

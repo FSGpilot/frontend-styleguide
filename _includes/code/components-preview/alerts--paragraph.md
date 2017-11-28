@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/alerts--paragraph.html
-layout: base 
+layout: iframed 
 title: Alerts--paragraph.html
 ---
 

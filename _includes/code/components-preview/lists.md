@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/lists.html
-layout: base 
+layout: iframed 
 title: Lists.html
 ---
 

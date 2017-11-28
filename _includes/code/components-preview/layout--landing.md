@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/layout--landing.html
-layout: base 
+layout: iframed 
 title: Layout--landing.html
 ---<!DOCTYPE html>
 <html lang="en-US" dir="ltr" class="no-js">
@@ -45,7 +45,8 @@ title: Layout--landing.html
     at C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\nunjucks\src\environment.js:486:31
     at eval (eval at _compile (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\nunjucks\src\environment.js:560:43), <anonymous>:32:11)
     at eval (eval at _compile (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\nunjucks\src\environment.js:560:43), <anonymous>:40:11)
-    at entity.render.then.catch.err (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\@frctl\nunjucks\src\extensions\render.js:46:21)</pre>
+    at entity.render.then.catch.err (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\@frctl\nunjucks\src\extensions\render.js:46:21)
+    at process._tickCallback (internal/process/next_tick.js:109:7)</pre>
     </code>
     
 </div>

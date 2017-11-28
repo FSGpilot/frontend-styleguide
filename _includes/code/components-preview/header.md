@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/header.html
-layout: base 
+layout: iframed 
 title: Header.html
 ---<!DOCTYPE html>
 <html lang="en-US" dir="ltr" class="no-js">

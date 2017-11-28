@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/layout--example-b-page3.html
-layout: base 
+layout: iframed 
 title: Layout--example-b-page3.html
 ---<!DOCTYPE html>
 <html lang="en-US" dir="ltr" class="no-js">

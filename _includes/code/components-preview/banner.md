@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/banner.html
-layout: base 
+layout: iframed 
 title: Banner.html
 ---
 

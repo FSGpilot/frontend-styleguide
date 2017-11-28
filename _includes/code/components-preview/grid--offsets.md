@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/grid--offsets.html
-layout: base 
+layout: iframed 
 title: Grid--offsets.html
 ---
 

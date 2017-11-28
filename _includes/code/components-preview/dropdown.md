@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/dropdown.html
-layout: base 
+layout: iframed 
 title: Dropdown.html
 ---
 

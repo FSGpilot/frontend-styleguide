@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/header--basic-mega.html
-layout: base 
+layout: iframed 
 title: Header--basic-mega.html
 ---
 

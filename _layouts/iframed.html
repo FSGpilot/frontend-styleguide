@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+    {{ content }}
+    {% include scripts.html %}
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/vendor/iframeResizer.contentWindow.min.js" defer></script>
+    <div data-iframe-height></div>
+  </body>
+</html>

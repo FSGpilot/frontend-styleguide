@@ -1,6 +1,6 @@
 --- 
 permalink: /preview-components/tringuide.html
-layout: base 
+layout: iframed 
 title: Tringuide.html
 ---
 
