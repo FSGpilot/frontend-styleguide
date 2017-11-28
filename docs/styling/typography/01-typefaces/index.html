@@ -82,134 +82,63 @@
 
   </head>
   <body class="page-typefaces layout-component">
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-<header class="usa-header site-header" role="banner">
-  <div class="usa-navbar site-header-navbar">
-    <button class="usa-menu-btn">Menu</button>
-    <div class="usa-logo site-logo" id="logo">
-      <em class="usa-logo-text">
-        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
-          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="header header-extended" role="banner">
+
+  <!-- Solution Header -->
+  <div class="navbar solution-header">
+    <div class="solution-heading">
+      <em class="heading-text">
+        <a href="/frontend-styleguide-poc/"
+          title="Home"
+          aria-label="Home">
+          Frontend Styleguide
         </a>
       </em>
     </div>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
+    <button class="menu-btn">Menu</button>
   </div>
-</header>  
-<nav class="site-nav-secondary sticky">
-  <ul>
-    
+
+  <nav role="navigation" class="nav">
+   <div class="nav-inner">
+      <div class="nav-secondary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <a href="#" class="button button-primary">
+              Download kode og designfiler
+            </a>
+          </li>
+          <li> 
+            <a href="#" class="button button-secondary">
+              Se på GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg theme -</option>
+              <option value="styleguide">Basis theme</option>
+              <option value="virkdk">Virk.dk theme</option>
+              <option value="borgerdk">Borger.dk theme</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
+
+      <ul class="nav-primary accordion">
+        
   
   <li>
     
       
 
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-
-  </ul>
-  <select class="style-switcher" name="Style switcher">
-    <option value="styleguide">Basis theme</option>
-    <option value="virkdk">Virk.dk theme</option>
-    <option value="borgerdk">Borger.dk theme</option>
-  </select>
-</nav>
-<div class="usa-overlay"></div>
-
-<nav role="navigation" class="usa-nav sidenav-mobile">
-  <div class="usa-nav-inner">
-    <button class="usa-nav-close">
-      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
-    </button>
-    <ul class="usa-sidenav-list usa-accordion">
-      
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-designsystem"
-  
-  aria-expanded="false"
-  >
-  Designsystem
-</button>
-<ul id="nav-designsystem" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
 
 
     
@@ -220,7 +149,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
 
 
     
@@ -231,7 +160,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
 
 
     
@@ -242,7 +171,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
 
 
     
@@ -253,285 +182,43 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
 
 
     
   </li>
 
 
-</ul>
+      </ul>
 
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
-
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
-  
-  aria-expanded="false"
-  >
-  Kom godt i gang
-</button>
-<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
       
-
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
       
-
-<a href="/frontend-styleguide-poc/getting-started/developers/">Til udviklerne</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
-
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
-  
-  aria-expanded="false"
-  >
-  Om designsystemet
-</button>
-<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-
-    </ul>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
-  </div>
-</nav>
-
-
-<aside class="sidenav sticky">
-  
-  
-</aside>
-
-<main id="main-content" class="main-content">
-
-  <div class="styleguide-content usa-content">
-    <header>
-      
-      <h1 id="typefaces">Typefaces</h1>
-    </header>
-
-    
-
-
-    <h4 class="usa-heading-alt">Source Sans Pro</h4>
-
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+    </div> <!-- nav-inner end -->
+  </nav> 
+</header> 
+<div class="overlay"></div>
+
+
+<main class="container section" id="main-content">
+  <div class="row">
+
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        
+        
+      </aside>
+    </div>
+
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <h4 class="heading-alt">Source Sans Pro</h4>
+
+<div class="grid-full">
+  <div class="width-one-half">
     <p>Source Sans Pro is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.</p>
     <p>Inspired by twentieth-century American gothic typeface design, its slender but open letters offer a clean and friendly simplicity. Advanced hinting allows Source Sans Pro to render well on Windows systems which run Cleartype, and across browsers and devices. Moreover, it supports a variety of languages and alphabets, including Western and European language, Vietnamese, pinyin Romanization of Chinese, and Navajo.</p>
   </div>
 
-  <div class="typography-sans-intro usa-width-one-half usa-end-row">
+  <div class="typography-sans-intro width-one-half end-row">
     <span class="text-huge">Aa</span>
     <div>
       <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -541,15 +228,15 @@
   </div>
 </div>
 
-<h4 class="usa-heading-alt">Merriweather</h4>
+<h4 class="heading-alt">Merriweather</h4>
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <p>Merriweather is an open-source serif typeface designed for on-screen reading. This font is ideal for text-dense design: the letterforms have a tall x-height but remain relatively small, making for excellent readability across screen sizes while not occupying extra horizontal space.</p>
     <p>The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.</p>
   </div>
 
-  <div class="typography-serif-intro usa-width-one-half usa-end-row usa-serif">
+  <div class="typography-serif-intro width-one-half end-row serif">
     <span class="text-huge">Aa</span>
     <div>
       <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -560,8 +247,9 @@
 </div>
 
 
-  </div>
+    </div>
 
+  </div>
 </main>
 
 
@@ -573,7 +261,7 @@
     <div class="container">
       <nav class="footer-nav row">
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Ansvarlig myndighed</h4>
             </li>
@@ -582,7 +270,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Kontakt</h4>
             </li>
@@ -595,7 +283,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Lovgivning og jura</h4> 
             </li>
@@ -610,7 +298,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Hjælp</h4> 
             </li>
@@ -639,8 +327,7 @@
 
     <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
-<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
 
   </body>
 </html>

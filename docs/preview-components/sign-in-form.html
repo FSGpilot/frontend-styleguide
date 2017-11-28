@@ -83,10 +83,10 @@
 
 
   </head>
-  <body class="page-sign-in-form-html layout-base">
-    <form class="usa-form">
+  <body class="page-sign-in-form-html layout-iframed">
+    <form class="form">
   <fieldset>
-    <legend class="usa-drop_text">Sign in</legend>
+    <legend class="drop_text">Sign in</legend>
     <span>or <a href="javascript:void(0);">create an account</a></span>
 
     <label for="username">Username or email address</label>
@@ -94,8 +94,8 @@
 
     <label for="password">Password</label>
     <input id="password" name="password" type="password" />
-    <p class="usa-form-note">
-      <a title="Show password" href="javascript:void(0);" class="usa-show_password" aria-controls="password">Show password</a>
+    <p class="form-note">
+      <a title="Show password" href="javascript:void(0);" class="show_password" aria-controls="password">Show password</a>
     </p>
 
     <input type="submit" value="Sign in" />
@@ -109,8 +109,9 @@
 
     <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
-<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
 
+    <script type="text/javascript" src="/frontend-styleguide-poc/assets/js/vendor/iframeResizer.contentWindow.min.js" defer></script>
+    <div data-iframe-height></div>
   </body>
 </html>

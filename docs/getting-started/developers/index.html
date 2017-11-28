@@ -82,134 +82,63 @@
 
   </head>
   <body class="page-til-udviklerne layout-styleguide">
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-<header class="usa-header site-header" role="banner">
-  <div class="usa-navbar site-header-navbar">
-    <button class="usa-menu-btn">Menu</button>
-    <div class="usa-logo site-logo" id="logo">
-      <em class="usa-logo-text">
-        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
-          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="header header-extended" role="banner">
+
+  <!-- Solution Header -->
+  <div class="navbar solution-header">
+    <div class="solution-heading">
+      <em class="heading-text">
+        <a href="/frontend-styleguide-poc/"
+          title="Home"
+          aria-label="Home">
+          Frontend Styleguide
         </a>
       </em>
     </div>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
+    <button class="menu-btn">Menu</button>
   </div>
-</header>  
-<nav class="site-nav-secondary sticky">
-  <ul>
-    
+
+  <nav role="navigation" class="nav">
+   <div class="nav-inner">
+      <div class="nav-secondary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <a href="#" class="button button-primary">
+              Download kode og designfiler
+            </a>
+          </li>
+          <li> 
+            <a href="#" class="button button-secondary">
+              Se på GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg theme -</option>
+              <option value="styleguide">Basis theme</option>
+              <option value="virkdk">Virk.dk theme</option>
+              <option value="borgerdk">Borger.dk theme</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
+
+      <ul class="nav-primary accordion">
+        
   
   <li>
     
       
 
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-
-  </ul>
-  <select class="style-switcher" name="Style switcher">
-    <option value="styleguide">Basis theme</option>
-    <option value="virkdk">Virk.dk theme</option>
-    <option value="borgerdk">Borger.dk theme</option>
-  </select>
-</nav>
-<div class="usa-overlay"></div>
-
-<nav role="navigation" class="usa-nav sidenav-mobile">
-  <div class="usa-nav-inner">
-    <button class="usa-nav-close">
-      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
-    </button>
-    <ul class="usa-sidenav-list usa-accordion">
-      
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-designsystem"
-  
-  aria-expanded="false"
-  >
-  Designsystem
-</button>
-<ul id="nav-designsystem" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
 
 
     
@@ -220,7 +149,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
 
 
     
@@ -231,7 +160,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
 
 
     
@@ -242,7 +171,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
 
 
     
@@ -253,50 +182,38 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
 
 
     
   </li>
 
 
-</ul>
+      </ul>
 
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+      
+      
+    </div> <!-- nav-inner end -->
+  </nav> 
+</header> 
+<div class="overlay"></div>
 
 
-  
-  </li>
+<main class="container section" id="main-content">
+  <div class="row">
 
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
-  
-  class="usa-current"
-  aria-expanded="true"
-  >
-  Kom godt i gang
-</button>
-<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
-  
-  
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        
+        
+        <ul class="sidenav-list">
+          
   
   <li>
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
 
 
     
@@ -307,239 +224,15 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/developers/" class="usa-current">Til udviklerne</a>
+<a href="/frontend-styleguide-poc/getting-started/developers/" class="current nav-link">Til udviklerne</a>
 
   
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
-
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
-  
-  aria-expanded="false"
-  >
-  Om designsystemet
-</button>
-<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-
-    </ul>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
-  </div>
-</nav>
-
-
-<aside class="sidenav sticky">
-  
-  
-  <ul class="usa-sidenav-list">
-    
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/developers/" class="usa-current">Til udviklerne</a>
-
-  
     
     
     
     
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
   
   <li>
     
@@ -619,7 +312,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
+<a href="/frontend-styleguide-poc/getting-started/designers/" class="nav-link">Til designere</a>
 
 
     
@@ -630,7 +323,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
+<a href="/frontend-styleguide-poc/getting-started/projectmanagers/" class="nav-link">Til projektledere</a>
 
 
     
@@ -641,7 +334,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
+<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/" class="nav-link">Integration til portalerne</a>
 
 
     
@@ -652,7 +345,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
+<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/" class="nav-link">Bidrag til designsystemet</a>
 
 
     
@@ -663,7 +356,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
+<a href="/frontend-styleguide-poc/getting-started/video-tutorials/" class="nav-link">Video tutorials</a>
 
 
     
@@ -674,36 +367,20 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
+<a href="/frontend-styleguide-poc/getting-started/loesninger/" class="nav-link">Løsninger</a>
 
 
     
   </li>
 
 
-  </ul>
-  
-</aside>
-
-<main id="main-content" class="main-content">
-
-  <div class="styleguide-content usa-content">
-    <header>
-      
+        </ul>
         
-      <p class="site-subheading"></p>
-        
-      
-      <h1 id="til-udviklerne">Til udviklerne</h1>
-    </header>
+      </aside>
+    </div>
 
-    
-<p class="usa-font-lead">The UI components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and experiences regardless of what browser they use, although those experiences will render better in newer browsers. If JavaScript fails, users will still get a robust HTML foundation.</p>
-
-
-
-
-    <h2 id="installation">Installation</h2>
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <h2 id="installation">Installation</h2>
 
 <p>Here are a few different ways to use the Standards within your project.</p>
 
@@ -816,8 +493,8 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
   <li>The CSS foundation of this site is built with the <strong><a href="https://sass-lang.com">Sass</a></strong> preprocessor language.</li>
   <li>Uses <strong><a href="http://bourbon.io/">Bourbon</a></strong> for its simple and lightweight Sass mixin library, and the <strong><a href="http://neat.bourbon.io/">Neat</a></strong> library for the grid framework. Bourbon and Neat are open-source products from <strong><a href="https://thoughtbot.com/">thoughtbot</a></strong>.</li>
   <li>The CSS organization and naming conventions follow <strong><a href="https://pages.18f.gov/frontend/css-coding-styleguide/">18F’s CSS Coding Styleguide</a></strong>.</li>
-  <li>CSS selectors are <strong>prefixed</strong> with <code class="highlighter-rouge">usa</code> (For example: <code class="highlighter-rouge">.usa-button</code>).</li>
-  <li>Uses a <strong><a href="https://pages.18f.gov/frontend/css-coding-styleguide/naming/">modified BEM</a></strong> approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: <code class="highlighter-rouge">.usa-button-cool_feature-active</code>).</li>
+  <li>CSS selectors are <strong>prefixed</strong> with <code class="highlighter-rouge">usa</code> (For example: <code class="highlighter-rouge">.button</code>).</li>
+  <li>Uses a <strong><a href="https://pages.18f.gov/frontend/css-coding-styleguide/naming/">modified BEM</a></strong> approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: <code class="highlighter-rouge">.button-cool_feature-active</code>).</li>
   <li>Uses <strong>modular CSS</strong> for scalable, modular, and flexible code.</li>
   <li>Uses <strong>nesting</strong> when appropriate. Nest minimally with up to two levels of nesting.</li>
   <li>Hard-coded magic numbers are avoided and, if necessary, defined in the <code class="highlighter-rouge">core/variables</code> scss file.</li>
@@ -893,8 +570,9 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
 <p>If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to <a href="mailto:uswebdesignstandards@gsa.gov">email us</a> — we’ll get back to you within 48 hours.</p>
 
 
-  </div>
+    </div>
 
+  </div>
 </main>
 
 
@@ -906,7 +584,7 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
     <div class="container">
       <nav class="footer-nav row">
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Ansvarlig myndighed</h4>
             </li>
@@ -915,7 +593,7 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Kontakt</h4>
             </li>
@@ -928,7 +606,7 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Lovgivning og jura</h4> 
             </li>
@@ -943,7 +621,7 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Hjælp</h4> 
             </li>
@@ -972,8 +650,7 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
 
     <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
-<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
 
   </body>
 </html>

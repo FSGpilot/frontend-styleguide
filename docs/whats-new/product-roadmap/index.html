@@ -82,134 +82,63 @@
 
   </head>
   <body class="page-product-roadmap layout-styleguide">
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-<header class="usa-header site-header" role="banner">
-  <div class="usa-navbar site-header-navbar">
-    <button class="usa-menu-btn">Menu</button>
-    <div class="usa-logo site-logo" id="logo">
-      <em class="usa-logo-text">
-        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
-          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="header header-extended" role="banner">
+
+  <!-- Solution Header -->
+  <div class="navbar solution-header">
+    <div class="solution-heading">
+      <em class="heading-text">
+        <a href="/frontend-styleguide-poc/"
+          title="Home"
+          aria-label="Home">
+          Frontend Styleguide
         </a>
       </em>
     </div>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
+    <button class="menu-btn">Menu</button>
   </div>
-</header>  
-<nav class="site-nav-secondary sticky">
-  <ul>
-    
+
+  <nav role="navigation" class="nav">
+   <div class="nav-inner">
+      <div class="nav-secondary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <a href="#" class="button button-primary">
+              Download kode og designfiler
+            </a>
+          </li>
+          <li> 
+            <a href="#" class="button button-secondary">
+              Se på GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg theme -</option>
+              <option value="styleguide">Basis theme</option>
+              <option value="virkdk">Virk.dk theme</option>
+              <option value="borgerdk">Borger.dk theme</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
+
+      <ul class="nav-primary accordion">
+        
   
   <li>
     
       
 
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-
-  </ul>
-  <select class="style-switcher" name="Style switcher">
-    <option value="styleguide">Basis theme</option>
-    <option value="virkdk">Virk.dk theme</option>
-    <option value="borgerdk">Borger.dk theme</option>
-  </select>
-</nav>
-<div class="usa-overlay"></div>
-
-<nav role="navigation" class="usa-nav sidenav-mobile">
-  <div class="usa-nav-inner">
-    <button class="usa-nav-close">
-      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
-    </button>
-    <ul class="usa-sidenav-list usa-accordion">
-      
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-designsystem"
-  
-  aria-expanded="false"
-  >
-  Designsystem
-</button>
-<ul id="nav-designsystem" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
 
 
     
@@ -220,7 +149,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
 
 
     
@@ -231,7 +160,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
 
 
     
@@ -242,7 +171,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
 
 
     
@@ -253,49 +182,38 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
 
 
     
   </li>
 
 
-</ul>
+      </ul>
 
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+      
+      
+    </div> <!-- nav-inner end -->
+  </nav> 
+</header> 
+<div class="overlay"></div>
 
 
-  
-  </li>
+<main class="container section" id="main-content">
+  <div class="row">
 
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
-  
-  aria-expanded="false"
-  >
-  Kom godt i gang
-</button>
-<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
-  
-  
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        
+        
+        <ul class="sidenav-list">
+          
   
   <li>
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
 
 
     
@@ -306,7 +224,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/developers/">Til udviklerne</a>
+<a href="/frontend-styleguide-poc/whats-new/releases/" class="nav-link">Release notes</a>
 
 
     
@@ -317,7 +235,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
+<a href="/frontend-styleguide-poc/whats-new/updates/" class="nav-link">News and updates</a>
 
 
     
@@ -328,240 +246,15 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
-
-
-    
-  </li>
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/" class="current nav-link">Product roadmap</a>
 
   
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
-
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
-  
-  class="usa-current"
-  aria-expanded="true"
-  >
-  Om designsystemet
-</button>
-<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/product-roadmap/" class="usa-current">Product roadmap</a>
-
-  
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-
-    </ul>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
-  </div>
-</nav>
-
-
-<aside class="sidenav sticky">
-  
-  
-  <ul class="usa-sidenav-list">
-    
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/product-roadmap/" class="usa-current">Product roadmap</a>
-
-  
     
     
     
     
     
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
   
   <li>
     
@@ -619,7 +312,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
+<a href="/frontend-styleguide-poc/whats-new/research/" class="nav-link">Research</a>
 
 
     
@@ -630,43 +323,27 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
+<a href="/frontend-styleguide-poc/whats-new/component-status/" class="nav-link">Component Status</a>
 
 
     
   </li>
 
 
-  </ul>
-  
-</aside>
-
-<main id="main-content" class="main-content">
-
-  <div class="styleguide-content usa-content">
-    <header>
-      
+        </ul>
         
-      <p class="site-subheading"></p>
-        
-      
-      <h1 id="product-roadmap">Product roadmap</h1>
-    </header>
+      </aside>
+    </div>
 
-    
-<p class="usa-font-lead">Here, you’ll find our product roadmap — an up-to-date report on the work we’re doing.</p>
-
-
-
-
-    <h3 id="current-work-our-sprint-milestones">Current work: our sprint milestones</h3>
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <h3 id="current-work-our-sprint-milestones">Current work: our sprint milestones</h3>
 
 <p>See what we’re working on now and in the future by viewing what is being
 worked on or queued up to work on in our sprint milestones below. These are
 two-week increments of work that we commit to finishing, using Agile Product
 Development practices.</p>
 
-<p><a href="https://github.com/18F/web-design-standards/milestones" class="usa-button">View our sprint milestones</a></p>
+<p><a href="https://github.com/18F/web-design-standards/milestones" class="button">View our sprint milestones</a></p>
 
 <h3 id="future-work-our-product-roadmap">Future work: our product roadmap</h3>
 
@@ -682,7 +359,7 @@ high-level future requests and ideas.</p>
     <li>
       A public, up-to-date product road map.
       
-          <a class="usa-label label-done" href="https://github.com/18F/web-design-standards/milestone/18" aria-describedby="tooltip-text-a-public-up-to-date-product-road-map">
+          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/18" aria-describedby="tooltip-text-a-public-up-to-date-product-road-map">
             Done
           </a>
       
@@ -691,7 +368,7 @@ high-level future requests and ideas.</p>
     <li>
       A public maintenance plan.
       
-          <a class="usa-label label-done" href="https://github.com/18F/web-design-standards/milestone/19" aria-describedby="tooltip-text-a-public-maintenance-plan">
+          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/19" aria-describedby="tooltip-text-a-public-maintenance-plan">
             Done
           </a>
       
@@ -700,7 +377,7 @@ high-level future requests and ideas.</p>
     <li>
       A bare-bones HTML starter page, with CSS and JS pre-linked and necessary tags and classes.
       
-          <a class="usa-label label-in-progress" href="https://github.com/18F/web-design-standards/milestone/15" aria-describedby="tooltip-text-a-bare-bones-html-starter-page-with-css-and-js-pre-linked-and-necessary-tags-and-classes">
+          <a class="label label-in-progress" href="https://github.com/18F/web-design-standards/milestone/15" aria-describedby="tooltip-text-a-bare-bones-html-starter-page-with-css-and-js-pre-linked-and-necessary-tags-and-classes">
             In Progress
           </a>
       
@@ -709,7 +386,7 @@ high-level future requests and ideas.</p>
     <li>
       Defined processes for active and public implementer support.
       
-          <a class="usa-label label-done" href="" aria-describedby="tooltip-text-defined-processes-for-active-and-public-implementer-support">
+          <a class="label label-done" href="" aria-describedby="tooltip-text-defined-processes-for-active-and-public-implementer-support">
             Done
           </a>
       
@@ -718,7 +395,7 @@ high-level future requests and ideas.</p>
     <li>
       Contribution guidelines for both designers and developers.
       
-          <a class="usa-label label-done" href="https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md" aria-describedby="tooltip-text-contribution-guidelines-for-both-designers-and-developers">
+          <a class="label label-done" href="https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md" aria-describedby="tooltip-text-contribution-guidelines-for-both-designers-and-developers">
             Done
           </a>
       
@@ -727,7 +404,7 @@ high-level future requests and ideas.</p>
     <li>
       Form patterns that include recommendations for just-in-time instructions.
       
-          <a class="usa-label label-done" href="" aria-describedby="tooltip-text-form-patterns-that-include-recommendations-for-just-in-time-instructions">
+          <a class="label label-done" href="" aria-describedby="tooltip-text-form-patterns-that-include-recommendations-for-just-in-time-instructions">
             Done
           </a>
       
@@ -736,7 +413,7 @@ high-level future requests and ideas.</p>
     <li>
       UI components are comprised of clean, semantic code.
       
-          <a class="usa-label label-done" href="https://github.com/18F/web-design-standards/milestone/13" aria-describedby="tooltip-text-ui-components-are-comprised-of-clean-semantic-code">
+          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/13" aria-describedby="tooltip-text-ui-components-are-comprised-of-clean-semantic-code">
             Done
           </a>
       
@@ -745,7 +422,7 @@ high-level future requests and ideas.</p>
     <li>
       Simple "Getting Started" process and instructions.
       
-          <a class="usa-label label-done" href="https://github.com/18F/web-design-standards/milestone/16" aria-describedby="tooltip-text-simple-getting-started-process-and-instructions">
+          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/16" aria-describedby="tooltip-text-simple-getting-started-process-and-instructions">
             Done
           </a>
       
@@ -754,7 +431,7 @@ high-level future requests and ideas.</p>
     <li>
       A core set of common, usable web components.
       
-          <a class="usa-label label-done" href="https://github.com/18F/web-design-standards/milestone/14" aria-describedby="tooltip-text-a-core-set-of-common-usable-web-components">
+          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/14" aria-describedby="tooltip-text-a-core-set-of-common-usable-web-components">
             Done
           </a>
       
@@ -763,7 +440,7 @@ high-level future requests and ideas.</p>
     <li>
       Ready to go HTML templates (and related design stencils) for common types of government site pages.
       
-          <a class="usa-label label-done" href="https://github.com/18F/web-design-standards/milestone/17" aria-describedby="tooltip-text-ready-to-go-html-templates-and-related-design-stencils-for-common-types-of-government-site-pages">
+          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/17" aria-describedby="tooltip-text-ready-to-go-html-templates-and-related-design-stencils-for-common-types-of-government-site-pages">
             Done
           </a>
       
@@ -779,7 +456,7 @@ high-level future requests and ideas.</p>
     <li>
       Form templates structured in short chunks.
       
-          <a class="usa-label label-done" href="" aria-describedby="tooltip-text-form-templates-structured-in-short-chunks">
+          <a class="label label-done" href="" aria-describedby="tooltip-text-form-templates-structured-in-short-chunks">
             Done
           </a>
       
@@ -788,7 +465,7 @@ high-level future requests and ideas.</p>
     <li>
       The ability to quickly copy and paste code from the website.
       
-          <a class="usa-label label-done" href="" aria-describedby="tooltip-text-the-ability-to-quickly-copy-and-paste-code-from-the-website">
+          <a class="label label-done" href="" aria-describedby="tooltip-text-the-ability-to-quickly-copy-and-paste-code-from-the-website">
             Done
           </a>
       
@@ -797,7 +474,7 @@ high-level future requests and ideas.</p>
     <li>
       Form patterns that allow for easy recovery of mistakes.
       
-          <a class="usa-label label-done" href="" aria-describedby="tooltip-text-form-patterns-that-allow-for-easy-recovery-of-mistakes">
+          <a class="label label-done" href="" aria-describedby="tooltip-text-form-patterns-that-allow-for-easy-recovery-of-mistakes">
             Done
           </a>
       
@@ -806,7 +483,7 @@ high-level future requests and ideas.</p>
     <li>
       Easy ways to customize the Standards to fit an agency’s brand and needs.
       
-          <a class="usa-label label-done" href="" aria-describedby="tooltip-text-easy-ways-to-customize-the-standards-to-fit-an-agency-s-brand-and-needs">
+          <a class="label label-done" href="" aria-describedby="tooltip-text-easy-ways-to-customize-the-standards-to-fit-an-agency-s-brand-and-needs">
             Done
           </a>
       
@@ -815,7 +492,7 @@ high-level future requests and ideas.</p>
     <li>
       Design stencils and assets.
       
-          <a class="usa-label label-done" href="https://standards.usa.gov/download/" aria-describedby="tooltip-text-design-stencils-and-assets">
+          <a class="label label-done" href="https://standards.usa.gov/download/" aria-describedby="tooltip-text-design-stencils-and-assets">
             Done
           </a>
       
@@ -824,7 +501,7 @@ high-level future requests and ideas.</p>
     <li>
       Interaction patterns for save-as-you-go functionality
       
-          <a class="usa-label label-in-progress" href="" aria-describedby="tooltip-text-interaction-patterns-for-save-as-you-go-functionality">
+          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-interaction-patterns-for-save-as-you-go-functionality">
             In Progress
           </a>
       
@@ -833,7 +510,7 @@ high-level future requests and ideas.</p>
     <li>
       A fork-able starter project representing a simple, static site with a few common pages.
       
-          <a class="usa-label label-done" href="" aria-describedby="tooltip-text-a-fork-able-starter-project-representing-a-simple-static-site-with-a-few-common-pages">
+          <a class="label label-done" href="" aria-describedby="tooltip-text-a-fork-able-starter-project-representing-a-simple-static-site-with-a-few-common-pages">
             Done
           </a>
       
@@ -842,7 +519,7 @@ high-level future requests and ideas.</p>
     <li>
       Build out the documentation and increase the ease of the process for Windows users to start up.
       
-          <a class="usa-label label-done" href="https://github.com/18F/web-design-standards/issues/1533" aria-describedby="tooltip-text-build-out-the-documentation-and-increase-the-ease-of-the-process-for-windows-users-to-start-up">
+          <a class="label label-done" href="https://github.com/18F/web-design-standards/issues/1533" aria-describedby="tooltip-text-build-out-the-documentation-and-increase-the-ease-of-the-process-for-windows-users-to-start-up">
             Done
           </a>
       
@@ -851,7 +528,7 @@ high-level future requests and ideas.</p>
     <li>
       Final clean up and launch 1.0
       
-          <a class="usa-label label-done" href="https://github.com/18F/web-design-standards/labels/%5BRelease%5D%201.0" aria-describedby="tooltip-text-final-clean-up-and-launch-1-0">
+          <a class="label label-done" href="https://github.com/18F/web-design-standards/labels/%5BRelease%5D%201.0" aria-describedby="tooltip-text-final-clean-up-and-launch-1-0">
             Done
           </a>
       
@@ -867,7 +544,7 @@ high-level future requests and ideas.</p>
     <li>
       Highlight and track sites using the WDS more proactively, collect and link to them on the main site to show agencies what is possible.
       
-          <a class="usa-label label-in-progress" href="https://github.com/18F/web-design-standards/issues/1579" aria-describedby="tooltip-text-highlight-and-track-sites-using-the-wds-more-proactively-collect-and-link-to-them-on-the-main-site-to-show-agencies-what-is-possible">
+          <a class="label label-in-progress" href="https://github.com/18F/web-design-standards/issues/1579" aria-describedby="tooltip-text-highlight-and-track-sites-using-the-wds-more-proactively-collect-and-link-to-them-on-the-main-site-to-show-agencies-what-is-possible">
             In Progress
           </a>
       
@@ -876,7 +553,7 @@ high-level future requests and ideas.</p>
     <li>
       Create and publicize a public slack channel for support, questions and sharing best practices.
       
-          <a class="usa-label label-done" href="https://chat.18f.gov" aria-describedby="tooltip-text-create-and-publicize-a-public-slack-channel-for-support-questions-and-sharing-best-practices">
+          <a class="label label-done" href="https://chat.18f.gov" aria-describedby="tooltip-text-create-and-publicize-a-public-slack-channel-for-support-questions-and-sharing-best-practices">
             Done
           </a>
       
@@ -885,7 +562,7 @@ high-level future requests and ideas.</p>
     <li>
       Start a series of Case Study and Best Practice blog posts sharing the work that agencies have done using the Web Design Standards and what they’ve learned.
       
-          <a class="usa-label label-done" href="https://18f.gsa.gov/tags/web-design-standards/" aria-describedby="tooltip-text-start-a-series-of-case-study-and-best-practice-blog-posts-sharing-the-work-that-agencies-have-done-using-the-web-design-standards-and-what-they-ve-learned">
+          <a class="label label-done" href="https://18f.gsa.gov/tags/web-design-standards/" aria-describedby="tooltip-text-start-a-series-of-case-study-and-best-practice-blog-posts-sharing-the-work-that-agencies-have-done-using-the-web-design-standards-and-what-they-ve-learned">
             Done
           </a>
       
@@ -894,7 +571,7 @@ high-level future requests and ideas.</p>
     <li>
       Produce more video tutorials and webinars for the community to learn how to more easily use the WDS.
       
-          <a class="usa-label label-in-progress" href="" aria-describedby="tooltip-text-produce-more-video-tutorials-and-webinars-for-the-community-to-learn-how-to-more-easily-use-the-wds">
+          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-produce-more-video-tutorials-and-webinars-for-the-community-to-learn-how-to-more-easily-use-the-wds">
             In Progress
           </a>
       
@@ -903,7 +580,7 @@ high-level future requests and ideas.</p>
     <li>
       Produce DigitalGov webinars more frequently and find more speaking engagements to share the work and code.
       
-          <a class="usa-label label-in-progress" href="https://attendee.gotowebinar.com/register/6016615967957411842" aria-describedby="tooltip-text-produce-digitalgov-webinars-more-frequently-and-find-more-speaking-engagements-to-share-the-work-and-code">
+          <a class="label label-in-progress" href="https://attendee.gotowebinar.com/register/6016615967957411842" aria-describedby="tooltip-text-produce-digitalgov-webinars-more-frequently-and-find-more-speaking-engagements-to-share-the-work-and-code">
             In Progress
           </a>
       
@@ -912,7 +589,7 @@ high-level future requests and ideas.</p>
     <li>
       In an upcoming WDS site update, create a more visible location for all learning materials to showcase and help folks out.
       
-          <a class="usa-label label-in-progress" href="" aria-describedby="tooltip-text-in-an-upcoming-wds-site-update-create-a-more-visible-location-for-all-learning-materials-to-showcase-and-help-folks-out">
+          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-in-an-upcoming-wds-site-update-create-a-more-visible-location-for-all-learning-materials-to-showcase-and-help-folks-out">
             In Progress
           </a>
       
@@ -921,7 +598,7 @@ high-level future requests and ideas.</p>
     <li>
       Build a tighter API integration with the Digital Analytics Program to track usage of the WDS to help guide our decision making, along with continued user interviews and research.
       
-          <a class="usa-label label-in-progress" href="https://github.com/18F/web-design-standards/issues/1635" aria-describedby="tooltip-text-build-a-tighter-api-integration-with-the-digital-analytics-program-to-track-usage-of-the-wds-to-help-guide-our-decision-making-along-with-continued-user-interviews-and-research">
+          <a class="label label-in-progress" href="https://github.com/18F/web-design-standards/issues/1635" aria-describedby="tooltip-text-build-a-tighter-api-integration-with-the-digital-analytics-program-to-track-usage-of-the-wds-to-help-guide-our-decision-making-along-with-continued-user-interviews-and-research">
             In Progress
           </a>
       
@@ -930,7 +607,7 @@ high-level future requests and ideas.</p>
     <li>
       Continue listening tours to meet with more than a half dozen agencies per quarter to learn more about their experience, needs, and collect feedback on the Web Design Standards.
       
-          <a class="usa-label label-in-progress" href="" aria-describedby="tooltip-text-continue-listening-tours-to-meet-with-more-than-a-half-dozen-agencies-per-quarter-to-learn-more-about-their-experience-needs-and-collect-feedback-on-the-web-design-standards">
+          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-continue-listening-tours-to-meet-with-more-than-a-half-dozen-agencies-per-quarter-to-learn-more-about-their-experience-needs-and-collect-feedback-on-the-web-design-standards">
             In Progress
           </a>
       
@@ -946,7 +623,7 @@ high-level future requests and ideas.</p>
     <li>
       Perform a Web Performance review and update to components to make sure they’re optimized to load as fast as possible.
       
-          <a class="usa-label label-in-progress" href="" aria-describedby="tooltip-text-perform-a-web-performance-review-and-update-to-components-to-make-sure-they-re-optimized-to-load-as-fast-as-possible">
+          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-perform-a-web-performance-review-and-update-to-components-to-make-sure-they-re-optimized-to-load-as-fast-as-possible">
             In Progress
           </a>
       
@@ -955,7 +632,7 @@ high-level future requests and ideas.</p>
     <li>
       Launch the Yeoman generator to quickly build out sites with the WDS base design.
       
-          <a class="usa-label label-in-progress" href="https://github.com/18F/web-design-standards/issues/1542" aria-describedby="tooltip-text-launch-the-yeoman-generator-to-quickly-build-out-sites-with-the-wds-base-design">
+          <a class="label label-in-progress" href="https://github.com/18F/web-design-standards/issues/1542" aria-describedby="tooltip-text-launch-the-yeoman-generator-to-quickly-build-out-sites-with-the-wds-base-design">
             In Progress
           </a>
       
@@ -1015,8 +692,9 @@ high-level future requests and ideas.</p>
 </section>
 
 
-  </div>
+    </div>
 
+  </div>
 </main>
 
 
@@ -1028,7 +706,7 @@ high-level future requests and ideas.</p>
     <div class="container">
       <nav class="footer-nav row">
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Ansvarlig myndighed</h4>
             </li>
@@ -1037,7 +715,7 @@ high-level future requests and ideas.</p>
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Kontakt</h4>
             </li>
@@ -1050,7 +728,7 @@ high-level future requests and ideas.</p>
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Lovgivning og jura</h4> 
             </li>
@@ -1065,7 +743,7 @@ high-level future requests and ideas.</p>
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Hjælp</h4> 
             </li>
@@ -1094,8 +772,7 @@ high-level future requests and ideas.</p>
 
     <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
-<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
 
   </body>
 </html>

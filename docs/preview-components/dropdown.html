@@ -97,9 +97,10 @@
 
 
   </head>
-  <body class="page-dropdown-html layout-base">
-    <form class="usa-form">
-  
+  <body class="page-dropdown-html layout-iframed">
+    <div class="container">
+  <form class="form">
+    
   <label for="options">Dropdown titel</label>
   <select name="options" id="options">
     <option value="">- Vælg -</option>
@@ -112,13 +113,15 @@
     
   </select>
 
-</form>
+  </form>
+</div>
 
 
     <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
-<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
 
+    <script type="text/javascript" src="/frontend-styleguide-poc/assets/js/vendor/iframeResizer.contentWindow.min.js" defer></script>
+    <div data-iframe-height></div>
   </body>
 </html>

@@ -81,8 +81,8 @@
 
 
   </head>
-  <body class="page-embed-container-html layout-base">
-    <div class="usa-embed-container" aria-label="16:9">
+  <body class="page-embed-container-html layout-iframed">
+    <div class="embed-container" aria-label="16:9">
   <iframe src="data:text/html,%3C!DOCTYPE%20html%3E%0A%3Cmeta%20charset%3D%22utf-8%22%3E%0A%3Cstyle%3E%0Ahtml%20%7B%0A%20%20background-color%3A%20black%3B%0A%20%20color%3A%20white%3B%0A%20%20width%3A%20100%25%3B%0A%20%20height%3A%20100%25%3B%0A%20%20display%3A%20flex%3B%0A%20%20align-items%3A%20center%3B%0A%20%20justify-content%3A%20center%3B%0A%7D%0A%3C%2Fstyle%3E%0A%3Ctitle%3E16%3A9%20aspect%20ratio%20example%20iframe%3C%2Ftitle%3E%0A%3Cp%3E16%3A9%20aspect%20ratio%20example%20iframe%3C%2Fp%3E%0A" title="16:9 aspect ratio example iframe" frameborder="0"></iframe>
 </div>
 
@@ -95,8 +95,9 @@
 
     <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
-<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
 
+    <script type="text/javascript" src="/frontend-styleguide-poc/assets/js/vendor/iframeResizer.contentWindow.min.js" defer></script>
+    <div data-iframe-height></div>
   </body>
 </html>

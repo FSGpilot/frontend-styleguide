@@ -82,83 +82,63 @@
 
   </head>
   <body class="page-eksemplariske-eksempler layout-styleguide">
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-<header class="usa-header site-header" role="banner">
-  <div class="usa-navbar site-header-navbar">
-    <button class="usa-menu-btn">Menu</button>
-    <div class="usa-logo site-logo" id="logo">
-      <em class="usa-logo-text">
-        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
-          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="header header-extended" role="banner">
+
+  <!-- Solution Header -->
+  <div class="navbar solution-header">
+    <div class="solution-heading">
+      <em class="heading-text">
+        <a href="/frontend-styleguide-poc/"
+          title="Home"
+          aria-label="Home">
+          Frontend Styleguide
         </a>
       </em>
     </div>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
+    <button class="menu-btn">Menu</button>
   </div>
-</header>  
-<nav class="site-nav-secondary sticky">
-  <ul>
-    
+
+  <nav role="navigation" class="nav">
+   <div class="nav-inner">
+      <div class="nav-secondary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <a href="#" class="button button-primary">
+              Download kode og designfiler
+            </a>
+          </li>
+          <li> 
+            <a href="#" class="button button-secondary">
+              Se på GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg theme -</option>
+              <option value="styleguide">Basis theme</option>
+              <option value="virkdk">Virk.dk theme</option>
+              <option value="borgerdk">Borger.dk theme</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
+
+      <ul class="nav-primary accordion">
+        
   
   <li>
     
       
 
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/" class="usa-current">Eksempler</a>
-
-  
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
 
 
     
@@ -169,49 +149,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="current nav-link">Eksempler</a>
 
-
-    
-  </li>
-
-
-  </ul>
-  <select class="style-switcher" name="Style switcher">
-    <option value="styleguide">Basis theme</option>
-    <option value="virkdk">Virk.dk theme</option>
-    <option value="borgerdk">Borger.dk theme</option>
-  </select>
-</nav>
-<div class="usa-overlay"></div>
-
-<nav role="navigation" class="usa-nav sidenav-mobile">
-  <div class="usa-nav-inner">
-    <button class="usa-nav-close">
-      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
-    </button>
-    <ul class="usa-sidenav-list usa-accordion">
-      
-  <li>
   
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-designsystem"
-  
-  aria-expanded="false"
-  >
-  Designsystem
-</button>
-<ul id="nav-designsystem" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
 
 
     
@@ -222,7 +162,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
 
 
     
@@ -233,7 +173,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/styling/">Styling</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
 
 
     
@@ -244,7 +184,52 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+
+
+    
+  </li>
+
+
+      </ul>
+
+      
+      
+    </div> <!-- nav-inner end -->
+  </nav> 
+</header> 
+<div class="overlay"></div>
+
+
+<main class="container section" id="main-content">
+  <div class="row">
+
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        
+        
+        <ul class="sidenav-list">
+          
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/page-templates/" class="current nav-link">Eksempler</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="sidenav-sub_list">
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/page-templates/sideopbygning/" class="nav-link">Sideopbygning</a>
 
 
     
@@ -255,24 +240,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/page-templates/" class="usa-current">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/eksemplariske-eksempler/" class="current nav-link">Eksemplariske eksempler</a>
 
   
     
@@ -280,400 +248,7 @@
     
     
     
-    <ul class="usa-sidenav-sub_list">
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/sideopbygning/">Sideopbygning</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/eksemplariske-eksempler/" class="usa-current">Eksemplariske eksempler</a>
-
-  
-    
-    
-    
-    
-    
-    <ul class="usa-sidenav-sub_list">
-  
-  <li>
-    
-      
-
-
-<a href="#lille-blanket">Den lille løsning</a>
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#mellem-blanket">Den mellem løsning</a>
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#stor-blanket">Den store løsning</a>
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#hyper-blanket">Hyper løsningen</a>
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#landing-page">Landing page</a>
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#documentation-page">Documentation page</a>
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#signering">Signering</a>
-
-    
-  </li>
-
-</ul>
-    
-  
-
-
-    
-  </li>
-
-</ul>
-    
-  
-
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
-  
-  aria-expanded="false"
-  >
-  Kom godt i gang
-</button>
-<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/developers/">Til udviklerne</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
-
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
-  
-  aria-expanded="false"
-  >
-  Om designsystemet
-</button>
-<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-
-    </ul>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
-  </div>
-</nav>
-
-
-<aside class="sidenav sticky">
-  
-  
-  <ul class="usa-sidenav-list">
-    
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/" class="usa-current">Eksempler</a>
-
-  
-    
-    
-    
-    
-    
-    <ul class="usa-sidenav-sub_list">
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/sideopbygning/">Sideopbygning</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/eksemplariske-eksempler/" class="usa-current">Eksemplariske eksempler</a>
-
-  
-    
-    
-    
-    
-    
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
   
   <li>
     
@@ -768,36 +343,20 @@
   </li>
 
 
-  </ul>
-  
-</aside>
-
-<main id="main-content" class="main-content">
-
-  <div class="styleguide-content usa-content">
-    <header>
-      
+        </ul>
         
-      <p class="site-subheading"></p>
-        
-      
-      <h1 id="eksemplariske-eksempler">Eksemplariske eksempler</h1>
-    </header>
+      </aside>
+    </div>
 
-    
-<p class="usa-font-lead">Vi opererer med 4 typer af løsninger - lille, mellem, stor og hyper. I den endelige guide skal der på denne side vises eksempler for hvordan styleguiden er anvendt til at bygge alt lige fra den simpleste blanket til store offentlige portaler. Nedenfor ser i hvordan US Web Design Standards har vist en Landing page og en Documentation page.</p>
-
-
-
-
-    <h2 class="usa-heading" id="lille-blanket">Template: Den lille løsning</h2>
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <h2 class="heading" id="lille-blanket">Template: Den lille løsning</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <p><a href="http://qjma9y.axshare.com/#g=1&amp;p=indberetning__simpel__-_desktop"><img src="/frontend-styleguide-poc/img/lille.PNG" style="max-width: 1000%; width: 1018px" /></a></p>
 
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-template-landing">Code</button>
-  <div id="code-template-landing" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-template-landing">Code</button>
+  <div id="code-template-landing" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -1032,14 +591,14 @@
   </div>
 </div>
 
-<h2 class="usa-heading" id="mellem-blanket">Template: Den mellem løsning</h2>
+<h2 class="heading" id="mellem-blanket">Template: Den mellem løsning</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <p><a href="http://qjma9y.axshare.com/#g=1&amp;p=indberetning__kompleks__-_desktop"><img src="/frontend-styleguide-poc/img/stor.PNG" style="max-width: 1000%; width: 1018px" /></a></p>
 
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-template-landing">Code</button>
-  <div id="code-template-landing" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-template-landing">Code</button>
+  <div id="code-template-landing" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -1274,14 +833,14 @@
   </div>
 </div>
 
-<h2 class="usa-heading" id="store-blanket">Template: Den store løsning</h2>
+<h2 class="heading" id="store-blanket">Template: Den store løsning</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <p><a href="http://qjma9y.axshare.com/#g=1&amp;p=indberetning__kompleks__-_desktop"><img src="/frontend-styleguide-poc/img/stor.PNG" style="max-width: 1000%; width: 1018px" /></a></p>
 
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-template-landing">Code</button>
-  <div id="code-template-landing" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-template-landing">Code</button>
+  <div id="code-template-landing" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -1516,13 +1075,13 @@
   </div>
 </div>
 
-<h2 class="usa-heading" id="hyper-blanket">Template: Den hyper løsning</h2>
+<h2 class="heading" id="hyper-blanket">Template: Den hyper løsning</h2>
 <p><a href="http://qjma9y.axshare.com/#g=1&amp;p=indberetning__kompleks__-_desktop"><img src="/frontend-styleguide-poc/img/hyper.png" style="max-width: 1000%; width: 1018px" /></a></p>
 
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-template-landing">Code</button>
-  <div id="code-template-landing" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-template-landing">Code</button>
+  <div id="code-template-landing" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -1757,18 +1316,18 @@
   </div>
 </div>
 
-<h2 class="usa-heading" id="landing-page">Template 1: Landing page</h2>
+<h2 class="heading" id="landing-page">Template 1: Landing page</h2>
 <p>A landing page is intended to provide someone’s first impression of your agency or program. Often, they’ll arrive from somewhere else without much context, like a search result or a colleague’s email. So a landing page needs to be clear, engaging, and contextualizing.</p>
 <div class="preview">
   <a class="media_link" href="/frontend-styleguide-poc/page-templates/landing/">
     <img src="/frontend-styleguide-poc/assets/img/templates/template-landing.png" alt="Basic header" />
   </a>
-  <a class="usa-button" href="/frontend-styleguide-poc/page-templates/landing/">Demo landing page template</a>
+  <a class="button" href="/frontend-styleguide-poc/page-templates/landing/">Demo landing page template</a>
 </div>
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-template-landing">Code</button>
-  <div id="code-template-landing" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-template-landing">Code</button>
+  <div id="code-template-landing" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -2003,29 +1562,29 @@
   </div>
 </div>
 
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="false" aria-controls="docs-page-template-landing">
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="docs-page-template-landing">
     Documentation
   </button>
-  <div id="docs-page-template-landing" class="usa-accordion-content">
-    <h4 class="usa-heading">When to use</h4>
-    <ul class="usa-content-list">
+  <div id="docs-page-template-landing" class="accordion-content">
+    <h4 class="heading">When to use</h4>
+    <ul class="content-list">
       <li>If you are introducing a new program to the public through a marketing or publicity campaign, a landing page is a good place to point links at. It can build on the minimal copy of a campaign without overwhelming readers.</li>
       <li>The landing page can be a good model for a homepage. But do some research first. What do you have to say? What do your users need to know? Figure these things out. It’s important to know what you have to say about your organization before you settle on a homepage design.</li>
     </ul>
-    <h4 class="usa-heading">When to avoid</h4>
-    <ul class="usa-content-list">
+    <h4 class="heading">When to avoid</h4>
+    <ul class="content-list">
       <li>Don’t use a landing page for standard internal page content. The same things that help people understand basics quickly can become distracting for people who are looking for more depth.</li>
       <li>Don’t try to include forms or side navigation in a page like this. Those are visually complex components, and a landing page works best without too much complexity.</li>
     </ul>
-    <h4 class="usa-heading">Guidance</h4>
-    <ul class="usa-content-list">
+    <h4 class="heading">Guidance</h4>
+    <ul class="content-list">
       <li>If you are using the landing page to encourage users to follow a primary call to action, consider getting rid of the header. The less there is to distract people from the most important task, the more often they will do it.</li>
       <li>For guidance on specific components, see the pages for the individual components.</li>
       <li>Do not create extra content just to fill the template. You can remove individual components (such as the media block) or sub-components (such as individual menu items in the header) from the template as you implement it. This version gives you a broad idea of the number of things your landing page could include. But never make a page more complex than you need to. If you’re unsure, interview users to find out what they need to know.</li>
     </ul>
-    <h4 class="usa-heading">Components used in this template</h4>
-    <ul class="usa-content-list">
+    <h4 class="heading">Components used in this template</h4>
+    <ul class="content-list">
       <li>Extended header</li>
       <li>Hero feature</li>
       <li>Typography — Merriweather headings and Source Sans Pro body</li>
@@ -2036,26 +1595,26 @@
       <li>Buttons</li>
       <li>Medium footer</li>
     </ul>
-    <h4 class="usa-heading">Component definitions</h4>
-    <ul class="usa-content-list">
+    <h4 class="heading">Component definitions</h4>
+    <ul class="content-list">
       <li><strong>Hero feature</strong>: Hero features are used at the top of your landing page to help set the tone for the content of your site and to help users understand what your brand is all about. The Hero feature offers a callout which provides a high-level overview of the content on the site and will often reference the Hero image that sits behind it.</li>
       <li><strong>Graphic list</strong>: The Graphic list is used to showcase a number of related items and their respective images in a grid pattern.</li>
     </ul>
   </div>
 </div>
 
-<h2 class="usa-heading" id="documentation-page">Template 2: Documentation page</h2>
+<h2 class="heading" id="documentation-page">Template 2: Documentation page</h2>
 <p>A documentation page presents information on a certain theme, topic, or idea. People often arrive here after visiting the landing page or after searching for a specific piece of information, so documentation pages don’t need to provide as much contextualizing information as more introductory pages would. The copy should be clear, focused, and concise.</p>
 <div class="preview">
   <a class="media_link" href="/frontend-styleguide-poc/page-templates/docs/">
     <img src="/frontend-styleguide-poc/assets/img/templates/template-documentation.png" alt="Basic header" />
   </a>
-  <a class="usa-button" href="/frontend-styleguide-poc/page-templates/docs/">Demo documentation template</a>
+  <a class="button" href="/frontend-styleguide-poc/page-templates/docs/">Demo documentation template</a>
 </div>
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-template-docs">Code</button>
-  <div id="code-template-docs" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-template-docs">Code</button>
+  <div id="code-template-docs" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -2238,27 +1797,27 @@
   </div>
 </div>
 
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="docs-page-template-docs">
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="docs-page-template-docs">
     Documentation
   </button>
-  <div id="docs-page-template-docs" class="usa-accordion-content">
-    <h4 class="usa-heading">When to use</h4>
-    <ul class="usa-content-list">
+  <div id="docs-page-template-docs" class="accordion-content">
+    <h4 class="heading">When to use</h4>
+    <ul class="content-list">
       <li>If you’re presenting detailed information on a specific topic or theme that has already been contextualized by a landing page. Some topics that can be nicely represented on this type of page include guides or how-tos, technical documentation, and program descriptions — in short, any subject that requires in-depth explanation.</li>
     </ul>
-    <h4 class="usa-heading">When to avoid</h4>
-    <ul class="usa-content-list">
+    <h4 class="heading">When to avoid</h4>
+    <ul class="content-list">
       <li>Don’t use a documentation page to introduce your users to your agency or organization — the landing page is better suited to that purpose. The level of detail present on documentation pages can overwhelm users who are just becoming acquainted with your organization.</li>
     </ul>
-    <h4 class="usa-heading">Guidance</h4>
-    <ul class="usa-content-list">
+    <h4 class="heading">Guidance</h4>
+    <ul class="content-list">
       <li>Use a precise headline to quickly communicate your page’s purpose. If the page content is especially complex, you may consider using a subheadline to further clarify its meaning.</li>
       <li>Write concise copy. Favor short sentences (and paragraphs) over longer ones, and use straightforward language, avoiding jargon. Remember, copy blocks don’t need to be long to be comprehensive.</li>
       <li>For guidance on specific components, see the page for the individual components.</li>
     </ul>
-    <h4 class="usa-heading">Components used in this template</h4>
-    <ul class="usa-content-list">
+    <h4 class="heading">Components used in this template</h4>
+    <ul class="content-list">
       <li>Basic header</li>
       <li>Typography — Merriweather headings and Source Sans Pro body</li>
       <li>Grid</li>
@@ -2270,14 +1829,14 @@
   </div>
 </div>
 
-<h2 class="usa-heading" id="signering">Template: Signering</h2>
+<h2 class="heading" id="signering">Template: Signering</h2>
 <p>Her kunne der komme et eksempel på hvordan man implementere signering, f.eks. via NemID.</p>
 <!-- <img src="/frontend-styleguide-poc/img/lille.PNG" style="max-width: 1000%; width: 1018px"> -->
 
-<!-- <div class="usa-accordion-bordered usa-code-sample">
+<!-- <div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-template-landing">Code</button>
-  <div id="code-template-landing" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-template-landing">Code</button>
+  <div id="code-template-landing" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -2513,8 +2072,9 @@
 </div>
  -->
 
-  </div>
+    </div>
 
+  </div>
 </main>
 
 
@@ -2526,7 +2086,7 @@
     <div class="container">
       <nav class="footer-nav row">
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Ansvarlig myndighed</h4>
             </li>
@@ -2535,7 +2095,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Kontakt</h4>
             </li>
@@ -2548,7 +2108,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Lovgivning og jura</h4> 
             </li>
@@ -2563,7 +2123,7 @@
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Hjælp</h4> 
             </li>
@@ -2592,8 +2152,7 @@
 
     <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
-<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
 
   </body>
 </html>

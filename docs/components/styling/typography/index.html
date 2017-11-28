@@ -933,24 +933,10 @@ Readable text allows users to efficiently read and take in textual information, 
                 
             
         
-        Preview size: 375px (Mobile device, ie. iPhone6)
-        Preview size: 768px (Tablet, ie. iPad)
-        Preview size: 1024px (Desktop / Laptop)
-        Preview size: 100% (Full Screen)
-    
-    
-        
-            Version 1.0
-            Version 1.1
-        
-        
     
 
-
-
     
-        
-    
+
     
 
 
@@ -1005,8 +991,8 @@ Readable text allows users to efficiently read and take in textual information, 
   
   
     Implementation
-    To get the max-width on body text, add the class usa-content to your document. Use at the specificity that best suits your project's needs.
-    Lists must use usa-content-list for the above.
+    To get the max-width on body text, add the class content to your document. Use at the specificity that best suits your project's needs.
+    Lists must use content-list for the above.
     You can change the max-width value $text-max-width in src/stylesheets/core/_variables.scss.
     Usability
     
@@ -1066,24 +1052,10 @@ Links lead users to a different page or further information.
                 
             
         
-        Preview size: 375px (Mobile device, ie. iPhone6)
-        Preview size: 768px (Tablet, ie. iPad)
-        Preview size: 1024px (Desktop / Laptop)
-        Preview size: 100% (Full Screen)
-    
-    
-        
-            Version 1.0
-            Version 1.1
-        
-        
     
 
-
-
     
-        
-    
+
     
 
 
@@ -1184,24 +1156,10 @@ Lists organize written information for users.
                 
             
         
-        Preview size: 375px (Mobile device, ie. iPhone6)
-        Preview size: 768px (Tablet, ie. iPad)
-        Preview size: 1024px (Desktop / Laptop)
-        Preview size: 100% (Full Screen)
-    
-    
-        
-            Version 1.0
-            Version 1.1
-        
-        
     
 
-
-
     
-        
-    
+
     
 
 
@@ -1275,7 +1233,7 @@ Lists organize written information for users.
   
   
     Implementation
-    Lists are styled by default. For unstyled lists, use either the usa-unstyled-list class or unstyled list mixin: @include unstyled-list;. Both are located in src/stylesheets/core/_utilities.scss.
+    Lists are styled by default. For unstyled lists, use either the unstyled-list class or unstyled list mixin: @include unstyled-list;. Both are located in src/stylesheets/core/_utilities.scss.
     Usability
     When to use
     
@@ -2202,24 +2160,10 @@ Readable text allows users to efficiently read and take in textual information, 
                 
             
         
-        Preview size: 375px (Mobile device, ie. iPhone6)
-        Preview size: 768px (Tablet, ie. iPad)
-        Preview size: 1024px (Desktop / Laptop)
-        Preview size: 100% (Full Screen)
-    
-    
-        
-            Version 1.0
-            Version 1.1
-        
-        
     
 
-
-
     
-        
-    
+
     
 
 
@@ -2274,8 +2218,8 @@ Readable text allows users to efficiently read and take in textual information, 
   
   
     Implementation
-    To get the max-width on body text, add the class usa-content to your document. Use at the specificity that best suits your project's needs.
-    Lists must use usa-content-list for the above.
+    To get the max-width on body text, add the class content to your document. Use at the specificity that best suits your project's needs.
+    Lists must use content-list for the above.
     You can change the max-width value $text-max-width in src/stylesheets/core/_variables.scss.
     Usability
     
@@ -2335,24 +2279,10 @@ Links lead users to a different page or further information.
                 
             
         
-        Preview size: 375px (Mobile device, ie. iPhone6)
-        Preview size: 768px (Tablet, ie. iPad)
-        Preview size: 1024px (Desktop / Laptop)
-        Preview size: 100% (Full Screen)
-    
-    
-        
-            Version 1.0
-            Version 1.1
-        
-        
     
 
-
-
     
-        
-    
+
     
 
 
@@ -2453,24 +2383,10 @@ Lists organize written information for users.
                 
             
         
-        Preview size: 375px (Mobile device, ie. iPhone6)
-        Preview size: 768px (Tablet, ie. iPad)
-        Preview size: 1024px (Desktop / Laptop)
-        Preview size: 100% (Full Screen)
-    
-    
-        
-            Version 1.0
-            Version 1.1
-        
-        
     
 
-
-
     
-        
-    
+
     
 
 
@@ -2544,7 +2460,7 @@ Lists organize written information for users.
   
   
     Implementation
-    Lists are styled by default. For unstyled lists, use either the usa-unstyled-list class or unstyled list mixin: @include unstyled-list;. Both are located in src/stylesheets/core/_utilities.scss.
+    Lists are styled by default. For unstyled lists, use either the unstyled-list class or unstyled list mixin: @include unstyled-list;. Both are located in src/stylesheets/core/_utilities.scss.
     Usability
     When to use
     
@@ -2618,135 +2534,63 @@ Lists organize written information for users.
 
   </head>
   <body class="page-typography layout-styleguide">
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-<header class="usa-header site-header" role="banner">
-  <div class="usa-navbar site-header-navbar">
-    <button class="usa-menu-btn">Menu</button>
-    <div class="usa-logo site-logo" id="logo">
-      <em class="usa-logo-text">
-        <a href="/frontend-styleguide-poc/" title="Home" aria-label="POC version 1.0 - Frontend styleguide home">
-          POC version 1.0 - Frontend styleguide <!--POC version 1.0 - Frontend styleguide-->
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="header header-extended" role="banner">
+
+  <!-- Solution Header -->
+  <div class="navbar solution-header">
+    <div class="solution-heading">
+      <em class="heading-text">
+        <a href="/frontend-styleguide-poc/"
+          title="Home"
+          aria-label="Home">
+          Frontend Styleguide
         </a>
       </em>
     </div>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
+    <button class="menu-btn">Menu</button>
   </div>
-</header>  
-<nav class="site-nav-secondary sticky">
-  <ul>
-    
+
+  <nav role="navigation" class="nav">
+   <div class="nav-inner">
+      <div class="nav-secondary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <a href="#" class="button button-primary">
+              Download kode og designfiler
+            </a>
+          </li>
+          <li> 
+            <a href="#" class="button button-secondary">
+              Se på GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg theme -</option>
+              <option value="styleguide">Basis theme</option>
+              <option value="virkdk">Virk.dk theme</option>
+              <option value="borgerdk">Borger.dk theme</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
+
+      <ul class="nav-primary accordion">
+        
   
   <li>
     
       
 
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-
-  </ul>
-  <select class="style-switcher" name="Style switcher">
-    <option value="styleguide">Basis theme</option>
-    <option value="virkdk">Virk.dk theme</option>
-    <option value="borgerdk">Borger.dk theme</option>
-  </select>
-</nav>
-<div class="usa-overlay"></div>
-
-<nav role="navigation" class="usa-nav sidenav-mobile">
-  <div class="usa-nav-inner">
-    <button class="usa-nav-close">
-      <img src="/frontend-styleguide-poc/assets/img/close.svg" alt="close">
-    </button>
-    <ul class="usa-sidenav-list usa-accordion">
-      
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-designsystem"
-  
-  class="usa-current"
-  aria-expanded="true"
-  >
-  Designsystem
-</button>
-<ul id="nav-designsystem" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
 
 
     
@@ -2757,7 +2601,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
 
 
     
@@ -2768,9 +2612,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/components/styling/" class="usa-current">Styling</a>
-
-  
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
 
 
     
@@ -2781,7 +2623,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
 
 
     
@@ -2792,49 +2634,38 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
 
 
     
   </li>
 
 
-</ul>
+      </ul>
 
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/page-templates/">Eksempler</a>
+      
+      
+    </div> <!-- nav-inner end -->
+  </nav> 
+</header> 
+<div class="overlay"></div>
 
 
-  
-  </li>
+<main class="container section" id="main-content">
+  <div class="row">
 
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-kom-godt-i-gang"
-  
-  aria-expanded="false"
-  >
-  Kom godt i gang
-</button>
-<ul id="nav-kom-godt-i-gang" class="usa-sidenav-sub_list">
-  
-  
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        
+        
+        <ul class="sidenav-list">
+          
   
   <li>
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
 
 
     
@@ -2845,7 +2676,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/developers/">Til udviklerne</a>
+<a href="/frontend-styleguide-poc/components/fundament/" class="nav-link">Retningslinjer</a>
 
 
     
@@ -2856,7 +2687,21 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/designers/">Til designere</a>
+<a href="/frontend-styleguide-poc/components/styling/" class="current nav-link">Styling</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="sidenav-sub_list">
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/styling/billeder-og-grafik/" class="nav-link">Billeder og grafik</a>
 
 
     
@@ -2867,7 +2712,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/projectmanagers/">Til projektledere</a>
+<a href="/frontend-styleguide-poc/components/styling/colors/" class="nav-link">Farver</a>
 
 
     
@@ -2878,7 +2723,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/">Integration til portalerne</a>
+<a href="/frontend-styleguide-poc/components/styling/ikoner/" class="nav-link">Ikoner</a>
 
 
     
@@ -2889,7 +2734,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
+<a href="/frontend-styleguide-poc/components/styling/kanter/" class="nav-link">Kanter, streger og skygger</a>
 
 
     
@@ -2900,7 +2745,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/video-tutorials/">Video tutorials</a>
+<a href="/frontend-styleguide-poc/components/styling/mikrointeraktioner/" class="nav-link">Mikrointeraktioner</a>
 
 
     
@@ -2911,174 +2756,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/loesninger/">Løsninger</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/">Fællesoffentlige krav</a>
-
-
-  
-  </li>
-
-  <li>
-  
-  
-    
-
-<button class="usa-accordion-button" aria-controls="nav-om-designsystemet"
-  
-  aria-expanded="false"
-  >
-  Om designsystemet
-</button>
-<ul id="nav-om-designsystemet" class="usa-sidenav-sub_list">
-  
-  
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/">Om designsystemet</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/releases/">Release notes</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/updates/">News and updates</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/product-roadmap/">Product roadmap</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/research/">Research</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/whats-new/component-status/">Component Status</a>
-
-
-    
-  </li>
-
-
-</ul>
-
-  
-  </li>
-
-
-    </ul>
-    <ul class="usa-button-list usa-unstyled-list">
-  <li>
-    <a class="usa-button" href="/frontend-styleguide-poc/getting-started/download/">
-      Download kode og designfiler
-    </a>
-  </li>
-  <li>
-    <a class="usa-button usa-button-outline-inverse" href="#">
-      Se på GitHub
-    </a>
-  </li>
-  <li>
-    <select class="style-switcher" name="Style switcher">
-      <option value="styleguide">Basis theme</option>
-      <option value="virkdk">Virk.dk theme</option>
-      <option value="borgerdk">Borger.dk theme</option>
-    </select>
-  </li>
-</ul>
-
-  </div>
-</nav>
-
-
-<aside class="sidenav sticky">
-  
-  
-  <ul class="usa-sidenav-list">
-    
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/">Designsystem</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/fundament/">Retningslinjer</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/styling/" class="usa-current">Styling</a>
+<a href="/frontend-styleguide-poc/components/styling/typography/" class="current nav-link">Typography</a>
 
   
     
@@ -3086,76 +2764,7 @@ Lists organize written information for users.
     
     
     
-    <ul class="usa-sidenav-sub_list">
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/styling/billeder-og-grafik/">Billeder og grafik</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/styling/colors/">Farver</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/styling/ikoner/">Ikoner</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/styling/kanter/">Kanter, streger og skygger</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/styling/mikrointeraktioner/">Mikrointeraktioner</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/styling/typography/" class="usa-current">Typography</a>
-
-  
-    
-    
-    
-    
-    
-    <ul class="usa-sidenav-sub_list">
+    <ul class="sidenav-sub_list">
   
   <li>
     
@@ -3232,7 +2841,7 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/">Komponenter</a>
+<a href="/frontend-styleguide-poc/components/komponenter/" class="nav-link">Komponenter</a>
 
 
     
@@ -3243,48 +2852,32 @@ Lists organize written information for users.
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/">Mønstre</a>
+<a href="/frontend-styleguide-poc/components/strukturer/" class="nav-link">Mønstre</a>
 
 
     
   </li>
 
 
-  </ul>
-  
-</aside>
-
-<main id="main-content" class="main-content">
-
-  <div class="styleguide-content usa-content">
-    <header>
-      
+        </ul>
         
-      <p class="site-subheading">Atomer</p>
-        
+      </aside>
+    </div>
+
+    <div class="col-12 col-sm-9 styleguide-content content">
       
-      <h1 id="typography">Typography</h1>
-    </header>
-
-    
-<p class="usa-font-lead">U.S. government websites have common typographic needs: clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields. We recommend a font system that uses two open-source font families: Source Sans Pro and Merriweather, both of which are designed for legibility and can beautifully adapt to a variety of visual styles.</p>
-
-
-
-
-    
 <section id="section-/styling/typography/01-typefaces">
-  <h2 class="usa-heading heading-margin-alt" id="typefaces">Typefaces</h2>
+  <h2 class="heading heading-margin-alt" id="typefaces">Typefaces</h2>
   
-  <h4 class="usa-heading-alt">Source Sans Pro</h4>
+  <h4 class="heading-alt">Source Sans Pro</h4>
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <p>Source Sans Pro is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.</p>
     <p>Inspired by twentieth-century American gothic typeface design, its slender but open letters offer a clean and friendly simplicity. Advanced hinting allows Source Sans Pro to render well on Windows systems which run Cleartype, and across browsers and devices. Moreover, it supports a variety of languages and alphabets, including Western and European language, Vietnamese, pinyin Romanization of Chinese, and Navajo.</p>
   </div>
 
-  <div class="typography-sans-intro usa-width-one-half usa-end-row">
+  <div class="typography-sans-intro width-one-half end-row">
     <span class="text-huge">Aa</span>
     <div>
       <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -3294,15 +2887,15 @@ Lists organize written information for users.
   </div>
 </div>
 
-<h4 class="usa-heading-alt">Merriweather</h4>
+<h4 class="heading-alt">Merriweather</h4>
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-full">
+  <div class="width-one-half">
     <p>Merriweather is an open-source serif typeface designed for on-screen reading. This font is ideal for text-dense design: the letterforms have a tall x-height but remain relatively small, making for excellent readability across screen sizes while not occupying extra horizontal space.</p>
     <p>The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.</p>
   </div>
 
-  <div class="typography-serif-intro usa-width-one-half usa-end-row usa-serif">
+  <div class="typography-serif-intro width-one-half end-row serif">
     <span class="text-huge">Aa</span>
     <div>
       <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -3315,19 +2908,19 @@ Lists organize written information for users.
 </section>
 
 <section id="section-/styling/typography/02-pairing-and-styles">
-  <h2 class="usa-heading heading-margin-alt" id="pairings-and-styles">Pairings and styles</h2>
+  <h2 class="heading heading-margin-alt" id="pairings-and-styles">Pairings and styles</h2>
   
   <p>To support both more contemporary and more traditional web design aesthetics, this font system offers recommended font pairings. Each pairing includes web hierarchy guidance on font family, weight, size, and spacing which express either more modern or more classical type design.</p>
 <p>Note: Some pairings require more font weights than others. While this allows more typographic expression, the use of more than four font weights will have a negative impact on page load performance. Find the balance that works for your product.</p>
 
-<ul class="usa-accordion-bordered usa-typography-example">
+<ul class="accordion-bordered typography-example">
   <li>
-    <button class="usa-accordion-button" aria-controls="font-pairing1-docs" aria-expanded="false">
+    <button class="accordion-button" aria-controls="font-pairing1-docs" aria-expanded="false">
       <h5>Default: Merriweather headings, Source Sans Pro body (lite)</h5>
     </button>
-    <div id="font-pairing1-docs" class="usa-accordion-content">
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+    <div id="font-pairing1-docs" class="accordion-content">
+      <div class="grid-full">
+        <div class="width-two-thirds">
           <p>A simple serif and sans serif combination designed to communicate warmth and credibility. Strong Merriweather heading weights offer clear information hierarchy and when paired with Source Sans Pro’s easy-to-read body text, create a clean and professional feel.</p>
           <p>This pairing is included in our design standards.</p>
           <p>Recommended applications: digital services that feature forms; basic and text heavy sites.</p>
@@ -3339,11 +2932,11 @@ Lists organize written information for users.
             <li>4. Source Sans Pro, Italic 400</li>
           </ul>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
-          <h6 class="usa-heading-alt">Page Performance</h6>
-          <p><span class="usa-label-big">Fast</span></p>
+        <aside class="width-one-third end-row">
+          <h6 class="heading-alt">Page Performance</h6>
+          <p><span class="label-big">Fast</span></p>
           <p>Ideal number of fonts. Will allow for optimal page load performance.</p>
-          <h6 class="usa-heading-alt">Example</h6>
+          <h6 class="heading-alt">Example</h6>
           <p>
             <a class="media_link" href="/frontend-styleguide-poc/assets/img/epa-emanifest-screenshot.png">
               <img src="/frontend-styleguide-poc/assets/img/default_example_emanifest.png" alt="EPA eManifest example" />
@@ -3352,79 +2945,79 @@ Lists organize written information for users.
           </p>
         </aside>
       </div>
-      <h6 class="usa-heading-alt">Web Hierarchy</h6>
-      <div class="usa-grid usa-typography-example-font">
-        <div class="usa-width-one-half">
-          <h3 class="usa-display">Display</h3>
+      <h6 class="heading-alt">Web Hierarchy</h6>
+      <div class="grid typography-example-font">
+        <div class="width-one-half">
+          <h3 class="display">Display</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 52px<br />
             line-height: 1.3em/68px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h1>Heading 1</h1>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 40px<br />
             line-height: 1.3em/52px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h2>Heading 2</h2>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 30px<br />
             line-height: 1.3em/39px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h3>Heading 3</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 20px<br />
             line-height: 1.3em/26px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h4>Heading 4</h4>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 17px<br />
             line-height: 1.3em/22px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h5>Heading 5</h5>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 15px<br />
             line-height: 1.3em/20px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h6>Heading 6</h6>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 400<br />
             font-size: 13px<br />
@@ -3432,33 +3025,33 @@ Lists organize written information for users.
             text-transform: uppercase
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
-          <p class="usa-font-lead">Lead <br />paragraph</p>
+        <div class="font-example width-one-half">
+          <p class="font-lead">Lead <br />paragraph</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 400<br />
             font-size: 20px<br />
             line-height: 1.7em/34px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 400<br />
             font-size: 17px<br />
             line-height: 1.5em/26px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-style: Italic<br />
             font-weight: 400<br />
@@ -3471,15 +3064,15 @@ Lists organize written information for users.
   </li>
 </ul>
 
-<ul class="usa-accordion-bordered usa-typography-example">
+<ul class="accordion-bordered typography-example">
   <li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="font-pairing2-docs">
+    <button class="accordion-button" aria-expanded="false" aria-controls="font-pairing2-docs">
       <h5>Merriweather headings, Source Sans Pro body (robust)</h5>
     </button>
-    <div id="font-pairing2-docs" class="usa-accordion-content">
+    <div id="font-pairing2-docs" class="accordion-content">
 
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+      <div class="grid-full">
+        <div class="width-two-thirds">
           <p>A variation of the previous font pairing, expanded to include an additional Merriweather weight. The slimmer Merriweather headings creates an elegance that compliments weights and allows you to intentionally move users’ attention around a page.</p>
           <p>Recommended applications: text heavy sites and more visual promotional sites.</p>
           <p>Font weights included in this package:</p>
@@ -3491,11 +3084,11 @@ Lists organize written information for users.
             <li>5. Source Sans Pro, Italic 400</li>
           </ul>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
-          <h6 class="usa-heading-alt">Page Performance</h6>
-          <p><span class="usa-label-big">Medium</span></p>
+        <aside class="width-one-third end-row">
+          <h6 class="heading-alt">Page Performance</h6>
+          <p><span class="label-big">Medium</span></p>
           <p>Exceeds ideal number of fonts by one. May negatively impact page load performance.</p>
-          <h6 class="usa-heading-alt">Example</h6>
+          <h6 class="heading-alt">Example</h6>
           <p>
             <a class="media_link" href="/frontend-styleguide-poc/">
               <img src="/frontend-styleguide-poc/assets/img/robust_example_standardshome.png" alt="U.S. Web Design Standards homepage example" />
@@ -3504,90 +3097,90 @@ Lists organize written information for users.
           </p>
         </aside>
       </div>
-      <h6 class="usa-heading-alt">Web Hierarchy</h6>
-      <div class="serif-robust usa-grid usa-typography-example-font">
-        <div class="usa-width-one-half">
-          <h3 class="usa-display">Display 1</h3>
+      <h6 class="heading-alt">Web Hierarchy</h6>
+      <div class="serif-robust grid typography-example-font">
+        <div class="width-one-half">
+          <h3 class="display">Display 1</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 52px<br />
             line-height: 1.3em/68px
           </p>
         </div>
-        <div class="usa-width-one-half">
-          <h3 class="usa-display usa-display-alt">Display 2</h3>
+        <div class="width-one-half">
+          <h3 class="display display-alt">Display 2</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 300<br />
             font-size: 40px<br />
             line-height: 1.3em/52px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h1>Heading 1</h1>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 40px<br />
             line-height: 1.3em/52px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h2>Heading 2</h2>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 30px<br />
             line-height: 1.3em/39px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h3>Heading 3</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 20px<br />
             line-height: 1.3em/26px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h4>Heading 4</h4>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 17px<br />
             line-height: 1.3em/22px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h5>Heading 5</h5>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 15px<br />
             line-height: 1.3em/20px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h6>Heading 6</h6>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 400<br />
             font-size: 13px<br />
@@ -3595,44 +3188,44 @@ Lists organize written information for users.
             text-transform: uppercase
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
-          <p class="usa-font-lead">Lead <br />paragraph 1</p>
+        <div class="font-example width-one-half">
+          <p class="font-lead">Lead <br />paragraph 1</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 300<br />
             font-size: 20px<br />
             line-height: 1.7em/34px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
-          <p class="usa-font-lead usa-font-lead-alt">Lead <br />paragraph 2</p>
+        <div class="font-example width-one-half">
+          <p class="font-lead font-lead-alt">Lead <br />paragraph 2</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 400<br />
             font-size: 17px<br />
             line-height: 1.7em/29px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 400<br />
             font-size: 17px<br />
             line-height: 1.5em/26px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-style: Italic<br />
             font-weight: 400<br />
@@ -3645,15 +3238,15 @@ Lists organize written information for users.
   </li>
 </ul>
 
-<ul class="usa-accordion-bordered usa-typography-example">
+<ul class="accordion-bordered typography-example">
   <li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="font-pairing3-docs">
+    <button class="accordion-button" aria-expanded="false" aria-controls="font-pairing3-docs">
       <h5>Merriweather headings and body</h5>
     </button>
-    <div id="font-pairing3-docs" class="usa-accordion-content">
+    <div id="font-pairing3-docs" class="accordion-content">
 
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+      <div class="grid-full">
+        <div class="width-two-thirds">
           <p>The most formal of the options, this pairing uses Merriweather for both headings and body text. The full suite of serif styles communicates trustworthiness, while Merriweather’s contemporary shapes convey freshness and a modern relevance. The weights are designed to pair together for easy reading and clean page design. Light use of Source Sans Pro suggested for legibility of small text needs.</p>
           <p>Recommended applications: sites which need to convey reliability and trust; basic and text heavy sites.</p>
           <p>Font weights included in this package:</p>
@@ -3665,11 +3258,11 @@ Lists organize written information for users.
             <li>5. Source Sans Pro, Regular 400</li>
           </ul>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
-          <h6 class="usa-heading-alt">Page Performance</h6>
-          <p><span class="usa-label-big">Medium</span></p>
+        <aside class="width-one-third end-row">
+          <h6 class="heading-alt">Page Performance</h6>
+          <p><span class="label-big">Medium</span></p>
           <p>Exceeds ideal number of fonts by one. May negatively impact page load performance.</p>
-          <h6 class="usa-heading-alt">Example</h6>
+          <h6 class="heading-alt">Example</h6>
           <p>
             <a class="media_link" href="http://playbook.cio.gov">
               <img src="/frontend-styleguide-poc/assets/img/merriweatheronly_example_playbook.png" alt="U.S. Digital Service Playbook example" />
@@ -3678,90 +3271,90 @@ Lists organize written information for users.
           </p>
         </aside>
       </div>
-      <h6 class="usa-heading-alt">Web Hierarchy</h6>
-      <div class="serif-robust serif-sans-minor serif-body usa-grid usa-typography-example-font">
-        <div class="usa-width-one-half">
-          <h3 class="usa-display">Display 1</h3>
+      <h6 class="heading-alt">Web Hierarchy</h6>
+      <div class="serif-robust serif-sans-minor serif-body grid typography-example-font">
+        <div class="width-one-half">
+          <h3 class="display">Display 1</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 52px<br />
             line-height: 1.3em/68px
           </p>
         </div>
-        <div class="usa-width-one-half">
-          <h3 class="usa-display usa-display-alt">Display 2</h3>
+        <div class="width-one-half">
+          <h3 class="display display-alt">Display 2</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 300<br />
             font-size: 40px<br />
             line-height: 1.3em/52px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h1>Heading 1</h1>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 40px<br />
             line-height: 1.3em/52px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h2>Heading 2</h2>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 30px<br />
             line-height: 1.3em/39px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h3>Heading 3</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 20px<br />
             line-height: 1.3em/26px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h4>Heading 4</h4>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 17px<br />
             line-height: 1.3em/22px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h5>Heading 5</h5>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 700<br />
             font-size: 15px<br />
             line-height: 1.3em/20px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h6>Heading 6</h6>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 400<br />
             font-size: 13px<br />
@@ -3769,44 +3362,44 @@ Lists organize written information for users.
             text-transform: uppercase
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
-          <p class="usa-font-lead">Lead <br />paragraph 1</p>
+        <div class="font-example width-one-half">
+          <p class="font-lead">Lead <br />paragraph 1</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 300<br />
             font-size: 20px<br />
             line-height: 1.7em/34px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
-          <p class="usa-font-lead usa-font-lead-alt">Lead <br />paragraph 2</p>
+        <div class="font-example width-one-half">
+          <p class="font-lead font-lead-alt">Lead <br />paragraph 2</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 400<br />
             font-size: 17px<br />
             line-height: 1.7em/29px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 400<br />
             font-size: 15px<br />
             line-height: 1.7em/26px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-style: Italic<br />
             font-weight: 400<br />
@@ -3819,15 +3412,15 @@ Lists organize written information for users.
   </li>
 </ul>
 
-<ul class="usa-accordion-bordered usa-typography-example">
+<ul class="accordion-bordered typography-example">
   <li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="font-pairing4-docs">
+    <button class="accordion-button" aria-expanded="false" aria-controls="font-pairing4-docs">
       <h5>Source Sans Pro headings, Merriweather body</h5>
     </button>
-    <div id="font-pairing4-docs" class="usa-accordion-content">
+    <div id="font-pairing4-docs" class="accordion-content">
 
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+      <div class="grid-full">
+        <div class="width-two-thirds">
           <p>A variation on the serif and sans serif pairing, this combination uses multiple weights of Source Sans Pro for clear headings combined with the formal feeling of Merriweather for body text. This pair similarly communicates professionalism, with extra emphasis on sleek and legible headings.</p>
           <p>Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.</p>
           <p>Font weights included in this package:</p>
@@ -3840,96 +3433,96 @@ Lists organize written information for users.
             <li>6. Merriweather, Bold 700</li>
           </ul>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
-          <h6 class="usa-heading-alt">Page Performance</h6>
-          <p><span class="usa-label-big">Medium</span></p>
+        <aside class="width-one-third end-row">
+          <h6 class="heading-alt">Page Performance</h6>
+          <p><span class="label-big">Medium</span></p>
           <p>Exceeds ideal number of fonts by two. May negatively impact page load performance.</p>
         </aside>
       </div>
-      <h6 class="usa-heading-alt">Web Hierarchy</h6>
-      <div class="sans-style serif-body usa-grid usa-typography-example-font">
-        <div class="usa-width-one-half">
-          <h3 class="usa-display">Display 1</h3>
+      <h6 class="heading-alt">Web Hierarchy</h6>
+      <div class="sans-style serif-body grid typography-example-font">
+        <div class="width-one-half">
+          <h3 class="display">Display 1</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 59px<br />
             line-height: 1.3em/77px
           </p>
         </div>
-        <div class="usa-width-one-half">
-          <h3 class="usa-display usa-display-alt">Display 2</h3>
+        <div class="width-one-half">
+          <h3 class="display display-alt">Display 2</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 300<br />
             font-size: 44px<br />
             line-height: 1.3em/57px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h1>Heading 1</h1>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 44px<br />
             line-height: 1.3em/57px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h2>Heading 2</h2>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 34px<br />
             line-height: 1.3em/44px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h3>Heading 3</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 24px<br />
             line-height: 1.3em/31px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h4>Heading 4</h4>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 19px<br />
             line-height: 1.3em/25px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h5>Heading 5</h5>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 16px<br />
             line-height: 1.3em/21px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h6>Heading 6</h6>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 400<br />
             font-size: 13px<br />
@@ -3937,33 +3530,33 @@ Lists organize written information for users.
             text-transform: uppercase
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
-          <p class="usa-font-lead">Lead <br />paragraph</p>
+        <div class="font-example width-one-half">
+          <p class="font-lead">Lead <br />paragraph</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 300<br />
             font-size: 22px<br />
             line-height: 1.5em/33px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-weight: 400<br />
             font-size: 15px<br />
             line-height: 1.7em/26px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Merriweather’<br />
             font-style: Italic<br />
             font-weight: 400<br />
@@ -3976,15 +3569,15 @@ Lists organize written information for users.
   </li>
 </ul>
 
-<ul class="usa-accordion-bordered usa-typography-example">
+<ul class="accordion-bordered typography-example">
   <li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="font-pairing5-docs">
+    <button class="accordion-button" aria-expanded="false" aria-controls="font-pairing5-docs">
       <h5>Source Sans Pro headings and body</h5>
     </button>
-    <div id="font-pairing5-docs" class="usa-accordion-content">
+    <div id="font-pairing5-docs" class="accordion-content">
 
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+      <div class="grid-full">
+        <div class="width-two-thirds">
           <p>Inspired by the growth of simple and welcoming type in modern web UI design, this suite uses Source Sans Pro exclusively. With a range of weights designed to fit into heading styles to clearly communicate hierarchy of information, this pairing can support both extremely simple designs and more polished, promotional sites.</p>
           <p>Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.</p>
           <p>Font weights included in this package:</p>
@@ -3995,11 +3588,11 @@ Lists organize written information for users.
             <li>4. Source Sans Pro, Italic 400</li>
           </ul>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
-          <h6 class="usa-heading-alt">Page Performance</h6>
-          <p><span class="usa-label-big">Fast</span></p>
+        <aside class="width-one-third end-row">
+          <h6 class="heading-alt">Page Performance</h6>
+          <p><span class="label-big">Fast</span></p>
           <p>Ideal number of fonts. Will allow for optimal page load performance.</p>
-          <h6 class="usa-heading-alt">Example</h6>
+          <h6 class="heading-alt">Example</h6>
           <p>
             <a class="media_link" href="/frontend-styleguide-poc/assets/img/va-appeals-screenshot.png">
               <img src="/frontend-styleguide-poc/assets/img/ssponly_example_va.png" alt="Veterans Affairs appeals review example" />
@@ -4008,90 +3601,90 @@ Lists organize written information for users.
           </p>
         </aside>
       </div>
-      <h6 class="usa-heading-alt">Web Hierarchy</h6>
-      <div class="sans-style usa-grid usa-typography-example-font">
-        <div class="usa-width-one-half">
-          <h3 class="usa-display">Display 1</h3>
+      <h6 class="heading-alt">Web Hierarchy</h6>
+      <div class="sans-style grid typography-example-font">
+        <div class="width-one-half">
+          <h3 class="display">Display 1</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 59px<br />
             line-height: 1.3em/77px
           </p>
         </div>
-        <div class="usa-width-one-half">
-          <h3 class="usa-display usa-display-alt">Display 2</h3>
+        <div class="width-one-half">
+          <h3 class="display display-alt">Display 2</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 300<br />
             font-size: 44px<br />
             line-height: 1.3em/57px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h1>Heading 1</h1>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 44px<br />
             line-height: 1.3em/57px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h2>Heading 2</h2>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 34px<br />
             line-height: 1.3em/44px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h3>Heading 3</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 24px<br />
             line-height: 1.3em/31px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h4>Heading 4</h4>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 19px<br />
             line-height: 1.3em/25px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h5>Heading 5</h5>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 700<br />
             font-size: 16px<br />
             line-height: 1.3em/21px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="width-one-half">
           <h6>Heading 6</h6>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 400<br />
             font-size: 13px<br />
@@ -4099,33 +3692,33 @@ Lists organize written information for users.
             text-transform: uppercase
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
-          <p class="usa-font-lead">Lead <br />paragraph</p>
+        <div class="font-example width-one-half">
+          <p class="font-lead">Lead <br />paragraph</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 300<br />
             font-size: 22px<br />
             line-height: 1.5em/33px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-weight: 400<br />
             font-size: 17px<br />
             line-height: 1.5em/26px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="font-example width-one-half">
           <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
-          <p class="usa-monospace">
+        <div class="width-one-half end-row">
+          <p class="monospace">
             font-family: ‘Source Sans Pro’<br />
             font-style: Italic<br />
             font-weight: 400<br />
@@ -4141,42 +3734,42 @@ Lists organize written information for users.
 </section>
 
 <section id="section-/styling/typography/03-typesetting">
-  <h2 class="usa-heading heading-margin-alt" id="typesetting">Typesetting</h2>
+  <h2 class="heading heading-margin-alt" id="typesetting">Typesetting</h2>
   
   <!-- Typsetting section begin -->
 
 <p>Readable text allows users to efficiently read and take in textual information, whereas text that is not readable turns off readers or makes it challenging for them to stay focused. The following guidelines promote good readability.</p>
 
-<nav class="components__nav">
-    <ul class="components__resizer">
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="mobil">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_2"><g><path fill="#808080" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle fill="#808080" cx="16.2" cy="20.4" r="1.3" /></g>
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
                 </svg>
             </button>
         </li>
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="tablet">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g><path fill="#808080" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle fill="#808080" cx="16.9" cy="24.5" r="1.3" />
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
                 </svg>
             </button>
         </li>
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="desktop">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_3"><g><g><path fill="#808080" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" fill="#808080" width="33" height="1.8" /></g></g></g>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
                 </svg>
             </button>
         </li>
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="full">
-                <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <li class="component-preview-item">
+            <a class="component-preview-button button" id="full" href="../../../preview-components/typesetting" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
                             <g>
-                                <g fill="#808080">
+                                <g class="icon-color">
                                     <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
                                     <rect x="10" y="8" width="13" height="6"></rect>
                                 </g>
@@ -4184,32 +3777,20 @@ Lists organize written information for users.
                         </g>
                     </g>
                 </svg>
-            </button>
+            </a>
         </li>
-        <li class="components__resizer-item components__mobil">Preview size: 375px <span class="components__resizer-desc">(Mobile device, ie. iPhone6)</span></li>
-        <li class="components__resizer-item components__tablet">Preview size: 768px <span class="components__resizer-desc">(Tablet, ie. iPad)</span></li>
-        <li class="components__resizer-item components__desktop">Preview size: 1024px <span class="components__resizer-desc">(Desktop / Laptop)</span></li>
-        <li class="components__resizer-item components__full">Preview size: 100% <span class="components__resizer-desc">(Full Screen)</span></li>
     </ul>
-    <span class="version-switcher-wrapper">
-        <select name="version" id="version" class="version-switcher">
-            <option value="1">Version 1.0</option>
-            <option value="1.1">Version 1.1</option>
-        </select>
-        <span class="checkmark"></span>
-    </span>
-</nav>
 
-<div class="preview-no_border fs-view " id="component-preview">
-    <div class="loader-container">
+    <!--<div class="loader-container">
         <div class="loader"></div>
-    </div>
+    </div>-->
+
     <iframe class="preview-iframe" src="../../../preview-components/typesetting"></iframe>
 </div>
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-typesetting">Code</button>
-  <div id="code-typesetting" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-typesetting">Code</button>
+  <div id="code-typesetting" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code>
 
@@ -4252,17 +3833,17 @@ Lists organize written information for users.
   </div>
 </div>
 
-<div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="typesetting-docs">
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="typesetting-docs">
     Documentation
   </button>
-  <div id="typesetting-docs" class="usa-accordion-content">
-    <h4 class="usa-heading">Implementation</h4>
-    <p>To get the max-width on body text, add the class <code>usa-content</code> to your document. Use at the specificity that best suits your project's needs.</p>
-    <p>Lists must use <code>usa-content-list</code> for the above.</p>
+  <div id="typesetting-docs" class="accordion-content">
+    <h4 class="heading">Implementation</h4>
+    <p>To get the max-width on body text, add the class <code>content</code> to your document. Use at the specificity that best suits your project's needs.</p>
+    <p>Lists must use <code>content-list</code> for the above.</p>
     <p>You can change the max-width value <code>$text-max-width</code> in <code>src/stylesheets/core/<wbr />_variables.scss</code>.</p>
-    <h4 class="usa-heading">Usability</h4>
-    <ul class="usa-content-list">
+    <h4 class="heading">Usability</h4>
+    <ul class="content-list">
       <li>Alignment: Type set flush left provides the eye a constant starting point for each line, making text easier to read.</li>
       <li>Line length: Controlling the length of lines of text in extended copy makes reading more comfortable by helping readers’ eyes flow easily from one line to the next. Somewhere between 50 and 75 characters per line is broadly considered to be a readable line length, while 66 characters is considered the ideal. Other factors beyond line length also affect reading comfort. Text with more space between lines can have somewhat longer line length. Also, contexts in which users will not be reading long passages of text (such as footnotes or alerts) can safely be set with somewhat longer lines as well.</li>
       <li>Spacing: White space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. When setting headers and body copy, white space should be 60px, 30px, 20px, or 15px.</li>
@@ -4273,43 +3854,43 @@ Lists organize written information for users.
 </section>
 
 <section id="section-/styling/typography/04-links">
-  <h2 class="usa-heading heading-margin-alt" id="links">Links</h2>
+  <h2 class="heading heading-margin-alt" id="links">Links</h2>
   
   <!-- Links section begin -->
 
-<p class="usa-font-lead">Links lead users to a different page or further information.
+<p class="font-lead">Links lead users to a different page or further information.
 </p>
 
-<nav class="components__nav">
-    <ul class="components__resizer">
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="mobil">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_2"><g><path fill="#808080" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle fill="#808080" cx="16.2" cy="20.4" r="1.3" /></g>
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
                 </svg>
             </button>
         </li>
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="tablet">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g><path fill="#808080" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle fill="#808080" cx="16.9" cy="24.5" r="1.3" />
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
                 </svg>
             </button>
         </li>
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="desktop">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_3"><g><g><path fill="#808080" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" fill="#808080" width="33" height="1.8" /></g></g></g>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
                 </svg>
             </button>
         </li>
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="full">
-                <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <li class="component-preview-item">
+            <a class="component-preview-button button" id="full" href="../../../preview-components/links" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
                             <g>
-                                <g fill="#808080">
+                                <g class="icon-color">
                                     <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
                                     <rect x="10" y="8" width="13" height="6"></rect>
                                 </g>
@@ -4317,32 +3898,20 @@ Lists organize written information for users.
                         </g>
                     </g>
                 </svg>
-            </button>
+            </a>
         </li>
-        <li class="components__resizer-item components__mobil">Preview size: 375px <span class="components__resizer-desc">(Mobile device, ie. iPhone6)</span></li>
-        <li class="components__resizer-item components__tablet">Preview size: 768px <span class="components__resizer-desc">(Tablet, ie. iPad)</span></li>
-        <li class="components__resizer-item components__desktop">Preview size: 1024px <span class="components__resizer-desc">(Desktop / Laptop)</span></li>
-        <li class="components__resizer-item components__full">Preview size: 100% <span class="components__resizer-desc">(Full Screen)</span></li>
     </ul>
-    <span class="version-switcher-wrapper">
-        <select name="version" id="version" class="version-switcher">
-            <option value="1">Version 1.0</option>
-            <option value="1.1">Version 1.1</option>
-        </select>
-        <span class="checkmark"></span>
-    </span>
-</nav>
 
-<div class="preview-no_border fs-view " id="component-preview">
-    <div class="loader-container">
+    <!--<div class="loader-container">
         <div class="loader"></div>
-    </div>
+    </div>-->
+
     <iframe class="preview-iframe" src="../../../preview-components/links"></iframe>
 </div>
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-links">Code</button>
-  <div id="code-links" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-links">Code</button>
+  <div id="code-links" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code>
 
@@ -4374,13 +3943,13 @@ Lists organize written information for users.
   </div>
 </div>
 
-<div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="link-docs">
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="link-docs">
     Documentation
   </button>
-  <div id="link-docs" class="usa-accordion-content">
-    <h4 class="usa-heading">Accessibility</h4>
-    <ul class="usa-content-list">
+  <div id="link-docs" class="accordion-content">
+    <h4 class="heading">Accessibility</h4>
+    <ul class="content-list">
       <li>Users should be able to tab to navigate between links.</li>
       <li>Users should be able to activate a link when pressing ‘Enter’ on their keyboard.</li>
       <li>Users should be able to identify links without relying on color alone.</li>
@@ -4392,42 +3961,42 @@ Lists organize written information for users.
 </section>
 
 <section id="section-/styling/typography/05-lists">
-  <h2 class="usa-heading heading-margin-alt" id="lists">Lists</h2>
+  <h2 class="heading heading-margin-alt" id="lists">Lists</h2>
   
   <!-- Lists section begin -->
 
-<p class="usa-font-lead">Lists organize written information for users.</p>
+<p class="font-lead">Lists organize written information for users.</p>
 
-<nav class="components__nav">
-    <ul class="components__resizer">
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="mobil">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_2"><g><path fill="#808080" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle fill="#808080" cx="16.2" cy="20.4" r="1.3" /></g>
+<div class="component-preview preview-lists">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
                 </svg>
             </button>
         </li>
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="tablet">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g><path fill="#808080" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle fill="#808080" cx="16.9" cy="24.5" r="1.3" />
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
                 </svg>
             </button>
         </li>
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="desktop">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px" height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_3"><g><g><path fill="#808080" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" fill="#808080" width="33" height="1.8" /></g></g></g>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
                 </svg>
             </button>
         </li>
-        <li class="components__resizer-item">
-            <button type="button" class="components__resizer-button" id="full">
-                <svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <li class="component-preview-item">
+            <a class="component-preview-button button" id="full" href="../../../preview-components/lists" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
                             <g>
-                                <g fill="#808080">
+                                <g class="icon-color">
                                     <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
                                     <rect x="10" y="8" width="13" height="6"></rect>
                                 </g>
@@ -4435,32 +4004,20 @@ Lists organize written information for users.
                         </g>
                     </g>
                 </svg>
-            </button>
+            </a>
         </li>
-        <li class="components__resizer-item components__mobil">Preview size: 375px <span class="components__resizer-desc">(Mobile device, ie. iPhone6)</span></li>
-        <li class="components__resizer-item components__tablet">Preview size: 768px <span class="components__resizer-desc">(Tablet, ie. iPad)</span></li>
-        <li class="components__resizer-item components__desktop">Preview size: 1024px <span class="components__resizer-desc">(Desktop / Laptop)</span></li>
-        <li class="components__resizer-item components__full">Preview size: 100% <span class="components__resizer-desc">(Full Screen)</span></li>
     </ul>
-    <span class="version-switcher-wrapper">
-        <select name="version" id="version" class="version-switcher">
-            <option value="1">Version 1.0</option>
-            <option value="1.1">Version 1.1</option>
-        </select>
-        <span class="checkmark"></span>
-    </span>
-</nav>
 
-<div class="preview-no_border fs-view preview-lists" id="component-preview">
-    <div class="loader-container">
+    <!--<div class="loader-container">
         <div class="loader"></div>
-    </div>
+    </div>-->
+
     <iframe class="preview-iframe" src="../../../preview-components/lists"></iframe>
 </div>
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="accordion-bordered code-sample">
   
-  <button class="usa-accordion-button" aria-controls="code-lists">Code</button>
-  <div id="code-lists" class="usa-accordion-content">
+  <button class="accordion-button" aria-controls="code-lists">Code</button>
+  <div id="code-lists" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code>
 
@@ -4522,25 +4079,25 @@ Lists organize written information for users.
   </div>
 </div>
 
-<div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="list-docs">
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="list-docs">
     Documentation
   </button>
-  <div id="list-docs" class="usa-accordion-content">
-    <h4 class="usa-heading">Implementation</h4>
-    <p>Lists are styled by default. For unstyled lists, use either the <code>usa-unstyled-list</code> class or unstyled list mixin: <code>@include unstyled-list;</code>. Both are located in <code>src/stylesheets/core/<wbr />_utilities.scss</code>.</p>
-    <h4 class="usa-heading">Usability</h4>
+  <div id="list-docs" class="accordion-content">
+    <h4 class="heading">Implementation</h4>
+    <p>Lists are styled by default. For unstyled lists, use either the <code>unstyled-list</code> class or unstyled list mixin: <code>@include unstyled-list;</code>. Both are located in <code>src/stylesheets/core/<wbr />_utilities.scss</code>.</p>
+    <h4 class="heading">Usability</h4>
     <h5>When to use</h5>
-    <ul class="usa-content-list">
+    <ul class="content-list">
       <li>Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.</li>
       <li>Use unordered lists to display text in no specific order.</li>
     </ul>
     <h5>When to consider something different</h5>
-    <ul class="usa-content-list">
+    <ul class="content-list">
       <li>If you need to communicate long lists of narrative text.</li>
     </ul>
     <h5>Guidelines</h5>
-    <ul class="usa-content-list">
+    <ul class="content-list">
       <li>Use sentence case and begin lists with a capital letter.</li>
       <li>Use punctuation appropriate to the text. Do not leave sentences without periods.</li>
     </ul>
@@ -4550,8 +4107,9 @@ Lists organize written information for users.
 </section>
 
 
-  </div>
+    </div>
 
+  </div>
 </main>
 
 
@@ -4563,7 +4121,7 @@ Lists organize written information for users.
     <div class="container">
       <nav class="footer-nav row">
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Ansvarlig myndighed</h4>
             </li>
@@ -4572,7 +4130,7 @@ Lists organize written information for users.
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Kontakt</h4>
             </li>
@@ -4585,7 +4143,7 @@ Lists organize written information for users.
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Lovgivning og jura</h4> 
             </li>
@@ -4600,7 +4158,7 @@ Lists organize written information for users.
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-          <ul class="usa-unstyled-list footer-primary-content">
+          <ul class="unstyled-list footer-primary-content">
             <li class="footer-primary-link">
               <h4>Hjælp</h4> 
             </li>
@@ -4629,8 +4187,7 @@ Lists organize written information for users.
 
     <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.min.js"></script>
-<script src="https://use.fontawesome.com/65536abd5c.js" defer></script>
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
 
   </body>
 </html>
