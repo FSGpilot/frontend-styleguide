@@ -51,8 +51,8 @@ var activePreview = function(btnClicked){
   }
   $iframe.attr({ width: $width });
 
-  $(btnClicked).parents('.preview-buttons').find('.is-active').removeClass('is-active');
-  $(btnClicked).addClass('is-active');
+  $('.is-active').removeClass('is-active');
+  $('button[id=' + btnClicked.id + ']').addClass('is-active');
   Cookies.set('selected-preview', btnClicked.id);
 };
 
