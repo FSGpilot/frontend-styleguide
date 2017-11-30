@@ -2,14 +2,18 @@
 permalink: /components/komponenter/sidenav/
 layout: styleguide
 type: component
-title: Navigation
+title: Sidenavigation
 category: UI components
 subcategory: Komponenter
-lead: "Hierarchical, vertical navigation to place at the side of a page. Note: We're currently developing horizontal navigation and headers for the top of a page."
+lead: "Hierarchical, vertical navigation to place at the side of a page."
 ---
-
+<h2>Sidebar</h2>
 {% include code/preview.html component="sidenav" %}
 {% include code/accordion.html component="sidenav" %}
+
+<h2>Simpel sidenavigation</h2>
+{% include code/preview.html component="sidebar" %}
+{% include code/accordion.html component="sidebar" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">

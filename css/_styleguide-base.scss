@@ -345,14 +345,14 @@ body {
 // Styleguide Content -------- //
 
 .styleguide-content {
-  @include padding(null $site-margins-mobile);
+  // @include padding(null $site-margins-mobile);
   margin-bottom: 5em;
-  max-width: $site-max-width;
+  // max-width: $site-max-width;
   position: relative;
 
-  @media (min-width: $nav-width) {
-    @include padding(null $site-margins);
-  }
+  // @media (min-width: $nav-width) {
+  //   @include padding(null $site-margins);
+  // }
 
   header {
     > h1 {
@@ -1681,6 +1681,31 @@ article {
     margin-bottom: 9px;
   }
 }
+
+.grid-example-containers {
+  margin-bottom: 1em;
+}
+.grid-example-containers>.container{
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  width: 25rem !important;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f1f1f1;
+  border: 1px solid #212121;
+  border-radius: .25rem;
+}
+.grid-example-containers>.container-fluid{
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  max-width: none;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f1f1f1;
+  border: 1px solid #212121;
+  border-radius: .25rem;
+}
+
 
 //////////////////// version-switcher /////////////////////
 // .version-switcher-wrapper{

@@ -5,8 +5,8 @@ order: 04
 lead: Radio buttons allow users to see all available choices at once and select exactly one option.
 ---
 
-{% include code/preview.html component="radio-buttons" %}
-{% include code/accordion.html component="radio-buttons" %}
+{% include code/preview.html component="radiobutton" %}
+{% include code/accordion.html component="radiobutton" %}
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="radio-docs">

@@ -25,13 +25,21 @@ $('.style-switcher').on('change', function () {
   }
 });
 
+// Add style when navigating
 $('a').on('click', function (e) {
   e.preventDefault();
   window.location.href = $(this).attr('href') + '?s=' + window.curStyle;
 });
 
-// Initialize the component previews
+// Add style to preview-iframes
+var previewElements = document.getElementsByClassName('preview-iframe');
+for (var j = previewElements.length - 1; j >= 0; j--) {
+  if (window.curStyle){
+    previewElements[j].src = previewElements[j].src + '?s=' + window.curStyle;
+  }
+}
 
+// Initialize the component previews
 var activePreview = function(btnClicked){
   var $width = undefined;
   var $iframe = $('.component-preview').find('iframe');
@@ -44,7 +52,7 @@ var activePreview = function(btnClicked){
       $width = '768px';
       break;
     case 'desktop':
-      $width = '1024px';
+      $width = '1170px';
       break;
     default:
       return;

@@ -4,10 +4,22 @@ layout: styleguide
 title: Grids
 category: UI components
 subcategory: Partikler - Retningslinjer
-lead: This 12-column, responsive grid provides structure for website content.
+lead: The Gridsystem builds directly on the well-known Bootstrap-grid system (version 4). This 12-column, responsive grid provides structure for website content.
 ---
+<h3>Containers</h3>
+<p>Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Choose from a responsive, fixed-width container (meaning its <code>max-width</code> changes at each breakpoint) or fluid-width (meaning it’s <code>100%</code> wide all the time).</p>
 
+{% include code/preview.html component="grid--container" %}
+{% include code/accordion.html component="grid--container" %}
+
+<p>Use <code>.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p>
+
+{% include code/preview.html component="grid--container-fluid" %}
+{% include code/accordion.html component="grid--container-fluid" %}
+
+<h3>Rows and Columns</h3>
 {% include code/preview.html component="grid" %}
+{% include code/accordion.html component="grid" %}
 
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"

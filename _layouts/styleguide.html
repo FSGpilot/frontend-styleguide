@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <main class="container section" id="main-content">
   <div class="row">
 
@@ -18,7 +17,15 @@ layout: default
     </div>
 
     <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-{{page.id}}">
+        <header>
+          <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+        </header>
+        {% if page.lead != null %}
+          <p class="font-lead">{{ page.lead }}</p>
+        {% endif %}
       {{ content }}
+      </section>
     </div>
 
   </div>

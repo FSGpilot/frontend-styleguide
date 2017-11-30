@@ -3,17 +3,14 @@ permalink: /preview-components/alerts--paragraph.html
 layout: iframed 
 title: Alerts--paragraph.html
 ---
-
-
-
-
-
-
-<div class="alert  alert-info alert-paragraph" >
-  <div class="alert-body"><h3 class="alert-heading">Information Status - Paragraph Width</h3><p class="alert-text">Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui atione voluptatem sequi nesciunt. Neque porro quisquam est, qui doloremipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-  </div>
+<div class="alert  alert-info alert-paragraph">
+    <div class="alert-body">
+        <h3 class="alert-heading">Information Status - Paragraph Width</h3>
+        <p class="alert-text">Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem Nemo enim ipsam voluptatem
+            quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+            magni dolores eos qui atione voluptatem sequi nesciunt. Neque porro
+            quisquam est, qui doloremipsa quae ab illo inventore veritatis et
+            quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
 </div>
-
-
-
-

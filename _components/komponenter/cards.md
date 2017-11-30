@@ -5,11 +5,11 @@ type: component
 title: Cards
 category: UI components
 subcategory: Komponenter 
-lead: cards keep users informed of important and sometimes time-sensitive changes.
+lead: A card is a sheet of material that serves as an entry point to more detailed information.
 ---
 
-{% include code/preview.html component="alerts" %}
-{% include code/accordion.html component="alerts" %}
+{% include code/preview.html component="card" %}
+{% include code/accordion.html component="card" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="alert-docs">

@@ -74,6 +74,7 @@
   },
   "devDependencies": {
     "gulp-count": "^0.3.0",
+    "gulp-jsbeautifier": "^2.1.1",
     "gulp-plumber": "^1.1.0",
     "gulp-remote-src": "^0.4.3"
   }

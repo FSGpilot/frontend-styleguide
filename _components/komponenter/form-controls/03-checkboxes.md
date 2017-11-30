@@ -6,8 +6,8 @@ lead: Checkboxes allow users to select one or more options from a visible list.
 ---
 
 
-{% include code/preview.html component="checkboxes" %}
-{% include code/accordion.html component="checkboxes" %}
+{% include code/preview.html component="checkbox" %}
+{% include code/accordion.html component="checkbox" %}
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="checkbox-docs">

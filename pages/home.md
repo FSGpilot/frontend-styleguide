@@ -64,7 +64,7 @@ title: Frontend Styleguiden
     </div>
   </div>  
 
-  <div class="col-8 styleguide-content content">
+  <div class="col-8 content">
     <h2>
       Github for ikke teknikere
     </h2>

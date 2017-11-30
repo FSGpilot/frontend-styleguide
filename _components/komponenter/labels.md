@@ -4,7 +4,7 @@ redirect_from:
 - /labels/
 layout: styleguide
 type: element
-title: Hjælp og info
+title: Labels
 category: UI components
 subcategory: Komponenter
 lead: Labels draw attention to new or important content.
