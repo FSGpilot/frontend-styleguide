@@ -19,6 +19,9 @@ layout: default
     <div class="col-12 col-sm-9 styleguide-content content">
       <section id="section-{{page.id}}">
         <header>
+          <p class="site-subheading">
+            {{ page.subcategory }}
+          </p>
           <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
         </header>
         {% if page.lead != null %}
