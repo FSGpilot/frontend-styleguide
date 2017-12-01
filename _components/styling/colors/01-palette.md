@@ -77,7 +77,7 @@ order: 01
       <div class="color-container color-gray"></div>
       <div class="color-text-container">
         <p><strong>#5B616B</strong></p>
-        <p>$gray</p>
+        <p>$color-gray</p>
       </div>
     </div>
   </div>
@@ -86,21 +86,21 @@ order: 01
       <div class="color-container color-gray-light"></div>
       <div class="color-text-container">
         <p><strong>#AEB0B5</strong></p> 
-        <p>$gray-light</p>
+        <p>$color-gray-light</p>
       </div>
     </div>
     <div class="col-md-3 color-col ">
       <div class="color-container color-gray-lighter"></div>
       <div class="color-text-container">
         <p><strong>#D6D7D9</strong></p>
-        <p>$gray-lighter</p>
+        <p>$color-gray-lighter</p>
       </div>
     </div>
     <div class="col-md-3 color-col ">
       <div class="color-container color-gray-lightest"></div>
       <div class="color-text-container">
         <p><strong>#F1F1F1</strong></p>
-        <p>$gray-lightest</p>
+        <p>$color-gray-lightest</p>
       </div>
     </div>
   </div>

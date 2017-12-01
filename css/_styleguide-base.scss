@@ -940,6 +940,7 @@ h3 + .button_wrapper {
 
 .componentbox-container {
   height: 225px;
+  
 }
 
 .componentbox-text-container {
@@ -952,6 +953,7 @@ h3 + .button_wrapper {
 @media screen and (min-width:768px) {
   .componentbox-container {
     height: 180px;
+    border: 1px solid $color-gray-lightest;
   }
   .componentbox-col {
     padding-left: 7.5px;
