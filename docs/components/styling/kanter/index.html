@@ -32,6 +32,8 @@
 
 
   
+  <link rel="canonical" href="http://localhost:4000/components/styling/kanter/">
+  
 
 <!-- Favicons
 ================================================== -->
@@ -104,12 +106,12 @@
       <div class="nav-secondary">
         <ul class="unstyled-list nav-secondary-links">
           <li> 
-            <a href="#" class="button button-primary">
+            <a href="/frontend-styleguide-poc/getting-started/download/" class="button button-primary">
               Download kode og designfiler
             </a>
           </li>
           <li> 
-            <a href="#" class="button button-secondary">
+            <a href="https://github.com/jonasjensen77/frontend-styleguide-components" class="button button-secondary">
               Se på GitHub
             </a>
           </li>
@@ -120,10 +122,10 @@
         <ul class="unstyled-list nav-secondary-links">
           <li> 
             <select class="style-switcher" name="Style switcher">
-              <option value>- Vælg theme -</option>
-              <option value="styleguide">Basis theme</option>
-              <option value="virkdk">Virk.dk theme</option>
-              <option value="borgerdk">Borger.dk theme</option>
+              <option value>- Vælg tema -</option>
+              <option value="styleguide">Tema: Neutralt</option>
+              <option value="virkdk">Tema: Virk.dk</option>
+              <option value="borgerdk">Tema: Borger.dk</option>
             </select>
           </li>
         </ul>
@@ -355,6 +357,16 @@
     </div>
 
     <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-/components/styling/kanter">
+        <header>
+          <p class="site-subheading">
+            Atomer
+          </p>
+          <h1 id="kanter-streger-og-skygger">Kanter, streger og skygger</h1>
+        </header>
+        
+          <p class="font-lead">Normalt skal frontend designeren undersøge elementerne for at få disse værdier. Skal man dog være tro mod atomic design bør det være specificeret således at alt der anvendes senere i fødekæden er synligt specificeret. Dette vil også sikre at alle tilstande altid er velovervejede og at man ikke kopierer kode med fejl fra tilfældige enkeltstående felter, knapper etc.</p>
+        
       <h2 id="kanter">Kanter</h2>
 
 <p>Kanter er fx “border: 1px solid #333 og border-radius: 4px” og dette kan være til knapper, felter, beskeder etc, hvis disse har en border.</p>
@@ -376,6 +388,7 @@
 <p>I flat 2.0 anvendes en tyk streg i bunden af en knap for at fremhæve at der er tale om en knap uden at anvende skygger, da flade knapper er behæftet med dårligere brugervenlighed. (fx border-bottom: 4px solid #000) I tilfælde af at dette skal anvende skal det også speicificeres så det laves ens på tværs.</p>
 
 
+      </section>
     </div>
 
   </div>

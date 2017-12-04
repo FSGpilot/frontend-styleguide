@@ -6,17 +6,17 @@ title: Footers
 category: UI components
 subcategory: Strukturer (organismer)
 lead: Footers serve site visitors who arrive at the bottom of a page without finding what they want.
-subnav:
-- text: Big footer
-  href: '#big-footer'
-- text: Medium footer
-  href: '#medium-footer'
-- text: Slim footer
-  href: '#slim-footer'
 ---
 
-{% include code/preview.html component="footer.html" %}
-{% include code/accordion.html component="footer" %}
+{% include code/preview.html component="footer--big.html" %}
+{% include code/accordion.html component="footer--big" %}
+
+{% include code/preview.html component="footer--default.html" %}
+{% include code/accordion.html component="footer--default" %}
+
+{% include code/preview.html component="footer--small.html" %}
+{% include code/accordion.html component="footer--small" %}
+
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="footer-docs">

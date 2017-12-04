@@ -12,8 +12,4 @@ subnav:
   href: '/components/strukturer/form-templates/'
 - text: Header
   href: '/components/strukturer/headers/'
-- text: Modalvinduer
-  href: '/components/strukturer/modalvinduer/'
-- text: Struktureret liste
-  href: '/components/strukturer/liste/'
 ---

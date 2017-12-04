@@ -1,12 +1,68 @@
 ---
 permalink: /page-templates/
-layout: styleguide
+layout: styleguide-wide
 title: Eksempler
 category: Page templates
-lead: These templates for a landing page and a documentation page are built from some of the components of the U.S. Web Design Standards. Each of these pages is flexible; you can add or remove components or sub-components to suit your needs. These templates are great starting point for prototyping or for trying the Standards to see if they’re a good fit for you.
+lead: These templates for a two small selfservice solutions are built from some of the components of the Styleguide. Each of these pages is flexible; you can add or remove components or sub-components to suit your needs. These templates are great starting point for prototyping or for trying the Styleguide to see if they’re a good fit for you.
 subnav:
 - text: Sideopbygning
   href: '/page-templates/sideopbygning/'
 - text: Eksemplariske Eksempler
   href: '/page-templates/eksemplariske-eksempler/'
 ---
+
+
+<main class="section" id="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <aside class="sidenav">
+          {% assign sidenav = site.data.nav[page.category] %}
+          {% if sidenav %}
+          <ul class="sidenav-list">
+            {% include nav/list.html links=sidenav %}
+          </ul>
+          {% endif %}
+        </aside>
+      </div>
+
+      <div class="col-12 col-sm-9 styleguide-content content">
+        <section id="section-{{page.id}}">
+          <header>
+            <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+          </header>
+          {% if page.lead != null %}
+            <p class="font-lead">{{ page.lead }}</p>
+          {% endif %}
+          <h2 class="heading heading-margin-alt"  id="accessibility">Eksempel 1: Virk-blanket</h2>
+          <p>Et eksempel på en virk-blanket.</p>
+        </section>
+      </div>
+
+      <div class="col-12 content">
+        {% include code/preview.html component="example-a-page1" %}
+        {% include code/accordion.html component="example-a-page1" %}
+      </div>
+
+      <div class="col-12 content">
+        {% include code/preview.html component="example-b-page1" %}
+        {% include code/accordion.html component="example-b-page1" %}
+      </div>
+
+      <div class="col-12 content">
+        {% include code/preview.html component="example-b-page2" %}
+        {% include code/accordion.html component="example-b-page2" %}
+      </div>
+
+      <div class="col-12 content">
+        {% include code/preview.html component="example-b-page3" %}
+        {% include code/accordion.html component="example-b-page3" %}
+      </div>
+
+      <div class="col-12 content">
+        {% include code/preview.html component="example-b-page4" %}
+        {% include code/accordion.html component="example-b-page4" %}
+      </div>
+
+    </div>
+  </div>

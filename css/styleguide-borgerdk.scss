@@ -9,46 +9,6 @@ body {
 @import 'vendor/dkwds/dkwds-borgerdk';
 @import 'styleguide-base';
 
-// ///////// in the following im overwriting stuff hack-n-slash. In the "real" product this should be done in a smarter way ////////
-
-// $borgerdk-green:  #6C9D16;
-// $borgerdk-red:    #ae4227;
-// $borgerdk-blue:   #356772;
-// $link-color:      #39530c;
-// $gray-background: #F5F5F5;
-
-// .site-header {
-//       background-color: $gray-background;
-//       color: $color-base;
-//       border-bottom: 3px solid $borgerdk-green;
-// }
-// .site-header .button-list .button.button-outline-inverse{
-//       box-shadow: inset 0 0 0 2px $borgerdk-green;
-//       color: $borgerdk-green;
-// }
-// .site-logo a {
-//       color: $color-base;
-// }
-
-// .hero{
-//      background-image: url(../img/home/wds-home-new-2x-green.png); 
-// }
-// .section-dark {
-//       background-color: #fff;
-//       color: $color-base;
-//       p {
-//             color: $color-base;
-//       }
-// }
-// .hero-callout-alt {
-//       color: $color-base;
-// }
-
-
-// .footer-secondary_section {
-//       background-color: $gray-background;
-// }
-
 .is-neutral{ display:none }
 .is-virk { display:none }
 .is-borger{ display:block }

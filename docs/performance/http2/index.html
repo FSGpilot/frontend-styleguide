@@ -32,6 +32,8 @@
 
 
   
+  <link rel="canonical" href="http://localhost:4000/performance/http2/">
+  
 
 <!-- Favicons
 ================================================== -->
@@ -104,12 +106,12 @@
       <div class="nav-secondary">
         <ul class="unstyled-list nav-secondary-links">
           <li> 
-            <a href="#" class="button button-primary">
+            <a href="/frontend-styleguide-poc/getting-started/download/" class="button button-primary">
               Download kode og designfiler
             </a>
           </li>
           <li> 
-            <a href="#" class="button button-secondary">
+            <a href="https://github.com/jonasjensen77/frontend-styleguide-components" class="button button-secondary">
               Se på GitHub
             </a>
           </li>
@@ -120,10 +122,10 @@
         <ul class="unstyled-list nav-secondary-links">
           <li> 
             <select class="style-switcher" name="Style switcher">
-              <option value>- Vælg theme -</option>
-              <option value="styleguide">Basis theme</option>
-              <option value="virkdk">Virk.dk theme</option>
-              <option value="borgerdk">Borger.dk theme</option>
+              <option value>- Vælg tema -</option>
+              <option value="styleguide">Tema: Neutralt</option>
+              <option value="virkdk">Tema: Virk.dk</option>
+              <option value="borgerdk">Tema: Borger.dk</option>
             </select>
           </li>
         </ul>
@@ -303,6 +305,14 @@
     </div>
 
     <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-">
+        <header>
+          <p class="site-subheading">
+            
+          </p>
+          <h1 id="http-2-performance-guide">HTTP/2 Performance Guide</h1>
+        </header>
+        
       <h2 id="tldr">TL;DR:</h2>
 
 <p>If possible, enable HTTP/2 support on your server for dramatic performance gains. When using HTTP/2:</p>
@@ -361,6 +371,7 @@
 <p>There are several common techniques for improving HTTPS performance under both HTTP 1.1 and HTTP/2. Most of them require direct access to your sever(s) and/or hosting environment, and specific knowledge of the tools or platforms in use. <a href="https://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/">Optimizing nginx TLS time to first byte</a> describes how to improve HTTPS performance with nginx, but the techniques are applicable in other environments.</p>
 
 
+      </section>
     </div>
 
   </div>

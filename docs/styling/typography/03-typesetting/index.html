@@ -32,6 +32,8 @@
 
 
   
+  <link rel="canonical" href="http://localhost:4000/styling/typography/03-typesetting/">
+  
 
 <!-- Favicons
 ================================================== -->
@@ -104,12 +106,12 @@
       <div class="nav-secondary">
         <ul class="unstyled-list nav-secondary-links">
           <li> 
-            <a href="#" class="button button-primary">
+            <a href="/frontend-styleguide-poc/getting-started/download/" class="button button-primary">
               Download kode og designfiler
             </a>
           </li>
           <li> 
-            <a href="#" class="button button-secondary">
+            <a href="https://github.com/jonasjensen77/frontend-styleguide-components" class="button button-secondary">
               Se på GitHub
             </a>
           </li>
@@ -120,10 +122,10 @@
         <ul class="unstyled-list nav-secondary-links">
           <li> 
             <select class="style-switcher" name="Style switcher">
-              <option value>- Vælg theme -</option>
-              <option value="styleguide">Basis theme</option>
-              <option value="virkdk">Virk.dk theme</option>
-              <option value="borgerdk">Borger.dk theme</option>
+              <option value>- Vælg tema -</option>
+              <option value="styleguide">Tema: Neutralt</option>
+              <option value="virkdk">Tema: Virk.dk</option>
+              <option value="borgerdk">Tema: Borger.dk</option>
             </select>
           </li>
         </ul>
@@ -210,6 +212,14 @@
     </div>
 
     <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-/styling/typography/03-typesetting">
+        <header>
+          <p class="site-subheading">
+            
+          </p>
+          <h1 id="typesetting">Typesetting</h1>
+        </header>
+        
       <!-- Typsetting section begin -->
 
 <p>Readable text allows users to efficiently read and take in textual information, whereas text that is not readable turns off readers or makes it challenging for them to stay focused. The following guidelines promote good readability.</p>
@@ -238,7 +248,7 @@
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/typesetting" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/typesetting" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -259,47 +269,62 @@
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/typesetting"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/typesetting"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-typesetting">Code</button>
   <div id="code-typesetting" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span> <span class="err">&lt;</span><span class="na">h6</span> <span class="na">class=</span><span class="s">"heading-alt"</span><span class="nt">&gt;</span>Alignment<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alignment-example"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4&gt;</span>The Grand Canyon<span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Grand Canyon National Park is the United States' 15th oldest
+                    national park. Named a UNESCO World Heritage Site in 1979,
+                    the park is located in Arizona.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-grid"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"usa-heading-alt"</span><span class="nt">&gt;</span>Alignment<span class="nt">&lt;/h6&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alignment-example"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h4&gt;</span>The Grand Canyon<span class="nt">&lt;/h4&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Grand Canyon National Park is the United States' 15th oldest national park. Named a UNESCO World Heritage Site in 1979, the park is located in Arizona.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"heading-alt"</span><span class="nt">&gt;</span>Line length - Desktop<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"line-length-example"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Yosemite National Park is set within California’s Sierra Nevada
+                    mountains. It’s famed for its giant, ancient sequoias, and
+                    for Tunnel View, the iconic vista of towering Bridalveil
+                    Fall and the granite cliffs of El Capitan and Half Dome.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-text"</span><span class="nt">&gt;</span>75 characters max on desktop<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
 
-  <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"usa-heading-alt"</span><span class="nt">&gt;</span>Line length - Desktop<span class="nt">&lt;/h6&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-line-length-example"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-text"</span><span class="nt">&gt;</span>75 characters max on desktop<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"heading-alt"</span><span class="nt">&gt;</span>Spacing<span class="nt">&lt;/h6&gt;</span>
 
-  <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"usa-heading-alt"</span><span class="nt">&gt;</span>Spacing<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;h1&gt;</span>Section heading<span class="nt">&lt;/h1&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-lead"</span><span class="nt">&gt;</span>Great Smoky Mountains National Park straddles the border of North
+                Carolina and Tennessee.<span class="nt">&lt;/p&gt;</span>
 
-  <span class="nt">&lt;h1&gt;</span>Section heading<span class="nt">&lt;/h1&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"usa-font-lead"</span><span class="nt">&gt;</span>Great Smoky Mountains National Park straddles the border of North Carolina and Tennessee.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;h2&gt;</span>Section heading<span class="nt">&lt;/h2&gt;</span>
 
-  <span class="nt">&lt;h2&gt;</span>Section heading<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;h3&gt;</span>Section of the page<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;p&gt;</span>The sprawling landscape encompasses lush forests and an abundance
+                of wildflowers that bloom year-round. Streams, rivers and waterfalls
+                appear along hiking routes that include a segment of the Appalachian
+                Trail.<span class="nt">&lt;/p&gt;</span>
 
-  <span class="nt">&lt;h3&gt;</span>Section of the page<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;p&gt;</span>The sprawling landscape encompasses lush forests and an abundance of wildflowers that bloom year-round. Streams, rivers and waterfalls appear along hiking routes that include a segment of the Appalachian Trail.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;h4&gt;</span>Subsection of the page<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p&gt;</span>World renowned for its diversity of plant and animal life, the beauty
+                of its ancient mountains, and the quality of its remnants of
+                Southern Appalachian mountain culture, this is America's most
+                visited national park.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Right now scientists think that we only know about 17 percent of
+                the plants and animals that live in the park, or about 17,000
+                species of a probable 100,000 different organisms.<span class="nt">&lt;/p&gt;</span>
 
-  <span class="nt">&lt;h4&gt;</span>Subsection of the page<span class="nt">&lt;/h4&gt;</span>
-  <span class="nt">&lt;p&gt;</span>World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Right now scientists think that we only know about 17 percent of the plants and animals that live in the park, or about 17,000 species of a probable 100,000 different organisms.<span class="nt">&lt;/p&gt;</span>
-
-  <span class="nt">&lt;h5&gt;</span>Subsection of the page<span class="nt">&lt;/h5&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Entrance to Great Smoky Mountains National Park is free. The park is one of the few national parks where no entrance fees are charged.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;h5&gt;</span>Subsection of the page<span class="nt">&lt;/h5&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Entrance to Great Smoky Mountains National Park is free. The park
+                is one of the few national parks where no entrance fees are
+                charged.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-
-
 </code></pre>
 </div>
 
@@ -326,6 +351,7 @@
 </div>
 
 
+      </section>
     </div>
 
   </div>

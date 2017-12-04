@@ -10,9 +10,15 @@ redirect_from:
 
 <h2 class="heading">Code</h2>
 
-<a class="link-download" href="https://github.com/18F/web-design-standards/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip" onclick="ga('send', 'event', 'Downloaded framework', 'Clicked download button inside site');">Download code</a>
-<span class="link-download-subtext">Version {{ site.version }}</span>
+<a class="link-download" href="https://github.com/jonasjensen77/frontend-styleguide-components/releases/download/v{{ site.version }}/dkwds-{{ site.version }}.zip">Download code <span class="link-download-subtext">Version {{ site.version }}</span></a>
 
 <h2 class="heading">Design files</h2>
 
-{% include download-buttons-design.html %}
+{% comment %}
+These `uswds-assets-*.zip` files are generated in 18F/web-design-standards-assets
+repository. See: https://github.com/jonasjensen77/frontend-styleguide-components
+{% endcomment %}
+<div class="link_group-download">
+  <a class="link-download" href="{{ site.baseurl }}/files/dkwds-assets.zip">Download design files</a>
+</div>
+

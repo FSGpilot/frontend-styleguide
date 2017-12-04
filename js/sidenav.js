@@ -55,13 +55,14 @@ $('.sidenav').on('click', 'a', function (e) {
   });
 });
 
-var navHeight = function () {
-  $('.sidenav').css('height', (window.innerHeight - 50));
-};
+//note: this has been commented out as it messed up pages where there is also full width content (like the "examples" page).
+// var navHeight = function () {
+//   $('.sidenav').css('height', (window.innerHeight - 50));
+// };
 
-navHeight();
+// navHeight();
 
-$( window ).resize(function () {
-  navHeight();
-});
+// $( window ).resize(function () {
+//   navHeight();
+// });
 

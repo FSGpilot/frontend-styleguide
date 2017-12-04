@@ -21,50 +21,8 @@
 <meta property="og:title" content="Form controls | POC version 1.0 - Frontend styleguide">
 
 
-<meta name="description" content="Accessibility
-
-As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.
-
-
-  Display form controls in the same order in HTML as they appear on screen. Do not use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.
-  Visually align validation messages with the input fields, so people using screen magnifiers can read them quickly.
-  Group each set of thematically related controls in a fieldset element. Use the legend element to offer a label within each one. The fieldset and legend elements make it easier for screen reader users to navigate the form.
-  Use a single legend for fieldset (this is required). One example of a common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.
-  Embed multiple fieldsets and legends for more complex forms.
-  Keep your form blocks in a vertical pattern. This approach is ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.
-
-
-Supporting screen readers
-
-Note: These code examples have been designed to support a range of screen readers. That said, they may not work with all versions.
-
-Known issues
-
-
-  VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using aria-labeledby=&quot;for-attribute-of-label id-of-legend id-of-additional-info&quot; on each input in the fieldset. Using aria-labeledby will overwrite the default text read by the screen reader, so it is important to include all relevant information.
-  VoiceOver on OS X currently does not support aria-describedby. Use aria-labeledby instead, and include all related fields, including, labels, legend, and hint text">
-<meta property="og:description" content="Accessibility
-
-As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.
-
-
-  Display form controls in the same order in HTML as they appear on screen. Do not use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.
-  Visually align validation messages with the input fields, so people using screen magnifiers can read them quickly.
-  Group each set of thematically related controls in a fieldset element. Use the legend element to offer a label within each one. The fieldset and legend elements make it easier for screen reader users to navigate the form.
-  Use a single legend for fieldset (this is required). One example of a common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.
-  Embed multiple fieldsets and legends for more complex forms.
-  Keep your form blocks in a vertical pattern. This approach is ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.
-
-
-Supporting screen readers
-
-Note: These code examples have been designed to support a range of screen readers. That said, they may not work with all versions.
-
-Known issues
-
-
-  VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using aria-labeledby=&quot;for-attribute-of-label id-of-legend id-of-additional-info&quot; on each input in the fieldset. Using aria-labeledby will overwrite the default text read by the screen reader, so it is important to include all relevant information.
-  VoiceOver on OS X currently does not support aria-describedby. Use aria-labeledby instead, and include all related fields, including, labels, legend, and hint text">
+<meta name="description" content="If you are a building a form with multiple controls, also consider the accessibility guidelines in the “Form Templates” section.">
+<meta property="og:description" content="If you are a building a form with multiple controls, also consider the accessibility guidelines in the “Form Templates” section.">
 
 
 
@@ -73,6 +31,8 @@ Known issues
 
 
 
+  
+  <link rel="canonical" href="http://localhost:4000/components/komponenter/form-controls/">
   
 
 <!-- Favicons
@@ -146,12 +106,12 @@ Known issues
       <div class="nav-secondary">
         <ul class="unstyled-list nav-secondary-links">
           <li> 
-            <a href="#" class="button button-primary">
+            <a href="/frontend-styleguide-poc/getting-started/download/" class="button button-primary">
               Download kode og designfiler
             </a>
           </li>
           <li> 
-            <a href="#" class="button button-secondary">
+            <a href="https://github.com/jonasjensen77/frontend-styleguide-components" class="button button-secondary">
               Se på GitHub
             </a>
           </li>
@@ -162,10 +122,10 @@ Known issues
         <ul class="unstyled-list nav-secondary-links">
           <li> 
             <select class="style-switcher" name="Style switcher">
-              <option value>- Vælg theme -</option>
-              <option value="styleguide">Basis theme</option>
-              <option value="virkdk">Virk.dk theme</option>
-              <option value="borgerdk">Borger.dk theme</option>
+              <option value>- Vælg tema -</option>
+              <option value="styleguide">Tema: Neutralt</option>
+              <option value="virkdk">Tema: Virk.dk</option>
+              <option value="borgerdk">Tema: Borger.dk</option>
             </select>
           </li>
         </ul>
@@ -302,7 +262,7 @@ Known issues
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/accordions/" class="nav-link">Accordions</a>
+<a href="/frontend-styleguide-poc/components/komponenter/buttons/" class="nav-link">Knapper</a>
 
 
     
@@ -313,7 +273,7 @@ Known issues
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/baggrundsbokse/" class="nav-link">Baggrundsbokse</a>
+<a href="/frontend-styleguide-poc/components/komponenter/accordions/" class="nav-link">Accordions</a>
 
 
     
@@ -434,40 +394,7 @@ Known issues
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/labels/" class="nav-link">Hjælp og info</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/komponenter/buttons/" class="nav-link">Knapper</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/komponenter/markeringer/" class="nav-link">Markeringer og valg</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/komponenter/sidenav/" class="nav-link">Navigation</a>
+<a href="/frontend-styleguide-poc/components/komponenter/labels/" class="nav-link">Labels</a>
 
 
     
@@ -506,6 +433,17 @@ Known issues
     
   </li>
 
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/komponenter/sidenav/" class="nav-link">Sidenavigation</a>
+
+
+    
+  </li>
+
 </ul>
     
   
@@ -532,31 +470,17 @@ Known issues
     </div>
 
     <div class="col-12 col-sm-9 styleguide-content content">
-      <h3 class="heading heading-margin-alt">Accessibility</h3>
-
-<p>As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.</p>
-
-<ul class="content-list">
-  <li>Display form controls in the same order in HTML as they appear on screen. Do not use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.</li>
-  <li>Visually align validation messages with the input fields, so people using screen magnifiers can read them quickly.</li>
-  <li>Group each set of thematically related controls in a fieldset element. Use the legend element to offer a label within each one. The fieldset and legend elements make it easier for screen reader users to navigate the form.</li>
-  <li>Use a single legend for fieldset (this is required). One example of a common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.</li>
-  <li>Embed multiple fieldsets and legends for more complex forms.</li>
-  <li>Keep your form blocks in a vertical pattern. This approach is ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.</li>
-</ul>
-
-<h4>Supporting screen readers</h4>
-
-<p><b>Note:</b> These code examples have been designed to support a range of screen readers. That said, they may not work with all versions.</p>
-
-<h5>Known issues</h5>
-
-<ul class="content-list">
-  <li>VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using <code>aria-labeledby="for-attribute-of-label id-of-legend id-of-additional-info"</code> on each input in the fieldset. Using <code>aria-labeledby</code> will overwrite the default text read by the screen reader, so it is important to include all relevant information.</li>
-  <li>VoiceOver on OS X currently does not support <code>aria-describedby</code>. Use <code>aria-labeledby</code> instead, and include all related fields, including, labels, legend, and hint text</li>
-</ul>
-
-<p>If you are a building a form with multiple controls, also consider the <a href="/frontend-styleguide-poc/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</p>
+      <section id="section-/components/komponenter/form-controls">
+        <header>
+          <p class="site-subheading">
+            Komponenter
+          </p>
+          <h1 id="form-controls">Form controls</h1>
+        </header>
+        
+          <p class="font-lead">Form controls allow users to enter information into a page.</p>
+        
+      <p>If you are a building a form with multiple controls, also consider the <a href="/frontend-styleguide-poc/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</p>
 
 <section id="section-/komponenter/form-controls/01-text-input">
   <h2 class="heading heading-margin-alt" id="text-input">Text input</h2>
@@ -588,7 +512,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/text-input" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/text-input" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -609,60 +533,34 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/text-input"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/text-input"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-text-input">Code</button>
   <div id="code-text-input" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
 
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-type-text"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Text input label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-focus"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Text input focused<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-focus"</span> <span class="na">id=</span><span class="s">"input-focus"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-  
-    
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-type-text"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Text input label<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"input-error-label"</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Text input error<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Helpful error message<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 
-  
-    
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-focus"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Text input focused<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-focus"</span> <span class="na">id=</span><span class="s">"input-focus"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-success"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Text input success<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input-success"</span> <span class="na">id=</span><span class="s">"input-success"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
-  
-    
-  
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"input-error-label"</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Text input error<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Helpful error message<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-type-textarea"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Text area label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-textarea"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
-  
-    
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-success"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Text input success<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input-success"</span> <span class="na">id=</span><span class="s">"input-success"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
-
-  
-    
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-type-textarea"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Text area label<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-textarea"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
-
-  
 <span class="nt">&lt;/div&gt;</span>
-
-
 </code></pre>
 </div>
 
@@ -734,7 +632,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/dropdown" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/dropdown" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -755,36 +653,30 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/dropdown"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/dropdown"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-dropdown">Code</button>
   <div id="code-dropdown" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
 
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"options"</span><span class="nt">&gt;</span>Dropdown titel<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"options"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value</span><span class="nt">&gt;</span>- Vælg -<span class="nt">&lt;/option&gt;</span>
 
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>Mulighed 1<span class="nt">&lt;/option&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-    
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"options"</span><span class="nt">&gt;</span>Dropdown titel<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"options"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;option</span> <span class="na">value</span><span class="nt">&gt;</span>- Vælg -<span class="nt">&lt;/option&gt;</span>
-    
-      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>Mulighed 1<span class="nt">&lt;/option&gt;</span>
-    
-      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>Mulighed 2<span class="nt">&lt;/option&gt;</span>
-    
-      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span>Mulighed 3<span class="nt">&lt;/option&gt;</span>
-    
-  <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>Mulighed 2<span class="nt">&lt;/option&gt;</span>
 
-  <span class="nt">&lt;/form&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span>Mulighed 3<span class="nt">&lt;/option&gt;</span>
+
+        <span class="nt">&lt;/select&gt;</span>
+
+    <span class="nt">&lt;/form&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-
-
 </code></pre>
 </div>
 
@@ -858,7 +750,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/checkboxes" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/checkbox" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -879,38 +771,42 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/checkboxes"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/checkbox"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
-  <button class="accordion-button" aria-controls="code-checkboxes">Code</button>
-  <div id="code-checkboxes" class="accordion-content">
+  <button class="accordion-button" aria-controls="code-checkbox">Code</button>
+  <div id="code-checkbox" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"usa-fieldset-inputs usa-sans"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"fieldset-inputs sans"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"unstyled-list"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Historical figures 1<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"truth"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"truth"</span>
+                    <span class="na">checked</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"truth"</span><span class="nt">&gt;</span>Sojourner Truth<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
 
-  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-unstyled-list"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"truth"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"truth"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"truth"</span><span class="nt">&gt;</span>Sojourner Truth<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"douglass"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"douglass"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"douglass"</span><span class="nt">&gt;</span>Frederick Douglass<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"washington"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"washington"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"washington"</span><span class="nt">&gt;</span>Booker T. Washington<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"carver"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"carver"</span><span class="nt">&gt;</span>George Washington Carver<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"douglass"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"douglass"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"douglass"</span><span class="nt">&gt;</span>Frederick Douglass<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
 
-<span class="nt">&lt;/fieldset&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"washington"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"washington"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"washington"</span><span class="nt">&gt;</span>Booker T. Washington<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
 
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"carver"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"carver"</span>
+                    <span class="na">disabled</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"carver"</span><span class="nt">&gt;</span>George Washington Carver<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
 
@@ -986,7 +882,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/radio-buttons" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/radiobutton" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -1007,34 +903,40 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/radio-buttons"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/radiobutton"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
-  <button class="accordion-button" aria-controls="code-radio-buttons">Code</button>
-  <div id="code-radio-buttons" class="accordion-content">
+  <button class="accordion-button" aria-controls="code-radiobutton">Code</button>
+  <div id="code-radiobutton" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"usa-fieldset-inputs usa-sans"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"fieldset-inputs sans"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"unstyled-list"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Historical figures 2<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"truth"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"truth"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"truth"</span><span class="nt">&gt;</span>Sojourner Truth<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
 
-  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-unstyled-list"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"stanton"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">checked</span> <span class="na">name=</span><span class="s">"historical-figures-2"</span> <span class="na">value=</span><span class="s">"stanton"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"stanton"</span><span class="nt">&gt;</span>Elizabeth Cady Stanton<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"anthony"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"historical-figures-2"</span> <span class="na">value=</span><span class="s">"anthony"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"anthony"</span><span class="nt">&gt;</span>Susan B. Anthony<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"tubman"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"historical-figures-2"</span> <span class="na">value=</span><span class="s">"tubman"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"tubman"</span><span class="nt">&gt;</span>Harriet Tubman<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"douglass"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"douglass"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"douglass"</span><span class="nt">&gt;</span>Frederick Douglass<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
 
-<span class="nt">&lt;/fieldset&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"washington"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"washington"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"washington"</span><span class="nt">&gt;</span>Booker T. Washington<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
 
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"washington"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"historical-figures-1"</span> <span class="na">value=</span><span class="s">"carver"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"washington"</span><span class="nt">&gt;</span>George Washington Carver<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
 
@@ -1109,7 +1011,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/date-input" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/date-input" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -1130,61 +1032,66 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/date-input"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/date-input"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-date-input">Code</button>
   <div id="code-date-input" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
 
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;label&gt;</span>Fødselsdato<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"dobHint"</span><span class="nt">&gt;</span>For eksempel: 05 12 1973<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-of-birth"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_2"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span>
+                    <span class="na">id=</span><span class="s">"date_of_birth_2"</span> <span class="na">name=</span><span class="s">"date_of_birth_2"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span>
+                    <span class="na">max=</span><span class="s">"31"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_1"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span>
+                    <span class="na">id=</span><span class="s">"date_of_birth_1"</span> <span class="na">name=</span><span class="s">"date_of_birth_1"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span>
+                    <span class="na">max=</span><span class="s">"12"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_3"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span>
+                    <span class="na">id=</span><span class="s">"date_of_birth_3"</span> <span class="na">name=</span><span class="s">"date_of_birth_3"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1900"</span>
+                    <span class="na">max=</span><span class="s">"2000"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
 
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-
-<span class="nt">&lt;fieldset&gt;</span>
-  <span class="nt">&lt;label&gt;</span>Fødselsdato<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"dobHint"</span><span class="nt">&gt;</span>For eksempel: 05 12 1973<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-of-birth"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_2"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"date_of_birth_2"</span> <span class="na">name=</span><span class="s">"date_of_birth_2"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_1"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"date_of_birth_1"</span> <span class="na">name=</span><span class="s">"date_of_birth_1"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_3"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"date_of_birth_3"</span> <span class="na">name=</span><span class="s">"date_of_birth_3"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1900"</span> <span class="na">max=</span><span class="s">"2000"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/fieldset&gt;</span>
-
-
-<span class="nt">&lt;fieldset&gt;</span>
-  <span class="nt">&lt;label&gt;</span>Indsendelsesfrist<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"dobHint"</span><span class="nt">&gt;</span>For eksempel: 05 12 1973<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-of-birth"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_2"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"date_of_birth_2"</span> <span class="na">name=</span><span class="s">"date_of_birth_2"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_1"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"date_of_birth_1"</span> <span class="na">name=</span><span class="s">"date_of_birth_1"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_3"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"date_of_birth_3"</span> <span class="na">name=</span><span class="s">"date_of_birth_3"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1900"</span> <span class="na">max=</span><span class="s">"2000"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;label&gt;</span>Indsendelsesfrist<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"dobHint"</span><span class="nt">&gt;</span>For eksempel: 05 12 1973<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-of-birth"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_2"</span><span class="nt">&gt;</span>Dag<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span>
+                    <span class="na">id=</span><span class="s">"date_of_birth_2"</span> <span class="na">name=</span><span class="s">"date_of_birth_2"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span>
+                    <span class="na">max=</span><span class="s">"31"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_1"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span>
+                    <span class="na">id=</span><span class="s">"date_of_birth_1"</span> <span class="na">name=</span><span class="s">"date_of_birth_1"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1"</span>
+                    <span class="na">max=</span><span class="s">"12"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"date_of_birth_3"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"input-inline"</span> <span class="na">aria-describedby=</span><span class="s">"dobHint"</span> <span class="na">class=</span><span class="s">"form-control"</span>
+                    <span class="na">id=</span><span class="s">"date_of_birth_3"</span> <span class="na">name=</span><span class="s">"date_of_birth_3"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"1900"</span>
+                    <span class="na">max=</span><span class="s">"2000"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
 
 <span class="nt">&lt;/div&gt;</span>
-
-
 </code></pre>
 </div>
 
@@ -1254,7 +1161,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/validation" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/validation" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -1275,38 +1182,34 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/validation"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/validation"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-validation">Code</button>
   <div id="code-validation" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;fieldset&gt;</span>
-    <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"usa-drop_text"</span><span class="nt">&gt;</span>Enter a code<span class="nt">&lt;/legend&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"drop_text"</span><span class="nt">&gt;</span>Enter a code<span class="nt">&lt;/legend&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-alert usa-alert-info"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-alert-body"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"usa-alert-heading"</span><span class="nt">&gt;</span>Codes must:<span class="nt">&lt;/h3&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-checklist"</span> <span class="na">id=</span><span class="s">"validate-code"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"uppercase"</span><span class="nt">&gt;</span>Have at least 1 uppercase character<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"numerical"</span><span class="nt">&gt;</span>Have at least 1 numerical character<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Codes must:<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"checklist"</span> <span class="na">id=</span><span class="s">"validate-code"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"uppercase"</span><span class="nt">&gt;</span>Have at least 1 uppercase character<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"numerical"</span><span class="nt">&gt;</span>Have at least 1 numerical character<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
 
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"code"</span><span class="nt">&gt;</span>Code<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"code"</span> <span class="na">name=</span><span class="s">"code"</span> <span class="na">type=</span><span class="s">"text"</span>
-      <span class="na">aria-describedby=</span><span class="s">"validate-code"</span>
-      <span class="na">data-validate-uppercase=</span><span class="s">"[A-Z]"</span>
-      <span class="na">data-validate-numerical=</span><span class="s">"\d"</span>
-      <span class="na">data-validation-element=</span><span class="s">"#validate-code"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"code"</span><span class="nt">&gt;</span>Code<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"code"</span> <span class="na">name=</span><span class="s">"code"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"validate-code"</span> <span class="na">data-validate-uppercase=</span><span class="s">"[A-Z]"</span>
+            <span class="na">data-validate-numerical=</span><span class="s">"\d"</span> <span class="na">data-validation-element=</span><span class="s">"#validate-code"</span><span class="nt">&gt;</span>
 
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit code"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/fieldset&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit code"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
-
 </code></pre>
 </div>
 
@@ -1349,7 +1252,32 @@ Known issues
 
 </section>
 
+<h3 class="heading heading-margin-alt">Accessibility</h3>
 
+<p>As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.</p>
+
+<ul class="content-list">
+  <li>Display form controls in the same order in HTML as they appear on screen. Do not use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.</li>
+  <li>Visually align validation messages with the input fields, so people using screen magnifiers can read them quickly.</li>
+  <li>Group each set of thematically related controls in a fieldset element. Use the legend element to offer a label within each one. The fieldset and legend elements make it easier for screen reader users to navigate the form.</li>
+  <li>Use a single legend for fieldset (this is required). One example of a common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.</li>
+  <li>Embed multiple fieldsets and legends for more complex forms.</li>
+  <li>Keep your form blocks in a vertical pattern. This approach is ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.</li>
+</ul>
+
+<h4>Supporting screen readers</h4>
+
+<p><b>Note:</b> These code examples have been designed to support a range of screen readers. That said, they may not work with all versions.</p>
+
+<h5>Known issues</h5>
+
+<ul class="content-list">
+  <li>VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using <code>aria-labeledby="for-attribute-of-label id-of-legend id-of-additional-info"</code> on each input in the fieldset. Using <code>aria-labeledby</code> will overwrite the default text read by the screen reader, so it is important to include all relevant information.</li>
+  <li>VoiceOver on OS X currently does not support <code>aria-describedby</code>. Use <code>aria-labeledby</code> instead, and include all related fields, including, labels, legend, and hint text</li>
+</ul>
+
+
+      </section>
     </div>
 
   </div>

@@ -74,6 +74,8 @@ Known issues
 
 
   
+  <link rel="canonical" href="http://localhost:4000/components/strukturer/form-templates/">
+  
 
 <!-- Favicons
 ================================================== -->
@@ -146,12 +148,12 @@ Known issues
       <div class="nav-secondary">
         <ul class="unstyled-list nav-secondary-links">
           <li> 
-            <a href="#" class="button button-primary">
+            <a href="/frontend-styleguide-poc/getting-started/download/" class="button button-primary">
               Download kode og designfiler
             </a>
           </li>
           <li> 
-            <a href="#" class="button button-secondary">
+            <a href="https://github.com/jonasjensen77/frontend-styleguide-components" class="button button-secondary">
               Se på GitHub
             </a>
           </li>
@@ -162,10 +164,10 @@ Known issues
         <ul class="unstyled-list nav-secondary-links">
           <li> 
             <select class="style-switcher" name="Style switcher">
-              <option value>- Vælg theme -</option>
-              <option value="styleguide">Basis theme</option>
-              <option value="virkdk">Virk.dk theme</option>
-              <option value="borgerdk">Borger.dk theme</option>
+              <option value>- Vælg tema -</option>
+              <option value="styleguide">Tema: Neutralt</option>
+              <option value="virkdk">Tema: Virk.dk</option>
+              <option value="borgerdk">Tema: Borger.dk</option>
             </select>
           </li>
         </ul>
@@ -396,28 +398,6 @@ Known issues
     
   </li>
 
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/strukturer/modalvinduer/" class="nav-link">Modalvinduer</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-<a href="/frontend-styleguide-poc/components/strukturer/liste/" class="nav-link">Struktureret liste</a>
-
-
-    
-  </li>
-
 </ul>
     
   
@@ -433,6 +413,16 @@ Known issues
     </div>
 
     <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-/components/strukturer/form-templates">
+        <header>
+          <p class="site-subheading">
+            Strukturer (organismer)
+          </p>
+          <h1 id="form-templates">Form templates</h1>
+        </header>
+        
+          <p class="font-lead">Patterns for some of the most commonly used forms on government websites</p>
+        
       <h3 class="heading heading-margin-alt">Accessibility</h3>
 
 <p>As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.</p>
@@ -487,7 +477,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/name-form" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/name-form" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -508,39 +498,25 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/name-form"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/name-form"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-name-form">Code</button>
   <div id="code-name-form" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-large"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>Navn<span class="nt">&lt;/legend&gt;</span>
 
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"NaN"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"NaN"</span> <span class="na">name=</span><span class="s">"NaN"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"NaN"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"NaN"</span> <span class="na">name=</span><span class="s">"NaN"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
-
-
-<span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-large"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;fieldset&gt;</span>
-    <span class="nt">&lt;legend&gt;</span>Navn<span class="nt">&lt;/legend&gt;</span>
-    
-      
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"NaN"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Fornavn<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"NaN"</span> <span class="na">name=</span><span class="s">"NaN"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
-
-      
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"NaN"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Efternavn<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"NaN"</span> <span class="na">name=</span><span class="s">"NaN"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
-
-
-  <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
-
 </code></pre>
 </div>
 
@@ -605,7 +581,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/address-form" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/address-form" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -626,77 +602,55 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/address-form"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/address-form"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-address-form">Code</button>
   <div id="code-address-form" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-large"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;legend&gt;</span>Adresse<span class="nt">&lt;/legend&gt;</span>
 
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-small"</span><span class="nt">&gt;</span>
 
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-postnummer"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Postnummer<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-postnummer"</span> <span class="na">name=</span><span class="s">"input-text-postnummer"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
+        <span class="nt">&lt;/div&gt;</span>
 
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-medium"</span><span class="nt">&gt;</span>
 
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-by"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>By<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-by"</span> <span class="na">name=</span><span class="s">"input-text-by"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
-<span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-large"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;fieldset&gt;</span>
-    <span class="nt">&lt;legend&gt;</span>Adresse<span class="nt">&lt;/legend&gt;</span>
-    
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-small"</span><span class="nt">&gt;</span>
-    
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-postnummer"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Postnummer<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-postnummer"</span> <span class="na">name=</span><span class="s">"input-text-postnummer"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
+        <span class="nt">&lt;/div&gt;</span>
 
-  <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-gade"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Gade<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-gade"</span> <span class="na">name=</span><span class="s">"input-text-gade"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-medium"</span><span class="nt">&gt;</span>
-    
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-by"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>By<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-by"</span> <span class="na">name=</span><span class="s">"input-text-by"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-small"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-husnummer"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Husnummer<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-husnummer"</span> <span class="na">name=</span><span class="s">"input-text-husnummer"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
-  
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-gade"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Gade<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-gade"</span> <span class="na">name=</span><span class="s">"input-text-gade"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-small"</span><span class="nt">&gt;</span>
 
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-dør"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Dør<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-dør"</span> <span class="na">name=</span><span class="s">"input-text-dør"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-small"</span><span class="nt">&gt;</span>
-    
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-husnummer"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Husnummer<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-husnummer"</span> <span class="na">name=</span><span class="s">"input-text-husnummer"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-large"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-small"</span><span class="nt">&gt;</span>
-    
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-dør"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Dør<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-dør"</span> <span class="na">name=</span><span class="s">"input-text-dør"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-coadresse"</span> <span class="na">class=</span><span class="s">"input-optional"</span><span class="nt">&gt;</span>C/O-adresse<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-coadresse"</span> <span class="na">name=</span><span class="s">"input-text-coadresse"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-grid input-grid-large"</span> <span class="nt">&gt;</span>
-    
-   
-     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-text-coadresse"</span> <span class="na">class=</span><span class="s">"input-optional"</span><span class="nt">&gt;</span>C/O-adresse<span class="nt">&lt;/label&gt;</span>
-     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-text-coadresse"</span> <span class="na">name=</span><span class="s">"input-text-coadresse"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-  
+        <span class="nt">&lt;/div&gt;</span>
 
-  <span class="nt">&lt;/div&gt;</span>
-
-  <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
-
 </code></pre>
 </div>
 
@@ -773,7 +727,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/password-reset" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/password-reset" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -794,7 +748,7 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/password-reset"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/password-reset"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
@@ -905,7 +859,7 @@ Known issues
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="../../../preview-components/sign-in-form" target="_blank">
+            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/sign-in-form" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -926,40 +880,40 @@ Known issues
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="../../../preview-components/sign-in-form"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/sign-in-form"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
   <button class="accordion-button" aria-controls="code-sign-in-form">Code</button>
   <div id="code-sign-in-form" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"drop_text"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;span&gt;</span>or
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span><span class="nt">&gt;</span>create an account<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
 
-<span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;fieldset&gt;</span>
-    <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"drop_text"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/legend&gt;</span>
-    <span class="nt">&lt;span&gt;</span>or <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span><span class="nt">&gt;</span>create an account<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"username"</span><span class="nt">&gt;</span>Username or email address<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"username"</span> <span class="na">name=</span><span class="s">"username"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">autocapitalize=</span><span class="s">"off"</span> <span class="na">autocorrect=</span><span class="s">"off"</span><span class="nt">&gt;</span>
 
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"username"</span><span class="nt">&gt;</span>Username or email address<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"username"</span> <span class="na">name=</span><span class="s">"username"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">autocapitalize=</span><span class="s">"off"</span> <span class="na">autocorrect=</span><span class="s">"off"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"password"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"password"</span> <span class="na">type=</span><span class="s">"password"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-note"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Show password"</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"show_password"</span> <span class="na">aria-controls=</span><span class="s">"password"</span><span class="nt">&gt;</span>Show password<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
 
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"password"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"password"</span> <span class="na">type=</span><span class="s">"password"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-note"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Show password"</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-        <span class="na">class=</span><span class="s">"show_password"</span>
-        <span class="na">aria-controls=</span><span class="s">"password"</span><span class="nt">&gt;</span>Show password<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/p&gt;</span>
-
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Sign in"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">title=</span><span class="s">"Forgot username"</span><span class="nt">&gt;</span>
-      Forgot username?<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">title=</span><span class="s">"Forgot password"</span><span class="nt">&gt;</span>
-      Forgot password?<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-  <span class="nt">&lt;/fieldset&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Sign in"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">title=</span><span class="s">"Forgot username"</span><span class="nt">&gt;</span>
+                Forgot username?<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">title=</span><span class="s">"Forgot password"</span><span class="nt">&gt;</span>
+                Forgot password?<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
-
-
 </code></pre>
 </div>
 
@@ -1000,6 +954,7 @@ Known issues
 </section>
 
 
+      </section>
     </div>
 
   </div>

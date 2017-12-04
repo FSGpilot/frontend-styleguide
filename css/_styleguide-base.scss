@@ -1908,3 +1908,15 @@ div.anno-container {
   display: grid;
   display: -ms-grid; /* IE */
 }
+
+// Header is all white in the styleguide
+.header{
+  background-color: white;
+}
+
+@media screen and (min-width: 992px){
+  .header-extended .nav {
+    background-color: white;
+    border-top: 1px solid #f1f1f1;
+  }
+}
