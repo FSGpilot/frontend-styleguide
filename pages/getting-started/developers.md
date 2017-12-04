@@ -139,6 +139,11 @@ Do you have questions or need help with setup? Did you run into any weird errors
 
 [https://github.com/18F/web-design-standards/issues](https://github.com/18F/web-design-standards/issues).
 
+## Examples and prototyping setups
+
+In the **[component-library repository](https://github.com/jonasjensen77/frontend-styleguide-components/tree/master/examples)** you will find a number of example setups: Gulp, webpack, browserify etc.
+You will also find a **[complete rapid-prototyping setup](https://github.com/jonasjensen77/frontend-styleguide-components/tree/master/examples/gulp-prototyping-setup)** that will get you started building a prototype in no time!
+
 ## CSS architecture
 
 * The CSS foundation of this site is built with the **[Sass](https://sass-lang.com)** preprocessor language.
@@ -189,13 +194,6 @@ $large-screen:  1120px !default;
 ```
 
 NOTE: If you plan on upgrading to newer versions of the Standards in the future, or are not using your own forked version of the Standards, try to avoid making changes in the Standards folder themselves. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
-
-### Main variables that can be customized
-* Colors can be found in the `core/variables` [file, line 35](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L35).
-* Font families can be found in the `core/variables` [file, line 28](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L28).
-* Typography sizing can be found in `core/variables` [file, line 13](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L13).
-* Grid and breakpoint settings can be found in `core/variables` [file, line 87](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L87).
-
 
 ## Where things live
 

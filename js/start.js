@@ -27,7 +27,7 @@ $('.style-switcher').on('change', function () {
 
 // Add style when navigating
 $('a').on('click', function (e) {
-  if(this.href.indexOf("#") < 0) {
+  if(this.href.indexOf('#') < 0) {
     e.preventDefault();
     window.location.href = $(this).attr('href') + '?s=' + window.curStyle;
   }
