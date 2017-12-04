@@ -98,7 +98,7 @@ node_modules/dkwds/
     └── stylesheets/
 ```
 
-`require('dkwds')` will load all of the U.S. Web Design Standard’s JavaScript onto the page. The `dkwds` module itself does not export anything.
+`require('dkwds')` will load all of the Frontend Styleguide’s JavaScript onto the page. The `dkwds` module itself does not export anything.
 
 The main Sass (SCSS) source file is here:
 
@@ -116,7 +116,7 @@ node_modules/dkwds/dist/css/dkwds.css
 
 If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team isn’t responsible for all frameworks’ implementations.
 
-If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project’s build system can help you create distribution bundles to use in your project. Please read our [contribution guidelines][] to locally build distributions for your framework or package manager.
+If you’re interested in maintaining a package that helps us distribute the Frontend Styleguide, the project’s build system can help you create distribution bundles to use in your project. Please read our [contribution guidelines][] to locally build distributions for your framework or package manager.
 
 ### Need installation help?
 
