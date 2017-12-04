@@ -19,6 +19,21 @@ subnav:
   href: '#contribution-guidelines'
 ---
 
+<div class="alert alert-warning">
+    <div class="alert-body">
+        <h3 class="alert-heading">Work-in-progress!</h3>
+        <div class="alert-text">
+        <p>The Frontend Styleguiden is still a work-in-progress.</p>
+        <ul> 
+          <li> The documentation is far from finished </li>
+          <li> There are many more components planned for later releases </li>
+          <li> Same goes for examples: many more are planned. </li>
+        </ul>
+        <p>Etc. etc. The bottomlines is this: The Fronten Styleguide is currently is an early, but still functioning, prototyping-stage. <br>The road ahead is exciting! </p>
+        </div>
+    </div>
+</div>
+
 ## Installation
 
 Here are a few different ways to use the Standards within your project.
