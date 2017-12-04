@@ -402,20 +402,20 @@
 
 <p>First, download the Web Design Standards assets:</p>
 
-<p><a class="link-download" href="https://github.com/18F/web-design-standards/releases/download/v1.0.2/uswds-1.0.2.zip">Download code</a>
+<p><a class="link-download" href="https://github.com/jonasjensen77/frontend-styleguide-components/releases/download/v1.0.2/dkwds-1.0.2.zip">Download code</a>
 <span class="link-download-subtext">Version 1.0.2</span></p>
 
 <p>Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>uswds-1.0.2/
+<div class="highlighter-rouge"><pre class="highlight"><code>dkwds-1.0.2/
 ├── js/
 │   ├── dkwds.min.js.map
 │   ├── dkwds.min.js
-│   └── uswds.js
+│   └── dkwds.js
 ├── css/
-│   ├── uswds.min.css.map
-│   ├── uswds.min.css
-│   └── uswds.css
+│   ├── dkwds.min.css.map
+│   ├── dkwds.min.css
+│   └── dkwds.css
 ├── img/
 └── fonts/
 </code></pre>
@@ -426,7 +426,7 @@ into your HTML pages:</p>
 
 <p>Add this to your <code class="highlighter-rouge">&lt;head&gt;</code> element:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/path/to/your/assets/css/lib/uswds.min.css"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/path/to/your/assets/css/lib/dkwds.min.css"</span><span class="nt">&gt;</span>
 </code></pre>
 </div>
 
@@ -447,17 +447,17 @@ the browser. The examples above recommend using the minified versions.</p>
 
 <p>Note: Using npm to install the Standards will include jQuery version <code class="highlighter-rouge">2.2.0</code>. Please make sure that you’re not including any other version of jQuery on your page.</p>
 
-<p>If you have <code class="highlighter-rouge">node</code> installed on your machine, you can use npm to install the Standards. Add <code class="highlighter-rouge">uswds</code>
+<p>If you have <code class="highlighter-rouge">node</code> installed on your machine, you can use npm to install the Standards. Add <code class="highlighter-rouge">dkwds</code>
 to your project’s <code class="highlighter-rouge">package.json</code> as a dependency:</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>npm install --save uswds
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>npm install --save dkwds
 </code></pre>
 </div>
 
-<p>The package will be installed in <code class="highlighter-rouge">node_modules/uswds</code>. You can use the un-compiled files
+<p>The package will be installed in <code class="highlighter-rouge">node_modules/dkwds</code>. You can use the un-compiled files
 found in the <code class="highlighter-rouge">src/</code> or the compiled files in the <code class="highlighter-rouge">dist/</code> directory.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>node_modules/uswds/
+<div class="highlighter-rouge"><pre class="highlight"><code>node_modules/dkwds/
 ├── dist/
 │   ├── css/
 │   ├── fonts/
@@ -471,23 +471,23 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
 </code></pre>
 </div>
 
-<p><code class="highlighter-rouge">require('uswds')</code> will load all of the U.S. Web Design Standard’s JavaScript onto the page. The <code class="highlighter-rouge">uswds</code> module itself does not export anything.</p>
+<p><code class="highlighter-rouge">require('dkwds')</code> will load all of the U.S. Web Design Standard’s JavaScript onto the page. The <code class="highlighter-rouge">dkwds</code> module itself does not export anything.</p>
 
 <p>The main Sass (SCSS) source file is here:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>node_modules/uswds/src/stylesheets/all.scss
+<div class="highlighter-rouge"><pre class="highlight"><code>node_modules/dkwds/src/stylesheets/all.scss
 </code></pre>
 </div>
 
 <p>The non-minified CSS that’s been precompiled is here:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>node_modules/uswds/dist/css/uswds.css
+<div class="highlighter-rouge"><pre class="highlight"><code>node_modules/dkwds/dist/css/dkwds.css
 </code></pre>
 </div>
 
 <h3 id="using-another-framework-or-package-manager">Using another framework or package manager</h3>
 
-<p>If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the <a href="#download">download instructions</a>. Please note that the core team <a href="https://github.com/18F/web-design-standards/issues/877">isn’t responsible for all frameworks’ implementations</a>.</p>
+<p>If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the <a href="#download">download instructions</a>. Please note that the core team isn’t responsible for all frameworks’ implementations.</p>
 
 <p>If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project’s build system can help you create distribution bundles to use in your project. Please read our <a href="https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md">contribution guidelines</a> to locally build distributions for your framework or package manager.</p>
 
@@ -496,8 +496,6 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
 <p>Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:</p>
 
 <p><a href="https://github.com/18F/web-design-standards/issues">https://github.com/18F/web-design-standards/issues</a>.</p>
-
-<p>You can also email us directly at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>.</p>
 
 <h2 id="css-architecture">CSS architecture</h2>
 
@@ -525,7 +523,7 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
 
 <div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// src/main.scss
 </span><span class="k">@import</span> <span class="s1">'path/to/my/scss/files/main/scss/my-custom-vars'</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s1">'lib/uswds/src/stylesheets/all'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">'lib/dkwds/src/stylesheets/all'</span><span class="p">;</span>
 </code></pre>
 </div>
 
@@ -563,7 +561,7 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
 
 <ul>
   <li><strong>HTML</strong> markup for the components is located in: <code class="highlighter-rouge">src/html</code> in the site root.</li>
-  <li><strong>Sass</strong> styles are located in: <code class="highlighter-rouge">src/stylesheets/ (/core, /elements, /components)</code>. <strong>Compiled CSS</strong> is located in the <a href="/releases/download/v1.0.2/uswds-1.0.2.zip">downloadable zip file</a> .</li>
+  <li><strong>Sass</strong> styles are located in: <code class="highlighter-rouge">src/stylesheets/ (/core, /elements, /components)</code>. <strong>Compiled CSS</strong> is located in the <a href="https://github.com/jonasjensen77/frontend-styleguide-components/releases/download/v1.0.2/dkwds-1.0.2.zip">downloadable zip file</a> .</li>
   <li><strong>JS</strong> is located in: <code class="highlighter-rouge">src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)</code>.</li>
   <li><strong>Fonts</strong> are located in: <code class="highlighter-rouge">src/fonts</code>.</li>
   <li><strong>Images</strong> and icons are located in: <code class="highlighter-rouge">src/img</code>.</li>
@@ -579,7 +577,7 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
 
 <p>We’re so glad you’re thinking about contributing to the Standards! You can find our complete <a href="https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md">contribution guidelines</a> in our repo — please review them before submitting your contribution.</p>
 
-<p>If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to <a href="mailto:uswebdesignstandards@gsa.gov">email us</a> — we’ll get back to you within 48 hours.</p>
+<p>If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to <a href="mailto:test@test.test">email us</a> — we’ll get back to you within 48 hours.</p>
 
 
       </section>

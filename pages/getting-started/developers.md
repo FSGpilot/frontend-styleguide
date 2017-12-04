@@ -29,21 +29,21 @@ To use the Web Design Standards on your project, you’ll need to include the CS
 
 First, download the Web Design Standards assets:
 
-<a class="link-download" href="https://github.com/18F/web-design-standards/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip">Download code</a>
+<a class="link-download" href="https://github.com/jonasjensen77/frontend-styleguide-components/releases/download/v{{ site.version }}/dkwds-{{ site.version }}.zip">Download code</a>
 <span class="link-download-subtext">Version {{ site.version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
 
 ```
-uswds-{{ site.version }}/
+dkwds-{{ site.version }}/
 ├── js/
 │   ├── dkwds.min.js.map
 │   ├── dkwds.min.js
-│   └── uswds.js
+│   └── dkwds.js
 ├── css/
-│   ├── uswds.min.css.map
-│   ├── uswds.min.css
-│   └── uswds.css
+│   ├── dkwds.min.css.map
+│   ├── dkwds.min.css
+│   └── dkwds.css
 ├── img/
 └── fonts/
 ```
@@ -54,7 +54,7 @@ into your HTML pages:
 Add this to your `<head>` element:
 
 ```html
-<link rel="stylesheet" href="/path/to/your/assets/css/lib/uswds.min.css">
+<link rel="stylesheet" href="/path/to/your/assets/css/lib/dkwds.min.css">
 ```
 
 Add this before the closing `</body>` tag:
@@ -74,18 +74,18 @@ And that’s it — you should be set to use the Standards.
 
 Note: Using npm to install the Standards will include jQuery version `2.2.0`. Please make sure that you’re not including any other version of jQuery on your page.
 
-If you have `node` installed on your machine, you can use npm to install the Standards. Add `uswds`
+If you have `node` installed on your machine, you can use npm to install the Standards. Add `dkwds`
 to your project’s `package.json` as a dependency:
 
 ```shell
-npm install --save uswds
+npm install --save dkwds
 ```
 
-The package will be installed in `node_modules/uswds`. You can use the un-compiled files
+The package will be installed in `node_modules/dkwds`. You can use the un-compiled files
 found in the `src/` or the compiled files in the `dist/` directory.
 
 ```
-node_modules/uswds/
+node_modules/dkwds/
 ├── dist/
 │   ├── css/
 │   ├── fonts/
@@ -98,23 +98,23 @@ node_modules/uswds/
     └── stylesheets/
 ```
 
-`require('uswds')` will load all of the U.S. Web Design Standard’s JavaScript onto the page. The `uswds` module itself does not export anything.
+`require('dkwds')` will load all of the U.S. Web Design Standard’s JavaScript onto the page. The `dkwds` module itself does not export anything.
 
 The main Sass (SCSS) source file is here:
 
 ```
-node_modules/uswds/src/stylesheets/all.scss
+node_modules/dkwds/src/stylesheets/all.scss
 ```
 
 The non-minified CSS that’s been precompiled is here:
 
 ```
-node_modules/uswds/dist/css/uswds.css
+node_modules/dkwds/dist/css/dkwds.css
 ```
 
 ### Using another framework or package manager
 
-If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team [isn’t responsible for all frameworks’ implementations](https://github.com/18F/web-design-standards/issues/877).
+If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team isn’t responsible for all frameworks’ implementations.
 
 If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project’s build system can help you create distribution bundles to use in your project. Please read our [contribution guidelines][] to locally build distributions for your framework or package manager.
 
@@ -123,8 +123,6 @@ If you’re interested in maintaining a package that helps us distribute the U.S
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:
 
 [https://github.com/18F/web-design-standards/issues](https://github.com/18F/web-design-standards/issues).
-
-You can also email us directly at [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov).
 
 ## CSS architecture
 
@@ -152,7 +150,7 @@ To start theming through Sass, copy the `core/variables` file into your own proj
 ```scss
 // src/main.scss
 @import 'path/to/my/scss/files/main/scss/my-custom-vars';
-@import 'lib/uswds/src/stylesheets/all';
+@import 'lib/dkwds/src/stylesheets/all';
 ```
 
 ```scss
@@ -187,7 +185,7 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 ## Where things live
 
 * **HTML** markup for the components is located in: `src/html` in the site root.
-* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip) .
+* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file](https://github.com/jonasjensen77/frontend-styleguide-components/releases/download/v{{ site.version }}/dkwds-{{ site.version }}.zip) .
 * **JS** is located in: `src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)`.
 * **Fonts** are located in: `src/fonts`.
 * **Images** and icons are located in: `src/img`.
@@ -202,6 +200,6 @@ The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w
 
 We’re so glad you’re thinking about contributing to the Standards! You can find our complete [contribution guidelines][] in our repo — please review them before submitting your contribution.
 
-If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to [email us](mailto:uswebdesignstandards@gsa.gov) — we’ll get back to you within 48 hours.
+If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to [email us](mailto:test@test.test) — we’ll get back to you within 48 hours.
 
 [contribution guidelines]: https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md
