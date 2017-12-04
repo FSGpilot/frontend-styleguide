@@ -66,18 +66,17 @@ title: Frontend Styleguiden
 
   <div class="col-8 content">
     <h2>
-      Github for ikke teknikere
+      Bidrag til frontend styleguiden som ikke-koder
     </h2>
     <p>
-      Lorem ipsum dolor sit amet, tellus lacus lectus pretium, magna at sed, ligula hendrerit suspendisse eu
-      justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor tellus quis sit, duis
-      proin libero eu diam, vestibulum venenatis, senectus lectus sed a egestas molestie feugiat,
-      consectetuer vel vivamus penatibus viverra. In nec magna sagittis interdum nec in, sociosqu tellus nec
-      senectus cum, lorem lorem dolor, commodo ut eu ac. Vestibulum pellentesque volutpat mus rhoncus
-      sem, mattis in nonummy libero vel commodo, arcu dui maecenas purus placerat vitae.
+      Har du en tanke eller en ændring du har lyst til bidrage med til frontend styleguiden, men har aldrig skrevet en linjes kode i dit liv?
+      Så kan du her nemt komme igang med at bidrage til frontend styleguidens mange tekstsider. 
+      Det er nemlig sådan at alle tekstsiderne på frontend styleguiden er skrevet med noget der hedder "Markdown".
+      At skrive Markdown er næsten ligesom at skrive et almindeligt word dokument, og når man er færdig med sit bidrag og tilføjer det til frontend styleguidens hjemmeside, bliver det automatisk lavet om til en præsentabel side.
     </p>
+    <p>For at sætte din computer op til at kunne skrive bidrag til frontend styleguiden, skal du blot følge nedenstående link</p>
     <p>
-      <a href="http://github.com">Dokumentationen til opsætning af GitHub</a>
+      <a href="https://github.com/jonasjensen77/frontend-styleguide-poc/blob/master/contribution_for_nontech.md">Opsætning af computer for bidragelse</a>
     </p>
   
     <h2>Få hjælp og inspiration</h2>
