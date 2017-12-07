@@ -17,6 +17,7 @@ incremental_regeneration_fixer:
   interdependent_files:
 #     - "_components/colors/*"
     - "_components/komponenter/form-controls/*"
+    - "_components/komponenter/tables/*"
 #     - "_components/form-templates/*"
 #     - "_components/typography/*"
 
