@@ -2,7 +2,7 @@
 title: Datatable
 parent: Tables
 order: 01
-lead: bla bla bla 
+lead: Documentation pending 
 ---
 
 {% include code/preview.html component="datatable" %}

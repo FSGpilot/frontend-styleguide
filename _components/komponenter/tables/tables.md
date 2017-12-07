@@ -11,6 +11,16 @@ lead: Tables show tabular data in columns and rows.
 subnav:
 - text: Datatable
   href: '#datatable'
+- text: Expandable table
+  href: '#expandable-table'
+- text: Bordered table
+  href: '#bordered-table'
+- text: Bordered zebra table
+  href: '#bordered-zebra-table'
+- text: Borderless table
+  href: '#borderless-table'
+- text: Borderless zebra table
+  href: '#borderless-zebra-table'
 ---
 
 <p>Intro text</p>

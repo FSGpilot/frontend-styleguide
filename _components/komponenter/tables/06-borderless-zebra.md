@@ -2,7 +2,7 @@
 title: Borderless zebra table
 parent: Tables
 order: 06
-lead: bla bla bla 
+lead: Documentation pending
 ---
 
 {% include code/preview.html component="borderless-zebra" %}

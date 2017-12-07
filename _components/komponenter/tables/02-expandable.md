@@ -2,7 +2,7 @@
 title: Expandable table
 parent: Tables
 order: 02
-lead: bla bla bla 
+lead: Documentation pending
 ---
 
 {% include code/preview.html component="expandable" %}
