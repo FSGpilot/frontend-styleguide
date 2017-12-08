@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/alerts--warning.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--warning.html
 layout: iframed 
-title: Alerts--warning.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--warning.html
 ---
 <div class="alert alert-warning">
     <div class="alert-body">

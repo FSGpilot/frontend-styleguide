@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/links.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/links.html
 layout: iframed 
-title: Links.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/links.html
 ---
 <p>
     <a href="javascript:void(0);" class="">This</a>

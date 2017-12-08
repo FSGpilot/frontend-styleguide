@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/hero.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/hero.html
 layout: iframed 
-title: Hero.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/hero.html
 ---
 <section class="hero">
     <div class="container">

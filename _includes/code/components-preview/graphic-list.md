@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/graphic-list.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/graphic-list.html
 layout: iframed 
-title: Graphic-list.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/graphic-list.html
 ---
 <section class="section section-dark graphic_list">
     <div class="grid graphic_list-row">

@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/grid-uswds--default.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/grid-uswds--default.html
 layout: iframed 
-title: Grid-uswds--default.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/grid-uswds--default.html
 ---
 <div class="grid-example">
     <div class="usa-grid">

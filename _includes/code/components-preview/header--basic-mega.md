@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/header--basic-mega.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/header--basic-mega.html
 layout: iframed 
-title: Header--basic-mega.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/header--basic-mega.html
 ---
 <header class="header header-basic header-basic-megamenu" role="banner">
     <div class="nav-container">

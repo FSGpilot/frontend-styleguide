@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/header--extended.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/header--extended.html
 layout: iframed 
-title: Header--extended.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/header--extended.html
 ---
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr" class="no-js">
@@ -43,10 +43,10 @@ title: Header--extended.html
             <code class="Error-stack">
         <pre>Template render error: (unknown path)
   Error: Could not render component '@nav-solution-header' - component not found.
-    at Object.exports.prettifyError (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\nunjucks\src\lib.js:34:15)
-    at C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\nunjucks\src\environment.js:486:31
-    at eval (eval at _compile (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:10:11)
-    at entity.render.then.catch.err (C:\Projects\DIGST-ERST\Analyse\Code\dk-web-design-standards\node_modules\@frctl\nunjucks\src\extensions\render.js:46:21)
+    at Object.exports.prettifyError (/home/morten/Code/Netcompany/dkwds-components/node_modules/nunjucks/src/lib.js:34:15)
+    at /home/morten/Code/Netcompany/dkwds-components/node_modules/nunjucks/src/environment.js:486:31
+    at eval (eval at _compile (/home/morten/Code/Netcompany/dkwds-components/node_modules/nunjucks/src/environment.js:565:24), <anonymous>:10:11)
+    at entity.render.then.catch.err (/home/morten/Code/Netcompany/dkwds-components/node_modules/@frctl/nunjucks/src/extensions/render.js:46:21)
     at process._tickCallback (internal/process/next_tick.js:109:7)</pre>
     </code>
 

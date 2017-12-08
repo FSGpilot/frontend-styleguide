@@ -1,34 +1,53 @@
 --- 
-permalink: /preview-components/grid--offsets.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/grid--offsets.html
 layout: iframed 
-title: Grid--offsets.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/grid--offsets.html
 ---
 <div class="grid-example">
     <div class="container">
         <div class="row">
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="grid-example">
+    <div class="container">
+        <div class="row">
             <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
         </div>
         <div class="row">
-            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
-            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
         </div>
         <div class="row">
-            <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+            <div class="col-auto mr-auto">.col-auto .mr-auto</div>
+            <div class="col-auto">.col-auto</div>
         </div>
     </div>
 </div>
 
 <style scoped>
     .grid-example {
-        margin-bottom: 2em;
+        position: relative;
+        padding: 16px;
+        margin: 16px -15px;
+        border: 3px 0 0 solid #f7f7f9;
     }
 
-    .grid-example>.row>.col,
-    .grid-example .row>[class^=col-] {
-        padding-top: .75rem;
-        padding-bottom: .75rem;
-        background-color: rgba(86, 61, 124, .15);
-        border: 1px solid rgba(86, 61, 124, .2);
+    @media (min-width: 576px) {
+        .grid-example {
+            padding: 24px;
+            margin: 16px 0 0 0;
+        }
     }
 </style>

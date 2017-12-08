@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/accordion--bordered.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/accordion--bordered.html
 layout: iframed 
-title: Accordion--bordered.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/accordion--bordered.html
 ---
 <ul class="accordion-bordered">
 

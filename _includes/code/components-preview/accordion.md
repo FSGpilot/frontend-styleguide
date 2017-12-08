@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/accordion.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/accordion.html
 layout: iframed 
-title: Accordion.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/accordion.html
 ---
 <ul class="accordion">
 

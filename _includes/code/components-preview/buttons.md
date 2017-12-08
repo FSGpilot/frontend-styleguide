@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/buttons.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/buttons.html
 layout: iframed 
-title: Buttons.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/buttons.html
 ---
 <h4>
 

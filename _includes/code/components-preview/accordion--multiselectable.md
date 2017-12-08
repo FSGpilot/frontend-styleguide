@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/accordion--multiselectable.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/accordion--multiselectable.html
 layout: iframed 
-title: Accordion--multiselectable.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/accordion--multiselectable.html
 ---
 <ul class="accordion" aria-multiselectable="true">
 

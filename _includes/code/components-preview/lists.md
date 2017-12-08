@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/lists.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/lists.html
 layout: iframed 
-title: Lists.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/lists.html
 ---
 <div class="usa-grid-full">
     <div class="usa-width-one-third">

@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/datatable.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/datatable.html
 layout: iframed 
-title: Datatable.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/datatable.html
 ---
 <div class="table-container">
     <section class="dt-menu">

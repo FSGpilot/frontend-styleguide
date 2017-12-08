@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/banner.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/banner.html
 layout: iframed 
-title: Banner.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/banner.html
 ---
 <div class="banner">
     <div class="accordion">

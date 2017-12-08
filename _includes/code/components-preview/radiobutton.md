@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/radiobutton.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/radiobutton.html
 layout: iframed 
-title: Radiobutton.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/radiobutton.html
 ---
 <div class="container">
     <fieldset class="fieldset-inputs sans">

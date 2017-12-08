@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/footer--small.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/footer--small.html
 layout: iframed 
-title: Footer--small.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/footer--small.html
 ---
 <footer class="footer" role="contentinfo">
     <div class="container footer-return-to-top">
@@ -13,7 +13,7 @@ title: Footer--small.html
                 <div class="col-12 col-sm-6 col-md-3">
                     <ul class="unstyled-list footer-primary-content">
                         <li class="footer-primary-link">
-                            <h5>Ansvarlig myndighed</h5>
+                            <h4>Ansvarlig myndighed</h4>
                         </li>
                         <li>
                             <a href="javascript:void(0);">Landbrug- fødevarer og erhversstyrelsen</a>
@@ -24,7 +24,7 @@ title: Footer--small.html
                 <div class="col-12 col-sm-6 col-md-3">
                     <ul class="unstyled-list footer-primary-content">
                         <li class="footer-primary-link">
-                            <h5>Kontakt</h5>
+                            <h4>Kontakt</h4>
                         </li>
                         <address>
                             <li>

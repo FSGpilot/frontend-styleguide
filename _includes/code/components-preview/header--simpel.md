@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/header--simpel.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/header--simpel.html
 layout: iframed 
-title: Header--simpel.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/header--simpel.html
 ---
 <header class="header header-extended" role="banner">
 

@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/icons.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/icons.html
 layout: iframed 
-title: Icons.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/icons.html
 ---
 <div class="icon-list row">
 

@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/name-form.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/name-form.html
 layout: iframed 
-title: Name-form.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/name-form.html
 ---
 <form class="form-large">
     <fieldset>

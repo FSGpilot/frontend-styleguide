@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/fonts.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/fonts.html
 layout: iframed 
-title: Fonts.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/fonts.html
 ---
 <section id="heading" class="usa-grid">
     <h4 class="usa-heading-alt">Raleway (<tt>.usa-heading</tt>)</h4>

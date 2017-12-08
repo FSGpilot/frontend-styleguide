@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/typesetting.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/typesetting.html
 layout: iframed 
-title: Typesetting.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/typesetting.html
 ---
 <div class="container">
     <div class="row">

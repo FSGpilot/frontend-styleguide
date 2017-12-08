@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/sidebar.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/sidebar.html
 layout: iframed 
-title: Sidebar.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/sidebar.html
 ---
 <div class="col-12 col-md-6">
 
