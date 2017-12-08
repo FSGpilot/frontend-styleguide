@@ -76,7 +76,7 @@ title: Frontend Styleguiden
     </p>
     <p>For at sætte din computer op til at kunne skrive bidrag til frontend styleguiden, skal du blot følge nedenstående link</p>
     <p>
-      <a href="https://github.com/jonasjensen77/frontend-styleguide-poc/blob/master/contribution_for_nontech.md">Opsætning af computer for bidragelse</a>
+      <a href="{{ site.baseurl }}/getting-started/bidrag-til-designsystemet/#bidrag-til-styleguiden-uden-kendskab-til-kode">Opsætning af computer for bidragelse</a>
     </p>
   
     <h2>Få hjælp og inspiration</h2>
