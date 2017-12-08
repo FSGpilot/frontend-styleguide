@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/sidenav--compare.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/sidenav--compare.html
 layout: iframed 
-title: Sidenav--compare.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/sidenav--compare.html
 ---
 <section class="container">
     <div class="row">

@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/alerts--error.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--error.html
 layout: iframed 
-title: Alerts--error.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--error.html
 ---
 <div class="alert alert-error" role="alert">
     <div class="alert-body">

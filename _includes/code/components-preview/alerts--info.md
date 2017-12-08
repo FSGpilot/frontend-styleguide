@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/alerts--info.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--info.html
 layout: iframed 
-title: Alerts--info.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--info.html
 ---
 <div class="alert alert-success">
     <div class="alert-body">

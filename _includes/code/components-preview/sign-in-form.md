@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/sign-in-form.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/sign-in-form.html
 layout: iframed 
-title: Sign-in-form.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/sign-in-form.html
 ---
 <form class="form">
     <fieldset>

@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/checkbox.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/checkbox.html
 layout: iframed 
-title: Checkbox.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/checkbox.html
 ---
 <div class="container">
     <fieldset class="fieldset-inputs sans">

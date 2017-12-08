@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/password-reset-form.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/password-reset-form.html
 layout: iframed 
-title: Password-reset-form.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/password-reset-form.html
 ---
 <form class="form">
     <fieldset>

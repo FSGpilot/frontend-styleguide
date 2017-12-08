@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/grid-uswds--offsets.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/grid-uswds--offsets.html
 layout: iframed 
-title: Grid-uswds--offsets.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/grid-uswds--offsets.html
 ---
 <div class="grid-example">
     <div class="usa-grid">

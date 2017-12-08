@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/kitchen-sink.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/kitchen-sink.html
 layout: iframed 
-title: Kitchen-sink.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/kitchen-sink.html
 ---
 <!doctype html>
 
@@ -377,7 +377,7 @@ title: Kitchen-sink.html
                     <div class="col-12 col-sm-4 col-md-6">
                         <ul class="unstyled-list footer-primary-content">
                             <li class="footer-primary-link">
-                                <h5>Ansvarlig myndighed</h5>
+                                <h4>Ansvarlig myndighed</h4>
                             </li>
                             <li>
                                 <a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a>
@@ -388,7 +388,7 @@ title: Kitchen-sink.html
                     <div class="col-12 col-sm-4 col-md-3">
                         <ul class="unstyled-list footer-primary-content">
                             <li class="footer-primary-link">
-                                <h5>Kontakt</h5>
+                                <h4>Kontakt</h4>
                             </li>
                             <address>
                                 <li>
@@ -405,7 +405,7 @@ title: Kitchen-sink.html
                     <div class="col-12 col-sm-4 col-md-3">
                         <ul class="unstyled-list footer-primary-content">
                             <li class="footer-primary-link">
-                                <h5>Emne</h5>
+                                <h4>Emne</h4>
                             </li>
 
                             <li>

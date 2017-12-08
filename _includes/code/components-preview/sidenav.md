@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/sidenav.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/sidenav.html
 layout: iframed 
-title: Sidenav.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/sidenav.html
 ---
 <ul class="sidenav-list">
 

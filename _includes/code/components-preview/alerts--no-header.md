@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/alerts--no-header.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--no-header.html
 layout: iframed 
-title: Alerts--no-header.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--no-header.html
 ---
 <div class="alert  alert-info">
     <div class="alert-body">

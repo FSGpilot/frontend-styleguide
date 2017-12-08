@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/search.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/search.html
 layout: iframed 
-title: Search.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/search.html
 ---
 <h6>
 

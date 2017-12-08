@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/grid.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/grid.html
 layout: iframed 
-title: Grid.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/grid.html
 ---
 <div class="grid-example">
     <div class="container">

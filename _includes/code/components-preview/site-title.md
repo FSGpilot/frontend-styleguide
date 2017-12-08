@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/site-title.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/site-title.html
 layout: iframed 
-title: Site-title.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/site-title.html
 ---
 <div class="navbar">
     <div class="logo" id="logo">

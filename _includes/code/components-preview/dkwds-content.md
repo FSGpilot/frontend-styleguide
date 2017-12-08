@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/dkwds-content.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/dkwds-content.html
 layout: iframed 
-title: Dkwds-content.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/dkwds-content.html
 ---
 <!doctype html>
 

@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/dropdown.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/dropdown.html
 layout: iframed 
-title: Dropdown.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/dropdown.html
 ---
 <div class="container">
     <form class="form">

@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/card.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/card.html
 layout: iframed 
-title: Card.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/card.html
 ---
 <div class="card card-large card-fit">
     <div class="card-header">

@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/overflow-menu.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/overflow-menu.html
 layout: iframed 
-title: Overflow-menu.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/overflow-menu.html
 ---
 <div class="overflow-menu">
     <button class="overflow-menu-btn">

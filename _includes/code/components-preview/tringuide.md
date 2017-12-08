@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/tringuide.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/tringuide.html
 layout: iframed 
-title: Tringuide.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/tringuide.html
 ---
 <ul class="sidenav-list">
 

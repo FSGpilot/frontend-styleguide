@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/multi-column-checkboxes.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/multi-column-checkboxes.html
 layout: iframed 
-title: Multi-column-checkboxes.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/multi-column-checkboxes.html
 ---
 <main class="container section">
     <div class="row">

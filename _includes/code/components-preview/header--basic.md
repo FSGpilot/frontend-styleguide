@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/header--basic.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/header--basic.html
 layout: iframed 
-title: Header--basic.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/header--basic.html
 ---
 <header class="header header-basic" role="banner">
     <div class="nav-container">

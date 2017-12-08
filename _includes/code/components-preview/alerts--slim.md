@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/alerts--slim.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--slim.html
 layout: iframed 
-title: Alerts--slim.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/alerts--slim.html
 ---
 <div class="alert alert-info alert-slim">
     <div class="alert-body">

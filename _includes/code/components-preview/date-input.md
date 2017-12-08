@@ -1,7 +1,7 @@
 --- 
-permalink: /preview-components/date-input.html
+permalink: /preview-components//home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/date-input.html
 layout: iframed 
-title: Date-input.html
+title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/date-input.html
 ---
 <div class="container">
 
