@@ -18,6 +18,7 @@ incremental_regeneration_fixer:
 #     - "_components/colors/*"
     - "_components/komponenter/form-controls/*"
     - "_components/komponenter/tables/*"
+    - "_components/fundament/grids/*"
 #     - "_components/form-templates/*"
 #     - "_components/typography/*"
 

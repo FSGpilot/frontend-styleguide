@@ -4,11 +4,11 @@ parent: Grids
 order: 01
 ---
 
-Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with [flexbo1x](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
+Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
 
 **New to or unfamiliar with flexbox?** [Read this CSS Tricks flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) for background, terminology, guidelines, and code snippets.
 
-{% include code/preview.html component="grid--how-it-works" %}
+{% include code/preview.html component="grid--how-it-works.html" %}
 {% include code/accordion.html component="grid--how-it-works" %}
 
 <style scoped>

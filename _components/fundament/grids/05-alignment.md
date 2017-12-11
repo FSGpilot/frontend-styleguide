@@ -8,15 +8,15 @@ Use flexbox alignment utilities to vertically and horizontally align columns.
 
 ### Vertical alignment
 
-{% include code/preview.html component="grid--vertical-align-01" %}
+{% include code/preview.html component="grid--vertical-align-01.html" %}
 {% include code/accordion.html component="grid--vertical-align-01" %}
 
-{% include code/preview.html component="grid--vertical-align-02" %}
+{% include code/preview.html component="grid--vertical-align-02.html" %}
 {% include code/accordion.html component="grid--vertical-align-02" %}
 
 ### Horizontal alignment
 
-{% include code/preview.html component="grid--horizontal-align" %}
+{% include code/preview.html component="grid--horizontal-align.html" %}
 {% include code/accordion.html component="grid--horizontal-align" %}
 
 ### No gutters
@@ -31,14 +31,14 @@ Here's the source code for creating these styles. Note that column overrides are
 
 In practice, here’s how it looks. Note you can continue to use this with all other predefined grid classes (including column widths, responsive tiers, reorders, and more).
 
-{% include code/preview.html component="grid--no-gutters" %}
+{% include code/preview.html component="grid--no-gutters.html" %}
 {% include code/accordion.html component="grid--no-gutters" %}
 
 ### Column wrapping
 
 If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
 
-{% include code/preview.html component="grid--column-wrapping" %}
+{% include code/preview.html component="grid--column-wrapping.html" %}
 {% include code/accordion.html component="grid--column-wrapping" %}
 
 <style scoped>

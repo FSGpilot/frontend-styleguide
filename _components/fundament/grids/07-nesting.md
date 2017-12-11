@@ -6,7 +6,7 @@ order: 07
 
 To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-sm-\*</code> columns within an existing <code>.col-sm-\*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
 
-{% include code/preview.html component="grid--nesting" %}
+{% include code/preview.html component="grid--nesting.html" %}
 {% include code/accordion.html component="grid--nesting" %}
 
 <style scoped>

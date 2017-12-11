@@ -10,21 +10,21 @@ Bootstrap's grid includes five tiers of predefined classes for building complex 
 
 For grids that are the same from the smallest of devices to the largest, use the <code>.col</code> and <code>.col-\*</code> classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to <code>.col</code>.
 
-{% include code/preview.html component="grid--all-breakpoints" %}
+{% include code/preview.html component="grid--all-breakpoints.html" %}
 {% include code/accordion.html component="grid--all-breakpoints" %}
 
 ### Stacked to horizontal
 
 Using a single set of <code>.col-sm-\*</code> classes, you can create a basic grid system that starts out stacked on extra small devices before becoming horizontal on desktop (medium) devices.
 
-{% include code/preview.html component="grid--stacked-horizontal" %}
+{% include code/preview.html component="grid--stacked-horizontal.html" %}
 {% include code/accordion.html component="grid--stacked-horizontal" %}
 
 ### Mix and match
 
 Don't want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.
 
-{% include code/preview.html component="grid--mix-match" %}
+{% include code/preview.html component="grid--mix-match.html" %}
 {% include code/accordion.html component="grid--mix-match" %}
 
 <style scoped>
