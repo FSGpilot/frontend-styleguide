@@ -41,12 +41,19 @@ gulp.task('copy-iframe-script', function (done) {
     var stream = gulp.src(['./node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js', './node_modules/iframe-resizer/js/iframeResizer.contentWindow.map'])
     .pipe(gulp.dest('_site/assets/js/vendor'))
     .pipe(gulp.dest('assets/js/vendor'));
-  
+
     return stream;
-  
+
   });
 
-gulp.task(task, [ 'copy-dkwds-javascript', 'copy-iframe-script','eslint' ], function (done) {
+gulp.task('copy-highlightjs-script', function (done) {
+    var stream = gulp.src('./node_modules/dkwds/src/vendor/highlightjs/*')
+        .pipe(gulp.dest('assets/js/vendor'));
+
+    return stream;
+});
+
+gulp.task(task, [ 'copy-dkwds-javascript', 'copy-iframe-script', 'copy-highlightjs-script', 'eslint' ], function (done) {
 
   // dutil.logMessage(task, 'Compiling JavaScript');
 
