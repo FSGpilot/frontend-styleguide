@@ -4,7 +4,8 @@ layout: iframed
 title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/datatable.html
 ---
 <div class="table-container">
-    <section class="dt-menu">
+    <h5>Table title</h5>
+    <section class="menu">
         <div class="selected-rows-menu">
             <button class="menu-selection-button" type="button">
                 <span>Delete</span>
@@ -18,8 +19,8 @@ title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/datatab
                 <span>Pause</span>
                 <i class="mdi mdi-pause-circle"></i>
             </button>
-            <div class="dt-selected-items-counter">
-                <span class="dt-selected-items-counter-value"></span>
+            <div class="selected-items-counter">
+                <span class="selected-items-counter-value"></span>
                 <span> items selected</span>
             </div>
             <button class="cancel">

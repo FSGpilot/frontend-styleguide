@@ -48,8 +48,7 @@ title: /home/morten/Code/Netcompany/dkwds-docs/_includes/code/components/header-
     at Object.exports.prettifyError (/home/morten/Code/Netcompany/dkwds-components/node_modules/nunjucks/src/lib.js:34:15)
     at /home/morten/Code/Netcompany/dkwds-components/node_modules/nunjucks/src/environment.js:486:31
     at eval (eval at _compile (/home/morten/Code/Netcompany/dkwds-components/node_modules/nunjucks/src/environment.js:565:24), <anonymous>:18:11)
-    at entity.render.then.catch.err (/home/morten/Code/Netcompany/dkwds-components/node_modules/@frctl/nunjucks/src/extensions/render.js:46:21)
-    at process._tickCallback (internal/process/next_tick.js:109:7)</pre>
+    at entity.render.then.catch.err (/home/morten/Code/Netcompany/dkwds-components/node_modules/@frctl/nunjucks/src/extensions/render.js:46:21)</pre>
     </code>
 
         </div>
