@@ -29,7 +29,7 @@ lead: Datatable presents the data and enables user to sort it by clicking the he
                         <td>A class for the main division. The table and all its parts should be inside table-cointainer.</td>
                     </tr>
                     <tr>
-                        <td>dt-menu</td>
+                        <td>menu</td>
                         <td>The menu above the table. All components such as search input, buttons and selection buttons are parts of the menu.</td>
                     </tr>
                     <tr>

@@ -14,7 +14,7 @@ subnav:
 - text: Expandable table
   href: '#expandable-table'
 - text: Table styles
-  href: '#styles'
+  href: '#table-styles'
 ---
 
 {% include child-sections.html parent='Tables' %}
