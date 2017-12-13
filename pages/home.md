@@ -80,20 +80,14 @@ title: Frontend Styleguiden
   
     <h2>Få hjælp og inspiration</h2>
     <p>
-      Lorem ipsum dolor sit amet, tellus lacus lectus pretium, magna at sed, ligula hendrerit suspendisse eu
-      justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor tellus quis sit, duis
-      proin libero eu diam, vestibulum venenatis, senectus lectus sed a egestas molestie feugiat,
-      consectetuer vel vivamus penatibus viverra. In nec magna sagittis interdum nec in, sociosqu tellus nec
-      senectus cum, lorem lorem dolor, commodo ut eu ac. Vestibulum pellentesque volutpat mus rhoncus
-      sem, mattis in nonummy libero vel commodo, arcu dui maecenas purus placerat vitae.
+      Er du i tvivl om hvordan du kommer i gang med at bruge Frontend Styleguiden eller vil blot vide hvad den kan bruges til, er der massere af hjælp at hente. Under <a href="{{site.baseurl}}/components/">designsystem</a> kan du finde alt fra gode designretningslinjer til en beskrivelse af alle byggestenene som kan bruges til at bygge en ny selvbetjeningsløsning.
+      Mangler du inspiration til din løsning, kan du under <a href="{{site.baseurl}}/page-templates/eksemplariske-eksempler/">eksempler</a> finde forskellige typer af eksemplariske eksempler. I Frontend Styleguiden er der så vidt muligt medfølgende eksempelkode til både dele af og hele selvbetjeningsløsninger.
     </p>
     <p>
-      In nec magna sagittis interdum nec in, sociosqu tellus nec senectus cum, lorem lorem dolor, commodo
-      ut eu ac. Vestibulum pellentesque volutpat mus rhoncus sem, mattis in nonummy libero vel commodo,
-      arcu dui maecenas purus placerat vitae.
+      Har du stadig spørgsmål eller undren til Frontend Styleguiden, eller har du blot et ønske til en komponent som mangler, så skriv til os ved at klikke på nedenstående link:
     </p>
     <p>
-      <a href="http://github.com">Skriv til os via GitHub</a>     
+      <a href="https://github.com/jonasjensen77/frontend-styleguide-poc/issues">Skriv til os via GitHub</a>     
     </p>
   </div>
 </div>

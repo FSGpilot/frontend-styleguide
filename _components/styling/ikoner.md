@@ -16,7 +16,7 @@ order: 25
 
 Ikonerne nedenfor har bestemte betydninger. Ikonerne kan anvendes på flere måder end eksemplerne viser, men betydningen af dem skal altid være den, som fremgår af manualen.
 
-<p>Full list here: <a href="https://materialdesignicons.com">http://https://materialdesignicons.com</a></p>
+<p>Se alle ikoner her: <a href="https://materialdesignicons.com">http://https://materialdesignicons.com</a></p>
 
 {% include code/preview.html component="icons" %}
 

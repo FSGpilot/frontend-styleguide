@@ -1,7 +1,7 @@
 ---
 permalink: /getting-started/projectmanagers/
 layout: styleguide
-title: Til projektledere
+title: Til projektlederne
 category: Getting started
 lead: Denne side henvender sig til projektledere. Der er nedenfor indsat links til andre sider med indhold lig det, der vil være at finde på denne side.
 subnav:

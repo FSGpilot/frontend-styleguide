@@ -1,7 +1,7 @@
 ---
 type: component
 title: Text accessibility
-parent: colors
+parent: colors-depricated
 order: 02
 ---
 

@@ -10,7 +10,7 @@ order: 25
 
 Standarden for tilgængelighed hedder WCAG 2.0, og den er inddelt i 3 niveauer: A, AA og AAA.Det er besluttet at vi i Danmark skal leve op til niveau AA. 
 
-For hvert menupunkt i <u>komponentbiblioteket</u>, vil retningslinjer for tilgængelighed være specificeret yderligere. 
+For hvert menupunkt i [komponentbiblioteket]({{site.baseurl}}/components/komponenter), vil retningslinjer for tilgængelighed være specificeret yderligere. 
 
 ## GØR DIN LØSNING OPFATTELIGT
 
@@ -55,34 +55,34 @@ Både indholdet i din selvbetjeningsløsning og interaktionen med den skal være
 Læs mere om de enkelte punkter [her](http://arkitekturguiden.digitaliser.dk/godselvbetjening/kravbanken/Tilg%C3%A6ngelighed ) 
 
 
-## LINKS OM TILGÆNGELIGHED (Accordion)
+## LINKS OM TILGÆNGELIGHED
 
 - Web Content Accessibility Guidelines (WCAG) 2.0
 
-  http://www.w3.org/TR/WCAG20/
+  <http://www.w3.org/TR/WCAG20/>
 
 - How to meet WCAG 2.0 AA
 
-  http://www.w3.org/WAI/WCAG20/quickref/Overview.php
+  <http://www.w3.org/WAI/WCAG20/quickref/Overview.php>
 
 - Tips til at designe tilgængelige brugergrænseflader
 
-  http://www.w3.org/WAI/gettingstarted/tips/designing.html
+  <http://www.w3.org/WAI/gettingstarted/tips/designing.html>
 
 - WebAIM’s WCAG 2.0 Checklist
 
-  http://webaim.org/standards/wcag/checklist
+  <http://webaim.org/standards/wcag/checklist>
 
 - W3C cheatsheet – accessibility: WCAG2 at a glance
 
-  http://www.w3.org/2009/cheatsheet/#wcag2
+  <http://www.w3.org/2009/cheatsheet/#wcag2>
 
 - Techniques for WCAG 2.0
 
-  http://www.w3.org/TR/WCAG20-TECHS/
+  <http://www.w3.org/TR/WCAG20-TECHS/>
 
 - Ekstra: Section 508 Checklist
 
-  http://webaim.org/standards/508/checklist
+  <http://webaim.org/standards/508/checklist>
 
 

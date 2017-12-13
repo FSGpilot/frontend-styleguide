@@ -1,6 +1,6 @@
 ---
 permalink: /getting-started/bidrag-til-designsystemet/
-layout: Styleguide
+layout: styleguide
 title: Bidrag til designsystemet
 category: Getting started
 lead: Du vil her kunne finde forskellige guides til hvordan man kan komme i gang med at bidrage til Frontend styelguiden, både som programmør og som ikke-koder. 
