@@ -15,34 +15,12 @@ subnav:
 
 ### Current work: our sprint milestones
 
-See what we’re working on now and in the future by viewing what is being
-worked on or queued up to work on in our sprint milestones below. These are
-two-week increments of work that we commit to finishing, using Agile Product
-Development practices.
-
-<a href="https://github.com/18F/web-design-standards/milestones" class="button">View our sprint milestones</a>
+This section will contain what we’re working on now and in the future by viewing what is being
+worked on or queued up to work on in our milestones.
 
 ### Future work: our product roadmap
 
-Below is our our product roadmap: a long term plan of the goals, features,
-and long-term direction of the U.S. Web Design Standards. We update this
+Below will contain our product roadmap: a long term plan of the goals, features,
+and long-term direction of the Frontend Styleguide. We will update this
 every few months with the status of our progress, as well as add new
 high-level future requests and ideas.
-
-{% for milestone in site.data.milestones %}
-<section>
-  <h2 id="{{ milestone.id }}">{{ milestone.title }}</h2>
-  <ul>
-  {% for task in milestone.tasks %}
-    <li>
-      {{ task.title }}
-      {% if task.status %}
-          <a class="label label-{{ task.status | slugify }}" href="{{ task.url }}" aria-describedby="tooltip-text-{{ task.title | slugify }}">
-            {{ task.status }}
-          </a>
-      {% endif %}
-    </li>
-  {% endfor %}
-  </ul>
-</section>
-{% endfor %}

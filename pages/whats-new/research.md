@@ -6,10 +6,12 @@ redirect_from:
 layout: styleguide
 title: Research
 category: What’s new
-lead: User research will be a core aspect of the U.S. Web Design Standards project as it’s our main source of feedback and inspiration for future product development.
+lead: The Frontend Styleguide is made by taking empirical knowledge collected from research by leading UX-experts and mixing it with the fundament of the U.S. Web Design Standards. This results in a styleguide that is solid for building governmental self-service solutions, and enables building solutions with the average user in mind.
 ---
-We plan to use a combination of research methods, quantitative research like collecting web analytics to see in how frequently the Standards are used around the federal government, and qualitative research like remote and in-person observational studies to see whether the Standards are making government sites easier for people to use.
 
+The Frontend styleguide is not trying keep up with the newest trends. However the styleguide is made to be able to dynamically evolve. 
+
+<!-- From USWD>
 We’ll use this research to see how well the Standards are working and what needs to be improved. We can also provide user research services to teams that are using the Standards. These will be priced to allow teams around the federal government to engage with us and improve their product for their users. This benefits the Standards as well because we’ll get feedback on where they need to be improved and extended.
 
 ## Analytics Reporting
@@ -106,3 +108,4 @@ In addition to the services described in the above package, an analyst will work
 ##### Cost and Timeline
 * Cost: $24,000 to $31,000
 * Timeline: 3 to 4 Weeks
+<-->
