@@ -1628,6 +1628,8 @@ article {
   border-radius: 50%;
   margin-right: 10px;
   margin-top: 0;
+  display: inline-block;
+  text-align: center;
 
   .icon-color{
     fill: $color-gray-darkest;
