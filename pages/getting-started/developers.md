@@ -24,7 +24,7 @@ subnav:
         <h3 class="alert-heading">Work-in-progress!</h3>
         <div class="alert-text">
         <p>The Frontend Styleguiden is still a work-in-progress.</p>
-        <ul> 
+        <ul>
           <li> The documentation is far from finished </li>
           <li> There are many more components planned for later releases </li>
           <li> Same goes for examples: many more are planned. </li>
@@ -40,7 +40,7 @@ Here are a few different ways to use the Standards within your project.
 
 ### Download
 
-To use the Web Design Standards on your project, you’ll need to include the CSS and JavaScript files in each HTML page in your project.
+To use the Web Design Standards on your project, you'll need to include the CSS and JavaScript files in each HTML page in your project.
 
 First, download the Web Design Standards assets:
 
@@ -83,14 +83,14 @@ of your downloaded assets. And the un-minified version is better if you are in a
 development environment or would like to debug the CSS or JavaScript assets in
 the browser. The examples above recommend using the minified versions.
 
-And that’s it — you should be set to use the Standards.
+And that's it — you should be set to use the Standards.
 
 ### Using npm
 
-Note: Using npm to install the Standards will include jQuery version `2.2.0`. Please make sure that you’re not including any other version of jQuery on your page.
+Note: Using npm to install the Standards will include jQuery version `2.2.0`. Please make sure that you're not including any other version of jQuery on your page.
 
 If you have `node` installed on your machine, you can use npm to install the Standards. Add `dkwds`
-to your project’s `package.json` as a dependency:
+to your project's `package.json` as a dependency:
 
 ```shell
 npm install --save dkwds
@@ -113,7 +113,7 @@ node_modules/dkwds/
     └── stylesheets/
 ```
 
-`require('dkwds')` will load all of the Frontend Styleguide’s JavaScript onto the page. The `dkwds` module itself does not export anything.
+`require('dkwds')` will load all of the Frontend Styleguide's JavaScript onto the page. The `dkwds` module itself does not export anything.
 
 The main Sass (SCSS) source file is here:
 
@@ -121,7 +121,7 @@ The main Sass (SCSS) source file is here:
 node_modules/dkwds/src/stylesheets/all.scss
 ```
 
-The non-minified CSS that’s been precompiled is here:
+The non-minified CSS that's been precompiled is here:
 
 ```
 node_modules/dkwds/dist/css/dkwds.css
@@ -129,9 +129,9 @@ node_modules/dkwds/dist/css/dkwds.css
 
 ### Using another framework or package manager
 
-If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team isn’t responsible for all frameworks’ implementations.
+If you're using another framework or package manager that doesn't support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team isn't responsible for all frameworks' implementations.
 
-If you’re interested in maintaining a package that helps us distribute the Frontend Styleguide, the project’s build system can help you create distribution bundles to use in your project. Please read our [contribution guidelines][] to locally build distributions for your framework or package manager.
+If you're interested in maintaining a package that helps us distribute the Frontend Styleguide, the project's build system can help you create distribution bundles to use in your project. Please read our [contribution guidelines][] to locally build distributions for your framework or package manager.
 
 ### Need installation help?
 
@@ -147,9 +147,8 @@ You will also find a **[complete rapid-prototyping setup](https://github.com/jon
 ## CSS architecture
 
 * The CSS foundation of this site is built with the **[Sass](https://sass-lang.com)** preprocessor language.
-* Uses **[Bourbon](http://bourbon.io/)** for its simple and lightweight Sass mixin library, and the **[Neat](http://neat.bourbon.io/)** library for the grid framework. Bourbon and Neat are open-source products from **[thoughtbot](https://thoughtbot.com/)**.
-* The CSS organization and naming conventions follow **[18F’s CSS Coding Styleguide](https://pages.18f.gov/frontend/css-coding-styleguide/)**.
-* CSS selectors are **prefixed** with `usa` (For example: `.button`).
+* Uses **[Bourbon](http://bourbon.io/)** for its simple and lightweight Sass mixin library, and, as per default, uses the **[flexbox version](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)** of the **[Bootstrap](https://getbootstrap.com)** grid for its rigid and industry standard-grade rules.
+* The CSS organization and naming conventions follow **[18F's CSS Coding Styleguide](https://pages.18f.gov/frontend/css-coding-styleguide/)**.
 * Uses a **[modified BEM](https://pages.18f.gov/frontend/css-coding-styleguide/naming/)** approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: `.button-cool_feature-active`).
 * Uses **modular CSS** for scalable, modular, and flexible code.
 * Uses **nesting** when appropriate. Nest minimally with up to two levels of nesting.
@@ -163,9 +162,9 @@ You will also find a **[complete rapid-prototyping setup](https://github.com/jon
 
 ## Customization and theming
 
-The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards’ global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Standards set.
+The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards' global variables. If it isn't possible to use Sass, do theming by overriding the CSS rules in the Standards set.
 
-To start theming through Sass, copy the `core/variables` file into your own project’s Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Standards all.scss file.
+To start theming through Sass, copy the `core/variables` file into your own project's Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Standards all.scss file.
 
 ```scss
 // src/main.scss
@@ -187,10 +186,10 @@ $h2-font-size: 2rem;
 $h3-font-size: 1.75rem;
 $heading-line-height: 1.4;
 
-// Grid/breakpoints
-$small-screen:  540px !default;
-$medium-screen: 620px !default;
-$large-screen:  1120px !default;
+// Grid breakpoints
+$grid-sm:  540px !default;
+$grid-md:  620px !default;
+$grid-lg:  1120px !default;
 ```
 
 NOTE: If you plan on upgrading to newer versions of the Standards in the future, or are not using your own forked version of the Standards, try to avoid making changes in the Standards folder themselves. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
@@ -205,14 +204,14 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 
 ## Notes on accessibility
 
-We’ve designed the Standards to support older and newer browsers through progressive enhancement, and they officially support Internet Explorer 9 and up, along with the latest versions of Chrome, Firefox, and Safari. Internet Explorer 8 and below generally see very low usage, and most agency websites should be able to safely begin support at Internet Explorer 9.
+We've designed the Standards to support older and newer browsers through progressive enhancement, and they officially support Internet Explorer 9 and up, along with the latest versions of Chrome, Firefox, and Safari. Internet Explorer 8 and below generally see very low usage, and most agency websites should be able to safely begin support at Internet Explorer 9.
 
-The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We’re happy to answer questions about accessibility — email us for more information.
+The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We're happy to answer questions about accessibility — email us for more information.
 
 ## Contribution guidelines
 
-We’re so glad you’re thinking about contributing to the Standards! You can find our complete [contribution guidelines][] in our repo — please review them before submitting your contribution.
+We're so glad you're thinking about contributing to the Standards! You can find our complete [contribution guidelines][] in our repo — please review them before submitting your contribution.
 
-If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to [email us](mailto:test@test.test) — we’ll get back to you within 48 hours.
+If you have any questions about these guidelines (or the Standards, more generally), don't hesitate to [email us](mailto:test@test.test) — we'll get back to you within 48 hours.
 
 [contribution guidelines]: https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md
