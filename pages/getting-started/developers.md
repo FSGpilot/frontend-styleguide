@@ -147,7 +147,7 @@ You will also find a **[complete rapid-prototyping setup](https://github.com/jon
 ## CSS architecture
 
 * The CSS foundation of this site is built with the **[Sass](https://sass-lang.com)** preprocessor language.
-* Uses **[Bourbon](http://bourbon.io/)** for its simple and lightweight Sass mixin library, and, as per default, uses the **[Bootstrap](https://getbootstrap.com)** grid for its rigid and industry standard-grade rules.
+* Uses **[Bourbon](http://bourbon.io/)** for its simple and lightweight Sass mixin library, and, as per default, uses the **[flexbox version](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)** of the **[Bootstrap](https://getbootstrap.com)** grid for its rigid and industry standard-grade rules.
 * The CSS organization and naming conventions follow **[18F's CSS Coding Styleguide](https://pages.18f.gov/frontend/css-coding-styleguide/)**.
 * Uses a **[modified BEM](https://pages.18f.gov/frontend/css-coding-styleguide/naming/)** approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: `.button-cool_feature-active`).
 * Uses **modular CSS** for scalable, modular, and flexible code.
