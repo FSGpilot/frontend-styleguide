@@ -1,1 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="656 1990 280 176"><defs><style>.a{clip-path:url(#b);}.b{fill:#d6d7d9;stroke:#d6d7d9;}.c,.d,.e,.f,.g{fill:none;}.d{stroke:#aeb0b5;stroke-width:0.5px;}.e{stroke:#f1f1f1;}.e,.f{stroke-width:6px;}.f{stroke:#979797;}.h{fill:#5b616a;fill-rule:evenodd;}.i,.j{stroke:none;}.j{fill:#aeb0b5;}.k{fill:#fff;}</style><clipPath id="b"><rect x="656" y="1990" width="280" height="176"/></clipPath></defs><g id="a" class="a"><rect class="k" x="656" y="1990" width="280" height="176"/><g transform="translate(636 1992)"><g class="b" transform="translate(88 40)"><rect class="i" width="144" height="16"/><rect class="g" x="0.5" y="0.5" width="143" height="15"/></g><g class="c" transform="translate(88 40)"><path class="i" d="M0,0H144V92.222H0Z"/><path class="j" d="M 143.5 91.7222900390625 L 143.5 0.4999995529651642 L 0.5 0.4999995529651642 L 0.5 91.7222900390625 L 143.5 91.7222900390625 M 144 92.2222900390625 L 0 92.2222900390625 L 0 -4.350142148723535e-07 L 144 -4.350142148723535e-07 L 144 92.2222900390625 Z"/></g><line class="d" x2="144" transform="translate(88 56)"/><line class="e" x2="44.5" transform="translate(96 67.5)"/><line class="e" x2="123.5" transform="translate(96 77.5)"/><line class="e" x2="89.5" transform="translate(96 87.5)"/><line class="e" x2="21.5" transform="translate(96 120)"/><line class="f" x2="21.5" transform="translate(96 112)"/><g transform="translate(-266 -35)"><rect class="g" width="10" height="10" transform="translate(485 78)"/><path class="h" d="M10.833,5.583,10.25,5,7.917,7.333,5.583,5,5,5.583,7.333,7.917,5,10.25l.583.583L7.917,8.5l2.333,2.333.583-.583L8.5,7.917Z" transform="translate(482.083 75.083)"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="656 1990 280 176">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Modal);
+      }
+
+      .cls-2 {
+        fill: #d6d7d9;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #d6d7d9;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-3, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        stroke: #f1f1f1;
+      }
+
+      .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+
+      .cls-9 {
+        fill: #f1f1f1;
+      }
+    </style>
+    <clipPath id="clip-Modal">
+      <rect x="656" y="1990" width="280" height="176"/>
+    </clipPath>
+  </defs>
+  <g id="Modal" class="cls-1">
+    <rect class="cls-9" x="656" y="1990" width="280" height="176"/>
+    <g id="Group_32" data-name="Group 32" transform="translate(659 1987)">
+      <g id="Rectangle_42" data-name="Rectangle 42" class="cls-2" transform="translate(66 45)">
+        <rect class="cls-8" width="143" height="15"/>
+        <rect class="cls-6" x="0.25" y="0.25" width="142.5" height="14.5"/>
+      </g>
+      <g id="Rectangle_41" data-name="Rectangle 41" class="cls-3" transform="translate(66 59)">
+        <rect class="cls-8" width="143" height="78"/>
+        <rect class="cls-6" x="0.25" y="0.25" width="142.5" height="77.5"/>
+      </g>
+      <line id="Line_12" data-name="Line 12" class="cls-4" x2="44.5" transform="translate(76 73.33)"/>
+      <line id="Line_13" data-name="Line 13" class="cls-4" x2="123.5" transform="translate(76 83.266)"/>
+      <line id="Line_26" data-name="Line 26" class="cls-4" x2="89.5" transform="translate(76 93.202)"/>
+      <line id="Line_28" data-name="Line 28" class="cls-5" x2="21.5" transform="translate(76 122.494)"/>
+      <line id="Line_29" data-name="Line 29" class="cls-4" x2="21.5" transform="translate(76 114.545)"/>
+      <g id="ic_expand_close" transform="translate(195 46.987)">
+        <rect id="rectangle" class="cls-6" width="10" height="9.936"/>
+        <path id="path" class="cls-7" d="M10.833,5.58,10.25,5,7.917,7.318,5.583,5,5,5.58,7.333,7.9,5,10.216l.583.58L7.917,8.478,10.25,10.8l.583-.58L8.5,7.9Z" transform="translate(-2.917 -2.93)"/>
+      </g>
+    </g>
+  </g>
+</svg>

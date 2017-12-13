@@ -5,7 +5,7 @@ type: component
 title: Form templates
 category: UI components
 subcategory: Strukturer (organismer)
-lead: Patterns for some of the most commonly used forms on government websites
+lead: Skabeloner for de mest almindelige blanket-elementer
 subnav:
 - text: Name form
   href: '#name-form'

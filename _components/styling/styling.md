@@ -4,7 +4,7 @@ layout: styleguide
 title: Styling
 category: UI components
 subcategory: Designsystem
-lead: Styling tips to help you deliver delightful experiences to all users.
+lead: Styling-elementerne er de mindste byggesten i systemet. Alle større komponenter er bygget ud fra disse. 
 subnav:
 - text: Billeder og grafik
   href: '/components/styling/billeder-og-grafik/'

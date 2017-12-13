@@ -5,7 +5,7 @@ parent: colors
 order: 01
 ---
 
-<p>Her vil alle farverne i frontend styleguiden være specificeret</p>
+<p>Her vil alle farverne i Frontend Styleguiden være specificeret</p>
 
 <h4 class="heading">Primær farver</h4>
 

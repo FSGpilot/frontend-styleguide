@@ -11,8 +11,7 @@ title: Frontend Styleguiden
     </header>
     
     <p class="font-lead">
-      Noget med Open Source her. Kløgtigt ikke sandt? sit amet, tellus lacus lectus pretium, magna at sed, ligula
-      hendrerit suspendisse eu justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor
+      Designsystemet er Open Source. Det betyder først og fremmest at du frit kan benytte systemet og den bagvedliggende kode - men også at du kan bidrage til at det udvikles og forbedres. På den måde kan netop dine indsigter få lov at gavne os alle. 
     </p>
 
     <p class="font-lead">
@@ -66,35 +65,29 @@ title: Frontend Styleguiden
 
   <div class="col-8 content">
     <h2>
-      Bidrag til frontend styleguiden som ikke-koder
+      Bidrag til Frontend Styleguiden som ikke-koder
     </h2>
     <p>
-      Har du en tanke eller en ændring du har lyst til bidrage med til frontend styleguiden, men har aldrig skrevet en linjes kode i dit liv?
-      Så kan du her nemt komme igang med at bidrage til frontend styleguidens mange tekstsider. 
-      Det er nemlig sådan at alle tekstsiderne på frontend styleguiden er skrevet med noget der hedder "Markdown".
-      At skrive Markdown er næsten ligesom at skrive et almindeligt word dokument, og når man er færdig med sit bidrag og tilføjer det til frontend styleguidens hjemmeside, bliver det automatisk lavet om til en præsentabel side.
+      Har du en tanke eller en ændring du har lyst til bidrage med til Frontend Styleguiden, men har aldrig skrevet en linjes kode i dit liv?
+      Så kan du her nemt komme igang med at bidrage til Frontend Styleguidens mange tekstsider. 
+      Det er nemlig sådan at alle tekstsiderne på Frontend Styleguiden er skrevet med noget der hedder "Markdown".
+      At skrive Markdown er næsten ligesom at skrive et almindeligt word dokument, og når man er færdig med sit bidrag og tilføjer det til Frontend Styleguidens hjemmeside, bliver det automatisk lavet om til en præsentabel side.
     </p>
-    <p>For at sætte din computer op til at kunne skrive bidrag til frontend styleguiden, skal du blot følge nedenstående link</p>
+    <p>For at sætte din computer op til at kunne skrive bidrag til Frontend Styleguiden, skal du blot følge nedenstående link</p>
     <p>
-      <a href="{{ site.baseurl }}/getting-started/bidrag-til-designsystemet/#bidrag-til-styleguiden-uden-kendskab-til-kode">Opsætning af computer for bidragelse</a>
+      <a href="{{ site.baseurl }}/getting-started/bidrag-til-designsystemet/#bidrag-til-Styleguiden-uden-kendskab-til-kode">Opsætning af computer for bidragelse</a>
     </p>
   
     <h2>Få hjælp og inspiration</h2>
     <p>
-      Lorem ipsum dolor sit amet, tellus lacus lectus pretium, magna at sed, ligula hendrerit suspendisse eu
-      justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor tellus quis sit, duis
-      proin libero eu diam, vestibulum venenatis, senectus lectus sed a egestas molestie feugiat,
-      consectetuer vel vivamus penatibus viverra. In nec magna sagittis interdum nec in, sociosqu tellus nec
-      senectus cum, lorem lorem dolor, commodo ut eu ac. Vestibulum pellentesque volutpat mus rhoncus
-      sem, mattis in nonummy libero vel commodo, arcu dui maecenas purus placerat vitae.
+      Er du i tvivl om hvordan du kommer i gang med at bruge Frontend Styleguiden eller vil blot vide hvad den kan bruges til, er der massere af hjælp at hente. Under <a href="{{site.baseurl}}/components/">designsystem</a> kan du finde alt fra gode designretningslinjer til en beskrivelse af alle byggestenene som kan bruges til at bygge en ny selvbetjeningsløsning.
+      Mangler du inspiration til din løsning, kan du under <a href="{{site.baseurl}}/page-templates/eksemplariske-eksempler/">eksempler</a> finde forskellige typer af eksemplariske eksempler. I Frontend Styleguiden er der så vidt muligt medfølgende eksempelkode til både dele af og hele selvbetjeningsløsninger.
     </p>
     <p>
-      In nec magna sagittis interdum nec in, sociosqu tellus nec senectus cum, lorem lorem dolor, commodo
-      ut eu ac. Vestibulum pellentesque volutpat mus rhoncus sem, mattis in nonummy libero vel commodo,
-      arcu dui maecenas purus placerat vitae.
+      Har du stadig spørgsmål eller undren til Frontend Styleguiden, eller har du blot et ønske til en komponent som mangler, så skriv til os ved at klikke på nedenstående link:
     </p>
     <p>
-      <a href="http://github.com">Skriv til os via GitHub</a>     
+      <a href="https://github.com/jonasjensen77/frontend-styleguide-poc/issues">Skriv til os via GitHub</a>     
     </p>
   </div>
 </div>

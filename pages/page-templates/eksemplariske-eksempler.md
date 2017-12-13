@@ -13,10 +13,6 @@ subnav:
   href: '#stor-blanket'
 - text: Hyper løsningen
   href: '#hyper-blanket'
-- text: Landing page
-  href: '#landing-page'
-- text: Documentation page
-  href: '#documentation-page'
 - text: Signering
   href: '#signering'
 ---
@@ -45,7 +41,7 @@ subnav:
 {% include code/accordion.html component="template-landing" %}
 
 
-
+<!-->
 <h2 class="heading" id="landing-page">Template 1: Landing page</h2>
 <p>A landing page is intended to provide someone’s first impression of your agency or program. Often, they’ll arrive from somewhere else without much context, like a search result or a colleague’s email. So a landing page needs to be clear, engaging, and contextualizing.</p>
 <div class="preview">
@@ -138,9 +134,10 @@ subnav:
     </ul>
   </div>
 </div>
+<-->
 
 <h2 class="heading" id="signering">Template: Signering</h2>
-<p>Her kunne der komme et eksempel på hvordan man implementere signering, f.eks. via NemID.</p>
+<p>Her kommer der et eksempel på hvordan man implementerer signering, f.eks. via NemID.</p>
 <!-- <img src="{{ site.baseurl }}/img/lille.PNG" style="max-width: 1000%; width: 1018px"> -->
 
 <!-- {% include code/accordion.html component="template-landing" %} -->

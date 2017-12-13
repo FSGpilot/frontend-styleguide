@@ -373,11 +373,11 @@ body {
 }
 
 .styleguide-content-default-width {
-  max-width: $site-max-width;    
+  max-width: $site-max-width;
 }
 
 .styleguide-content-full-width {
-  max-width: 100%;    
+  max-width: 100%;
 }
 
 // Label links
@@ -921,11 +921,11 @@ h3 + .button_wrapper {
 }
 @media screen and (min-width:768px) {
   .color-col {
-    
+
     &:first-child {
       padding-left: 0px;
     }
-  
+
     &:last-child {
       padding-right: 0px;
     }
@@ -940,7 +940,7 @@ h3 + .button_wrapper {
 
 .componentbox-container {
   height: 225px;
-  
+
 }
 
 .componentbox-text-container {
@@ -953,7 +953,6 @@ h3 + .button_wrapper {
 @media screen and (min-width:768px) {
   .componentbox-container {
     height: 180px;
-    border: 1px solid $color-gray-lightest;
   }
   .componentbox-col {
     padding-left: 7.5px;
@@ -963,10 +962,15 @@ h3 + .button_wrapper {
       padding-left: 0px;
       padding-right: 15px;
     }
-  
+
     &:last-child {
       padding-right: 0px;
       padding-left: 15px;
+    }
+
+    &:only-child {
+      padding-left: 0px;
+      padding-right: 15px;
     }
   }
 }
@@ -1716,8 +1720,8 @@ article {
 //   min-width: 145px;
 
 //    .checkmark{
-//       content: url('../../img/check-mark.svg'); 
-//       width: 40px; 
+//       content: url('../../img/check-mark.svg');
+//       width: 40px;
 //       height: 40px;
 //       position: absolute;
 //       right: 27px;
@@ -1746,16 +1750,16 @@ figcaption {
     margin-top: 10px;
 }
 
-figcaption li, 
+figcaption li,
 figcaption p {
     color: #616161;
     font-size: 13px;
     line-height: 24px;
 }
 
-.s-tag-caption.do, 
-.s-tag-caption.dont, 
-figure.s-tag-media figcaption .s-tag-caption.do, 
+.s-tag-caption.do,
+.s-tag-caption.dont,
+figure.s-tag-media figcaption .s-tag-caption.do,
 figure.s-tag-media figcaption .s-tag-caption.dont {
     border-top: 15px solid;
     font-weight: 500;
@@ -1915,4 +1919,71 @@ div.anno-container {
     background-color: white;
     border-top: 1px solid #f1f1f1;
   }
+}
+
+// Grid docs
+.grid-example {
+  position: relative;
+  padding: 16px;
+
+  @media (min-width: 576px) {
+    padding: 24px;
+  }
+
+  .row > .col,
+  .row > [class^="col-"] {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+  }
+
+  .row + .row {
+    margin-top: 16px;
+  }
+}
+
+
+.bs-example-table {
+  > thead > tr > th,
+  > tbody > tr > td {
+    padding: 14px;
+    vertical-align: top;
+    border: 1px solid #e9ecef;
+    background-color: transparent;
+  }
+
+  > thead > tr > th {
+    text-align: center;
+  }
+
+  > tbody > tr {
+    > th {
+      white-space: nowrap;
+      background-color: transparent;
+      border: 1px solid #e9ecef;
+    }
+
+    &:nth-of-type(odd) {
+      background-color: rgba(0,0,0,.05);
+    }
+
+    &:hover > td {
+      background-color: transparent !important;
+      border-top: 1px solid #e9ecef !important;
+      border-bottom: 1px solid #e9ecef !important;
+      border-right: 1px solid #e9ecef !important;
+      cursor: default !important;
+    }
+  }
+
+  small {
+    font-size: 80%;
+    font-weight: 400;
+  }
+}
+
+.v-align .row {
+  min-height: 16rem;
+  background-color: rgba(255,0,0,.1);
 }

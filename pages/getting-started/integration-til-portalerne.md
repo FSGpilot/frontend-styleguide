@@ -24,10 +24,10 @@ Blanketter, som borgeren kan hente på nettet og udfylde hjemme betragtes som en
 ## Udviklingsvejledningen
 
 <p>Udviklingsvejledningen for velfungerende selvbetjening indeholder de fællesoffentlige krav, som skal sikre brugervenlige digitale selvbetjeningsløsninger. Alle krav skal som udgangspunkt opfyldes for de obligatoriske bølgeløsninger. </p>
-<ul class="list list-wordbreak"><li><a href="http://www.digst.dk/Moedet-med-borgeren/Selvbetjeningsloesninger/Overblik-over-boelgerne" title="Overblik over obligatorisk selvbetjening" target="_blank">Overblik over obligatorisk selvbetjening (nyt vindue)</a></li></ul>
+<ul class="list list-wordbreak"><li><a href="http://www.digst.dk/Moedet-med-borgeren/Selvbetjeningsloesninger/Overblik-over-boelgerne" title="Overblik over obligatorisk selvbetjening" target="_blank">Overblik over obligatorisk selvbetjening</a></li></ul>
 <p>Vejledningens anbefalinger, gode eksempler og værktøjskasse er forslag og hjælp til at leve op til alle krav.</p>
 <p>Du finder vejledningen og mere information på digitaliser.dk</p>
-<ul class="list list-wordbreak"><li><a href="http://arkitekturguiden.digitaliser.dk/godselvbetjening" title="Link til OIO Arkitekturguiden om god selvbetjening" target="_blank">Udviklingsvejledningen (nyt vindue)</a></li></ul>
+<ul class="list list-wordbreak"><li><a href="http://arkitekturguiden.digitaliser.dk/godselvbetjening" title="Link til OIO Arkitekturguiden om god selvbetjening" target="_blank">Udviklingsvejledningen</a></li></ul>
 
 ## Personas
 

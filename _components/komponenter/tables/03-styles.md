@@ -2,19 +2,19 @@
 title: Table styles
 parent: Tables
 order: 03
-lead: Tables can be styled in several ways. It is possible to add or remove borders and zebra stripes. Height of the rows can be customized.
+lead: Tables can be styled in several ways. Some of the styles that are possibe is to add or remove borders and zebra stripes. The height of the rows can be customized as well.
 ---
 
 <div class="accordion-bordered accordion-docs">
     <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="styles-docs">Documentation</button>
     <div id="styles-docs" aria-hidden="false" class="accordion-content">
         <h4>SCSS classes</h4>
-        <p>Styling for the table is defined by classes in the table tag. Possible values are listed in that table below.</p>        
+        <p>To style a table simply add one or more of the below classes in the table-element.</p>        
         <div class="table-container">
             <table class="dk-table borderless compact" style="font-size: small">
                 <thead>
                     <tr>
-                        <th width="190px">SCCS class</th>
+                        <th width="190px">SCSS class</th>
                         <th>Description</th>
                     </tr>
                 </thead>
@@ -29,7 +29,7 @@ lead: Tables can be styled in several ways. It is possible to add or remove bord
                     </tr>
                     <tr>
                         <td>zebra</td>
-                        <td>Adds zebra stripes to the table. Do not use in expandable table.</td>
+                        <td>Adds zebra stripes to the table. Do not use in an expandable table.</td>
                     </tr>
                     <tr>
                         <td>compact</td>

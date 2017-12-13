@@ -2,7 +2,7 @@
 title: Expandable table
 parent: Tables
 order: 02
-lead: Expandable table allows user to hide and show content of a row. 
+lead: An expandable table allows the user to show and hide content of a row. 
 ---
 
 {% include code/preview.html component="expandable" %}
@@ -13,12 +13,12 @@ lead: Expandable table allows user to hide and show content of a row.
     <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="expandable-docs">Documentation</button>
     <div id="expandable-docs" aria-hidden="false" class="accordion-content">
         <h4>SCSS classes</h4>
-        <p>In order to use expandable table it is needed to mark expandable rows by scss classes. All necessary classes are listed in the table below.</p>        
+        <p>In order to use an expandable table it is needed to mark each of the expandable rows by scss classes. All necessary classes are listed in the table below.</p>        
         <div class="table-container">
             <table class="dk-table borderless compact" style="font-size: small">
                 <thead>
                     <tr>
-                        <th width="190px">SCCS class</th>
+                        <th width="190px">SCSS class</th>
                         <th>Description</th>
                     </tr>
                 </thead>
@@ -29,7 +29,7 @@ lead: Expandable table allows user to hide and show content of a row.
                     </tr>
                     <tr>
                         <td>expandable-row</td>
-                        <td>A row that is expanded after button click. It corresponds to button in previous row. </td>
+                        <td>A row that is expanded after an expand-button (Button from previous class) has been clicked. </td>
                     </tr>
                 </tbody>
             </table>
