@@ -31,7 +31,7 @@ subnav:
 
 <section id="section-how-it-works">
 <h2 class="heading heading-margin-alt" id="how-it-works">How it works</h2>
-<p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">flexbox</a> and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+<p>Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">flexbox</a> and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
 
 <p><strong>New to or unfamiliar with flexbox?</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Read this CSS Tricks flexbox guide</a> for background, terminology, guidelines, and code snippets.</p>
 
@@ -168,7 +168,7 @@ subnav:
 
 {% include code/accordion.html component="grid--no-gutters-sass" %}
 
-<p>In practice, here’s how it looks. Note you can continue to use this with all other predefined grid classes (including column widths, responsive tiers, reorders, and more).</p>
+<p>In practice, here's how it looks. Note you can continue to use this with all other predefined grid classes (including column widths, responsive tiers, reorders, and more).</p>
 
 {% include code/preview.html component="grid--no-gutters.html" %}
 {% include code/accordion.html component="grid--no-gutters" %}
@@ -189,7 +189,7 @@ subnav:
 {% include code/preview.html component="grid--ordering-visual.html" %}
 {% include code/accordion.html component="grid--ordering-visual" %}
 
-<p>There’s also a responsive <span class="highlight">.order-first</span> class that quickly changes the order of one element by applying <span class="highlight">order: -1</span>. This class can also be intermixed with the numbered <span class="highlight">.order-*</span> classes as needed.</p>
+<p>There's also a responsive <span class="highlight">.order-first</span> class that quickly changes the order of one element by applying <span class="highlight">order: -1</span>. This class can also be intermixed with the numbered <span class="highlight">.order-*</span> classes as needed.</p>
 
 {% include code/preview.html component="grid--ordering-responsive.html" %}
 {% include code/accordion.html component="grid--ordering-responsive" %}
@@ -214,6 +214,7 @@ subnav:
 
 {% include code/preview.html component="grid--offsets-margin.html" %}
 {% include code/accordion.html component="grid--offsets-margin" %}
+
 </section>
 
 <section id="section-nesting">
@@ -272,7 +273,7 @@ $container-max-widths: (
 </pre>
 
 <h3>Example usage</h3>
-<p>You can modify the variables to your own custom values, or just use the mixins with their default values. Here’s an example of using the default settings to create a two-column layout with a gap between.</p>
+<p>You can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between.</p>
 
 <pre>
 <code class="lang-scss">.example-container {
@@ -321,7 +322,7 @@ $grid-gutter-width: 30px !default;</code>
 </pre>
 
 <h3>Grid tiers</h3>
-<p>Moving beyond the columns themselves, you may also customize the number of grid tiers. If you wanted just four grid tiers, you’d update the <span class="highlight">$grid-breakpoints</span> and <span class="highlight">$container-max-widths</span></p>
+<p>Moving beyond the columns themselves, you may also customize the number of grid tiers. If you wanted just four grid tiers, you'd update the <span class="highlight">$grid-breakpoints</span> and <span class="highlight">$container-max-widths</span></p>
 
 <pre>
 <code class="lang-scss">$grid-breakpoints: (
@@ -338,29 +339,10 @@ $container-max-widths: (
 );</code>
 </pre>
 
-<p>When making any changes to the Sass variables or maps, you’ll need to save your changes and recompile. Doing so will output a brand new set of predefined grid classes for column widths, offsets, and ordering. Responsive visibility utilities will also be updated to use the custom breakpoints. Make sure to set grid values in <span class="highlight">px</span> (not <span class="highlight">rem</span>, <span class="highlight">em</span>, or <span class="highlight">%</span>).</p>
+<p>When making any changes to the Sass variables or maps, you'll need to save your changes and recompile. Doing so will output a brand new set of predefined grid classes for column widths, offsets, and ordering. Responsive visibility utilities will also be updated to use the custom breakpoints. Make sure to set grid values in <span class="highlight">px</span> (not <span class="highlight">rem</span>, <span class="highlight">em</span>, or <span class="highlight">%</span>).</p>
 </section>
 
 <style scoped>
-    .grid-example {
-        position: relative;
-        padding: 16px;
-        margin: 16px -15px;
-        border: 3px 0 0 solid #f7f7f9;
-    }
-    @media (min-width: 576px) {
-        .grid-example {
-            padding: 24px;
-            margin: 16px 0 0 0;
-        }
-    }
-    .grid-example > .row > .col,
-    .grid-example .row > [class^=col-] {
-        padding-top: .75rem;
-        padding-bottom: .75rem;
-        background-color: rgba(86,61,124,.15);
-        border: 1px solid rgba(86,61,124,.2);
-    }
     .highlight {
         padding: 3px 6px;
         background-color: #eee;
@@ -368,44 +350,6 @@ $container-max-widths: (
         font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
         font-size: 90%;
         color: #bd4147;
-    }
-    .bs-example-table > thead > tr > th,
-    .bs-example-table > tbody > tr > td {
-        padding: 14px;
-        vertical-align: top;
-        border:  1px solid #e9ecef;
-        background-color: transparent;
-    }
-
-    .bs-example-table > thead > tr > th {
-        text-align: center;
-    }
-
-    .bs-example-table > tbody > tr > th {
-        white-space: nowrap;
-        background-color: transparent;
-        border: 1px solid #e9ecef;
-    }
-
-    .bs-example-table > tbody > tr:nth-of-type(odd) {
-        background-color: rgba(0,0,0,.05);
-    }
-
-    .bs-example-table > tbody > tr:hover > td  {
-        background-color: transparent !important;
-        border-top: 1px solid #e9ecef !important;
-        border-bottom: 1px solid #e9ecef !important;
-        border-right: 1px solid #e9ecef !important;
-        cursor: default !important;
-    }
-
-    .bs-example-table small {
-        font-size: 80%;
-        font-weight: 400;
-    }
-    .v-align .row {
-        min-height: 100px;
-        background-color: rgba(255,0,0,.1);
     }
     pre {
         display: block;
@@ -433,5 +377,6 @@ $container-max-widths: (
     }
     .hljs {
         background: #eee;
+        padding: 2.4rem;
     }
 </style>

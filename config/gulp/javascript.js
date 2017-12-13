@@ -47,7 +47,7 @@ gulp.task('copy-iframe-script', function (done) {
   });
 
 gulp.task('copy-highlightjs-script', function (done) {
-    var stream = gulp.src('./node_modules/dkwds/src/vendor/highlightjs/*')
+    var stream = gulp.src('./node_modules/dkwds/src/vendor/*')
         .pipe(gulp.dest('assets/js/vendor'));
 
     return stream;
