@@ -65,17 +65,17 @@ title: Frontend Styleguiden
 
   <div class="col-8 content">
     <h2>
-      Bidrag til frontend styleguiden som ikke-koder
+      Bidrag til Frontend Styleguiden som ikke-koder
     </h2>
     <p>
-      Har du en tanke eller en ændring du har lyst til bidrage med til frontend styleguiden, men har aldrig skrevet en linjes kode i dit liv?
-      Så kan du her nemt komme igang med at bidrage til frontend styleguidens mange tekstsider. 
-      Det er nemlig sådan at alle tekstsiderne på frontend styleguiden er skrevet med noget der hedder "Markdown".
-      At skrive Markdown er næsten ligesom at skrive et almindeligt word dokument, og når man er færdig med sit bidrag og tilføjer det til frontend styleguidens hjemmeside, bliver det automatisk lavet om til en præsentabel side.
+      Har du en tanke eller en ændring du har lyst til bidrage med til Frontend Styleguiden, men har aldrig skrevet en linjes kode i dit liv?
+      Så kan du her nemt komme igang med at bidrage til Frontend Styleguidens mange tekstsider. 
+      Det er nemlig sådan at alle tekstsiderne på Frontend Styleguiden er skrevet med noget der hedder "Markdown".
+      At skrive Markdown er næsten ligesom at skrive et almindeligt word dokument, og når man er færdig med sit bidrag og tilføjer det til Frontend Styleguidens hjemmeside, bliver det automatisk lavet om til en præsentabel side.
     </p>
-    <p>For at sætte din computer op til at kunne skrive bidrag til frontend styleguiden, skal du blot følge nedenstående link</p>
+    <p>For at sætte din computer op til at kunne skrive bidrag til Frontend Styleguiden, skal du blot følge nedenstående link</p>
     <p>
-      <a href="{{ site.baseurl }}/getting-started/bidrag-til-designsystemet/#bidrag-til-styleguiden-uden-kendskab-til-kode">Opsætning af computer for bidragelse</a>
+      <a href="{{ site.baseurl }}/getting-started/bidrag-til-designsystemet/#bidrag-til-Styleguiden-uden-kendskab-til-kode">Opsætning af computer for bidragelse</a>
     </p>
   
     <h2>Få hjælp og inspiration</h2>

@@ -1,13 +1,13 @@
-# Bidrag til styleguiden uden kendskab til kode
+# Bidrag til Styleguiden uden kendskab til kode
 
-Denne guide er for dig som ingen kendskab til kode har, men stadigt vil bidrage til frontend styleguiden.
+Denne guide er for dig som ingen kendskab til kode har, men stadigt vil bidrage til Frontend Styleguiden.
 Guiden vil hjælpe dig igennem - step for step - hvordan du opsætter din computer til at kunne bidrage.
 
 ## Hvad kan du bidrage med?
-Man skal bestemt ikke kunne kode for at bidrage til frontend styleguiden. Faktisk er størstedelen af styleguiden bygget op af simple tekstsider, der dokumenterer alle de gode råd og regler man bør følge når man skal opbygge en ny underside til f.eks. borger.dk eller virk.dk. Disse tekstsider er alle skrevet af ikke-kodere, og du kan nemt være med til at tilføje dine gode råd og regler til disse sider, så styleguiden kan blive endnu bedre og mere præcis.
+Man skal bestemt ikke kunne kode for at bidrage til Frontend Styleguiden. Faktisk er størstedelen af Styleguiden bygget op af simple tekstsider, der dokumenterer alle de gode råd og regler man bør følge når man skal opbygge en ny underside til f.eks. borger.dk eller virk.dk. Disse tekstsider er alle skrevet af ikke-kodere, og du kan nemt være med til at tilføje dine gode råd og regler til disse sider, så Styleguiden kan blive endnu bedre og mere præcis.
 
 ### Tekstsidernes opbygning
-Tekstsiderne er skrevet med noget der hedder "Markdown", som er næsten ligesom at skrive et almindeligt word-dokument. Når du har skrevet dit Markdown-dokument og lægger det op på frontend styleguiden, bliver det automatisk omdannet til en præsentabelt side på frontend styleguidens hjemmeside. F.eks. er denne side skrevet med Markdown, så nemt er det! 
+Tekstsiderne er skrevet med noget der hedder "Markdown", som er næsten ligesom at skrive et almindeligt word-dokument. Når du har skrevet dit Markdown-dokument og lægger det op på Frontend Styleguiden, bliver det automatisk omdannet til en præsentabelt side på Frontend Styleguidens hjemmeside. F.eks. er denne side skrevet med Markdown, så nemt er det! 
 
 ### Kom i gang med at skrive Markdown
 Markdown er en simpel måde at skrive pæne tekster til hjemmesider, og skrives som en almindelig tekst blot tilsat nogle få specielle karakterer som * eller #, der bestemmer hvordan teksten skal se ud.
@@ -22,9 +22,9 @@ Programmet kan hentes på https://typora.io/ og vil blive brugt fremmadrettet i 
 
 Du kan let komme i gang med Markdown og Typora med følgende guide: LINK TIL GUIDE HER
 
-## Sæt din computer op til styleguiden
+## Sæt din computer op til Styleguiden
 
-For at kunne bidrage til frontend styleguiden skal din computer være sat op til at kunne hente frontend styleguiden ned på din computer, og være sat op til at kunne skubbe dine ændringer op på den officielle frontend styleguide igen.
+For at kunne bidrage til Frontend Styleguiden skal din computer være sat op til at kunne hente Frontend Styleguiden ned på din computer, og være sat op til at kunne skubbe dine ændringer op på den officielle Frontend Styleguide igen.
 
 Dette gøres med det simple program Sourcetree. Sourcetree kræver at man har en bruger på Atlassian. En Atlassian bruger kan oprettes gratis her: <https://id.atlassian.com/login?application=mac&continue=https://my.atlassian.com>
 
@@ -38,29 +38,29 @@ Du er nu klar og kan installere Sourcetree ved at følge nedenstående skridt:
    1. Hvis Sourcetree ikke kan finde Mercurial, skal du vælge muligheden: "I don't want to use Mercurial"
    2. Hvis Sourcetree ikke kan finde Git, skal du vælge muligheden: "Download an embedded version of Git for Sourcetree alone to use."
 
-Du er nu klar til at hente frontend styleguiden ned på din computer. Dette kaldes at "clone", og kan gøres med Sourcetree. 
+Du er nu klar til at hente Frontend Styleguiden ned på din computer. Dette kaldes at "clone", og kan gøres med Sourcetree. 
 
 Følg skridtene nedenfor:
 
 1. Tryk på "clone" knappen i toppen af Sourcetree
 2. I den første boks med teksten *Source Path / URL* skal du indsætte følgende link: 
-   https://github.com/jonasjensen77/frontend-styleguide-poc.git
+   https://github.com/jonasjensen77/Frontend-Styleguide-poc.git
 3. Klik på næste boks, hvorefter resten af felterne vil udfylde sig selv
 4. Lad felterne være som de er, og tryk på "Clone"-knappen
-5. Vent til handlingen er afsluttet. Du har nu hentet frontend styleguiden ned.
+5. Vent til handlingen er afsluttet. Du har nu hentet Frontend Styleguiden ned.
 
-### Skab dit bidrag til frontend styleguiden
+### Skab dit bidrag til Frontend Styleguiden
 
-Når du har hentet frontend styleguiden, kan du frit lave ændringer i de sider de har lyst til. Da du "clonede" tidligere, blev frontend styleguiden lagt ind i en mappe, der i de fleste tilfælde har lagt sig i din dokumenter-mappe. Frontend styleguide-mappen du leder efter hedder noget med *frontend-styleguide-poc*, og inde i den finder du en masse forskellige filer og mapper. Selvom det kan se uoverskueligt ud, skal du ikke blive skræmt, da du som ikke-koder kun skal fokusere på mapperne *_components* og *pages*. I disse to mapper vil der ligge utalige markdown filer, (Bemærk at filer der slutter på .md er markdown filer) som hver især svarer til en underside på frontend styleguidens hjemmeside. Et par forskellige markdown dokumenter du f.eks. kan åbne for at se hvordan det ser ud i Typora, ligger i *_components*-mappen efterfulgt af *fundament*-mappen:
+Når du har hentet Frontend Styleguiden, kan du frit lave ændringer i de sider de har lyst til. Da du "clonede" tidligere, blev Frontend Styleguiden lagt ind i en mappe, der i de fleste tilfælde har lagt sig i din dokumenter-mappe. Frontend Styleguide-mappen du leder efter hedder noget med *Frontend-Styleguide-poc*, og inde i den finder du en masse forskellige filer og mapper. Selvom det kan se uoverskueligt ud, skal du ikke blive skræmt, da du som ikke-koder kun skal fokusere på mapperne *_components* og *pages*. I disse to mapper vil der ligge utalige markdown filer, (Bemærk at filer der slutter på .md er markdown filer) som hver især svarer til en underside på Frontend Styleguidens hjemmeside. Et par forskellige markdown dokumenter du f.eks. kan åbne for at se hvordan det ser ud i Typora, ligger i *_components*-mappen efterfulgt af *fundament*-mappen:
 
 1. **layout.md** svarer til følgende side: 
-   https://jonasjensen77.github.io/frontend-styleguide-poc/components/fundament/layout/?s=undefined
+   https://jonasjensen77.github.io/Frontend-Styleguide-poc/components/fundament/layout/?s=undefined
 2.  **touch.md** svarer til følgende side: 
-   https://jonasjensen77.github.io/frontend-styleguide-poc/components/fundament/mobile/?s=undefined
+   https://jonasjensen77.github.io/Frontend-Styleguide-poc/components/fundament/mobile/?s=undefined
 
-Når du åbner disse filer, har du mulighed for at ændre i dem med Typora. Når du er færdig med dine ændringer og er tilfreds med dem, har du mulighed for at lægge dem op på den officielle frontend styleguide.
+Når du åbner disse filer, har du mulighed for at ændre i dem med Typora. Når du er færdig med dine ændringer og er tilfreds med dem, har du mulighed for at lægge dem op på den officielle Frontend Styleguide.
 
-### Skub dine ændringer op på frontend styleguiden
+### Skub dine ændringer op på Frontend Styleguiden
 Commit/Pull/Push
 
 Kapitlet bliver skrevet....
@@ -68,12 +68,12 @@ Kapitlet bliver skrevet....
 
 
 ## Spørgsmål
-### Hvorfor kan jeg ikke se min bidragelse på den officielle frontend styleguide hjemmeside?
-Selvom du har skubbet dine ændringer op til frontend styleguiden, vil der gå noget tid før de kommer på selve frontend styleguidens hjemmeside. Selve hjemmesiden bliver nemlig kun fornyet en gang imellem, hvor den der tager alle ændringerne der er blevet lavet, siden sidst den blev fornyet. Vær derfor tålmodig, og hvis du er i tvivl om dine ændringer er blevet skubbet op til frontend styleguiden, kan du gå ind på følgende link, for at se om din "Commit"-besked kan ses:
+### Hvorfor kan jeg ikke se min bidragelse på den officielle Frontend Styleguide hjemmeside?
+Selvom du har skubbet dine ændringer op til Frontend Styleguiden, vil der gå noget tid før de kommer på selve Frontend Styleguidens hjemmeside. Selve hjemmesiden bliver nemlig kun fornyet en gang imellem, hvor den der tager alle ændringerne der er blevet lavet, siden sidst den blev fornyet. Vær derfor tålmodig, og hvis du er i tvivl om dine ændringer er blevet skubbet op til Frontend Styleguiden, kan du gå ind på følgende link, for at se om din "Commit"-besked kan ses:
 
-https://github.com/jonasjensen77/frontend-styleguide-poc/commits/master
+https://github.com/jonasjensen77/Frontend-Styleguide-poc/commits/master
 
-Hvis ikke så følg instruktionerne under kapitlet *Skub dine ændringer op på frontend styleguiden*.
+Hvis ikke så følg instruktionerne under kapitlet *Skub dine ændringer op på Frontend Styleguiden*.
 
 
 
