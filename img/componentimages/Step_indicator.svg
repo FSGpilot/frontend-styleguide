@@ -1,1 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="966 2200 280 176"><defs><style>.a{clip-path:url(#b);}.b,.d,.e{fill:#f1f1f1;}.c{fill:#d6d7d9;stroke:#aeb0b5;}.c,.d,.e,.g{stroke-width:6px;}.d{stroke:#f1f1f1;}.e,.f,.g{stroke:#d6d7d9;}.f,.g,.h{fill:none;}.f{stroke-width:0.5px;}.i{fill:#979797;stroke:#979797;fill-rule:evenodd;}.j{fill:#fff;}</style><clipPath id="b"><rect x="966" y="2200" width="280" height="176"/></clipPath></defs><g id="a" class="a"><rect class="j" x="966" y="2200" width="280" height="176"/><g transform="translate(966 2208)"><g transform="translate(2.25 -15.75)"><g transform="translate(-1 -8)"><path class="b" d="M0,0H116V16H0Z" transform="translate(81 88)"/><path class="c" d="M73.605,0" transform="translate(87.067 96)"/></g><g transform="translate(-1 -24)"><path class="b" d="M0,0H116V16H0Z" transform="translate(81 88)"/><path class="c" d="M73.605,0" transform="translate(87.067 96)"/></g><path class="d" d="M0,0H47.714" transform="translate(89 104)"/><path class="d" d="M0,0H41.219" transform="translate(89 120)"/><path class="e" d="M0,0H47.605" transform="translate(89.264 72)"/><line class="f" x2="116" transform="translate(80 80)"/><line class="f" x2="116" transform="translate(80 96)"/><line class="f" x2="116" transform="translate(80 112)"/><line class="f" x2="116" transform="translate(80 128)"/><line class="f" x2="116" transform="translate(80 64)"/><path class="g" d="M0,0H51.807" transform="translate(89 88)"/></g><line class="f" y2="64.25" transform="translate(198 48)"/><line class="f" y2="64.25" transform="translate(82 48)"/><g transform="translate(-145 -25.245)"><rect class="h" width="7.245" height="7.245" transform="translate(329 78)"/><path class="i" d="M5.091,8.8,3.823,7.532,3.4,7.955,5.091,9.645,8.713,6.023,8.291,5.6Z" transform="translate(326.626 74.091)"/></g><g transform="translate(-145 -10.245)"><rect class="h" width="7.245" height="7.245" transform="translate(329 78)"/><path class="i" d="M5.091,8.8,3.823,7.532,3.4,7.955,5.091,9.645,8.713,6.023,8.291,5.6Z" transform="translate(326.626 74.091)"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="966 2200 280 176">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Step_indicator);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-9 {
+        fill: #f1f1f1;
+      }
+
+      .cls-4 {
+        fill: #d6d7d9;
+        stroke: #aeb0b5;
+      }
+
+      .cls-4, .cls-8, .cls-9 {
+        stroke-width: 6px;
+      }
+
+      .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-5, .cls-8, .cls-9 {
+        stroke: #d6d7d9;
+      }
+
+      .cls-5 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-7 {
+        fill: #979797;
+        stroke: #979797;
+        fill-rule: evenodd;
+      }
+
+      .cls-8 {
+        fill: #aeb0b5;
+      }
+    </style>
+    <clipPath id="clip-Step_indicator">
+      <rect x="966" y="2200" width="280" height="176"/>
+    </clipPath>
+  </defs>
+  <g id="Step_indicator" data-name="Step indicator" class="cls-1">
+    <rect class="cls-3" x="966" y="2200" width="280" height="176"/>
+    <path id="Path_105" data-name="Path 105" class="cls-2" d="M0,16.244H116V0H0Z" transform="translate(1048 2288)"/>
+    <path id="Path_106" data-name="Path 106" class="cls-2" d="M0,16.244H116V0H0Z" transform="translate(1048 2304)"/>
+    <g id="Group_18" data-name="Group 18" transform="translate(1047.766 2272.238)">
+      <path id="Path_43" data-name="Path 43" class="cls-3" d="M0,0H116.484V16H0Z" transform="translate(0)"/>
+      <path id="Path_44" data-name="Path 44" class="cls-4" d="M73.605,0" transform="translate(6.399 8.001)"/>
+    </g>
+    <path id="Path_104" data-name="Path 104" class="cls-3" d="M0,0H116V32H0Z" transform="translate(1048 2256)"/>
+    <line id="Line_55" data-name="Line 55" class="cls-5" y2="64.244" transform="translate(1164 2256)"/>
+    <line id="Line_56" data-name="Line 56" class="cls-5" y2="64.244" transform="translate(1048 2256)"/>
+    <g id="ic_check" transform="translate(821 2182.755)">
+      <rect id="rectangle" class="cls-6" width="7.245" height="7.245" transform="translate(329 78)"/>
+      <path id="path" class="cls-7" d="M5.091,8.8,3.823,7.532,3.4,7.955,5.091,9.645,8.713,6.023,8.291,5.6Z" transform="translate(326.626 74.091)"/>
+    </g>
+    <g id="ic_check-2" data-name="ic_check" transform="translate(821 2197.755)">
+      <rect id="rectangle-2" data-name="rectangle" class="cls-6" width="7.245" height="7.245" transform="translate(329 78)"/>
+      <path id="path-2" data-name="path" class="cls-7" d="M5.091,8.8,3.823,7.532,3.4,7.955,5.091,9.645,8.713,6.023,8.291,5.6Z" transform="translate(326.626 74.091)"/>
+    </g>
+    <path id="Path_51" data-name="Path 51" class="cls-8" d="M0,0H52.023" transform="translate(1056.803 2280.24)"/>
+    <path id="Path_61" data-name="Path 61" class="cls-9" d="M0,0H47.914" transform="translate(1056.803 2296.243)"/>
+    <path id="Path_107" data-name="Path 107" class="cls-9" d="M0,0H47.914" transform="translate(1056.803 2312.243)"/>
+    <path id="Path_62" data-name="Path 62" class="cls-9" d="M54.619,0" transform="translate(1056.803 2298.234)"/>
+    <path id="Path_64" data-name="Path 64" class="cls-9" d="M0,0H59.115" transform="translate(1056.803 2264.237)"/>
+    <line id="Line_43" data-name="Line 43" class="cls-5" x2="116.484" transform="translate(1047.766 2272.238)"/>
+    <line id="Line_47" data-name="Line 47" class="cls-5" x2="116.484" transform="translate(1047.766 2288.241)"/>
+    <line id="Line_51" data-name="Line 51" class="cls-5" x2="116.484" transform="translate(1047.766 2304.244)"/>
+    <line id="Line_68" data-name="Line 68" class="cls-5" x2="116.484" transform="translate(1047.766 2320.244)"/>
+    <line id="Line_54" data-name="Line 54" class="cls-5" x2="116.484" transform="translate(1047.766 2256.235)"/>
+    <path id="Path_103" data-name="Path 103" class="cls-5" d="M116.484,0" transform="translate(1127.766 2299.25)"/>
+  </g>
+</svg>

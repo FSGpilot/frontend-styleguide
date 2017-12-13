@@ -1,1 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="966 1360 280 176"><defs><style>.a{clip-path:url(#b);}.b{fill:#f1f1f1;}.c,.d,.f{fill:none;}.c,.d{stroke:#95989a;stroke-width:6px;}.c{opacity:0.2;}.e{fill:#fff;}.g{fill:#979797;fill-rule:evenodd;}</style><clipPath id="b"><rect x="966" y="1360" width="280" height="176"/></clipPath></defs><g id="a" class="a"><rect class="e" x="966" y="1360" width="280" height="176"/><g transform="translate(968 1375)"><path class="b" d="M0,0H216V49.95H0Z" transform="translate(32 48)"/><line class="c" x2="53" transform="translate(87 62.5)"/><line class="c" x2="134.5" transform="translate(87 72.5)"/><line class="c" x2="101.5" transform="translate(87 82.5)"/><path class="d" d="M0-5V44.95" transform="translate(32 53)"/><circle class="e" cx="16" cy="16" r="16" transform="translate(46 56)"/><g transform="translate(-279 -18)"><rect class="f" width="24" height="24" transform="translate(329 78)"/><path class="g" d="M9,16.2,4.8,12,3.4,13.4,9,19,21,7,19.6,5.6Z" transform="translate(329 78)"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="966 1360 280 176">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Alerts);
+      }
+
+      .cls-2, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #95989a;
+        stroke-width: 6px;
+      }
+
+      .cls-3 {
+        opacity: 0.2;
+      }
+
+      .cls-7 {
+        fill: #979797;
+        fill-rule: evenodd;
+      }
+
+      .cls-8, .cls-9 {
+        stroke: none;
+      }
+
+      .cls-9 {
+        fill: #d6d7d9;
+      }
+
+      .cls-10 {
+        fill: #f1f1f1;
+      }
+    </style>
+    <clipPath id="clip-Alerts">
+      <rect x="966" y="1360" width="280" height="176"/>
+    </clipPath>
+  </defs>
+  <g id="Alerts" class="cls-1">
+    <rect class="cls-10" x="966" y="1360" width="280" height="176"/>
+    <g id="Group_4" data-name="Group 4" transform="translate(968 1375)">
+      <path id="Path_4" data-name="Path 4" class="cls-2" d="M0,0H216V49.95H0Z" transform="translate(32 48)"/>
+      <line id="Line_4" data-name="Line 4" class="cls-3" x2="53" transform="translate(87 62.5)"/>
+      <line id="Line_12" data-name="Line 12" class="cls-3" x2="134.5" transform="translate(87 72.5)"/>
+      <line id="Line_13" data-name="Line 13" class="cls-3" x2="101.5" transform="translate(87 82.5)"/>
+      <path id="Path_21" data-name="Path 21" class="cls-4" d="M0-5V44.95" transform="translate(32 53)"/>
+      <g id="Path_102" data-name="Path 102" class="cls-5" transform="translate(46 56)">
+        <path class="cls-8" d="M 16 31.5 C 11.85980033874512 31.5 7.967410087585449 29.88772010803223 5.039840221405029 26.96015930175781 C 2.112279891967773 24.03259086608887 0.5 20.14019966125488 0.5 16 C 0.5 11.85980033874512 2.112279891967773 7.967410087585449 5.039840221405029 5.039840221405029 C 7.967410087585449 2.112279891967773 11.85980033874512 0.5 16 0.5 C 20.14019966125488 0.5 24.03259086608887 2.112279891967773 26.96015930175781 5.039840221405029 C 29.88772010803223 7.967410087585449 31.5 11.85980033874512 31.5 16 C 31.5 20.14019966125488 29.88772010803223 24.03259086608887 26.96015930175781 26.96015930175781 C 24.03259086608887 29.88772010803223 20.14019966125488 31.5 16 31.5 Z"/>
+        <path class="cls-9" d="M 16 31 C 20.00665092468262 31 23.77347946166992 29.43972969055176 26.60659980773926 26.60659980773926 C 29.43972969055176 23.77347946166992 31 20.00665092468262 31 16 C 31 11.9933500289917 29.43972969055176 8.226519584655762 26.60659980773926 5.393400192260742 C 23.77347946166992 2.560270071029663 20.00665092468262 1 16 1 C 11.9933500289917 1 8.226519584655762 2.560270071029663 5.393400192260742 5.393400192260742 C 2.560270071029663 8.226519584655762 1 11.9933500289917 1 16 C 1 20.00665092468262 2.560270071029663 23.77347946166992 5.393400192260742 26.60659980773926 C 8.226519584655762 29.43972969055176 11.9933500289917 31 16 31 M 16 32 C 7.163440227508545 32 0 24.8365592956543 0 16 C 0 7.163440227508545 7.163440227508545 0 16 0 C 24.8365592956543 0 32 7.163440227508545 32 16 C 32 24.8365592956543 24.8365592956543 32 16 32 Z"/>
+      </g>
+      <g id="ic_check" transform="translate(-279 -18)">
+        <rect id="rectangle" class="cls-6" width="24" height="24" transform="translate(329 78)"/>
+        <path id="path" class="cls-7" d="M9,16.2,4.8,12,3.4,13.4,9,19,21,7,19.6,5.6Z" transform="translate(329 78)"/>
+      </g>
+    </g>
+  </g>
+</svg>

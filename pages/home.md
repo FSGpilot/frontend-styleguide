@@ -11,8 +11,7 @@ title: Frontend Styleguiden
     </header>
     
     <p class="font-lead">
-      Noget med Open Source her. Kløgtigt ikke sandt? sit amet, tellus lacus lectus pretium, magna at sed, ligula
-      hendrerit suspendisse eu justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor
+      Designsystemet er Open Source. Det betyder først og fremmest at du frit kan benytte systemet og den bagvedliggende kode - men også at du kan bidrage til at det udvikles og forbedres. På den måde kan netop dine indsigter få lov at gavne os alle. 
     </p>
 
     <p class="font-lead">

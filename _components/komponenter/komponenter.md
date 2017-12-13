@@ -4,7 +4,7 @@ layout: styleguide
 title: Komponenter
 category: UI components
 subcategory: Designsystem
-lead: Component tips to help you deliver delightful experiences to all users.
+lead: Designsystemets komponenter kan implementeres direkte i din løsning, og er lette at tilpasse til dit indhold. 
 subnav:
 - text: Knapper
   href: '/components/komponenter/buttons/' 
