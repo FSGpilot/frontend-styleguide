@@ -186,10 +186,10 @@ $h2-font-size: 2rem;
 $h3-font-size: 1.75rem;
 $heading-line-height: 1.4;
 
-// Grid/breakpoints
-$small-screen:  540px !default;
-$medium-screen: 620px !default;
-$large-screen:  1120px !default;
+// Grid breakpoints
+$grid-sm:  540px !default;
+$grid-md:  620px !default;
+$grid-lg:  1120px !default;
 ```
 
 NOTE: If you plan on upgrading to newer versions of the Standards in the future, or are not using your own forked version of the Standards, try to avoid making changes in the Standards folder themselves. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
