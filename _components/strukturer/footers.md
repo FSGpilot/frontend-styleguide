@@ -5,7 +5,7 @@ type: component
 title: Footers
 category: UI components
 subcategory: Strukturer (organismer)
-lead: Footers serve site visitors who arrive at the bottom of a page without finding what they want.
+lead: En footer har til formål at betjene brugere, som når til siden bund uden at finde det de søgte. 
 ---
 
 {% include code/preview.html component="footer--big.html" %}

@@ -17,6 +17,14 @@ subnav:
   href: '#table-styles'
 ---
 
+<div class="alert alert-warning" role="alert">
+    <div class="alert-body">
+        <h3 class="alert-heading">Experimental datatables</h3>
+        <p class="alert-text">Datatable is an experimental feature. The tests are still pending. Responsive behaviour has not been yet implemented. </p>
+    </div>
+</div>
+
+
 {% include child-sections.html parent='Tables' %}
 
 {% include accessibility.html %}

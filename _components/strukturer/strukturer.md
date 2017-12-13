@@ -4,7 +4,7 @@ layout: styleguide
 title: Mønstre
 category: UI components
 subcategory: Designsystem
-lead: Organismer tips to help you deliver delightful experiences to all users.
+lead: Mønstre er de største byggeklodser i designsystemet. De er udviklet ud fra velkendte og effektive interaktionsprincipper. 
 subnav:
 - text: Footer
   href: '/components/strukturer/footers/'

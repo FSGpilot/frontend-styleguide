@@ -1,1 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="656 2200 280 176"><defs><style>.a{clip-path:url(#b);}.b,.e{fill:#f1f1f1;}.c{fill:#d6d7d9;stroke:#aeb0b5;}.c,.d,.e{stroke-width:6px;}.d{fill:#aeb0b5;}.d,.f{stroke:#d6d7d9;}.e{stroke:#f1f1f1;}.f{fill:none;stroke-width:0.5px;}.g{fill:#fff;}</style><clipPath id="b"><rect x="656" y="2200" width="280" height="176"/></clipPath></defs><g id="a" class="a"><rect class="g" x="656" y="2200" width="280" height="176"/><g transform="translate(714 2200)"><g transform="translate(-55.75 -15.75)"><g transform="translate(-1 -8)"><path class="b" d="M0,0H116V16H0Z" transform="translate(81 88)"/><path class="c" d="M73.605,0" transform="translate(87.067 96)"/></g><path class="d" d="M0,0H51.807" transform="translate(89 88)"/><path class="e" d="M0,0H47.714" transform="translate(89 104)"/><path class="e" d="M0,0H54.392" transform="translate(89 120)"/><path class="e" d="M0,0H41.252" transform="translate(89 136)"/><path class="e" d="M0,0H58.87" transform="translate(89 72)"/><line class="f" x2="116" transform="translate(80 80)"/><line class="f" x2="116" transform="translate(80 96)"/><line class="f" x2="116" transform="translate(80 112)"/><line class="f" x2="116" transform="translate(80 128)"/><line class="f" x2="116" transform="translate(80 64)"/><line class="f" x2="116" transform="translate(80 144)"/></g><line class="f" y2="80" transform="translate(140 48)"/><line class="f" y2="80" transform="translate(24 48)"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="656 2200 280 176">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Sidemenu);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-6 {
+        fill: #f1f1f1;
+      }
+
+      .cls-4 {
+        fill: #d6d7d9;
+        stroke: #aeb0b5;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        fill: #aeb0b5;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        stroke: #d6d7d9;
+      }
+
+      .cls-7 {
+        fill: none;
+        stroke-width: 0.5px;
+      }
+    </style>
+    <clipPath id="clip-Sidemenu">
+      <rect x="656" y="2200" width="280" height="176"/>
+    </clipPath>
+  </defs>
+  <g id="Sidemenu" class="cls-1">
+    <rect class="cls-3" x="656" y="2200" width="280" height="176"/>
+    <rect id="Rectangle_39" data-name="Rectangle 39" class="cls-2" width="116" height="80" transform="translate(748 2248)"/>
+    <g id="Group_23" data-name="Group 23" transform="translate(667.766 2184.235)">
+      <g id="Group_18" data-name="Group 18" transform="translate(80 80.003)">
+        <path id="Path_43" data-name="Path 43" class="cls-3" d="M0,0H116.484V16H0Z" transform="translate(0)"/>
+        <path id="Path_44" data-name="Path 44" class="cls-4" d="M73.605,0" transform="translate(6.399 8.001)"/>
+      </g>
+      <path id="Path_51" data-name="Path 51" class="cls-5" d="M0,0H52.023" transform="translate(89.038 88.004)"/>
+      <path id="Path_61" data-name="Path 61" class="cls-6" d="M0,0H47.914" transform="translate(89.038 104.007)"/>
+      <path id="Path_62" data-name="Path 62" class="cls-6" d="M0,0H54.619" transform="translate(89.038 120.01)"/>
+      <path id="Path_63" data-name="Path 63" class="cls-6" d="M0,0H41.424" transform="translate(89.038 136.013)"/>
+      <path id="Path_64" data-name="Path 64" class="cls-6" d="M0,0H59.115" transform="translate(89.038 72.001)"/>
+      <line id="Line_43" data-name="Line 43" class="cls-7" x2="116.484" transform="translate(80 80.003)"/>
+      <line id="Line_47" data-name="Line 47" class="cls-7" x2="116.484" transform="translate(80 96.006)"/>
+      <line id="Line_51" data-name="Line 51" class="cls-7" x2="116.484" transform="translate(80 112.009)"/>
+      <line id="Line_52" data-name="Line 52" class="cls-7" x2="116.484" transform="translate(80 128.012)"/>
+      <line id="Line_54" data-name="Line 54" class="cls-7" x2="116.484" transform="translate(80 64)"/>
+      <line id="Line_53" data-name="Line 53" class="cls-7" x2="116.484" transform="translate(80 144.015)"/>
+    </g>
+    <line id="Line_66" data-name="Line 66" class="cls-7" y2="80" transform="translate(864 2248.5)"/>
+    <line id="Line_67" data-name="Line 67" class="cls-7" y2="80" transform="translate(748 2248)"/>
+  </g>
+</svg>

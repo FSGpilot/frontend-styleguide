@@ -622,7 +622,7 @@ h3 + .button_wrapper {
 }
 
 .heading {
-  color: $color-primary-darker;
+  color: $color-text;
 }
 
 // Colors -------------- //
@@ -953,7 +953,6 @@ h3 + .button_wrapper {
 @media screen and (min-width:768px) {
   .componentbox-container {
     height: 180px;
-    border: 1px solid $color-gray-lightest;
   }
   .componentbox-col {
     padding-left: 7.5px;
@@ -967,6 +966,11 @@ h3 + .button_wrapper {
     &:last-child {
       padding-right: 0px;
       padding-left: 15px;
+    }
+
+    &:only-child {
+      padding-left: 0px;
+      padding-right: 15px;
     }
   }
 }
