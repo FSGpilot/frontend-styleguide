@@ -184,7 +184,7 @@ subnav:
 <h2 class="heading heading-margin-alt" id="reordering">Reordering</h2>
 <h3>Order classes</h3>
 
-<p>Use <span class="highlight">.order-</span> classes for controlling the <strong>visual order</strong> of your content. These classes are responsive, so you can set the <span class="highlight">order</span> by breakpoint (e.g., <span class="highlight">.order-1.order-md-2</span>). Includes support for <span class="highlight">1</span> through <span class="highlight">12</span> across all five grid tiers.
+<p>Use <span class="highlight">.order-</span> classes for controlling the <strong>visual order</strong> of your content. These classes are responsive, so you can set the <span class="highlight">order</span> by breakpoint (e.g., <span class="highlight">.order-1.order-md-2</span>). Includes support for <span class="highlight">1</span> through <span class="highlight">12</span> across all five grid tiers.</p>
 
 {% include code/preview.html component="grid--ordering-visual.html" %}
 {% include code/accordion.html component="grid--ordering-visual" %}
