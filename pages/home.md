@@ -18,7 +18,7 @@ title: Frontend Styleguiden
       <a href="{{ site.baseurl }}/components/">Se designsystemet</a>
     </p>
   </div>
-  <div class="md-col-4">
+  <div class="col-lg-4">
     <div class="card card-medium">
         <div class="card-header">
             <h3>Kom godt i gang</h3>
@@ -34,7 +34,7 @@ title: Frontend Styleguiden
         </div>
     </div>
   </div>
-  <div class="md-col-4">
+  <div class="col-lg-4">
     <div class="card card-medium">
         <div class="card-header">
             <h3>Opdateringer</h3>
@@ -48,7 +48,7 @@ title: Frontend Styleguiden
         </div>
     </div>
   </div>
-  <div class="md-col-4">
+  <div class="col-lg-4">
     <div class="card card-medium">
         <div class="card-header">
             <h3>Bidrag til designsystemet</h3>
@@ -183,13 +183,13 @@ title: Frontend Styleguiden
 </div>
 <div class="row">
   <div class="col-lg-6 content">
-    <h2 class="mt-2">Bidrag til Frontend Styleguiden som ikke-koder</h2>
+    <h2>Bidrag som &quot;ikke-koder&quot;</h2>
     <p>Har du en tanke eller en ændring du har lyst til bidrage med til Frontend Styleguiden, men har aldrig skrevet en linjes kode i dit liv? Så kan du her nemt komme igang med at bidrage til Frontend Styleguidens mange tekstsider. Det er nemlig sådan at alle tekstsiderne på Frontend Styleguiden er skrevet med noget der hedder "Markdown". At skrive Markdown er næsten ligesom at skrive et almindeligt word dokument, og når man er færdig med sit bidrag og tilføjer det til Frontend Styleguidens hjemmeside, bliver det automatisk lavet om til en præsentabel side.</p>
     <p>For at sætte din computer op til at kunne skrive bidrag til Frontend Styleguiden, skal du blot følge nedenstående link:</p>
     <p><a href="{{ site.baseurl }}/getting-started/bidrag-til-designsystemet/#bidrag-til-Styleguiden-uden-kendskab-til-kode">Opsætning af computer for bidragelse</a></p>
   </div>
   <div class="col-lg-6 content">
-    <h2 class="mt-2">Få hjælp og inspiration</h2>
+    <h2>Få hjælp og inspiration</h2>
     <p>Er du i tvivl om hvordan du kommer i gang med at bruge Frontend Styleguiden eller vil blot vide hvad den kan bruges til, er der massere af hjælp at hente. Under <a href="{{site.baseurl}}/components/">designsystem</a> kan du finde alt fra gode designretningslinjer til en beskrivelse af alle byggestenene som kan bruges til at bygge en ny selvbetjeningsløsning. Mangler du inspiration til din løsning, kan du under <a href="{{site.baseurl}}/page-templates/eksemplariske-eksempler/">eksempler</a> finde forskellige typer af eksemplariske eksempler. I Frontend Styleguiden er der så vidt muligt medfølgende eksempelkode til både dele af og hele selvbetjeningsløsninger.</p>
     <p>Har du stadig spørgsmål eller undren til Frontend Styleguiden, eller har du blot et ønske til en komponent som mangler, så skriv til os ved at klikke på nedenstående link:</p>
     <p><a href="https://github.com/jonasjensen77/frontend-styleguide-poc/issues">Skriv til os via GitHub</a></p>
