@@ -1907,6 +1907,8 @@ div.anno-container {
   position: relative;
   display: grid;
   display: -ms-grid; /* IE */
+  width: fit-content;
+  height: fit-content;
 }
 
 // Header is all white in the styleguide

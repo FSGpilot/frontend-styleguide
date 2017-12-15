@@ -1,20 +1,3 @@
-- id: "DesignsystemAtomicDesign"
-  path: "/img/Designsystem-Atomic-Design.jpg"
-  image-style: "max-width: 100%;"
-  points: 
-    - number: 1
-      style: "left: 0px; top: 0px;"
-      html: "Mauris eget finibus nulla, sit amet porta nibh. Proin et ultricies arcu."
-    - number: 7
-      style: "right: 0px; bottom: 0px;"
-      html: "Etiam a imperdiet sapien. Suspendisse ut commodo odio. "
-    - number: 3
-      style: "left: 50%; top: 50%;"   
-      html: "<h2> Subtitle </h2>"
-    - number: 4
-      style: "left: 25%; bottom: 25%;"
-      html: "<h1> Title </h1> "
-
 - id: "bred_trin"
   path: "/img/bred_trin.png"
   image-style: "max-width: 100%;"
@@ -28,12 +11,9 @@
       html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt velit quis volutpat ornare."
     - number: 8
       style: "left: 50%; top: 50%;"   
-      html: " <h1> Title </h1> <br/><br/><br/><br/>
-      <button>do nothing</button> 
+      html: " <h1> Title </h1>
+      <button>Test</button> 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt velit quis volutpat ornare.
        Nunc nec efficitur purus, id tincidunt diam. Ut justo risus, pulvinar vel sapien ut, euismod cursus lacus.
         Nam sed magna fringilla nulla luctus congue vitae rhoncus mauris. Aenean volutpat et orci vel ullamcorper.
-         Pellentesque vel ante nec est tristique viverra ut ac sapien. Cras sit amet lectus vestibulum, blandit urna tincidunt,
-          volutpat tellus. Curabitur condimentum mi nec ex cursus efficitur. Nullam condimentum dignissim lectus, a condimentum ipsum.
-           Quisque luctus ornare erat, molestie placerat massa tincidunt ut. Mauris id orci dolor. Curabitur maximus urna urna, 
-           ullamcorper fermentum erat ultricies non. Aenean eu odio lectus. "
+         Pellentesque vel ante nec est tristique viverra ut ac sapien."
