@@ -1987,3 +1987,115 @@ div.anno-container {
   min-height: 16rem;
   background-color: rgba(255,0,0,.1);
 }
+
+
+// List transparent and list tiles
+.transparent-list {
+  margin: 0;
+  padding: 8px 0;
+  list-style-type: none;
+
+  li {
+    margin-bottom: 1.6rem;
+  }
+}
+
+
+.list-tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 16px;
+  height: 56px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  user-select: none;
+  list-style-type: none;
+
+  .list-tile-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    text-align: center;
+
+    i.mdi {
+      width: 40px;
+      height: 40px;
+      color: #fff;
+      font-size: 30px;
+      line-height: 39px;
+      background-color: $color-info;
+      border-radius: 50%;
+    }
+  }
+
+  .list-tile-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+    text-align: left;
+    overflow: hidden;
+
+    .list-tile-title {
+      position: relative;
+      width: 100%;
+      height: 24px;
+      line-height: 24px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .list-tile-subtitle {
+      width: 100%;
+      font-size: 1.4rem;
+      color: rgba(0,0,0,.54);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .list-tile-action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 56px;
+    height: 100%;
+
+    i.mdi {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0,0,0,.12);
+      opacity: 0;
+
+    }
+  }
+}
+
+.text-error {
+  color: $color-error;
+}
+
+.text-success {
+  color: $color-success;
+}
