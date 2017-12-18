@@ -27,10 +27,10 @@ $('.style-switcher').on('change', function () {
 
 // Add style when navigating
 $('a').on('click', function (e) {
-  if(this.href.indexOf('#') < 0) {
-    e.preventDefault();
-    window.location.href = $(this).attr('href') + '?s=' + window.curStyle;
-  }
+  e.preventDefault();
+  var targetUrl =  $(this).attr('href');
+  var url = (targetUrl.indexOf("#") != -1 ? targetUrl.split("#")[0]+"?s="+window.curStyle+"#"+ targetUrl.split("#")[1] : targetUrl + "?s="+window.curStyle);
+  window.location.href = url;
 });
 
 // Add style to preview-iframes

@@ -61,10 +61,6 @@ Læs mere om de enkelte punkter [her](http://arkitekturguiden.digitaliser.dk/god
 
   <http://www.w3.org/TR/WCAG20/>
 
-- How to meet WCAG 2.0 AA
-
-  <http://www.w3.org/WAI/WCAG20/quickref/Overview.php>
-
 - Tips til at designe tilgængelige brugergrænseflader
 
   <http://www.w3.org/WAI/gettingstarted/tips/designing.html>
