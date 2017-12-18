@@ -139,6 +139,118 @@ Do you have questions or need help with setup? Did you run into any weird errors
 
 [https://github.com/18F/web-design-standards/issues](https://github.com/18F/web-design-standards/issues).
 
+<div class="row">
+  <div class="col-12">
+    <h2>Browser Compatibility</h2>
+      <p>Due to the use of <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">flexbox</a>, we do not support IE<11. There are too many bugs and workarounds to be solved, and as IE10 is only partially supporting flexbox, we use <em>vendor prefixes</em> to make flexbox work in IE11, and only support modern browsers.</p>
+      <p>If the content looks off to you, we encourage you to simply upgrade your browser, or try a more modern one.</p>
+  </div>
+  <div class="row mt-3" style="width: 100%;">
+    <div class="col-12">
+      <ul class="transparent-list" style="max-width: 100%;">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-internet-explorer"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">IE9 / IE10</div>
+                  <div class="list-tile-subtitle">Not supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-close text-error"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-internet-explorer"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">IE11</div>
+                  <div class="list-tile-subtitle">Supported by prefixes</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-edge"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">Edge</div>
+                  <div class="list-tile-subtitle">Supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-google-chrome"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">Chrome</div>
+                  <div class="list-tile-subtitle">Supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-firefox"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">Firefox</div>
+                  <div class="list-tile-subtitle">Supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-apple-safari"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">Safari 9+</div>
+                  <div class="list-tile-subtitle">Supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+
 ## Examples and prototyping setups
 
 In the **[component-library repository](https://github.com/jonasjensen77/frontend-styleguide-components/tree/master/examples)** you will find a number of example setups: Gulp, webpack, browserify etc.
