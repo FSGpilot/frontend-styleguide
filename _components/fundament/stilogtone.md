@@ -59,7 +59,7 @@ Hvis brugeren modtager advarsler, som er ude af proportioner med de reelle konse
         <p><strong>Undgå unødvendig stress</strong></p>
     </div>
     <div class="width-two-thirds">
-        <img src="{{ site.baseurl }}/img/retningslinjer/dodont_stilogtone_1.png"
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont_stilogtone_1.PNG"
         style="">
     </div>
 </div>
@@ -69,7 +69,7 @@ Hvis brugeren modtager advarsler, som er ude af proportioner med de reelle konse
         <p><strong>Vær Løsningsorienteret</strong></p>
     </div>
     <div class="width-two-thirds">
-        <img src="{{ site.baseurl }}/img/retningslinjer/dodont_stilogtone_1.png"
+        <img src="{{ site.baseurl }}/img/retningslinjer/dodont_stilogtone_1.PNG"
         style="">
     </div>
 </div>

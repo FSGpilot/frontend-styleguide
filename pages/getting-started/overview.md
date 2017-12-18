@@ -37,4 +37,4 @@ repository for which is the project wiki. Here you can find detailed
 information about our design and development process, and the findings we’ve
 collected from performing user research.
 
-<a href="https://github.com/jonasjensen77/frontend-styleguide-poc" class="button">View the project on GitHub</a>
+<a href="https://github.com/FSGpilot/frontend-styleguide-poc" class="button">View the project on GitHub</a>

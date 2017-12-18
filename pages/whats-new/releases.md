@@ -14,5 +14,5 @@ subnav:
 
 <p class="font-lead">Here you’ll find our release notes — summaries of bug fixes, new features, and other updates introduced in each release.</p>
 
-Have suggestions for a new feature or bug fix? [Open an issue](https://github.com/jonasjensen77/frontend-styleguide-poc/issues) in our repo.
+Have suggestions for a new feature or bug fix? [Open an issue](https://github.com/FSGpilot/frontend-styleguide-poc/issues) in our repo.
 

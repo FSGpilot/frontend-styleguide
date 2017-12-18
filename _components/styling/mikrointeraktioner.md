@@ -41,12 +41,3 @@ order: 25
     <p>TRANSITIONAL: Informing the user that a context change is taking place.</p>  
   </div>
 </div>
-
-## Named Animations
-
-This is a vocabulary of animations. Click to run individual demos:
-
-<div style="overflow: hidden; max-width: 736px;">
-<iframe scrolling="no" src="https://www.lightningdesignsystem.com/guidelines/motion/" style="border: 0px none; margin-left: -230px; height: 4959px; margin-top: -3933px; width: 926px;">
-</iframe>
-</div>

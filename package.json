@@ -1,6 +1,6 @@
 {
   "name": "dkwds-docs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Website and documentation on using the Frontend Styleguide",
   "scripts": {
     "build": "gulp build && bundle exec jekyll build",

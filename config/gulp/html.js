@@ -13,7 +13,7 @@ var suffix = '/components/render/';
 var envVariable = process.env.FRACTAL_BASE_URL;
 // dutil.logMessage(task, 'process.env: ' + JSON.stringify(process.env)); 
 var localUrl = envVariable + suffix; 
-var onlineUrl = 'https://jonasjensen77.github.io/frontend-styleguide-components/' + suffix;
+var onlineUrl = 'https://FSGpilot.github.io/frontend-styleguide-components/' + suffix;
 var distComponentCode = '_includes/code/components';
 var distComponentPreview = '_includes/code/components-preview';
 var distJekyllComponentPreview = '_preview-components';

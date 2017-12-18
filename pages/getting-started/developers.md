@@ -44,7 +44,7 @@ To use the Web Design Standards on your project, you'll need to include the CSS 
 
 First, download the Web Design Standards assets:
 
-<a class="link-download" href="https://github.com/jonasjensen77/frontend-styleguide-components/releases/download/v{{ site.version }}/dkwds-{{ site.version }}.zip">Download code</a>
+<a class="link-download" href="https://github.com/FSGpilot/frontend-styleguide-components/releases/download/v{{ site.version }}/dkwds-{{ site.version }}.zip">Download code</a>
 <span class="link-download-subtext">Version {{ site.version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
@@ -253,8 +253,8 @@ Do you have questions or need help with setup? Did you run into any weird errors
 
 ## Examples and prototyping setups
 
-In the **[component-library repository](https://github.com/jonasjensen77/frontend-styleguide-components/tree/master/examples)** you will find a number of example setups: Gulp, webpack, browserify etc.
-You will also find a **[complete rapid-prototyping setup](https://github.com/jonasjensen77/frontend-styleguide-components/tree/master/examples/gulp-prototyping-setup)** that will get you started building a prototype in no time!
+In the **[component-library repository](https://github.com/FSGpilot/frontend-styleguide-components/tree/master/examples)** you will find a number of example setups: Gulp, webpack, browserify etc.
+You will also find a **[complete rapid-prototyping setup](https://github.com/FSGpilot/frontend-styleguide-components/tree/master/examples/gulp-prototyping-setup)** that will get you started building a prototype in no time!
 
 ## CSS architecture
 
@@ -309,7 +309,7 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 ## Where things live
 
 * **HTML** markup for the components is located in: `src/html` in the site root.
-* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file](https://github.com/jonasjensen77/frontend-styleguide-components/releases/download/v{{ site.version }}/dkwds-{{ site.version }}.zip) .
+* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file](https://github.com/FSGpilot/frontend-styleguide-components/releases/download/v{{ site.version }}/dkwds-{{ site.version }}.zip) .
 * **JS** is located in: `src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)`.
 * **Fonts** are located in: `src/fonts`.
 * **Images** and icons are located in: `src/img`.

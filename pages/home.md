@@ -74,6 +74,6 @@ title: Frontend Styleguiden
     <h2>Få hjælp og inspiration</h2>
     <p>Er du i tvivl om hvordan du kommer i gang med at bruge Frontend Styleguiden eller vil blot vide hvad den kan bruges til, er der massere af hjælp at hente. Under <a href="{{site.baseurl}}/components/">designsystem</a> kan du finde alt fra gode designretningslinjer til en beskrivelse af alle byggestenene som kan bruges til at bygge en ny selvbetjeningsløsning. Mangler du inspiration til din løsning, kan du under <a href="{{site.baseurl}}/page-templates/eksemplariske-eksempler/">eksempler</a> finde forskellige typer af eksemplariske eksempler. I Frontend Styleguiden er der så vidt muligt medfølgende eksempelkode til både dele af og hele selvbetjeningsløsninger.</p>
     <p>Har du stadig spørgsmål eller undren til Frontend Styleguiden, eller har du blot et ønske til en komponent som mangler, så skriv til os ved at klikke på nedenstående link:</p>
-    <p><a href="https://github.com/jonasjensen77/frontend-styleguide-poc/issues">Skriv til os via GitHub</a></p>
+    <p><a href="https://github.com/FSGpilot/frontend-styleguide-poc/issues">Skriv til os via GitHub</a></p>
   </div>
 </div>

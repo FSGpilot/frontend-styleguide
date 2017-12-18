@@ -25,13 +25,13 @@ subnav:
 
 <h2 class="heading" id="mellem-blanket">Template: Den mellem løsning</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
-<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/stor.PNG" style="max-width: 1000%; width: 1018px"></a>
+<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/stor.png" style="max-width: 1000%; width: 1018px"></a>
 
 {% include code/accordion.html component="template-landing" %}
 
 <h2 class="heading" id="store-blanket">Template: Den store løsning</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
-<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/stor.PNG" style="max-width: 1000%; width: 1018px"></a>
+<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/stor.png" style="max-width: 1000%; width: 1018px"></a>
 
 {% include code/accordion.html component="template-landing" %}
 
