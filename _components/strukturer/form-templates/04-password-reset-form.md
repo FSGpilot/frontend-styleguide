@@ -5,8 +5,8 @@ order: 03
 lead: A standard template for resetting a password
 ---
 
-{% include code/preview.html component="password-reset" %}
-{% include code/accordion.html component="password-reset" %}
+{% include code/preview.html component="password-reset-form" %}
+{% include code/accordion.html component="password-reset-form" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="password-reset-docs">
