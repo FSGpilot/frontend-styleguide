@@ -21,15 +21,16 @@ $('.style-switcher').val(window.curStyle);
 $('.style-switcher').on('change', function () {
   if (window.curStyle !== this.value) {
     var onlyUrl = window.location.href.replace(window.location.search, '');
-    window.location = onlyUrl + '?s=' + this.value;
+    var url = (onlyUrl.indexOf('#') != -1 ? onlyUrl.split('#')[0]+'?s='+this.value : onlyUrl + '?s='+this.value);
+    window.location = url;
   }
 });
 
 // Add style when navigating
 $('a').on('click', function (e) {
   e.preventDefault();
-  var targetUrl =  $(this).attr('href');
-  var url = (targetUrl.indexOf('#') != -1 ? targetUrl.split('#')[0]+'?s='+window.curStyle+'#'+ targetUrl.split('#')[1] : targetUrl + '?s='+window.curStyle);
+  var onlyUrl =  $(this).attr('href');
+  var url = (onlyUrl.indexOf('#') != -1 ? onlyUrl.split('#')[0]+'?s='+window.curStyle+'#'+ onlyUrl.split('#')[1] : onlyUrl + '?s='+window.curStyle);
   window.location.href = url;
 });
 
