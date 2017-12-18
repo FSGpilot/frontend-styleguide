@@ -24,7 +24,6 @@ Blanketter, som borgeren kan hente på nettet og udfylde hjemme betragtes som en
 ## Udviklingsvejledningen
 
 <p>Udviklingsvejledningen for velfungerende selvbetjening indeholder de fællesoffentlige krav, som skal sikre brugervenlige digitale selvbetjeningsløsninger. Alle krav skal som udgangspunkt opfyldes for de obligatoriske bølgeløsninger. </p>
-<ul class="list list-wordbreak"><li><a href="http://www.digst.dk/Moedet-med-borgeren/Selvbetjeningsloesninger/Overblik-over-boelgerne" title="Overblik over obligatorisk selvbetjening" target="_blank">Overblik over obligatorisk selvbetjening</a></li></ul>
 <p>Vejledningens anbefalinger, gode eksempler og værktøjskasse er forslag og hjælp til at leve op til alle krav.</p>
 <p>Du finder vejledningen og mere information på digitaliser.dk</p>
 <ul class="list list-wordbreak"><li><a href="http://arkitekturguiden.digitaliser.dk/godselvbetjening" title="Link til OIO Arkitekturguiden om god selvbetjening" target="_blank">Udviklingsvejledningen</a></li></ul>
@@ -44,5 +43,5 @@ Blanketter, som borgeren kan hente på nettet og udfylde hjemme betragtes som en
 <p>Personasbeskrivelser baserer sig på et omfangsrigt kvantitativt og kvalitativt datasæt, og viser nogle af de udfordringer, vaner og forventninger, som borgerne har til den offentlige digitale borgerservice.</p>
 <p>Du kan hente borger.dk´s personasbeskrivelser&nbsp;i pdf.</p>
 <ul class="list list-wordbreak">
-    <li><a href="/-/media/for-myndigheder/Dokumenter/Personas-_skaermversionA4pdf.ashx" title="Borger.dk's personasbeskrivelser (pdf)" target="_blank">Borger.dk's personasbeskrivelser (pdf)</a></li>
+    <li><a href="https://www.borger.dk/-/media/for-myndigheder/Dokumenter/Personas-_skaermversionA4pdf.ashx" title="Borger.dk's personasbeskrivelser" target="_blank">Borger.dk's personasbeskrivelser (pdf)</a></li>
 </ul>
