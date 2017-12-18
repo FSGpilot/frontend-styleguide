@@ -29,7 +29,7 @@ $('.style-switcher').on('change', function () {
 $('a').on('click', function (e) {
   e.preventDefault();
   var targetUrl =  $(this).attr('href');
-  var url = (targetUrl.indexOf("#") != -1 ? targetUrl.split("#")[0]+"?s="+window.curStyle+"#"+ targetUrl.split("#")[1] : targetUrl + "?s="+window.curStyle);
+  var url = (targetUrl.indexOf('#') != -1 ? targetUrl.split('#')[0]+'?s='+window.curStyle+'#'+ targetUrl.split('#')[1] : targetUrl + '?s='+window.curStyle);
   window.location.href = url;
 });
 
