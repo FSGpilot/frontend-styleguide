@@ -260,16 +260,11 @@ You will also find a **[complete rapid-prototyping setup](https://github.com/jon
 
 * The CSS foundation of this site is built with the **[Sass](https://sass-lang.com)** preprocessor language.
 * Uses **[Bourbon](http://bourbon.io/)** for its simple and lightweight Sass mixin library, and, as per default, uses the **[flexbox version](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)** of the **[Bootstrap](https://getbootstrap.com)** grid for its rigid and industry standard-grade rules.
-* The CSS organization and naming conventions follow **[18F's CSS Coding Styleguide](https://pages.18f.gov/frontend/css-coding-styleguide/)**.
-* Uses a **[modified BEM](https://pages.18f.gov/frontend/css-coding-styleguide/naming/)** approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: `.button-cool_feature-active`).
 * Uses **modular CSS** for scalable, modular, and flexible code.
 * Uses **nesting** when appropriate. Nest minimally with up to two levels of nesting.
 * Hard-coded magic numbers are avoided and, if necessary, defined in the `core/variables` scss file.
 * Media queries are built **mobile first**.
 * **Spacing units** are as much as possible defined as rem or em units so they scale appropriately with text size. Pixels can be used for detail work and should not exceed 5px (For example: 3px borders).
-
-**For more information, visit:
-[https://pages.18f.gov/frontend/css-coding-styleguide/](https://pages.18f.gov/frontend/css-coding-styleguide/)**
 
 
 ## Customization and theming

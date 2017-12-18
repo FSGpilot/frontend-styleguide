@@ -41,14 +41,10 @@ subnav:
 {% include code/accordion.html component="template-landing" %}
 
 
-<!-->
 <h2 class="heading" id="landing-page">Template 1: Landing page</h2>
 <p>A landing page is intended to provide someone’s first impression of your agency or program. Often, they’ll arrive from somewhere else without much context, like a search result or a colleague’s email. So a landing page needs to be clear, engaging, and contextualizing.</p>
 <div class="preview">
-  <a class="media_link" href="{{ site.baseurl }}/page-templates/landing/">
-    <img src="{{ site.baseurl }}/assets/img/templates/template-landing.png" alt="Basic header">
-  </a>
-  <a class="button" href="{{ site.baseurl }}/page-templates/landing/">Demo landing page template</a>
+  <img src="{{ site.baseurl }}/assets/img/templates/template-landing.png" alt="Basic header">
 </div>
 {% include code/accordion.html component="template-landing" %}
 <div class="accordion-bordered">
@@ -96,10 +92,7 @@ subnav:
 <h2 class="heading" id="documentation-page">Template 2: Documentation page</h2>
 <p>A documentation page presents information on a certain theme, topic, or idea. People often arrive here after visiting the landing page or after searching for a specific piece of information, so documentation pages don’t need to provide as much contextualizing information as more introductory pages would. The copy should be clear, focused, and concise.</p>
 <div class="preview">
-  <a class="media_link" href="{{ site.baseurl }}/page-templates/docs/">
-    <img src="{{ site.baseurl }}/assets/img/templates/template-documentation.png" alt="Basic header">
-  </a>
-  <a class="button" href="{{ site.baseurl }}/page-templates/docs/">Demo documentation template</a>
+  <img src="{{ site.baseurl }}/assets/img/templates/template-documentation.png" alt="Basic header">
 </div>
 {% include code/accordion.html component="template-docs" %}
 <div class="accordion-bordered">
@@ -134,7 +127,6 @@ subnav:
     </ul>
   </div>
 </div>
-<-->
 
 <h2 class="heading" id="signering">Template: Signering</h2>
 <p>Her kommer der et eksempel på hvordan man implementerer signering, f.eks. via NemID.</p>
