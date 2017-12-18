@@ -1,1 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="966 1990 280 176"><defs><style>.a{clip-path:url(#b);}.b,.c,.h{fill:none;}.b{stroke:#c9cacd;}.b,.c{stroke-width:6px;}.c,.d{stroke:#d6d7d9;}.d,.e,.j{fill:#fff;}.f{fill:#aeb0b5;}.g,.i{stroke:none;}.i{fill:#5b616a;}</style><clipPath id="b"><rect x="966" y="1990" width="280" height="176"/></clipPath></defs><g id="a" class="a"><rect class="j" x="966" y="1990" width="280" height="176"/><g transform="translate(966 1990)"><line class="b" x2="94.379" transform="translate(101.63 88)"/><line class="c" x2="94.379" transform="translate(101.63 104)"/><line class="c" x2="94.379" transform="translate(101.63 72)"/><g class="d" transform="translate(87 68)"><circle class="g" cx="4" cy="4" r="4"/><circle class="h" cx="4" cy="4" r="3.5"/></g><g class="e" transform="translate(87 84)"><path class="g" d="M 4 7.5 C 2.070090055465698 7.5 0.5 5.929910182952881 0.5 4 C 0.5 2.070090055465698 2.070090055465698 0.5 4 0.5 C 5.929910182952881 0.5 7.5 2.070090055465698 7.5 4 C 7.5 5.929910182952881 5.929910182952881 7.5 4 7.5 Z"/><path class="i" d="M 4 7 C 5.654210090637207 7 7 5.654210090637207 7 4 C 7 2.345789909362793 5.654210090637207 1 4 1 C 2.345789909362793 1 1 2.345789909362793 1 4 C 1 5.654210090637207 2.345789909362793 7 4 7 M 4 8 C 1.790860056877136 8 0 6.209139823913574 0 4 C 0 1.790860056877136 1.790860056877136 0 4 0 C 6.209139823913574 0 8 1.790860056877136 8 4 C 8 6.209139823913574 6.209139823913574 8 4 8 Z"/></g><path class="f" d="M2.5,0A2.5,2.5,0,1,1,0,2.5,2.5,2.5,0,0,1,2.5,0Z" transform="translate(88.5 85.5)"/><g class="d" transform="translate(87 100)"><circle class="g" cx="4" cy="4" r="4"/><circle class="h" cx="4" cy="4" r="3.5"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="966 1990 280 176">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Radio_bottons);
+      }
+
+      .cls-2, .cls-3, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #c9cacd;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 6px;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #d6d7d9;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6, .cls-9 {
+        fill: #aeb0b5;
+      }
+
+      .cls-7, .cls-9 {
+        stroke: none;
+      }
+
+      .cls-10 {
+        fill: #f1f1f1;
+      }
+    </style>
+    <clipPath id="clip-Radio_bottons">
+      <rect x="966" y="1990" width="280" height="176"/>
+    </clipPath>
+  </defs>
+  <g id="Radio_bottons" data-name="Radio bottons" class="cls-1">
+    <rect class="cls-10" x="966" y="1990" width="280" height="176"/>
+    <g id="Group_17" data-name="Group 17" transform="translate(966 1990)">
+      <line id="Line_15" data-name="Line 15" class="cls-2" x2="94.379" transform="translate(101.63 88)"/>
+      <line id="Line_18" data-name="Line 18" class="cls-3" x2="94.379" transform="translate(101.63 104)"/>
+      <line id="Line_16" data-name="Line 16" class="cls-3" x2="94.379" transform="translate(101.63 72)"/>
+      <g id="Ellipse_8" data-name="Ellipse 8" class="cls-4" transform="translate(87 68)">
+        <circle class="cls-7" cx="4" cy="4" r="4"/>
+        <circle class="cls-8" cx="4" cy="4" r="3.5"/>
+      </g>
+      <g id="Path_48" data-name="Path 48" class="cls-5" transform="translate(87 84)">
+        <path class="cls-7" d="M 4 7.5 C 2.070090055465698 7.5 0.5 5.929910182952881 0.5 4 C 0.5 2.070090055465698 2.070090055465698 0.5 4 0.5 C 5.929910182952881 0.5 7.5 2.070090055465698 7.5 4 C 7.5 5.929910182952881 5.929910182952881 7.5 4 7.5 Z"/>
+        <path class="cls-9" d="M 4 7 C 5.654210090637207 7 7 5.654210090637207 7 4 C 7 2.345789909362793 5.654210090637207 1 4 1 C 2.345789909362793 1 1 2.345789909362793 1 4 C 1 5.654210090637207 2.345789909362793 7 4 7 M 4 8 C 1.790860056877136 8 0 6.209139823913574 0 4 C 0 1.790860056877136 1.790860056877136 0 4 0 C 6.209139823913574 0 8 1.790860056877136 8 4 C 8 6.209139823913574 6.209139823913574 8 4 8 Z"/>
+      </g>
+      <path id="Path_49" data-name="Path 49" class="cls-6" d="M2.5,0A2.5,2.5,0,1,1,0,2.5,2.5,2.5,0,0,1,2.5,0Z" transform="translate(88.5 85.5)"/>
+      <g id="Ellipse_10" data-name="Ellipse 10" class="cls-4" transform="translate(87 100)">
+        <circle class="cls-7" cx="4" cy="4" r="4"/>
+        <circle class="cls-8" cx="4" cy="4" r="3.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

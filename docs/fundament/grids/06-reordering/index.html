@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Reordering | POC version 1.0 - Frontend styleguide</title>
+<meta property="og:title" content="Reordering | POC version 1.0 - Frontend styleguide">
+
+
+<meta name="description" content="Order classes">
+<meta property="og:description" content="Order classes">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="http://localhost:4000/fundament/grids/06-reordering/">
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide-poc/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide-poc/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide-poc/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide-poc/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide-poc/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide-poc/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide-poc';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  </head>
+  <body class="page-reordering layout-component">
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="header header-extended" role="banner">
+
+  <!-- Solution Header -->
+  <div class="navbar solution-header">
+    <div class="solution-heading">
+      <em class="heading-text">
+        <a href="/frontend-styleguide-poc/"
+          title="Home"
+          aria-label="Home">
+          Frontend Styleguide
+        </a>
+      </em>
+    </div>
+    <button class="menu-btn">Menu</button>
+  </div>
+
+  <nav role="navigation" class="nav">
+   <div class="nav-inner">
+      <div class="nav-secondary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <a href="/frontend-styleguide-poc/getting-started/download/" class="button button-primary">
+              Download kode og designfiler
+            </a>
+          </li>
+          <li> 
+            <a href="https://github.com/jonasjensen77/frontend-styleguide-components" class="button button-secondary">
+              Se på GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg tema -</option>
+              <option value="styleguide">Tema: Neutralt</option>
+              <option value="virkdk">Tema: Virk.dk</option>
+              <option value="borgerdk">Tema: Borger.dk</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
+
+      <ul class="nav-primary accordion">
+        
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
+
+
+    
+  </li>
+
+
+      </ul>
+
+      
+      
+    </div> <!-- nav-inner end -->
+  </nav> 
+</header> 
+<div class="overlay"></div>
+
+
+<main class="container section" id="main-content">
+  <div class="row">
+
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        
+        
+      </aside>
+    </div>
+
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-/fundament/grids/06-reordering">
+        <header>
+          <p class="site-subheading">
+            
+          </p>
+          <h1 id="reordering">Reordering</h1>
+        </header>
+        
+      <h3 id="order-classes">Order classes</h3>
+
+<p>Use <code>.order-</code> classes for controlling the <strong>visual order</strong> of your content. These classes are responsive, so you can set the <code>order</code> by breakpoint (e.g., <code>.order-1.order-md-2</code>). Includes support for <code>1</code> through <code>12</code> across all five grid tiers.</p>
+
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/grid--ordering-visual.html" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/grid--ordering-visual.html"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-grid--ordering-visual">Code</button>
+  <div id="code-grid--ordering-visual" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-example"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                First, but unordered
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col order-12"</span><span class="nt">&gt;</span>
+                Second, but last
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col order-1"</span><span class="nt">&gt;</span>
+                Third, but first
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<p>There’s also a responsive <code>.order-first</code> class that quickly changes the order of one element by applying <code>order: -1</code>. This class can also be intermixed with the numbered <code>.order-\*</code> classes as needed.</p>
+
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/grid--ordering-responsive.html" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/grid--ordering-responsive.html"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-grid--ordering-responsive">Code</button>
+  <div id="code-grid--ordering-responsive" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-example"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                First, but unordered
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                Second, but unordered
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col order-first"</span><span class="nt">&gt;</span>
+                Third, but first
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<h3 id="offsetting-columns">Offsetting columns</h3>
+
+<p>You can offset grid columns by using the responsive <code>.offset-</code> grid classes. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</p>
+
+<h4 id="offset-classes">Offset classes</h4>
+
+<p>Move columns to the right using <code>.offset-md-\*</code> classes. These classes increase the left margin of a column by <code>\*</code> columns. For example, <code>.offset-md-4</code> moves <code>.col-md-4</code> over four columns.</p>
+
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/grid--offsets.html" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/grid--offsets.html"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-grid--offsets">Code</button>
+  <div id="code-grid--offsets" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-example"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>.col-md-4<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4 offset-md-4"</span><span class="nt">&gt;</span>.col-md-4 .offset-md-4<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3 offset-md-3"</span><span class="nt">&gt;</span>.col-md-3 .offset-md-3<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3 offset-md-3"</span><span class="nt">&gt;</span>.col-md-3 .offset-md-3<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6 offset-md-3"</span><span class="nt">&gt;</span>.col-md-6 .offset-md-3<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<p>In addition to column clearing at responsive breakpoints, you may need to reset offsets.</p>
+
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/grid--offsets-reset.html" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/grid--offsets-reset.html"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-grid--offsets-reset">Code</button>
+  <div id="code-grid--offsets-reset" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-example"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-5 col-md-6"</span><span class="nt">&gt;</span>.col-sm-5 .col-md-6<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-5 offset-sm-2 col-md-6 offset-md-0"</span><span class="nt">&gt;</span>.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-md-5 col-lg-6"</span><span class="nt">&gt;</span>.col.col-sm-6.col-md-5.col-lg-6<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0"</span><span class="nt">&gt;</span>.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<h4 id="margin-utilities">Margin utilities</h4>
+
+<p>You can also use margin utilities like <code>.mr-auto</code> to force sibling columns away from one another.</p>
+
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/grid--offsets-margin.html" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/grid--offsets-margin.html"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-grid--offsets-margin">Code</button>
+  <div id="code-grid--offsets-margin" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-example"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>.col-md-4<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4 ml-auto"</span><span class="nt">&gt;</span>.col-md-4 .ml-auto<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3 ml-md-auto"</span><span class="nt">&gt;</span>.col-md-3 .ml-md-auto<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3 ml-md-auto"</span><span class="nt">&gt;</span>.col-md-3 .ml-md-auto<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto mr-auto"</span><span class="nt">&gt;</span>.col-auto .mr-auto<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-auto"</span><span class="nt">&gt;</span>.col-auto<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<style scoped="">
+    .grid-example {
+        position: relative;
+        padding: 16px;
+        margin: 16px -15px;
+        border: 3px 0 0 solid #f7f7f9;
+    }
+    @media (min-width: 576px) {
+        .grid-example {
+            padding: 24px;
+            margin: 16px 0 0 0;
+        }
+    }
+    .grid-example > .row > .col,
+    .grid-example .row > [class^=col-] {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid rgba(86,61,124,.2);
+    }
+    code {
+        padding: 3px 6px;
+        background-color: #eee;
+        border-radius: 4px;
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 90%;
+        color: #bd4147;
+    }
+</style>
+
+
+
+      </section>
+    </div>
+
+  </div>
+</main>
+
+
+<footer class="footer site" role="contentinfo">
+  <div class="container footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="footer-primary-section">
+    <div class="container">
+      <nav class="footer-nav row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Ansvarlig myndighed</h4>
+            </li>
+            <li><a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Kontakt</h4>
+            </li>
+            <address>
+              <li><a href="tel:70707070">70707070</a></li>
+              <li><a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a></li>
+            </address>
+          </ul>
+          
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Lovgivning og jura</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Dette er reglerne for denne løsning</a></li>
+            
+            <li><a href="javascript:void(0);">Hvis du vil klage og lidt om dine pligter og rettigheder for at gøre linket langt</a></li>
+            
+            <li><a href="javascript:void(0);">Og et kort link</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Hjælp</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Link der kan hjælpe brugere</a></li>
+            
+            <li><a href="javascript:void(0);">Et kort link</a></li>
+            
+            <li><a href="javascript:void(0);">Endnu et link til et hjælpested</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-secondary_section">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="footer-logo-img col-12">En del af</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
+
+  </body>
+</html>

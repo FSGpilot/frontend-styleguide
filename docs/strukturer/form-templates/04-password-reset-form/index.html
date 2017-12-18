@@ -24,45 +24,37 @@
 <meta name="description" content="Code
   
     
-&amp;lt;form class=&quot;usa-form&quot;&amp;gt;
-  &amp;lt;fieldset&amp;gt;
-    &amp;lt;legend class=&quot;usa-drop_text&quot;&amp;gt;Reset password&amp;lt;/legend&amp;gt;
-    &amp;lt;span class=&quot;usa-serif&quot;&amp;gt;Please enter your new password&amp;lt;/span&amp;gt;
+&amp;lt;form class=&quot;form&quot;&amp;gt;
+    &amp;lt;fieldset&amp;gt;
+        &amp;lt;legend class=&quot;drop_text&quot;&amp;gt;Reset password&amp;lt;/legend&amp;gt;
+        &amp;lt;span class=&quot;serif&quot;&amp;gt;Please enter your new password&amp;lt;/span&amp;gt;
 
-    &amp;lt;div class=&quot;usa-alert usa-alert-info&quot;&amp;gt;
-      &amp;lt;div class=&quot;usa-alert-body&quot;&amp;gt;
-        &amp;lt;h3 class=&quot;usa-alert-heading&quot;&amp;gt;Passwords must:&amp;lt;/h3&amp;gt;
-      &amp;lt;/div&amp;gt;
-      &amp;lt;ul class=&quot;usa-checklist&quot; id=&quot;validate-password-reset&quot;&amp;gt;
-        &amp;lt;li data-validator=&quot;length&quot;&amp;gt;Be at least 8 characters&amp;lt;/li&amp;gt;
-        &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
-        &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
-        &amp;lt;li&amp;gt;Another requirement&amp;lt;/li&amp;gt;
-      &amp;lt;/ul&amp;gt;
-    &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;alert alert-info&quot;&amp;gt;
+            &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
+                &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Passwords must:&amp;lt;/h3&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;ul class=&quot;checklist&quot; id=&quot;validation_list&quot;&amp;gt;
+                &amp;lt;li data-validator=&quot;length&quot;&amp;gt;Be at least 8 characters&amp;lt;/li&amp;gt;
+                &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
+                &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;Another requirement&amp;lt;/li&amp;gt;
+            &amp;lt;/ul&amp;gt;
+        &amp;lt;/div&amp;gt;
 
-    &amp;lt;label for=&quot;new-password&quot;&amp;gt;New password&amp;lt;/label&amp;gt;
-    &amp;lt;input id=&quot;new-password&quot; name=&quot;password&quot; type=&quot;password&quot;
-      aria-describedby=&quot;validate-password-reset&quot;
-      data-validate-length=&quot;.{8,}&quot;
-      data-validate-uppercase=&quot;[A-Z]&quot;
-      data-validate-numerical=&quot;\d&quot;
-      data-validation-element=&quot;#validate-password-reset&quot;&amp;gt;
+        &amp;lt;label for=&quot;password&quot;&amp;gt;New password&amp;lt;/label&amp;gt;
+        &amp;lt;input id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; aria-describedby=&quot;validation_list&quot;
+            data-validate-length=&quot;.{8,}&quot; data-validate-uppercase=&quot;[A-Z]&quot; data-validate-numerical=&quot;\d&quot;
+            data-validation-element=&quot;#validation_list&quot;&amp;gt;
 
-    &amp;lt;label for=&quot;confirm-password&quot;&amp;gt;Confirm password&amp;lt;/label&amp;gt;
-    &amp;lt;input id=&quot;confirm-password&quot; name=&quot;confirmPassword&quot; type=&quot;password&quot;&amp;gt;
+        &amp;lt;label for=&quot;confirmPassword&quot;&amp;gt;Confirm password&amp;lt;/label&amp;gt;
+        &amp;lt;input id=&quot;confirmPassword&quot; name=&quot;confirmPassword&quot; type=&quot;password&quot;&amp;gt;
+        &amp;lt;p class=&quot;form-note&quot;&amp;gt;
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;show_multipassword&quot; aria-controls=&quot;password confirmPassword&quot;&amp;gt;Show my typing&amp;lt;/a&amp;gt;
+        &amp;lt;/p&amp;gt;
 
-    &amp;lt;p class=&quot;usa-form-note&quot;&amp;gt;
-      &amp;lt;a title=&quot;Show my typing&quot; href=&quot;javascript:void(0);&quot;
-          class=&quot;usa-show_multipassword&quot;
-          aria-controls=&quot;new-password confirm-password&quot;&amp;gt;
-        Show my typing&amp;lt;/a&amp;gt;
-    &amp;lt;/p&amp;gt;
-
-    &amp;lt;input type=&quot;submit&quot; value=&quot;Reset password&quot;&amp;gt;
-  &amp;lt;/fieldset&amp;gt;
+        &amp;lt;input type=&quot;submit&quot; value=&quot;Reset password&quot;&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
 &amp;lt;/form&amp;gt;
-
 
 
 
@@ -94,45 +86,37 @@
 <meta property="og:description" content="Code
   
     
-&amp;lt;form class=&quot;usa-form&quot;&amp;gt;
-  &amp;lt;fieldset&amp;gt;
-    &amp;lt;legend class=&quot;usa-drop_text&quot;&amp;gt;Reset password&amp;lt;/legend&amp;gt;
-    &amp;lt;span class=&quot;usa-serif&quot;&amp;gt;Please enter your new password&amp;lt;/span&amp;gt;
+&amp;lt;form class=&quot;form&quot;&amp;gt;
+    &amp;lt;fieldset&amp;gt;
+        &amp;lt;legend class=&quot;drop_text&quot;&amp;gt;Reset password&amp;lt;/legend&amp;gt;
+        &amp;lt;span class=&quot;serif&quot;&amp;gt;Please enter your new password&amp;lt;/span&amp;gt;
 
-    &amp;lt;div class=&quot;usa-alert usa-alert-info&quot;&amp;gt;
-      &amp;lt;div class=&quot;usa-alert-body&quot;&amp;gt;
-        &amp;lt;h3 class=&quot;usa-alert-heading&quot;&amp;gt;Passwords must:&amp;lt;/h3&amp;gt;
-      &amp;lt;/div&amp;gt;
-      &amp;lt;ul class=&quot;usa-checklist&quot; id=&quot;validate-password-reset&quot;&amp;gt;
-        &amp;lt;li data-validator=&quot;length&quot;&amp;gt;Be at least 8 characters&amp;lt;/li&amp;gt;
-        &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
-        &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
-        &amp;lt;li&amp;gt;Another requirement&amp;lt;/li&amp;gt;
-      &amp;lt;/ul&amp;gt;
-    &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;alert alert-info&quot;&amp;gt;
+            &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
+                &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Passwords must:&amp;lt;/h3&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;ul class=&quot;checklist&quot; id=&quot;validation_list&quot;&amp;gt;
+                &amp;lt;li data-validator=&quot;length&quot;&amp;gt;Be at least 8 characters&amp;lt;/li&amp;gt;
+                &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
+                &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;Another requirement&amp;lt;/li&amp;gt;
+            &amp;lt;/ul&amp;gt;
+        &amp;lt;/div&amp;gt;
 
-    &amp;lt;label for=&quot;new-password&quot;&amp;gt;New password&amp;lt;/label&amp;gt;
-    &amp;lt;input id=&quot;new-password&quot; name=&quot;password&quot; type=&quot;password&quot;
-      aria-describedby=&quot;validate-password-reset&quot;
-      data-validate-length=&quot;.{8,}&quot;
-      data-validate-uppercase=&quot;[A-Z]&quot;
-      data-validate-numerical=&quot;\d&quot;
-      data-validation-element=&quot;#validate-password-reset&quot;&amp;gt;
+        &amp;lt;label for=&quot;password&quot;&amp;gt;New password&amp;lt;/label&amp;gt;
+        &amp;lt;input id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; aria-describedby=&quot;validation_list&quot;
+            data-validate-length=&quot;.{8,}&quot; data-validate-uppercase=&quot;[A-Z]&quot; data-validate-numerical=&quot;\d&quot;
+            data-validation-element=&quot;#validation_list&quot;&amp;gt;
 
-    &amp;lt;label for=&quot;confirm-password&quot;&amp;gt;Confirm password&amp;lt;/label&amp;gt;
-    &amp;lt;input id=&quot;confirm-password&quot; name=&quot;confirmPassword&quot; type=&quot;password&quot;&amp;gt;
+        &amp;lt;label for=&quot;confirmPassword&quot;&amp;gt;Confirm password&amp;lt;/label&amp;gt;
+        &amp;lt;input id=&quot;confirmPassword&quot; name=&quot;confirmPassword&quot; type=&quot;password&quot;&amp;gt;
+        &amp;lt;p class=&quot;form-note&quot;&amp;gt;
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;show_multipassword&quot; aria-controls=&quot;password confirmPassword&quot;&amp;gt;Show my typing&amp;lt;/a&amp;gt;
+        &amp;lt;/p&amp;gt;
 
-    &amp;lt;p class=&quot;usa-form-note&quot;&amp;gt;
-      &amp;lt;a title=&quot;Show my typing&quot; href=&quot;javascript:void(0);&quot;
-          class=&quot;usa-show_multipassword&quot;
-          aria-controls=&quot;new-password confirm-password&quot;&amp;gt;
-        Show my typing&amp;lt;/a&amp;gt;
-    &amp;lt;/p&amp;gt;
-
-    &amp;lt;input type=&quot;submit&quot; value=&quot;Reset password&quot;&amp;gt;
-  &amp;lt;/fieldset&amp;gt;
+        &amp;lt;input type=&quot;submit&quot; value=&quot;Reset password&quot;&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
 &amp;lt;/form&amp;gt;
-
 
 
 
@@ -200,7 +184,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -218,6 +202,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -278,7 +268,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -289,7 +281,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
 
 
     
@@ -300,7 +294,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -311,7 +307,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -322,7 +320,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -385,7 +385,7 @@
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/password-reset" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/password-reset-form" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -406,52 +406,44 @@
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/password-reset"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide-poc/preview-components/password-reset-form"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
-  <button class="accordion-button" aria-controls="code-password-reset">Code</button>
-  <div id="code-password-reset" class="accordion-content">
+  <button class="accordion-button" aria-controls="code-password-reset-form">Code</button>
+  <div id="code-password-reset-form" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"usa-form"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;fieldset&gt;</span>
-    <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"usa-drop_text"</span><span class="nt">&gt;</span>Reset password<span class="nt">&lt;/legend&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-serif"</span><span class="nt">&gt;</span>Please enter your new password<span class="nt">&lt;/span&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"drop_text"</span><span class="nt">&gt;</span>Reset password<span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"serif"</span><span class="nt">&gt;</span>Please enter your new password<span class="nt">&lt;/span&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-alert usa-alert-info"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-alert-body"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"usa-alert-heading"</span><span class="nt">&gt;</span>Passwords must:<span class="nt">&lt;/h3&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-checklist"</span> <span class="na">id=</span><span class="s">"validate-password-reset"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"length"</span><span class="nt">&gt;</span>Be at least 8 characters<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"uppercase"</span><span class="nt">&gt;</span>Have at least 1 uppercase character<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"numerical"</span><span class="nt">&gt;</span>Have at least 1 numerical character<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;</span>Another requirement<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Passwords must:<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"checklist"</span> <span class="na">id=</span><span class="s">"validation_list"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"length"</span><span class="nt">&gt;</span>Be at least 8 characters<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"uppercase"</span><span class="nt">&gt;</span>Have at least 1 uppercase character<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"numerical"</span><span class="nt">&gt;</span>Have at least 1 numerical character<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Another requirement<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
 
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"new-password"</span><span class="nt">&gt;</span>New password<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"new-password"</span> <span class="na">name=</span><span class="s">"password"</span> <span class="na">type=</span><span class="s">"password"</span>
-      <span class="na">aria-describedby=</span><span class="s">"validate-password-reset"</span>
-      <span class="na">data-validate-length=</span><span class="s">".{8,}"</span>
-      <span class="na">data-validate-uppercase=</span><span class="s">"[A-Z]"</span>
-      <span class="na">data-validate-numerical=</span><span class="s">"\d"</span>
-      <span class="na">data-validation-element=</span><span class="s">"#validate-password-reset"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"password"</span><span class="nt">&gt;</span>New password<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"password"</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">aria-describedby=</span><span class="s">"validation_list"</span>
+            <span class="na">data-validate-length=</span><span class="s">".{8,}"</span> <span class="na">data-validate-uppercase=</span><span class="s">"[A-Z]"</span> <span class="na">data-validate-numerical=</span><span class="s">"\d"</span>
+            <span class="na">data-validation-element=</span><span class="s">"#validation_list"</span><span class="nt">&gt;</span>
 
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"confirm-password"</span><span class="nt">&gt;</span>Confirm password<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"confirm-password"</span> <span class="na">name=</span><span class="s">"confirmPassword"</span> <span class="na">type=</span><span class="s">"password"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"confirmPassword"</span><span class="nt">&gt;</span>Confirm password<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"confirmPassword"</span> <span class="na">name=</span><span class="s">"confirmPassword"</span> <span class="na">type=</span><span class="s">"password"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-note"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"show_multipassword"</span> <span class="na">aria-controls=</span><span class="s">"password confirmPassword"</span><span class="nt">&gt;</span>Show my typing<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
 
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"usa-form-note"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">title=</span><span class="s">"Show my typing"</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span>
-          <span class="na">class=</span><span class="s">"usa-show_multipassword"</span>
-          <span class="na">aria-controls=</span><span class="s">"new-password confirm-password"</span><span class="nt">&gt;</span>
-        Show my typing<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/p&gt;</span>
-
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Reset password"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/fieldset&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Reset password"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
-
 </code></pre>
 </div>
 

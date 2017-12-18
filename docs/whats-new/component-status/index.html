@@ -62,7 +62,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -80,6 +80,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -140,7 +146,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -151,7 +159,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
 
 
     
@@ -162,7 +172,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -173,7 +185,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -184,7 +198,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -215,7 +231,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -226,7 +244,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/releases/" class="nav-link">Release notes</a>
+<a href="/frontend-styleguide-poc/whats-new/releases/" class="nav-link">
+  <span>Release notes</span>
+</a>
 
 
     
@@ -237,7 +257,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/updates/" class="nav-link">News and updates</a>
+<a href="/frontend-styleguide-poc/whats-new/updates/" class="nav-link">
+  <span>Nyheder og opdateringer</span>
+</a>
 
 
     
@@ -248,7 +270,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/product-roadmap/" class="nav-link">Product roadmap</a>
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/" class="nav-link">
+  <span>Product roadmap</span>
+</a>
 
 
     
@@ -259,7 +283,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/research/" class="nav-link">Research</a>
+<a href="/frontend-styleguide-poc/whats-new/research/" class="nav-link">
+  <span>Research</span>
+</a>
 
 
     
@@ -270,7 +296,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/component-status/" class="current nav-link">Component Status</a>
+<a href="/frontend-styleguide-poc/whats-new/component-status/" class="current nav-link">
+  <span>Component Status</span>
+</a>
 
   
     
@@ -299,7 +327,7 @@
           <h1 id="component-status">Component Status</h1>
         </header>
         
-          <p class="font-lead">A list of components and their development status. CURRENT VERSION; ^7.19.0 (JUNE 14TH, 2017)</p>
+          <p class="font-lead">A list of components and their development status. CURRENT VERSION {{site.version}}</p>
         
       <p><img src="/frontend-styleguide-poc/img/component-status.PNG" /></p>
 

@@ -62,7 +62,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -80,6 +80,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -140,7 +146,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -151,7 +159,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
 
 
     
@@ -162,7 +172,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -173,7 +185,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -184,7 +198,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -215,7 +231,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -226,7 +244,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/developers/" class="current nav-link">Til udviklerne</a>
+<a href="/frontend-styleguide-poc/getting-started/developers/" class="current nav-link">
+  <span>Til udviklerne</span>
+</a>
 
   
     
@@ -314,7 +334,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/designers/" class="nav-link">Til designere</a>
+<a href="/frontend-styleguide-poc/getting-started/designers/" class="nav-link">
+  <span>Til designerne</span>
+</a>
 
 
     
@@ -325,7 +347,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/projectmanagers/" class="nav-link">Til projektledere</a>
+<a href="/frontend-styleguide-poc/getting-started/projectmanagers/" class="nav-link">
+  <span>Til projektlederne</span>
+</a>
 
 
     
@@ -336,7 +360,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/" class="nav-link">Integration til portalerne</a>
+<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/" class="nav-link">
+  <span>Integration til portalerne</span>
+</a>
 
 
     
@@ -347,7 +373,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/" class="nav-link">Bidrag til designsystemet</a>
+<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/" class="nav-link">
+  <span>Bidrag til designsystemet</span>
+</a>
 
 
     
@@ -358,7 +386,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/video-tutorials/" class="nav-link">Video tutorials</a>
+<a href="/frontend-styleguide-poc/getting-started/video-tutorials/" class="nav-link">
+  <span>Video tutorials</span>
+</a>
 
 
     
@@ -369,7 +399,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/loesninger/" class="nav-link">Løsninger</a>
+<a href="/frontend-styleguide-poc/getting-started/loesninger/" class="nav-link">
+  <span>Løsninger</span>
+</a>
 
 
     
@@ -397,7 +429,7 @@
         <h3 class="alert-heading">Work-in-progress!</h3>
         <div class="alert-text">
         <p>The Frontend Styleguiden is still a work-in-progress.</p>
-        <ul> 
+        <ul>
           <li> The documentation is far from finished </li>
           <li> There are many more components planned for later releases </li>
           <li> Same goes for examples: many more are planned. </li>
@@ -512,6 +544,118 @@ found in the <code class="highlighter-rouge">src/</code> or the compiled files i
 
 <p><a href="https://github.com/18F/web-design-standards/issues">https://github.com/18F/web-design-standards/issues</a>.</p>
 
+<div class="row">
+  <div class="col-12">
+    <h2>Browser Compatibility</h2>
+      <p>Due to the use of <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">flexbox</a>, we do not support IE&lt;11. There are too many bugs and workarounds to be solved, and as IE10 is only partially supporting flexbox, we use <em>vendor prefixes</em> to make flexbox work in IE11, and only support modern browsers.</p>
+      <p>If the content looks off to you, we encourage you to simply upgrade your browser, or try a more modern one.</p>
+  </div>
+  <div class="row mt-3" style="width: 100%;">
+    <div class="col-12">
+      <ul class="transparent-list" style="max-width: 100%;">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-internet-explorer"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">IE9 / IE10</div>
+                  <div class="list-tile-subtitle">Not supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-close text-error"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-internet-explorer"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">IE11</div>
+                  <div class="list-tile-subtitle">Supported by prefixes</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-edge"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">Edge</div>
+                  <div class="list-tile-subtitle">Supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-google-chrome"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">Chrome</div>
+                  <div class="list-tile-subtitle">Supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-firefox"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">Firefox</div>
+                  <div class="list-tile-subtitle">Supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <li>
+              <ul class="list-tile">
+                <div class="list-tile-icon">
+                  <i class="mdi mdi-apple-safari"></i>
+                </div>
+                <div class="list-tile-content">
+                  <div class="list-tile-title">Safari 9+</div>
+                  <div class="list-tile-subtitle">Supported</div>
+                </div>
+                <div class="list-tile-action">
+                  <i class="mdi mdi-check text-success"></i>
+                </div>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <h2 id="examples-and-prototyping-setups">Examples and prototyping setups</h2>
 
 <p>In the <strong><a href="https://github.com/jonasjensen77/frontend-styleguide-components/tree/master/examples">component-library repository</a></strong> you will find a number of example setups: Gulp, webpack, browserify etc.
@@ -521,9 +665,8 @@ You will also find a <strong><a href="https://github.com/jonasjensen77/frontend-
 
 <ul>
   <li>The CSS foundation of this site is built with the <strong><a href="https://sass-lang.com">Sass</a></strong> preprocessor language.</li>
-  <li>Uses <strong><a href="http://bourbon.io/">Bourbon</a></strong> for its simple and lightweight Sass mixin library, and the <strong><a href="http://neat.bourbon.io/">Neat</a></strong> library for the grid framework. Bourbon and Neat are open-source products from <strong><a href="https://thoughtbot.com/">thoughtbot</a></strong>.</li>
+  <li>Uses <strong><a href="http://bourbon.io/">Bourbon</a></strong> for its simple and lightweight Sass mixin library, and, as per default, uses the <strong><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">flexbox version</a></strong> of the <strong><a href="https://getbootstrap.com">Bootstrap</a></strong> grid for its rigid and industry standard-grade rules.</li>
   <li>The CSS organization and naming conventions follow <strong><a href="https://pages.18f.gov/frontend/css-coding-styleguide/">18F’s CSS Coding Styleguide</a></strong>.</li>
-  <li>CSS selectors are <strong>prefixed</strong> with <code class="highlighter-rouge">usa</code> (For example: <code class="highlighter-rouge">.button</code>).</li>
   <li>Uses a <strong><a href="https://pages.18f.gov/frontend/css-coding-styleguide/naming/">modified BEM</a></strong> approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: <code class="highlighter-rouge">.button-cool_feature-active</code>).</li>
   <li>Uses <strong>modular CSS</strong> for scalable, modular, and flexible code.</li>
   <li>Uses <strong>nesting</strong> when appropriate. Nest minimally with up to two levels of nesting.</li>
@@ -560,10 +703,10 @@ You will also find a <strong><a href="https://github.com/jonasjensen77/frontend-
 <span class="nv">$h3-font-size</span><span class="p">:</span> <span class="m">1</span><span class="mi">.75rem</span><span class="p">;</span>
 <span class="nv">$heading-line-height</span><span class="p">:</span> <span class="m">1</span><span class="mi">.4</span><span class="p">;</span>
 
-<span class="c1">// Grid/breakpoints
-</span><span class="nv">$small-screen</span><span class="p">:</span>  <span class="m">540px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-<span class="nv">$medium-screen</span><span class="p">:</span> <span class="m">620px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-<span class="nv">$large-screen</span><span class="p">:</span>  <span class="m">1120px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="c1">// Grid breakpoints
+</span><span class="nv">$grid-sm</span><span class="p">:</span>  <span class="m">540px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$grid-md</span><span class="p">:</span>  <span class="m">620px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
+<span class="nv">$grid-lg</span><span class="p">:</span>  <span class="m">1120px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
 </code></pre>
 </div>
 

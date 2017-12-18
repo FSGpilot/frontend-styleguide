@@ -62,7 +62,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -80,6 +80,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -140,7 +146,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -151,7 +159,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="current nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="current nav-link">
+  <span>Eksempler</span>
+</a>
 
   
 
@@ -164,7 +174,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -175,7 +187,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -186,7 +200,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -217,7 +233,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="current nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="current nav-link">
+  <span>Eksempler</span>
+</a>
 
   
     
@@ -231,7 +249,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/sideopbygning/" class="nav-link">Sideopbygning</a>
+<a href="/frontend-styleguide-poc/page-templates/sideopbygning/" class="nav-link">
+  <span>Sideopbygning</span>
+</a>
 
 
     
@@ -242,7 +262,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/eksemplariske-eksempler/" class="current nav-link">Eksemplariske eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/eksemplariske-eksempler/" class="current nav-link">
+  <span>Eksemplariske eksempler</span>
+</a>
 
   
     
@@ -291,28 +313,6 @@
 
 
 <a href="#hyper-blanket">Hyper løsningen</a>
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#landing-page">Landing page</a>
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#documentation-page">Documentation page</a>
 
     
   </li>
@@ -1328,11 +1328,12 @@
   </div>
 </div>
 
+<!-->
 <h2 class="heading" id="landing-page">Template 1: Landing page</h2>
 <p>A landing page is intended to provide someone’s first impression of your agency or program. Often, they’ll arrive from somewhere else without much context, like a search result or a colleague’s email. So a landing page needs to be clear, engaging, and contextualizing.</p>
 <div class="preview">
   <a class="media_link" href="/frontend-styleguide-poc/page-templates/landing/">
-    <img src="/frontend-styleguide-poc/assets/img/templates/template-landing.png" alt="Basic header" />
+    <img src="/frontend-styleguide-poc/assets/img/templates/template-landing.png" alt="Basic header">
   </a>
   <a class="button" href="/frontend-styleguide-poc/page-templates/landing/">Demo landing page template</a>
 </div>
@@ -1575,7 +1576,8 @@
 </div>
 
 <div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="docs-page-template-landing">
+  <button class="button-unstyled accordion-button"
+    aria-expanded="false" aria-controls="docs-page-template-landing">
     Documentation
   </button>
   <div id="docs-page-template-landing" class="accordion-content">
@@ -1619,7 +1621,7 @@
 <p>A documentation page presents information on a certain theme, topic, or idea. People often arrive here after visiting the landing page or after searching for a specific piece of information, so documentation pages don’t need to provide as much contextualizing information as more introductory pages would. The copy should be clear, focused, and concise.</p>
 <div class="preview">
   <a class="media_link" href="/frontend-styleguide-poc/page-templates/docs/">
-    <img src="/frontend-styleguide-poc/assets/img/templates/template-documentation.png" alt="Basic header" />
+    <img src="/frontend-styleguide-poc/assets/img/templates/template-documentation.png" alt="Basic header">
   </a>
   <a class="button" href="/frontend-styleguide-poc/page-templates/docs/">Demo documentation template</a>
 </div>
@@ -1810,7 +1812,8 @@
 </div>
 
 <div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="docs-page-template-docs">
+  <button class="button-unstyled accordion-button"
+    aria-expanded="true" aria-controls="docs-page-template-docs">
     Documentation
   </button>
   <div id="docs-page-template-docs" class="accordion-content">
@@ -1840,9 +1843,10 @@
     </ul>
   </div>
 </div>
+<-->
 
 <h2 class="heading" id="signering">Template: Signering</h2>
-<p>Her kunne der komme et eksempel på hvordan man implementere signering, f.eks. via NemID.</p>
+<p>Her kommer der et eksempel på hvordan man implementerer signering, f.eks. via NemID.</p>
 <!-- <img src="/frontend-styleguide-poc/img/lille.PNG" style="max-width: 1000%; width: 1018px"> -->
 
 <!-- <div class="accordion-bordered code-sample">

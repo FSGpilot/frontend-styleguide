@@ -62,7 +62,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -80,6 +80,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -140,7 +146,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -151,7 +159,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
 
 
     
@@ -162,7 +172,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -173,7 +185,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -184,7 +198,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -215,7 +231,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -226,7 +244,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/releases/" class="nav-link">Release notes</a>
+<a href="/frontend-styleguide-poc/whats-new/releases/" class="nav-link">
+  <span>Release notes</span>
+</a>
 
 
     
@@ -237,7 +257,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/updates/" class="nav-link">News and updates</a>
+<a href="/frontend-styleguide-poc/whats-new/updates/" class="nav-link">
+  <span>Nyheder og opdateringer</span>
+</a>
 
 
     
@@ -248,7 +270,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/product-roadmap/" class="current nav-link">Product roadmap</a>
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/" class="current nav-link">
+  <span>Product roadmap</span>
+</a>
 
   
     
@@ -314,7 +338,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/research/" class="nav-link">Research</a>
+<a href="/frontend-styleguide-poc/whats-new/research/" class="nav-link">
+  <span>Research</span>
+</a>
 
 
     
@@ -325,7 +351,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/component-status/" class="nav-link">Component Status</a>
+<a href="/frontend-styleguide-poc/whats-new/component-status/" class="nav-link">
+  <span>Component Status</span>
+</a>
 
 
     
@@ -350,359 +378,15 @@
         
       <h3 id="current-work-our-sprint-milestones">Current work: our sprint milestones</h3>
 
-<p>See what we’re working on now and in the future by viewing what is being
-worked on or queued up to work on in our sprint milestones below. These are
-two-week increments of work that we commit to finishing, using Agile Product
-Development practices.</p>
-
-<p><a href="https://github.com/18F/web-design-standards/milestones" class="button">View our sprint milestones</a></p>
+<p>This section will contain what we’re working on now and in the future by viewing what is being
+worked on or queued up to work on in our milestones.</p>
 
 <h3 id="future-work-our-product-roadmap">Future work: our product roadmap</h3>
 
-<p>Below is our our product roadmap: a long term plan of the goals, features,
-and long-term direction of the U.S. Web Design Standards. We update this
+<p>Below will contain our product roadmap: a long term plan of the goals, features,
+and long-term direction of the Frontend Styleguide. We will update this
 every few months with the status of our progress, as well as add new
 high-level future requests and ideas.</p>
-
-<section>
-  <h2 id="milestone-1">Milestone 1 - Make the best thing the easiest thing.</h2>
-  <ul>
-  
-    <li>
-      A public, up-to-date product road map.
-      
-          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/18" aria-describedby="tooltip-text-a-public-up-to-date-product-road-map">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      A public maintenance plan.
-      
-          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/19" aria-describedby="tooltip-text-a-public-maintenance-plan">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      A bare-bones HTML starter page, with CSS and JS pre-linked and necessary tags and classes.
-      
-          <a class="label label-in-progress" href="https://github.com/18F/web-design-standards/milestone/15" aria-describedby="tooltip-text-a-bare-bones-html-starter-page-with-css-and-js-pre-linked-and-necessary-tags-and-classes">
-            In Progress
-          </a>
-      
-    </li>
-  
-    <li>
-      Defined processes for active and public implementer support.
-      
-          <a class="label label-done" href="" aria-describedby="tooltip-text-defined-processes-for-active-and-public-implementer-support">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Contribution guidelines for both designers and developers.
-      
-          <a class="label label-done" href="https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md" aria-describedby="tooltip-text-contribution-guidelines-for-both-designers-and-developers">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Form patterns that include recommendations for just-in-time instructions.
-      
-          <a class="label label-done" href="" aria-describedby="tooltip-text-form-patterns-that-include-recommendations-for-just-in-time-instructions">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      UI components are comprised of clean, semantic code.
-      
-          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/13" aria-describedby="tooltip-text-ui-components-are-comprised-of-clean-semantic-code">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Simple "Getting Started" process and instructions.
-      
-          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/16" aria-describedby="tooltip-text-simple-getting-started-process-and-instructions">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      A core set of common, usable web components.
-      
-          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/14" aria-describedby="tooltip-text-a-core-set-of-common-usable-web-components">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Ready to go HTML templates (and related design stencils) for common types of government site pages.
-      
-          <a class="label label-done" href="https://github.com/18F/web-design-standards/milestone/17" aria-describedby="tooltip-text-ready-to-go-html-templates-and-related-design-stencils-for-common-types-of-government-site-pages">
-            Done
-          </a>
-      
-    </li>
-  
-  </ul>
-</section>
-
-<section>
-  <h2 id="milestone-2">Milestone 2 - Design for flexibility. Reuse, reuse, reuse.</h2>
-  <ul>
-  
-    <li>
-      Form templates structured in short chunks.
-      
-          <a class="label label-done" href="" aria-describedby="tooltip-text-form-templates-structured-in-short-chunks">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      The ability to quickly copy and paste code from the website.
-      
-          <a class="label label-done" href="" aria-describedby="tooltip-text-the-ability-to-quickly-copy-and-paste-code-from-the-website">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Form patterns that allow for easy recovery of mistakes.
-      
-          <a class="label label-done" href="" aria-describedby="tooltip-text-form-patterns-that-allow-for-easy-recovery-of-mistakes">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Easy ways to customize the Standards to fit an agency’s brand and needs.
-      
-          <a class="label label-done" href="" aria-describedby="tooltip-text-easy-ways-to-customize-the-standards-to-fit-an-agency-s-brand-and-needs">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Design stencils and assets.
-      
-          <a class="label label-done" href="https://standards.usa.gov/download/" aria-describedby="tooltip-text-design-stencils-and-assets">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Interaction patterns for save-as-you-go functionality
-      
-          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-interaction-patterns-for-save-as-you-go-functionality">
-            In Progress
-          </a>
-      
-    </li>
-  
-    <li>
-      A fork-able starter project representing a simple, static site with a few common pages.
-      
-          <a class="label label-done" href="" aria-describedby="tooltip-text-a-fork-able-starter-project-representing-a-simple-static-site-with-a-few-common-pages">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Build out the documentation and increase the ease of the process for Windows users to start up.
-      
-          <a class="label label-done" href="https://github.com/18F/web-design-standards/issues/1533" aria-describedby="tooltip-text-build-out-the-documentation-and-increase-the-ease-of-the-process-for-windows-users-to-start-up">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Final clean up and launch 1.0
-      
-          <a class="label label-done" href="https://github.com/18F/web-design-standards/labels/%5BRelease%5D%201.0" aria-describedby="tooltip-text-final-clean-up-and-launch-1-0">
-            Done
-          </a>
-      
-    </li>
-  
-  </ul>
-</section>
-
-<section>
-  <h2 id="milestone-3">Milestone 3 - Showcase benefits for agencies and users.</h2>
-  <ul>
-  
-    <li>
-      Highlight and track sites using the WDS more proactively, collect and link to them on the main site to show agencies what is possible.
-      
-          <a class="label label-in-progress" href="https://github.com/18F/web-design-standards/issues/1579" aria-describedby="tooltip-text-highlight-and-track-sites-using-the-wds-more-proactively-collect-and-link-to-them-on-the-main-site-to-show-agencies-what-is-possible">
-            In Progress
-          </a>
-      
-    </li>
-  
-    <li>
-      Create and publicize a public slack channel for support, questions and sharing best practices.
-      
-          <a class="label label-done" href="https://chat.18f.gov" aria-describedby="tooltip-text-create-and-publicize-a-public-slack-channel-for-support-questions-and-sharing-best-practices">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Start a series of Case Study and Best Practice blog posts sharing the work that agencies have done using the Web Design Standards and what they’ve learned.
-      
-          <a class="label label-done" href="https://18f.gsa.gov/tags/web-design-standards/" aria-describedby="tooltip-text-start-a-series-of-case-study-and-best-practice-blog-posts-sharing-the-work-that-agencies-have-done-using-the-web-design-standards-and-what-they-ve-learned">
-            Done
-          </a>
-      
-    </li>
-  
-    <li>
-      Produce more video tutorials and webinars for the community to learn how to more easily use the WDS.
-      
-          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-produce-more-video-tutorials-and-webinars-for-the-community-to-learn-how-to-more-easily-use-the-wds">
-            In Progress
-          </a>
-      
-    </li>
-  
-    <li>
-      Produce DigitalGov webinars more frequently and find more speaking engagements to share the work and code.
-      
-          <a class="label label-in-progress" href="https://attendee.gotowebinar.com/register/6016615967957411842" aria-describedby="tooltip-text-produce-digitalgov-webinars-more-frequently-and-find-more-speaking-engagements-to-share-the-work-and-code">
-            In Progress
-          </a>
-      
-    </li>
-  
-    <li>
-      In an upcoming WDS site update, create a more visible location for all learning materials to showcase and help folks out.
-      
-          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-in-an-upcoming-wds-site-update-create-a-more-visible-location-for-all-learning-materials-to-showcase-and-help-folks-out">
-            In Progress
-          </a>
-      
-    </li>
-  
-    <li>
-      Build a tighter API integration with the Digital Analytics Program to track usage of the WDS to help guide our decision making, along with continued user interviews and research.
-      
-          <a class="label label-in-progress" href="https://github.com/18F/web-design-standards/issues/1635" aria-describedby="tooltip-text-build-a-tighter-api-integration-with-the-digital-analytics-program-to-track-usage-of-the-wds-to-help-guide-our-decision-making-along-with-continued-user-interviews-and-research">
-            In Progress
-          </a>
-      
-    </li>
-  
-    <li>
-      Continue listening tours to meet with more than a half dozen agencies per quarter to learn more about their experience, needs, and collect feedback on the Web Design Standards.
-      
-          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-continue-listening-tours-to-meet-with-more-than-a-half-dozen-agencies-per-quarter-to-learn-more-about-their-experience-needs-and-collect-feedback-on-the-web-design-standards">
-            In Progress
-          </a>
-      
-    </li>
-  
-  </ul>
-</section>
-
-<section>
-  <h2 id="milestone-4">Milestone 4 - Advanced Components &amp; Speed, Speed, Speed.</h2>
-  <ul>
-  
-    <li>
-      Perform a Web Performance review and update to components to make sure they’re optimized to load as fast as possible.
-      
-          <a class="label label-in-progress" href="" aria-describedby="tooltip-text-perform-a-web-performance-review-and-update-to-components-to-make-sure-they-re-optimized-to-load-as-fast-as-possible">
-            In Progress
-          </a>
-      
-    </li>
-  
-    <li>
-      Launch the Yeoman generator to quickly build out sites with the WDS base design.
-      
-          <a class="label label-in-progress" href="https://github.com/18F/web-design-standards/issues/1542" aria-describedby="tooltip-text-launch-the-yeoman-generator-to-quickly-build-out-sites-with-the-wds-base-design">
-            In Progress
-          </a>
-      
-    </li>
-  
-    <li>
-      Create a series of open source boilerplate language to include in government contracts to make it easier for Contracting Officers and Program Managers to define and request the use of the WDS in government contracts.
-      
-    </li>
-  
-    <li>
-      Find partners to work with and fund the development of more complex open source components for wayfinding components, such as progress indicators.
-      
-    </li>
-  
-    <li>
-      Find partners to work with and fund the development of more complex open source components for maps.
-      
-    </li>
-  
-    <li>
-      Find partners to work with and fund the development of more complex open source components for data visualizations.
-      
-    </li>
-  
-    <li>
-      Find partners to work with and fund the development of more complex open source components for standarized iconography.
-      
-    </li>
-  
-    <li>
-      Find partners to work with and fund the development of more complex open source components for complex form structures.
-      
-    </li>
-  
-    <li>
-      Find partners to work with and fund the development of more complex open source components for multi-lingual support for website chrome.
-      
-    </li>
-  
-    <li>
-      Find partners to work with and fund the development of more complex open source components for email formats.
-      
-    </li>
-  
-    <li>
-      Find partners to work with and fund the development of open source templates for government-used content management systems such as Drupal, Wordpress, Sharepoint, and more designer prototyping templates.
-      
-    </li>
-  
-    <li>
-      Create and implement modularized CSS and JS for each component so that they are easily used on a case by case basis.
-      
-    </li>
-  
-  </ul>
-</section>
-
 
       </section>
     </div>

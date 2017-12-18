@@ -244,7 +244,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -262,6 +262,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -322,7 +328,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -333,7 +341,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
 
 
     
@@ -344,7 +354,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -355,7 +367,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -366,7 +380,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -397,7 +413,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -408,7 +426,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/" class="nav-link">Retningslinjer</a>
+<a href="/frontend-styleguide-poc/components/fundament/" class="nav-link">
+  <span>Retningslinjer</span>
+</a>
 
 
     
@@ -419,7 +439,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/styling/" class="nav-link">Styling</a>
+<a href="/frontend-styleguide-poc/components/styling/" class="nav-link">
+  <span>Styling</span>
+</a>
 
 
     
@@ -430,7 +452,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/" class="nav-link">Komponenter</a>
+<a href="/frontend-styleguide-poc/components/komponenter/" class="nav-link">
+  <span>Komponenter</span>
+</a>
 
 
     
@@ -441,7 +465,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/" class="current nav-link">Mønstre</a>
+<a href="/frontend-styleguide-poc/components/strukturer/" class="current nav-link">
+  <span>Mønstre</span>
+</a>
 
   
     
@@ -455,7 +481,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/footers/" class="current nav-link">Footers</a>
+<a href="/frontend-styleguide-poc/components/strukturer/footers/" class="current nav-link">
+  <span>Footers</span>
+</a>
 
   
     
@@ -474,7 +502,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/form-templates/" class="nav-link">Form templates</a>
+<a href="/frontend-styleguide-poc/components/strukturer/form-templates/" class="nav-link">
+  <span>Form templates</span>
+</a>
 
 
     
@@ -485,7 +515,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/headers/" class="nav-link">Headers</a>
+<a href="/frontend-styleguide-poc/components/strukturer/headers/" class="nav-link">
+  <span>Headers</span>
+</a>
 
 
     
@@ -514,7 +546,7 @@
           <h1 id="footers">Footers</h1>
         </header>
         
-          <p class="font-lead">Footers serve site visitors who arrive at the bottom of a page without finding what they want.</p>
+          <p class="font-lead">En footer har til formål at betjene brugere, som når til siden bund uden at finde det de søgte.</p>
         
       
 <div class="component-preview ">
@@ -541,7 +573,7 @@
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/footer--big.html" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/footer--big.html" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -689,7 +721,7 @@
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/footer--default.html" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/footer--default.html" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -811,7 +843,7 @@
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/footer--small.html" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/footer--small.html" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">

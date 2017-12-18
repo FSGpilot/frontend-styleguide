@@ -316,7 +316,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -334,6 +334,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -394,7 +400,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -405,7 +413,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
 
 
     
@@ -416,7 +426,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -427,7 +439,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -438,7 +452,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -474,7 +490,7 @@
           <h1 id="expandable-table">Expandable table</h1>
         </header>
         
-          <p class="font-lead">Documentation pending</p>
+          <p class="font-lead">An expandable table allows the user to show and hide content of a row.</p>
         
       
 <div class="component-preview ">
@@ -501,7 +517,7 @@
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button button" id="full" href="/frontend-styleguide-poc/preview-components/expandable" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide-poc/preview-components/expandable" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -659,6 +675,34 @@
 
 
   </div>
+</div>
+
+<div class="accordion-bordered accordion-docs">
+    <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="expandable-docs">Documentation</button>
+    <div id="expandable-docs" aria-hidden="false" class="accordion-content">
+        <h4>SCSS classes</h4>
+        <p>In order to use an expandable table it is needed to mark each of the expandable rows by scss classes. All necessary classes are listed in the table below.</p>        
+        <div class="table-container">
+            <table class="dk-table borderless compact" style="font-size: small">
+                <thead>
+                    <tr>
+                        <th width="190px">SCSS class</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>expand-button</td>
+                        <td>A button to expand the corresponding row. Javascript code is binded to this button.</td>
+                    </tr>
+                    <tr>
+                        <td>expandable-row</td>
+                        <td>A row that is expanded after an expand-button (Button from previous class) has been clicked. </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
 

@@ -62,7 +62,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -80,6 +80,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -140,7 +146,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -151,7 +159,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
 
 
     
@@ -162,7 +172,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -173,7 +185,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -184,7 +198,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -208,17 +224,16 @@
     <header>
       <h1>Designsystemet er åbent</h1>
     </header>
-    
+
     <p class="font-lead">
-      Noget med Open Source her. Kløgtigt ikke sandt? sit amet, tellus lacus lectus pretium, magna at sed, ligula
-      hendrerit suspendisse eu justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor
+      Designsystemet er Open Source. Det betyder først og fremmest at du frit kan benytte systemet og den bagvedliggende kode - men også at du kan bidrage til at det udvikles og forbedres. På den måde kan netop dine indsigter få lov at gavne os alle.
     </p>
 
     <p class="font-lead">
       <a href="/frontend-styleguide-poc/components/">Se designsystemet</a>
     </p>
   </div>
-  <div class="md-col-4">
+  <div class="col-lg-4">
     <div class="card card-medium">
         <div class="card-header">
             <h3>Kom godt i gang</h3>
@@ -226,7 +241,7 @@
         </div>
         <div class="card-block card-content card-center">
           <div>
-            <i class="mdi mdi-thumb-up-outline mdi-48px"></i>              
+            <i class="mdi mdi-thumb-up-outline mdi-48px"></i>
           </div>
         </div>
         <div class="card-action">
@@ -234,7 +249,7 @@
         </div>
     </div>
   </div>
-  <div class="md-col-4">
+  <div class="col-lg-4">
     <div class="card card-medium">
         <div class="card-header">
             <h3>Opdateringer</h3>
@@ -248,7 +263,7 @@
         </div>
     </div>
   </div>
-  <div class="md-col-4">
+  <div class="col-lg-4">
     <div class="card card-medium">
         <div class="card-header">
             <h3>Bidrag til designsystemet</h3>
@@ -261,43 +276,22 @@
             <a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/">Bidrag til designsystemet</a>
         </div>
     </div>
-  </div>  
-
-  <div class="col-8 content">
-    <h2>
-      Bidrag til frontend styleguiden som ikke-koder
-    </h2>
-    <p>
-      Har du en tanke eller en ændring du har lyst til bidrage med til frontend styleguiden, men har aldrig skrevet en linjes kode i dit liv?
-      Så kan du her nemt komme igang med at bidrage til frontend styleguidens mange tekstsider. 
-      Det er nemlig sådan at alle tekstsiderne på frontend styleguiden er skrevet med noget der hedder "Markdown".
-      At skrive Markdown er næsten ligesom at skrive et almindeligt word dokument, og når man er færdig med sit bidrag og tilføjer det til frontend styleguidens hjemmeside, bliver det automatisk lavet om til en præsentabel side.
-    </p>
-    <p>For at sætte din computer op til at kunne skrive bidrag til frontend styleguiden, skal du blot følge nedenstående link</p>
-    <p>
-      <a href="https://github.com/jonasjensen77/frontend-styleguide-poc/blob/master/contribution_for_nontech.md">Opsætning af computer for bidragelse</a>
-    </p>
-  
-    <h2>Få hjælp og inspiration</h2>
-    <p>
-      Lorem ipsum dolor sit amet, tellus lacus lectus pretium, magna at sed, ligula hendrerit suspendisse eu
-      justo, turpis mus, praesent fames ridiculus at occaecat malesuada eros. Velit dolor tellus quis sit, duis
-      proin libero eu diam, vestibulum venenatis, senectus lectus sed a egestas molestie feugiat,
-      consectetuer vel vivamus penatibus viverra. In nec magna sagittis interdum nec in, sociosqu tellus nec
-      senectus cum, lorem lorem dolor, commodo ut eu ac. Vestibulum pellentesque volutpat mus rhoncus
-      sem, mattis in nonummy libero vel commodo, arcu dui maecenas purus placerat vitae.
-    </p>
-    <p>
-      In nec magna sagittis interdum nec in, sociosqu tellus nec senectus cum, lorem lorem dolor, commodo
-      ut eu ac. Vestibulum pellentesque volutpat mus rhoncus sem, mattis in nonummy libero vel commodo,
-      arcu dui maecenas purus placerat vitae.
-    </p>
-    <p>
-      <a href="http://github.com">Skriv til os via GitHub</a>     
-    </p>
   </div>
 </div>
-
+<div class="row">
+  <div class="col-lg-6 content">
+    <h2>Bidrag som &quot;ikke-koder&quot;</h2>
+    <p>Har du en tanke eller en ændring du har lyst til bidrage med til Frontend Styleguiden, men har aldrig skrevet en linjes kode i dit liv? Så kan du her nemt komme igang med at bidrage til Frontend Styleguidens mange tekstsider. Det er nemlig sådan at alle tekstsiderne på Frontend Styleguiden er skrevet med noget der hedder "Markdown". At skrive Markdown er næsten ligesom at skrive et almindeligt word dokument, og når man er færdig med sit bidrag og tilføjer det til Frontend Styleguidens hjemmeside, bliver det automatisk lavet om til en præsentabel side.</p>
+    <p>For at sætte din computer op til at kunne skrive bidrag til Frontend Styleguiden, skal du blot følge nedenstående link:</p>
+    <p><a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/#bidrag-til-Styleguiden-uden-kendskab-til-kode">Opsætning af computer for bidragelse</a></p>
+  </div>
+  <div class="col-lg-6 content">
+    <h2>Få hjælp og inspiration</h2>
+    <p>Er du i tvivl om hvordan du kommer i gang med at bruge Frontend Styleguiden eller vil blot vide hvad den kan bruges til, er der massere af hjælp at hente. Under <a href="/frontend-styleguide-poc/components/">designsystem</a> kan du finde alt fra gode designretningslinjer til en beskrivelse af alle byggestenene som kan bruges til at bygge en ny selvbetjeningsløsning. Mangler du inspiration til din løsning, kan du under <a href="/frontend-styleguide-poc/page-templates/eksemplariske-eksempler/">eksempler</a> finde forskellige typer af eksemplariske eksempler. I Frontend Styleguiden er der så vidt muligt medfølgende eksempelkode til både dele af og hele selvbetjeningsløsninger.</p>
+    <p>Har du stadig spørgsmål eller undren til Frontend Styleguiden, eller har du blot et ønske til en komponent som mangler, så skriv til os ved at klikke på nedenstående link:</p>
+    <p><a href="https://github.com/jonasjensen77/frontend-styleguide-poc/issues">Skriv til os via GitHub</a></p>
+  </div>
+</div>
 
   </section>
 </main>

@@ -1,1 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="656 1360 280 176"><defs><style>.a{clip-path:url(#b);}.b,.j{fill:#fff;}.c,.i{fill:#d6d7d9;}.d,.e,.f{fill:none;}.d{stroke:#5b616a;}.d,.e{stroke-width:6px;opacity:0.2;}.e{stroke:#95989a;}.g{fill:#979797;fill-rule:evenodd;}.h,.i{stroke:none;}</style><clipPath id="b"><rect x="656" y="1360" width="280" height="176"/></clipPath></defs><g id="a" class="a"><rect class="j" x="656" y="1360" width="280" height="176"/><g class="b" transform="translate(680 1439)"><path class="h" d="M 231.5 53.5 L 0.4999923706054688 53.5 L 0.4999923706054688 0.5 L 231.5 0.5 L 231.5 53.5 Z"/><path class="i" d="M 231 53 L 231 1 L 0.9999923706054688 1 L 0.9999923706054688 53 L 231 53 M 232 54 L -7.62939453125e-06 54 L -7.62939453125e-06 0 L 232 0 L 232 54 Z"/></g><path class="c" d="M0,0H232V16H0Z" transform="translate(680 1403.5)"/><rect class="c" width="232" height="16" transform="translate(680 1423.5)"/><line class="d" x2="64" transform="translate(691 1411.5)"/><line class="d" x2="64" transform="translate(691 1431.5)"/><line class="e" x2="53" transform="translate(691 1451.5)"/><line class="e" x2="209" transform="translate(691 1459.5)"/><line class="e" x2="209" transform="translate(691 1467.5)"/><line class="e" x2="95.5" transform="translate(691 1475.5)"/><g transform="translate(306 1346.5)"><rect class="f" width="14.873" height="14.873" transform="translate(588 78)"/><path class="g" d="M12.569,8.6,9.718,11.451,6.868,8.6,6,9.468l3.718,3.718,3.718-3.718Z" transform="translate(585.718 74.729)"/></g><g transform="translate(816 2007.373) rotate(-90)"><rect class="f" width="14.873" height="14.873" transform="translate(588 78)"/><path class="g" d="M12.569,8.6,9.718,11.451,6.868,8.6,6,9.468l3.718,3.718,3.718-3.718Z" transform="translate(585.718 74.729)"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="656 1360 280 176">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Accordion);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-9 {
+        fill: #d6d7d9;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #5b616a;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 6px;
+        opacity: 0.2;
+      }
+
+      .cls-5 {
+        stroke: #95989a;
+      }
+
+      .cls-7 {
+        fill: #979797;
+        fill-rule: evenodd;
+      }
+
+      .cls-8, .cls-9 {
+        stroke: none;
+      }
+
+      .cls-10 {
+        fill: #f1f1f1;
+      }
+    </style>
+    <clipPath id="clip-Accordion">
+      <rect x="656" y="1360" width="280" height="176"/>
+    </clipPath>
+  </defs>
+  <g id="Accordion" class="cls-1">
+    <rect class="cls-10" x="656" y="1360" width="280" height="176"/>
+    <g id="Path_4" data-name="Path 4" class="cls-2" transform="translate(680 1439)">
+      <path class="cls-8" d="M 231.5 53.5 L 0.4999923706054688 53.5 L 0.4999923706054688 0.5 L 231.5 0.5 L 231.5 53.5 Z"/>
+      <path class="cls-9" d="M 231 53 L 231 1 L 0.9999923706054688 1 L 0.9999923706054688 53 L 231 53 M 232 54 L -7.62939453125e-06 54 L -7.62939453125e-06 0 L 232 0 L 232 54 Z"/>
+    </g>
+    <path id="Path_3" data-name="Path 3" class="cls-3" d="M0,0H232V16H0Z" transform="translate(680 1403.5)"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-3" width="232" height="16" transform="translate(680 1423.5)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-4" x2="64" transform="translate(691 1411.5)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-4" x2="64" transform="translate(691 1431.5)"/>
+    <line id="Line_4" data-name="Line 4" class="cls-5" x2="53" transform="translate(691 1451.5)"/>
+    <line id="Line_8" data-name="Line 8" class="cls-5" x2="209" transform="translate(691 1459.5)"/>
+    <line id="Line_9" data-name="Line 9" class="cls-5" x2="209" transform="translate(691 1467.5)"/>
+    <line id="Line_10" data-name="Line 10" class="cls-5" x2="95.5" transform="translate(691 1475.5)"/>
+    <g id="ic_expand_more" transform="translate(306 1346.5)">
+      <rect id="rectangle" class="cls-6" width="14.873" height="14.873" transform="translate(588 78)"/>
+      <path id="path" class="cls-7" d="M12.569,8.6,9.718,11.451,6.868,8.6,6,9.468l3.718,3.718,3.718-3.718Z" transform="translate(585.718 74.729)"/>
+    </g>
+    <g id="ic_expand_more-2" data-name="ic_expand_more" transform="translate(816 2007.373) rotate(-90)">
+      <rect id="rectangle-2" data-name="rectangle" class="cls-6" width="14.873" height="14.873" transform="translate(588 78)"/>
+      <path id="path-2" data-name="path" class="cls-7" d="M12.569,8.6,9.718,11.451,6.868,8.6,6,9.468l3.718,3.718,3.718-3.718Z" transform="translate(585.718 74.729)"/>
+    </g>
+  </g>
+</svg>

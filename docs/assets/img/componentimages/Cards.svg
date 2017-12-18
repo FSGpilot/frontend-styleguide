@@ -1,1 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1276 2200 280 176"><defs><style>.a{clip-path:url(#b);}.b{fill:#f1f1f1;}.c,.d,.e,.f{fill:none;}.c,.f{stroke:#aeb0b5;}.c{stroke-width:0.5px;}.d{stroke:#bdbfc3;}.d,.e,.f{stroke-width:6px;}.e{stroke:#d6d7d9;}.g{fill:#fff;}</style><clipPath id="b"><rect x="1276" y="2200" width="280" height="176"/></clipPath></defs><g id="a" class="a"><rect class="g" x="1276" y="2200" width="280" height="176"/><g transform="translate(1276 2203)"><path class="b" d="M4,0h97.158a4,4,0,0,1,4,4V88a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(87 39)"/><line class="c" x2="105.158" transform="translate(87 56.5)"/><line class="d" x2="53" transform="translate(95 48.5)"/><line class="e" x2="44.5" transform="translate(95 67.5)"/><line class="e" x2="89.5" transform="translate(95 77.5)"/><line class="e" x2="89.5" transform="translate(95 87.5)"/><line class="e" x2="21.5" transform="translate(95 117.5)"/><line class="f" x2="21.5" transform="translate(95 109.5)"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1276 2200 280 176">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Cards);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #aeb0b5;
+        stroke-width: 0.5px;
+      }
+
+      .cls-4 {
+        stroke: #d6d7d9;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        stroke: #f1f1f1;
+      }
+
+      .cls-6 {
+        fill: #f1f1f1;
+      }
+    </style>
+    <clipPath id="clip-Cards">
+      <rect x="1276" y="2200" width="280" height="176"/>
+    </clipPath>
+  </defs>
+  <g id="Cards" class="cls-1">
+    <rect class="cls-6" x="1276" y="2200" width="280" height="176"/>
+    <g id="Group_31" data-name="Group 31" transform="translate(1276 2203)">
+      <path id="Path_38" data-name="Path 38" class="cls-2" d="M4,0h97.158a4,4,0,0,1,4,4V88a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(87 39)"/>
+      <line id="Line_25" data-name="Line 25" class="cls-3" x2="105.158" transform="translate(87 56.5)"/>
+      <line id="Line_4" data-name="Line 4" class="cls-4" x2="53" transform="translate(95 48.5)"/>
+      <line id="Line_12" data-name="Line 12" class="cls-4" x2="44.5" transform="translate(95 67.5)"/>
+      <line id="Line_13" data-name="Line 13" class="cls-4" x2="89.5" transform="translate(95 77.5)"/>
+      <line id="Line_26" data-name="Line 26" class="cls-4" x2="89.5" transform="translate(95 87.5)"/>
+      <line id="Line_28" data-name="Line 28" class="cls-5" x2="21.5" transform="translate(95 117.5)"/>
+      <line id="Line_29" data-name="Line 29" class="cls-4" x2="21.5" transform="translate(95 109.5)"/>
+    </g>
+  </g>
+</svg>

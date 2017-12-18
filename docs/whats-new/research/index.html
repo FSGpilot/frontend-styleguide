@@ -62,7 +62,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -80,6 +80,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -140,7 +146,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -151,7 +159,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
 
 
     
@@ -162,7 +172,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -173,7 +185,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -184,7 +198,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -215,7 +231,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -226,7 +244,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/releases/" class="nav-link">Release notes</a>
+<a href="/frontend-styleguide-poc/whats-new/releases/" class="nav-link">
+  <span>Release notes</span>
+</a>
 
 
     
@@ -237,7 +257,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/updates/" class="nav-link">News and updates</a>
+<a href="/frontend-styleguide-poc/whats-new/updates/" class="nav-link">
+  <span>Nyheder og opdateringer</span>
+</a>
 
 
     
@@ -248,7 +270,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/product-roadmap/" class="nav-link">Product roadmap</a>
+<a href="/frontend-styleguide-poc/whats-new/product-roadmap/" class="nav-link">
+  <span>Product roadmap</span>
+</a>
 
 
     
@@ -259,7 +283,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/research/" class="current nav-link">Research</a>
+<a href="/frontend-styleguide-poc/whats-new/research/" class="current nav-link">
+  <span>Research</span>
+</a>
 
   
     
@@ -278,7 +304,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/component-status/" class="nav-link">Component Status</a>
+<a href="/frontend-styleguide-poc/whats-new/component-status/" class="nav-link">
+  <span>Component Status</span>
+</a>
 
 
     
@@ -299,127 +327,108 @@
           <h1 id="research">Research</h1>
         </header>
         
-          <p class="font-lead">User research will be a core aspect of the U.S. Web Design Standards project as it’s our main source of feedback and inspiration for future product development.</p>
+          <p class="font-lead">The Frontend Styleguide is made by taking empirical knowledge collected from research by leading UX-experts and mixing it with the fundament of the U.S. Web Design Standards. This results in a styleguide that is solid for building governmental self-service solutions, and enables building solutions with the average user in mind.</p>
         
-      <p>We plan to use a combination of research methods, quantitative research like collecting web analytics to see in how frequently the Standards are used around the federal government, and qualitative research like remote and in-person observational studies to see whether the Standards are making government sites easier for people to use.</p>
+      <p>The Frontend styleguide is not trying keep up with the newest trends. However the styleguide is made to be able to dynamically evolve.</p>
 
-<p>We’ll use this research to see how well the Standards are working and what needs to be improved. We can also provide user research services to teams that are using the Standards. These will be priced to allow teams around the federal government to engage with us and improve their product for their users. This benefits the Standards as well because we’ll get feedback on where they need to be improved and extended.</p>
+<!-- From USWD>
+We’ll use this research to see how well the Standards are working and what needs to be improved. We can also provide user research services to teams that are using the Standards. These will be priced to allow teams around the federal government to engage with us and improve their product for their users. This benefits the Standards as well because we’ll get feedback on where they need to be improved and extended.
 
-<h2 id="analytics-reporting">Analytics Reporting</h2>
+## Analytics Reporting
 
-<h3 id="quarterly-reports">Quarterly Reports</h3>
+### Quarterly Reports
 
-<p>Once a quarter the metrics displayed on the <a href="/frontend-styleguide-poc/about-our-work/">about our work</a>
+Once a quarter the metrics displayed on the [about our work](/frontend-styleguide-poc/about-our-work/)
 page will be updated to reflect the recent traffic and usage of the U.S.
 Web Design Standards. We will use this information to identify future
 improvements to the design patterns. You can use these metrics to help justify
-the adoption and continued use of the Standards.</p>
+the adoption and continued use of the Standards.
 
-<h4 id="dependencies">Dependencies</h4>
-<ul>
-  <li>Your product team has defined the metrics and funnels you want to track and report</li>
-  <li>One of your product team members must be familiar enough with web analytics to set up the tracking and reporting</li>
-</ul>
 
-<h4 id="references">References</h4>
-<ul>
-  <li><a href="https://www.nngroup.com/articles/analytics-reports-ux-strategists/">https://www.nngroup.com/articles/analytics-reports-ux-strategists/</a></li>
-  <li><a href="ttp://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/">http://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/</a></li>
-</ul>
+#### Dependencies
+* Your product team has defined the metrics and funnels you want to track and report
+* One of your product team members must be familiar enough with web analytics to set up the tracking and reporting
 
-<h2 id="user-research-activities">User Research Activities</h2>
-<h3 id="recruitment">Recruitment</h3>
+#### References
+* [https://www.nngroup.com/articles/analytics-reports-ux-strategists/](https://www.nngroup.com/articles/analytics-reports-ux-strategists/)
+* [http://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/](ttp://www.uxbooth.com/articles/an-analytics-first-approach-to-ux-part-1/)
 
-<p>One of our challenges is knowing who is interested in being part of our user research. To resolve this, we will implement several channels for federal designers and developers to signal their interest and provide their contact information to us. This will allow us to conduct research in a timely fashion.</p>
+## User Research Activities
+### Recruitment
 
-<h4 id="potential-methods">Potential Methods</h4>
-<ul>
-  <li>Re-activate the screener to intercept users of standards.usa.gov</li>
-  <li>Provide a “Contact Us” feature on standards.usa.gov</li>
-  <li>Perform outreach via federal listservs and other digital channels</li>
-</ul>
+One of our challenges is knowing who is interested in being part of our user research. To resolve this, we will implement several channels for federal designers and developers to signal their interest and provide their contact information to us. This will allow us to conduct research in a timely fashion.
 
-<h3 id="digital-service-team-remote-interviews">Digital Service Team Remote Interviews</h3>
+#### Potential Methods
+* Re-activate the screener to intercept users of standards.usa.gov
+* Provide a “Contact Us” feature on standards.usa.gov
+* Perform outreach via federal listservs and other digital channels
 
-<p>One of the most consistent ways we have collected feedback from our users has been by conducting remote interviews with digital service teams around the federal government. This has allowed us to collect direct feedback and suggestions for how to improve the product. Given this success, the team aims to continue using this method on a frequent (1-2 interviews per month) basis.</p>
+### Digital Service Team Remote Interviews
 
-<h3 id="bi-annual-contextual-inquiries">Bi-annual Contextual Inquiries</h3>
+One of the most consistent ways we have collected feedback from our users has been by conducting remote interviews with digital service teams around the federal government. This has allowed us to collect direct feedback and suggestions for how to improve the product. Given this success, the team aims to continue using this method on a frequent (1-2 interviews per month) basis.
 
-<p>Twice a year, the team will schedule a round of in-person interviews with teams around the federal government to meet with and observe how teams have been using, or would like to be using, the U.S. Web Design Standards. The information gathered during these “contextual inquires” will ensure that the product is continuously delivering what federal teams and the general public need.</p>
+### Bi-annual Contextual Inquiries
 
-<h3 id="open-house-events-with-remote-options">Open House Events (with Remote Options)</h3>
+Twice a year, the team will schedule a round of in-person interviews with teams around the federal government to meet with and observe how teams have been using, or would like to be using, the U.S. Web Design Standards. The information gathered during these “contextual inquires” will ensure that the product is continuously delivering what federal teams and the general public need.
 
-<p>The team will host open house events at the GSA Headquarters in Washington D.C and remotely using web conferencing tools. During these events, the team will conduct training presentations and allow teams using the Standards to showcase their products and explain how they’ve implemented them. These events will be open to anyone in federal government.</p>
+### Open House Events (with Remote Options)
 
-<h2 id="research-as-a-service-offerings">Research as a Service Offerings</h2>
+The team will host open house events at the GSA Headquarters in Washington D.C and remotely using web conferencing tools. During these events, the team will conduct training presentations and allow teams using the Standards to showcase their products and explain how they’ve implemented them. These events will be open to anyone in federal government.
 
-<h3 id="usability-testing">Usability Testing</h3>
+## Research as a Service Offerings
 
-<p>The best way to learn how well the Standards are working is to watch people using them. You can sign up to have researchers on the U.S. Web Design Standards team conduct a usability study with your users and collect feedback on your product. This benefits us both: we get feedback on how well the Standards work in different contexts and you get direct user feedback on your product.</p>
+### Usability Testing
 
-<h4 id="package-1---remote-usability-evaluation">Package 1 - Remote Usability Evaluation</h4>
-<p>We will recruit users of your product – usually no more than 20 – and observe them using it via remote, online web conferencing tools. This approach is meant to highlight high level issues that your users are experiencing and provide guidance on future iterations of your product. Your team is encouraged to observe the sessions; our researchers will report back their findings.</p>
+The best way to learn how well the Standards are working is to watch people using them. You can sign up to have researchers on the U.S. Web Design Standards team conduct a usability study with your users and collect feedback on your product. This benefits us both: we get feedback on how well the Standards work in different contexts and you get direct user feedback on your product.
 
-<h5 id="outcomes">Outcomes</h5>
-<ul>
-  <li>Report with high level findings and recommendations for the partner agency</li>
-</ul>
+#### Package 1 - Remote Usability Evaluation
+We will recruit users of your product -- usually no more than 20 -- and observe them using it via remote, online web conferencing tools. This approach is meant to highlight high level issues that your users are experiencing and provide guidance on future iterations of your product. Your team is encouraged to observe the sessions; our researchers will report back their findings.
 
-<h5 id="cost-and-timeline">Cost and Timeline</h5>
-<ul>
-  <li>Cost: $65,000 to $80,000</li>
-  <li>Timeline: 4 to 5 weeks</li>
-</ul>
+##### Outcomes
+* Report with high level findings and recommendations for the partner agency
 
-<h4 id="package-2---in-person-usability-evaluation">Package 2 - In-Person Usability Evaluation</h4>
-<p>We will recruit users of your product – usually no more than 20 – and observe them using it in person at a location to be determined. This evaluation is meant to be an in-depth analysis of your product, exposing both general trends and specific issues that affect your users. Your team is encouraged to observe the sessions, on location and via remote conferencing tools, and our researchers will report back their findings.</p>
+##### Cost and Timeline
+* Cost: $65,000 to $80,000
+* Timeline: 4 to 5 weeks
 
-<h5 id="outcomes-1">Outcomes</h5>
-<ul>
-  <li>Report with high level findings and recommendations for the partner agency</li>
-</ul>
+#### Package 2 - In-Person Usability Evaluation
+We will recruit users of your product -- usually no more than 20 -- and observe them using it in person at a location to be determined. This evaluation is meant to be an in-depth analysis of your product, exposing both general trends and specific issues that affect your users. Your team is encouraged to observe the sessions, on location and via remote conferencing tools, and our researchers will report back their findings.
 
-<h5 id="cost-and-timeline-1">Cost and Timeline</h5>
-<ul>
-  <li>Cost: $80,000 to $95,000 (includes travel costs; additional recruitment and testing facility fees may apply)</li>
-  <li>Timeline: 5 to 6 Weeks</li>
-</ul>
+##### Outcomes
+* Report with high level findings and recommendations for the partner agency
 
-<h3 id="web-analytics-setup">Web Analytics Setup</h3>
+##### Cost and Timeline
+* Cost: $80,000 to $95,000 (includes travel costs; additional recruitment and testing facility fees may apply)
+* Timeline: 5 to 6 Weeks
 
-<p>With the enrollment into the Data Analytics Platform (DAP) being part of the Policies for  <a href="https://www.whitehouse.gov/sites/default/files/omb/memoranda/2017/m-17-06.pdf">Federal Agency Public Websites and Digital Services</a> memo, we would like to provide a service to help digital services meet this requirement. Regardless of whether a team is using the Standards or not, the integration into DAP should be consistent across the federal government and we have the tools and knowledge to help.</p>
+### Web Analytics Setup
 
-<h4 id="package-1---dap-integration">Package 1 - DAP Integration</h4>
-<p>We will work with digital services teams to put the basic code needed into place for passing their web analytics into the DAP platform. This is a lightweight service meant to assist teams that don’t have the necessary skills on hand to meet the policies requirements.</p>
+With the enrollment into the Data Analytics Platform (DAP) being part of the Policies for  <a href="https://www.whitehouse.gov/sites/default/files/omb/memoranda/2017/m-17-06.pdf">Federal Agency Public Websites and Digital Services</a> memo, we would like to provide a service to help digital services meet this requirement. Regardless of whether a team is using the Standards or not, the integration into DAP should be consistent across the federal government and we have the tools and knowledge to help.
 
-<h5 id="outcomes-2">Outcomes</h5>
-<ul>
-  <li>DAP code included on all required sites and pages</li>
-  <li>Integration into the DAP platform</li>
-</ul>
+#### Package 1 - DAP Integration
+We will work with digital services teams to put the basic code needed into place for passing their web analytics into the DAP platform. This is a lightweight service meant to assist teams that don’t have the necessary skills on hand to meet the policies requirements.
 
-<h5 id="cost-and-timeline-2">Cost and Timeline</h5>
-<ul>
-  <li>Cost: $8,000 to $16,000</li>
-  <li>Timeline: 1 to 2 Weeks</li>
-</ul>
+##### Outcomes
+* DAP code included on all required sites and pages
+* Integration into the DAP platform
 
-<h4 id="package-2---basic-reporting-and-dashboards">Package 2 - Basic Reporting and Dashboards</h4>
-<p>In addition to the services described in the above package, an analyst will work with a digital service team to set up basic reporting and dashboards that give agencies greater insight into how people use its digital products. The information gathered can help inform outreach, business and technical strategy, and user research activities the digital service team might want perform.</p>
+##### Cost and Timeline
+* Cost: $8,000 to $16,000
+* Timeline: 1 to 2 Weeks
 
-<h5 id="outcomes-3">Outcomes</h5>
-<ul>
-  <li>DAP code included on all required sites and pages</li>
-  <li>Integration into the DAP platform</li>
-  <li>Requirements gathering of desired reports and dashboards</li>
-  <li>Report and dashboard set up</li>
-</ul>
+#### Package 2 - Basic Reporting and Dashboards
+In addition to the services described in the above package, an analyst will work with a digital service team to set up basic reporting and dashboards that give agencies greater insight into how people use its digital products. The information gathered can help inform outreach, business and technical strategy, and user research activities the digital service team might want perform.
 
-<h5 id="cost-and-timeline-3">Cost and Timeline</h5>
-<ul>
-  <li>Cost: $24,000 to $31,000</li>
-  <li>Timeline: 3 to 4 Weeks</li>
-</ul>
+##### Outcomes
+* DAP code included on all required sites and pages
+* Integration into the DAP platform
+* Requirements gathering of desired reports and dashboards
+* Report and dashboard set up
+
+##### Cost and Timeline
+* Cost: $24,000 to $31,000
+* Timeline: 3 to 4 Weeks
+<-->
 
       </section>
     </div>

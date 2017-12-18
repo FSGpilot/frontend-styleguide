@@ -21,7 +21,11 @@
 <meta property="og:title" content="Datatable.html | POC version 1.0 - Frontend styleguide">
 
 
-<meta name="description" content="Delete
+<meta name="description" content="Table title
+    
+        
+            
+                Delete
                 
             
             
@@ -193,7 +197,11 @@
                             Option 2
                             Option 3
                             Option 4 is longer text">
-<meta property="og:description" content="Delete
+<meta property="og:description" content="Table title
+    
+        
+            
+                Delete
                 
             
             
@@ -404,7 +412,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -423,11 +431,18 @@
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
 
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 
   </head>
   <body class="page-datatable-html layout-iframed">
     <div class="table-container">
-    <section class="dt-menu">
+    <h5>Table title</h5>
+    <section class="menu">
         <div class="selected-rows-menu">
             <button class="menu-selection-button" type="button">
                 <span>Delete</span>
@@ -441,8 +456,8 @@
                 <span>Pause</span>
                 <i class="mdi mdi-pause-circle"></i>
             </button>
-            <div class="dt-selected-items-counter">
-                <span class="dt-selected-items-counter-value"></span>
+            <div class="selected-items-counter">
+                <span class="selected-items-counter-value"></span>
                 <span> items selected</span>
             </div>
             <button class="cancel">

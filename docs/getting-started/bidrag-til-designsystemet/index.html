@@ -62,7 +62,7 @@
   body {
     opacity: 0;
   }
-</style>  
+</style>
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -80,6 +80,12 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </head>
@@ -140,7 +146,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">Designsystem</a>
+<a href="/frontend-styleguide-poc/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
 
 
     
@@ -151,7 +159,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">Eksempler</a>
+<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
 
 
     
@@ -162,7 +172,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -173,7 +185,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">Fællesoffentlige krav</a>
+<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
 
 
     
@@ -184,7 +198,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">Om designsystemet</a>
+<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
 
 
     
@@ -215,7 +231,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">Kom godt i gang</a>
+<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
 
 
     
@@ -226,7 +244,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/developers/" class="nav-link">Til udviklerne</a>
+<a href="/frontend-styleguide-poc/getting-started/developers/" class="nav-link">
+  <span>Til udviklerne</span>
+</a>
 
 
     
@@ -237,7 +257,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/designers/" class="nav-link">Til designere</a>
+<a href="/frontend-styleguide-poc/getting-started/designers/" class="nav-link">
+  <span>Til designerne</span>
+</a>
 
 
     
@@ -248,7 +270,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/projectmanagers/" class="nav-link">Til projektledere</a>
+<a href="/frontend-styleguide-poc/getting-started/projectmanagers/" class="nav-link">
+  <span>Til projektlederne</span>
+</a>
 
 
     
@@ -259,7 +283,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/" class="nav-link">Integration til portalerne</a>
+<a href="/frontend-styleguide-poc/getting-started/integration-til-portalerne/" class="nav-link">
+  <span>Integration til portalerne</span>
+</a>
 
 
     
@@ -270,13 +296,62 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/" class="current nav-link">Bidrag til designsystemet</a>
+<a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/" class="current nav-link">
+  <span>Bidrag til designsystemet</span>
+</a>
 
   
     
     
     
     
+    
+    <ul class="sidenav-sub_list">
+  
+  <li>
+    
+      
+
+
+<a href="#bidrag-til-styleguiden-uden-kendskab-til-kode">Bidrag som ikke-koder</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#markdown-med-typora---begynderguiden">Markdown tutorial</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#bidrag-til-frontstyleguiden-som-programmør">Bidrag som programmør</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#sæt-din-computer-op-til-at-kunne-starte-srontend-styleguiden-lokalt">Opsætning af Frontend Styleguide server</a>
+
+    
+  </li>
+
+</ul>
     
   
 
@@ -289,7 +364,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/video-tutorials/" class="nav-link">Video tutorials</a>
+<a href="/frontend-styleguide-poc/getting-started/video-tutorials/" class="nav-link">
+  <span>Video tutorials</span>
+</a>
 
 
     
@@ -300,7 +377,9 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/loesninger/" class="nav-link">Løsninger</a>
+<a href="/frontend-styleguide-poc/getting-started/loesninger/" class="nav-link">
+  <span>Løsninger</span>
+</a>
 
 
     
@@ -321,16 +400,165 @@
           <h1 id="bidrag-til-designsystemet">Bidrag til designsystemet</h1>
         </header>
         
-          <p class="font-lead">Users of the U.S. Web Design Standards have created implementations for popular content management systems, web frameworks, and package managers that may help get you started more quickly and easily. Though some implementations may not include all of the Standards, they should give your team a strong foundation to work from.</p>
+          <p class="font-lead">Du vil her kunne finde forskellige guides til hvordan man kan komme i gang med at bidrage til Frontend styelguiden, både som programmør og som ikke-koder.</p>
         
-      <p>If you have a new implementation to add to this list, please [open an issue] or [send us an email] with the following information:</p>
+      <h2 id="bidrag-til-styleguiden-uden-kendskab-til-kode">Bidrag til Styleguiden uden kendskab til kode</h2>
 
-<ul>
-  <li>The implementation’s target language and/or framework</li>
-  <li>The author’s name (or alias) and contact URL or email address</li>
-  <li>The most recent <a href="/frontend-styleguide-poc/whats-new/releases/">version</a> of the Standards that the project targets</li>
-  <li>Any useful caveats or other notes</li>
-</ul>
+<p>Denne guide er for dig som ingen kendskab til kode har, men stadigt vil bidrage til Frontend Styleguiden.
+Guiden vil hjælpe dig igennem - step for step - hvordan du opsætter din computer til at kunne bidrage.</p>
+
+<h3 id="hvad-kan-du-bidrage-med">Hvad kan du bidrage med?</h3>
+<p>Man skal bestemt ikke kunne kode for at bidrage til Frontend Styleguiden. Faktisk er størstedelen af Styleguiden bygget op af simple tekstsider, der dokumenterer alle de gode råd og regler man bør følge når man skal opbygge en ny underside til f.eks. borger.dk eller virk.dk. Disse tekstsider er alle skrevet af ikke-kodere, og du kan nemt være med til at tilføje dine gode råd og regler til disse sider, så Styleguiden kan blive endnu bedre og mere præcis.</p>
+
+<h4 id="tekstsidernes-opbygning">Tekstsidernes opbygning</h4>
+<p>Tekstsiderne er skrevet med noget der hedder “Markdown”, som er næsten ligesom at skrive et almindeligt word-dokument. Når du har skrevet dit Markdown-dokument og lægger det op på Frontend Styleguiden, bliver det automatisk omdannet til en præsentabelt side på Frontend Styleguidens hjemmeside. F.eks. er denne side skrevet med Markdown, så nemt er det!</p>
+
+<h4 id="kom-i-gang-med-at-skrive-markdown">Kom i gang med at skrive Markdown</h4>
+<p>Markdown er en simpel måde at skrive pæne tekster til hjemmesider, og skrives som en almindelig tekst blot tilsat nogle få specielle karakterer som * eller #, der bestemmer hvordan teksten skal se ud.</p>
+
+<p>Man kan med markdown for eksempel skrive en overskrift ved at sætte et # ind foran teksten, og således bliver “# Dette er en overskrift”, lavet automatisk om til:</p>
+
+<h1 id="dette-er-en-overskrift">Dette er en overskrift</h1>
+
+<p>At lære de forskellige tegn at kende kan være besværligt, dog for at gøre det nemt er der opfundet et simpelt skriveprogram, typora, hvor du ikke behøver disse tegn.</p>
+
+<p>Programmet kan hentes på <a href="https://typora.io/">https://typora.io/</a> og vil blive brugt fremmadrettet i guiden.</p>
+
+<p>Du kan let komme i gang med Markdown og Typora med følgende guide: <a href="/frontend-styleguide-poc/getting-started/bidrag-til-designsystemet/#markdown-med-typora---begynderguiden">Markdown med Typora - Begynderguiden</a></p>
+
+<h3 id="sæt-din-computer-op-til-styleguiden">Sæt din computer op til Styleguiden</h3>
+
+<p>For at kunne bidrage til Frontend Styleguiden skal din computer være sat op til at kunne hente Frontend Styleguiden ned på din computer, og være sat op til at kunne skubbe dine ændringer op på den officielle Frontend Styleguide igen.</p>
+
+<p>Dette gøres med det simple program Sourcetree. Sourcetree kræver at man har en bruger på Atlassian. En Atlassian bruger kan oprettes gratis her: <a href="https://id.atlassian.com/login?application=mac&amp;continue=https://my.atlassian.com">https://id.atlassian.com/login?application=mac&amp;continue=https://my.atlassian.com</a></p>
+
+<p>Du er nu klar og kan installere Sourcetree ved at følge nedenstående skridt:</p>
+
+<ol>
+  <li>Download Sourcetree fra følgende side: <a href="https://www.sourcetreeapp.com/">https://www.sourcetreeapp.com/</a></li>
+  <li>Start installationen af Sourcetree og gå igennem installationsskridtene</li>
+  <li>Login med din nye Atlassian bruger når du bliver bedt om det</li>
+  <li>Efter du er logget ind, skal du blot trykke på “Skip Setup”.</li>
+  <li>Når installation er gennemført skal du åbne Sourcetree. Du vil nu støde på om til to beskeder:
+    <ol>
+      <li>Hvis Sourcetree ikke kan finde Mercurial, skal du vælge muligheden: “I don’t want to use Mercurial”</li>
+      <li>Hvis Sourcetree ikke kan finde Git, skal du vælge muligheden: “Download an embedded version of Git for Sourcetree alone to use.”</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Du er nu klar til at hente Frontend Styleguiden ned på din computer. Dette kaldes at “clone”, og kan gøres med Sourcetree.</p>
+
+<p>Følg skridtene nedenfor:</p>
+
+<ol>
+  <li>Tryk på “clone” knappen i toppen af Sourcetree</li>
+  <li>I den første boks med teksten <em>Source Path / URL</em> skal du indsætte følgende link:
+<a href="https://github.com/jonasjensen77/Frontend-Styleguide-poc.git">https://github.com/jonasjensen77/Frontend-Styleguide-poc.git</a></li>
+  <li>Klik på næste boks, hvorefter resten af felterne vil udfylde sig selv</li>
+  <li>Lad felterne være som de er, og tryk på “Clone”-knappen</li>
+  <li>Vent til handlingen er afsluttet. Du har nu hentet Frontend Styleguiden ned.</li>
+</ol>
+
+<h3 id="skab-dit-bidrag-til-frontend-styleguiden">Skab dit bidrag til Frontend Styleguiden</h3>
+
+<p>Når du har hentet Frontend Styleguiden, kan du frit lave ændringer i de sider de har lyst til. Da du “clonede” tidligere, blev Frontend Styleguiden lagt ind i en mappe, der i de fleste tilfælde har lagt sig i din dokumenter-mappe. Frontend Styleguide-mappen du leder efter hedder noget med <em>Frontend-Styleguide-poc</em>, og inde i den finder du en masse forskellige filer og mapper. Selvom det kan se uoverskueligt ud, skal du ikke blive skræmt, da du som ikke-koder kun skal fokusere på mapperne <em>_components</em> og <em>pages</em>. I disse to mapper vil der ligge utalige markdown filer, (Bemærk at filer der slutter på .md er markdown filer) som hver især svarer til en underside på Frontend Styleguidens hjemmeside. Et par forskellige markdown dokumenter du f.eks. kan åbne for at se hvordan det ser ud i Typora, ligger i <em>_components</em>-mappen efterfulgt af <em>fundament</em>-mappen:</p>
+
+<ol>
+  <li><strong>layout.md</strong> svarer til følgende side:
+ <a href="https://jonasjensen77.github.io/Frontend-Styleguide-poc/components/fundament/layout/?s=undefined">https://jonasjensen77.github.io/Frontend-Styleguide-poc/components/fundament/layout/?s=undefined</a></li>
+  <li><strong>touch.md</strong> svarer til følgende side:
+<a href="https://jonasjensen77.github.io/Frontend-Styleguide-poc/components/fundament/mobile/?s=undefined">https://jonasjensen77.github.io/Frontend-Styleguide-poc/components/fundament/mobile/?s=undefined</a></li>
+</ol>
+
+<p>Når du åbner disse filer, har du mulighed for at ændre i dem med Typora. Når du er færdig med dine ændringer og er tilfreds med dem, har du mulighed for at lægge dem op på den officielle Frontend Styleguide.</p>
+
+<h4 id="skub-dine-ændringer-op-på-frontend-styleguiden">Skub dine ændringer op på Frontend Styleguiden</h4>
+<p>Når du har lavet en ændring i en af Frontend Styleguidens dokumenter, og den er klar til at blive en del af den officielle Frontend Styleguide, skal du åbne programmet Sourcetree. Herfra skal du gå gennem følgende skridt:</p>
+<ol>
+  <li>Tryk på “Commit”-knappen oppe i toppen af sourceTree.</li>
+  <li>Du burde her kunne se navnet på dit ændrede dokument under ”Unstaged files”</li>
+  <li>Klik på dokumentet og vælg ”Stage Selected”</li>
+  <li>I boksen nede under dit navn, skal du specificere en ”Commit”-besked
+    <ol>
+      <li>En ”Commit”-besked er en kort beskrivelse af hvad du har ændret på. I denne besked bør du skrive navnet på filen du har ændret i, og kort hvilke ændringer du har lavet. Alle ”Commit”-beskeder bliver lagt sammen i en liste, så man kan følge med i hvad de seneste ændringer er på Frontend Styleguiden.</li>
+    </ol>
+  </li>
+  <li>Tryk på “Commit”-knappen nede til højre</li>
+  <li>Du har nu officielt godkendt dine ændringer, men de er endnu ikke blevet blevet lagt op online. Dog før dine ændringer lægges op online, skal du sikre dig at de seneste ændringer kommer ned til dig først. Derfor skal du nu trykke på knappen “Pull” og trykke på “ok” uden at ændre noget.</li>
+  <li>Nu vil de seneste ændringer fra Frontend Styleguiden komme ned på din computer, og du kan nu trykke på ”Push”-knappen efterfulgt af ”push”, for at lægge dine egne ændringer op og blive en del af den seneste Frontend Styleguide</li>
+</ol>
+
+<p>Dine ændringer er nu lagt op på Frontend Styleguiden!</p>
+
+<h3 id="spørgsmål">Spørgsmål</h3>
+<h4 id="hvorfor-kan-jeg-ikke-se-min-bidragelse-på-den-officielle-frontend-styleguide-hjemmeside">Hvorfor kan jeg ikke se min bidragelse på den officielle Frontend Styleguide hjemmeside?</h4>
+<p>Selvom du har skubbet dine ændringer op til Frontend Styleguiden, vil der gå noget tid før de kommer på selve Frontend Styleguidens hjemmeside. Selve hjemmesiden bliver nemlig kun fornyet en gang imellem, hvor den der tager alle ændringerne der er blevet lavet, siden sidst den blev fornyet. Vær derfor tålmodig, og hvis du er i tvivl om dine ændringer er blevet skubbet op til Frontend Styleguiden, kan du gå ind på følgende link, for at se om din “Commit”-besked kan ses:</p>
+
+<p><a href="https://github.com/jonasjensen77/Frontend-Styleguide-poc/commits/master">https://github.com/jonasjensen77/Frontend-Styleguide-poc/commits/master</a></p>
+
+<p>Hvis ikke så følg instruktionerne under kapitlet <em>Skub dine ændringer op på Frontend Styleguiden</em>.</p>
+
+<h2 id="markdown-med-typora---begynderguiden">Markdown med Typora - Begynderguiden</h2>
+
+<p>Denne guide vil hjælpe dig i gang med at skrive Markdown med programmet Typora. Typora kan hentes på <a href="https://typora.io/">https://typora.io/</a></p>
+
+<p>At skrive Markdown med Typora minder meget om at skrive et simpelt word-dokument, blot med færre funktionaliteter end hvad word tilbyder. Start med at åbne Typora.</p>
+
+<p>Du vil nu blive mødt af et nyt tomt dokument, og vi er klar til lære Typora at kende.</p>
+
+<p><img src="/frontend-styleguide-poc/img/docsimages/empty-typora-docs.png" alt="" /></p>
+
+<p>Start med at skrive “Hej Verden” og tryk på CTRL + s på dit tastatur eller på fanen “file” efterfulgt af “save” for at gemme dit markdown-dokument.</p>
+
+<p>Du har nu gemt dit allerførste markdown dokument og kan nu skabe dine egne markdown-dokumenter fremover. Nu er det tid til at gå i dybden med de forskellige muligheder man kan med markdown og Typora.</p>
+
+<h3 id="brug-typoras-funktioner">Brug Typoras funktioner</h3>
+
+<p>Som sagt kan Typora ses lidt ligesom word. Hvis du vil ændre din tekst, skal du klikke et sted oppe i toppen. Forskellen mellem word og Typora er dog, at hvor du i word kan klikke på forskellige ikoner for at ændre på teksten, skal du i Typora vælge dine tekstændringer ved at tykke på de forskellige drop-down menuer. Hvis du kigger i toppen af Typora er der forskellige menuer at vælge imellem.</p>
+
+<p><img src="/frontend-styleguide-poc/img/docsimages/typora-menus.png" alt="" /></p>
+
+<p>Menuerne <em>paragraph</em> og <em>format</em> er dem vi kommer til at bruge mest, da det er disse som bruges til at ændre teksten til f.eks. at være en overskrift, fed, kursiv, osv. Lad os først prøve at lave den største overskrift man kan. En overskrift kaldes en header i markdown og i markdown kan man lave op til seks forskellige størrelser af headers. Markér “Hej verden” og tryk på <em>paragraph &gt; Heading 1</em>. Din tekst vil nu ændre sig til en stor overskrift. Du kan vælge forskellige størrelser af overskrifter ved at klikke på de forskellige <em>Headings</em> under <em>paragraph</em>.</p>
+
+<p>Ved at vælge forskellige ændringer til dine tekster under de forskellige menuer, kan du opbygge et hurtigt og pænt markdown-dokument. Dog kan det godt være besværligt at skulle klikke på menuerne i toppen hver gang en ændring skal laves, men heldigvis fungerer Typora virkelig godt med tastatur-genveje. Disse genveje kan findes når man klikker på de forskellige menuer. Ved siden af de fleste af mulighederne kan man se en genvej skrevet med en lys-grå farve. F.eks. hvis man vil lave en hurtig <em>Heading 3</em> kan man i stedet for at finde <em>Heading 3</em> under <em>paragraph</em>, blot trykke på CTRL + 3.</p>
+
+<p><img src="/frontend-styleguide-poc/img/docsimages/typora-open-paragraph.png" alt="" /></p>
+
+<p>Selvom det kan være svært at lære alle genvejene udenad, vil du hurtigt finde dig selv bruge dem til de meste almindelige ting som overskrifter, fed, kursiv og understreget tekst.</p>
+
+<p>Typora har en masse forskellige måder at ændre teksten på, og her en liste med nogle af dem:</p>
+
+<ol>
+  <li>Overskrifter</li>
+  <li>Fed, kursiv og understeget tekst</li>
+  <li>Matematik-tekst</li>
+  <li>Kode-blocks</li>
+  <li>Citater</li>
+  <li>Tabeller</li>
+  <li>Lister</li>
+  <li>Horizontale skillelinjer</li>
+  <li>Indholdsfortegnelse</li>
+  <li>Links</li>
+  <li>Billeder</li>
+  <li>Opgavelister</li>
+</ol>
+
+<p>Hvis du vil se nogle eksempler på markdown-dokumenter kan du kigge på følgende tre links som er skrevet til US Web Design Standards:</p>
+
+<ol>
+  <li><a href="https://github.com/18F/web-design-standards/blob/develop/README.md">https://github.com/18F/web-design-standards/blob/develop/README.md</a></li>
+  <li><a href="https://github.com/18F/web-design-standards/blob/develop/RELEASE.md">https://github.com/18F/web-design-standards/blob/develop/RELEASE.md</a></li>
+  <li><a href="https://github.com/18F/web-design-standards/blob/develop/LICENSE.md">https://github.com/18F/web-design-standards/blob/develop/LICENSE.md</a></li>
+</ol>
+
+<p>God skrivning!</p>
+
+<h2 id="bidrag-til-frontstyleguiden-som-programmør">Bidrag til frontStyleguiden som programmør</h2>
+<p><em>Kommer snart…</em></p>
+
+<h2 id="sæt-din-computer-op-til-at-kunne-starte-frontend-styleguiden-lokalt">Sæt din computer op til at kunne starte Frontend Styleguiden lokalt</h2>
+<p><em>Kommer snart…</em></p>
 
       </section>
     </div>
