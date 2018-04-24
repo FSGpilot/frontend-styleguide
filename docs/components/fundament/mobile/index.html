@@ -17,8 +17,8 @@
 ================================================== -->
   
 
-<title>Mobile First | POC version 1.0 - Frontend styleguide</title>
-<meta property="og:title" content="Mobile First | POC version 1.0 - Frontend styleguide">
+<title>Mobile First | Frontend styleguide - version 2</title>
+<meta property="og:title" content="Mobile First | Frontend styleguide - version 2">
 
 
 <meta name="description" content="DESIGN NEDE FRA OG OP">
@@ -32,32 +32,30 @@
 
 
   
-  <link rel="canonical" href="http://localhost:4000/components/fundament/mobile/">
-  
 
 <!-- Favicons
 ================================================== -->
   <!-- 128x128 -->
-  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon2-erst.png">
-  <link rel="icon" type="image/png" href="/frontend-styleguide-poc/assets/img/favicons/favicon-erst.png">
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon-erst.png">
 
   <!-- 192x192, as recommended for Android
   http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
   -->
-  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide-poc/assets/img/favicons/favicon-192.png">-->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide/assets/img/favicons/favicon-192.png">-->
 
   <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide-poc/assets/img/favicons/favicon-57.png">-->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide/assets/img/favicons/favicon-57.png">-->
   <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide-poc/assets/img/favicons/favicon-72.png">-->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide/assets/img/favicons/favicon-72.png">-->
   <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide-poc/assets/img/favicons/favicon-114.png">-->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide/assets/img/favicons/favicon-114.png">-->
   <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide-poc/assets/img/favicons/favicon-144.png">-->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide/assets/img/favicons/favicon-144.png">-->
 
 <!-- CSS
 ================================================== -->
-<!--<link rel="stylesheet" href="/frontend-styleguide-poc/css/styleguide.css">-->
+<!--<link rel="stylesheet" href="/frontend-styleguide/css/styleguide.css">-->
 <style>
   body {
     opacity: 0;
@@ -68,7 +66,7 @@
     lnk.type='text/css';
     lnk.rel='stylesheet';
 
-    window.baseurl='/frontend-styleguide-poc';
+    window.baseurl='/frontend-styleguide';
     if (window.location.search.indexOf('s=virkdk') !== -1) {
       lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
       window.curStyle = "virkdk";
@@ -84,7 +82,7 @@
 <!-- highlight.js -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
-<script src="/frontend-styleguide-poc/assets/js/vendor/highlight.pack.js"></script>
+<script src="/frontend-styleguide/assets/js/vendor/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 
@@ -97,7 +95,7 @@
   <div class="navbar solution-header">
     <div class="solution-heading">
       <em class="heading-text">
-        <a href="/frontend-styleguide-poc/"
+        <a href="/frontend-styleguide/"
           title="Home"
           aria-label="Home">
           Frontend Styleguide
@@ -112,7 +110,7 @@
       <div class="nav-secondary">
         <ul class="unstyled-list nav-secondary-links">
           <li> 
-            <a href="/frontend-styleguide-poc/getting-started/download/" class="button button-primary">
+            <a href="/frontend-styleguide/getting-started/download/" class="button button-primary">
               Download kode og designfiler
             </a>
           </li>
@@ -146,7 +144,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">
+<a href="/frontend-styleguide/components/" class="nav-link">
   <span>Designsystem</span>
 </a>
 
@@ -159,7 +157,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/page-templates/" class="nav-link">
+<a href="/frontend-styleguide/page-templates/" class="nav-link">
   <span>Eksempler</span>
 </a>
 
@@ -172,7 +170,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/getting-started/" class="nav-link">
+<a href="/frontend-styleguide/getting-started/" class="nav-link">
   <span>Kom godt i gang</span>
 </a>
 
@@ -185,7 +183,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/faellesoffentlige-krav/" class="nav-link">
+<a href="/frontend-styleguide/faellesoffentlige-krav/" class="nav-link">
   <span>Fællesoffentlige krav</span>
 </a>
 
@@ -198,7 +196,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/whats-new/" class="nav-link">
+<a href="/frontend-styleguide/whats-new/" class="nav-link">
   <span>Om designsystemet</span>
 </a>
 
@@ -231,7 +229,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/" class="nav-link">
+<a href="/frontend-styleguide/components/" class="nav-link">
   <span>Designsystem</span>
 </a>
 
@@ -244,7 +242,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/" class="current nav-link">
+<a href="/frontend-styleguide/components/fundament/" class="current nav-link">
   <span>Retningslinjer</span>
 </a>
 
@@ -260,7 +258,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/layout/" class="nav-link">
+<a href="/frontend-styleguide/components/fundament/layout/" class="nav-link">
   <span>Layout</span>
 </a>
 
@@ -273,7 +271,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/interaktionsdesign/" class="nav-link">
+<a href="/frontend-styleguide/components/fundament/interaktionsdesign/" class="nav-link">
   <span>Interaktionsdesign</span>
 </a>
 
@@ -286,7 +284,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/stilogtone/" class="nav-link">
+<a href="/frontend-styleguide/components/fundament/stilogtone/" class="nav-link">
   <span>Stil og tone</span>
 </a>
 
@@ -299,7 +297,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/accessibility/" class="nav-link">
+<a href="/frontend-styleguide/components/fundament/accessibility/" class="nav-link">
   <span>Tilgængelighed</span>
 </a>
 
@@ -312,7 +310,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/mobile/" class="current nav-link">
+<a href="/frontend-styleguide/components/fundament/mobile/" class="current nav-link">
   <span>Mobile First</span>
 </a>
 
@@ -333,7 +331,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/dengodetabel/" class="nav-link">
+<a href="/frontend-styleguide/components/fundament/dengodetabel/" class="nav-link">
   <span>Den Gode Tabel</span>
 </a>
 
@@ -346,7 +344,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/dengodeformular/" class="nav-link">
+<a href="/frontend-styleguide/components/fundament/dengodeformular/" class="nav-link">
   <span>Den Gode Formular</span>
 </a>
 
@@ -359,7 +357,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/fundament/grids/" class="nav-link">
+<a href="/frontend-styleguide/components/fundament/grids/" class="nav-link">
   <span>Grids</span>
 </a>
 
@@ -380,7 +378,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/styling/" class="nav-link">
+<a href="/frontend-styleguide/components/styling/" class="nav-link">
   <span>Styling</span>
 </a>
 
@@ -393,7 +391,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/komponenter/" class="nav-link">
+<a href="/frontend-styleguide/components/komponenter/" class="nav-link">
   <span>Komponenter</span>
 </a>
 
@@ -406,7 +404,7 @@
     
       
 
-<a href="/frontend-styleguide-poc/components/strukturer/" class="nav-link">
+<a href="/frontend-styleguide/components/strukturer/" class="nav-link">
   <span>Mønstre</span>
 </a>
 
@@ -449,7 +447,7 @@
         <p><strong>Gør titel, svar og handling synlig på første side</strong></p>
     </div>
     <div class="width-two-thirds">
-        <img src="/frontend-styleguide-poc/img/retningslinjer/dodont.png" style="" />
+        <img src="/frontend-styleguide/img/retningslinjer/dodont.png" style="" />
     </div>
 </div>
 
@@ -458,7 +456,7 @@
         <p><strong>Drop udenomssnak</strong></p>
     </div>
     <div class="width-two-thirds">
-        <img src="/frontend-styleguide-poc/img/retningslinjer/dodont.png" style="" />
+        <img src="/frontend-styleguide/img/retningslinjer/dodont.png" style="" />
     </div>
 </div>
 
@@ -467,7 +465,7 @@
         <p><strong>Undgå tung grafik</strong></p>
     </div>
     <div class="width-two-thirds">
-        <img src="/frontend-styleguide-poc/img/retningslinjer/dodont.png" style="" />
+        <img src="/frontend-styleguide/img/retningslinjer/dodont.png" style="" />
     </div>
 </div>
 
@@ -479,13 +477,13 @@
 
 <p>Sammenlignet med muse-interaktion, er nøjagtigheden med finger-interaktion nedsat betydeligt. For at gøre løsningen egnet til touch, skal størrelse, placering og afstand mellem interaktive elementer tilpasses en mere ‘klodset’ interaktion.</p>
 
-<p><img src="/frontend-styleguide-poc/img/retningslinjer/dodont.png" /></p>
+<p><img src="/frontend-styleguide/img/retningslinjer/dodont.png" /></p>
 
 <h2 id="tilpasset-til-fingrene">Tilpasset til fingrene</h2>
 
 <div class="grid-full">
     <div class="width-one-third">
-        <img src="/frontend-styleguide-poc/img/interaction-touch_loop3.gif" style="max-width: 200px;" />
+        <img src="/frontend-styleguide/img/interaction-touch_loop3.gif" style="max-width: 200px;" />
     </div>
     <div class="width-one-half">
         <p>Touch hjælper brugere til nemt at forstå hvor de fysisk kan interagere med skærmen.</p>
@@ -498,13 +496,13 @@
 
 <p>Undgå interaktioner der kræver sammensatte bevægelser som double-tap eller press-and-hold interaktioner. De er ofte aktiveret ved uheld og er besværlige korrekt at indstille.</p>
 
-<p><img src="/frontend-styleguide-poc/img/gestures.PNG" style="max-width: 670px;" /></p>
+<p><img src="/frontend-styleguide/img/gestures.PNG" style="max-width: 670px;" /></p>
 
 <h2 id="feedback">Feedback</h2>
 
 <p>Øg brugernes forståelse ved at give øjeblikkelig feedback når de trykker på skærmen. Interaktive elementer reagerer ved at skifte farve, størrelse eller ved bevægelse.</p>
 
-<p><img src="/frontend-styleguide-poc/img/feedback.PNG" style="max-width: 670px;" /></p>
+<p><img src="/frontend-styleguide/img/feedback.PNG" style="max-width: 670px;" /></p>
 
 <h2 id="touch-flader">Touch-flader</h2>
 
@@ -512,7 +510,7 @@
 
 <div class="grid-full">
   <div class="width-one-third">
-    <img src="/frontend-styleguide-poc/img/touchpoint.gif" />
+    <img src="/frontend-styleguide/img/touchpoint.gif" />
   </div>
   <div class="width-one-half">
     <ul class="content-list">
@@ -531,7 +529,7 @@
 
 <div class="grid-full">
   <div class="width-one-third">
-    <img src="/frontend-styleguide-poc/img/targets-grid.svg" />
+    <img src="/frontend-styleguide/img/targets-grid.svg" />
   </div>
   <div class="width-one-half">
     <ul class="content-list">
@@ -557,7 +555,7 @@
 
 <div class="grid-full">
   <div class="width-one-third">
-    <img src="/frontend-styleguide-poc/img/targets-sizes.svg" />
+    <img src="/frontend-styleguide/img/targets-sizes.svg" />
   </div>
   <div class="width-one-half">
     <ul class="content-list">
@@ -579,7 +577,7 @@
 
 <div class="grid-full">
   <div class="width-one-third">
-    <img src="/frontend-styleguide-poc/img/flip.gif" />
+    <img src="/frontend-styleguide/img/flip.gif" />
   </div>
   <div class="width-one-half">
     <ul class="content-list">
@@ -609,13 +607,13 @@
 
 <p>Tablets bliver oftest holdt i siderne hvilket gør de nederste hjørner ideelle for interaktive elementer. De fleste brugere holder en tablet med venstre hånd mens de trykker og navigerer med den højre. Placer altid de interaktive elementer inden for rækkevidde af tommelfingrerne.</p>
 
-<p><img src="/frontend-styleguide-poc/img/postures-interaction-area2.svg" style="max-width: 670px;" /></p>
+<p><img src="/frontend-styleguide/img/postures-interaction-area2.svg" style="max-width: 670px;" /></p>
 
 <h3 id="læseområder">Læseområder</h3>
 
 <p>Indhold i den øverste halvdel af skærmen er nemmere at se end indhold på den nederste halvdel af skærmen, hvor det kan være skjult bag hænder eller ignoreret.</p>
 
-<p><img src="/frontend-styleguide-poc/img/postures-interaction-area2.svg" style="postures-reading-area2.svg" /></p>
+<p><img src="/frontend-styleguide/img/postures-interaction-area2.svg" style="postures-reading-area2.svg" /></p>
 
 
       </section>
@@ -697,9 +695,9 @@
 </footer>
 
 
-    <script src="/frontend-styleguide-poc/assets/js/styleguide.js"></script>
+    <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide-poc/assets/js/vendor/dkwds.js"></script>
+<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
 
   </body>
 </html>

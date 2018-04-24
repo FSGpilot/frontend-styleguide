@@ -8,6 +8,7 @@ require( './config/gulp/javascript' );
 require( './config/gulp/sass' );
 require( './config/gulp/html' );
 require( './config/gulp/publish' );
+require( './config/gulp/watch' );
 
 
 var gulp  = require( 'gulp' );
