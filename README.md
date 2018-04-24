@@ -1,7 +1,6 @@
-# POC version 1.0 - Frontend styleguide
+# Fællesoffentlig styleguide (FSG) - version 1.0.3
 
-This repo includes code and documentation for the proof of concept for a Frontend Styleguide based on [U.S. Web Design Standards](https://standards.usa.gov/).
-Based on USWD 6. july develop branch.
+This repo includes code and documentation for the Frontend Styleguide. This styleguide is based on [U.S. Web Design Standards](https://standards.usa.gov/).
 
 ## Running locally
 
