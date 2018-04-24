@@ -1,6 +1,9 @@
-# Fællesoffentlig styleguide (FSG) - version 1.0.3
+# Repository for the documentation site for the Frontend styleguide - version 1.0.3
+
 
 This repo includes code and documentation for the Frontend Styleguide. This styleguide is based on [U.S. Web Design Standards](https://standards.usa.gov/).
+The documentation site can be found [here](https://fsgpilot.github.io/frontend-styleguide/).
+The components project can be found [here](https://github.com/FSGpilot/frontend-styleguide-components).
 
 ## Running locally
 
