@@ -73,12 +73,7 @@ gulp.task('generateDocMarkdown', function (done) {
 });
 
 
-gulp.task(task, function (done) { 
-
-    runSequence(
-        'generateComponentsHtml',
-        'generateDocMarkdown',
-    );     
+gulp.task(task, ['generateDocMarkdown'], function (done) { 
 
     done();
 });
