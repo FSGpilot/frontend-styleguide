@@ -61,7 +61,7 @@ Følg skridtene nedenfor:
 
 1. Tryk på "clone" knappen i toppen af Sourcetree
 2. I den første boks med teksten *Source Path / URL* skal du indsætte følgende link: 
-   <https://github.com/FSGpilot/Frontend-Styleguide-poc.git>
+   <https://github.com/FSGpilot/Frontend-Styleguide.git>
 3. Klik på næste boks, hvorefter resten af felterne vil udfylde sig selv
 4. Lad felterne være som de er, og tryk på "Clone"-knappen
 5. Vent til handlingen er afsluttet. Du har nu hentet Frontend Styleguiden ned.
@@ -71,9 +71,9 @@ Følg skridtene nedenfor:
 Når du har hentet Frontend Styleguiden, kan du frit lave ændringer i de sider de har lyst til. Da du "clonede" tidligere, blev Frontend Styleguiden lagt ind i en mappe, der i de fleste tilfælde har lagt sig i din dokumenter-mappe. Frontend Styleguide-mappen du leder efter hedder noget med *Frontend-Styleguide-poc*, og inde i den finder du en masse forskellige filer og mapper. Selvom det kan se uoverskueligt ud, skal du ikke blive skræmt, da du som ikke-koder kun skal fokusere på mapperne *_components* og *pages*. I disse to mapper vil der ligge utalige markdown filer, (Bemærk at filer der slutter på .md er markdown filer) som hver især svarer til en underside på Frontend Styleguidens hjemmeside. Et par forskellige markdown dokumenter du f.eks. kan åbne for at se hvordan det ser ud i Typora, ligger i *_components*-mappen efterfulgt af *fundament*-mappen:
 
 1. **layout.md** svarer til følgende side: 
-    <https://FSGpilot.github.io/Frontend-Styleguide-poc/components/fundament/layout/?s=undefined>
+    <https://FSGpilot.github.io/Frontend-Styleguide/components/fundament/layout/?s=undefined>
 2.  **touch.md** svarer til følgende side: 
-    <https://FSGpilot.github.io/Frontend-Styleguide-poc/components/fundament/mobile/?s=undefined>
+    <https://FSGpilot.github.io/Frontend-Styleguide/components/fundament/mobile/?s=undefined>
 
 Når du åbner disse filer, har du mulighed for at ændre i dem med Typora. Når du er færdig med dine ændringer og er tilfreds med dem, har du mulighed for at lægge dem op på den officielle Frontend Styleguide.
 
@@ -94,7 +94,7 @@ Dine ændringer er nu lagt op på Frontend Styleguiden!
 #### Hvorfor kan jeg ikke se min bidragelse på den officielle Frontend Styleguide hjemmeside?
 Selvom du har skubbet dine ændringer op til Frontend Styleguiden, vil der gå noget tid før de kommer på selve Frontend Styleguidens hjemmeside. Selve hjemmesiden bliver nemlig kun fornyet en gang imellem, hvor den der tager alle ændringerne der er blevet lavet, siden sidst den blev fornyet. Vær derfor tålmodig, og hvis du er i tvivl om dine ændringer er blevet skubbet op til Frontend Styleguiden, kan du gå ind på følgende link, for at se om din "Commit"-besked kan ses:
 
-<https://github.com/FSGpilot/Frontend-Styleguide-poc/commits/master>
+<https://github.com/FSGpilot/Frontend-Styleguide/commits/master>
 
 Hvis ikke så følg instruktionerne under kapitlet *Skub dine ændringer op på Frontend Styleguiden*.
 
