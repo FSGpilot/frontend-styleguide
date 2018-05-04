@@ -7,8 +7,12 @@ type: component
 title: Grids
 category: UI components
 subcategory: Partikler - Retningslinjer
-lead: Use Boostrap's powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.
+lead: Frontend Styleguiden benytter Boostrap's mobile-first flexbox grid til opbygning af sider. Gridsystemet er et standard 12-kolonne system, med fem responsive breakpoints, Sass variable og mixins, og adskillige prædefinerede klasser.
 subnav:
+- text: Introduktion
+  href: '#introduction'
+- text: Skift mellem grid-systemer
+  href: '#grid-change'
 - text: How it works
   href: '#how-it-works'
 - text: Grid options
@@ -29,68 +33,93 @@ subnav:
   href: '#customizing-the-grid'
 ---
 
+<section id="section-solution-overview">
+    <h2 class="heading heading-margin-alt" id="introduction">Introduktion</h2>
+    <p>Den fællesoffentlige styleguide (FSG) bygger på USWD. USWD kommer med et grid out-of-the-box der hedder <a href="https://neat.bourbon.io/">NEAT</a>. NEAT er et såkaldt 'Float grid' da den benygger sig af css' float-property. Da float-grids ikke gør brug af den nyeste teknologi vil vi gerne tilbyde et yderligere grid-system i den fællesoffentlige styleguide som benytter flexbox. Et flexbox grid gør det bl.a. nemmere for udviklere at centrere elementer, ændre på rækkefølgen af elementer uden af ændre i sidestrukturen og meget mere.</p>
+    <p>Som flexbox grid har vi valgt at inkludere grid-systemet fra <a href="https://getbootstrap.com/">Bootstrap 4</a>.</p>
+    <p>Det er valgfrit om man vil bruge USWD’s grid eller Flexbox-griddet. Standard indstilling er sat til flexbox gridsystemt. </p>
+    <p>Dokumentation på dette site viser hvordan flexbox-gridsystemet benyttes.</p>
+</section>
+
+<section id="section-grid-change">
+    <h2 class="heading heading-margin-alt" id="grid-change">Skift mellem grid-systemer</h2>
+    <p>Som udvikler kan du konfigurer koden således at USWD’s grid benyttes i steden for flexbox griddet.</p>
+    <ol>
+        <li>Åben filen: /src/stylesheets/core/_variables.scss</li>
+        <li>I _variables.scss finder du følgende to variable: 
+            <br>
+            <span class="highlight">$enable-bs-grid:   true !default;</span><br>
+            <span class="highlight">$enable-uswd-grid: false !default;</span><br>
+        </li>
+        <li>Ved at sætte <i>$enable-uswd-grid</i> til true og <i>$enable-bs-grid</i> til false vil FSG nu benytte USWD’s gridsystem.</li>
+    </ol>
+    <br>
+    <p>Ønsker du yderligere information om USWD’s gridsystem kan du finde dokumentationen på <a href="https://designsystem.digital.gov/components/grids/">USWDs website</a>.</p>
+</section>
+
 <section id="section-how-it-works">
-<h2 class="heading heading-margin-alt" id="how-it-works">How it works</h2>
-<p>Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">flexbox</a> and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+    <h2 class="heading heading-margin-alt" id="how-it-works">Flexbox grid</h2>
+    <p>Som beskrevet ovenfor kommer FSG med Bootstrap 4 gridsystem out-of-the-box. I det efterfølgende vil gridsystemet blive gennemgået.</p>
+    <p>Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">flexbox</a> and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
 
-<p><strong>New to or unfamiliar with flexbox?</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Read this CSS Tricks flexbox guide</a> for background, terminology, guidelines, and code snippets.</p>
+    <p><strong>New to or unfamiliar with flexbox?</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Read this CSS Tricks flexbox guide</a> for background, terminology, guidelines, and code snippets.</p>
 
-{% include code/preview.html component="grid--how-it-works.html" %}
-{% include code/accordion.html component="grid--how-it-works" %}
+    {% include code/preview.html component="grid--how-it-works.html" %}
+    {% include code/accordion.html component="grid--how-it-works" %}
 </section>
 
 <section id="section-grid-options">
-<h2 class="heading heading-margin-alt" id="grid-options">Grid options</h2>
-<p>While Bootstrap uses <span class="highlight">em</span>s or <span class="highlight">rem</span>s for defining most sizes, <span class="highlight">px</span>s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>.</p>
+    <h2 class="heading heading-margin-alt" id="grid-options">Grid options</h2>
+    <p>While Bootstrap uses <span class="highlight">em</span>s or <span class="highlight">rem</span>s for defining most sizes, <span class="highlight">px</span>s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>.</p>
 
-<p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+    <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
 
-<table class="dk-table bs-example-table">
-    <thead>
-        <tr>
-            <th></th>
-            <th>Extra small<br /><small>&lt;576px</small></th>
-            <th>Small<br /><small>&ge;576px</small></th>
-            <th>Medium<br /><small>&ge;768px</small></th>
-            <th>Large<br /><small>&ge;992px</small></th>
-            <th>Extra large<br /><small>&ge;1200px</small></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th>Max container width</th>
-            <td>None (auto)</td>
-            <td>540px</td>
-            <td>720px</td>
-            <td>960px</td>
-            <td>1140px</td>
-        </tr>
-        <tr>
-            <th>Class prefix</th>
-            <td><span class="highlight">.col-</span></td>
-            <td><span class="highlight">.col-sm-</span></td>
-            <td><span class="highlight">.col-md-</span></td>
-            <td><span class="highlight">.col-lg-</span></td>
-            <td><span class="highlight">.col-xl-</span></td>
-        </tr>
-        <tr>
-            <th># of columns</th>
-            <td colspan="5">12</td>
-        </tr>
-        <tr>
-            <th>Gutter width</th>
-            <td colspan="5">1rem (16px on each side of a column)</td>
-        </tr>
-        <tr>
-            <th>Nestable</th>
-            <td colspan="5">Yes</td>
-        </tr>
-        <tr>
-            <th>Column ordring</th>
-            <td colspan="5">Yes</td>
-        </tr>
-    </tbody>
-</table>
+    <table class="dk-table bs-example-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Extra small<br /><small>&lt;576px</small></th>
+                <th>Small<br /><small>&ge;576px</small></th>
+                <th>Medium<br /><small>&ge;768px</small></th>
+                <th>Large<br /><small>&ge;992px</small></th>
+                <th>Extra large<br /><small>&ge;1200px</small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Max container width</th>
+                <td>None (auto)</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+            </tr>
+            <tr>
+                <th>Class prefix</th>
+                <td><span class="highlight">.col-</span></td>
+                <td><span class="highlight">.col-sm-</span></td>
+                <td><span class="highlight">.col-md-</span></td>
+                <td><span class="highlight">.col-lg-</span></td>
+                <td><span class="highlight">.col-xl-</span></td>
+            </tr>
+            <tr>
+                <th># of columns</th>
+                <td colspan="5">12</td>
+            </tr>
+            <tr>
+                <th>Gutter width</th>
+                <td colspan="5">1rem (16px on each side of a column)</td>
+            </tr>
+            <tr>
+                <th>Nestable</th>
+                <td colspan="5">Yes</td>
+            </tr>
+            <tr>
+                <th>Column ordring</th>
+                <td colspan="5">Yes</td>
+            </tr>
+        </tbody>
+    </table>
 </section>
 
 <section id="section-auto-layout-columns">
