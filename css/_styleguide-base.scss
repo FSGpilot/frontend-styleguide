@@ -1,4 +1,4 @@
-/*html,
+html,
 body {
   height: auto;
 }
@@ -1226,7 +1226,7 @@ code {
   h4,
   h5,
   h6 {
-    font-family: $font-sans;
+    font-family: $font-text-regular;
   }
 
   h1 {
@@ -1259,11 +1259,11 @@ code {
 
   .display-alt {
     font-size: rem(44px);
-    font-weight: $font-light;
+    font-weight: $font-text-regular; //$font-light;
   }
 
   .font-lead {
-    font-family: $font-sans;
+    font-family: $font-text-regular; //$font-sans;
     font-size: rem(22px);
     font-weight: $font-light;
     line-height: $base-line-height;
@@ -1272,13 +1272,13 @@ code {
   &.serif-body {
     .font-example {
       p {
-        font-family: $font-heading; //$font-serif;
+        font-family: $font-text-regular; //$font-heading; //$font-serif;
         font-size: rem(15px);
         line-height: $lead-line-height;
       }
 
       .font-lead {
-        font-family: $font-sans;
+        font-family: $font-text-regular; //$font-sans;
         font-size: rem(22px);
         font-weight: $font-light;
         line-height: $base-line-height;
@@ -1289,7 +1289,7 @@ code {
 
 .serif-sans-minor {
   h6 {
-    font-family: $font-sans;
+    font-family: $font-text-regular //$font-sans;
   }
 }
 
@@ -2101,4 +2101,3 @@ div.anno-container {
 .text-success {
   color: $color-success;
 }
-*/
