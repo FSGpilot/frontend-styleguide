@@ -1,4 +1,4 @@
-html,
+/*html,
 body {
   height: auto;
 }
@@ -745,7 +745,7 @@ h3 + .button_wrapper {
 
 // Gray-scales
 .color-gray-darkest {
-  background-color: $color-gray-darkest;
+  
 }
 .color-gray-dark {
   background-color: $color-gray-dark;
@@ -1110,7 +1110,7 @@ code {
   .token.constant,
   .token.symbol,
   .token.deleted {
-    color: $color-gray-darkest;
+    
   }
 
   .na,
@@ -1182,7 +1182,7 @@ code {
 
 @mixin font-lead-alt {
   font-size: $base-font-size;
-  font-weight: $font-normal;
+  font-weight: $font-weight-normal;
 }
 
 .serif-robust {
@@ -1623,7 +1623,7 @@ article {
 
 .component-preview-button {
   background: $color-gray-lightest;
-  border: 1px solid $color-gray-darkest;
+  border: 1px solid $color-gray-dark;
   outline: none;
   height: $spacing-medium;
   width: $spacing-medium;
@@ -1636,11 +1636,11 @@ article {
   text-align: center;
 
   .icon-color{
-    fill: $color-gray-darkest;
+    fill: $color-gray-dark;
   }
 
   &:hover {
-    background-color: $color-gray-darkest;
+    background-color: $color-gray-dark;
     .icon-color{
       fill: $color-white;
     }
@@ -1906,7 +1906,7 @@ ul.anno-text {
 div.anno-container {
   position: relative;
   display: grid;
-  display: -ms-grid; /* IE */
+  display: -ms-grid; // IE 
   width: fit-content;
   height: fit-content;
 }
@@ -2101,3 +2101,4 @@ div.anno-container {
 .text-success {
   color: $color-success;
 }
+*/
