@@ -5,7 +5,7 @@ var config = {
     baseNodemodulesPath: "./node_modules/dkwds/src",
     componentsHtml: "./node_modules/dkwds/src/components/**/*.*",
     docStyles: "./css/**/*",
-    componentStyles: "./node_modules/dkwds/src/stylesheets/**/*",
+    componentStyles: ["./node_modules/dkwds/src/stylesheets/**/*.scss", "!./node_modules/dkwds/src/stylesheets/lib/**/*.scss"],  
     componentJavascript: "./node_modules/dkwds/dist/js/**/*"
 }
 
