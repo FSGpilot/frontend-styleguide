@@ -385,7 +385,7 @@ body {
 %label-maturity {
   color: $color-gray-dark;
   font-size: 1.4rem;
-  font-weight: $font-bold;
+  font-weight: $font-weight-bold;
   margin-left: 1.2rem;
   position: absolute;
   text-decoration: none;
@@ -713,12 +713,12 @@ h3 + .button_wrapper {
 
 .color-hex {
   @include margin(1rem null 0);
-  font-weight: $font-bold;
+  font-weight: $font-weight-bold;
 }
 
 .color-text {
   @include padding(1rem 2rem);
-  font-weight: $font-bold;
+  font-weight: $font-weight-bold;
   margin-bottom: .4rem;
 }
 
@@ -1182,7 +1182,7 @@ code {
 
 @mixin font-lead-alt {
   font-size: $base-font-size;
-  font-weight: $font-normal;
+  font-weight: $font-weight-normal;
 }
 
 .serif-robust {
