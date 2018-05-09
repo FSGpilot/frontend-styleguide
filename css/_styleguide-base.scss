@@ -745,7 +745,7 @@ h3 + .button_wrapper {
 
 // Gray-scales
 .color-gray-darkest {
-  background-color: $color-gray-darkest;
+  
 }
 .color-gray-dark {
   background-color: $color-gray-dark;
@@ -1110,7 +1110,7 @@ code {
   .token.constant,
   .token.symbol,
   .token.deleted {
-    color: $color-gray-darkest;
+    
   }
 
   .na,
@@ -1226,7 +1226,7 @@ code {
   h4,
   h5,
   h6 {
-    font-family: $font-sans;
+    font-family: $font-text-regular;
   }
 
   h1 {
@@ -1259,11 +1259,11 @@ code {
 
   .display-alt {
     font-size: rem(44px);
-    font-weight: $font-light;
+    font-weight: $font-text-regular; //$font-light;
   }
 
   .font-lead {
-    font-family: $font-sans;
+    font-family: $font-text-regular; //$font-sans;
     font-size: rem(22px);
     font-weight: $font-light;
     line-height: $base-line-height;
@@ -1272,13 +1272,13 @@ code {
   &.serif-body {
     .font-example {
       p {
-        font-family: $font-heading; //$font-serif;
+        font-family: $font-text-regular; //$font-heading; //$font-serif;
         font-size: rem(15px);
         line-height: $lead-line-height;
       }
 
       .font-lead {
-        font-family: $font-sans;
+        font-family: $font-text-regular; //$font-sans;
         font-size: rem(22px);
         font-weight: $font-light;
         line-height: $base-line-height;
@@ -1289,7 +1289,7 @@ code {
 
 .serif-sans-minor {
   h6 {
-    font-family: $font-sans;
+    font-family: $font-text-regular //$font-sans;
   }
 }
 
@@ -1623,7 +1623,7 @@ article {
 
 .component-preview-button {
   background: $color-gray-lightest;
-  border: 1px solid $color-gray-darkest;
+  border: 1px solid $color-gray-dark;
   outline: none;
   height: $spacing-medium;
   width: $spacing-medium;
@@ -1636,11 +1636,11 @@ article {
   text-align: center;
 
   .icon-color{
-    fill: $color-gray-darkest;
+    fill: $color-gray-dark;
   }
 
   &:hover {
-    background-color: $color-gray-darkest;
+    background-color: $color-gray-dark;
     .icon-color{
       fill: $color-white;
     }
@@ -1906,7 +1906,7 @@ ul.anno-text {
 div.anno-container {
   position: relative;
   display: grid;
-  display: -ms-grid; /* IE */
+  display: -ms-grid; // IE 
   width: fit-content;
   height: fit-content;
 }
