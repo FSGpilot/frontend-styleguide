@@ -3283,6 +3283,101 @@ a:focus {
 a:visited, a.color-text-visited {
   color: #801258; }
 
+h1, .h1 {
+  font-family: "IBMPlexSans";
+  font-size: 4.3rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  color: #212121; }
+
+h2, .h2 {
+  font-family: "IBMPlexSans";
+  font-size: 3.3rem;
+  line-height: 4rem;
+  font-weight: 600;
+  color: #212121; }
+
+h3, .h3 {
+  font-family: "IBMPlexSans";
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  color: #212121; }
+
+h4, .h4 {
+  font-family: "IBMPlexSans";
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: #212121; }
+
+h5, .h5 {
+  font-family: "IBMPlexSans";
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #212121; }
+
+h6, .h6 {
+  font-family: "IBMPlexSans";
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  color: #212121; }
+
+.sub-header-text {
+  font-family: "IBMPlexSans";
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: #323a44; }
+
+.body-copy-text {
+  font-family: "IBMPlexSans";
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #323a44; }
+
+.form-label {
+  font-family: "IBMPlexSans";
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  color: #212121; }
+
+small, .small-text {
+  font-family: "IBMPlexSans";
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+  color: #212121; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.sub-header-text {
+  clear: both;
+  margin-top: 40px;
+  margin-bottom: 16px; }
+  h1:first-child, .h1:first-child,
+  h2:first-child, .h2:first-child,
+  h3:first-child, .h3:first-child,
+  h4:first-child, .h4:first-child,
+  h5:first-child, .h5:first-child,
+  h6:first-child, .h6:first-child,
+  .sub-header-text:first-child {
+    margin-top: 0; }
+
+p, .body-text,
+.lead {
+  clear: both;
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
 .external_link::after {
   background: url("../assets/img/external-link.png") no-repeat 0 0;
   background: url("../assets/img/external-link.svg") no-repeat 0 0;
@@ -3311,89 +3406,6 @@ a:visited, a.color-text-visited {
   background-image: url("../assets/img/external-link-alt-hover.png");
   background-image: url("../assets/img/external-link-alt-hover.svg"); }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-.sub-header-text,
-h4, .h4,
-h5, .h5,
-.body-text,
-h6, .h6,
-.small-text {
-  clear: both;
-  margin-top: 8px;
-  margin-bottom: 40px; }
-
-h1, .h1 {
-  font-family: "IBMPlexSans";
-  font-size: 4.3rem;
-  line-height: 4.8rem;
-  font-weight: 700;
-  color: #212121; }
-
-h2, .h2 {
-  font-family: "IBMPlexSans";
-  font-size: 3.3rem;
-  line-height: 4rem;
-  font-weight: 600;
-  color: #212121; }
-
-h3, .h3 {
-  font-family: "IBMPlexSans";
-  font-size: 2.6rem;
-  line-height: 3.2rem;
-  font-weight: 600;
-  color: #212121; }
-
-.sub-header-text {
-  font-family: "IBMPlexSans";
-  font-size: 2.5rem;
-  line-height: 3.2rem;
-  font-weight: 400;
-  color: #323a44; }
-
-h4, .h4 {
-  font-family: "IBMPlexSans";
-  font-size: 2.2rem;
-  line-height: 2.4rem;
-  font-weight: 600;
-  color: #212121; }
-
-h5, .h5 {
-  font-family: "IBMPlexSans";
-  font-size: 2rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-  color: #212121; }
-
-.body-copy-text {
-  font-family: "IBMPlexSans";
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-  color: #323a44; }
-
-.form-label {
-  font-family: "IBMPlexSans";
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  font-weight: 600;
-  color: #212121; }
-
-h6, .h6 {
-  font-family: "IBMPlexSans";
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: 600;
-  color: #212121; }
-
-.small-text {
-  font-family: "IBMPlexSans";
-  font-size: 1.3rem;
-  line-height: 1.6rem;
-  font-weight: 500;
-  color: #212121; }
-
 cite,
 var,
 address,
@@ -3413,36 +3425,6 @@ dfn {
 .heading li,
 .heading span {
   font-family: "IBMPlexSans", "system"; }
-
-.sans p,
-.sans a,
-.sans li,
-.sans span {
-  font-family: "IBMPlexSans"; }
-.sans a {
-  border-bottom: none;
-  font-weight: 700; }
-
-.serif p,
-.serif a,
-.serif li,
-.serif span {
-  font-family: "IBMPlexSans", "system"; }
-
-.sans-source p,
-.sans-source a,
-.sans-source li,
-.sans-source span {
-  font-family: "IBMPlexSans"; }
-.sans-source a {
-  border-bottom: none;
-  font-weight: 700; }
-
-.serif-merri p,
-.serif-merri a,
-.serif-merri li,
-.serif-merri span {
-  font-family: "IBMPlexSans"; }
 
 .display {
   font-family: "IBMPlexSans";
@@ -3466,7 +3448,7 @@ dfn {
       font-weight: 700;
       color: #212121; } }
 
-.font-lead {
+.lead {
   font-family: "IBMPlexSans", "system";
   font-size: 2rem;
   font-weight: 400;
@@ -3485,10 +3467,6 @@ dfn {
     color: #d6d7d9; }
     .background-dark a:hover {
       color: #ffffff; }
-
-.text-small {
-  font-size: 1.4rem;
-  margin-top: 0; }
 
 .step-title {
   margin-top: 0;
@@ -3996,43 +3974,43 @@ img {
   width: 24px; }
 
 .icon-alert-outline {
-  background-image: url("../img/svg-icons/alert-outline.svg"); }
+  background-image: url("../assets/img/svg-icons/alert-outline.svg"); }
 
 .icon-angle-arrow-down {
-  background-image: url("../img/svg-icons/angle-arrow-down.svg"); }
+  background-image: url("../assets/img/svg-icons/angle-arrow-down.svg"); }
 
 .icon-angle-arrow-up {
-  background-image: url("../img/svg-icons/angle-arrow-up.svg"); }
+  background-image: url("../assets/img/svg-icons/angle-arrow-up.svg"); }
 
 .icon-calendar {
-  background-image: url("../img/svg-icons/calendar.svg"); }
+  background-image: url("../assets/img/svg-icons/calendar.svg"); }
 
 .icon-check {
-  background-image: url("../img/svg-icons/check.svg"); }
+  background-image: url("../assets/img/svg-icons/check.svg"); }
 
 .icon-check-circle-outline {
-  background-image: url("../img/svg-icons/check-circle-outline.svg"); }
+  background-image: url("../assets/img/svg-icons/check-circle-outline.svg"); }
 
 .icon-content-save {
-  background-image: url("../img/svg-icons/content-save.svg"); }
+  background-image: url("../assets/img/svg-icons/content-save.svg"); }
 
 .icon-delete {
-  background-image: url("../img/svg-icons/delete.svg"); }
+  background-image: url("../assets/img/svg-icons/delete.svg"); }
 
 .icon-help-circle-outline {
-  background-image: url("../img/svg-icons/help-circle-outline.svg"); }
+  background-image: url("../assets/img/svg-icons/help-circle-outline.svg"); }
 
 .icon-information-outline {
-  background-image: url("../img/svg-icons/information-outline.svg"); }
+  background-image: url("../assets/img/svg-icons/information-outline.svg"); }
 
 .icon-magnify {
-  background-image: url("../img/svg-icons/magnify.svg"); }
+  background-image: url("../assets/img/svg-icons/magnify.svg"); }
 
 .icon-pencil {
-  background-image: url("../img/svg-icons/pencil.svg"); }
+  background-image: url("../assets/img/svg-icons/pencil.svg"); }
 
 .icon-refresh {
-  background-image: url("../img/svg-icons/refresh.svg"); }
+  background-image: url("../assets/img/svg-icons/refresh.svg"); }
 
 .hide-base-svg {
   display: none; }
@@ -6414,10 +6392,8 @@ input[type=search] {
 
 .card {
   position: relative;
-  margin-bottom: 1.6rem;
   border-radius: 0.4rem;
   border: 1px solid #5b616a;
-  margin: 1.6rem;
   overflow: hidden; }
   .card-large {
     width: 700px; }
@@ -6917,6 +6893,9 @@ h3 + .button_wrapper {
     font-size: 1.5rem; }
     .color-row p:last-of-type {
       font-size: 11px; }
+
+section + section {
+  margin-top: 40px; }
 
 .primary-color-section {
   margin-bottom: 0; }
