@@ -7,7 +7,7 @@ type: component
 title: Grids
 category: UI components
 subcategory: Partikler - Retningslinjer
-lead: Frontend Styleguiden benytter Boostrap's mobile-first flexbox grid til opbygning af sider. Gridsystemet er et standard 12-kolonne system, med fem responsive breakpoints, Sass variable og mixins, og adskillige prædefinerede klasser.
+lead: Frontend Styleguiden benytter Boostrap's mobile-first flexbox grid til opbygning af sider. Gridsystemet er et standard 12-kolonne system, med fem responsive breakpoints.
 subnav:
 - text: Introduktion
   href: '#introduction'
