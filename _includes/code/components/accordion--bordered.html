@@ -1,86 +1,66 @@
-<ul class="accordion-bordered">
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="no-js">
 
-    <li>
-        <button class="accordion-button" aria-expanded="true" aria-controls="b-a1">
-            First Amendment
-            <span class="accordion-icon icon-bg-success ">
-                <i class="mdi mdi-check"></i>
-            </span>
-        </button>
-        <div id="b-a1" class="accordion-content">
-            Congress shall make no law respecting an establishment of religion, or prohibiting
-            the free exercise thereof; or abridging the freedom of speech, or
-            of the press; or the right of the people peaceably to assemble,
-            and to petition the Government for a redress of grievances.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        window.frctl = {
+            env: 'static'
+        };
+    </script>
+    <script>
+        var cl = document.querySelector('html').classList;
+        cl.remove('no-js');
+        cl.add('has-js');
+    </script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
 
-        </div>
-    </li>
+    <link rel="stylesheet" href="../../themes/mandelbrot/css/white.css?cachebust=1.2.0"
+        type="text/css">
 
-    <li>
-        <button class="accordion-button" aria-expanded="false" aria-controls="b-a2">
-            Second Amendment
-            <span class="accordion-icon icon-bg-warning ">
-                <i class="mdi mdi-exclamation"></i>
-            </span>
-        </button>
-        <div id="b-a2" class="accordion-content">
-            A well regulated Militia, being necessary to the security of a free State, the
-            right of the people to keep and bear Arms, shall not be infringed.
+    <title>Error rendering component accordion--bordered | Frontend Styleguide</title>
 
-        </div>
-    </li>
+</head>
 
-    <li>
-        <button class="accordion-button" aria-expanded="false" aria-controls="b-a3">
-            Third Amendment
-            <span class="accordion-icon icon-bg-info ">
-                <i class="mdi mdi-help"></i>
-            </span>
-        </button>
-        <div id="b-a3" class="accordion-content">
-            No Soldier shall, in time of peace be quartered in any house, without the consent
-            of the Owner, nor in time of war, but in a manner to be prescribed
-            by law.
+<body>
 
-        </div>
-    </li>
+    <div class="Frame Frame--full" id="frame">
 
-    <li>
-        <button class="accordion-button" aria-expanded="false" aria-controls="b-a4">
-            Fourth Amendment
-            <span class="accordion-icon icon-bg-primary ">
-                <i class="mdi mdi-check"></i>
-            </span>
-        </button>
-        <div id="b-a4" class="accordion-content">
-            The right of the people to be secure in their persons, houses, papers, and effects,
-            against unreasonable searches and seizures, shall not be violated,
-            and no Warrants shall issue, but upon probable cause, supported
-            by Oath or affirmation, and particularly describing the place to
-            be searched, and the persons or things to be seized.
+        <div class="Error Error--render">
+            <h4 class="Error-title">Error rendering component</h4>
+            <div class="Error-message Prose">
+                <p>(unknown path) Error: template not found: atoms/icons.njk</p>
+
+            </div>
+
+            <code class="Error-stack">
+        <pre>Template render error: (unknown path)
+  Error: template not found: atoms/icons.njk
+    at Object.exports.prettifyError (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:34:15)
+    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:486:31
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:9:11)
+    at createTemplate (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:212:25)
+    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:210:13)
+    at handle (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:252:25)
+    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:263:21
+    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:207:13)
+    at handle (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:252:25)
+    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:263:21
+    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:207:13)
+    at Object.exports.asyncIter (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:214:5)
+    at new_cls.getTemplate (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:242:17)
+    at new_cls.root [as rootRenderFunc] (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:8:5)
+    at new_cls.render (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:479:15)
+    at new_cls.renderString (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:327:21)</pre>
+    </code>
 
         </div>
-    </li>
 
-    <li>
-        <button class="accordion-button" aria-expanded="false" aria-controls="b-a5">
-            Fifth Amendment
-            <span class="accordion-icon icon-bg-error ">
-                <i class="mdi mdi-close"></i>
-            </span>
-        </button>
-        <div id="b-a5" class="accordion-content">
-            No person shall be held to answer for a capital, or otherwise infamous crime,
-            unless on a presentment or indictment of a Grand Jury, except in
-            cases arising in the land or naval forces, or in the Militia, when
-            in actual service in time of War or public danger; nor shall any
-            person be subject for the same offence to be twice put in jeopardy
-            of life or limb; nor shall be compelled in any criminal case to
-            be a witness against himself, nor be deprived of life, liberty,
-            or property, without due process of law; nor shall private property
-            be taken for public use, without just compensation.
+    </div>
 
-        </div>
-    </li>
+    <script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
 
-</ul>
+</body>
+
+</html>

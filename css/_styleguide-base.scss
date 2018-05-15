@@ -435,7 +435,7 @@ h2 + .tooltip {
   }
 }
 
-.heading-margin-alt {
+.heading-margin-alt { //TODO, EJE: Remove. Entire docs site should be styled using components-projekt only.
   margin-top: 6rem;
 }
 
@@ -671,6 +671,10 @@ h3 + .button_wrapper {
       font-size: 11px;
     }
   }
+}
+
+section + section{
+  margin-top: 40px;
 }
 
 .primary-color-section {
