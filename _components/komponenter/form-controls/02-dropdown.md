@@ -1,13 +1,13 @@
 ---
-title: Dropdown
+title: Select
 parent: Form controls
 order: 02
-lead: A dropdown allows users to select one option from a list.
+lead: A select-element allows users to select one or more option from a list.
 ---
 
 
-{% include code/preview.html component="dropdown" classes="preview-dropdown" %}
-{% include code/accordion.html component="dropdown" %}
+{% include code/preview.html component="select" classes="preview-dropdown" %}
+{% include code/accordion.html component="select" %}
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="dropdown-docs">
