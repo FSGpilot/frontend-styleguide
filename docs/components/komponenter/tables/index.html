@@ -558,72 +558,220 @@
   <button class="accordion-button" aria-controls="code-datatable">Code</button>
   <div id="code-datatable" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en-US"</span> <span class="na">dir=</span><span class="s">"ltr"</span> <span class="na">class=</span><span class="s">"no-js"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Table title<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"selected-rows-menu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-selection-button"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Delete<span class="nt">&lt;/span&gt;</span>
 
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;script&gt;</span>
-        <span class="nb">window</span><span class="p">.</span><span class="nx">frctl</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="na">env</span><span class="p">:</span> <span class="s1">'static'</span>
-        <span class="p">};</span>
-    <span class="nt">&lt;/script&gt;</span>
-    <span class="nt">&lt;script&gt;</span>
-        <span class="kd">var</span> <span class="nx">cl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'html'</span><span class="p">).</span><span class="nx">classList</span><span class="p">;</span>
-        <span class="nx">cl</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">'no-js'</span><span class="p">);</span>
-        <span class="nx">cl</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'has-js'</span><span class="p">);</span>
-    <span class="nt">&lt;/script&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">href=</span><span class="s">"../../themes/mandelbrot/favicon.ico"</span> <span class="na">type=</span><span class="s">"image/ico"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-delete "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../../themes/mandelbrot/css/white.css?cachebust=1.2.0"</span>
-        <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-selection-button"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Refresh<span class="nt">&lt;/span&gt;</span>
 
-    <span class="nt">&lt;title&gt;</span>Error rendering component datatable | Frontend Styleguide<span class="nt">&lt;/title&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-refresh "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-<span class="nt">&lt;/head&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-selection-button"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Pause<span class="nt">&lt;/span&gt;</span>
 
-<span class="nt">&lt;body&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-pause-circle "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Frame Frame--full"</span> <span class="na">id=</span><span class="s">"frame"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"selected-items-counter"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"selected-items-counter-value"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;span&gt;</span> items selected<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"cancel"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Cancel<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"default-menu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"search-svg"</span><span class="nt">&gt;</span>
 
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Error Error--render"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"Error-title"</span><span class="nt">&gt;</span>Error rendering component<span class="nt">&lt;/h4&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Error-message Prose"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;p&gt;</span>(unknown path) Error: template not found: atoms/icons.njk<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-magnify "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
             <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Search compute"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-button"</span><span class="nt">&gt;</span>
 
-            <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"Error-stack"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;pre&gt;</span>Template render error: (unknown path)
-  Error: template not found: atoms/icons.njk
-    at Object.exports.prettifyError (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:34:15)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:486:31
-    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <span class="nt">&lt;anonymous&gt;</span>:9:11)
-    at createTemplate (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:212:25)
-    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:210:13)
-    at handle (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:252:25)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:263:21
-    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:207:13)
-    at handle (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:252:25)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:263:21
-    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:207:13)
-    at Object.exports.asyncIter (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:214:5)
-    at new_cls.getTemplate (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:242:17)
-    at new_cls.root [as rootRenderFunc] (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <span class="nt">&lt;anonymous&gt;</span>:8:5)
-    at new_cls.render (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:479:15)
-    at new_cls.renderString (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:327:21)<span class="nt">&lt;/pre&gt;</span>
-    <span class="nt">&lt;/code&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-download "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-button"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-pencil "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn menu-button"</span> <span class="na">margin-top=</span><span class="s">"15px"</span><span class="nt">&gt;</span>
+
+                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-settings "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left settings"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>Row height:<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radiobutton"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"size"</span> <span class="na">id=</span><span class="s">"compact"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Compact<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radiobutton"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"size"</span> <span class="na">id=</span><span class="s">"short"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Short<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radiobutton"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"size"</span> <span class="na">id=</span><span class="s">"default"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Default<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radiobutton"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"size"</span> <span class="na">id=</span><span class="s">"tall"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Tall<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"primary-button"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Add new <span class="nt">&lt;/span&gt;</span>
+
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-plus-circle "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+            <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"dk-table bordered"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;thead&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"table-sort-button"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Document title<span class="nt">&lt;/span&gt;</span>
 
-    <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-menu-down "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"table-sort-button"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Description<span class="nt">&lt;/span&gt;</span>
 
-<span class="nt">&lt;/body&gt;</span>
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-menu-down "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-<span class="nt">&lt;/html&gt;</span>
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"table-sort-button"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Year<span class="nt">&lt;/span&gt;</span>
+
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-menu-down "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;/thead&gt;</span>
+        <span class="nt">&lt;tbody&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"row-selection-checkbox"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>Declaration of Independence<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Statement adopted by the Continental Congress declaring independence
+                    from the British Empire.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1776<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-dots-horizontal "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                        <span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 3<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 4 is longer text<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"row-selection-checkbox"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Bill of Rights<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>The first ten amendments of the U.S. Constitution guaranteeing
+                    rights and freedoms.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1791<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-dots-horizontal "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                        <span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 5<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 6 is longer text<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 7<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 8<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"row-selection-checkbox"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Declaration of Sentiments<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>A document written during the Seneca Falls Convention outlining
+                    the rights that American women should be entitled to as
+                    citizens.
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1848<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-dots-horizontal "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                        <span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 3<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 4 is longer text<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"row-selection-checkbox"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Emancipation Proclamation<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>An executive order granting freedom to slaves in designated
+                    southern states.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1863<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-dots-horizontal "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                        <span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 3<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 4 is longer text<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;/tbody&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
 
@@ -795,72 +943,139 @@
   <button class="accordion-button" aria-controls="code-expandable">Code</button>
   <div id="code-expandable" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en-US"</span> <span class="na">dir=</span><span class="s">"ltr"</span> <span class="na">class=</span><span class="s">"no-js"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"dk-table bordered"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;thead&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;</span>Document title <span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;</span>Description <span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;</span>Year <span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;/thead&gt;</span>
+        <span class="nt">&lt;tbody&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"expand-button"</span><span class="nt">&gt;</span>
 
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;script&gt;</span>
-        <span class="nb">window</span><span class="p">.</span><span class="nx">frctl</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="na">env</span><span class="p">:</span> <span class="s1">'static'</span>
-        <span class="p">};</span>
-    <span class="nt">&lt;/script&gt;</span>
-    <span class="nt">&lt;script&gt;</span>
-        <span class="kd">var</span> <span class="nx">cl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'html'</span><span class="p">).</span><span class="nx">classList</span><span class="p">;</span>
-        <span class="nx">cl</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">'no-js'</span><span class="p">);</span>
-        <span class="nx">cl</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'has-js'</span><span class="p">);</span>
-    <span class="nt">&lt;/script&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">href=</span><span class="s">"../../themes/mandelbrot/favicon.ico"</span> <span class="na">type=</span><span class="s">"image/ico"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-chevron-right "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../../themes/mandelbrot/css/white.css?cachebust=1.2.0"</span>
-        <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>Declaration of Independence<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Statement adopted by the Continental Congress declaring independence
+                    from the British Empire.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1776<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"expandable-row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, ex
+                    id feugiat bibendum, erat ante cursus nulla, ac tincidunt
+                    velit nulla vitae enim. In viverra felis at lobortis cursus.
+                    Mauris faucibus sem nec libero ultricies, vel fringilla
+                    velit vehicula. Donec at quam tempus, aliquam turpis in,
+                    posuere lectus. Cras interdum gravida nulla vel eleifend.
+                    Sed porta ultrices bibendum. Proin egestas, elit vitae interdum
+                    cursus, nisl lorem semper diam, in scelerisque lacus diam
+                    eget ipsum. Phasellus varius sem sed convallis egestas.
+                    Curabitur eget sem sed purus egestas condimentum non quis
+                    purus. Mauris in rhoncus risus, ullamcorper eleifend magna.
+                    Maecenas placerat commodo quam at feugiat.
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"expand-button"</span><span class="nt">&gt;</span>
 
-    <span class="nt">&lt;title&gt;</span>Error rendering component expandable | Frontend Styleguide<span class="nt">&lt;/title&gt;</span>
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-chevron-right "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-<span class="nt">&lt;/head&gt;</span>
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Bill of Rights<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>The first ten amendments of the U.S. Constitution guaranteeing
+                    rights and freedoms.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1791<span class="nt">&lt;/td&gt;</span>
 
-<span class="nt">&lt;body&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"expandable-row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, ex
+                    id feugiat bibendum, erat ante cursus nulla, ac tincidunt
+                    velit nulla vitae enim. In viverra felis at lobortis cursus.
+                    Mauris faucibus sem nec libero ultricies, vel fringilla
+                    velit vehicula. Donec at quam tempus, aliquam turpis in,
+                    posuere lectus. Cras interdum gravida nulla vel eleifend.
+                    Sed porta ultrices bibendum. Proin egestas, elit vitae interdum
+                    cursus, nisl lorem semper diam, in scelerisque lacus diam
+                    eget ipsum. Phasellus varius sem sed convallis egestas.
+                    Curabitur eget sem sed purus egestas condimentum non quis
+                    purus. Mauris in rhoncus risus, ullamcorper eleifend magna.
+                    Maecenas placerat commodo quam at feugiat.
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"expand-button"</span><span class="nt">&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Frame Frame--full"</span> <span class="na">id=</span><span class="s">"frame"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-chevron-right "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Error Error--render"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"Error-title"</span><span class="nt">&gt;</span>Error rendering component<span class="nt">&lt;/h4&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Error-message Prose"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;p&gt;</span>(unknown path) Error: template not found: atoms/icons.njk<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Declaration of Sentiments<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>A document written during the Seneca Falls Convention outlining
+                    the rights that American women should be entitled to as
+                    citizens.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1848<span class="nt">&lt;/td&gt;</span>
 
-            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"expandable-row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, ex
+                    id feugiat bibendum, erat ante cursus nulla, ac tincidunt
+                    velit nulla vitae enim. In viverra felis at lobortis cursus.
+                    Mauris faucibus sem nec libero ultricies, vel fringilla
+                    velit vehicula. Donec at quam tempus, aliquam turpis in,
+                    posuere lectus. Cras interdum gravida nulla vel eleifend.
+                    Sed porta ultrices bibendum. Proin egestas, elit vitae interdum
+                    cursus, nisl lorem semper diam, in scelerisque lacus diam
+                    eget ipsum. Phasellus varius sem sed convallis egestas.
+                    Curabitur eget sem sed purus egestas condimentum non quis
+                    purus. Mauris in rhoncus risus, ullamcorper eleifend magna.
+                    Maecenas placerat commodo quam at feugiat.
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"expand-button"</span><span class="nt">&gt;</span>
 
-            <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"Error-stack"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;pre&gt;</span>Template render error: (unknown path)
-  Error: template not found: atoms/icons.njk
-    at Object.exports.prettifyError (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:34:15)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:486:31
-    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <span class="nt">&lt;anonymous&gt;</span>:9:11)
-    at createTemplate (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:212:25)
-    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:210:13)
-    at handle (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:252:25)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:263:21
-    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:207:13)
-    at handle (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:252:25)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:263:21
-    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:207:13)
-    at Object.exports.asyncIter (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:214:5)
-    at new_cls.getTemplate (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:242:17)
-    at new_cls.root [as rootRenderFunc] (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <span class="nt">&lt;anonymous&gt;</span>:8:5)
-    at new_cls.render (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:479:15)
-    at new_cls.renderString (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:327:21)<span class="nt">&lt;/pre&gt;</span>
-    <span class="nt">&lt;/code&gt;</span>
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-chevron-right "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-        <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;/body&gt;</span>
-
-<span class="nt">&lt;/html&gt;</span>
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Emancipation Proclamation<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>An executive order granting freedom to slaves in designated
+                    southern states.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1863<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"expandable-row"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, ex
+                    id feugiat bibendum, erat ante cursus nulla, ac tincidunt
+                    velit nulla vitae enim. In viverra felis at lobortis cursus.
+                    Mauris faucibus sem nec libero ultricies, vel fringilla
+                    velit vehicula. Donec at quam tempus, aliquam turpis in,
+                    posuere lectus. Cras interdum gravida nulla vel eleifend.
+                    Sed porta ultrices bibendum. Proin egestas, elit vitae interdum
+                    cursus, nisl lorem semper diam, in scelerisque lacus diam
+                    eget ipsum. Phasellus varius sem sed convallis egestas.
+                    Curabitur eget sem sed purus egestas condimentum non quis
+                    purus. Mauris in rhoncus risus, ullamcorper eleifend magna.
+                    Maecenas placerat commodo quam at feugiat.
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;/tbody&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
 
@@ -1359,72 +1574,19 @@
   <button class="accordion-button" aria-controls="code-overflow-menu">Code</button>
   <div id="code-overflow-menu" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en-US"</span> <span class="na">dir=</span><span class="s">"ltr"</span> <span class="na">class=</span><span class="s">"no-js"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn"</span><span class="nt">&gt;</span>
 
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;script&gt;</span>
-        <span class="nb">window</span><span class="p">.</span><span class="nx">frctl</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="na">env</span><span class="p">:</span> <span class="s1">'static'</span>
-        <span class="p">};</span>
-    <span class="nt">&lt;/script&gt;</span>
-    <span class="nt">&lt;script&gt;</span>
-        <span class="kd">var</span> <span class="nx">cl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'html'</span><span class="p">).</span><span class="nx">classList</span><span class="p">;</span>
-        <span class="nx">cl</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">'no-js'</span><span class="p">);</span>
-        <span class="nx">cl</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'has-js'</span><span class="p">);</span>
-    <span class="nt">&lt;/script&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">href=</span><span class="s">"../../themes/mandelbrot/favicon.ico"</span> <span class="na">type=</span><span class="s">"image/ico"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-dots-vertical "</span><span class="nt">&gt;&lt;/i&gt;</span>
 
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"../../themes/mandelbrot/css/white.css?cachebust=1.2.0"</span>
-        <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;title&gt;</span>Error rendering component overflow-menu | Frontend Styleguide<span class="nt">&lt;/title&gt;</span>
-
-<span class="nt">&lt;/head&gt;</span>
-
-<span class="nt">&lt;body&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Frame Frame--full"</span> <span class="na">id=</span><span class="s">"frame"</span><span class="nt">&gt;</span>
-
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Error Error--render"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"Error-title"</span><span class="nt">&gt;</span>Error rendering component<span class="nt">&lt;/h4&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Error-message Prose"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;p&gt;</span>(unknown path) Error: template not found: atoms/icons.njk<span class="nt">&lt;/p&gt;</span>
-
-            <span class="nt">&lt;/div&gt;</span>
-
-            <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"Error-stack"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;pre&gt;</span>Template render error: (unknown path)
-  Error: template not found: atoms/icons.njk
-    at Object.exports.prettifyError (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:34:15)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:486:31
-    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <span class="nt">&lt;anonymous&gt;</span>:9:11)
-    at createTemplate (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:212:25)
-    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:210:13)
-    at handle (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:252:25)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:263:21
-    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:207:13)
-    at handle (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:252:25)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:263:21
-    at next (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:207:13)
-    at Object.exports.asyncIter (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:214:5)
-    at new_cls.getTemplate (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:242:17)
-    at new_cls.root [as rootRenderFunc] (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <span class="nt">&lt;anonymous&gt;</span>:8:5)
-    at new_cls.render (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:479:15)
-    at new_cls.renderString (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:327:21)<span class="nt">&lt;/pre&gt;</span>
-    <span class="nt">&lt;/code&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-right"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button&gt;</span>Option 3<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button&gt;</span>Option 4 is longer text<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;/body&gt;</span>
-
-<span class="nt">&lt;/html&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
 
