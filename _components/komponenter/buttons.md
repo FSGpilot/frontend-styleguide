@@ -20,13 +20,11 @@ lead: Use buttons to signal actions.
     <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>button</code> class to your anchor link.</p>
     <p>To use a different style button on your anchor link, add the special button class in addition to <code>button</code>:</p>
     <ul>
-      <li><code>button-primary-alt</code></li>
+      <li><code>button-primary</code></li>
       <li><code>button-secondary</code></li>
-      <li><code>button-gray</code></li>
-      <li><code>button-outline</code></li>
-      <li><code>button-outline-inverse</code></li>
+      <li><code>button-ghost</code></li>
       <li><code>button-disabled</code></li>
-      <li><code>button-big</code></li>
+      <li><code>button-small</code></li>
     </ul>
     <p>For example, a secondary button style would use the following code:
     <code>&lt;a class="button button-secondary" href=&quot;/my-link"&gt;My button&lt;/a&gt;</code></p>
@@ -35,6 +33,8 @@ lead: Use buttons to signal actions.
       <li>Buttons should display a visible focus state when users tab to them.</li>
       <li>Avoid using <code>&lt;div&gt;</code> or <code>&lt;img&gt;</code> tags to create buttons. Screen readers don't automatically know either is a usable button.</li>
       <li>When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.</li>
+      <li>Disabled buttons have a tabindex="-1" and aria-disabled="true" attribute on these links (to prevent them from receiving keyboard focus) and use custom JavaScript to disable their functionality.</li>
+      <li>Links that appear as buttons must have role="button".</li>
     </ul>
     <h4 class="heading">Usability</h4>
     <h5>When to use</h5>
