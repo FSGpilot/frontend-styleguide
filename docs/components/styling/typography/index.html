@@ -23,30 +23,13 @@
 
 <meta name="description" content="Typefaces
   
-  Source Sans Pro
+  IBM Plex Sans
 
 
   
-    Source Sans Pro is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.
-    Inspired by twentieth-century American gothic typeface design, its slender but open letters offer a clean and friendly simplicity. Advanced hinting allows Source Sans Pro to render well on Windows systems which run Cleartype, and across browsers and devices. Moreover, it supports a variety of languages and alphabets, including Western and European language, Vietnamese, pinyin Romanization of Chinese, and Navajo.
-  
-
-  
-    Aa
-    
-      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-      a b c d e f g h i j k l m n o p q r s t u v w x y z
-      0 1 2 3 4 5 6 7 8 9
-    
-  
-
-
-Merriweather
-
-
-  
-    Merriweather is an open-source serif typeface designed for on-screen reading. This font is ideal for text-dense design: the letterforms have a tall x-height but remain relatively small, making for excellent readability across screen sizes while not occupying extra horizontal space.
-    The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum mollis elit, in faucibus mi consectetur vel. In quis scelerisque lectus. Aliquam aliquam gravida lorem at pharetra. Fusce malesuada sed nisl eget interdum.
+    Nunc eu lorem molestie, pretium eros in, elementum lectus. Donec vitae facilisis mauris. In sed urna ut felis pellentesque tincidunt at quis dolor. Donec sed velit vel massa tempus venenatis vitae vel urna. Duis tincidunt molestie diam sit amet vehicula. Sed non hendrerit ex, et convallis urna.
+    Variablen @font-name bruges til at styre typefacen.
   
 
   
@@ -57,6 +40,45 @@ Merriweather
       0 1 2 3 4 5 6 7 8 9
     
   
+
+
+
+
+
+  Global settings
+  
+  
+Fonts
+For at skifte i mellem fonte bruges font-weight variablerne:
+
+	$font-weight-normal
+	$font-weight medium
+	$font-weight-semibold
+	$font-weight-bold
+
+For at ændre font-style bruges variablerne:
+
+	$font-style-normal
+	$font-style-italic
+
+
+Headings
+Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. 
+
+	@mixin h1{ 
+    font-family: $font-name; 
+    font-size: $h1-font-size; 
+    line-height: $h1-line-height; 
+    font-weight: $font-weight-bold; 
+    color: $color-base;
+  }
+
+
+h1, .h1 {
+@include h1;
+}
+
+Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på  
 
 
 
@@ -70,332 +92,7 @@ Note: Some pairings require more font weights than others. While this allows mor
 
   
     
-      Default: Merriweather headings, Source Sans Pro body (lite)
-    
-    
-      
-        
-          A simple serif and sans serif combination designed to communicate warmth and credibility. Strong Merriweather heading weights offer clear information hierarchy and when paired with Source Sans Pro’s easy-to-read body text, create a clean and professional feel.
-          This pairing is included in our design standards.
-          Recommended applications: digital services that feature forms; basic and text heavy sites.
-          Font weights included in this package:
-          
-            1. Merriweather, Bold 700
-            2. Source Sans Pro, Regular 400
-            3. Source Sans Pro, Bold 700
-            4. Source Sans Pro, Italic 400
-          
-        
-        
-          Page Performance
-          Fast
-          Ideal number of fonts. Will allow for optimal page load performance.
-          Example
-          
-            
-              
-            
-            EPA eManifest (screenshot of non-public site)
-          
-        
-      
-      Web Hierarchy
-      
-        
-          Display
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 52px
-            line-height: 1.3em/68px
-          
-        
-        
-          Heading 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 40px
-            line-height: 1.3em/52px
-          
-        
-        
-          Heading 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 30px
-            line-height: 1.3em/39px
-          
-        
-        
-          Heading 3
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 20px
-            line-height: 1.3em/26px
-          
-        
-        
-          Heading 4
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 17px
-            line-height: 1.3em/22px
-          
-        
-        
-          Heading 5
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 15px
-            line-height: 1.3em/20px
-          
-        
-        
-          Heading 6
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
-          
-        
-        
-          Lead paragraph
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 400
-            font-size: 20px
-            line-height: 1.7em/34px
-          
-        
-        
-          Body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-        
-          Italic body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-style: Italic
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-      
-    
-  
-
-
-
-  
-    
-      Merriweather headings, Source Sans Pro body (robust)
-    
-    
-
-      
-        
-          A variation of the previous font pairing, expanded to include an additional Merriweather weight. The slimmer Merriweather headings creates an elegance that compliments weights and allows you to intentionally move users’ attention around a page.
-          Recommended applications: text heavy sites and more visual promotional sites.
-          Font weights included in this package:
-          
-            1. Merriweather, Bold 700
-            2. Merriweather, Light 300
-            3. Source Sans Pro, Regular 400
-            4. Source Sans Pro, Bold 700
-            5. Source Sans Pro, Italic 400
-          
-        
-        
-          Page Performance
-          Medium
-          Exceeds ideal number of fonts by one. May negatively impact page load performance.
-          Example
-          
-            
-              
-            
-            U.S. Web Design Standards homepage
-          
-        
-      
-      Web Hierarchy
-      
-        
-          Display 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 52px
-            line-height: 1.3em/68px
-          
-        
-        
-          Display 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 300
-            font-size: 40px
-            line-height: 1.3em/52px
-          
-        
-        
-          Heading 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 40px
-            line-height: 1.3em/52px
-          
-        
-        
-          Heading 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 30px
-            line-height: 1.3em/39px
-          
-        
-        
-          Heading 3
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 20px
-            line-height: 1.3em/26px
-          
-        
-        
-          Heading 4
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 17px
-            line-height: 1.3em/22px
-          
-        
-        
-          Heading 5
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 15px
-            line-height: 1.3em/20px
-          
-        
-        
-          Heading 6
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
-          
-        
-        
-          Lead paragraph 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 300
-            font-size: 20px
-            line-height: 1.7em/34px
-          
-        
-        
-          Lead paragraph 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.7em/29px
-          
-        
-        
-          Body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-        
-          Italic body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-style: Italic
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-      
-    
-  
-
-
-
-  
-    
-      Merriweather headings and body
+      IBM Plex Sans headings and body
     
     
 
@@ -405,11 +102,11 @@ Note: Some pairings require more font weights than others. While this allows mor
           Recommended applications: sites which need to convey reliability and trust; basic and text heavy sites.
           Font weights included in this package:
           
-            1. Merriweather, Bold 700
-            2. Merriweather, Regular 400
-            3. Merriweather, Italic 400
-            4. Merriweather, Light 300
-            5. Source Sans Pro, Regular 400
+            1. IBM Plex Sans Text, Regular 400
+            2. IBM Plex Sans, Regular 400
+            3. IBM Plex Sans, medium 500
+            4. IBM Plex Sans, Semibold 600
+            5. IBM Plex Sans, Bold 700
           
         
         
@@ -428,36 +125,15 @@ Note: Some pairings require more font weights than others. While this allows mor
       Web Hierarchy
       
         
-          Display 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 52px
-            line-height: 1.3em/68px
-          
-        
-        
-          Display 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 300
-            font-size: 40px
-            line-height: 1.3em/52px
-          
-        
-        
           Heading 1
         
         
           
-            font-family: ‘Merriweather’
+            font-family: IBMPlexSans
             font-weight: 700
-            font-size: 40px
-            line-height: 1.3em/52px
+            font-size: 4.3rem
+            line-height: 4.8rem 
+            color: #212121
           
         
         
@@ -465,10 +141,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 30px
-            line-height: 1.3em/39px
+            font-family: IBMPlexSans
+            font-weight: 600
+            font-size: 3.3rem
+            line-height: 4.0rem
+            color: #212121
           
         
         
@@ -476,10 +153,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 20px
-            line-height: 1.3em/26px
+            font-family: IBMPlexSans
+            font-weight: 600
+            font-size: 2.6rem
+            line-height: 3.2rem
+            color: #212121
           
         
         
@@ -487,10 +165,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 17px
-            line-height: 1.3em/22px
+            font-family: IBMPlexSans
+            font-weight: 600
+            font-size: 2.2rem
+            line-height: 2.4rem
+            color: #212121
           
         
         
@@ -498,10 +177,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 15px
-            line-height: 1.3em/20px
+            font-family: IBMPlexSans
+            font-weight: 400
+            font-size: 2.0rem
+            line-height: 2.4rem 
+            color: #212121
           
         
         
@@ -509,11 +189,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
+            font-family: IBMPlexSans
+            font-weight: 600
+            font-size: 1.6rem
+            line-height: 2.4rem
+            color: #212121
           
         
         
@@ -559,325 +239,6 @@ Note: Some pairings require more font weights than others. While this allows mor
             font-weight: 400
             font-size: 15px
             line-height: 1.7em/26px
-          
-        
-      
-    
-  
-
-
-
-  
-    
-      Source Sans Pro headings, Merriweather body
-    
-    
-
-      
-        
-          A variation on the serif and sans serif pairing, this combination uses multiple weights of Source Sans Pro for clear headings combined with the formal feeling of Merriweather for body text. This pair similarly communicates professionalism, with extra emphasis on sleek and legible headings.
-          Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.
-          Font weights included in this package:
-          
-            1. Source Sans Pro, Light 300
-            2. Source Sans Pro, Regular 400
-            3. Source Sans Pro, Bold 700
-            4. Merriweather, Regular 400
-            5. Merriweather, Italic 400
-            6. Merriweather, Bold 700
-          
-        
-        
-          Page Performance
-          Medium
-          Exceeds ideal number of fonts by two. May negatively impact page load performance.
-        
-      
-      Web Hierarchy
-      
-        
-          Display 1
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 59px
-            line-height: 1.3em/77px
-          
-        
-        
-          Display 2
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 300
-            font-size: 44px
-            line-height: 1.3em/57px
-          
-        
-        
-          Heading 1
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 44px
-            line-height: 1.3em/57px
-          
-        
-        
-          Heading 2
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 34px
-            line-height: 1.3em/44px
-          
-        
-        
-          Heading 3
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 24px
-            line-height: 1.3em/31px
-          
-        
-        
-          Heading 4
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 19px
-            line-height: 1.3em/25px
-          
-        
-        
-          Heading 5
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 16px
-            line-height: 1.3em/21px
-          
-        
-        
-          Heading 6
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
-          
-        
-        
-          Lead paragraph
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 300
-            font-size: 22px
-            line-height: 1.5em/33px
-          
-        
-        
-          Body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 400
-            font-size: 15px
-            line-height: 1.7em/26px
-          
-        
-        
-          Italic body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-style: Italic
-            font-weight: 400
-            font-size: 15px
-            line-height: 1.7em/26px
-          
-        
-      
-    
-  
-
-
-
-  
-    
-      Source Sans Pro headings and body
-    
-    
-
-      
-        
-          Inspired by the growth of simple and welcoming type in modern web UI design, this suite uses Source Sans Pro exclusively. With a range of weights designed to fit into heading styles to clearly communicate hierarchy of information, this pairing can support both extremely simple designs and more polished, promotional sites.
-          Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.
-          Font weights included in this package:
-          
-            1. Source Sans Pro, Light 300
-            2. Source Sans Pro, Regular 400
-            3. Source Sans Pro, Bold 700
-            4. Source Sans Pro, Italic 400
-          
-        
-        
-          Page Performance
-          Fast
-          Ideal number of fonts. Will allow for optimal page load performance.
-          Example
-          
-            
-              
-            
-            Department of Veterans Affairs appeals review (screenshot of non-public site)
-          
-        
-      
-      Web Hierarchy
-      
-        
-          Display 1
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 59px
-            line-height: 1.3em/77px
-          
-        
-        
-          Display 2
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 300
-            font-size: 44px
-            line-height: 1.3em/57px
-          
-        
-        
-          Heading 1
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 44px
-            line-height: 1.3em/57px
-          
-        
-        
-          Heading 2
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 34px
-            line-height: 1.3em/44px
-          
-        
-        
-          Heading 3
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 24px
-            line-height: 1.3em/31px
-          
-        
-        
-          Heading 4
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 19px
-            line-height: 1.3em/25px
-          
-        
-        
-          Heading 5
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 16px
-            line-height: 1.3em/21px
-          
-        
-        
-          Heading 6
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
-          
-        
-        
-          Lead paragraph
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 300
-            font-size: 22px
-            line-height: 1.5em/33px
-          
-        
-        
-          Body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-        
-          Italic body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-style: Italic
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
           
         
       
@@ -1247,30 +608,13 @@ Lists organize written information for users.
       Use punctuation appropriate to the text. Do not leave sentences without periods.">
 <meta property="og:description" content="Typefaces
   
-  Source Sans Pro
+  IBM Plex Sans
 
 
   
-    Source Sans Pro is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.
-    Inspired by twentieth-century American gothic typeface design, its slender but open letters offer a clean and friendly simplicity. Advanced hinting allows Source Sans Pro to render well on Windows systems which run Cleartype, and across browsers and devices. Moreover, it supports a variety of languages and alphabets, including Western and European language, Vietnamese, pinyin Romanization of Chinese, and Navajo.
-  
-
-  
-    Aa
-    
-      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-      a b c d e f g h i j k l m n o p q r s t u v w x y z
-      0 1 2 3 4 5 6 7 8 9
-    
-  
-
-
-Merriweather
-
-
-  
-    Merriweather is an open-source serif typeface designed for on-screen reading. This font is ideal for text-dense design: the letterforms have a tall x-height but remain relatively small, making for excellent readability across screen sizes while not occupying extra horizontal space.
-    The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum mollis elit, in faucibus mi consectetur vel. In quis scelerisque lectus. Aliquam aliquam gravida lorem at pharetra. Fusce malesuada sed nisl eget interdum.
+    Nunc eu lorem molestie, pretium eros in, elementum lectus. Donec vitae facilisis mauris. In sed urna ut felis pellentesque tincidunt at quis dolor. Donec sed velit vel massa tempus venenatis vitae vel urna. Duis tincidunt molestie diam sit amet vehicula. Sed non hendrerit ex, et convallis urna.
+    Variablen @font-name bruges til at styre typefacen.
   
 
   
@@ -1281,6 +625,45 @@ Merriweather
       0 1 2 3 4 5 6 7 8 9
     
   
+
+
+
+
+
+  Global settings
+  
+  
+Fonts
+For at skifte i mellem fonte bruges font-weight variablerne:
+
+	$font-weight-normal
+	$font-weight medium
+	$font-weight-semibold
+	$font-weight-bold
+
+For at ændre font-style bruges variablerne:
+
+	$font-style-normal
+	$font-style-italic
+
+
+Headings
+Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. 
+
+	@mixin h1{ 
+    font-family: $font-name; 
+    font-size: $h1-font-size; 
+    line-height: $h1-line-height; 
+    font-weight: $font-weight-bold; 
+    color: $color-base;
+  }
+
+
+h1, .h1 {
+@include h1;
+}
+
+Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på  
 
 
 
@@ -1294,332 +677,7 @@ Note: Some pairings require more font weights than others. While this allows mor
 
   
     
-      Default: Merriweather headings, Source Sans Pro body (lite)
-    
-    
-      
-        
-          A simple serif and sans serif combination designed to communicate warmth and credibility. Strong Merriweather heading weights offer clear information hierarchy and when paired with Source Sans Pro’s easy-to-read body text, create a clean and professional feel.
-          This pairing is included in our design standards.
-          Recommended applications: digital services that feature forms; basic and text heavy sites.
-          Font weights included in this package:
-          
-            1. Merriweather, Bold 700
-            2. Source Sans Pro, Regular 400
-            3. Source Sans Pro, Bold 700
-            4. Source Sans Pro, Italic 400
-          
-        
-        
-          Page Performance
-          Fast
-          Ideal number of fonts. Will allow for optimal page load performance.
-          Example
-          
-            
-              
-            
-            EPA eManifest (screenshot of non-public site)
-          
-        
-      
-      Web Hierarchy
-      
-        
-          Display
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 52px
-            line-height: 1.3em/68px
-          
-        
-        
-          Heading 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 40px
-            line-height: 1.3em/52px
-          
-        
-        
-          Heading 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 30px
-            line-height: 1.3em/39px
-          
-        
-        
-          Heading 3
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 20px
-            line-height: 1.3em/26px
-          
-        
-        
-          Heading 4
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 17px
-            line-height: 1.3em/22px
-          
-        
-        
-          Heading 5
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 15px
-            line-height: 1.3em/20px
-          
-        
-        
-          Heading 6
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
-          
-        
-        
-          Lead paragraph
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 400
-            font-size: 20px
-            line-height: 1.7em/34px
-          
-        
-        
-          Body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-        
-          Italic body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-style: Italic
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-      
-    
-  
-
-
-
-  
-    
-      Merriweather headings, Source Sans Pro body (robust)
-    
-    
-
-      
-        
-          A variation of the previous font pairing, expanded to include an additional Merriweather weight. The slimmer Merriweather headings creates an elegance that compliments weights and allows you to intentionally move users’ attention around a page.
-          Recommended applications: text heavy sites and more visual promotional sites.
-          Font weights included in this package:
-          
-            1. Merriweather, Bold 700
-            2. Merriweather, Light 300
-            3. Source Sans Pro, Regular 400
-            4. Source Sans Pro, Bold 700
-            5. Source Sans Pro, Italic 400
-          
-        
-        
-          Page Performance
-          Medium
-          Exceeds ideal number of fonts by one. May negatively impact page load performance.
-          Example
-          
-            
-              
-            
-            U.S. Web Design Standards homepage
-          
-        
-      
-      Web Hierarchy
-      
-        
-          Display 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 52px
-            line-height: 1.3em/68px
-          
-        
-        
-          Display 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 300
-            font-size: 40px
-            line-height: 1.3em/52px
-          
-        
-        
-          Heading 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 40px
-            line-height: 1.3em/52px
-          
-        
-        
-          Heading 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 30px
-            line-height: 1.3em/39px
-          
-        
-        
-          Heading 3
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 20px
-            line-height: 1.3em/26px
-          
-        
-        
-          Heading 4
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 17px
-            line-height: 1.3em/22px
-          
-        
-        
-          Heading 5
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 15px
-            line-height: 1.3em/20px
-          
-        
-        
-          Heading 6
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
-          
-        
-        
-          Lead paragraph 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 300
-            font-size: 20px
-            line-height: 1.7em/34px
-          
-        
-        
-          Lead paragraph 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.7em/29px
-          
-        
-        
-          Body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-        
-          Italic body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-style: Italic
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-      
-    
-  
-
-
-
-  
-    
-      Merriweather headings and body
+      IBM Plex Sans headings and body
     
     
 
@@ -1629,11 +687,11 @@ Note: Some pairings require more font weights than others. While this allows mor
           Recommended applications: sites which need to convey reliability and trust; basic and text heavy sites.
           Font weights included in this package:
           
-            1. Merriweather, Bold 700
-            2. Merriweather, Regular 400
-            3. Merriweather, Italic 400
-            4. Merriweather, Light 300
-            5. Source Sans Pro, Regular 400
+            1. IBM Plex Sans Text, Regular 400
+            2. IBM Plex Sans, Regular 400
+            3. IBM Plex Sans, medium 500
+            4. IBM Plex Sans, Semibold 600
+            5. IBM Plex Sans, Bold 700
           
         
         
@@ -1652,36 +710,15 @@ Note: Some pairings require more font weights than others. While this allows mor
       Web Hierarchy
       
         
-          Display 1
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 52px
-            line-height: 1.3em/68px
-          
-        
-        
-          Display 2
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 300
-            font-size: 40px
-            line-height: 1.3em/52px
-          
-        
-        
           Heading 1
         
         
           
-            font-family: ‘Merriweather’
+            font-family: IBMPlexSans
             font-weight: 700
-            font-size: 40px
-            line-height: 1.3em/52px
+            font-size: 4.3rem
+            line-height: 4.8rem 
+            color: #212121
           
         
         
@@ -1689,10 +726,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 30px
-            line-height: 1.3em/39px
+            font-family: IBMPlexSans
+            font-weight: 600
+            font-size: 3.3rem
+            line-height: 4.0rem
+            color: #212121
           
         
         
@@ -1700,10 +738,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 20px
-            line-height: 1.3em/26px
+            font-family: IBMPlexSans
+            font-weight: 600
+            font-size: 2.6rem
+            line-height: 3.2rem
+            color: #212121
           
         
         
@@ -1711,10 +750,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 17px
-            line-height: 1.3em/22px
+            font-family: IBMPlexSans
+            font-weight: 600
+            font-size: 2.2rem
+            line-height: 2.4rem
+            color: #212121
           
         
         
@@ -1722,10 +762,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 700
-            font-size: 15px
-            line-height: 1.3em/20px
+            font-family: IBMPlexSans
+            font-weight: 400
+            font-size: 2.0rem
+            line-height: 2.4rem 
+            color: #212121
           
         
         
@@ -1733,11 +774,11 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
+            font-family: IBMPlexSans
+            font-weight: 600
+            font-size: 1.6rem
+            line-height: 2.4rem
+            color: #212121
           
         
         
@@ -1783,325 +824,6 @@ Note: Some pairings require more font weights than others. While this allows mor
             font-weight: 400
             font-size: 15px
             line-height: 1.7em/26px
-          
-        
-      
-    
-  
-
-
-
-  
-    
-      Source Sans Pro headings, Merriweather body
-    
-    
-
-      
-        
-          A variation on the serif and sans serif pairing, this combination uses multiple weights of Source Sans Pro for clear headings combined with the formal feeling of Merriweather for body text. This pair similarly communicates professionalism, with extra emphasis on sleek and legible headings.
-          Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.
-          Font weights included in this package:
-          
-            1. Source Sans Pro, Light 300
-            2. Source Sans Pro, Regular 400
-            3. Source Sans Pro, Bold 700
-            4. Merriweather, Regular 400
-            5. Merriweather, Italic 400
-            6. Merriweather, Bold 700
-          
-        
-        
-          Page Performance
-          Medium
-          Exceeds ideal number of fonts by two. May negatively impact page load performance.
-        
-      
-      Web Hierarchy
-      
-        
-          Display 1
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 59px
-            line-height: 1.3em/77px
-          
-        
-        
-          Display 2
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 300
-            font-size: 44px
-            line-height: 1.3em/57px
-          
-        
-        
-          Heading 1
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 44px
-            line-height: 1.3em/57px
-          
-        
-        
-          Heading 2
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 34px
-            line-height: 1.3em/44px
-          
-        
-        
-          Heading 3
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 24px
-            line-height: 1.3em/31px
-          
-        
-        
-          Heading 4
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 19px
-            line-height: 1.3em/25px
-          
-        
-        
-          Heading 5
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 16px
-            line-height: 1.3em/21px
-          
-        
-        
-          Heading 6
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
-          
-        
-        
-          Lead paragraph
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 300
-            font-size: 22px
-            line-height: 1.5em/33px
-          
-        
-        
-          Body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-weight: 400
-            font-size: 15px
-            line-height: 1.7em/26px
-          
-        
-        
-          Italic body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Merriweather’
-            font-style: Italic
-            font-weight: 400
-            font-size: 15px
-            line-height: 1.7em/26px
-          
-        
-      
-    
-  
-
-
-
-  
-    
-      Source Sans Pro headings and body
-    
-    
-
-      
-        
-          Inspired by the growth of simple and welcoming type in modern web UI design, this suite uses Source Sans Pro exclusively. With a range of weights designed to fit into heading styles to clearly communicate hierarchy of information, this pairing can support both extremely simple designs and more polished, promotional sites.
-          Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.
-          Font weights included in this package:
-          
-            1. Source Sans Pro, Light 300
-            2. Source Sans Pro, Regular 400
-            3. Source Sans Pro, Bold 700
-            4. Source Sans Pro, Italic 400
-          
-        
-        
-          Page Performance
-          Fast
-          Ideal number of fonts. Will allow for optimal page load performance.
-          Example
-          
-            
-              
-            
-            Department of Veterans Affairs appeals review (screenshot of non-public site)
-          
-        
-      
-      Web Hierarchy
-      
-        
-          Display 1
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 59px
-            line-height: 1.3em/77px
-          
-        
-        
-          Display 2
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 300
-            font-size: 44px
-            line-height: 1.3em/57px
-          
-        
-        
-          Heading 1
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 44px
-            line-height: 1.3em/57px
-          
-        
-        
-          Heading 2
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 34px
-            line-height: 1.3em/44px
-          
-        
-        
-          Heading 3
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 24px
-            line-height: 1.3em/31px
-          
-        
-        
-          Heading 4
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 19px
-            line-height: 1.3em/25px
-          
-        
-        
-          Heading 5
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 700
-            font-size: 16px
-            line-height: 1.3em/21px
-          
-        
-        
-          Heading 6
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 13px
-            line-height: 1.3em/17px
-            text-transform: uppercase
-          
-        
-        
-          Lead paragraph
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 300
-            font-size: 22px
-            line-height: 1.5em/33px
-          
-        
-        
-          Body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
-          
-        
-        
-          Italic body copy. A series of sentences together which make a paragraph.
-        
-        
-          
-            font-family: ‘Source Sans Pro’
-            font-style: Italic
-            font-weight: 400
-            font-size: 17px
-            line-height: 1.5em/26px
           
         
       
@@ -2810,6 +1532,17 @@ Lists organize written information for users.
       
 
 
+<a href="#global-settings">Global settings</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
 <a href="#pairings-and-styles">Pairings and styles</a>
 
     
@@ -2911,12 +1644,13 @@ Lists organize written information for users.
 <section id="section-/styling/typography/01-typefaces">
   <h2 class="heading heading-margin-alt" id="typefaces">Typefaces</h2>
   
-  <h4 class="heading-alt">Source Sans Pro</h4>
+  <h4 class="heading-alt">IBM Plex Sans</h4>
 
 <div class="grid-full">
   <div class="width-one-half">
-    <p>Source Sans Pro is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.</p>
-    <p>Inspired by twentieth-century American gothic typeface design, its slender but open letters offer a clean and friendly simplicity. Advanced hinting allows Source Sans Pro to render well on Windows systems which run Cleartype, and across browsers and devices. Moreover, it supports a variety of languages and alphabets, including Western and European language, Vietnamese, pinyin Romanization of Chinese, and Navajo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum mollis elit, in faucibus mi consectetur vel. In quis scelerisque lectus. Aliquam aliquam gravida lorem at pharetra. Fusce malesuada sed nisl eget interdum.</p>
+    <p>Nunc eu lorem molestie, pretium eros in, elementum lectus. Donec vitae facilisis mauris. In sed urna ut felis pellentesque tincidunt at quis dolor. Donec sed velit vel massa tempus venenatis vitae vel urna. Duis tincidunt molestie diam sit amet vehicula. Sed non hendrerit ex, et convallis urna.</p>
+    <p>Variablen @font-name bruges til at styre typefacen.</p>
   </div>
 
   <div class="typography-sans-intro width-one-half end-row">
@@ -2929,27 +1663,48 @@ Lists organize written information for users.
   </div>
 </div>
 
-<h4 class="heading-alt">Merriweather</h4>
+</section>
 
-<div class="grid-full">
-  <div class="width-one-half">
-    <p>Merriweather is an open-source serif typeface designed for on-screen reading. This font is ideal for text-dense design: the letterforms have a tall x-height but remain relatively small, making for excellent readability across screen sizes while not occupying extra horizontal space.</p>
-    <p>The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.</p>
-  </div>
+<section id="section-/styling/typography/02-global-settings">
+  <h2 class="heading heading-margin-alt" id="global-settings">Global settings</h2>
+  
+  <!-- Global setting begin -->
+<h4 class="heading">Fonts</h4>
+<p>For at skifte i mellem fonte bruges font-weight variablerne:</p>
+<p class="monospace">
+	$font-weight-normal<br />
+	$font-weight medium<br />
+	$font-weight-semibold<br />
+	$font-weight-bold<br />
+</p>
+<p>For at ændre font-style bruges variablerne:</p>
+<p class="monospace">
+	$font-style-normal
+	$font-style-italic
+</p>
 
-  <div class="typography-serif-intro width-one-half end-row serif">
-    <span class="text-huge">Aa</span>
-    <div>
-      <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-      <p class="text-tiny">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-      <p class="text-tiny">0 1 2 3 4 5 6 7 8 9</p>
-    </div>
-  </div>
-</div>
+<h4 class="heading">Headings</h4>
+<p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. </p>
+<p class="monospace">
+	@mixin h1{ <br />
+    font-family: $font-name; <br />
+    font-size: $h1-font-size; <br />
+    line-height: $h1-line-height; <br />
+    font-weight: $font-weight-bold; <br />
+    color: $color-base;
+  }
+</p>
+<p class="monospace">
+h1, .h1 {<br />
+@include h1;<br />
+}
+</p>
+<p>Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på <h1 class="h2"></h1> </p>
+
 
 </section>
 
-<section id="section-/styling/typography/02-pairing-and-styles">
+<section id="section-/styling/typography/03-pairing-and-styles">
   <h2 class="heading heading-margin-alt" id="pairings-and-styles">Pairings and styles</h2>
   
   <p>To support both more contemporary and more traditional web design aesthetics, this font system offers recommended font pairings. Each pairing includes web hierarchy guidance on font family, weight, size, and spacing which express either more modern or more classical type design.</p>
@@ -2957,333 +1712,8 @@ Lists organize written information for users.
 
 <ul class="accordion-bordered typography-example">
   <li>
-    <button class="accordion-button" aria-controls="font-pairing1-docs" aria-expanded="false">
-      <h5>Default: Merriweather headings, Source Sans Pro body (lite)</h5>
-    </button>
-    <div id="font-pairing1-docs" class="accordion-content">
-      <div class="grid-full">
-        <div class="width-two-thirds">
-          <p>A simple serif and sans serif combination designed to communicate warmth and credibility. Strong Merriweather heading weights offer clear information hierarchy and when paired with Source Sans Pro’s easy-to-read body text, create a clean and professional feel.</p>
-          <p>This pairing is included in our design standards.</p>
-          <p>Recommended applications: digital services that feature forms; basic and text heavy sites.</p>
-          <p>Font weights included in this package:</p>
-          <ul>
-            <li>1. Merriweather, Bold 700</li>
-            <li>2. Source Sans Pro, Regular 400</li>
-            <li>3. Source Sans Pro, Bold 700</li>
-            <li>4. Source Sans Pro, Italic 400</li>
-          </ul>
-        </div>
-        <aside class="width-one-third end-row">
-          <h6 class="heading-alt">Page Performance</h6>
-          <p><span class="label-big">Fast</span></p>
-          <p>Ideal number of fonts. Will allow for optimal page load performance.</p>
-          <h6 class="heading-alt">Example</h6>
-          <p>
-            <a class="media_link" href="/frontend-styleguide/assets/img/epa-emanifest-screenshot.png">
-              <img src="/frontend-styleguide/assets/img/default_example_emanifest.png" alt="EPA eManifest example" />
-            </a>
-            <a href="/frontend-styleguide/assets/img/epa-emanifest-screenshot.png">EPA eManifest (screenshot of non-public site)</a>
-          </p>
-        </aside>
-      </div>
-      <h6 class="heading-alt">Web Hierarchy</h6>
-      <div class="grid typography-example-font">
-        <div class="width-one-half">
-          <h3 class="display">Display</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 52px<br />
-            line-height: 1.3em/68px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h1>Heading 1</h1>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 40px<br />
-            line-height: 1.3em/52px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h2>Heading 2</h2>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 30px<br />
-            line-height: 1.3em/39px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h3>Heading 3</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 20px<br />
-            line-height: 1.3em/26px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h4>Heading 4</h4>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 17px<br />
-            line-height: 1.3em/22px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h5>Heading 5</h5>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 15px<br />
-            line-height: 1.3em/20px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h6>Heading 6</h6>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 400<br />
-            font-size: 13px<br />
-            line-height: 1.3em/17px<br />
-            text-transform: uppercase
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-lead">Lead <br />paragraph</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 400<br />
-            font-size: 20px<br />
-            line-height: 1.7em/34px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 400<br />
-            font-size: 17px<br />
-            line-height: 1.5em/26px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-style: Italic<br />
-            font-weight: 400<br />
-            font-size: 17px<br />
-            line-height: 1.5em/26px
-          </p>
-        </div>
-      </div>
-    </div>
-  </li>
-</ul>
-
-<ul class="accordion-bordered typography-example">
-  <li>
-    <button class="accordion-button" aria-expanded="false" aria-controls="font-pairing2-docs">
-      <h5>Merriweather headings, Source Sans Pro body (robust)</h5>
-    </button>
-    <div id="font-pairing2-docs" class="accordion-content">
-
-      <div class="grid-full">
-        <div class="width-two-thirds">
-          <p>A variation of the previous font pairing, expanded to include an additional Merriweather weight. The slimmer Merriweather headings creates an elegance that compliments weights and allows you to intentionally move users’ attention around a page.</p>
-          <p>Recommended applications: text heavy sites and more visual promotional sites.</p>
-          <p>Font weights included in this package:</p>
-          <ul>
-            <li>1. Merriweather, Bold 700</li>
-            <li>2. Merriweather, Light 300</li>
-            <li>3. Source Sans Pro, Regular 400</li>
-            <li>4. Source Sans Pro, Bold 700</li>
-            <li>5. Source Sans Pro, Italic 400</li>
-          </ul>
-        </div>
-        <aside class="width-one-third end-row">
-          <h6 class="heading-alt">Page Performance</h6>
-          <p><span class="label-big">Medium</span></p>
-          <p>Exceeds ideal number of fonts by one. May negatively impact page load performance.</p>
-          <h6 class="heading-alt">Example</h6>
-          <p>
-            <a class="media_link" href="/frontend-styleguide/">
-              <img src="/frontend-styleguide/assets/img/robust_example_standardshome.png" alt="U.S. Web Design Standards homepage example" />
-            </a>
-            <a href="/frontend-styleguide/">U.S. Web Design Standards homepage</a>
-          </p>
-        </aside>
-      </div>
-      <h6 class="heading-alt">Web Hierarchy</h6>
-      <div class="serif-robust grid typography-example-font">
-        <div class="width-one-half">
-          <h3 class="display">Display 1</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 52px<br />
-            line-height: 1.3em/68px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h3 class="display display-alt">Display 2</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 300<br />
-            font-size: 40px<br />
-            line-height: 1.3em/52px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h1>Heading 1</h1>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 40px<br />
-            line-height: 1.3em/52px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h2>Heading 2</h2>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 30px<br />
-            line-height: 1.3em/39px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h3>Heading 3</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 20px<br />
-            line-height: 1.3em/26px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h4>Heading 4</h4>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 17px<br />
-            line-height: 1.3em/22px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h5>Heading 5</h5>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 15px<br />
-            line-height: 1.3em/20px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h6>Heading 6</h6>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 400<br />
-            font-size: 13px<br />
-            line-height: 1.3em/17px<br />
-            text-transform: uppercase
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-lead">Lead <br />paragraph 1</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 300<br />
-            font-size: 20px<br />
-            line-height: 1.7em/34px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-lead font-lead-alt">Lead <br />paragraph 2</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 400<br />
-            font-size: 17px<br />
-            line-height: 1.7em/29px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 400<br />
-            font-size: 17px<br />
-            line-height: 1.5em/26px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-style: Italic<br />
-            font-weight: 400<br />
-            font-size: 17px<br />
-            line-height: 1.5em/26px
-          </p>
-        </div>
-      </div>
-    </div>
-  </li>
-</ul>
-
-<ul class="accordion-bordered typography-example">
-  <li>
     <button class="accordion-button" aria-expanded="false" aria-controls="font-pairing3-docs">
-      <h5>Merriweather headings and body</h5>
+      <h5>IBM Plex Sans headings and body</h5>
     </button>
     <div id="font-pairing3-docs" class="accordion-content">
 
@@ -3293,11 +1723,11 @@ Lists organize written information for users.
           <p>Recommended applications: sites which need to convey reliability and trust; basic and text heavy sites.</p>
           <p>Font weights included in this package:</p>
           <ul>
-            <li>1. Merriweather, Bold 700</li>
-            <li>2. Merriweather, Regular 400</li>
-            <li>3. Merriweather, Italic 400</li>
-            <li>4. Merriweather, Light 300</li>
-            <li>5. Source Sans Pro, Regular 400</li>
+            <li>1. IBM Plex Sans Text, Regular 400</li>
+            <li>2. IBM Plex Sans, Regular 400</li>
+            <li>3. IBM Plex Sans, medium 500</li>
+            <li>4. IBM Plex Sans, Semibold 600</li>
+            <li>5. IBM Plex Sans, Bold 700</li>
           </ul>
         </div>
         <aside class="width-one-third end-row">
@@ -3316,36 +1746,15 @@ Lists organize written information for users.
       <h6 class="heading-alt">Web Hierarchy</h6>
       <div class="serif-robust serif-sans-minor serif-body grid typography-example-font">
         <div class="width-one-half">
-          <h3 class="display">Display 1</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 52px<br />
-            line-height: 1.3em/68px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h3 class="display display-alt">Display 2</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 300<br />
-            font-size: 40px<br />
-            line-height: 1.3em/52px
-          </p>
-        </div>
-        <div class="width-one-half">
           <h1>Heading 1</h1>
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: ‘Merriweather’<br />
+            font-family: IBMPlexSans<br />
             font-weight: 700<br />
-            font-size: 40px<br />
-            line-height: 1.3em/52px
+            font-size: 4.3rem<br />
+            line-height: 4.8rem <br />
+            color: #212121
           </p>
         </div>
         <div class="width-one-half">
@@ -3353,10 +1762,11 @@ Lists organize written information for users.
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 30px<br />
-            line-height: 1.3em/39px
+            font-family: IBMPlexSans<br />
+            font-weight: 600<br />
+            font-size: 3.3rem<br />
+            line-height: 4.0rem<br />
+            color: #212121
           </p>
         </div>
         <div class="width-one-half">
@@ -3364,10 +1774,11 @@ Lists organize written information for users.
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 20px<br />
-            line-height: 1.3em/26px
+            font-family: IBMPlexSans<br />
+            font-weight: 600<br />
+            font-size: 2.6rem<br />
+            line-height: 3.2rem<br />
+            color: #212121
           </p>
         </div>
         <div class="width-one-half">
@@ -3375,10 +1786,11 @@ Lists organize written information for users.
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 17px<br />
-            line-height: 1.3em/22px
+            font-family: IBMPlexSans<br />
+            font-weight: 600<br />
+            font-size: 2.2rem<br />
+            line-height: 2.4rem<br />
+            color: #212121
           </p>
         </div>
         <div class="width-one-half">
@@ -3386,10 +1798,11 @@ Lists organize written information for users.
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 700<br />
-            font-size: 15px<br />
-            line-height: 1.3em/20px
+            font-family: IBMPlexSans<br />
+            font-weight: 400<br />
+            font-size: 2.0rem<br />
+            line-height: 2.4rem<br /> 
+            color: #212121
           </p>
         </div>
         <div class="width-one-half">
@@ -3397,11 +1810,11 @@ Lists organize written information for users.
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 400<br />
-            font-size: 13px<br />
-            line-height: 1.3em/17px<br />
-            text-transform: uppercase
+            font-family: IBMPlexSans<br />
+            font-weight: 600<br />
+            font-size: 1.6rem<br />
+            line-height: 2.4rem<br />
+            color: #212121
           </p>
         </div>
         <div class="font-example width-one-half">
@@ -3454,328 +1867,9 @@ Lists organize written information for users.
   </li>
 </ul>
 
-<ul class="accordion-bordered typography-example">
-  <li>
-    <button class="accordion-button" aria-expanded="false" aria-controls="font-pairing4-docs">
-      <h5>Source Sans Pro headings, Merriweather body</h5>
-    </button>
-    <div id="font-pairing4-docs" class="accordion-content">
-
-      <div class="grid-full">
-        <div class="width-two-thirds">
-          <p>A variation on the serif and sans serif pairing, this combination uses multiple weights of Source Sans Pro for clear headings combined with the formal feeling of Merriweather for body text. This pair similarly communicates professionalism, with extra emphasis on sleek and legible headings.</p>
-          <p>Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.</p>
-          <p>Font weights included in this package:</p>
-          <ul>
-            <li>1. Source Sans Pro, Light 300</li>
-            <li>2. Source Sans Pro, Regular 400</li>
-            <li>3. Source Sans Pro, Bold 700</li>
-            <li>4. Merriweather, Regular 400</li>
-            <li>5. Merriweather, Italic 400</li>
-            <li>6. Merriweather, Bold 700</li>
-          </ul>
-        </div>
-        <aside class="width-one-third end-row">
-          <h6 class="heading-alt">Page Performance</h6>
-          <p><span class="label-big">Medium</span></p>
-          <p>Exceeds ideal number of fonts by two. May negatively impact page load performance.</p>
-        </aside>
-      </div>
-      <h6 class="heading-alt">Web Hierarchy</h6>
-      <div class="sans-style serif-body grid typography-example-font">
-        <div class="width-one-half">
-          <h3 class="display">Display 1</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 59px<br />
-            line-height: 1.3em/77px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h3 class="display display-alt">Display 2</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 300<br />
-            font-size: 44px<br />
-            line-height: 1.3em/57px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h1>Heading 1</h1>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 44px<br />
-            line-height: 1.3em/57px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h2>Heading 2</h2>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 34px<br />
-            line-height: 1.3em/44px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h3>Heading 3</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 24px<br />
-            line-height: 1.3em/31px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h4>Heading 4</h4>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 19px<br />
-            line-height: 1.3em/25px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h5>Heading 5</h5>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 16px<br />
-            line-height: 1.3em/21px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h6>Heading 6</h6>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 400<br />
-            font-size: 13px<br />
-            line-height: 1.3em/17px<br />
-            text-transform: uppercase
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-lead">Lead <br />paragraph</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 300<br />
-            font-size: 22px<br />
-            line-height: 1.5em/33px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 400<br />
-            font-size: 15px<br />
-            line-height: 1.7em/26px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-style: Italic<br />
-            font-weight: 400<br />
-            font-size: 15px<br />
-            line-height: 1.7em/26px
-          </p>
-        </div>
-      </div>
-    </div>
-  </li>
-</ul>
-
-<ul class="accordion-bordered typography-example">
-  <li>
-    <button class="accordion-button" aria-expanded="false" aria-controls="font-pairing5-docs">
-      <h5>Source Sans Pro headings and body</h5>
-    </button>
-    <div id="font-pairing5-docs" class="accordion-content">
-
-      <div class="grid-full">
-        <div class="width-two-thirds">
-          <p>Inspired by the growth of simple and welcoming type in modern web UI design, this suite uses Source Sans Pro exclusively. With a range of weights designed to fit into heading styles to clearly communicate hierarchy of information, this pairing can support both extremely simple designs and more polished, promotional sites.</p>
-          <p>Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.</p>
-          <p>Font weights included in this package:</p>
-          <ul>
-            <li>1. Source Sans Pro, Light 300</li>
-            <li>2. Source Sans Pro, Regular 400</li>
-            <li>3. Source Sans Pro, Bold 700</li>
-            <li>4. Source Sans Pro, Italic 400</li>
-          </ul>
-        </div>
-        <aside class="width-one-third end-row">
-          <h6 class="heading-alt">Page Performance</h6>
-          <p><span class="label-big">Fast</span></p>
-          <p>Ideal number of fonts. Will allow for optimal page load performance.</p>
-          <h6 class="heading-alt">Example</h6>
-          <p>
-            <a class="media_link" href="/frontend-styleguide/assets/img/va-appeals-screenshot.png">
-              <img src="/frontend-styleguide/assets/img/ssponly_example_va.png" alt="Veterans Affairs appeals review example" />
-            </a>
-            <a href="/frontend-styleguide/assets/img/va-appeals-screenshot.png">Department of Veterans Affairs appeals review (screenshot of non-public site)</a>
-          </p>
-        </aside>
-      </div>
-      <h6 class="heading-alt">Web Hierarchy</h6>
-      <div class="sans-style grid typography-example-font">
-        <div class="width-one-half">
-          <h3 class="display">Display 1</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 59px<br />
-            line-height: 1.3em/77px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h3 class="display display-alt">Display 2</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 300<br />
-            font-size: 44px<br />
-            line-height: 1.3em/57px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h1>Heading 1</h1>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 44px<br />
-            line-height: 1.3em/57px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h2>Heading 2</h2>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 34px<br />
-            line-height: 1.3em/44px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h3>Heading 3</h3>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 24px<br />
-            line-height: 1.3em/31px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h4>Heading 4</h4>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 19px<br />
-            line-height: 1.3em/25px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h5>Heading 5</h5>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 700<br />
-            font-size: 16px<br />
-            line-height: 1.3em/21px
-          </p>
-        </div>
-        <div class="width-one-half">
-          <h6>Heading 6</h6>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 400<br />
-            font-size: 13px<br />
-            line-height: 1.3em/17px<br />
-            text-transform: uppercase
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-lead">Lead <br />paragraph</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 300<br />
-            font-size: 22px<br />
-            line-height: 1.5em/33px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-weight: 400<br />
-            font-size: 17px<br />
-            line-height: 1.5em/26px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Source Sans Pro’<br />
-            font-style: Italic<br />
-            font-weight: 400<br />
-            font-size: 17px<br />
-            line-height: 1.5em/26px
-          </p>
-        </div>
-      </div>
-    </div>
-  </li>
-</ul>
-
 </section>
 
-<section id="section-/styling/typography/03-typesetting">
+<section id="section-/styling/typography/04-typesetting">
   <h2 class="heading heading-margin-alt" id="typesetting">Typesetting</h2>
   
   <!-- Typsetting section begin -->
@@ -3911,7 +2005,7 @@ Lists organize written information for users.
 
 </section>
 
-<section id="section-/styling/typography/04-links">
+<section id="section-/styling/typography/05-links">
   <h2 class="heading heading-margin-alt" id="links">Links</h2>
   
   <!-- Links section begin -->
@@ -4012,7 +2106,7 @@ Lists organize written information for users.
 
 </section>
 
-<section id="section-/styling/typography/05-lists">
+<section id="section-/styling/typography/06-lists">
   <h2 class="heading heading-margin-alt" id="lists">Lists</h2>
   
   <!-- Lists section begin -->
@@ -4228,6 +2322,7 @@ Lists organize written information for users.
     <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
 
 <script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+<script src="/frontend-styleguide/assets/js/vendor/dkwds-advanced.js"></script>
 
   </body>
 </html>

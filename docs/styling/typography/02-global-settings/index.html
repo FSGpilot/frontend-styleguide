@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Global settings | Frontend styleguide - version 2</title>
+<meta property="og:title" content="Global settings | Frontend styleguide - version 2">
+
+
+<meta name="description" content="Fonts
+For at skifte i mellem fonte bruges font-weight variablerne:
+
+	$font-weight-normal
+	$font-weight medium
+	$font-weight-semibold
+	$font-weight-bold
+
+For at ændre font-style bruges variablerne:
+
+	$font-style-normal
+	$font-style-italic">
+<meta property="og:description" content="Fonts
+For at skifte i mellem fonte bruges font-weight variablerne:
+
+	$font-weight-normal
+	$font-weight medium
+	$font-weight-semibold
+	$font-weight-bold
+
+For at ændre font-style bruges variablerne:
+
+	$font-style-normal
+	$font-style-italic">
+
+
+
+
+
+
+
+
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  </head>
+  <body class="page-global-settings layout-component">
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="header header-extended" role="banner">
+
+  <!-- Solution Header -->
+  <div class="navbar solution-header">
+    <div class="solution-heading">
+      <em class="heading-text">
+        <a href="/frontend-styleguide/"
+          title="Home"
+          aria-label="Home">
+          Frontend Styleguide
+        </a>
+      </em>
+    </div>
+    <button class="menu-btn">Menu</button>
+  </div>
+
+  <nav role="navigation" class="nav">
+   <div class="nav-inner">
+      <div class="nav-secondary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <a href="/frontend-styleguide/getting-started/download/" class="button button-primary">
+              Download kode og designfiler
+            </a>
+          </li>
+          <li> 
+            <a href="https://github.com/FSGpilot/frontend-styleguide-components" class="button button-secondary">
+              Se på GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg tema -</option>
+              <option value="styleguide">Tema: Neutralt</option>
+              <option value="virkdk">Tema: Virk.dk</option>
+              <option value="borgerdk">Tema: Borger.dk</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
+
+      <ul class="nav-primary accordion">
+        
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
+
+
+    
+  </li>
+
+
+      </ul>
+
+      
+      
+    </div> <!-- nav-inner end -->
+  </nav> 
+</header> 
+<div class="overlay"></div>
+
+
+<main class="container section" id="main-content">
+  <div class="row">
+
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        
+        
+      </aside>
+    </div>
+
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-/styling/typography/02-global-settings">
+        <header>
+          <p class="site-subheading">
+            
+          </p>
+          <h1 id="global-settings">Global settings</h1>
+        </header>
+        
+      <!-- Global setting begin -->
+<h4 class="heading">Fonts</h4>
+<p>For at skifte i mellem fonte bruges font-weight variablerne:</p>
+<p class="monospace">
+	$font-weight-normal<br />
+	$font-weight medium<br />
+	$font-weight-semibold<br />
+	$font-weight-bold<br />
+</p>
+<p>For at ændre font-style bruges variablerne:</p>
+<p class="monospace">
+	$font-style-normal
+	$font-style-italic
+</p>
+
+<h4 class="heading">Headings</h4>
+<p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. </p>
+<p class="monospace">
+	@mixin h1{ <br />
+    font-family: $font-name; <br />
+    font-size: $h1-font-size; <br />
+    line-height: $h1-line-height; <br />
+    font-weight: $font-weight-bold; <br />
+    color: $color-base;
+  }
+</p>
+<p class="monospace">
+h1, .h1 {<br />
+@include h1;<br />
+}
+</p>
+<p>Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på <h1 class="h2"></h1> </p>
+
+
+
+      </section>
+    </div>
+
+  </div>
+</main>
+
+
+<footer class="footer site" role="contentinfo">
+  <div class="container footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="footer-primary-section">
+    <div class="container">
+      <nav class="footer-nav row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Ansvarlig myndighed</h4>
+            </li>
+            <li><a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Kontakt</h4>
+            </li>
+            <address>
+              <li><a href="tel:70707070">70707070</a></li>
+              <li><a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a></li>
+            </address>
+          </ul>
+          
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Lovgivning og jura</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Dette er reglerne for denne løsning</a></li>
+            
+            <li><a href="javascript:void(0);">Hvis du vil klage og lidt om dine pligter og rettigheder for at gøre linket langt</a></li>
+            
+            <li><a href="javascript:void(0);">Og et kort link</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Hjælp</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Link der kan hjælpe brugere</a></li>
+            
+            <li><a href="javascript:void(0);">Et kort link</a></li>
+            
+            <li><a href="javascript:void(0);">Endnu et link til et hjælpested</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-secondary_section">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="footer-logo-img col-12">En del af</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+<script src="/frontend-styleguide/assets/js/vendor/dkwds-advanced.js"></script>
+
+  </body>
+</html>
