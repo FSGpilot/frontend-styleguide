@@ -2,7 +2,7 @@
 type: component
 title: Lists
 parent: typography
-order: 05
+order: 06
 ---
 
 <!-- Lists section begin -->

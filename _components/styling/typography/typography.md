@@ -8,6 +8,8 @@ lead: "U.S. government websites have common typographic needs: clear and consist
 subnav:
 - text: Typefaces
   href: '#typefaces'
+- text: Global settings
+  href: '#global-settings'
 - text: Pairings and styles
   href: '#pairings-and-styles'
 - text: Typesetting
