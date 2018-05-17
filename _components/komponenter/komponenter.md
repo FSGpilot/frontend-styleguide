@@ -26,4 +26,6 @@ subnav:
   href: '/components/komponenter/trinindikatorer/'
 - text: Navigation
   href: '/components/komponenter/sidenav/'
+- text: Multi Select
+  href: '/components/komponenter/select2-multiselect/'
 ---

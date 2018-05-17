@@ -23,13 +23,11 @@
 
 <meta name="description" content="Introduktion
     Den fællesoffentlige styleguide (FSG) bygger på USWD. USWD kommer med et grid out-of-the-box der hedder NEAT. NEAT er et såkaldt 'Float grid' da den benygger sig af css' float-property. Da float-grids ikke gør brug af den nyeste teknologi vil vi gerne tilbyde et yderligere grid-system i den fællesoffentlige styleguide som benytter flexbox. Et flexbox grid gør det bl.a. nemmere for udviklere at centrere elementer, ændre på rækkefølgen af elementer uden af ændre i sidestrukturen og meget mere.
-    Som flexbox grid har vi valgt at inkludere grid-systemet fra Bootstrap 4.
-    Det er valgfrit om man vil bruge USWD’s grid eller Flexbox-griddet. Standard indstilling er sat til flexbox gridsystemt. 
+    Som flexbox grid har vi valgt at inkludere grid-systemet fra Bootstrap 4. Det er valgfrit om man vil bruge USWD’s grid eller Flexbox-griddet. Standard indstilling er sat til flexbox gridsystemt. 
     Dokumentation på dette site viser hvordan flexbox-gridsystemet benyttes.">
 <meta property="og:description" content="Introduktion
     Den fællesoffentlige styleguide (FSG) bygger på USWD. USWD kommer med et grid out-of-the-box der hedder NEAT. NEAT er et såkaldt 'Float grid' da den benygger sig af css' float-property. Da float-grids ikke gør brug af den nyeste teknologi vil vi gerne tilbyde et yderligere grid-system i den fællesoffentlige styleguide som benytter flexbox. Et flexbox grid gør det bl.a. nemmere for udviklere at centrere elementer, ændre på rækkefølgen af elementer uden af ændre i sidestrukturen og meget mere.
-    Som flexbox grid har vi valgt at inkludere grid-systemet fra Bootstrap 4.
-    Det er valgfrit om man vil bruge USWD’s grid eller Flexbox-griddet. Standard indstilling er sat til flexbox gridsystemt. 
+    Som flexbox grid har vi valgt at inkludere grid-systemet fra Bootstrap 4. Det er valgfrit om man vil bruge USWD’s grid eller Flexbox-griddet. Standard indstilling er sat til flexbox gridsystemt. 
     Dokumentation på dette site viser hvordan flexbox-gridsystemet benyttes.">
 
 
@@ -559,18 +557,17 @@
           <h1 id="grids">Grids</h1>
         </header>
         
-          <p class="font-lead">Frontend Styleguiden benytter Boostrap's mobile-first flexbox grid til opbygning af sider. Gridsystemet er et standard 12-kolonne system, med fem responsive breakpoints, Sass variable og mixins, og adskillige prædefinerede klasser.</p>
+          <p class="font-lead">Frontend Styleguiden benytter Boostrap's mobile-first flexbox grid til opbygning af sider. Gridsystemet er et standard 12-kolonne system, med fem responsive breakpoints.</p>
         
       <section id="section-solution-overview">
-    <h2 class="heading heading-margin-alt" id="introduction">Introduktion</h2>
+    <h2 class="h2" id="introduction">Introduktion</h2>
     <p>Den fællesoffentlige styleguide (FSG) bygger på USWD. USWD kommer med et grid out-of-the-box der hedder <a href="https://neat.bourbon.io/">NEAT</a>. NEAT er et såkaldt 'Float grid' da den benygger sig af css' float-property. Da float-grids ikke gør brug af den nyeste teknologi vil vi gerne tilbyde et yderligere grid-system i den fællesoffentlige styleguide som benytter flexbox. Et flexbox grid gør det bl.a. nemmere for udviklere at centrere elementer, ændre på rækkefølgen af elementer uden af ændre i sidestrukturen og meget mere.</p>
-    <p>Som flexbox grid har vi valgt at inkludere grid-systemet fra <a href="https://getbootstrap.com/">Bootstrap 4</a>.</p>
-    <p>Det er valgfrit om man vil bruge USWD’s grid eller Flexbox-griddet. Standard indstilling er sat til flexbox gridsystemt. </p>
+    <p>Som flexbox grid har vi valgt at inkludere grid-systemet fra <a href="https://getbootstrap.com/">Bootstrap 4</a>. Det er valgfrit om man vil bruge USWD’s grid eller Flexbox-griddet. Standard indstilling er sat til flexbox gridsystemt. </p>
     <p>Dokumentation på dette site viser hvordan flexbox-gridsystemet benyttes.</p>
 </section>
 
 <section id="section-grid-change">
-    <h2 class="heading heading-margin-alt" id="grid-change">Skift mellem grid-systemer</h2>
+    <h2 class="h2" id="grid-change">Skift mellem grid-systemer</h2>
     <p>Som udvikler kan du konfigurer koden således at USWD’s grid benyttes i steden for flexbox griddet.</p>
     <ol>
         <li>Åben filen: /src/stylesheets/core/_variables.scss</li>
@@ -581,12 +578,11 @@
         </li>
         <li>Ved at sætte <i>$enable-uswd-grid</i> til true og <i>$enable-bs-grid</i> til false vil FSG nu benytte USWD’s gridsystem.</li>
     </ol>
-    <br />
     <p>Ønsker du yderligere information om USWD’s gridsystem kan du finde dokumentationen på <a href="https://designsystem.digital.gov/components/grids/">USWDs website</a>.</p>
 </section>
 
 <section id="section-how-it-works">
-    <h2 class="heading heading-margin-alt" id="how-it-works">Flexbox grid</h2>
+    <h2 class="h2" id="how-it-works">Flexbox grid</h2>
     <p>Som beskrevet ovenfor kommer FSG med Bootstrap 4 gridsystem out-of-the-box. I det efterfølgende vil gridsystemet blive gennemgået.</p>
     <p>Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">flexbox</a> and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
 
@@ -671,7 +667,7 @@
 </section>
 
 <section id="section-grid-options">
-    <h2 class="heading heading-margin-alt" id="grid-options">Grid options</h2>
+    <h2 class="h2" id="grid-options">Grid options</h2>
     <p>While Bootstrap uses <span class="highlight">em</span>s or <span class="highlight">rem</span>s for defining most sizes, <span class="highlight">px</span>s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>.</p>
 
     <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
@@ -725,7 +721,7 @@
 </section>
 
 <section id="section-auto-layout-columns">
-<h2 class="heading heading-margin-alt" id="auto-layout-columns">Auto-layout columns</h2>
+<h2 class="h2" id="auto-layout-columns">Auto-layout columns</h2>
 <p>Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like <span class="highlight">.col-sm-6</span>.</p>
 
 <h3>Equal width</h3>
@@ -1003,7 +999,7 @@
 </section>
 
 <section id="section-responsive-classes">
-<h2 class="heading heading-margin-alt" id="responsive-classes">Responsive classes</h2>
+<h2 class="h2" id="responsive-classes">Responsive classes</h2>
 <p>Bootstrap's grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
 
 <h3>All breakpoints</h3>
@@ -1246,7 +1242,7 @@
 </section>
 
 <section id="section-alignment">
-<h2 class="heading heading-margin-alt" id="alignment">Alignment</h2>
+<h2 class="h2" id="alignment">Alignment</h2>
 <p>Use flexbox alignment utilities to vertically and horizontally align columns.</p>
 
 <h3>Vertical alignment</h3>
@@ -1768,7 +1764,7 @@
 </section>
 
 <section id="section-reordering">
-<h2 class="heading heading-margin-alt" id="reordering">Reordering</h2>
+<h2 class="h2" id="reordering">Reordering</h2>
 <h3>Order classes</h3>
 
 <p>Use <span class="highlight">.order-</span> classes for controlling the <strong>visual order</strong> of your content. These classes are responsive, so you can set the <span class="highlight">order</span> by breakpoint (e.g., <span class="highlight">.order-1.order-md-2</span>). Includes support for <span class="highlight">1</span> through <span class="highlight">12</span> across all five grid tiers.</p>
@@ -2168,7 +2164,7 @@
 </section>
 
 <section id="section-nesting">
-<h2 class="heading heading-margin-alt" id="nesting">Nesting</h2>
+<h2 class="h2" id="nesting">Nesting</h2>
 <p>To nest your content with the default grid, add a new <span class="highlight">.row</span> and set of <span class="highlight">.col-sm-*</span> columns within an existing <span class="highlight">.col-sm-*</span> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).</p>
 
 
@@ -2250,7 +2246,7 @@
 </section>
 
 <section id="section-sass-mixins">
-<h2 class="heading heading-margin-alt" id="sass-mixins">Sass mixins</h2>
+<h2 class="h2" id="sass-mixins">Sass mixins</h2>
 <p>When using Bootstrap's source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
 
 <h3>Variables</h3>
@@ -2334,7 +2330,7 @@ $container-max-widths: (
 </section>
 
 <section id="section-customizing-the-grid">
-<h2 class="heading heading-margin-alt" id="customizing-the-grid">Customizing the grid</h2>
+<h2 class="h2" id="customizing-the-grid">Customizing the grid</h2>
 <p>Using the built-in grid Sass variables and maps, it's possible to completely customize the predefined grid classes. Change the number of tiers, the media query dimensions, and the container widths - then recompile.</p>
 
 <h3>Columns and gutters</h3>
