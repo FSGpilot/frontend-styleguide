@@ -1638,6 +1638,7 @@ article {
   margin-top: 0;
   display: inline-block;
   text-align: center;
+  min-height: inherit;
 
   .icon-color{
     fill: $color-gray-dark;
