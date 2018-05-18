@@ -3672,14 +3672,30 @@ body {
 
 p {
   line-height: 1.5;
-  margin-bottom: 0.8em;
-  margin-top: 1.6em; }
+  margin-bottom: 0.8rem;
+  margin-top: 1.6rem; }
 
-a:focus {
-  outline: 4px solid #febb30;
-  outline-offset: 0px; }
-a:visited, a.color-text-visited {
-  color: #801258; }
+a {
+  color: #125880;
+  padding: 0.4rem; }
+  a:hover, a.link-hover {
+    color: #1b86c3; }
+    a:hover:disabled,
+    a:hover .disabled, a.link-hover:disabled,
+    a.link-hover .disabled {
+      background-color: transparent !important; }
+  a:active, a.link-active {
+    color: #212121; }
+  a:focus, a.link-focus {
+    background-color: #febb30; }
+  a:visited, a.color-text-visited {
+    color: #801258; }
+  a:disabled, a.disabled {
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+    color: #aeb0b5 !important;
+    box-shadow: none !important;
+    outline-offset: inherit !important; }
 
 h1, .h1 {
   font-family: "IBMPlexSans";
@@ -3776,16 +3792,25 @@ p, .body-text,
   margin-top: 16px;
   margin-bottom: 16px; }
 
+strong,
+b,
+.bold {
+  font-family: "IBMPlexSans";
+  font-weight: 700; }
+
+em {
+  font-style: italic; }
+
 .external_link::after {
   background: url("../assets/img/external-link.png") no-repeat 0 0;
   background: url("../assets/img/external-link.svg") no-repeat 0 0;
   background-size: 100%;
   content: '';
   display: inline-block;
-  height: 0.65em;
-  margin-bottom: -1px;
-  margin-left: 4px;
-  width: 0.65em; }
+  height: 1.6rem;
+  margin-bottom: -0.4rem;
+  margin-left: 0.4rem;
+  width: 1.3rem; }
 .external_link:hover::after {
   background-image: url("../assets/img/external-link-hover.png");
   background-image: url("../assets/img/external-link-hover.svg"); }
@@ -3796,10 +3821,10 @@ p, .body-text,
   background-size: 100%;
   content: '';
   display: inline-block;
-  height: 0.65em;
-  margin-bottom: -1px;
-  margin-left: 4px;
-  width: 0.65em; }
+  height: 1.6rem;
+  margin-bottom: -0.4rem;
+  margin-left: 0.4rem;
+  width: 1.3rem; }
 .external_link-alt:hover::after {
   background-image: url("../assets/img/external-link-alt-hover.png");
   background-image: url("../assets/img/external-link-alt-hover.svg"); }
@@ -3813,10 +3838,10 @@ dfn {
 .content p,
 .content ul:not(.accordion):not(.accordion-bordered),
 .content ol:not(.accordion):not(.accordion-bordered) {
-  max-width: 76ch; }
+  max-width: 49.6rem; }
 
 .content-list {
-  max-width: 76ch; }
+  max-width: 49.6rem; }
 
 .heading p,
 .heading a,
@@ -3824,34 +3849,31 @@ dfn {
 .heading span {
   font-family: "IBMPlexSans", "system"; }
 
-.display {
+.displaytext__splash {
   font-family: "IBMPlexSans";
-  font-size: 2.6rem;
-  line-height: 3.2rem;
-  font-weight: 600;
-  color: #212121;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 8.8rem;
   margin-bottom: 0; }
-  @media screen and (min-width: 576px) {
-    .display {
-      font-family: "IBMPlexSans";
-      font-size: 3.3rem;
-      line-height: 4rem;
-      font-weight: 600;
-      color: #212121; } }
-  @media screen and (min-width: 768px) {
-    .display {
-      font-family: "IBMPlexSans";
-      font-size: 4.3rem;
-      line-height: 4.8rem;
-      font-weight: 700;
-      color: #212121; } }
+.displaytext__large {
+  font-family: "IBMPlexSans";
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 7.2rem;
+  margin-bottom: 0; }
+
+.text-positive {
+  color: #588012; }
+
+.text-negative {
+  color: #ce1415; }
 
 .font-lead {
   font-family: "IBMPlexSans", "system";
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  line-height: 1.5;
-  max-width: 77rem; }
+  line-height: 3.2rem;
+  max-width: 67.2rem; }
 
 .drop_text {
   margin-bottom: 0; }
@@ -5342,7 +5364,8 @@ label {
   padding-left: 1.5rem;
   padding-top: 0.8rem;
   position: relative;
-  right: 1.9rem; }
+  right: 1.9rem;
+  margin-left: 1.6rem; }
   .input-error input,
   .input-error textarea,
   .input-error select {
@@ -5575,23 +5598,28 @@ legend {
 .required {
   color: #e92021; }
 
-.label, .label-big {
-  background-color: #f08b1e;
-  border-radius: 2px;
-  color: #212121;
-  font-size: 1.2rem;
+/* .label {
+  background-color: $color-primary;
+  border-radius: $label-border-radius;
+  color: $color-primary-button-text;
+  font-size: $small-font-size;
   font-weight: bold;
   margin-right: 0.5rem;
   padding: 0.1rem 0.7rem;
-  text-transform: uppercase; }
-  .label:only-of-type, .label-big:only-of-type {
-    margin-right: 0; }
+  text-transform: uppercase;
 
-.label-big {
-  font-size: 18px;
+
+  &:only-of-type {
+    margin-right: 0;
+  }
+}
+
+.label-big { //TODO Is it relevant ??
+  @extend .label;
+  font-size: $base-font-size;
   padding-left: 0.9rem;
-  padding-right: 0.9rem; }
-
+  padding-right: 0.9rem;
+} */
 ul,
 ol {
   margin-top: 1em;
@@ -5927,7 +5955,7 @@ li {
             margin-left: -5em;
             padding-left: 6em; }
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #febb30; }
+  background-color: #f5f5f5; }
 .select2-container--default .select2-results__group {
   cursor: default;
   display: block;
@@ -6142,7 +6170,7 @@ li {
   position: relative;
   border-left: 8px solid #8b8b8b; }
   .alert.alert--paragraph {
-    width: 76ch; }
+    width: 49.6rem; }
   .alert .alert-heading {
     margin-top: 0;
     margin-bottom: 0;
@@ -8762,7 +8790,7 @@ code {
     content: '\00a0'; }
 
 .highlight pre {
-  max-width: 77rem; }
+  max-width: 67.2rem; }
 
 .code-sample pre,
 .code-sample code {
@@ -8836,7 +8864,7 @@ code {
 .serif-robust.serif-body .font-example p {
   font-family: "IBMPlexSans", "system";
   font-size: 1.5rem;
-  line-height: 1.5; }
+  line-height: 3.2rem; }
 .serif-robust.serif-body .font-example .font-lead {
   font-size: 2.6rem; }
   .serif-robust.serif-body .font-example .font-lead .font-lead-alt {
@@ -8875,7 +8903,7 @@ code {
 .sans-style.serif-body .font-example p {
   font-family: "IBMPlexSans-Text";
   font-size: 1.5rem;
-  line-height: 1.5; }
+  line-height: 3.2rem; }
 .sans-style.serif-body .font-example .font-lead {
   font-family: "IBMPlexSans-Text";
   font-size: 2.2rem;
@@ -8953,7 +8981,7 @@ code {
 .page-for-developers .content > ul:not(.content-list),
 .page-for-designers .content > ul:not(.content-list),
 .page-component-maturity-scale .content > ul:not(.content-list) {
-  max-width: 76ch; }
+  max-width: 49.6rem; }
 
 .page-for-developers h2,
 .page-for-designers h2,
@@ -8962,7 +8990,7 @@ code {
 .page-research h2 {
   color: #D8760E; }
 
-.page-product-roadmap .label, .page-product-roadmap .label-big {
+.page-product-roadmap .label {
   display: inline-block;
   position: relative; }
 
