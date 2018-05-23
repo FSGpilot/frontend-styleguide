@@ -16,9 +16,10 @@ order: 02
 </p>
 <p>For at ændre font-style bruges variablerne:</p>
 <p class="monospace">
-	$font-style-normal
+	$font-style-normal<br>
 	$font-style-italic
 </p>
+
 
 <h4 class="heading">Headings</h4>
 <p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. </p>

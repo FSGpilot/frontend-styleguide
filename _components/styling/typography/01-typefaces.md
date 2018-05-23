@@ -23,4 +23,10 @@ order: 01
       <p class="text-tiny">0 1 2 3 4 5 6 7 8 9</p>
     </div>
   </div>
+  <div class="width-one-half">
+  <br>
+  <h4 class="heading">Fallback font</h4>
+    <p>Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.</p>
+
+  </div>
 </div>
