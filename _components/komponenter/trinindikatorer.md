@@ -18,6 +18,11 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
     Documentation
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
+  <h4 class="heading">Implementering</h4>
+    <ul class="content-list">
+      <li>For en klikbar tringuides bruges <code>.sidenav-list</code> class på ul elementet.</li>
+      <li>For en tvungne tringuides bruges <code>.sidenav-list-locked</code> class på ul elementet.</li>
+    </ul>
     <h4 class="heading">Krav</h4>
     <ul class="content-list">
       <li>Krav til størrelse af knapper mv. fremgår af HTML/CSS, som kan downloades ovenfor</li>
