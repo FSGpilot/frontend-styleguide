@@ -2,7 +2,7 @@
 title: Select
 parent: Form controls
 order: 02
-lead: A select-element allows users to select one or more option from a list.
+lead: A select-element allows users to select one option from a list. 
 ---
 
 
