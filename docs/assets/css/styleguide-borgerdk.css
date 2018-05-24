@@ -3679,26 +3679,55 @@ p {
   margin-top: 1.6rem; }
 
 a {
-  color: #125880;
-  padding: 0.4rem; }
+  color: #1B86C3; }
   a:hover, a.link-hover {
-    color: #1b86c3; }
+    color: #125880; }
     a:hover:disabled,
     a:hover .disabled, a.link-hover:disabled,
     a.link-hover .disabled {
       background-color: transparent !important; }
   a:active, a.link-active {
-    color: #1a1a1a; }
+    color: #0d405e; }
   a:focus, a.link-focus {
-    background-color: #febb30; }
-  a:visited, a.color-text-visited {
+    color: #1B86C3;
+    background-color: #febb30;
+    outline: 4px solid #febb30; }
+  a:visited, a.link-visited {
     color: #801258; }
   a:disabled, a.disabled {
     box-shadow: none !important;
     cursor: not-allowed !important;
-    color: #999999 !important;
+    color: #BFBFBF !important;
     box-shadow: none !important;
     outline-offset: inherit !important; }
+    a:disabled:focus, a.disabled:focus {
+      outline: none;
+      background-color: transparent; }
+  .background-dark a {
+    color: #F5F5F5; }
+    .background-dark a:hover, .background-dark a.link-hover {
+      color: #ffffff; }
+      .background-dark a:hover:disabled,
+      .background-dark a:hover .disabled, .background-dark a.link-hover:disabled,
+      .background-dark a.link-hover .disabled {
+        background-color: transparent !important; }
+    .background-dark a:active, .background-dark a.link-active {
+      color: #BFBFBF; }
+    .background-dark a:focus, .background-dark a.link-focus {
+      color: #212121;
+      background-color: #febb30;
+      outline: 4px solid #febb30; }
+    .background-dark a:visited, .background-dark a.link-visited {
+      color: #F5F5F5; }
+    .background-dark a:disabled, .background-dark a.disabled {
+      box-shadow: none !important;
+      cursor: not-allowed !important;
+      color: #747474 !important;
+      box-shadow: none !important;
+      outline-offset: inherit !important; }
+      .background-dark a:disabled:focus, .background-dark a.disabled:focus {
+        outline: none;
+        background-color: transparent; }
 
 h1, .h1 {
   font-family: "IBMPlexSans";
@@ -3757,11 +3786,9 @@ strong, b, .bold {
   font-style: italic; }
 
 small, .small-text {
-  font-family: "IBMPlexSans";
   font-size: 1.3rem;
   line-height: 1.6rem;
-  font-weight: 500;
-  color: #454545; }
+  font-weight: 500; }
 
 .form-label {
   font-family: "IBMPlexSans";
@@ -3851,7 +3878,7 @@ dfn {
   margin-bottom: 0; }
 
 .background-dark {
-  background-color: #454545; }
+  background-color: #1a1a1a; }
   .background-dark p,
   .background-dark span {
     color: #ffffff; }
@@ -6407,7 +6434,7 @@ li {
 
 .alert-info {
   background-color: #e2f2fb;
-  border-color: #1b86c3; }
+  border-color: #0d405e; }
   .alert-info.alert--show-icon {
     background-image: url("../assets/img/svg-icons/info.svg");
     padding-left: 48px; }
@@ -7270,7 +7297,7 @@ input.input-medium {
     .nav-primary a:hover {
       background-color: #F5F5F5;
       text-decoration: none;
-      color: #125880; }
+      color: #1B86C3; }
     .nav-primary a:focus {
       outline-offset: 0;
       position: relative;
@@ -7864,7 +7891,7 @@ input[type=search] {
     .sidenav-list a:hover {
       background-color: #F5F5F5;
       text-decoration: none;
-      color: #125880; }
+      color: #1B86C3; }
     .sidenav-list a:focus {
       outline-offset: 0;
       position: relative;
@@ -8814,10 +8841,10 @@ section + section, .font-lead + section {
   background-color: #F5F5F5; }
 
 .color-link {
-  background-color: #125880; }
+  background-color: #1B86C3; }
 
 .color-link-hover {
-  background-color: #1b86c3; }
+  background-color: #125880; }
 
 .color-focus {
   background-color: #febb30; }
@@ -8853,7 +8880,7 @@ section + section, .font-lead + section {
   background-color: #F5F5F5; }
 
 .color-text-neutral-18 {
-  background-color: #1b86c3; }
+  background-color: #0d405e; }
 
 .color-text-positive {
   background-color: #3F9800; }
@@ -8871,7 +8898,7 @@ section + section, .font-lead + section {
   background-color: #febb30; }
 
 .color-info {
-  background-color: #1b86c3; }
+  background-color: #0d405e; }
 
 .color-error-background {
   background-color: #fbd3d3; }
@@ -9638,7 +9665,7 @@ div.anno-container {
       color: #fff;
       font-size: 30px;
       line-height: 39px;
-      background-color: #1b86c3;
+      background-color: #0d405e;
       border-radius: 50%; }
   .list-tile .list-tile-content {
     display: flex;
