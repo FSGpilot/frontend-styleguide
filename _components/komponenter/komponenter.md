@@ -16,6 +16,8 @@ subnav:
   href: '/components/komponenter/cards/'
 - text: Felter
   href: '/components/komponenter/form-controls/'
+- text: Search
+  href: '/components/komponenter/search/'
 - text: info
   href: '/components/komponenter/labels/'
 - text: Tabeller

@@ -17,14 +17,124 @@
 ================================================== -->
   
 
-<title>Cards | Frontend styleguide - version 2</title>
-<meta property="og:title" content="Cards | Frontend styleguide - version 2">
+<title>Search bar | Frontend styleguide - version 2</title>
+<meta property="og:title" content="Search bar | Frontend styleguide - version 2">
 
 
-<meta name="description" content="Cards under development
-        Cards are still under development which might result in unexpected behaviors. Consequently responsive behaviour has not been yet implemented.">
-<meta property="og:description" content="Cards under development
-        Cards are still under development which might result in unexpected behaviors. Consequently responsive behaviour has not been yet implemented.">
+<meta name="description" content="Code
+  
+    
+&amp;lt;form action=&quot;/search&quot; method=&quot;get&quot; role=&quot;search&quot;&amp;gt;
+    &amp;lt;div class=&quot;search&quot;&amp;gt;
+        &amp;lt;div class=&quot;form-group search__item-wrapper&quot;&amp;gt;
+            &amp;lt;input class=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;&quot; title=&quot;Search&quot; type=&quot;search&quot;&amp;gt;
+            &amp;lt;button type=&quot;submit&quot; class=&quot;search__text_submit button-primary&quot;&amp;gt;Søgning&amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/form&amp;gt;
+
+&amp;lt;form action=&quot;/search&quot; method=&quot;get&quot; role=&quot;search&quot;&amp;gt;
+    &amp;lt;div class=&quot;search&quot;&amp;gt;
+        &amp;lt;div class=&quot;form-group search__item-wrapper&quot;&amp;gt;
+            &amp;lt;input class=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;&quot; title=&quot;Search&quot; type=&quot;search&quot;&amp;gt;
+            &amp;lt;button type=&quot;submit&quot; class=&quot;search__submit button-primary search-submit&quot;&amp;gt;&amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/form&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Documentation
+  
+  
+    Accessibility
+    
+      As you customize this form template, ensure it continues to follow the accessibility guidelines for form templates and the accessibility guidelines for form controls.
+    
+    
+      Always include the word &quot;search&quot; inside the &amp;lt;button&amp;gt; element for screen readers. You can visually hide this text using the CSS class sr-only or Sass mixin @include sr-only;.
+    
+    Usability
+    When to use
+    
+      There will always be users who are confused by your navigation system and who would benefit from being able to search your site.
+    
+    When to consider something else
+    
+      On single-page or very small sites, you may be able to get away without a search bar.
+    
+    Guidance
+    
+      Allow the search bar to be as wide as possible, but a minimum of 27 characters wide. This allows users to enter multiple search terms and still be able to see all of them. The more users can see their search terms, the easier it is to review, verify, and submit their search query.
+      The magnifying glass has been shown to be almost universally recognized by users as an indicator of search, and doesn’t need to be visually paired with the word &quot;Search&quot; as long as it remains for screen readers.
+      Maintain this search bar when displaying the search results with the original search terms.
+      On a site's home page the search function should appear as a search box instead of a link so users can locate it easily.
+      Don't offer advanced search as the default option. The majority of people will do a simple search with one or two search terms. If advanced search is offered, it increases the likelihood of a person making a mistake in their query.
+      Even if the search bar isn't visually displaying a label, the form field should include a label for screen reader users.
+      The search button itself should be a submit button for the form to reduce the number of keystrokes required to use the form.">
+<meta property="og:description" content="Code
+  
+    
+&amp;lt;form action=&quot;/search&quot; method=&quot;get&quot; role=&quot;search&quot;&amp;gt;
+    &amp;lt;div class=&quot;search&quot;&amp;gt;
+        &amp;lt;div class=&quot;form-group search__item-wrapper&quot;&amp;gt;
+            &amp;lt;input class=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;&quot; title=&quot;Search&quot; type=&quot;search&quot;&amp;gt;
+            &amp;lt;button type=&quot;submit&quot; class=&quot;search__text_submit button-primary&quot;&amp;gt;Søgning&amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/form&amp;gt;
+
+&amp;lt;form action=&quot;/search&quot; method=&quot;get&quot; role=&quot;search&quot;&amp;gt;
+    &amp;lt;div class=&quot;search&quot;&amp;gt;
+        &amp;lt;div class=&quot;form-group search__item-wrapper&quot;&amp;gt;
+            &amp;lt;input class=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;&quot; title=&quot;Search&quot; type=&quot;search&quot;&amp;gt;
+            &amp;lt;button type=&quot;submit&quot; class=&quot;search__submit button-primary search-submit&quot;&amp;gt;&amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/form&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Documentation
+  
+  
+    Accessibility
+    
+      As you customize this form template, ensure it continues to follow the accessibility guidelines for form templates and the accessibility guidelines for form controls.
+    
+    
+      Always include the word &quot;search&quot; inside the &amp;lt;button&amp;gt; element for screen readers. You can visually hide this text using the CSS class sr-only or Sass mixin @include sr-only;.
+    
+    Usability
+    When to use
+    
+      There will always be users who are confused by your navigation system and who would benefit from being able to search your site.
+    
+    When to consider something else
+    
+      On single-page or very small sites, you may be able to get away without a search bar.
+    
+    Guidance
+    
+      Allow the search bar to be as wide as possible, but a minimum of 27 characters wide. This allows users to enter multiple search terms and still be able to see all of them. The more users can see their search terms, the easier it is to review, verify, and submit their search query.
+      The magnifying glass has been shown to be almost universally recognized by users as an indicator of search, and doesn’t need to be visually paired with the word &quot;Search&quot; as long as it remains for screen readers.
+      Maintain this search bar when displaying the search results with the original search terms.
+      On a site's home page the search function should appear as a search box instead of a link so users can locate it easily.
+      Don't offer advanced search as the default option. The majority of people will do a simple search with one or two search terms. If advanced search is offered, it increases the likelihood of a person making a mistake in their query.
+      Even if the search bar isn't visually displaying a label, the form field should include a label for screen reader users.
+      The search button itself should be a submit button for the form to reduce the number of keystrokes required to use the form.">
 
 
 
@@ -89,7 +199,7 @@
 
 
   </head>
-  <body class="page-cards layout-styleguide">
+  <body class="page-search-bar layout-styleguide">
     <div class="hide-base-svg">
       <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="alert-outline" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol><symbol id="angle-arrow-down" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-up" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5z"/></symbol><symbol id="check-circle-outline" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></symbol><symbol id="close-circle-outline" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="content-save" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4z"/></symbol><symbol id="delete" viewBox="0 0 24 24"><path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12z"/></symbol><symbol id="error" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="help-circle-outline" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4z"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></symbol><symbol id="magnify" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></symbol><symbol id="minus" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></symbol><symbol id="open-in-new" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></symbol><symbol id="pencil" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></symbol><symbol id="success" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="warning" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol></svg>
     </div>
@@ -328,17 +438,9 @@
     
       
 
-<a href="/frontend-styleguide/components/komponenter/cards/" class="current nav-link">
+<a href="/frontend-styleguide/components/komponenter/cards/" class="nav-link">
   <span>Cards</span>
 </a>
-
-  
-    
-    
-    
-    
-    
-  
 
 
     
@@ -362,9 +464,17 @@
     
       
 
-<a href="/frontend-styleguide/components/komponenter/search/" class="nav-link">
+<a href="/frontend-styleguide/components/komponenter/search/" class="current nav-link">
   <span>Search bar</span>
 </a>
+
+  
+    
+    
+    
+    
+    
+  
 
 
     
@@ -476,24 +586,18 @@
     </div>
 
     <div class="col-12 col-sm-9 styleguide-content content">
-      <section id="section-/components/komponenter/cards">
+      <section id="section-/components/komponenter/search-bar">
         <header>
           <p class="site-subheading">
             Komponenter
           </p>
-          <h1 id="cards">Cards</h1>
+          <h1 id="search-bar">Search bar</h1>
         </header>
         
-          <p class="font-lead">A card is a sheet of material that serves as an entry point to more detailed information.</p>
+          <p class="font-lead">A block that allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation</p>
         
-      <div class="alert alert-warning" role="alert">
-    <div class="alert-body">
-        <h3 class="alert-heading">Cards under development</h3>
-        <p class="alert-text">Cards are still under development which might result in unexpected behaviors. Consequently responsive behaviour has not been yet implemented. </p>
-    </div>
-</div>
-
-<div class="component-preview ">
+      
+<div class="component-preview preview-search-bar">
     <ul class="unstyled-list preview-buttons">
         <li class="component-preview-item">
             <button type="button" class="component-preview-button" id="mobil">
@@ -517,7 +621,7 @@
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/card" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/search" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -538,133 +642,30 @@
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/card"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/search"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
-  <button class="accordion-button" aria-controls="code-card">Code</button>
-  <div id="code-card" class="accordion-content">
+  <button class="accordion-button" aria-controls="code-search">Code</button>
+  <div id="code-search" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card-large card-fit"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h2&gt;</span>Min eIndkomst<span class="nt">&lt;/h2&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"/search"</span> <span class="na">method=</span><span class="s">"get"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group search__item-wrapper"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">title=</span><span class="s">"Search"</span> <span class="na">type=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"search__text_submit button-primary"</span><span class="nt">&gt;</span>Søgning<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block card-content"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;p&gt;</span>De oplysninger, som du typisk finder på din lønseddel, findes også i
-            SKATs eIndkomstsystem<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;</span>I oversigten kan du se nogle tal, som SKAT har registreret som din samlede
-            indkosmt gennem de seneste måneder. Tallene er rundet op til nærmeste
-            hele beløb.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table-borderless"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;caption&gt;</span>April 2017:<span class="nt">&lt;/caption&gt;</span>
-            <span class="nt">&lt;tbody&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;strong&gt;</span>Indkomst:<span class="nt">&lt;/strong&gt;&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>32.000 kr.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;strong&gt;</span>AM-bidrag:<span class="nt">&lt;/strong&gt;&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>2.819 kr.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;strong&gt;</span>A-skat:<span class="nt">&lt;/strong&gt;&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>6.322 kr.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-            <span class="nt">&lt;/tbody&gt;</span>
-        <span class="nt">&lt;/table&gt;</span>
-        <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table-borderless"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;caption&gt;</span>Marts 2017:<span class="nt">&lt;/caption&gt;</span>
-            <span class="nt">&lt;tbody&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;strong&gt;</span>Indkomst:<span class="nt">&lt;/strong&gt;&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>32.000 kr.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;strong&gt;</span>AM-bidrag:<span class="nt">&lt;/strong&gt;&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>2.819 kr.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;strong&gt;</span>A-skat:<span class="nt">&lt;/strong&gt;&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>6.322 kr.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-            <span class="nt">&lt;/tbody&gt;</span>
-        <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
 
+<span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"/search"</span> <span class="na">method=</span><span class="s">"get"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group search__item-wrapper"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">title=</span><span class="s">"Search"</span> <span class="na">type=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"search__submit button-primary search-submit"</span><span class="nt">&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-action"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-primary"</span><span class="nt">&gt;</span>Se beregning<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-action"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-secondary"</span><span class="nt">&gt;</span>Læs mere<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card-large card-fit"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h2&gt;</span>Personoplysninger<span class="nt">&lt;/h2&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block card-content"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table-borderless"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;caption&gt;</span>April 2017:<span class="nt">&lt;/caption&gt;</span>
-            <span class="nt">&lt;thead&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Navn<span class="nt">&lt;/th&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>CPR<span class="nt">&lt;/th&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Navne- og adressebeskyttelse<span class="nt">&lt;/th&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-            <span class="nt">&lt;/thead&gt;</span>
-            <span class="nt">&lt;tbody&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>Cecilie Skovgaard<span class="nt">&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>101011-2222<span class="nt">&lt;/td&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>Nej<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-            <span class="nt">&lt;/tbody&gt;</span>
-        <span class="nt">&lt;/table&gt;</span>
-
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-action"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-primary"</span><span class="nt">&gt;</span>Se flere informationer<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card-large card-fit"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h2&gt;</span>Vaccinationsprogram<span class="nt">&lt;/h2&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block card-content"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Huskeliste<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;</span>Gælder, hvis barnet følger
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>programmet<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table-borderless"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;tbody&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;strong&gt;</span>4 år:<span class="nt">&lt;/strong&gt;&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>MFR 2 (børneundersøgelse)<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;strong&gt;</span>5 år:<span class="nt">&lt;/strong&gt;&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;&lt;strong&gt;</span>Di-Te-Ki-Pol revaccination (børneundersøgelse)<span class="nt">&lt;/strong&gt;&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-                <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;&lt;strong&gt;</span>12 år:<span class="nt">&lt;/strong&gt;&lt;/th&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>HPV 1 og 2<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;/tr&gt;</span>
-            <span class="nt">&lt;/tbody&gt;</span>
-        <span class="nt">&lt;/table&gt;</span>
-        <span class="nt">&lt;p&gt;</span>Det er Cecilies læge, der skal give vaccinen.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p&gt;</span>Du kan se, hvilke vacciner børn født efter 27. maj 2004 har fået i
-            <span class="nt">&lt;a</span>
-                <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Det fælles medicinkort (nytvindue)<span class="nt">&lt;/a&gt;</span>
-
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-action"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-primary"</span><span class="nt">&gt;</span>Læs mere<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
 </code></pre>
 </div>
 
@@ -673,34 +674,35 @@
 </div>
 
 <div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="alert-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="search-bar-docs">
     Documentation
   </button>
-  <div id="alert-docs" aria-hidden="false" class="accordion-content">
+  <div id="search-bar-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
-      <li>Use the ARIA <code>role=<wbr />"alert"</code> to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the <code>alertdialog</code> role instead.</li>
-      <li>Do not visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.</li>
+      <li>As you customize this form template, ensure it continues to follow the <a href="/frontend-styleguide/form-templates/">accessibility guidelines for form templates</a> and the <a href="/frontend-styleguide/form-controls/">accessibility guidelines for form controls</a>.</li>
+    </ul>
+    <ul class="content-list">
+      <li>Always include the word "search" inside the <code>&lt;button&gt;</code> element for screen readers. You can visually hide this text using the CSS class <code>sr-only</code> or Sass mixin <code>@include sr-only;</code>.</li>
     </ul>
     <h4 class="heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="content-list">
-      <li>As a notification that keeps people informed of the status of the system and which may or may not require the user to respond. This includes errors, warnings, and general updates.</li>
-      <li>As a validation message that alerts someone that they just did something that needs to be corrected or as confirmation that a task was completed successfully.</li>
+      <li>There will always be users who are confused by your navigation system and who would benefit from being able to search your site.</li>
     </ul>
     <h5>When to consider something else</h5>
     <ul class="content-list">
-      <li>On long forms, always include in-line validation in addition to any error messages that appear at the top of the form. </li>
-      <li>If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this is what they want.</li>
+      <li>On single-page or very small sites, you may be able to get away without a search bar.</li>
     </ul>
     <h5>Guidance</h5>
     <ul class="content-list">
-      <li>When the user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. For example, a notification of a system change may require more contextual information than a validation message. Write the message in concise, human readable language; avoid jargon and computer code.</li>
-      <li>Be polite in error messages — don’t place blame on the user.</li>
-      <li>Users generally won’t read documentation but will read a message that helps them resolve an error; include some educational material in your error message.</li>
-      <li>But don’t overdo it — too many notifications will either overwhelm or annoy the user and are likely to be ignored.</li>
-      <li>Allow a user to dismiss a notification wherever appropriate.</li>
-      <li>Don’t include notifications that aren’t related to the user’s current goal.</li>
+      <li>Allow the search bar to be as wide as possible, but a minimum of 27 characters wide. This allows users to enter multiple search terms and still be able to see all of them. The more users can see their search terms, the easier it is to review, verify, and submit their search query.</li>
+      <li>The magnifying glass has been shown to be almost universally recognized by users as an indicator of search, and doesn’t need to be visually paired with the word "Search" as long as it remains for screen readers.</li>
+      <li>Maintain this search bar when displaying the search results with the original search terms.</li>
+      <li>On a site's home page the search function should appear as a search box instead of a link so users can locate it easily.</li>
+      <li>Don't offer advanced search as the default option. The majority of people will do a simple search with one or two search terms. If advanced search is offered, it increases the likelihood of a person making a mistake in their query.</li>
+      <li>Even if the search bar isn't visually displaying a label, the form field should include a label for screen reader users.</li>
+      <li>The search button itself should be a submit button for the form to reduce the number of keystrokes required to use the form.</li>
     </ul>
   </div>
 </div>

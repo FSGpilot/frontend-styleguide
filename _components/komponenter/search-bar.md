@@ -1,15 +1,15 @@
 ---
-permalink: /components/strukturer/search-bar/
+permalink: /components/komponenter/search/
 layout: styleguide
 type: component
 title: Search bar
 category: UI components
-subcategory: Strukturer (organismer)
+subcategory: Komponenter
 lead: A block that allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation
 ---
 
-{% include code/preview.html component="search-bar" classes="preview-search-bar" %}
-{% include code/accordion.html component="search-bar" %}
+{% include code/preview.html component="search" classes="preview-search-bar" %}
+{% include code/accordion.html component="search" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="search-bar-docs">

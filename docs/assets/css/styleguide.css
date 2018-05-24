@@ -5597,7 +5597,8 @@ li {
   .alert .alert-text {
     margin-bottom: 0;
     margin-top: 0;
-    color: #1a1a1a; }
+    color: #1a1a1a;
+    max-width: 67.2rem; }
 
 .alert-success {
   background-color: #e7fbe4;
@@ -6944,13 +6945,10 @@ input[type=search] {
 
 [type=search],
 .search-input {
-  padding-top: 0;
-  padding-bottom: 0;
   border-bottom-right-radius: 0;
   border-right: none;
   border-top-right-radius: 0;
   box-sizing: border-box;
-  font-size: 1.2rem;
   margin: 0;
   width: calc(100% - 4.5rem); }
   @media screen and (min-width: 576px) {
