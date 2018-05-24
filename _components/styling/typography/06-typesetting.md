@@ -2,7 +2,7 @@
 type: component
 title: Typesetting
 parent: typography
-order: 04
+order: 06
 ---
 
 <!-- Typsetting section begin -->

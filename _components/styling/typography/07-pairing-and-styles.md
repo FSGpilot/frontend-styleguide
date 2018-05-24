@@ -2,7 +2,7 @@
 type: component
 title: Pairings and styles
 parent: typography
-order: 03
+order: 07
 ---
 
 <p>To support both more contemporary and more traditional web design aesthetics, this font system offers recommended font pairings. Each pairing includes web hierarchy guidance on font family, weight, size, and spacing which express either more modern or more classical type design.</p>

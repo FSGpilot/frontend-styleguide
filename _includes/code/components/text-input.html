@@ -1,18 +1,30 @@
 <div class="container">
 
-    <label for="input-type-text" class="">Text input label</label>
-    <input class="" id="input-type-text" name="" type="text">
+    <div class="form-group">
+        <label class="" for="input-type-text">Text input label</label>
 
-    <label for="input-focus" class="">Text input focused</label>
-    <input class="focus" id="input-focus" name="" type="text">
-
-    <div class="input-error">
-        <label class="input-error-label" for="input-error">Text input error</label>
-        <span class="input-error-message" id="input-error-message" role="alert">Helpful error message</span>
-        <input id="input-error" name="" type="text" aria-describedby="input-error-message">
+        <span class="input-hint" id="input-hint-message-input-type-text">For example, VO123456D</span>
+        <input class="" id="input-type-text" name="input-type-text" type="text">
     </div>
 
-    <label for="input-success" class="">Text input success</label>
-    <input class="input-success" id="input-success" name="" type="text">
+    <div class="form-group">
+        <label class="" for="input-focus">Text input focused</label>
+
+        <input class="focus" id="input-focus" name="input-focus" type="text">
+    </div>
+
+    <div class="form-group input-error">
+        <label class="" for="input-error">Text input error</label>
+        <span class="input-error-message" id="input-error-message-input-error" role="alert">Helpful error message</span>
+        <span class="input-hint" id="input-hint-message-input-error">For example, VO123456D</span>
+        <input class="" id="input-error" name="input-error" type="text" aria-describedby="input-error-message-input-error"
+            aria-describedby="input-hint-message-input-error">
+    </div>
+
+    <div class="form-group input-success">
+        <label class="" for="input-success">Text input success</label>
+
+        <input class="" id="input-success" name="" type="text">
+    </div>
 
 </div>

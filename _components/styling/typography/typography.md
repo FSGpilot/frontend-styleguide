@@ -8,6 +8,12 @@ lead: "U.S. government websites have common typographic needs: clear and consist
 subnav:
 - text: Typefaces
   href: '#typefaces'
+- text: Headings
+  href: '#headings'
+- text: Display text
+  href: '#displaytext'
+- text: Lead paragraph
+  href: '#lead-paragraph'
 - text: Global settings
   href: '#global-settings'
 - text: Pairings and styles

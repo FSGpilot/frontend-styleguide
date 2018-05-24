@@ -2,7 +2,7 @@
 type: component
 title: Links
 parent: typography
-order: 05
+order: 07
 ---
 
 <!-- Links section begin -->

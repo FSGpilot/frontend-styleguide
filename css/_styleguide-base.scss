@@ -673,7 +673,7 @@ h3 + .button_wrapper {
   }
 }
 
-section + section{
+section + section, .font-lead + section{
   margin-top: 40px;
 }
 
@@ -1034,16 +1034,6 @@ h6.heading-alt {
   }
 }
 
-.typography-example {
-  .monospace {
-    @include margin(0 null 3rem);
-    font-size: 1.2rem;
-  }
-}
-
-.monospace {
-  font-family: $font-monospace;
-}
 
 code,
 pre {
@@ -1067,16 +1057,12 @@ pre {
 
 code {
   @include padding(0.2em null);
-
-  &::before,
-  &::after {
-    letter-spacing: -0.2em;
-    content: '\00a0';
-  }
 }
 
-.highlight {
-  pre {
+.code-highlight {
+  background-color: $color-gray-lightest;
+  padding: 16px;
+  pre, code {
     max-width: $lead-max-width;
   }
 }
@@ -1152,6 +1138,26 @@ code {
   text-align: center;
 }
 
+//margin top and bottom for text
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.sub-header-text{
+  margin-top: map-get($spacers, 7);
+  margin-bottom: map-get($spacers, 4);
+  &:first-child{
+    margin-top: 0;
+  }
+}
+p, .body-text,
+.lead, .font-lead{
+  //margin-top: map-get($spacers, 4);
+  //margin-bottom: map-get($spacers, 4);
+}
+
 .text-tiny {
   @include margin(5px null 0);
 
@@ -1189,113 +1195,6 @@ code {
   font-weight: $font-weight-normal;
 }
 
-.serif-robust {
-  .display-alt {
-    font-size: $h1-font-size;
-    font-weight: $font-light;
-  }
-
-  .font-lead {
-    font-weight: $font-light;
-
-    .font-lead-alt {
-      @include font-lead-alt;
-    }
-  }
-
-  &.serif-body {
-    .font-example {
-      p {
-        font-family: $font-heading; //TODO: this is confusing serif --> sans / heading etc. Update this code based on the new fonts ...
-        font-size: rem(15px);
-        line-height: $lead-line-height;
-      }
-
-      // scss-lint:disable SelectorDepth, NestingDepth
-      .font-lead {
-        font-size: $h3-font-size;
-
-        .font-lead-alt {
-          @include font-lead-alt;
-        }
-      }
-    }
-  }
-}
-
-.sans-style {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $font-text-regular;
-  }
-
-  h1 {
-    font-size: rem(44px);
-  }
-
-  h2 {
-    font-size: rem(34px);
-  }
-
-  h3 {
-    font-size: rem(24px);
-  }
-
-  h4 {
-    font-size: rem(19px);
-  }
-
-  h5 {
-    font-size: rem(16px);
-  }
-
-  h6 {
-    font-size: rem(13px);
-  }
-
-  .display {
-    font-size: rem(59px);
-  }
-
-  .display-alt {
-    font-size: rem(44px);
-    font-weight: $font-text-regular; //$font-light;
-  }
-
-  .font-lead {
-    font-family: $font-text-regular; //$font-sans;
-    font-size: rem(22px);
-    font-weight: $font-light;
-    line-height: $base-line-height;
-  }
-
-  &.serif-body {
-    .font-example {
-      p {
-        font-family: $font-text-regular; //$font-heading; //$font-serif;
-        font-size: rem(15px);
-        line-height: $lead-line-height;
-      }
-
-      .font-lead {
-        font-family: $font-text-regular; //$font-sans;
-        font-size: rem(22px);
-        font-weight: $font-light;
-        line-height: $base-line-height;
-      }
-    }
-  }
-}
-
-.serif-sans-minor {
-  h6 {
-    font-family: $font-text-regular //$font-sans;
-  }
-}
 
 .accordion-docs {
   margin-bottom: 6rem;
@@ -1348,6 +1247,10 @@ code {
       margin-top: 3.2rem;
     }
   }
+}
+
+.page-accordion-html{
+  padding-top: 4px;
 }
 
 .page-design-principles {
