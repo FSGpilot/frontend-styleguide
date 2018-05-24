@@ -14,6 +14,8 @@ subnav:
   href: '#displaytext'
 - text: Lead paragraph
   href: '#lead-paragraph'
+- text: Inline text elements
+  href: '#inlinetext'
 - text: Global settings
   href: '#global-settings'
 - text: Pairings and styles
