@@ -40,6 +40,12 @@
       0 1 2 3 4 5 6 7 8 9
     
   
+  
+  
+  Fallback font
+    Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.
+
+  
 
 
 
@@ -125,15 +131,51 @@ Note: Some pairings require more font weights than others. While this allows mor
       Web Hierarchy
       
         
+          Display 1
+        
+        
+          
+            font-family: IBMPlexSans
+            font-style: Bold 
+            font-weight: 700
+            font-size: 8.0rem/80px
+            line-height: 8.8rem/88px
+            color: #212121
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .displaytext__splash
+          
+        
+        
+          Display 2
+        
+        
+          
+            font-family: IBMPlexSans
+            font-style: Bold 
+            font-weight: 700
+            font-size: 6.0rem/60px
+            line-height: 7.2rem/72px
+            color: #212121
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .displaytext__large
+        
+        
           Heading 1
         
         
           
             font-family: IBMPlexSans
+            font-style: Bold 
             font-weight: 700
-            font-size: 4.3rem
-            line-height: 4.8rem 
-            color: #212121
+            font-size: 4.3rem/43px
+            line-height: 4.8rem/48px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;
+            class = .h1
+          
           
         
         
@@ -141,11 +183,15 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 600
-            font-size: 3.3rem
-            line-height: 4.0rem
-            color: #212121
+            font-size: 3.3rem/33px
+            line-height: 4.0rem/40px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h2&amp;gt;&amp;lt;/h2&amp;gt;
+            class = .h2
           
         
         
@@ -153,11 +199,15 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 600
-            font-size: 2.6rem
-            line-height: 3.2rem
-            color: #212121
+            font-size: 2.6rem/26px
+            line-height: 3.2rem/32px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h3&amp;gt;&amp;lt;/h3&amp;gt;
+            class = .h3
           
         
         
@@ -165,11 +215,15 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 600
-            font-size: 2.2rem
-            line-height: 2.4rem
-            color: #212121
+            font-size: 2.2rem/22px
+            line-height: 2.4rem/24px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h4&amp;gt;&amp;lt;/h4&amp;gt;
+            class = .h4
           
         
         
@@ -177,11 +231,15 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
-            font-weight: 400
-            font-size: 2.0rem
-            line-height: 2.4rem 
-            color: #212121
+            font-family: ‘IBMPlexSans’
+            font-style: normal
+            font-weight: 500
+            font-size: 2.0rem/20px
+            line-height: 2.4rem/24px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h5&amp;gt;&amp;lt;/h5&amp;gt;
+            class = .h5
           
         
         
@@ -189,56 +247,95 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 600
-            font-size: 1.6rem
-            line-height: 2.4rem
-            color: #212121
+            font-size: 1.6rem/16px
+            line-height: 2.4rem/24px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h6&amp;gt;&amp;lt;/h6&amp;gt;
+            class = .h6
           
         
         
-          Lead paragraph 1
+          Lead paragraph
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 300
-            font-size: 20px
-            line-height: 1.7em/34px
-          
-        
-        
-          Lead paragraph 2
-        
-        
-          
-            font-family: ‘Merriweather’
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 400
-            font-size: 17px
-            line-height: 1.7em/29px
+            font-size: 2.5rem/25px
+            line-height: 3.2rem/32px
+            color: #454545
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .font-lead
           
         
         
-          Body copy. A series of sentences together which make a paragraph.
+          Body copy
         
         
           
-            font-family: ‘Merriweather’
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 400
-            font-size: 15px
-            line-height: 1.7em/26px
+            font-size: 1.8rem/18px
+            line-height: 2.4rem/24px
+            color: #454545
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .body-copy-text
           
         
         
-          Italic body copy. A series of sentences together which make a paragraph.
+          Body copy italic
         
         
           
-            font-family: ‘Merriweather’
+            font-family: ‘IBMPlexSans’
             font-style: Italic
             font-weight: 400
-            font-size: 15px
-            line-height: 1.7em/26px
+            font-size: 1.8rem/18px
+            line-height: 2.4rem/24px
+            color: #454545
+            
+            tag = &amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;
+            class = .body-copy-text
+          
+        
+        
+          Body copy bold
+        
+        
+          
+            font-family: ‘IBMPlexSans’
+            font-style: normal
+            font-weight: 600
+            font-size: 1.8rem/18px
+            line-height: 2.4rem/24px
+            color: #323a44
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .body-copy-text .bold
+          
+        
+        
+          Small text
+        
+        
+          
+            font-family: ‘IBMPlexSans’
+            font-style: normal
+            font-weight: 500
+            font-size: 1.4rem/13px
+            line-height: 1.6rem/16px
+            color: #454545
+            
+            tag = &amp;lt;small&amp;gt;&amp;lt;/small&amp;gt;
+            class = .small-text
           
         
       
@@ -459,7 +556,7 @@ Links lead users to a different page or further information.
 &amp;lt;/p&amp;gt;
 
 &amp;lt;p&amp;gt;This is a link that goes to an
-    &amp;lt;a href=&quot;http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif&quot; class=&quot;external_link&quot;&amp;gt;external website&amp;lt;/a&amp;gt;
+    &amp;lt;a href=&quot;&quot; class=&quot;textlink-icon external_link&quot;&amp;gt;external website&amp;lt;/a&amp;gt;
 
     &amp;lt;p&amp;gt;This is a text
         &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;&amp;gt;Disabled link state&amp;lt;/a&amp;gt;
@@ -553,32 +650,63 @@ Lists organize written information for users.
     
 &amp;lt;div class=&quot;usa-grid-full&quot;&amp;gt;
     &amp;lt;div class=&quot;usa-width-one-third&quot;&amp;gt;
-
         &amp;lt;h4 class=&quot;usa-heading-alt&quot;&amp;gt;Unordered list&amp;lt;/h4&amp;gt;
         &amp;lt;ul&amp;gt;
-
-            &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt;
-
+            &amp;lt;li&amp;gt;Unordered list item
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Unordered list item
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/li&amp;gt;
         &amp;lt;/ul&amp;gt;
-
     &amp;lt;/div&amp;gt;
     &amp;lt;div class=&quot;usa-width-one-third&quot;&amp;gt;
-
         &amp;lt;h4 class=&quot;usa-heading-alt&quot;&amp;gt;Ordered list&amp;lt;/h4&amp;gt;
         &amp;lt;ol&amp;gt;
-
-            &amp;lt;li&amp;gt;Ordered list item&amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;Ordered list item&amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;Ordered list item&amp;lt;/li&amp;gt;
-
+            &amp;lt;li&amp;gt;Ordered list item
+                &amp;lt;ol&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ol&amp;gt;
+            &amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Ordered list item
+                &amp;lt;ol&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ol&amp;gt;
+            &amp;lt;/li&amp;gt;
         &amp;lt;/ol&amp;gt;
-
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&quot;usa-width-one-third&quot;&amp;gt;
+        &amp;lt;h4 class=&quot;usa-heading-alt&quot;&amp;gt;Mixed ordered and unordered list&amp;lt;/h4&amp;gt;
+        &amp;lt;ol&amp;gt;
+            &amp;lt;li&amp;gt;Ordered list item
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+                &amp;lt;ol&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ol&amp;gt;
+            &amp;lt;/li&amp;gt;
+        &amp;lt;/ol&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Unordered list item
+                &amp;lt;ol&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ol&amp;gt;
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 
@@ -638,6 +766,12 @@ Lists organize written information for users.
       0 1 2 3 4 5 6 7 8 9
     
   
+  
+  
+  Fallback font
+    Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.
+
+  
 
 
 
@@ -723,15 +857,51 @@ Note: Some pairings require more font weights than others. While this allows mor
       Web Hierarchy
       
         
+          Display 1
+        
+        
+          
+            font-family: IBMPlexSans
+            font-style: Bold 
+            font-weight: 700
+            font-size: 8.0rem/80px
+            line-height: 8.8rem/88px
+            color: #212121
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .displaytext__splash
+          
+        
+        
+          Display 2
+        
+        
+          
+            font-family: IBMPlexSans
+            font-style: Bold 
+            font-weight: 700
+            font-size: 6.0rem/60px
+            line-height: 7.2rem/72px
+            color: #212121
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .displaytext__large
+        
+        
           Heading 1
         
         
           
             font-family: IBMPlexSans
+            font-style: Bold 
             font-weight: 700
-            font-size: 4.3rem
-            line-height: 4.8rem 
-            color: #212121
+            font-size: 4.3rem/43px
+            line-height: 4.8rem/48px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;
+            class = .h1
+          
           
         
         
@@ -739,11 +909,15 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 600
-            font-size: 3.3rem
-            line-height: 4.0rem
-            color: #212121
+            font-size: 3.3rem/33px
+            line-height: 4.0rem/40px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h2&amp;gt;&amp;lt;/h2&amp;gt;
+            class = .h2
           
         
         
@@ -751,11 +925,15 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 600
-            font-size: 2.6rem
-            line-height: 3.2rem
-            color: #212121
+            font-size: 2.6rem/26px
+            line-height: 3.2rem/32px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h3&amp;gt;&amp;lt;/h3&amp;gt;
+            class = .h3
           
         
         
@@ -763,11 +941,15 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 600
-            font-size: 2.2rem
-            line-height: 2.4rem
-            color: #212121
+            font-size: 2.2rem/22px
+            line-height: 2.4rem/24px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h4&amp;gt;&amp;lt;/h4&amp;gt;
+            class = .h4
           
         
         
@@ -775,11 +957,15 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
-            font-weight: 400
-            font-size: 2.0rem
-            line-height: 2.4rem 
-            color: #212121
+            font-family: ‘IBMPlexSans’
+            font-style: normal
+            font-weight: 500
+            font-size: 2.0rem/20px
+            line-height: 2.4rem/24px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h5&amp;gt;&amp;lt;/h5&amp;gt;
+            class = .h5
           
         
         
@@ -787,56 +973,95 @@ Note: Some pairings require more font weights than others. While this allows mor
         
         
           
-            font-family: IBMPlexSans
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 600
-            font-size: 1.6rem
-            line-height: 2.4rem
-            color: #212121
+            font-size: 1.6rem/16px
+            line-height: 2.4rem/24px
+            color: #1a1a1a
+            
+            tag = &amp;lt;h6&amp;gt;&amp;lt;/h6&amp;gt;
+            class = .h6
           
         
         
-          Lead paragraph 1
+          Lead paragraph
         
         
           
-            font-family: ‘Merriweather’
-            font-weight: 300
-            font-size: 20px
-            line-height: 1.7em/34px
-          
-        
-        
-          Lead paragraph 2
-        
-        
-          
-            font-family: ‘Merriweather’
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 400
-            font-size: 17px
-            line-height: 1.7em/29px
+            font-size: 2.5rem/25px
+            line-height: 3.2rem/32px
+            color: #454545
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .font-lead
           
         
         
-          Body copy. A series of sentences together which make a paragraph.
+          Body copy
         
         
           
-            font-family: ‘Merriweather’
+            font-family: ‘IBMPlexSans’
+            font-style: normal
             font-weight: 400
-            font-size: 15px
-            line-height: 1.7em/26px
+            font-size: 1.8rem/18px
+            line-height: 2.4rem/24px
+            color: #454545
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .body-copy-text
           
         
         
-          Italic body copy. A series of sentences together which make a paragraph.
+          Body copy italic
         
         
           
-            font-family: ‘Merriweather’
+            font-family: ‘IBMPlexSans’
             font-style: Italic
             font-weight: 400
-            font-size: 15px
-            line-height: 1.7em/26px
+            font-size: 1.8rem/18px
+            line-height: 2.4rem/24px
+            color: #454545
+            
+            tag = &amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;
+            class = .body-copy-text
+          
+        
+        
+          Body copy bold
+        
+        
+          
+            font-family: ‘IBMPlexSans’
+            font-style: normal
+            font-weight: 600
+            font-size: 1.8rem/18px
+            line-height: 2.4rem/24px
+            color: #323a44
+            
+            tag = &amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;
+            class = .body-copy-text .bold
+          
+        
+        
+          Small text
+        
+        
+          
+            font-family: ‘IBMPlexSans’
+            font-style: normal
+            font-weight: 500
+            font-size: 1.4rem/13px
+            line-height: 1.6rem/16px
+            color: #454545
+            
+            tag = &amp;lt;small&amp;gt;&amp;lt;/small&amp;gt;
+            class = .small-text
           
         
       
@@ -1057,7 +1282,7 @@ Links lead users to a different page or further information.
 &amp;lt;/p&amp;gt;
 
 &amp;lt;p&amp;gt;This is a link that goes to an
-    &amp;lt;a href=&quot;http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif&quot; class=&quot;external_link&quot;&amp;gt;external website&amp;lt;/a&amp;gt;
+    &amp;lt;a href=&quot;&quot; class=&quot;textlink-icon external_link&quot;&amp;gt;external website&amp;lt;/a&amp;gt;
 
     &amp;lt;p&amp;gt;This is a text
         &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;&amp;gt;Disabled link state&amp;lt;/a&amp;gt;
@@ -1151,32 +1376,63 @@ Lists organize written information for users.
     
 &amp;lt;div class=&quot;usa-grid-full&quot;&amp;gt;
     &amp;lt;div class=&quot;usa-width-one-third&quot;&amp;gt;
-
         &amp;lt;h4 class=&quot;usa-heading-alt&quot;&amp;gt;Unordered list&amp;lt;/h4&amp;gt;
         &amp;lt;ul&amp;gt;
-
-            &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;Unordered list item&amp;lt;/li&amp;gt;
-
+            &amp;lt;li&amp;gt;Unordered list item
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Unordered list item
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/li&amp;gt;
         &amp;lt;/ul&amp;gt;
-
     &amp;lt;/div&amp;gt;
     &amp;lt;div class=&quot;usa-width-one-third&quot;&amp;gt;
-
         &amp;lt;h4 class=&quot;usa-heading-alt&quot;&amp;gt;Ordered list&amp;lt;/h4&amp;gt;
         &amp;lt;ol&amp;gt;
-
-            &amp;lt;li&amp;gt;Ordered list item&amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;Ordered list item&amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;Ordered list item&amp;lt;/li&amp;gt;
-
+            &amp;lt;li&amp;gt;Ordered list item
+                &amp;lt;ol&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ol&amp;gt;
+            &amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Ordered list item
+                &amp;lt;ol&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ol&amp;gt;
+            &amp;lt;/li&amp;gt;
         &amp;lt;/ol&amp;gt;
-
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&quot;usa-width-one-third&quot;&amp;gt;
+        &amp;lt;h4 class=&quot;usa-heading-alt&quot;&amp;gt;Mixed ordered and unordered list&amp;lt;/h4&amp;gt;
+        &amp;lt;ol&amp;gt;
+            &amp;lt;li&amp;gt;Ordered list item
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+                &amp;lt;ol&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ol&amp;gt;
+            &amp;lt;/li&amp;gt;
+        &amp;lt;/ol&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Unordered list item
+                &amp;lt;ol&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Ordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ol&amp;gt;
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Unordered sublist item&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 
@@ -1282,6 +1538,9 @@ Lists organize written information for users.
 
   </head>
   <body class="page-typography layout-styleguide">
+    <div class="hide-base-svg">
+      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="alert-outline" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol><symbol id="angle-arrow-down" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-up" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5z"/></symbol><symbol id="check-circle-outline" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></symbol><symbol id="close-circle-outline" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="content-save" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4z"/></symbol><symbol id="delete" viewBox="0 0 24 24"><path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12z"/></symbol><symbol id="error" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="help-circle-outline" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4z"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></symbol><symbol id="magnify" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></symbol><symbol id="minus" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></symbol><symbol id="open-in-new" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></symbol><symbol id="pencil" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></symbol><symbol id="success" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="warning" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol></svg>
+    </div>
     <a class="skipnav" href="#main-content">Skip to main content</a>
 <header class="header header-extended" role="banner">
 
@@ -1687,6 +1946,12 @@ Lists organize written information for users.
       <p class="text-tiny">0 1 2 3 4 5 6 7 8 9</p>
     </div>
   </div>
+  <div class="width-one-half">
+  <br />
+  <h4 class="heading">Fallback font</h4>
+    <p>Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.</p>
+
+  </div>
 </div>
 
 </section>
@@ -1705,7 +1970,7 @@ Lists organize written information for users.
 </p>
 <p>For at ændre font-style bruges variablerne:</p>
 <p class="monospace">
-	$font-style-normal
+	$font-style-normal<br />
 	$font-style-italic
 </p>
 
@@ -1772,27 +2037,67 @@ h1, .h1 {<br />
       <h6 class="heading-alt">Web Hierarchy</h6>
       <div class="serif-robust serif-sans-minor serif-body grid typography-example-font">
         <div class="width-one-half">
+          <p class="displaytext__splash">Display 1</p>
+        </div>
+        <div class="width-one-half end-row">
+          <p class="monospace">
+            font-family: IBMPlexSans<br />
+            font-style: Bold <br />
+            font-weight: 700<br />
+            font-size: 8.0rem/80px<br />
+            line-height: 8.8rem/88px<br />
+            color: #212121<br />
+            <br />
+            tag = <code>&lt;p&gt;&lt;/p&gt;</code><br />
+            class = <code>.displaytext__splash</code><br />
+          </p>
+        </div>
+        <div class="width-one-half">
+          <p class="displaytext__large">Display 2</p>
+        </div>
+        <div class="width-one-half end-row">
+          <p class="monospace">
+            font-family: IBMPlexSans<br />
+            font-style: Bold <br />
+            font-weight: 700<br />
+            font-size: 6.0rem/60px<br />
+            line-height: 7.2rem/72px<br />
+            color: #212121<br />
+            <br />
+            tag = <code>&lt;p&gt;&lt;/p&gt;</code><br />
+            class = <code>.displaytext__large</code><br /></p>
+        </div>
+        <div class="width-one-half">
           <h1>Heading 1</h1>
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
             font-family: IBMPlexSans<br />
+            font-style: Bold<br /> 
             font-weight: 700<br />
-            font-size: 4.3rem<br />
-            line-height: 4.8rem <br />
-            color: #212121
+            font-size: 4.3rem/43px<br />
+            line-height: 4.8rem/48px<br />
+            color: #1a1a1a<br />
+            <br />
+            tag = <code>&lt;h1&gt;&lt;/h1&gt;</code><br />
+            class = <code>.h1</code><br />
           </p>
+          
         </div>
         <div class="width-one-half">
           <h2>Heading 2</h2>
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: IBMPlexSans<br />
+            font-family: ‘IBMPlexSans’<br />
+            font-style: normal<br />
             font-weight: 600<br />
-            font-size: 3.3rem<br />
-            line-height: 4.0rem<br />
-            color: #212121
+            font-size: 3.3rem/33px<br />
+            line-height: 4.0rem/40px<br />
+            color: #1a1a1a<br />
+            <br />
+            tag = <code>&lt;h2&gt;&lt;/h2&gt;</code><br />
+            class = <code>.h2</code><br />
           </p>
         </div>
         <div class="width-one-half">
@@ -1800,11 +2105,15 @@ h1, .h1 {<br />
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: IBMPlexSans<br />
+            font-family: ‘IBMPlexSans’<br />
+            font-style: normal<br />
             font-weight: 600<br />
-            font-size: 2.6rem<br />
-            line-height: 3.2rem<br />
-            color: #212121
+            font-size: 2.6rem/26px<br />
+            line-height: 3.2rem/32px<br />
+            color: #1a1a1a<br />
+            <br />
+            tag = <code>&lt;h3&gt;&lt;/h3&gt;</code><br />
+            class = <code>.h3</code><br />
           </p>
         </div>
         <div class="width-one-half">
@@ -1812,11 +2121,15 @@ h1, .h1 {<br />
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: IBMPlexSans<br />
+            font-family: ‘IBMPlexSans’<br />
+            font-style: normal<br />
             font-weight: 600<br />
-            font-size: 2.2rem<br />
-            line-height: 2.4rem<br />
-            color: #212121
+            font-size: 2.2rem/22px<br />
+            line-height: 2.4rem/24px<br />
+            color: #1a1a1a<br />
+            <br />
+            tag = <code>&lt;h4&gt;&lt;/h4&gt;</code><br />
+            class = <code>.h4</code><br />
           </p>
         </div>
         <div class="width-one-half">
@@ -1824,11 +2137,15 @@ h1, .h1 {<br />
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: IBMPlexSans<br />
-            font-weight: 400<br />
-            font-size: 2.0rem<br />
-            line-height: 2.4rem<br /> 
-            color: #212121
+            font-family: ‘IBMPlexSans’<br />
+            font-style: normal<br />
+            font-weight: 500<br />
+            font-size: 2.0rem/20px<br />
+            line-height: 2.4rem/24px<br />
+            color: #1a1a1a<br />
+            <br />
+            tag = <code>&lt;h5&gt;&lt;/h5&gt;</code><br />
+            class = <code>.h5</code><br />
           </p>
         </div>
         <div class="width-one-half">
@@ -1836,56 +2153,95 @@ h1, .h1 {<br />
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: IBMPlexSans<br />
+            font-family: ‘IBMPlexSans’<br />
+            font-style: normal<br />
             font-weight: 600<br />
-            font-size: 1.6rem<br />
-            line-height: 2.4rem<br />
-            color: #212121
+            font-size: 1.6rem/16px<br />
+            line-height: 2.4rem/24px<br />
+            color: #1a1a1a<br />
+            <br />
+            tag = <code>&lt;h6&gt;&lt;/h6&gt;</code><br />
+            class = <code>.h6</code><br />
           </p>
         </div>
         <div class="font-example width-one-half">
-          <p class="font-lead">Lead <br />paragraph 1</p>
+          <p class="font-lead">Lead paragraph</p>
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: ‘Merriweather’<br />
-            font-weight: 300<br />
-            font-size: 20px<br />
-            line-height: 1.7em/34px
-          </p>
-        </div>
-        <div class="font-example width-one-half">
-          <p class="font-lead font-lead-alt">Lead <br />paragraph 2</p>
-        </div>
-        <div class="width-one-half end-row">
-          <p class="monospace">
-            font-family: ‘Merriweather’<br />
+            font-family: ‘IBMPlexSans’<br />
+            font-style: normal<br />
             font-weight: 400<br />
-            font-size: 17px<br />
-            line-height: 1.7em/29px
+            font-size: 2.5rem/25px<br />
+            line-height: 3.2rem/32px<br />
+            color: #454545<br />
+            <br />
+            tag = <code>&lt;p&gt;&lt;/p&gt;</code><br />
+            class = <code>.font-lead</code><br />
           </p>
         </div>
         <div class="font-example width-one-half">
-          <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
+          <p class="font-example-paragraph">Body copy</p>
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: ‘Merriweather’<br />
+            font-family: ‘IBMPlexSans’<br />
+            font-style: normal<br />
             font-weight: 400<br />
-            font-size: 15px<br />
-            line-height: 1.7em/26px
+            font-size: 1.8rem/18px<br />
+            line-height: 2.4rem/24px<br />
+            color: #454545<br />
+            <br />
+            tag = <code>&lt;p&gt;&lt;/p&gt;</code><br />
+            class = <code>.body-copy-text</code><br />
           </p>
         </div>
         <div class="font-example width-one-half">
-          <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
+          <em class="font-example-paragraph">Body copy italic</em>
         </div>
         <div class="width-one-half end-row">
           <p class="monospace">
-            font-family: ‘Merriweather’<br />
+            font-family: ‘IBMPlexSans’<br />
             font-style: Italic<br />
             font-weight: 400<br />
-            font-size: 15px<br />
-            line-height: 1.7em/26px
+            font-size: 1.8rem/18px<br />
+            line-height: 2.4rem/24px<br />
+            color: #454545<br />
+            <br />
+            tag = <code>&lt;em&gt;&lt;/em&gt;</code><br />
+            class = <code>.body-copy-text</code><br />
+          </p>
+        </div>
+        <div class="font-example width-one-half">
+          <p class="font-example-paragraph bold">Body copy bold</p>
+        </div>
+        <div class="width-one-half end-row">
+          <p class="monospace">
+            font-family: ‘IBMPlexSans’<br />
+            font-style: normal<br />
+            font-weight: 600<br />
+            font-size: 1.8rem/18px<br />
+            line-height: 2.4rem/24px<br />
+            color: #323a44<br />
+            <br />
+            tag = <code>&lt;p&gt;&lt;/p&gt;</code><br />
+            class = <code>.body-copy-text .bold</code><br />
+          </p>
+        </div>
+        <div class="font-example width-one-half">
+          <small class="font-example-paragraph small-text">Small text</small>
+        </div>
+        <div class="width-one-half end-row">
+          <p class="monospace">
+            font-family: ‘IBMPlexSans’<br />
+            font-style: normal<br />
+            font-weight: 500<br />
+            font-size: 1.4rem/13px<br />
+            line-height: 1.6rem/16px<br />
+            color: #454545<br />
+            <br />
+            tag = <code>&lt;small&gt;&lt;/small&gt;</code><br />
+            class = <code>.small-text</code><br />
           </p>
         </div>
       </div>
@@ -2110,7 +2466,7 @@ h1, .h1 {<br />
 <span class="nt">&lt;/p&gt;</span>
 
 <span class="nt">&lt;p&gt;</span>This is a link that goes to an
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://media.giphy.com/media/8sgNa77Dvj7tC/giphy.gif"</span> <span class="na">class=</span><span class="s">"external_link"</span><span class="nt">&gt;</span>external website<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"textlink-icon external_link"</span><span class="nt">&gt;</span>external website<span class="nt">&lt;/a&gt;</span>
 
     <span class="nt">&lt;p&gt;</span>This is a text
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Disabled link state<span class="nt">&lt;/a&gt;</span>
@@ -2206,32 +2562,63 @@ h1, .h1 {<br />
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-grid-full"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-width-one-third"</span><span class="nt">&gt;</span>
-
         <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"usa-heading-alt"</span><span class="nt">&gt;</span>Unordered list<span class="nt">&lt;/h4&gt;</span>
         <span class="nt">&lt;ul&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>Unordered list item<span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>Unordered list item<span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>Unordered list item<span class="nt">&lt;/li&gt;</span>
-
+            <span class="nt">&lt;li&gt;</span>Unordered list item
+                <span class="nt">&lt;ul&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Unordered sublist item<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Unordered list item
+                <span class="nt">&lt;ul&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Unordered sublist item<span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Unordered sublist item<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
-
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-width-one-third"</span><span class="nt">&gt;</span>
-
         <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"usa-heading-alt"</span><span class="nt">&gt;</span>Ordered list<span class="nt">&lt;/h4&gt;</span>
         <span class="nt">&lt;ol&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>Ordered list item<span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>Ordered list item<span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>Ordered list item<span class="nt">&lt;/li&gt;</span>
-
+            <span class="nt">&lt;li&gt;</span>Ordered list item
+                <span class="nt">&lt;ol&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Ordered sublist item<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ol&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Ordered list item
+                <span class="nt">&lt;ol&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Ordered sublist item<span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Ordered sublist item<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ol&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;/ol&gt;</span>
-
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-width-one-third"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"usa-heading-alt"</span><span class="nt">&gt;</span>Mixed ordered and unordered list<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;ol&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Ordered list item
+                <span class="nt">&lt;ul&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Unordered sublist item<span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Unordered sublist item<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;ol&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Ordered sublist item<span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Ordered sublist item<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ol&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ol&gt;</span>
+        <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>Unordered list item
+                <span class="nt">&lt;ol&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Ordered sublist item<span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Ordered sublist item<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ol&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Unordered sublist item<span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Unordered sublist item<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
