@@ -462,7 +462,7 @@ body {
   display: none !important;
   /* stylelint-disable-line declaration-no-important */ }
 
-*:focus,
+a:focus, button:focus, input:focus, select:focus,
 .focus {
   outline: 4px solid #febb30;
   outline-offset: 0; }
@@ -3757,7 +3757,7 @@ h5, .h5 {
   font-family: "IBMPlexSans";
   font-size: 2rem;
   line-height: 2.4rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #1a1a1a; }
 
 h6, .h6 {
@@ -4548,7 +4548,7 @@ label {
 input,
 textarea {
   appearance: none;
-  border: 1px solid #747474;
+  border: 1px solid #999999;
   border-radius: 4px;
   color: #1a1a1a;
   display: block;
@@ -4567,7 +4567,7 @@ textarea {
 
 select {
   background-color: #ffffff;
-  border: 1px solid #747474;
+  border: 1px solid #999999;
   border-radius: 4px;
   color: #1a1a1a;
   display: block;
@@ -4903,7 +4903,7 @@ li {
 
 .select2-dropdown {
   background-color: #fff;
-  border: 1px solid #747474;
+  border: 1px solid #999999;
   border-radius: 3px;
   box-sizing: border-box;
   display: block;
@@ -4988,7 +4988,7 @@ li {
 
 .select2-container--default .select2-selection--single {
   background-color: #fff;
-  border: 1px solid #747474;
+  border: 1px solid #999999;
   border-radius: 3px; }
   .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #1a1a1a;
@@ -5031,7 +5031,7 @@ li {
   border-width: 0 4px 5px 4px; }
 .select2-container--default .select2-selection--multiple {
   background-color: #fff;
-  border: 1px solid #747474;
+  border: 1px solid #999999;
   border-radius: 3px;
   cursor: text; }
   .select2-container--default .select2-selection--multiple .select2-selection__rendered {
