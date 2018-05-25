@@ -5584,13 +5584,14 @@ li {
   .alert .alert-heading {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
-    line-height: 1.33; }
+    line-height: 2.4rem;
+    color: #454545; }
   .alert .alert-text {
     margin-bottom: 0;
     margin-top: 0;
-    color: #1a1a1a;
+    color: #454545;
     max-width: 67.2rem; }
 
 .alert-success {
@@ -5616,7 +5617,7 @@ li {
 
 .alert-info {
   background-color: #e2f2fb;
-  border-color: #0d405e; }
+  border-color: #1B86C3; }
   .alert-info.alert--show-icon {
     background-image: url("../assets/img/svg-icons/info.svg");
     padding-left: 48px; }
@@ -8046,7 +8047,7 @@ section + section, .font-lead + section {
   background-color: #febb30; }
 
 .color-info {
-  background-color: #0d405e; }
+  background-color: #1B86C3; }
 
 .color-error-background {
   background-color: #fbd3d3; }
@@ -8813,7 +8814,7 @@ div.anno-container {
       color: #fff;
       font-size: 30px;
       line-height: 39px;
-      background-color: #0d405e;
+      background-color: #1B86C3;
       border-radius: 50%; }
   .list-tile .list-tile-content {
     display: flex;
