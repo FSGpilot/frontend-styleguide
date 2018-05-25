@@ -4161,7 +4161,8 @@ button,
     color: #212121;
     background-color: transparent;
     border-color: transparent;
-    text-decoration: underline; }
+    text-decoration: underline;
+    font-weight: 400; }
     .button.button-ghost:hover, .button.button-ghost.button-hover,
     button.button-ghost:hover,
     button.button-ghost.button-hover,
@@ -4226,8 +4227,9 @@ button,
   [type=reset].button-tertiary,
   [type=image].button-tertiary {
     border-color: #BFBFBF;
-    background-color: #ffffff;
-    color: #1a1a1a; }
+    background-color: transparent;
+    color: #1a1a1a;
+    font-weight: 400; }
     .button.button-tertiary:hover, .button.button-tertiary.button-hover,
     button.button-tertiary:hover,
     button.button-tertiary.button-hover,
@@ -4251,7 +4253,7 @@ button,
     [type=reset].button-tertiary.button-active,
     [type=image].button-tertiary:active,
     [type=image].button-tertiary.button-active {
-      border-color: #1a1a1a; }
+      border-color: #454545; }
     .button.button-tertiary.focus, .button.button-tertiary:focus,
     button.button-tertiary.focus,
     button.button-tertiary:focus,
@@ -4264,7 +4266,7 @@ button,
     [type=image].button-tertiary.focus,
     [type=image].button-tertiary:focus {
       border-color: #BFBFBF;
-      background-color: #ffffff; }
+      background-color: transparent; }
   .button.button-small,
   button.button-small,
   [type=button].button-small,
@@ -4643,60 +4645,55 @@ legend {
   cursor: pointer;
   font-weight: 400;
   margin-bottom: 0.65em; }
+  [type=checkbox] + label.focus,
+  [type=radio] + label.focus {
+    outline: none; }
 
 [type=checkbox] + label::before,
 [type=radio] + label::before {
-  background: #ffffff;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px #747474;
   content: '\a0';
   display: inline-block;
   height: 2.4rem;
   line-height: 2.4rem;
-  margin-right: 0.6em;
-  text-indent: 0.15em;
-  vertical-align: middle\0;
-  width: 2.4rem; }
+  width: 2.4rem;
+  margin-right: 0.8rem; }
 
 [type=radio] + label::before {
-  border-radius: 100%;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #747474;
-  height: 1.4rem;
-  line-height: 1.4rem;
-  margin-right: 0.75em;
-  width: 1.4rem; }
-
-[type=checkbox]:checked + label::before,
-[type=radio]:checked + label::before {
-  background-color: #747474;
-  box-shadow: 0 0 0 1px #747474; }
-
-[type=radio]:checked + label::before {
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #747474; }
-
-[type=checkbox]:checked + label::before,
-[type=checkbox]:checked:disabled + label::before {
-  background-image: url("../assets/img/correct8.png");
-  background-image: url("../assets/img/correct8.svg");
+  background-image: url("../assets/img/svg-icons//check-box-unchecked.svg");
   background-position: 50%;
   background-repeat: no-repeat; }
 
-[type=radio]:focus + label::before {
-  outline: 4px solid #febb30;
-  outline-offset: 5px; }
+[type=checkbox] + label::before {
+  background-image: url("../assets/img/svg-icons//check-box-unchecked.svg");
+  background-position: 50%;
+  background-repeat: no-repeat; }
 
-[type=checkbox]:disabled + label {
-  color: #BFBFBF; }
+[type=checkbox]:checked + label::before {
+  background-image: url("../assets/img/svg-icons//check-box-checked.svg") !important;
+  background-position: 50%;
+  background-repeat: no-repeat; }
+
+[type=checkbox]:checked:disabled + label::before {
+  background-image: url("../assets/img/svg-icons//check-box-disabled.svg");
+  background-position: 50%;
+  background-repeat: no-repeat; }
+
+.focus:before {
+  background-image: url("../assets/img/svg-icons//check-box-focus.svg") !important; }
 
 [type=checkbox]:focus + label::before {
-  outline: 4px solid #febb30;
-  outline-offset: 0px; }
+  background-image: url("../assets/img/svg-icons//check-box-focus.svg");
+  background-position: 50%;
+  background-repeat: no-repeat; }
 
 [type=checkbox]:disabled + label::before,
 [type=radio]:disabled + label::before {
-  background: #F5F5F5;
-  box-shadow: 0 0 0 1px #999999;
   cursor: not-allowed; }
+
+[type=checkbox]:disabled + label::before {
+  background-image: url("../assets/img/svg-icons//check-box-disabled.svg");
+  background-position: 50%;
+  background-repeat: no-repeat; }
 
 [type=range] {
   appearance: none;
@@ -6890,49 +6887,22 @@ input.input-medium {
     display: block; }
   .search__item-wrapper {
     display: flex !important; }
+    .search__item-wrapper .search__submit {
+      width: 5.6rem; }
+    .search__item-wrapper .search__text_submit {
+      width: inherit !important; }
   .search__text_submit {
-    background-image: none !important; }
+    background-image: none !important;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem; }
   .search [type=submit],
-  .search .search-submit {
+  .search .search__submit {
     background-image: url("../assets/img/search.png");
     background-image: url("../assets/img/search.svg");
     background-position: 50%;
     background-repeat: no-repeat;
     border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    height: 3.3rem;
-    margin: 0;
-    padding: 0;
-    width: 4.5rem; }
-    @media screen and (min-width: 576px) {
-      .search [type=submit],
-      .search .search-submit {
-        width: 8.5rem; } }
-  @media screen and (min-width: 576px) {
-    .search.search-big [type=search],
-    .search.search-big .search-input {
-      font-size: 18px;
-      width: calc(100% - 11.6rem); }
-    .search.search-big [type=submit],
-    .search.search-big .search-submit {
-      font-size: 2.6rem;
-      height: 4.4rem;
-      width: 11.6rem; } }
-  @media screen and (min-width: 576px) {
-    .search.search-small [type=search],
-    .search.search-small .search-input {
-      width: calc(100% - 4.5rem); }
-    .search.search-small [type=submit],
-    .search.search-small .search-submit {
-      background-image: url("../assets/img/search.png");
-      background-image: url("../assets/img/search.svg");
-      background-position: 50%;
-      background-repeat: no-repeat;
-      width: 4.5rem; } }
-  @media screen and (max-width: 991px) {
-    .search.search-small.sr-only {
-      left: auto;
-      position: relative; } }
+    border-top-left-radius: 0; }
 
 input[type=search] {
   /* stylelint-disable-line selector-no-qualifying-type */
@@ -6945,12 +6915,7 @@ input[type=search] {
   border-right: none;
   border-top-right-radius: 0;
   box-sizing: border-box;
-  margin: 0;
-  width: calc(100% - 4.5rem); }
-  @media screen and (min-width: 576px) {
-    [type=search],
-    .search-input {
-      width: calc(100% - 8.5rem); } }
+  margin: 0; }
 
 .search-submit-text {
   position: absolute;
