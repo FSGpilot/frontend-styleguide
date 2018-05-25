@@ -3872,10 +3872,6 @@ dfn {
   .background-dark p,
   .background-dark span {
     color: #ffffff; }
-  .background-dark a {
-    color: #BFBFBF; }
-    .background-dark a:hover {
-      color: #ffffff; }
 
 .step-title {
   margin-top: 0;
@@ -4106,7 +4102,7 @@ button,
     [type=reset].button-primary:focus,
     [type=image].button-primary.focus,
     [type=image].button-primary:focus {
-      background-color: #454545;
+      background-color: #747474;
       border-color: #1a1a1a; }
   .button.button-secondary,
   button.button-secondary,

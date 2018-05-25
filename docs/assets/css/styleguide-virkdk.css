@@ -3880,10 +3880,6 @@ dfn {
   .background-dark p,
   .background-dark span {
     color: #ffffff; }
-  .background-dark a {
-    color: #BFBFBF; }
-    .background-dark a:hover {
-      color: #ffffff; }
 
 .step-title {
   margin-top: 0;
