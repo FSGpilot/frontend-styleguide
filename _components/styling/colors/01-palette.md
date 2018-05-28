@@ -38,33 +38,32 @@ order: 01
 
 <h4 class="heading">Nuancer</h4>
 
-
 <div class="container color-row-container">
   <div class="row color-row">
 
-    <!-- color-gray-medium-light start -->
+    <!-- color-gray-dark start -->
     <div class="col-md-3 color-col ">
-      <div class="color-container color-gray-medium-light"></div>
+      <div class="color-container color-gray-dark"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#454545</strong></p>
         <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
         <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-gray-medium-light</p>
+        <p>$color-gray-dark</p>
       </div>
     </div>
-    <!-- color-gray-medium-light end -->
+    <!-- color-gray-dark end -->
 
-    <!-- color-gray-medium-dark-light start -->
+    <!-- color-gray-medium-dark start -->
     <div class="col-md-3 color-col ">
-      <div class="color-container color-gray-medium-dark-light"></div>
+      <div class="color-container color-gray-medium-dark"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#747474</strong></p>
         <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
         <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-gray-medium-dark-light</p>
+        <p>$color-gray-medium-dark</p>
       </div>
     </div>
-    <!-- color-gray-medium-dark-light end -->
+    <!-- color-gray-medium-dark end -->
 
     <!-- color-gray-medium-light start -->
     <div class="col-md-3 color-col ">
@@ -106,8 +105,251 @@ order: 01
 
 
 <h3 class="heading">Opmærksomhedsfarver</h3>
+<div class="container color-row-container">
+  <div class="row color-row">
+
+    <!-- color-success START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-success"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#87C51C</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-success</p>
+      </div>
+    </div>
+    <!-- color-success END -->
+
+    <!-- color-warning START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-warning"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#FEBB30</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-warning</p>
+      </div>
+    </div>
+    <!-- color-warning END -->
+
+    <!-- color-error START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-error"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#E92021</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-error</p>
+      </div>
+    </div>
+    <!-- color-error END -->
+
+    <!-- color-info START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-info"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#1B86C3</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-info</p>
+      </div>
+    </div>
+    <!-- color-info END -->
+
+    <!-- color-success-light START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-success-light"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#E7FBE4</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-success-light</p>
+      </div>
+    </div>
+    <!-- color-success-light END -->
+
+    <!-- color-warning-light START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-warning-light"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#FFEECC</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-warning-light</p>
+      </div>
+    </div>
+    <!-- color-warning-light END -->
+
+    <!-- color-error-light START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-error-light"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#FBD3D3</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-error-light</p>
+      </div>
+    </div>
+    <!-- color-error-light END -->
+
+    <!-- color-info-light START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-info-light"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#E2F2FB</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-info-light</p>
+      </div>
+    </div>
+    <!-- color-info-light END -->
+  </div>
+</div>
 <h3 class="heading">Interaktionsfarver</h3>
+<div class="container color-row-container">
+  <div class="row color-row">
+
+    <!-- color-link START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-link"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#1B86C3</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-link</p>
+      </div>
+    </div>
+    <!-- color-link END -->
+
+    <!-- color-link-hover START -->
+    <div class="col-md-3 color-col">
+      <div class="color-container color-link-hover"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#125880</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-link-hover</p>
+      </div>
+    </div>
+    <!-- color-link-hover END -->
+
+    <!-- color-active START -->
+    <div class="col-md-3 color-col">
+      <div class="color-container color-active"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#0D405E</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-active</p>
+      </div>
+    </div>
+    <!-- color-active END -->
+
+    <!-- color-visited START -->
+    <div class="col-md-3 color-col">
+      <div class="color-container color-visited"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#801258</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-visited</p>
+      </div>
+    </div>
+    <!-- color-visited END -->
+
+    <!-- color-focus START -->
+    <div class="col-md-3 color-col">
+      <div class="color-container color-focus"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#FEBB30</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-focus</p>
+      </div>
+    </div>
+    <!-- color-focus END -->
+
+  </div>
+</div>
+
 <h3 class="heading">Theme farver</h3>
+<div class="container color-row-container">
+  <div class="row color-row">
+
+    <!-- borger primary START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container borger-primary"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#568331</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$primary-color (Temabaseret)</p>
+      </div>
+    </div>
+    <!-- borger primary END -->
+
+    <!-- borger medium START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container borger-medium"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#3C5C22</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$primary-medium (Temabaseret)</p>
+      </div>
+    </div>
+    <!-- borger medium END -->
+
+    <!-- borger dark START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container borger-dark"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#233614</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$primary-dark (Temabaseret)</p>
+      </div>
+    </div>
+    <!-- borger dark END -->
+
+    <!-- virk primary START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container virk-primary"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#067293</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$primary-color (Temabaseret)</p>
+      </div>
+    </div>
+    <!--virk primary END -->
+
+    <!-- virk medium START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container virk-medium"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#04556E</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$primary-medium (Temabaseret)</p>
+      </div>
+    </div>
+    <!--virk medium END -->
+
+    <!-- virk dark START -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container virk-dark"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#033747</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$primary-dark (Temabaseret)</p>
+      </div>
+    </div>
+    <!--virk dark END -->
+
+  </div>
+</div>
 <h3 class="heading">Data farver</h3>
 <h4 class="heading">Værdifarver</h4>
 <h4 class="heading">Data visualisation colours</h4>
