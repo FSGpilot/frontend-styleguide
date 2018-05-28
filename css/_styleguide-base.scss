@@ -206,6 +206,7 @@ body {
 //     padding: 1.4rem 1.5rem 1rem 1.8rem;
 
 //     &:hover {
+
 //       background-color: $color-gray-medium-light;
 //       color: $color-primary;
 //     }
@@ -258,6 +259,7 @@ body {
 
 //   @include media($nav-width) {
 //     background-color: $color-white;
+
 //     border-bottom: 1px solid $color-gray-medium-light;
 //     clear: both;
 //     display: block;
@@ -410,16 +412,19 @@ body {
 }
 
 .label-alpha {
+
   @include label-link($color-error-light, $color-error-light);
 }
 
 .label-beta,
 .label-in-progress {
+
   @include label-link($color-warning-light, $color-warning-light);
 }
 
 .label-recommended,
 .label-done {
+
   @include label-link($color-success, $color-success-light);
 }
 
@@ -480,6 +485,7 @@ a.cta {
 
 //     a {
 //       @include media-link;
+
 //       color: $color-gray-medium-light;
 
 //       &:hover {
@@ -743,6 +749,7 @@ section + section, .font-lead + section{
   background-color: $color-black;
 }
 
+
 // Gray-scales
 .color-gray-darkest {
 
@@ -754,15 +761,19 @@ section + section, .font-lead + section{
   background-color: $color-gray-medium-dark;
 }
 .color-gray-light {
+
   background-color: $color-gray-medium-light;
 }
 .color-gray-lighter {
+
   background-color: $color-gray-medium-light;
 }
 .color-gray-lightest {
+
   background-color: $color-gray-medium-light;
 }
 .color-gray-brightest {
+
   background-color: $color-gray-medium-dark;
 }
 
@@ -848,15 +859,19 @@ section + section, .font-lead + section{
 }
 
 .color-error-background {
+
   background-color: $color-error-light;
 }
 .color-success-background {
+
   background-color: $color-success-light;
 }
 .color-warning-background {
+
   background-color: $color-warning-light;
 }
 .color-info-background {
+
   background-color: $color-info-light;
 }
 
@@ -920,21 +935,26 @@ section + section, .font-lead + section{
     background-color: $color-black;
   }
   &.color-gray-dark {
+
     background-color: $color-gray-dark;
   }
+
   &.color-gray-medium-dark {
     background-color: $color-gray-medium-dark;
   }
+
   &.color-gray-medium-light {
+
     background-color: $color-gray-medium-light;
   }
   &.color-gray-light {
+
     background-color: $color-gray-light;
   }
   &.color-gray-pale {
+
     background-color: $color-gray-pale;
   }
-
   &.color-succes {
     background-color: $color-success;
   }
@@ -958,8 +978,7 @@ section + section, .font-lead + section{
   }
   &.color-info-light {
     background-color: $color-info-light;
-  }
-}
+  }}
 
 .color-text-container {
   margin-bottom: $spacing-medium;
@@ -1082,6 +1101,7 @@ h6.heading-alt {
 
 code,
 pre {
+
   background-color: $color-gray-medium-light;
   font-family: $font-monospace;
   font-size: 1.3rem;
@@ -1105,6 +1125,7 @@ code {
 }
 
 .code-highlight {
+
   background-color: $color-gray-medium-light;
   padding: 16px;
   pre, code {
@@ -1496,6 +1517,7 @@ p, .body-text,
 }
 
 hr {
+
   background: $color-gray-medium-light;
   border: none;
   height: 1px;
@@ -1575,6 +1597,7 @@ article {
 }
 
 .component-preview-button {
+
   background: $color-gray-medium-light;
   border: 1px solid $color-gray-medium-dark;
   outline: none;
@@ -1747,6 +1770,7 @@ figure.s-tag-media figcaption .s-tag-caption.dont {
   font-size: 10px;
   position: relative;
   text-indent: -9999em;
+
   border-top: 1.1em solid $color-gray-medium-light;
   border-right: 1.1em solid $color-gray-medium-light;
   border-bottom: 1.1em solid $color-gray-medium-light;
