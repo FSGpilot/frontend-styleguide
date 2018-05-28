@@ -276,7 +276,7 @@ body {
 //   }
 
 //   a {
-//     color: $color-gray-medium-dark-dark;
+//     color: $color-gray-medium-dark;
 //     font-size: $site-nav-font-size;
 //     font-weight: normal;
 //     letter-spacing: 0.3px;
@@ -383,7 +383,7 @@ body {
 // Label links
 
 %label-maturity {
-  color: $color-gray-medium-dark-dark;
+  color: $color-gray-medium-dark;
   font-size: 1.4rem;
   font-weight: $font-weight-bold;
   margin-left: 1.2rem;
@@ -392,7 +392,7 @@ body {
 
   &:hover,
   &:visited {
-    color: $color-gray-medium-dark-dark;
+    color: $color-gray-medium-dark;
   }
 
   &#{$external-href}::after {
@@ -618,7 +618,7 @@ h3 + .button_wrapper {
 }
 
 .button_wrapper-dark {
-  background: $color-gray-medium-dark-dark;
+  background: $color-gray-medium-dark;
 }
 
 .heading {
@@ -752,7 +752,7 @@ section + section, .font-lead + section{
 
 }
 .color-gray-dark {
-  background-color: $color-gray-medium-dark-dark;
+  background-color: $color-gray-medium-dark;
 }
 .color-gray {
   background-color: $color-gray-medium-dark;
@@ -924,7 +924,7 @@ section + section, .font-lead + section{
     background-color: $color-black;
   }
   &.color-gray-dark {
-    //background-color: $color-gray-medium-dark-dark;
+    //background-color: $color-gray-medium-dark;
   }
   &.color-gray-medium-light {
     //background-color: $color-gray-medium-dark-medium-light;
@@ -1137,7 +1137,7 @@ code {
   .token.char,
   .token.builtin,
   .token.inserted {
-    color: $color-gray-medium-dark-dark;
+    color: $color-gray-medium-dark;
   }
 
   .s,
@@ -1399,7 +1399,7 @@ p, .body-text,
 
   @include media($medium-screen) {
     @include margin(0 null 0 20px);
-    background-color: $color-gray-medium-dark-dark;
+    background-color: $color-gray-medium-dark;
     border-radius: $border-radius;
     bottom: 100%;
     color: $color-white;
@@ -1437,7 +1437,7 @@ p, .body-text,
 
 // Demo fixed footer
 .demo-footer {
-  background-color: $color-gray-medium-dark-dark;
+  background-color: $color-gray-medium-dark;
   box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.5);
   bottom: 0;
   position: fixed;
@@ -1558,7 +1558,7 @@ article {
 
 .component-preview-button {
   background: $color-gray-medium-dark-lightest;
-  border: 1px solid $color-gray-medium-dark-dark;
+  border: 1px solid $color-gray-medium-dark;
   outline: none;
   height: $spacing-medium;
   width: $spacing-medium;
@@ -1572,18 +1572,18 @@ article {
   min-height: inherit;
 
   .icon-color{
-    fill: $color-gray-medium-dark-dark;
+    fill: $color-gray-medium-dark;
   }
 
   &:hover {
-    background-color: $color-gray-medium-dark-dark;
+    background-color: $color-gray-medium-dark;
     .icon-color{
       fill: $color-white;
     }
   }
 
   &.is-active {
-    background-color: $color-gray-medium-dark-dark;
+    background-color: $color-gray-medium-dark;
 
     svg * {
       fill: $color-white;
