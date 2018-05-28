@@ -7,11 +7,116 @@ order: 01
 
 <p>Her vil alle farverne i Frontend Styleguiden være specificeret</p>
 
+<!-- new setup start -->
+<h3 class="heading">Gråtoner</h3>
+<h4 class="heading">Grundlæggende</h4>
+
+
+<div class="container color-row-container ">
+  <div class="row color-row">
+    <!-- color-white start -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-white"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#ffffff</strong></p>
+        <p>$color-white</p>
+      </div>
+    </div>
+    <!-- color-white end -->
+
+    <!-- color-black start -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-black"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#1a1a1a</strong></p>
+        <p>$color-black</p>
+      </div>
+    </div>
+    <!-- color-black end -->
+  </div>
+</div>
+
+<h4 class="heading">Nuancer</h4>
+
+
+<div class="container color-row-container">
+  <div class="row color-row">
+
+    <!-- color-gray-medium-light start -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray-medium-light"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#454545</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-gray-medium-light</p>
+      </div>
+    </div>
+    <!-- color-gray-medium-light end -->
+
+    <!-- color-gray-medium-dark-light start -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray-medium-dark-light"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#747474</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-gray-medium-dark-light</p>
+      </div>
+    </div>
+    <!-- color-gray-medium-dark-light end -->
+
+    <!-- color-gray-medium-light start -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray-medium-light"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#999999</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-gray-medium-light</p>
+      </div>
+    </div>
+    <!-- color-gray-medium-light end -->
+
+    <!-- color-gray-light start -->
+    <div class="col-md-3 color-col">
+      <div class="color-container color-gray-light"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#BFBFBF</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-gray-light</p>
+      </div>
+    </div>
+    <!-- color-gray-light end -->
+
+    <!-- color-gray-pale start -->
+    <div class="col-md-3 color-col ">
+      <div class="color-container color-gray-pale"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#F5F5F5</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$color-gray-pale</p>
+      </div>
+    </div>
+    <!-- color-gray-pale end -->
+  </div>
+</div>
+
+
+<h3 class="heading">Opmærksomhedsfarver</h3>
+<h3 class="heading">Interaktionsfarver</h3>
+<h3 class="heading">Theme farver</h3>
+<h3 class="heading">Data farver</h3>
+<h4 class="heading">Værdifarver</h4>
+<h4 class="heading">Data visualisation colours</h4>
+<!-- new setup end -->
 <h4 class="heading">Primær farver</h4>
 
 <p>Følgende farver er primærfarverne i styleguiden</p>
 
-<div class="container color-row-container "> 
+<div class="container color-row-container ">
   <div class="row color-row">
     <div class="col-md-3 color-col ">
       <div class="color-container color-primary"></div>
@@ -57,13 +162,13 @@ order: 01
 
 <p>Her er alle baggrundsfarverne</p>
 
-<div class="container color-row-container "> 
+<div class="container color-row-container ">
   <div class="row color-row">
     <div class="col-md-3 color-col ">
       <div class="color-container color-gray-darkest"></div>
       <div class="color-text-container">
         <p><strong>#212121</strong></p>
-        <p>$color-gray-darkest</p>
+        <p>$color-gray-dark</p>
       </div>
     </div>
     <div class="col-md-3 color-col ">
@@ -85,7 +190,7 @@ order: 01
     <div class="col-md-3 color-col ">
       <div class="color-container color-gray-light"></div>
       <div class="color-text-container">
-        <p><strong>#AEB0B5</strong></p> 
+        <p><strong>#AEB0B5</strong></p>
         <p>$color-gray-light</p>
       </div>
     </div>
@@ -110,7 +215,7 @@ order: 01
 
 <p>Følgende farver er brugt til forskellig slags tekst</p>
 
-<div class="container color-row-container "> 
+<div class="container color-row-container ">
   <div class="row color-row">
     <div class="col-md-3 color-col ">
       <div class="color-container color-text"></div>
@@ -138,7 +243,7 @@ order: 01
     <div class="col-md-3 color-col ">
       <div class="color-container color-text-neutral-18"></div>
       <div class="color-text-container">
-        <p><strong>#1B86C3</strong></p> 
+        <p><strong>#1B86C3</strong></p>
         <p>$color-text-neutral-18</p>
       </div>
     </div>
@@ -163,7 +268,7 @@ order: 01
 
 <p>Følgende farver bruges til forskellige typer links</p>
 
-<div class="container color-row-container "> 
+<div class="container color-row-container ">
   <div class="row color-row">
     <div class="col-md-3 color-col ">
       <div class="color-container color-link"></div>
@@ -200,7 +305,7 @@ order: 01
 
 <p>Følgende farver bruges til forskellige dele af en side, som f.eks. farverne til header og footer</p>
 
-<div class="container color-row-container "> 
+<div class="container color-row-container ">
   <div class="row color-row">
     <div class="col-md-3 color-col ">
       <div class="color-container color-header-background"></div>
@@ -235,10 +340,10 @@ order: 01
 
 
 <h4 class="heading">Borderfarver</h4>
-  
+
 <p>Følgende farver bruges til kanten af de elementer der har en</p>
-  
-<div class="container color-row-container "> 
+
+<div class="container color-row-container ">
   <div class="row color-row">
     <div class="col-md-3 color-col ">
       <div class="color-container color-border"></div>
@@ -275,7 +380,7 @@ order: 01
 
 <p>Følgende farver bruges til beskeder</p>
 
-<div class="container color-row-container "> 
+<div class="container color-row-container ">
   <div class="row color-row">
     <div class="col-md-3 color-col ">
       <div class="color-container color-error"></div>
@@ -342,7 +447,7 @@ order: 01
 
 <p>Følgende farver bruges i specielle tilfælde</p>
 
-<div class="container color-row-container "> 
+<div class="container color-row-container ">
   <div class="row color-row">
     <div class="col-md-3 color-col ">
       <div class="color-container color-alt-background"></div>
