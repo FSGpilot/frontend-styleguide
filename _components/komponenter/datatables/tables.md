@@ -9,14 +9,12 @@ category: UI components
 subcategory: Komponenter
 lead: Tables show tabular data in columns and rows.
 subnav:
-- text: Standard
-  href: '#standard'
-- text: Uden border
-  href: '#borderless'
-- text: Zebra linier
-  href: '#zebra'
-- text: Mobile collapse
-  href: '#mobiletable'
+- text: Datatable
+  href: '#datatable'
+- text: Expandable table
+  href: '#expandable-table'
+- text: Table styles
+  href: '#table-styles'
 ---
 
 <div class="alert alert-warning alert--show-icon mb-5" role="alert">
@@ -28,3 +26,5 @@ subnav:
 
 
 {% include child-sections.html parent='Tables' %}
+
+{% include accessibility.html %}
