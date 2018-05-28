@@ -950,6 +950,9 @@ section + section, .font-lead + section{
   &.color-error {
     background-color: $color-error;
   }
+  &.color-active {
+    background-color: $color-active;
+  }
   &.color-error-light {
     background-color: $color-error-light;
   }
@@ -959,9 +962,68 @@ section + section, .font-lead + section{
   &.color-info-light {
     background-color: $color-info-light;
   }
-  &.testtest {
-    background: red;
+  &.borger-primary {
+    background-color: $borger-primary;
   }
+  &.borger-medium {
+    background-color: $borger-medium;
+  }
+  &.borger-dark {
+    background-color: $borger-dark;
+  }
+  &.virk-primary {
+    background-color: $virk-primary;
+  }
+  &.virk-medium {
+    background-color: $virk-medium;
+  }
+  &.virk-dark {
+    background-color: $virk-dark;
+  }
+  &.color-positive {
+    background-color: $color-positive;
+  }
+  &.color-negative {
+    background-color: $color-negative;
+  }
+  &.color-data-green {
+    background-color: $color-data-green;
+  }
+  &.color-data-moss {
+    background-color: $color-data-moss;
+  }
+  &.color-data-teal {
+    background-color: $color-data-teal;
+  }
+  &.color-data-turqoice {
+    background-color: $color-data-turqoice;
+  }
+  &.color-data-violet {
+    background-color: $color-data-violet;
+  }
+  &.color-data-purple {
+    background-color: $color-data-purple;
+  }
+  &.color-data-yellow  {
+    background-color: $color-data-yellow;
+  }
+  &.color-data-brown {
+    background-color: $color-data-brown;
+  }
+  &.color-data-khaki {
+    background-color: $color-data-khaki;
+  }
+  &.color-data-orange {
+    background-color: $color-data-orange ;
+  }
+  &.color-data-magenta {
+    background-color: $color-data-magenta;
+  }
+  &.color-data-cyklamen {
+    background-color: $color-data-cyklamen;
+  }
+
+
 
 }
 
