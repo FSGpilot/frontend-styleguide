@@ -35,7 +35,7 @@ order: 05
 		&nbsp;&nbsp;&nbsp;font-size: $h1-font-size; <br>
 		&nbsp;&nbsp;&nbsp;line-height: $h1-line-height; <br>
 		&nbsp;&nbsp;&nbsp;font-weight: $font-weight-bold; <br>
-		&nbsp;&nbsp;&nbsp;color: $color-base;<br>
+		&nbsp;&nbsp;&nbsp;color: $color-black;<br>
 	}
 	</code>
 </div>
@@ -47,8 +47,3 @@ order: 05
 	</code>
 </div>
 <p>Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på &lt;h1 class="h2"&gt;</p>
-
-
-
-
-
