@@ -10,6 +10,21 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
 <h2>Sidebar</h2>
 {% include code/preview.html component="sidenav" %}
 {% include code/accordion.html component="sidenav" %}
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="sidenav-docs">
+    Documentation
+  </button>
+  <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Implementation</h4>
+    <ul class="content-list">
+      <li>Alle aktive menupunkter bliver semibold og sættes med variablen <code>$font-weight-semibold</code></li>
+      <li>Aktive menupunkter har en <code>.current</code> class, som gør teksten semibold</li>
+      <li>Kun det sidste aktive menupunkt har i stedet en <code>.active</code> class, der udover at være semibold, har en border i venstre side, som bliver sat med variablen <code>$sidenav-active-border-width</code></li>
+    </ul>
+  </div>
+</div>
+
 
 <h2>Simpel sidenavigation</h2>
 {% include code/preview.html component="sidebar" %}
