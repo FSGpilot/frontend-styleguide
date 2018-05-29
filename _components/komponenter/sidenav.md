@@ -18,9 +18,9 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>
     <ul class="content-list">
-      <li>Alle aktive menupunkter bliver semibold og sættes med variablen <code>$font-weight-semibold</code></li>
-      <li>Aktive menupunkter har en <code>.current</code> class, som gør teksten semibold</li>
-      <li>Kun det sidste aktive menupunkt har i stedet en <code>.active</code> class, der udover at være semibold, har en border i venstre side, som bliver sat med variablen <code>$sidenav-active-border-width</code></li>
+      <li>Alle aktive menupunkter skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
+      <li>Aktive menupunkter skal have en <code>.current</code> class, som gør teksten semibold</li>
+      <li>Kun det sidste aktive menupunkt skal i stedet have en <code>.active</code> class, der udover at være semibold, har en border i venstre side, som bliver sat med variablen <code>$sidenav-active-border-width</code></li>
     </ul>
   </div>
 </div>

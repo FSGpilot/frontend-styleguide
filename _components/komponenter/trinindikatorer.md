@@ -20,8 +20,10 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
   <h4 class="heading">Implementering</h4>
     <ul class="content-list">
-      <li>For en klikbar tringuides bruges <code>.sidenav-list</code> class på ul elementet.</li>
-      <li>For en tvungne tringuides bruges <code>.sidenav-list-locked</code> class på ul elementet.</li>
+      <li>For en klikbar trinindikator bruges <code>.sidenav-list</code> class på ul elementet.</li>
+      <li>For en tvunget trinindikator bruges <code>.sidenav-list-locked</code> class på ul elementet.</li>
+      <li>Det aktive menupunkt skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
+      <li>Det aktive menupunkt skal have en .active class, der har en border i venstre side, som bliver sat med variablen <code>$sidenav-active-border-width</code></li>
     </ul>
     <h4 class="heading">Krav</h4>
     <ul class="content-list">
