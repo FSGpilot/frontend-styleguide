@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Datatables | Frontend styleguide - version 2</title>
+<meta property="og:title" content="Datatables | Frontend styleguide - version 2">
+
+
+<meta name="description" content="Datatables under development
+        Datatables are still under development which might result in unexpected behaviors. Consequently responsive behaviour has not been yet implemented.">
+<meta property="og:description" content="Datatables under development
+        Datatables are still under development which might result in unexpected behaviors. Consequently responsive behaviour has not been yet implemented.">
+
+
+
+
+
+
+
+
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  </head>
+  <body class="page-datatables layout-styleguide">
+    <div class="hide-base-svg">
+      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="alert-outline" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol><symbol id="angle-arrow-down" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-up" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5z"/></symbol><symbol id="check-circle-outline" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></symbol><symbol id="close-circle-outline" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="content-save" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4z"/></symbol><symbol id="delete" viewBox="0 0 24 24"><path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12z"/></symbol><symbol id="error" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="help-circle-outline" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4z"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></symbol><symbol id="magnify" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></symbol><symbol id="minus" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></symbol><symbol id="open-in-new" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></symbol><symbol id="pencil" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></symbol><symbol id="success" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="warning" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol></svg>
+    </div>
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="header header-extended" role="banner">
+
+  <!-- Solution Header -->
+  <div class="navbar solution-header">
+    <div class="solution-heading">
+      <em class="heading-text">
+        <a href="/frontend-styleguide/"
+          title="Home"
+          aria-label="Home">
+          Frontend Styleguide
+        </a>
+      </em>
+    </div>
+    <button class="menu-btn">Menu</button>
+  </div>
+
+  <nav role="navigation" class="nav">
+   <div class="nav-inner">
+      <div class="nav-secondary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <a href="/frontend-styleguide/getting-started/download/" class="button button-primary">
+              Download kode og designfiler
+            </a>
+          </li>
+          <li> 
+            <a href="https://github.com/FSGpilot/frontend-styleguide-components" class="button button-secondary">
+              Se på GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg tema -</option>
+              <option value="styleguide">Tema: Neutralt</option>
+              <option value="virkdk">Tema: Virk.dk</option>
+              <option value="borgerdk">Tema: Borger.dk</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
+
+      <ul class="nav-primary accordion">
+        
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
+
+
+    
+  </li>
+
+
+      </ul>
+
+      
+      
+    </div> <!-- nav-inner end -->
+  </nav> 
+</header> 
+<div class="overlay"></div>
+
+
+<main class="container section" id="main-content">
+  <div class="row">
+
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        
+        
+        <ul class="sidenav-list">
+          
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/fundament/" class="nav-link">
+  <span>Retningslinjer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/styling/" class="nav-link">
+  <span>Styling</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/" class="current nav-link">
+  <span>Komponenter</span>
+</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="sidenav-sub_list">
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/buttons/" class="nav-link">
+  <span>Knapper</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/accordions/" class="nav-link">
+  <span>Accordions</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/beskeder/" class="nav-link">
+  <span>Beskeder</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/cards/" class="nav-link">
+  <span>Cards</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/form-controls/" class="nav-link">
+  <span>Form controls</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/search/" class="nav-link">
+  <span>Search bar</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/labels/" class="nav-link">
+  <span>Labels</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/tables/" class="nav-link">
+  <span>Tables</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/datatables/" class="current nav-link">
+  <span>Datatables</span>
+</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="sidenav-sub_list">
+  
+  <li>
+    
+      
+
+
+<a href="#datatable">Datatable</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#expandable-table">Expandable table</a>
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#table-styles">Table styles</a>
+
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/tekstelementer/" class="nav-link">
+  <span>Tekstelementer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/trinindikatorer/" class="nav-link">
+  <span>Trinindikatorer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/sidenav/" class="nav-link">
+  <span>Sidenavigation</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/select2-multiselect/" class="nav-link">
+  <span>Multiselect dropdown</span>
+</a>
+
+
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/strukturer/" class="nav-link">
+  <span>Mønstre</span>
+</a>
+
+
+    
+  </li>
+
+
+        </ul>
+        
+      </aside>
+    </div>
+
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-/components/komponenter/datatables">
+        <header>
+          <p class="site-subheading">
+            Komponenter
+          </p>
+          <h1 id="datatables">Datatables</h1>
+        </header>
+        
+      <div class="alert alert-warning alert--show-icon mb-5" role="alert">
+    <div class="alert-body">
+        <h3 class="alert-heading">Datatables under development</h3>
+        <p class="alert-text">Datatables are still under development which might result in unexpected behaviors. Consequently responsive behaviour has not been yet implemented. </p>
+    </div>
+</div>
+
+<section id="section-/komponenter/tables/01-basic-table">
+  <h2 class="heading heading-margin-alt" id="table">Table</h2>
+  
+    <p class="font-lead">Tables show tabular data in columns and rows.</p>
+  
+  {% include code/preview.html component="table" %}
+{% include code/accordion.html component="table" %}
+
+<!-- 
+<div class="accordion-bordered accordion-docs">
+    <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="datatable-docs">Documentation</button>
+    <div id="datatable-docs" aria-hidden="false" class="accordion-content">
+        <h4>SCSS classes</h4>
+        <p>Each part of the datatable has a scss-class which defines its style and behaviour. All necessary classes are listed in the tables below.</p>
+        <div class="table-container">
+            <h5>General table structure</h5>
+            <table class="dk-table borderless compact" style="font-size: small">
+                <thead>
+                    <tr>
+                        <th width="190px">SCSS class</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>table-container</td>
+                        <td>A class for the main division. The table and all its parts should be inside table-cointainer.</td>
+                    </tr>
+                    <tr>
+                        <td>menu</td>
+                        <td>The menu above the table. All components such as search input, buttons and selection buttons are parts of the menu.</td>
+                    </tr>
+                    <tr>
+                        <td>dk-table</td>
+                        <td>Class for the table.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h5>Table menu</h5>
+            <span>Classes to be used om the top menu of table containing buttons, search input field, etc.</span>
+            <table class="dk-table borderless compact" style="font-size: small">
+                <thead>
+                    <tr>
+                        <th width="190px">SCSS class</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>selected-rows-menu</td>
+                        <td>The menu displayed when any row is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>menu-selection-button</td>
+                        <td>A button that to be shown when a row is selected</td>
+                    </tr>
+                    <tr>
+                        <td>cancel</td>
+                        <td>A button which is binded in a Javascript action that unselects all rows.</td>
+                    </tr>
+                    <tr>
+                        <td>default-menu</td>
+                        <td>The menu displayed when no row is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>search-svg</td>
+                        <td>Class to be used on icon to the left in the search field. Will position and style properly.</td>
+                    </tr>
+                    <tr>
+                        <td>search</td>
+                        <td>An input field to which the search action is binded in Javascript.</td>
+                    </tr>
+                    <tr>
+                        <td>menu-button</td>
+                        <td>Class for a small icon button, sitting above the header in the default-menu.</td>
+                    </tr>
+                    <tr>
+                        <td>primary-button</td>
+                        <td>Class for a big button in the default-menu.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h5>Table content</h5>
+            <span>Classes for the table header and the rows of the table.</span>
+            <table class="dk-table borderless compact" style="font-size: small">
+                <thead>
+                    <tr>
+                        <th width="190px">SCSS class</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>table-sort-button</td>
+                        <td>A button placed in the table header that is used to sort the table rows by its value. A Javascript code is binded to this button class.</td>
+                    </tr>
+                    <tr>
+                        <td>row-selection-checkbox</td>
+                        <td>A checkbox to select a row. A Javascript code is binded to this class.</td>
+                    </tr>                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+-->
+</section>
+
+<section id="section-/komponenter/tables/02-table-borderless">
+  <h2 class="heading heading-margin-alt" id="table-uden-borderes">Table uden borderes</h2>
+  
+  {% include code/preview.html component="table--borderless" %}
+{% include code/accordion.html component="table--borderless" %}
+</section>
+
+<section id="section-/komponenter/tables/03-table-zebra">
+  <h2 class="heading heading-margin-alt" id="table-med-zebra-linier">Table med zebra linier</h2>
+  
+  {% include code/preview.html component="table--bordered-zebra" %}
+{% include code/accordion.html component="table--bordered-zebra" %}
+
+<h4 class="h4">Table med zebra linier (uden borders)</h4>
+{% include code/preview.html component="table--borderless-zebra" %}
+{% include code/accordion.html component="table--borderless-zebra" %}
+</section>
+
+<section id="section-/komponenter/tables/04-table-responsive">
+  <h2 class="heading heading-margin-alt" id="table-responsive">Table (responsive)</h2>
+  
+  {% include code/preview.html component="table--responsive" %}
+{% include code/accordion.html component="table--responsive" %}
+</section>
+
+<h3 class="heading heading-margin-alt">Accessibility</h3>
+
+<p>As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.</p>
+
+<ul class="content-list">
+  <li>Display form controls in the same order in HTML as they appear on screen. Do not use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.</li>
+  <li>Visually align validation messages with the input fields, so people using screen magnifiers can read them quickly.</li>
+  <li>Group each set of thematically related controls in a fieldset element. Use the legend element to offer a label within each one. The fieldset and legend elements make it easier for screen reader users to navigate the form.</li>
+  <li>Use a single legend for fieldset (this is required). One example of a common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.</li>
+  <li>Embed multiple fieldsets and legends for more complex forms.</li>
+  <li>Keep your form blocks in a vertical pattern. This approach is ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.</li>
+</ul>
+
+<h4>Supporting screen readers</h4>
+
+<p><b>Note:</b> These code examples have been designed to support a range of screen readers. That said, they may not work with all versions.</p>
+
+<h5>Known issues</h5>
+
+<ul class="content-list">
+  <li>VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using <code>aria-labeledby="for-attribute-of-label id-of-legend id-of-additional-info"</code> on each input in the fieldset. Using <code>aria-labeledby</code> will overwrite the default text read by the screen reader, so it is important to include all relevant information.</li>
+  <li>VoiceOver on OS X currently does not support <code>aria-describedby</code>. Use <code>aria-labeledby</code> instead, and include all related fields, including, labels, legend, and hint text</li>
+</ul>
+
+
+      </section>
+    </div>
+
+  </div>
+</main>
+
+
+<footer class="footer site" role="contentinfo">
+  <div class="container footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="footer-primary-section">
+    <div class="container">
+      <nav class="footer-nav row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Ansvarlig myndighed</h4>
+            </li>
+            <li><a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Kontakt</h4>
+            </li>
+            <address>
+              <li><a href="tel:70707070">70707070</a></li>
+              <li><a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a></li>
+            </address>
+          </ul>
+          
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Lovgivning og jura</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Dette er reglerne for denne løsning</a></li>
+            
+            <li><a href="javascript:void(0);">Hvis du vil klage og lidt om dine pligter og rettigheder for at gøre linket langt</a></li>
+            
+            <li><a href="javascript:void(0);">Og et kort link</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Hjælp</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Link der kan hjælpe brugere</a></li>
+            
+            <li><a href="javascript:void(0);">Et kort link</a></li>
+            
+            <li><a href="javascript:void(0);">Endnu et link til et hjælpested</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-secondary_section">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="footer-logo-img col-12">En del af</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+<script src="/frontend-styleguide/assets/js/vendor/dkwds-advanced.js"></script>
+
+  </body>
+</html>

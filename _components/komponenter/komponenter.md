@@ -22,6 +22,8 @@ subnav:
   href: '/components/komponenter/labels/'
 - text: Tabeller
   href: '/components/komponenter/tables/'
+- text: Datatabeller
+  href: '/components/komponenter/datatables/'
 - text: Tekstelementer
   href: '/components/komponenter/tekstelementer/'
 - text: Trinindikatorer

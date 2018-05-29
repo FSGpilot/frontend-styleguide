@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Datatables | Frontend styleguide - version 2</title>
+<meta property="og:title" content="Datatables | Frontend styleguide - version 2">
+
+
+<meta name="description" content="Code
+  
+    
+&amp;lt;div class=&quot;table-container&quot;&amp;gt;
+    &amp;lt;h5&amp;gt;Table title&amp;lt;/h5&amp;gt;
+    &amp;lt;section class=&quot;menu&quot;&amp;gt;
+        &amp;lt;div class=&quot;selected-rows-menu&quot;&amp;gt;
+            &amp;lt;button class=&quot;menu-selection-button&quot; type=&quot;button&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Delete&amp;lt;/span&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-delete &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;button class=&quot;menu-selection-button&quot; type=&quot;button&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Refresh&amp;lt;/span&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-refresh &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;button class=&quot;menu-selection-button&quot; type=&quot;button&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Pause&amp;lt;/span&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-pause-circle &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;div class=&quot;selected-items-counter&quot;&amp;gt;
+                &amp;lt;span class=&quot;selected-items-counter-value&quot;&amp;gt;&amp;lt;/span&amp;gt;
+                &amp;lt;span&amp;gt; items selected&amp;lt;/span&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;button class=&quot;cancel&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Cancel&amp;lt;/span&amp;gt;
+            &amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;default-menu&quot;&amp;gt;
+            &amp;lt;div class=&quot;search-svg&quot;&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-magnify &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/div&amp;gt;
+            &amp;lt;input type=&quot;text&quot; class=&quot;search&quot; placeholder=&quot;Search compute&quot;&amp;gt;
+            &amp;lt;button class=&quot;menu-button&quot;&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-download &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;button class=&quot;menu-button&quot;&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-pencil &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                &amp;lt;button class=&quot;overflow-menu-btn menu-button&quot; margin-top=&quot;15px&quot;&amp;gt;
+
+                    &amp;lt;i class=&quot;icon icon-settings &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                &amp;lt;/button&amp;gt;
+                &amp;lt;div class=&quot;overflow-menu-options position-left settings&quot;&amp;gt;
+                    &amp;lt;span&amp;gt;Row height:&amp;lt;/span&amp;gt;
+                    &amp;lt;div class=&quot;radiobutton&quot;&amp;gt;
+                        &amp;lt;input type=&quot;radio&quot; name=&quot;size&quot; id=&quot;compact&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Compact&amp;lt;/span&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                    &amp;lt;div class=&quot;radiobutton&quot;&amp;gt;
+                        &amp;lt;input type=&quot;radio&quot; name=&quot;size&quot; id=&quot;short&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Short&amp;lt;/span&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                    &amp;lt;div class=&quot;radiobutton&quot;&amp;gt;
+                        &amp;lt;input type=&quot;radio&quot; name=&quot;size&quot; id=&quot;default&quot; checked=&quot;checked&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Default&amp;lt;/span&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                    &amp;lt;div class=&quot;radiobutton&quot;&amp;gt;
+                        &amp;lt;input type=&quot;radio&quot; name=&quot;size&quot; id=&quot;tall&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Tall&amp;lt;/span&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;button class=&quot;primary-button&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Add new &amp;lt;/span&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-plus-circle &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/section&amp;gt;
+    &amp;lt;table class=&quot;dk-table bordered&quot;&amp;gt;
+        &amp;lt;thead&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;
+                    &amp;lt;button class=&quot;table-sort-button&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Document title&amp;lt;/span&amp;gt;
+
+                        &amp;lt;i class=&quot;icon icon-menu-down &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                    &amp;lt;/button&amp;gt;
+                &amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;
+                    &amp;lt;button class=&quot;table-sort-button&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Description&amp;lt;/span&amp;gt;
+
+                        &amp;lt;i class=&quot;icon icon-menu-down &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                    &amp;lt;/button&amp;gt;
+                &amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;
+                    &amp;lt;button class=&quot;table-sort-button&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Year&amp;lt;/span&amp;gt;
+
+                        &amp;lt;i class=&quot;icon icon-menu-down &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                    &amp;lt;/button&amp;gt;
+                &amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;
+            &amp;lt;/tr&amp;gt;
+        &amp;lt;/thead&amp;gt;
+        &amp;lt;tbody&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;input type=&quot;checkbox&quot; class=&quot;row-selection-checkbox&quot;&amp;gt;
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td scope=&quot;row&quot;&amp;gt;Declaration of Independence&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;Statement adopted by the Continental Congress declaring independence
+                    from the British Empire.&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;1776&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                        &amp;lt;button class=&quot;overflow-menu-btn&quot;&amp;gt;
+
+                            &amp;lt;i class=&quot;icon icon-dots-horizontal &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                        &amp;lt;/button&amp;gt;
+                        &amp;lt;div class=&quot;overflow-menu-options position-left&quot;&amp;gt;
+                            &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 3&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;input type=&quot;checkbox&quot; class=&quot;row-selection-checkbox&quot;&amp;gt;
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;Bill of Rights&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;The first ten amendments of the U.S. Constitution guaranteeing
+                    rights and freedoms.&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;1791&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                        &amp;lt;button class=&quot;overflow-menu-btn&quot;&amp;gt;
+
+                            &amp;lt;i class=&quot;icon icon-dots-horizontal &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                        &amp;lt;/button&amp;gt;
+                        &amp;lt;div class=&quot;overflow-menu-options position-left&quot;&amp;gt;
+                            &amp;lt;button&amp;gt;Option 5&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 6 is longer text&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 7&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 8&amp;lt;/button&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;input type=&quot;checkbox&quot; class=&quot;row-selection-checkbox&quot;&amp;gt;
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;Declaration of Sentiments&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;A document written during the Seneca Falls Convention outlining
+                    the rights that American women should be entitled to as
+                    citizens.
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;1848&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                        &amp;lt;button class=&quot;overflow-menu-btn&quot;&amp;gt;
+
+                            &amp;lt;i class=&quot;icon icon-dots-horizontal &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                        &amp;lt;/button&amp;gt;
+                        &amp;lt;div class=&quot;overflow-menu-options position-left&quot;&amp;gt;
+                            &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 3&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;input type=&quot;checkbox&quot; class=&quot;row-selection-checkbox&quot;&amp;gt;
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;Emancipation Proclamation&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;An executive order granting freedom to slaves in designated
+                    southern states.&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;1863&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                        &amp;lt;button class=&quot;overflow-menu-btn&quot;&amp;gt;
+
+                            &amp;lt;i class=&quot;icon icon-dots-horizontal &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                        &amp;lt;/button&amp;gt;
+                        &amp;lt;div class=&quot;overflow-menu-options position-left&quot;&amp;gt;
+                            &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 3&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+        &amp;lt;/tbody&amp;gt;
+    &amp;lt;/table&amp;gt;
+&amp;lt;/div&amp;gt;">
+<meta property="og:description" content="Code
+  
+    
+&amp;lt;div class=&quot;table-container&quot;&amp;gt;
+    &amp;lt;h5&amp;gt;Table title&amp;lt;/h5&amp;gt;
+    &amp;lt;section class=&quot;menu&quot;&amp;gt;
+        &amp;lt;div class=&quot;selected-rows-menu&quot;&amp;gt;
+            &amp;lt;button class=&quot;menu-selection-button&quot; type=&quot;button&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Delete&amp;lt;/span&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-delete &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;button class=&quot;menu-selection-button&quot; type=&quot;button&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Refresh&amp;lt;/span&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-refresh &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;button class=&quot;menu-selection-button&quot; type=&quot;button&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Pause&amp;lt;/span&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-pause-circle &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;div class=&quot;selected-items-counter&quot;&amp;gt;
+                &amp;lt;span class=&quot;selected-items-counter-value&quot;&amp;gt;&amp;lt;/span&amp;gt;
+                &amp;lt;span&amp;gt; items selected&amp;lt;/span&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;button class=&quot;cancel&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Cancel&amp;lt;/span&amp;gt;
+            &amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;default-menu&quot;&amp;gt;
+            &amp;lt;div class=&quot;search-svg&quot;&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-magnify &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/div&amp;gt;
+            &amp;lt;input type=&quot;text&quot; class=&quot;search&quot; placeholder=&quot;Search compute&quot;&amp;gt;
+            &amp;lt;button class=&quot;menu-button&quot;&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-download &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;button class=&quot;menu-button&quot;&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-pencil &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+            &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                &amp;lt;button class=&quot;overflow-menu-btn menu-button&quot; margin-top=&quot;15px&quot;&amp;gt;
+
+                    &amp;lt;i class=&quot;icon icon-settings &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                &amp;lt;/button&amp;gt;
+                &amp;lt;div class=&quot;overflow-menu-options position-left settings&quot;&amp;gt;
+                    &amp;lt;span&amp;gt;Row height:&amp;lt;/span&amp;gt;
+                    &amp;lt;div class=&quot;radiobutton&quot;&amp;gt;
+                        &amp;lt;input type=&quot;radio&quot; name=&quot;size&quot; id=&quot;compact&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Compact&amp;lt;/span&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                    &amp;lt;div class=&quot;radiobutton&quot;&amp;gt;
+                        &amp;lt;input type=&quot;radio&quot; name=&quot;size&quot; id=&quot;short&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Short&amp;lt;/span&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                    &amp;lt;div class=&quot;radiobutton&quot;&amp;gt;
+                        &amp;lt;input type=&quot;radio&quot; name=&quot;size&quot; id=&quot;default&quot; checked=&quot;checked&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Default&amp;lt;/span&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                    &amp;lt;div class=&quot;radiobutton&quot;&amp;gt;
+                        &amp;lt;input type=&quot;radio&quot; name=&quot;size&quot; id=&quot;tall&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Tall&amp;lt;/span&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;button class=&quot;primary-button&quot;&amp;gt;
+                &amp;lt;span&amp;gt;Add new &amp;lt;/span&amp;gt;
+
+                &amp;lt;i class=&quot;icon icon-plus-circle &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+            &amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/section&amp;gt;
+    &amp;lt;table class=&quot;dk-table bordered&quot;&amp;gt;
+        &amp;lt;thead&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;
+                    &amp;lt;button class=&quot;table-sort-button&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Document title&amp;lt;/span&amp;gt;
+
+                        &amp;lt;i class=&quot;icon icon-menu-down &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                    &amp;lt;/button&amp;gt;
+                &amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;
+                    &amp;lt;button class=&quot;table-sort-button&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Description&amp;lt;/span&amp;gt;
+
+                        &amp;lt;i class=&quot;icon icon-menu-down &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                    &amp;lt;/button&amp;gt;
+                &amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;
+                    &amp;lt;button class=&quot;table-sort-button&quot;&amp;gt;
+                        &amp;lt;span&amp;gt;Year&amp;lt;/span&amp;gt;
+
+                        &amp;lt;i class=&quot;icon icon-menu-down &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                    &amp;lt;/button&amp;gt;
+                &amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;
+            &amp;lt;/tr&amp;gt;
+        &amp;lt;/thead&amp;gt;
+        &amp;lt;tbody&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;input type=&quot;checkbox&quot; class=&quot;row-selection-checkbox&quot;&amp;gt;
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td scope=&quot;row&quot;&amp;gt;Declaration of Independence&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;Statement adopted by the Continental Congress declaring independence
+                    from the British Empire.&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;1776&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                        &amp;lt;button class=&quot;overflow-menu-btn&quot;&amp;gt;
+
+                            &amp;lt;i class=&quot;icon icon-dots-horizontal &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                        &amp;lt;/button&amp;gt;
+                        &amp;lt;div class=&quot;overflow-menu-options position-left&quot;&amp;gt;
+                            &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 3&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;input type=&quot;checkbox&quot; class=&quot;row-selection-checkbox&quot;&amp;gt;
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;Bill of Rights&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;The first ten amendments of the U.S. Constitution guaranteeing
+                    rights and freedoms.&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;1791&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                        &amp;lt;button class=&quot;overflow-menu-btn&quot;&amp;gt;
+
+                            &amp;lt;i class=&quot;icon icon-dots-horizontal &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                        &amp;lt;/button&amp;gt;
+                        &amp;lt;div class=&quot;overflow-menu-options position-left&quot;&amp;gt;
+                            &amp;lt;button&amp;gt;Option 5&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 6 is longer text&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 7&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 8&amp;lt;/button&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;input type=&quot;checkbox&quot; class=&quot;row-selection-checkbox&quot;&amp;gt;
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;Declaration of Sentiments&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;A document written during the Seneca Falls Convention outlining
+                    the rights that American women should be entitled to as
+                    citizens.
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;1848&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                        &amp;lt;button class=&quot;overflow-menu-btn&quot;&amp;gt;
+
+                            &amp;lt;i class=&quot;icon icon-dots-horizontal &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                        &amp;lt;/button&amp;gt;
+                        &amp;lt;div class=&quot;overflow-menu-options position-left&quot;&amp;gt;
+                            &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 3&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;input type=&quot;checkbox&quot; class=&quot;row-selection-checkbox&quot;&amp;gt;
+                &amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;Emancipation Proclamation&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;An executive order granting freedom to slaves in designated
+                    southern states.&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;1863&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;
+                    &amp;lt;div class=&quot;overflow-menu&quot;&amp;gt;
+                        &amp;lt;button class=&quot;overflow-menu-btn&quot;&amp;gt;
+
+                            &amp;lt;i class=&quot;icon icon-dots-horizontal &quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+                        &amp;lt;/button&amp;gt;
+                        &amp;lt;div class=&quot;overflow-menu-options position-left&quot;&amp;gt;
+                            &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 3&amp;lt;/button&amp;gt;
+                            &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                    &amp;lt;/div&amp;gt;
+                &amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+        &amp;lt;/tbody&amp;gt;
+    &amp;lt;/table&amp;gt;
+&amp;lt;/div&amp;gt;">
+
+
+
+
+
+
+
+
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
+<script src="/frontend-styleguide/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  </head>
+  <body class="page-datatables layout-component">
+    <div class="hide-base-svg">
+      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="alert-outline" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol><symbol id="angle-arrow-down" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-up" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5z"/></symbol><symbol id="check-circle-outline" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></symbol><symbol id="close-circle-outline" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="content-save" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4z"/></symbol><symbol id="delete" viewBox="0 0 24 24"><path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12z"/></symbol><symbol id="error" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="help-circle-outline" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4z"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></symbol><symbol id="magnify" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></symbol><symbol id="minus" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></symbol><symbol id="open-in-new" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></symbol><symbol id="pencil" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></symbol><symbol id="success" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="warning" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol></svg>
+    </div>
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+<header class="header header-extended" role="banner">
+
+  <!-- Solution Header -->
+  <div class="navbar solution-header">
+    <div class="solution-heading">
+      <em class="heading-text">
+        <a href="/frontend-styleguide/"
+          title="Home"
+          aria-label="Home">
+          Frontend Styleguide
+        </a>
+      </em>
+    </div>
+    <button class="menu-btn">Menu</button>
+  </div>
+
+  <nav role="navigation" class="nav">
+   <div class="nav-inner">
+      <div class="nav-secondary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <a href="/frontend-styleguide/getting-started/download/" class="button button-primary">
+              Download kode og designfiler
+            </a>
+          </li>
+          <li> 
+            <a href="https://github.com/FSGpilot/frontend-styleguide-components" class="button button-secondary">
+              Se på GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-tertiary">
+        <ul class="unstyled-list nav-secondary-links">
+          <li> 
+            <select class="style-switcher" name="Style switcher">
+              <option value>- Vælg tema -</option>
+              <option value="styleguide">Tema: Neutralt</option>
+              <option value="virkdk">Tema: Virk.dk</option>
+              <option value="borgerdk">Tema: Borger.dk</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-close"></button>
+
+      <ul class="nav-primary accordion">
+        
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/" class="nav-link">
+  <span>Designsystem</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/page-templates/" class="nav-link">
+  <span>Eksempler</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/getting-started/" class="nav-link">
+  <span>Kom godt i gang</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/faellesoffentlige-krav/" class="nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/whats-new/" class="nav-link">
+  <span>Om designsystemet</span>
+</a>
+
+
+    
+  </li>
+
+
+      </ul>
+
+      
+      
+    </div> <!-- nav-inner end -->
+  </nav> 
+</header> 
+<div class="overlay"></div>
+
+
+<main class="container section" id="main-content">
+  <div class="row">
+
+    <div class="col-3">
+      <aside class="sidenav sticky">
+        
+        
+      </aside>
+    </div>
+
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-/komponenter/datatables/01-datatable">
+        <header>
+          <p class="site-subheading">
+            
+          </p>
+          <h1 id="datatables">Datatables</h1>
+        </header>
+        
+          <p class="font-lead">A datatable is an arrangement of data in rows and columns that make comparing information easier. The following datatables enables the user to sort the data by clicking on the different headers or filter it by typing a text in the 'Search compute' field. Each row has a menu to the right, that enables performing some actions on it. Rows selected by checking the checkbox can be modified all together. The user can change rows width in the datatable settings.</p>
+        
+      
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/datatable" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/datatable"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-datatable">Code</button>
+  <div id="code-datatable" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Table title<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"selected-rows-menu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-selection-button"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Delete<span class="nt">&lt;/span&gt;</span>
+
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-delete "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-selection-button"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Refresh<span class="nt">&lt;/span&gt;</span>
+
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-refresh "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-selection-button"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Pause<span class="nt">&lt;/span&gt;</span>
+
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-pause-circle "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"selected-items-counter"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"selected-items-counter-value"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;span&gt;</span> items selected<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"cancel"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Cancel<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"default-menu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"search-svg"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-magnify "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Search compute"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-button"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-download "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"menu-button"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-pencil "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn menu-button"</span> <span class="na">margin-top=</span><span class="s">"15px"</span><span class="nt">&gt;</span>
+
+                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-settings "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left settings"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>Row height:<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radiobutton"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"size"</span> <span class="na">id=</span><span class="s">"compact"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Compact<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radiobutton"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"size"</span> <span class="na">id=</span><span class="s">"short"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Short<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radiobutton"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"size"</span> <span class="na">id=</span><span class="s">"default"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Default<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radiobutton"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"size"</span> <span class="na">id=</span><span class="s">"tall"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Tall<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"primary-button"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Add new <span class="nt">&lt;/span&gt;</span>
+
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-plus-circle "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+            <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"dk-table bordered"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;thead&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"table-sort-button"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Document title<span class="nt">&lt;/span&gt;</span>
+
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-menu-down "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"table-sort-button"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Description<span class="nt">&lt;/span&gt;</span>
+
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-menu-down "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"table-sort-button"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;span&gt;</span>Year<span class="nt">&lt;/span&gt;</span>
+
+                        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-menu-down "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                    <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;/thead&gt;</span>
+        <span class="nt">&lt;tbody&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"row-selection-checkbox"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>Declaration of Independence<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Statement adopted by the Continental Congress declaring independence
+                    from the British Empire.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1776<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-dots-horizontal "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                        <span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 3<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 4 is longer text<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"row-selection-checkbox"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Bill of Rights<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>The first ten amendments of the U.S. Constitution guaranteeing
+                    rights and freedoms.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1791<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-dots-horizontal "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                        <span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 5<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 6 is longer text<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 7<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 8<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"row-selection-checkbox"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Declaration of Sentiments<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>A document written during the Seneca Falls Convention outlining
+                    the rights that American women should be entitled to as
+                    citizens.
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1848<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-dots-horizontal "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                        <span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 3<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 4 is longer text<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"row-selection-checkbox"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>Emancipation Proclamation<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>An executive order granting freedom to slaves in designated
+                    southern states.<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>1863<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;td&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"overflow-menu-btn"</span><span class="nt">&gt;</span>
+
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon icon-dots-horizontal "</span><span class="nt">&gt;&lt;/i&gt;</span>
+
+                        <span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-options position-left"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 3<span class="nt">&lt;/button&gt;</span>
+                            <span class="nt">&lt;button&gt;</span>Option 4 is longer text<span class="nt">&lt;/button&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+        <span class="nt">&lt;/tbody&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered accordion-docs">
+    <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="datatable-docs">Documentation</button>
+    <div id="datatable-docs" aria-hidden="false" class="accordion-content">
+        <h4>SCSS classes</h4>
+        <p>Each part of the datatable has a scss-class which defines its style and behaviour. All necessary classes are listed in the tables below.</p>        
+        <!--To be added later when more information has been provided>
+        <p>The overflow menu can selected from the settings button and each row expandable menu. It is a seperate component. Documentation how to use it in the <a href="todo">overflow menu section.</a></p>
+        <-->
+        <div class="table-container">
+            <h5>General table structure</h5>
+            <table class="dk-table borderless compact" style="font-size: small">
+                <thead>
+                    <tr>
+                        <th width="190px">SCSS class</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>table-container</td>
+                        <td>A class for the main division. The table and all its parts should be inside table-cointainer.</td>
+                    </tr>
+                    <tr>
+                        <td>menu</td>
+                        <td>The menu above the table. All components such as search input, buttons and selection buttons are parts of the menu.</td>
+                    </tr>
+                    <tr>
+                        <td>dk-table</td>
+                        <td>Class for the table.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h5>Table menu</h5>
+            <span>Classes to be used om the top menu of table containing buttons, search input field, etc.</span>
+            <table class="dk-table borderless compact" style="font-size: small">
+                <thead>
+                    <tr>
+                        <th width="190px">SCSS class</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>selected-rows-menu</td>
+                        <td>The menu displayed when any row is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>menu-selection-button</td>
+                        <td>A button that to be shown when a row is selected</td>
+                    </tr>
+                    <tr>
+                        <td>cancel</td>
+                        <td>A button which is binded in a Javascript action that unselects all rows.</td>
+                    </tr>
+                    <tr>
+                        <td>default-menu</td>
+                        <td>The menu displayed when no row is selected.</td>
+                    </tr>
+                    <tr>
+                        <td>search-svg</td>
+                        <td>Class to be used on icon to the left in the search field. Will position and style properly.</td>
+                    </tr>
+                    <tr>
+                        <td>search</td>
+                        <td>An input field to which the search action is binded in Javascript.</td>
+                    </tr>
+                    <tr>
+                        <td>menu-button</td>
+                        <td>Class for a small icon button, sitting above the header in the default-menu.</td>
+                    </tr>
+                    <tr>
+                        <td>primary-button</td>
+                        <td>Class for a big button in the default-menu.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h5>Table content</h5>
+            <span>Classes for the table header and the rows of the table.</span>
+            <table class="dk-table borderless compact" style="font-size: small">
+                <thead>
+                    <tr>
+                        <th width="190px">SCSS class</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>table-sort-button</td>
+                        <td>A button placed in the table header that is used to sort the table rows by its value. A Javascript code is binded to this button class.</td>
+                    </tr>
+                    <tr>
+                        <td>row-selection-checkbox</td>
+                        <td>A checkbox to select a row. A Javascript code is binded to this class.</td>
+                    </tr>                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+      </section>
+    </div>
+
+  </div>
+</main>
+
+
+<footer class="footer site" role="contentinfo">
+  <div class="container footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="footer-primary-section">
+    <div class="container">
+      <nav class="footer-nav row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Ansvarlig myndighed</h4>
+            </li>
+            <li><a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Kontakt</h4>
+            </li>
+            <address>
+              <li><a href="tel:70707070">70707070</a></li>
+              <li><a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a></li>
+            </address>
+          </ul>
+          
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Lovgivning og jura</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Dette er reglerne for denne løsning</a></li>
+            
+            <li><a href="javascript:void(0);">Hvis du vil klage og lidt om dine pligter og rettigheder for at gøre linket langt</a></li>
+            
+            <li><a href="javascript:void(0);">Og et kort link</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <ul class="unstyled-list footer-primary-content">
+            <li class="footer-primary-link">
+              <h4>Hjælp</h4> 
+            </li>
+            
+            <li><a href="javascript:void(0);">Link der kan hjælpe brugere</a></li>
+            
+            <li><a href="javascript:void(0);">Et kort link</a></li>
+            
+            <li><a href="javascript:void(0);">Endnu et link til et hjælpested</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer-secondary_section">
+    <div class="container">
+      <div class="footer-logo row">
+        <div class="footer-logo-img col-12">En del af</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+<script src="/frontend-styleguide/assets/js/vendor/dkwds-advanced.js"></script>
+
+  </body>
+</html>
