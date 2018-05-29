@@ -19,8 +19,10 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
     <h4 class="heading">Implementation</h4>
     <ul class="content-list">
       <li>Alle aktive menupunkter skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
+      <li>Teksten i det aktive menupunkt skal være primærfarven, som og sættes med variablen <code>$color-primary</code></li>
       <li>Aktive menupunkter skal have en <code>.current</code> class, som gør teksten semibold</li>
       <li>Kun det sidste aktive menupunkt skal i stedet have en <code>.active</code> class, der udover at være semibold, har en border i venstre side, som bliver sat med variablen <code>$sidenav-active-border-width</code></li>
+      <li>På hover skal baggrundsfarven og teksten på trinene skifte, her skal variablen <code>$color-gray-pale</code>bruges til baggrunden og variablen<code>$color-link-hover</code> bruges til teksten</li> 
     </ul>
   </div>
 </div>
