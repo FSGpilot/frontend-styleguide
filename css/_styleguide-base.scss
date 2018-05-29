@@ -1363,6 +1363,9 @@ p, .body-text,
 .page-accordion-html{
   padding-top: 4px;
 }
+.page-buttons-html{
+  padding-left: 20px;
+}
 
 .page-design-principles {
   @include media($medium-screen) {

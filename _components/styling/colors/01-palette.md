@@ -5,17 +5,15 @@ parent: colors
 order: 01
 ---
 
-<p>Her vil alle farverne i Frontend Styleguiden være specificeret</p>
-
 <!-- new setup start -->
+
 <h3 class="heading">Gråtoner</h3>
 <h4 class="heading">Grundlæggende</h4>
 
-
-<div class="container color-row-container ">
+<div class=" color-row-container ">
   <div class="row color-row">
     <!-- color-white start -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3 ">
       <div class="color-container color-white"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#ffffff</strong></p>
@@ -36,13 +34,14 @@ order: 01
   </div>
 </div>
 
-<h4 class="heading">Nuancer</h4>
 
-<div class="container color-row-container">
+<h4 class="heading">Nuancer</h4>
+<div class=" color-row-container">
+
   <div class="row color-row">
 
     <!-- color-gray-dark start -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3 ">
       <div class="color-container color-gray-dark"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#454545</strong></p>
@@ -54,7 +53,7 @@ order: 01
     <!-- color-gray-dark end -->
 
     <!-- color-gray-medium-dark start -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3 ">
       <div class="color-container color-gray-medium-dark"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#747474</strong></p>
@@ -66,7 +65,7 @@ order: 01
     <!-- color-gray-medium-dark end -->
 
     <!-- color-gray-medium-light start -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3 ">
       <div class="color-container color-gray-medium-light"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#999999</strong></p>
@@ -78,7 +77,7 @@ order: 01
     <!-- color-gray-medium-light end -->
 
     <!-- color-gray-light start -->
-    <div class="col-md-3 color-col">
+    <div class="col-md-3">
       <div class="color-container color-gray-light"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#BFBFBF</strong></p>
@@ -90,7 +89,7 @@ order: 01
     <!-- color-gray-light end -->
 
     <!-- color-gray-pale start -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-gray-pale"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#F5F5F5</strong></p>
@@ -103,13 +102,13 @@ order: 01
   </div>
 </div>
 
-
-<h3 class="heading">Opmærksomhedsfarver</h3>
-<div class="container color-row-container">
+ <h3 class="heading">Opmærksomhedsfarver</h3>
+<div class="color-row-container">
+ 
   <div class="row color-row">
 
     <!-- color-success START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-success"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#87C51C</strong></p>
@@ -121,7 +120,7 @@ order: 01
     <!-- color-success END -->
 
     <!-- color-warning START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-warning"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#FEBB30</strong></p>
@@ -133,7 +132,7 @@ order: 01
     <!-- color-warning END -->
 
     <!-- color-error START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-error"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#E92021</strong></p>
@@ -145,7 +144,7 @@ order: 01
     <!-- color-error END -->
 
     <!-- color-info START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-info"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#1B86C3</strong></p>
@@ -157,7 +156,7 @@ order: 01
     <!-- color-info END -->
 
     <!-- color-success-light START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-succes-light"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#E7FBE4</strong></p>
@@ -169,7 +168,7 @@ order: 01
     <!-- color-success-light END -->
 
     <!-- color-warning-light START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-warning-light"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#FFEECC</strong></p>
@@ -181,7 +180,7 @@ order: 01
     <!-- color-warning-light END -->
 
     <!-- color-error-light START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-error-light"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#FBD3D3</strong></p>
@@ -193,7 +192,7 @@ order: 01
     <!-- color-error-light END -->
 
     <!-- color-info-light START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-info-light"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#E2F2FB</strong></p>
@@ -205,12 +204,14 @@ order: 01
     <!-- color-info-light END -->
   </div>
 </div>
+
 <h3 class="heading">Interaktionsfarver</h3>
-<div class="container color-row-container">
+<div class="color-row-container">
+  
   <div class="row color-row">
 
     <!-- color-link START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-link"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#1B86C3</strong></p>
@@ -222,7 +223,7 @@ order: 01
     <!-- color-link END -->
 
     <!-- color-link-hover START -->
-    <div class="col-md-3 color-col">
+    <div class="col-md-3">
       <div class="color-container color-link-hover"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#125880</strong></p>
@@ -234,7 +235,7 @@ order: 01
     <!-- color-link-hover END -->
 
     <!-- color-active START -->
-    <div class="col-md-3 color-col">
+    <div class="col-md-3">
       <div class="color-container color-active"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#0D405E</strong></p>
@@ -246,7 +247,7 @@ order: 01
     <!-- color-active END -->
 
     <!-- color-visited START -->
-    <div class="col-md-3 color-col">
+    <div class="col-md-3">
       <div class="color-container color-visited"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#801258</strong></p>
@@ -258,7 +259,7 @@ order: 01
     <!-- color-visited END -->
 
     <!-- color-focus START -->
-    <div class="col-md-3 color-col">
+    <div class="col-md-3">
       <div class="color-container color-focus"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#FEBB30</strong></p>
@@ -273,11 +274,11 @@ order: 01
 </div>
 
 <h3 class="heading">Theme farver</h3>
-<div class="container color-row-container">
+<div class="color-row-container">
   <div class="row color-row">
 
     <!-- borger primary START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container borger-primary"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#568331</strong></p>
@@ -289,7 +290,7 @@ order: 01
     <!-- borger primary END -->
 
     <!-- borger medium START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container borger-medium"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#3C5C22</strong></p>
@@ -301,7 +302,7 @@ order: 01
     <!-- borger medium END -->
 
     <!-- borger dark START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container borger-dark"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#233614</strong></p>
@@ -313,10 +314,10 @@ order: 01
     <!-- borger dark END -->
   </div>
 </div>
-<div class="container color-row-container">
+<div class="color-row-container">
   <div class="row color-row">
     <!-- virk primary START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container virk-primary"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#067293</strong></p>
@@ -328,7 +329,7 @@ order: 01
     <!--virk primary END -->
 
     <!-- virk medium START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container virk-medium"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#04556E</strong></p>
@@ -340,7 +341,7 @@ order: 01
     <!--virk medium END -->
 
     <!-- virk dark START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container virk-dark"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#033747</strong></p>
@@ -353,13 +354,15 @@ order: 01
 
   </div>
 </div>
+
 <h3 class="heading">Data farver</h3>
 <h4 class="heading">Værdifarver</h4>
-<div class="container color-row-container">
+<div class="color-row-container">
+  
   <div class="row color-row">
 
     <!-- color-positive START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-positive"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#3F9800</strong></p>
@@ -371,7 +374,7 @@ order: 01
     <!-- color-positive END -->
 
     <!-- color-negative START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-negative"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#CC0000</strong></p>
@@ -386,12 +389,13 @@ order: 01
 
   </div>
 </div>
+
 <h4 class="heading">Visualisering farver til data</h4>
-<div class="container color-row-container">
+<div class="color-row-container">
   <div class="row color-row">
 
   <!-- color-data-green START -->
-  <div class="col-md-3 color-col ">
+  <div class="col-md-3">
     <div class="color-container color-data-green"></div>
     <div class="color-text-container">
       <p class="is-neutral"><strong>#2EAB22</strong></p>
@@ -403,7 +407,7 @@ order: 01
   <!-- color-data-green END -->
 
   <!-- color-data-moss START -->
-  <div class="col-md-3 color-col">
+  <div class="col-md-3">
     <div class="color-container color-data-moss"></div>
     <div class="color-text-container">
       <p class="is-neutral"><strong>#275E00</strong></p>
@@ -415,7 +419,7 @@ order: 01
   <!-- color-data-moss END -->
 
   <!-- color-data-teal START -->
-  <div class="col-md-3 color-col">
+  <div class="col-md-3">
     <div class="color-container color-data-teal"></div>
     <div class="color-text-container">
       <p class="is-neutral"><strong>#15B094</strong></p>
@@ -427,7 +431,7 @@ order: 01
   <!-- color-data-teal END -->
 
   <!-- color-data-turqoice START -->
-  <div class="col-md-3 color-col">
+  <div class="col-md-3">
     <div class="color-container color-data-turqoice"></div>
     <div class="color-text-container">
       <p class="is-neutral"><strong>#56D4D6</strong></p>
@@ -439,7 +443,7 @@ order: 01
   <!-- color-data-turqoice END -->
 
   <!-- color-data-violet START -->
-  <div class="col-md-3 color-col">
+  <div class="col-md-3">
     <div class="color-container color-data-violet"></div>
     <div class="color-text-container">
       <p class="is-neutral"><strong>#474E95</strong></p>
@@ -451,7 +455,7 @@ order: 01
   <!-- color-data-violet END -->
 
   <!-- color-data-purple START -->
-  <div class="col-md-3 color-col">
+  <div class="col-md-3">
     <div class="color-container color-data-purple"></div>
     <div class="color-text-container">
       <p class="is-neutral"><strong>#8F2B8F</strong></p>
@@ -464,7 +468,7 @@ order: 01
 
 
     <!-- color-data-yellow START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3 ">
       <div class="color-container color-data-yellow"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#EBE049</strong></p>
@@ -476,7 +480,7 @@ order: 01
     <!-- color-data-yellow END -->
 
     <!-- color-data-khaki START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3 ">
       <div class="color-container color-data-khaki"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#B89E5E</strong></p>
@@ -488,7 +492,7 @@ order: 01
     <!-- color-data-khaki END -->
 
     <!-- color-data-brown START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-data-brown"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#6B4A21</strong></p>
@@ -500,7 +504,7 @@ order: 01
     <!-- color-data-brown END -->
 
     <!-- color-data-orange START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-data-orange"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#FF531A</strong></p>
@@ -512,7 +516,7 @@ order: 01
     <!-- color-data-orange END -->
 
     <!-- color-data-cyklamen START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-data-cyklamen"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#E64969</strong></p>
@@ -524,7 +528,7 @@ order: 01
     <!-- color-data-cyklamen END -->
 
     <!-- color-data-magenta START -->
-    <div class="col-md-3 color-col ">
+    <div class="col-md-3">
       <div class="color-container color-data-magenta"></div>
       <div class="color-text-container">
         <p class="is-neutral"><strong>#E50081</strong></p>
