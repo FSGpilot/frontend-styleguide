@@ -30,6 +30,8 @@ subnav:
   href: '/components/komponenter/trinindikatorer/'
 - text: Navigation
   href: '/components/komponenter/sidenav/'
+- text: Tab navigation
+  href: '/components/komponenter/tabnav/'
 - text: Multi Select
   href: '/components/komponenter/select2-multiselect/'
 ---
