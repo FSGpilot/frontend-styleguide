@@ -3,7 +3,7 @@ title: File input
 parent: Form controls
 maturity: alpha
 order: 07
-lead: File input lead
+lead: A control that lets the user select a file.
 ---
 
 {% include code/preview.html component="file-input" %}
@@ -15,25 +15,15 @@ lead: File input lead
   </button>
   <div id="date-input-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>
-    <p>Uses the OS default styling.</p>
-    <h4 class="heading">Accessibility</h4>
-    <ul class="content-list">
-      <li></li>
-      <li></li>
+    <p>We recommend using a native input using type="file", rather than a custom implementation.</p>
+    <p>This is so:</p>
+      <ul class="content-list">
+      <li>the control gains focus when tabbing through the page</li>
+      <li>the control functions using a keyboard</li>
+      <li>the control functions using assistive technology</li>
+      <li>the control functions when javascript is not available</li>
     </ul>
-    <h4 class="heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="content-list">
-      <li></li>
-    </ul>
-    <h5>When to consider something else</h5>
-    <ul class="content-list">
-      <li></li>
-    </ul>
-    <h5>Guidelines</h5>
-    <ul class="content-list">
-      <li></li>
-      <li></li>
-    </ul>
+    <br>
+    <p>A custom implementation of this control would need to meet the criteria above.</p>
   </div>
 </div>
