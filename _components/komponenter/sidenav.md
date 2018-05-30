@@ -8,8 +8,8 @@ subcategory: Komponenter
 lead: "Hierarchical, vertical navigation to place at the side of a page."
 ---
 <h2>Sidebar</h2>
-{% include code/preview.html component="sidenav" %}
-{% include code/accordion.html component="sidenav" %}
+{% include code/preview.html component="sidenav--compare" %}
+{% include code/accordion.html component="sidenav--compare" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">
@@ -18,14 +18,16 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>
     <ul class="content-list">
-      <li>Alle aktive menupunkter bliver semibold og sættes med variablen <code>$font-weight-semibold</code></li>
-      <li>Aktive menupunkter har en <code>.current</code> class, som gør teksten semibold</li>
-      <li>Kun det sidste aktive menupunkt har i stedet en <code>.active</code> class, der udover at være semibold, har en border i venstre side, som bliver sat med variablen <code>$sidenav-active-border-width</code></li>
+      <li>Alle aktive menupunkter skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
+      <li>Teksten i det aktive menupunkt skal være primærfarven, som og sættes med variablen <code>$color-primary</code></li>
+      <li>Aktive menupunkter skal have en <code>.current</code> class, som gør teksten semibold</li>
+      <li>Kun det sidste aktive menupunkt skal i stedet have en <code>.active</code> class, der udover at være semibold, har en border i venstre side, som bliver sat med variablen <code>$sidenav-active-border-width</code></li>
+      <li>På hover skal baggrundsfarven og teksten på trinene skifte, her skal variablen <code>$color-gray-pale</code>bruges til baggrunden og variablen<code>$color-link-hover</code> bruges til teksten</li> 
     </ul>
   </div>
 </div>
 
-
+<!--
 <h2>Simpel sidenavigation</h2>
 {% include code/preview.html component="sidebar" %}
 {% include code/accordion.html component="sidebar" %}
@@ -59,3 +61,4 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
     </ul>
   </div>
 </div>
+-->

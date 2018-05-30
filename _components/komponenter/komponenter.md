@@ -8,6 +8,8 @@ lead: Designsystemets komponenter kan implementeres direkte i din løsning, og e
 subnav:
 - text: Knapper
   href: '/components/komponenter/buttons/' 
+- text: Tags
+  href: '/components/komponenter/tags/'
 - text: Accordions
   href: '/components/komponenter/accordions/'
 - text: Beskeder
@@ -22,12 +24,16 @@ subnav:
   href: '/components/komponenter/labels/'
 - text: Tabeller
   href: '/components/komponenter/tables/'
+- text: Datatabeller
+  href: '/components/komponenter/datatables/'
 - text: Tekstelementer
   href: '/components/komponenter/tekstelementer/'
 - text: Trinindikatorer
   href: '/components/komponenter/trinindikatorer/'
 - text: Navigation
   href: '/components/komponenter/sidenav/'
+- text: Tab navigation
+  href: '/components/komponenter/tabnav/'
 - text: Multi Select
   href: '/components/komponenter/select2-multiselect/'
 ---

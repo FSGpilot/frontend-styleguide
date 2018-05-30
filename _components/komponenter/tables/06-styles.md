@@ -1,10 +1,10 @@
 ---
 title: Table styles
 parent: Tables
-order: 03
+order: 06
 lead: Tables can be styled in several ways. Some of the styles that are possibe is to add or remove borders and zebra stripes. The height of the rows can be customized as well.
 ---
-
+<!-->
 <div class="accordion-bordered accordion-docs">
     <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="styles-docs">Documentation</button>
     <div id="styles-docs" aria-hidden="false" class="accordion-content">
@@ -68,3 +68,5 @@ lead: Tables can be styled in several ways. Some of the styles that are possibe 
 <h4>Borderless zebra table</h4>
 {% include code/preview.html component="borderless-zebra" %}
 {% include code/accordion.html component="borderless-zebra" %}
+
+-->
