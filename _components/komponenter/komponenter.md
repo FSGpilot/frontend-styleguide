@@ -8,6 +8,8 @@ lead: Designsystemets komponenter kan implementeres direkte i din løsning, og e
 subnav:
 - text: Knapper
   href: '/components/komponenter/buttons/' 
+- text: Tags
+  href: '/components/komponenter/tags/'
 - text: Accordions
   href: '/components/komponenter/accordions/'
 - text: Beskeder
