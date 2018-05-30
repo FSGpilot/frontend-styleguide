@@ -540,3 +540,43 @@ order: 01
     <!-- color-data-magenta END -->
   </div>
 </div>
+
+<h3 class="heading">Tilpasningsmuligheder: </h3>
+<h4>Eksempel</h4>
+<p>Tilpas Styleguiden med vores indbyggede brugerdefinerede variabler fil og nemt skifte globale CSS præferencer med nye $color- * Sass variabler. Overstyr værdien af en variabel og genkompilere med den medfølgende gruntfile efter behov.</p>
+
+
+<p>Styleguiden leveres med en nem overstyring af standardvariabler i /scss/variables.scss. Opret og ændre relevante linjer derfra i filen, rediger værdierne og genkompil din Sass for at ændre vores standardværdier.
+<br />
+<br />
+Hvis du for eksempel vil ændre farven for "Base colors" af "black", skal du gøre følgende:
+<br /><br />
+Gør det samme for enhver variabel, du skal tilsidesætte, herunder de globale muligheder, der er angivet nedenfor.
+<br />
+</p>
+
+<p style='font-family: Consolas, Monaco, "Andale Mono", monospace; font-size:13px;' >
+  //------ Swatches and Theming ----------- <br />
+  //--------------------------------------- <br />
+  //color contrasting
+  <br />
+  $color-base-001:              #ffffff !default;
+  <br />
+  $color-base-002:              #1a1a1a !default;
+  <br />
+  <br />
+  //------ colors variables ------------ <br />
+  //------------------------------------ <br />
+  <br />
+  // Base colors
+  <br />
+  $color-white:                 $color-base-001 !default; <br />
+  $color-black:                 $color-base-002 !default; <br />
+</p>
+
+
+<div class="container color-row-container">
+  <div class="row color-row">
+
+  </div>
+</div>
