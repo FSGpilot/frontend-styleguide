@@ -4420,12 +4420,6 @@ legend {
   .date-group .form-group-year {
     margin-right: 16px;
     margin-top: 8px; }
-    .date-group .form-group-day::-webkit-outer-spin-button, .date-group .form-group-day::-webkit-inner-spin-button,
-    .date-group .form-group-month::-webkit-outer-spin-button,
-    .date-group .form-group-month::-webkit-inner-spin-button,
-    .date-group .form-group-year::-webkit-outer-spin-button,
-    .date-group .form-group-year::-webkit-inner-spin-button {
-      display: none; }
   .date-group .form-group-day,
   .date-group .form-group-month,
   .date-group .form-group-year {
@@ -4436,12 +4430,13 @@ legend {
       cursor: pointer; }
     .date-group .icon-svg.js-calendar-datepicker:focus {
       outline: 4px solid #febb30; }
-  .date-group [type=number]::-webkit-inner-spin-button,
-  .date-group [type=number]::-webkit-outer-spin-button {
-    appearance: none;
-    margin: 0; }
-  .date-group [type=number] {
-    -moz-appearance: textfield; }
+
+input[type='number'] {
+  -moz-appearance: textfield !important; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important; }
 
 .form-label + input[type=file] {
   margin-top: 8px; }
