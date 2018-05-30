@@ -7240,6 +7240,10 @@ input[type=search] {
       /* stylelint-disable-line selector-no-qualifying-type */
       padding-left: 44px; }
 
+@media screen and (min-width: 576px) {
+  .sidebar-col {
+    flex: 0 0 300px; } }
+
 .skipnav {
   background: transparent;
   color: #1a1a1a;
