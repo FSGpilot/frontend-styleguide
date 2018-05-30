@@ -1,10 +1,11 @@
 ---
 title: Overflow menu
-parent: Tables
+parent: Datatables
 order: 04
 lead: Overflow menu is a separate component that can be also used in other places of the website. It is a button that expands a menu with some options. 
 ---
 
+<!--
 {% include code/accordion.html component="overflow-menu" %}
 
 <div class="accordion-bordered accordion-docs">
@@ -37,3 +38,4 @@ lead: Overflow menu is a separate component that can be also used in other place
         </div>
     </div>
 </div>
+-->

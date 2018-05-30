@@ -1,14 +1,14 @@
 ---
 title: Expandable table
-parent: Tables
-order: 02
+parent: Datatables
+order: 03
 lead: An expandable table allows the user to show and hide content of a row. 
 ---
 
-{% include code/preview.html component="expandable" %}
-{% include code/accordion.html component="expandable" %}
+{% include code/preview.html component="datatables--expandable-row" %}
+{% include code/accordion.html component="datatables--expandable-row" %}
 
-
+<!--
 <div class="accordion-bordered accordion-docs">
     <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="expandable-docs">Documentation</button>
     <div id="expandable-docs" aria-hidden="false" class="accordion-content">
@@ -36,3 +36,4 @@ lead: An expandable table allows the user to show and hide content of a row.
         </div>
     </div>
 </div>
+-->

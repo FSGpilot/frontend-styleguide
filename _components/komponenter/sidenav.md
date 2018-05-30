@@ -8,8 +8,8 @@ subcategory: Komponenter
 lead: "Hierarchical, vertical navigation to place at the side of a page."
 ---
 <h2>Sidebar</h2>
-{% include code/preview.html component="sidenav" %}
-{% include code/accordion.html component="sidenav" %}
+{% include code/preview.html component="sidenav--compare" %}
+{% include code/accordion.html component="sidenav--compare" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">
@@ -27,7 +27,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
   </div>
 </div>
 
-
+<!--
 <h2>Simpel sidenavigation</h2>
 {% include code/preview.html component="sidebar" %}
 {% include code/accordion.html component="sidebar" %}
@@ -61,3 +61,4 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
     </ul>
   </div>
 </div>
+-->

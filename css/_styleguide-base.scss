@@ -1363,6 +1363,14 @@ p, .body-text,
 .page-accordion-html{
   padding-top: 4px;
 }
+.page-buttons-html{
+  padding-left: 20px;
+}
+.page-date-input-html{
+  & .container{
+    height: 500px; //so that datepicker is visible
+  } 
+}
 
 .page-design-principles {
   @include media($medium-screen) {

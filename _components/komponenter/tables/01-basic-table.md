@@ -1,21 +1,19 @@
 ---
-title: Datatables
+title: Table
 parent: Tables
 order: 01
-lead: A datatable is an arrangement of data in rows and columns that make comparing information easier. The following datatables enables the user to sort the data by clicking on the different headers or filter it by typing a text in the 'Search compute' field. Each row has a menu to the right, that enables performing some actions on it. Rows selected by checking the checkbox can be modified all together. The user can change rows width in the datatable settings. 
+lead: Tables show tabular data in columns and rows.
 ---
 
-{% include code/preview.html component="datatable" %}
-{% include code/accordion.html component="datatable" %}
+{% include code/preview.html component="table" %}
+{% include code/accordion.html component="table" %}
 
+<!-- 
 <div class="accordion-bordered accordion-docs">
     <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="datatable-docs">Documentation</button>
     <div id="datatable-docs" aria-hidden="false" class="accordion-content">
         <h4>SCSS classes</h4>
-        <p>Each part of the datatable has a scss-class which defines its style and behaviour. All necessary classes are listed in the tables below.</p>        
-        <!--To be added later when more information has been provided>
-        <p>The overflow menu can selected from the settings button and each row expandable menu. It is a seperate component. Documentation how to use it in the <a href="todo">overflow menu section.</a></p>
-        <-->
+        <p>Each part of the datatable has a scss-class which defines its style and behaviour. All necessary classes are listed in the tables below.</p>
         <div class="table-container">
             <h5>General table structure</h5>
             <table class="dk-table borderless compact" style="font-size: small">
@@ -111,3 +109,4 @@ lead: A datatable is an arrangement of data in rows and columns that make compar
         </div>
     </div>
 </div>
+-->

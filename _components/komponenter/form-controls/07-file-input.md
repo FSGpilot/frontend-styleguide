@@ -15,6 +15,7 @@ lead: File input lead
   </button>
   <div id="date-input-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>
+    <p>Uses the OS default styling.</p>
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
       <li></li>
