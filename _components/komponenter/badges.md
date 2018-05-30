@@ -1,21 +1,36 @@
 ---
-permalink: /components/komponenter/labels/
+permalink: /components/komponenter/badges/
 layout: styleguide
 type: element
-title: Labels
+title: Badges
 category: UI components
 subcategory: Komponenter
-lead: Labels draw attention to new or important content.
+lead: Badges draw attention to new or important content.
 ---
 
-{% include code/preview.html component="labels" %}
-{% include code/accordion.html component="labels" %}
+{% include code/preview.html component="badges" %}
+{% include code/accordion.html component="badges" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="label-docs">
     Documentation
   </button>
   <div id="label-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Implementation</h4>
+    <p>Alle badges skal have en <code>.badge</code> class på <code>&lt;label&gt;&lt;/label&gt;</code> elementet.</p>
+    <p>Badges findes i to størrelser, store og små:</p>
+    <ul>
+      <li><p>For et stort badge skal der tilføjes en <code>.badge-large</code> class. </p></li>
+      <li><p>For et lille badge skal der tilføjes en <code>.badge-small</code> class. </p></li>
+    </ul>
+    <p>Et stort badge vil se følgende ud:</p>
+    <ul>
+      <li><code>&lt;label class="badge badge-large"My badge&lt;/label&gt;</code></li>
+    </ul>
+    <p>Et lille badge vil se følgende ud:</p>
+    <ul>
+      <li><code>&lt;label class="badge badge-small"My badge&lt;/label&gt;</code></li>
+    </ul>
     <h4 class="heading">Accessibility</h4>
     <p>When labels are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</p>
 

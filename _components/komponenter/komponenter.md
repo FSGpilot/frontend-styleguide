@@ -22,6 +22,8 @@ subnav:
   href: '/components/komponenter/search/'
 - text: info
   href: '/components/komponenter/labels/'
+- text: Badges
+  href: '/components/komponenter/badges/'
 - text: Tabeller
   href: '/components/komponenter/tables/'
 - text: Datatabeller
