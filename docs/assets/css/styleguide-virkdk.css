@@ -5499,6 +5499,9 @@ tbody tr.shown .details-control:after {
   border-radius: 3px; }
   .accordion-button:hover {
     background-color: transparent; }
+  .accordion-button:hover {
+    background-color: #BFBFBF;
+    color: #067293; }
   .accordion-button h1, .accordion-button .h1,
   .accordion-button h2, .accordion-button .h2,
   .accordion-button h3, .accordion-button .h3,
