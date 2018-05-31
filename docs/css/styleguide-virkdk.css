@@ -4075,8 +4075,8 @@ html .button-secondary-inverse-disabled,
   border: none;
   font-size: 1.8rem;
   font-weight: 500;
-  min-height: 24px;
   color: #ffffff;
+  background-color: #454545;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 2.4rem;
@@ -4090,6 +4090,12 @@ html .button-secondary-inverse-disabled,
   @media screen and (min-width: 576px) {
     .tag {
       width: auto; } }
+  .tag:hover, .tag.tag-hover {
+    background-color: #747474; }
+  .tag:active, .tag.tag-active {
+    background-color: #1a1a1a; }
+  .tag.focus, .tag:focus {
+    background-color: #454545; }
   .tag.focus, .tag:focus {
     border-color: #febb30;
     outline-color: #febb30;
@@ -4103,15 +4109,6 @@ html .button-secondary-inverse-disabled,
       left: -2px;
       top: -2px;
       z-index: -1; }
-  .tag.tag-primary {
-    color: #ffffff;
-    background-color: #067293; }
-    .tag.tag-primary:hover, .tag.tag-primary.tag-hover {
-      background-color: #747474; }
-    .tag.tag-primary:active, .tag.tag-primary.tag-active {
-      background-color: #1a1a1a; }
-    .tag.tag-primary.focus, .tag.tag-primary:focus {
-      background-color: #067293; }
   .tag .icon-svg {
     float: right;
     margin: 0px 0px 0px 5px;
@@ -7277,7 +7274,8 @@ input[type=search] {
   .table td, .table th {
     padding: calc(16px - 1px);
     background-color: inherit;
-    border: 1px solid #BFBFBF; }
+    border: 1px solid #BFBFBF;
+    vertical-align: top; }
   .table.row-hover tr:hover td {
     background-color: #F5F5F5; }
   .table.borderless thead {
