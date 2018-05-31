@@ -104,7 +104,7 @@ order: 01
 
  <h3 class="heading">Opmærksomhedsfarver</h3>
 <div class="color-row-container">
- 
+
   <div class="row color-row">
 
     <!-- color-success START -->
@@ -207,7 +207,7 @@ order: 01
 
 <h3 class="heading">Interaktionsfarver</h3>
 <div class="color-row-container">
-  
+
   <div class="row color-row">
 
     <!-- color-link START -->
@@ -358,7 +358,7 @@ order: 01
 <h3 class="heading">Data farver</h3>
 <h4 class="heading">Værdifarver</h4>
 <div class="color-row-container">
-  
+
   <div class="row color-row">
 
     <!-- color-positive START -->
@@ -549,29 +549,42 @@ order: 01
 <p>Styleguiden leveres med en nem overstyring af standardvariabler i /scss/variables.scss. Opret og ændre relevante linjer derfra i filen, rediger værdierne og genkompil din Sass for at ændre vores standardværdier.
 <br />
 <br />
-Hvis du for eksempel vil ændre farven for "Base colors" af "black", skal du gøre følgende:
-<br /><br />
-Gør det samme for enhver variabel, du skal tilsidesætte, herunder de globale muligheder, der er angivet nedenfor.
+Som udgangspunkt har Styleguiden en række globale farverkode (Swatches and Theming) disse farvekoder er som udgangpunkt fast defineret.
+<br />
+<br />
+Måden hvorpå vi håndtere variable gøres eksempelvis ved, at ændre farven for "color-text", skal du gøre følgende:
+<br />
+1) Der oprettes en ny global farve kode, med foreløbende number - eksempelvis:  $color-gray-007"
+<br />
+2) Mapping mellem global variabler & standardvariabler sker efter "Swatches and Theming" i dette tilfælde "$color-text" sættes den nye værdi med vores nye global ($color-gray-007)
 <br />
 </p>
 
-<p style='font-family: Consolas, Monaco, "Andale Mono", monospace; font-size:13px;' >
+<p style='font-family: Consolas, Monaco, "Andale Mono", monospace; font-size:13px;'>
   //------ Swatches and Theming ----------- <br />
   //--------------------------------------- <br />
   //color contrasting
   <br />
-  $color-base-001:              #ffffff !default;
+  $color-base-001:              #ffffff !default;<br />
+  $color-base-002:              #1a1a1a !default;<br />
   <br />
-  $color-base-002:              #1a1a1a !default;
+  //Gray
+  <br />
+  $color-gray-001:              $color-base-002 !default;<br />
+  $color-gray-002:              #454545 !default;<br />
+  $color-gray-003:              #747474 !default;<br />
+  $color-gray-004:              #999999 !default;<br />
+  $color-gray-005:              #BFBFBF !default;<br />
+  $color-gray-006:              #F5F5F5 !default;
   <br />
   <br />
   //------ colors variables ------------ <br />
   //------------------------------------ <br />
+  // Text color
   <br />
-  // Base colors
-  <br />
-  $color-white:                 $color-base-001 !default; <br />
-  $color-black:                 $color-base-002 !default; <br />
+  $color-text:                  $color-gray-002 !default;<br />
+  $color-text-secondary:        $color-gray-003 !default;<br />
+  $color-text-bright:           $color-gray-006 !default;
 </p>
 
 
