@@ -4523,9 +4523,6 @@ input::-webkit-inner-spin-button {
 .form-label + input[type=file] {
   margin-top: 8px; }
 
-input[type=file] {
-  height: 4rem; }
-
 .required {
   color: #E92021; }
 
@@ -5500,8 +5497,7 @@ tbody tr.shown .details-control:after {
   .accordion-button:hover {
     background-color: transparent; }
   .accordion-button:hover {
-    background-color: #BFBFBF;
-    color: #747474; }
+    background-color: #BFBFBF; }
   .accordion-button h1, .accordion-button .h1,
   .accordion-button h2, .accordion-button .h2,
   .accordion-button h3, .accordion-button .h3,
