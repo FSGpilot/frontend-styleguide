@@ -5533,7 +5533,7 @@ tbody tr.shown .details-control:after {
           float: left; } }
 
 .accordion-bordered .accordion-button {
-  border: solid 1px #ccc;
+  border: 1px solid #999999;
   border-radius: 3px 3px 0 0; }
 
 .accordion,
@@ -5580,9 +5580,9 @@ tbody tr.shown .details-control:after {
     width: 100%; }
 
 .accordion-bordered .accordion-content {
-  border-bottom: 1px solid #BFBFBF;
-  border-left: 1px solid #BFBFBF;
-  border-right: 1px solid #BFBFBF;
+  border-bottom: 1px solid #999999;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
   border-radius: 0 0 3px 3px; }
 
 .accordion-content {
@@ -5610,6 +5610,8 @@ tbody tr.shown .details-control:after {
 
 .accordion-button[aria-expanded=true] {
   font-weight: 600; }
+  .accordion-bordered .accordion-button[aria-expanded=true] {
+    border-bottom: 1px solid #BFBFBF; }
 
 .accordion-button[aria-expanded=false] {
   background-image: url("../assets/img/svg-icons//plus.svg");
@@ -7261,11 +7263,12 @@ input[type=search] {
 
 .table {
   margin: 0;
-  line-height: 2.4rem; }
+  line-height: 2.4rem;
+  border: 1px solid #999999; }
   .table thead {
     background-color: #F5F5F5; }
     .table thead tr {
-      border-bottom: solid 1px 1px solid #BFBFBF; }
+      border-bottom: 1px solid #BFBFBF; }
     .table thead th {
       font-weight: 600;
       text-align: left; }
@@ -7274,49 +7277,52 @@ input[type=search] {
   .table td, .table th {
     padding: calc(16px - 1px);
     background-color: inherit;
-    border: 1px solid #BFBFBF;
+    border-right: 1px solid #BFBFBF;
     vertical-align: top; }
+    .table td:last-child, .table th:last-child {
+      border-right: none; }
+  .table tr td {
+    border-bottom: 1px solid #BFBFBF; }
+    .table tr td:last-child {
+      border-right: none; }
+  .table tr:last-child td {
+    border-bottom: none; }
   .table.row-hover tr:hover td {
     background-color: #F5F5F5; }
-  .table.borderless thead {
-    background-color: transparent; }
-    .table.borderless thead th {
-      background-color: transparent;
-      border-top-color: transparent;
+  .table.borderless {
+    border: none; }
+    .table.borderless thead {
+      background-color: transparent; }
+      .table.borderless thead th {
+        background-color: transparent;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom: 1px solid #BFBFBF; }
+        .table.borderless thead th:first-child {
+          padding-left: 0; }
+        .table.borderless thead th:last-child {
+          padding-right: 0; }
+    .table.borderless tbody tr td {
+      border: 1px solid #BFBFBF;
       border-left-color: transparent;
       border-right-color: transparent; }
-      .table.borderless thead th:first-child {
+      .table.borderless tbody tr td:first-child {
         padding-left: 0; }
-      .table.borderless thead th:last-child {
+      .table.borderless tbody tr td:last-child {
         padding-right: 0; }
-  .table.borderless tbody tr td {
-    border: 1px solid #BFBFBF;
-    border-left-color: transparent;
-    border-right-color: transparent; }
-    .table.borderless tbody tr td:first-child {
-      padding-left: 0; }
-    .table.borderless tbody tr td:last-child {
-      padding-right: 0; }
-  .table.borderless tbody tr:first-child td {
-    border-top-color: transparent;
-    border-top-color: transparent; }
-  .table.borderless tbody tr:last-child td {
-    border-bottom-color: transparent;
-    border-bottom-color: transparent; }
+    .table.borderless tbody tr:first-child td {
+      border-top-color: transparent;
+      border-top-color: transparent; }
+    .table.borderless tbody tr:last-child td {
+      border-bottom-color: transparent;
+      border-bottom-color: transparent; }
   .table.zebra thead th {
     border-right-color: transparent; }
-    .table.zebra thead th:last-child {
-      border-right: 1px solid #BFBFBF; }
   .table.zebra tr:nth-child(even) {
     background-color: #F5F5F5; }
   .table.zebra tbody td {
-    border-color: transparent; }
-    .table.zebra tbody td:first-child {
-      border-left: 1px solid #BFBFBF; }
-    .table.zebra tbody td:last-child {
-      border-right: 1px solid #BFBFBF; }
-  .table.zebra tbody tr:last-child td {
-    border-bottom: 1px solid #BFBFBF; }
+    border-right: transparent; }
   .table.zebra.borderless thead {
     background-color: #F5F5F5; }
   .table.zebra.borderless td, .table.zebra.borderless th {
@@ -8540,7 +8546,7 @@ article {
     margin-top: 0.5rem; }
 
 .component-preview {
-  border: 1px solid #BFBFBF;
+  border: 1px solid #999999;
   margin-bottom: 0.4rem;
   position: relative;
   padding-left: 0.4rem;
