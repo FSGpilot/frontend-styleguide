@@ -1,7 +1,5 @@
 ---
 permalink: /components/komponenter/labels/
-redirect_from:
-- /labels/
 layout: styleguide
 type: element
 title: Labels

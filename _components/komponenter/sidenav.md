@@ -27,11 +27,12 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
   </div>
 </div>
 
-<!--
+
 <h2>Simpel sidenavigation</h2>
 {% include code/preview.html component="sidebar" %}
 {% include code/accordion.html component="sidebar" %}
-<div class="accordion-bordered">
+
+<div class="accordion accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">
     Documentation
@@ -61,4 +62,3 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
     </ul>
   </div>
 </div>
--->
