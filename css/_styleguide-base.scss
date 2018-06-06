@@ -1148,7 +1148,7 @@ h6.heading-alt {
 
 code,
 pre {
-  background-color: $color-gray-medium-light;
+  background-color: $color-gray-pale;
   font-family: $font-monospace;
   font-size: 1.3rem;
 }
@@ -1171,7 +1171,7 @@ code {
 }
 
 .code-highlight {
-  background-color: $color-gray-medium-light;
+  background-color: $color-gray-pale;
   padding: 16px;
   pre, code {
     max-width: $lead-max-width;

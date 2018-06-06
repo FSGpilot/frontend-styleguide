@@ -25,24 +25,34 @@
   
     
 &amp;lt;form class=&quot;form&quot;&amp;gt;
+    &amp;lt;h2&amp;gt;Validation examples&amp;lt;/h2&amp;gt;
     &amp;lt;fieldset&amp;gt;
-        &amp;lt;legend class=&quot;drop_text&quot;&amp;gt;Enter a code&amp;lt;/legend&amp;gt;
-
+        &amp;lt;legend&amp;gt;Enter a code&amp;lt;/legend&amp;gt;
+        &amp;lt;br&amp;gt;
         &amp;lt;div class=&quot;alert alert-info&quot;&amp;gt;
             &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
                 &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Codes must:&amp;lt;/h3&amp;gt;
             &amp;lt;/div&amp;gt;
-            &amp;lt;ul class=&quot;checklist&quot; id=&quot;validate-code&quot;&amp;gt;
+            &amp;lt;ul id=&quot;validate-code&quot;&amp;gt;
                 &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
                 &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
             &amp;lt;/ul&amp;gt;
         &amp;lt;/div&amp;gt;
 
-        &amp;lt;label for=&quot;code&quot;&amp;gt;Code&amp;lt;/label&amp;gt;
-        &amp;lt;input id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; aria-describedby=&quot;validate-code&quot; data-validate-uppercase=&quot;[A-Z]&quot;
-            data-validate-numerical=&quot;\d&quot; data-validation-element=&quot;#validate-code&quot;&amp;gt;
+        &amp;lt;div class=&quot;form-group mt-5&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot; for=&quot;code&quot;&amp;gt;Code&amp;lt;/label&amp;gt;
+            &amp;lt;input class=&quot;form-input&quot; id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; aria-describedby=&quot;validate-code&quot;
+                data-validate-uppercase=&quot;[A-Z]&quot; data-validate-numerical=&quot;\d&quot; data-validation-element=&quot;#validate-code&quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
 
-        &amp;lt;input type=&quot;submit&quot; value=&quot;Submit code&quot;&amp;gt;
+        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot; for=&quot;code&quot;&amp;gt;Numbers only regex (max-length of 4)&amp;lt;/label&amp;gt;
+            &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-2&quot;&amp;gt;Input mask that prevent user from typing certain input.&amp;lt;/span&amp;gt;
+            &amp;lt;input class=&quot;form-input&quot; id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;input class=&quot;button button-primary mt-5&quot; type=&quot;submit&quot; value=&quot;Submit code&quot;&amp;gt;
+
     &amp;lt;/fieldset&amp;gt;
 &amp;lt;/form&amp;gt;
 
@@ -83,24 +93,34 @@
   
     
 &amp;lt;form class=&quot;form&quot;&amp;gt;
+    &amp;lt;h2&amp;gt;Validation examples&amp;lt;/h2&amp;gt;
     &amp;lt;fieldset&amp;gt;
-        &amp;lt;legend class=&quot;drop_text&quot;&amp;gt;Enter a code&amp;lt;/legend&amp;gt;
-
+        &amp;lt;legend&amp;gt;Enter a code&amp;lt;/legend&amp;gt;
+        &amp;lt;br&amp;gt;
         &amp;lt;div class=&quot;alert alert-info&quot;&amp;gt;
             &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
                 &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Codes must:&amp;lt;/h3&amp;gt;
             &amp;lt;/div&amp;gt;
-            &amp;lt;ul class=&quot;checklist&quot; id=&quot;validate-code&quot;&amp;gt;
+            &amp;lt;ul id=&quot;validate-code&quot;&amp;gt;
                 &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
                 &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
             &amp;lt;/ul&amp;gt;
         &amp;lt;/div&amp;gt;
 
-        &amp;lt;label for=&quot;code&quot;&amp;gt;Code&amp;lt;/label&amp;gt;
-        &amp;lt;input id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; aria-describedby=&quot;validate-code&quot; data-validate-uppercase=&quot;[A-Z]&quot;
-            data-validate-numerical=&quot;\d&quot; data-validation-element=&quot;#validate-code&quot;&amp;gt;
+        &amp;lt;div class=&quot;form-group mt-5&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot; for=&quot;code&quot;&amp;gt;Code&amp;lt;/label&amp;gt;
+            &amp;lt;input class=&quot;form-input&quot; id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; aria-describedby=&quot;validate-code&quot;
+                data-validate-uppercase=&quot;[A-Z]&quot; data-validate-numerical=&quot;\d&quot; data-validation-element=&quot;#validate-code&quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
 
-        &amp;lt;input type=&quot;submit&quot; value=&quot;Submit code&quot;&amp;gt;
+        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot; for=&quot;code&quot;&amp;gt;Numbers only regex (max-length of 4)&amp;lt;/label&amp;gt;
+            &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-2&quot;&amp;gt;Input mask that prevent user from typing certain input.&amp;lt;/span&amp;gt;
+            &amp;lt;input class=&quot;form-input&quot; id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;input class=&quot;button button-primary mt-5&quot; type=&quot;submit&quot; value=&quot;Submit code&quot;&amp;gt;
+
     &amp;lt;/fieldset&amp;gt;
 &amp;lt;/form&amp;gt;
 
@@ -407,24 +427,34 @@
   <div id="code-validation" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Validation examples<span class="nt">&lt;/h2&gt;</span>
     <span class="nt">&lt;fieldset&gt;</span>
-        <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"drop_text"</span><span class="nt">&gt;</span>Enter a code<span class="nt">&lt;/legend&gt;</span>
-
+        <span class="nt">&lt;legend&gt;</span>Enter a code<span class="nt">&lt;/legend&gt;</span>
+        <span class="nt">&lt;br&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Codes must:<span class="nt">&lt;/h3&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"checklist"</span> <span class="na">id=</span><span class="s">"validate-code"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"validate-code"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"uppercase"</span><span class="nt">&gt;</span>Have at least 1 uppercase character<span class="nt">&lt;/li&gt;</span>
                 <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"numerical"</span><span class="nt">&gt;</span>Have at least 1 numerical character<span class="nt">&lt;/li&gt;</span>
             <span class="nt">&lt;/ul&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"code"</span><span class="nt">&gt;</span>Code<span class="nt">&lt;/label&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"code"</span> <span class="na">name=</span><span class="s">"code"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"validate-code"</span> <span class="na">data-validate-uppercase=</span><span class="s">"[A-Z]"</span>
-            <span class="na">data-validate-numerical=</span><span class="s">"\d"</span> <span class="na">data-validation-element=</span><span class="s">"#validate-code"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group mt-5"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"code"</span><span class="nt">&gt;</span>Code<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"code"</span> <span class="na">name=</span><span class="s">"code"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"validate-code"</span>
+                <span class="na">data-validate-uppercase=</span><span class="s">"[A-Z]"</span> <span class="na">data-validate-numerical=</span><span class="s">"\d"</span> <span class="na">data-validation-element=</span><span class="s">"#validate-code"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
 
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit code"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"code"</span><span class="nt">&gt;</span>Numbers only regex (max-length of 4)<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-2"</span><span class="nt">&gt;</span>Input mask that prevent user from typing certain input.<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"code"</span> <span class="na">name=</span><span class="s">"code"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"button button-primary mt-5"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit code"</span><span class="nt">&gt;</span>
+
     <span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </code></pre>
