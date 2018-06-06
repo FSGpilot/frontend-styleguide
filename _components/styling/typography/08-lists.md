@@ -18,7 +18,8 @@ order: 07
   </button>
   <div id="list-docs" class="accordion-content">
     <h4 class="heading">Implementation</h4>
-    <p>Lists are styled by default. For unstyled lists, use either the <code>unstyled-list</code> class or unstyled list mixin: <code>@include unstyled-list;</code>. Both are located in <code>src/stylesheets/core/<wbr>_utilities.scss</code>.</p>
+    <p>Alle lister har default styling. Dog kan der tilføjes en class på ul afhængig af, om man vil have almindelig tekst eller lille tekst. For almindelig tekst tilføjes en <code>paragraph-list</code> class og for lille tekst tilføjes en <code>small-list</code> class.</p>
+    <p>For lister uden styling bruges en <code>.unstyled-list</code> class eller et mixin <code>@include unstyled-list;</code>.</p>
     <h4 class="heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="content-list">
