@@ -14,8 +14,8 @@ lead: A card is a sheet of material that serves as an entry point to more detail
     </div>
 </div>
 
-{% include code/preview.html component="card" %}
-{% include code/accordion.html component="card" %}
+{% include code/preview.html component="cards" %}
+{% include code/accordion.html component="cards" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="alert-docs">
