@@ -5315,10 +5315,11 @@ input::-webkit-inner-spin-button {
 } */
 ul {
   padding-left: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  color: #454545;
+  line-height: 2.4rem; }
   ul li {
-    margin-top: 8px;
-    line-height: 2.4rem; }
+    margin-top: 8px; }
     ul li:before {
       content: "\2022";
       padding-right: 8px; }
@@ -5330,14 +5331,15 @@ ul {
 
 ol {
   padding-left: 0;
-  counter-reset: item; }
+  counter-reset: item;
+  color: #454545; }
   ol li {
     display: block;
-    margin-top: 8px;
-    line-height: 2.4rem; }
+    margin-top: 8px; }
     ol li:before {
       content: counters(item,".") ".";
-      counter-increment: item; }
+      counter-increment: item;
+      font-weight: 500; }
 
 .paragraph-list {
   font-size: 2rem;
@@ -5351,14 +5353,14 @@ ol {
     display: inline-block;
     text-align: right; }
 
-.small-list {
-  font-size: 1.3rem;
+.body-list {
+  font-size: 1.6rem;
   line-height: 2.4rem; }
-  .small-list li:before {
+  .body-list li:before {
     width: 37px;
     display: inline-block;
     text-align: right; }
-  .small-list li ol li:before, .small-list li ul li:before {
+  .body-list li ol li:before, .body-list li ul li:before {
     width: 74px;
     display: inline-block;
     text-align: right; }
@@ -5939,7 +5941,11 @@ table.dataTable {
       background-color: #b0bed9; }
   table.dataTable tbody th,
   table.dataTable tbody td {
-    padding: 8px 10px; }
+    padding: 8px; }
+  table.dataTable tbody td[colspan] {
+    padding: 0; }
+    table.dataTable tbody td[colspan] .details-row-content {
+      margin-left: 31px; }
   table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
     border-top: 1px solid #dddddd; }
   table.dataTable.row-border tbody tr:first-child th,
@@ -6269,12 +6275,27 @@ table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selecte
 tbody .details-control {
   cursor: pointer; }
   tbody .details-control:after {
-    content: '+';
-    color: green;
-    font-weight: 600; }
+    content: "";
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z' /%3E%3C/svg%3E");
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px 0px;
+    margin-left: -1px;
+    margin-top: 3px; }
 tbody tr.shown .details-control:after {
-  content: '-';
-  color: red; }
+  content: "";
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M19,13H5V11H19V13Z' /%3E%3C/svg%3E");
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 0px;
+  margin-left: -1px;
+  margin-top: 3px; }
 
 .accordion-button {
   background-color: transparent;
