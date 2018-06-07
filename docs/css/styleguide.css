@@ -5272,7 +5272,7 @@ legend {
   .date-group .form-group-year {
     width: calc(2px + 16px + 16px + 4ch ); }
   .date-group .icon-svg {
-    margin-bottom: 8px; }
+    margin-bottom: 4px; }
     .date-group .icon-svg.js-calendar-datepicker:hover {
       cursor: pointer; }
     .date-group .icon-svg.js-calendar-datepicker:focus {
@@ -7319,9 +7319,15 @@ input.input-medium {
     font-weight: 400;
     color: #454545;
     top: 24px; }
-  .dialog #dialog-title {
-    margin: 0 0 8px 0;
+  .dialog .dialog-title {
+    margin: 0;
     font-weight: 600; }
+  .dialog .dialog-description {
+    margin: 8px 0 0 0; }
+  .dialog .modalbuttons {
+    margin-top: 24px; }
+    .dialog .modalbuttons .button {
+      margin-right: 16px; }
 
 .dialog-overlay[aria-hidden="true"],
 .dialog[aria-hidden="true"] {
