@@ -33,7 +33,6 @@ lead: Badges draw attention to new or important content.
     </ul>
     <h4 class="heading">Accessibility</h4>
     <p>When labels are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</p>
-
     <h4 class="heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="content-list">
