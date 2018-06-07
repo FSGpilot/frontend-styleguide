@@ -391,40 +391,40 @@ Converts a pixel value to matching rem value. *Any* value passed, regardless of 
   font-family: "IBMPlexSans";
   src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.eot");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.ttf") format("truetype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.svg#52bc9fd504b621176d57f308965c98a4") format("svg");
-  /* Legacy iOS */
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 400; }
 @font-face {
   font-family: "IBMPlexSans";
   src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.eot");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.ttf") format("truetype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.svg#52bc9fd504b621176d57f308965c98a4") format("svg");
-  /* Legacy iOS */
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Medium.ttf") format("truetype");
+  /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 500; }
 @font-face {
   font-family: "IBMPlexSans";
   src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.eot");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.ttf") format("truetype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.svg#52bc9fd504b621176d57f308965c98a4") format("svg");
-  /* Legacy iOS */
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.ttf") format("truetype");
+  /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 600; }
 @font-face {
   font-family: "IBMPlexSans";
   src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.ttf") format("truetype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.svg#52bc9fd504b621176d57f308965c98a4") format("svg");
-  /* Legacy iOS */
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Bold.ttf") format("truetype");
+  /* Safari, Android, iOS */
   font-style: normal;
   font-weight: 700; }
 @font-face {
   font-family: "IBMPlexSans";
   src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.eot");
   /* IE9 Compat Modes */
-  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.ttf") format("truetype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.svg#52bc9fd504b621176d57f308965c98a4") format("svg");
-  /* Legacy iOS */
+  src: url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.woff") format("woff"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.woff2") format("woff2"), url("../assets/fonts/IBMPlexSans/IBMPlexSans-Italic.ttf") format("truetype");
+  /* Safari, Android, iOS */
   font-style: italic;
   font-weight: 400; }
 @font-face {
@@ -4970,8 +4970,8 @@ img {
 .icon-help-circle-outline {
   background-image: url("../assets/img/svg-icons/help-circle-outline.svg"); }
 
-.icon-information-outline {
-  background-image: url("../assets/img/svg-icons/information-outline.svg"); }
+.icon-info {
+  background-image: url("../assets/img/svg-icons/info.svg"); }
 
 .icon-magnify {
   background-image: url("../assets/img/svg-icons/magnify.svg"); }
@@ -5732,6 +5732,9 @@ ol.body-list {
  * Styling for Pikaday
  * Copyright ┬⌐ 2014 David Bushell | BSD & MIT license | http://dbushell.com/
  */
+.js-calendar-datepicker {
+  cursor: pointer; }
+
 .pika-single {
   z-index: 9999;
   display: block;
@@ -5838,19 +5841,27 @@ ol.body-list {
   border: 0; }
   .pika-table tbody {
     background-color: #F5F5F5; }
-  .pika-table th,
-  .pika-table td {
-    min-width: 50px; }
+  @media screen and (min-width: 768px) {
+    .pika-table th,
+    .pika-table td {
+      min-width: 52px; } }
   .pika-table th {
     color: #1a1a1a;
     font-size: 1.6rem;
     font-weight: 400;
     text-align: center;
-    padding: 8px;
+    padding: 8px 4px;
     border-bottom: 1px solid #BFBFBF; }
+    @media screen and (min-width: 768px) {
+      .pika-table th {
+        padding: 8px; } }
   .pika-table td:not(.is-disabled):not(.is-empty) {
     border: 1px solid #BFBFBF;
     background-color: #fff; }
+    .pika-table td:not(.is-disabled):not(.is-empty):first-child {
+      border-left: none; }
+  .pika-table tr:last-child td:not(.is-disabled):not(.is-empty) {
+    border-bottom: none; }
   .pika-table abbr {
     border-bottom: none;
     text-decoration: none; }
@@ -5869,7 +5880,7 @@ ol.body-list {
   font-size: 1.6rem;
   text-align: right;
   background: #fff;
-  font-weight: 600; }
+  font-weight: 500; }
   .is-today .pika-button {
     color: #1a1a1a; }
   .is-selected .pika-button {
@@ -5956,9 +5967,9 @@ table.dataTable {
   table.dataTable thead .sorting_desc {
     background-image: url("../assets/img/svg-icons//menu-down.svg"); }
   table.dataTable thead .sorting_asc_disabled {
-    background-image: url("../images/sort_asc_disabled.png"); }
+    background-image: url("../assets/img/svg-icons//menu-up.svg"); }
   table.dataTable thead .sorting_desc_disabled {
-    background-image: url("../images/sort_desc_disabled.png"); }
+    background-image: url("../assets/img/svg-icons//menu-down.svg"); }
   table.dataTable tbody tr {
     background-color: #ffffff; }
     table.dataTable tbody tr.selected {
@@ -6878,6 +6889,9 @@ fieldset {
   border: none;
   margin: 0;
   padding: 0; }
+
+fieldset + fieldset {
+  margin-top: 4rem; }
 
 @media screen and (min-width: 768px) {
   .form-large {
@@ -8296,9 +8310,11 @@ input[type=search] {
   .card-large .card-content-before {
     display: none; }
   .card p {
-    margin: 0px;
-    margin-bottom: 0.8rem;
-    max-width: 60ch; }
+    max-width: 60ch;
+    margin-top: 16px;
+    margin-bottom: 0; }
+    .card p:first-child {
+      margin-top: 0; }
   .card h1, .card .h1,
   .card h2, .card .h2,
   .card h3, .card .h3,
@@ -8334,7 +8350,7 @@ input[type=search] {
     margin-top: 0px;
     margin-bottom: 0px;
     color: #747474; }
-  .card-header .headercontent {
+  .card-header .header-content {
     font-family: "IBMPlexSans";
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -8350,12 +8366,10 @@ input[type=search] {
   line-height: 2.4rem;
   font-weight: 400;
   color: #454545;
-  padding: 16px 24px;
-  border-bottom: 1px solid #BFBFBF;
-  background: #BFBFBF;
+  padding: 16px 24px 0 24px;
+  background: #ffffff;
   color: #454545;
-  margin-bottom: 0px;
-  min-height: 191px; }
+  margin-bottom: 0px; }
 
 .card-content {
   font-family: "IBMPlexSans";
@@ -8363,12 +8377,12 @@ input[type=search] {
   line-height: 2.4rem;
   font-weight: 400;
   color: #454545;
-  padding: 16px 24px;
-  border-bottom: 1px solid #BFBFBF;
-  background: #BFBFBF;
+  padding: 0 24px 0 24px;
+  background: #ffffff;
   color: #454545;
-  margin-bottom: 0px;
-  min-height: 191px; }
+  margin-bottom: 0px; }
+  .card-content ul {
+    margin-bottom: 0; }
 
 .card-action {
   font-family: "IBMPlexSans";
@@ -8380,27 +8394,32 @@ input[type=search] {
   border-bottom: 1px solid #BFBFBF;
   color: #454545;
   margin-bottom: 0px; }
+  .card-action div:first-child {
+    margin-top: 0; }
   .card-action:last-child {
-    border-bottom: 0;
+    border-bottom: 0; }
+  .card-action .action-buttons {
+    margin-top: 24px; }
+  .card-action .action-links {
     margin-top: 16px; }
-  .card-action .actionlinks {
-    margin-top: 16px; }
-    .card-action .actionlinks ul {
+    .card-action .action-links ul {
       margin-top: 0;
       margin-bottom: 0;
       list-style-type: none;
       padding-left: 0;
       padding-left: 0; }
-      .card-action .actionlinks ul > li {
+      .card-action .action-links ul > li {
         margin-bottom: 0;
         margin-top: 0;
         padding-left: 0; }
-        .card-action .actionlinks ul > li:before {
+        .card-action .action-links ul > li:before {
           content: "" !important;
           padding-right: 0 !important; }
-  .card-action .actionfunctionlinks {
+  .card-action .action-functionlinks {
     margin-top: 16px;
     text-align: right; }
+    .card-action .action-functionlinks .function-link {
+      margin-left: 16px; }
 
 .card-text:last-child {
   margin-bottom: 1.6rem; }
