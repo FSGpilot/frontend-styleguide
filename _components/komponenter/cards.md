@@ -27,7 +27,7 @@ lead: A card is a sheet of material that serves as an entry point to more detail
     <h5>Lille, mellem og stort card</h5>
     <ul>
       <li>Det <em>lille</em> card indeholder en 'header', som har en <code>.card-header</code> class.</li>
-      <li>Det <em>mellem</em> card indeholder et 'før content område', som har en <code>.card-content-before</code> class, og en 'header' som har en <code>.card-header</code> class.</li>
+      <li>Det <em>mellem</em> card indeholder et 'medie område', som har en <code>.card-content</code> class, og en 'header' som har en <code>.card-header</code> class.</li>
       <li>Det <em>store</em> card indeholder en 'header', som har en <code>.card-header</code> class, og et 'content område' som har en <code>.card-content</code> class, og derudover til sidst et 'aktionsområde' som har en <code>.card-action</code> class.</li>
     </ul>
     <h5>Header</h5>
@@ -36,6 +36,12 @@ lead: A card is a sheet of material that serves as an entry point to more detail
       <li><code>.header-titel</code></li>
       <li><code>.subheader</code></li>
       <li><code>.header-content</code></li>
+    </ul>
+    <h5>Medie område</h5>
+    <p>Medie området kan indeholde brødtekst og medier, såsom fotos og grafik, som har hver deres div med hver deres class.</p>
+    <ul>
+      <li><code>.content</code></li>
+      <li><code>.content-media</code></li>
     </ul>
     <h5>Aktionsområde</h5>
     <p>Aktionsområdet kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.</p>
