@@ -8296,19 +8296,13 @@ input[type=search] {
   box-shadow: 0 2px 4px 0 #BFBFBF;
   border: 1px solid #999999;
   overflow: hidden;
-  margin-bottom: 24px; }
-  .card-small .card-content-before {
-    display: none; }
-  .card-small .card-content {
-    display: none; }
-  .card-small .card-action {
-    display: none; }
-  .card-medium .card-content {
-    display: none; }
-  .card-medium .card-action {
-    display: none; }
-  .card-large .card-content-before {
-    display: none; }
+  background: #ffffff; }
+  .card-small > :last-of-type {
+    padding-bottom: 24px; }
+  .card-medium > :last-of-type {
+    padding-bottom: 24px; }
+  .card-large > :last-of-type {
+    padding-bottom: 24px; }
   .card p {
     max-width: 60ch;
     margin-top: 16px;
@@ -8341,14 +8335,14 @@ input[type=search] {
       font-weight: 700;
       color: #1a1a1a;
       color: #454545; }
-  .card-header .subheader {
+  .card-header .sub-header {
     font-family: "IBMPlexSans";
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 400;
     color: #454545;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     color: #747474; }
   .card-header .header-content {
     font-family: "IBMPlexSans";
@@ -8358,18 +8352,7 @@ input[type=search] {
     color: #454545;
     margin-top: 16px;
     color: #454545;
-    margin-bottom: 0px; }
-
-.card-content-before {
-  font-family: "IBMPlexSans";
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  font-weight: 400;
-  color: #454545;
-  padding: 16px 24px 0 24px;
-  background: #ffffff;
-  color: #454545;
-  margin-bottom: 0px; }
+    margin-bottom: 0; }
 
 .card-content {
   font-family: "IBMPlexSans";
@@ -8377,12 +8360,19 @@ input[type=search] {
   line-height: 2.4rem;
   font-weight: 400;
   color: #454545;
-  padding: 0 24px 0 24px;
+  padding: 16px 24px;
   background: #ffffff;
-  color: #454545;
-  margin-bottom: 0px; }
+  color: #454545; }
   .card-content ul {
     margin-bottom: 0; }
+  .card-content div:first-child {
+    margin-top: 0; }
+  .card-content .content {
+    margin-top: 16px; }
+  .card-content .content-media {
+    margin-top: 16px; }
+    .card-content .content-media img {
+      width: 100%; }
 
 .card-action {
   font-family: "IBMPlexSans";
@@ -8393,13 +8383,15 @@ input[type=search] {
   padding: 16px 24px;
   border-bottom: 1px solid #BFBFBF;
   color: #454545;
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
   .card-action div:first-child {
     margin-top: 0; }
   .card-action:last-child {
     border-bottom: 0; }
   .card-action .action-buttons {
     margin-top: 24px; }
+    .card-action .action-buttons button {
+      margin-right: 8px; }
   .card-action .action-links {
     margin-top: 16px; }
     .card-action .action-links ul {
@@ -8415,41 +8407,45 @@ input[type=search] {
         .card-action .action-links ul > li:before {
           content: "" !important;
           padding-right: 0 !important; }
+      .card-action .action-links ul li {
+        margin-top: 8px; }
   .card-action .action-functionlinks {
     margin-top: 16px;
     text-align: right; }
     .card-action .action-functionlinks .function-link {
       margin-left: 16px; }
 
-.card-text:last-child {
-  margin-bottom: 1.6rem; }
+.card-content + .card-header {
+  padding-top: 0; }
 
-.card-link {
-  text-decoration: none;
-  margin-left: 0.8rem; }
+.card-header + .card-content {
+  padding-top: 0; }
 
-.card-link:first-child {
-  margin-left: 0px; }
+.card-content + .card-action {
+  padding-top: 0; }
 
-.card-title {
-  margin-top: 0;
-  margin-bottom: 0.8rem; }
+.card-action + .card-content {
+  padding-top: 0; }
 
-.card-subtitle {
-  margin-top: 0;
-  margin-bottom: 0; }
+.card-header + .card-action {
+  padding-top: 0; }
+
+.card-action + .card-header {
+  padding-top: 0; }
+
+.card-header + .card-header {
+  padding-top: 0; }
+
+.card-content + .card-content {
+  padding-top: 0; }
+
+.card-action + .card-action {
+  padding-top: 0; }
 
 .card > .list-group:first-child .list-group-item:first-child {
   border-radius: 0px; }
 .card > .list-group:last-child .list-group-item:last-child {
   border-radius: 0px; }
-
-.card-footer {
-  padding: 0.4rem;
-  background-color: #ffffff;
-  border-top: 1px solid #1a1a1a; }
-  .card-footer:last-child {
-    border-radius: 0px; }
 
 .card-center {
   text-align: center; }
@@ -8663,10 +8659,21 @@ input[type=search] {
         right: 13px; }
 
 .tabnav {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
   list-style-type: none;
   padding: 0;
   overflow: hidden;
   border-bottom: 1px solid #999999; }
+  .tabnav > li {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0; }
+    .tabnav > li:before {
+      content: "" !important;
+      padding-right: 0 !important; }
   .tabnav li {
     float: left;
     margin-bottom: 0; }
