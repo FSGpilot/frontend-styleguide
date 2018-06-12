@@ -52,11 +52,11 @@
 
 
 
-  Headings
+  Titler
   
   
   
-    Alle HTML headings, &amp;lt;h1&amp;gt; til &amp;lt;h6&amp;gt;, er stylet. Kan benyttes enten vis tags, klasser eller mixins.
+    Alle HTML titler, &amp;lt;h1&amp;gt; til &amp;lt;h6&amp;gt;, er stylet. Kan benyttes enten vis tags, klasser eller mixins.
   
 
 
@@ -140,14 +140,43 @@
 
 
 
+  
+    Documentation
+  
+  
+    Implementation
+    We recommend using a native input using type=&quot;file&quot;, rather than a custom implementation.
+    Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. 
+      
+        
+          @mixin h1{ 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;font-family: $font-name; 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;font-size: $h1-font-size; 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;line-height: $h1-line-height; 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;font-weight: $font-weight-bold; 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;color: $color-black;
+        }
+        
+      
+      
+        
+          h1, .h1 {
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;@include h1;
+          }
+        
+      
+      Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på &amp;lt;h1 class=&quot;h2&quot;&amp;gt;
+  
 
 
 
-  Display headings
+
+
+  Display tekst
   
   
   
-    Display headings giver extra store overskrifter eller tekst. Bruges til at skabe extra focus.
+    Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.
   
 
 
@@ -204,14 +233,14 @@
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
         &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display heading 1&amp;lt;/h5&amp;gt;
+            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display text 1&amp;lt;/h5&amp;gt;
             &amp;lt;p class=&quot;displayheading-1&quot;&amp;gt;
                 &amp;lt;span class=&quot;text-positive&quot;&amp;gt;10 dage&amp;lt;/span&amp;gt; Positiv
                 &amp;lt;span class=&quot;text-negative&quot;&amp;gt;55°/12°E&amp;lt;/span&amp;gt;
             &amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
         &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display heading 2&amp;lt;/h5&amp;gt;
+            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display text 2&amp;lt;/h5&amp;gt;
             &amp;lt;p class=&quot;displayheading-2&quot;&amp;gt;
                 &amp;lt;span class=&quot;text-negative&quot;&amp;gt;80 centimeter&amp;lt;/span&amp;gt; tredive kilogram sytten nætter tilgodehavende
                 feriedage
@@ -229,11 +258,11 @@
 
 
 
-  Lead paragraph
+  Manchet tekst
   
   
   
-    Giv en paragraf extra focus ved at give den klassen .font-lead.
+    Giv tekst extra focus ved at give den klassen .font-lead.
   
 
 
@@ -413,28 +442,6 @@ For at ændre font-style bruges variablerne:
 		$font-style-italic
 	
 
-
-Headings
-Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. 
-
-	
-		@mixin h1{ 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;font-family: $font-name; 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;font-size: $h1-font-size; 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;line-height: $h1-line-height; 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;font-weight: $font-weight-bold; 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;color: $color-black;
-	}
-	
-
-
-	
-		h1, .h1 {
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;@include h1;
-		}
-	
-
-Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på &amp;lt;h1 class=&quot;h2&quot;&amp;gt;
 
 
 
@@ -1293,11 +1300,11 @@ Note: Some pairings require more font weights than others. While this allows mor
 
 
 
-  Headings
+  Titler
   
   
   
-    Alle HTML headings, &amp;lt;h1&amp;gt; til &amp;lt;h6&amp;gt;, er stylet. Kan benyttes enten vis tags, klasser eller mixins.
+    Alle HTML titler, &amp;lt;h1&amp;gt; til &amp;lt;h6&amp;gt;, er stylet. Kan benyttes enten vis tags, klasser eller mixins.
   
 
 
@@ -1381,14 +1388,43 @@ Note: Some pairings require more font weights than others. While this allows mor
 
 
 
+  
+    Documentation
+  
+  
+    Implementation
+    We recommend using a native input using type=&quot;file&quot;, rather than a custom implementation.
+    Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. 
+      
+        
+          @mixin h1{ 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;font-family: $font-name; 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;font-size: $h1-font-size; 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;line-height: $h1-line-height; 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;font-weight: $font-weight-bold; 
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;color: $color-black;
+        }
+        
+      
+      
+        
+          h1, .h1 {
+          &amp;nbsp;&amp;nbsp;&amp;nbsp;@include h1;
+          }
+        
+      
+      Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på &amp;lt;h1 class=&quot;h2&quot;&amp;gt;
+  
 
 
 
-  Display headings
+
+
+  Display tekst
   
   
   
-    Display headings giver extra store overskrifter eller tekst. Bruges til at skabe extra focus.
+    Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.
   
 
 
@@ -1445,14 +1481,14 @@ Note: Some pairings require more font weights than others. While this allows mor
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
         &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display heading 1&amp;lt;/h5&amp;gt;
+            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display text 1&amp;lt;/h5&amp;gt;
             &amp;lt;p class=&quot;displayheading-1&quot;&amp;gt;
                 &amp;lt;span class=&quot;text-positive&quot;&amp;gt;10 dage&amp;lt;/span&amp;gt; Positiv
                 &amp;lt;span class=&quot;text-negative&quot;&amp;gt;55°/12°E&amp;lt;/span&amp;gt;
             &amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
         &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display heading 2&amp;lt;/h5&amp;gt;
+            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display text 2&amp;lt;/h5&amp;gt;
             &amp;lt;p class=&quot;displayheading-2&quot;&amp;gt;
                 &amp;lt;span class=&quot;text-negative&quot;&amp;gt;80 centimeter&amp;lt;/span&amp;gt; tredive kilogram sytten nætter tilgodehavende
                 feriedage
@@ -1470,11 +1506,11 @@ Note: Some pairings require more font weights than others. While this allows mor
 
 
 
-  Lead paragraph
+  Manchet tekst
   
   
   
-    Giv en paragraf extra focus ved at give den klassen .font-lead.
+    Giv tekst extra focus ved at give den klassen .font-lead.
   
 
 
@@ -1654,28 +1690,6 @@ For at ændre font-style bruges variablerne:
 		$font-style-italic
 	
 
-
-Headings
-Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. 
-
-	
-		@mixin h1{ 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;font-family: $font-name; 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;font-size: $h1-font-size; 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;line-height: $h1-line-height; 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;font-weight: $font-weight-bold; 
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;color: $color-black;
-	}
-	
-
-
-	
-		h1, .h1 {
-		&amp;nbsp;&amp;nbsp;&amp;nbsp;@include h1;
-		}
-	
-
-Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på &amp;lt;h1 class=&quot;h2&quot;&amp;gt;
 
 
 
@@ -2858,17 +2872,6 @@ Note: Some pairings require more font weights than others. While this allows mor
       
 
 
-<a href="#displaytext">Display text</a>
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
 <a href="#lead-paragraph">Lead paragraph</a>
 
     
@@ -2891,7 +2894,7 @@ Note: Some pairings require more font weights than others. While this allows mor
       
 
 
-<a href="#global-settings">Global settings</a>
+<a href="#displaytext">Display text</a>
 
     
   </li>
@@ -2902,7 +2905,7 @@ Note: Some pairings require more font weights than others. While this allows mor
       
 
 
-<a href="#pairings-and-styles">Pairings and styles</a>
+<a href="#global-settings">Global settings</a>
 
     
   </li>
@@ -3032,11 +3035,11 @@ Note: Some pairings require more font weights than others. While this allows mor
 </section>
 
 <section id="section-/styling/typography/02-headings">
-  <h2 class="heading heading-margin-alt" id="headings">Headings</h2>
+  <h2 class="heading heading-margin-alt" id="titler">Titler</h2>
   
   <div class="row">
   <div class="col-12">
-    <p>Alle HTML headings, <code>&lt;h1&gt;</code> til <code>&lt;h6&gt;</code>, er stylet. Kan benyttes enten vis tags, klasser eller mixins.</p>
+    <p>Alle HTML titler, <code>&lt;h1&gt;</code> til <code>&lt;h6&gt;</code>, er stylet. Kan benyttes enten vis tags, klasser eller mixins.</p>
   </div>
 </div>
 
@@ -3121,15 +3124,44 @@ Note: Some pairings require more font weights than others. While this allows mor
   </div>
 </div>
 
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="headings-docs-tech">
+    Documentation
+  </button>
+  <div id="headings-docs-tech" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Implementation</h4>
+    <p>We recommend using a native input using type="file", rather than a custom implementation.</p>
+    <p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. </p>
+      <div class="code-highlight">
+        <code>
+          @mixin h1{ <br />
+          &nbsp;&nbsp;&nbsp;font-family: $font-name; <br />
+          &nbsp;&nbsp;&nbsp;font-size: $h1-font-size; <br />
+          &nbsp;&nbsp;&nbsp;line-height: $h1-line-height; <br />
+          &nbsp;&nbsp;&nbsp;font-weight: $font-weight-bold; <br />
+          &nbsp;&nbsp;&nbsp;color: $color-black;<br />
+        }
+        </code>
+      </div>
+      <div class="code-highlight">
+        <code>
+          h1, .h1 {<br />
+          &nbsp;&nbsp;&nbsp;@include h1;<br />
+          }
+        </code>
+      </div>
+      <p>Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på &lt;h1 class="h2"&gt;</p>
+  </div>
+</div>
 
 </section>
 
 <section id="section-/styling/typography/03-displaytext">
-  <h2 class="heading heading-margin-alt" id="display-headings">Display headings</h2>
+  <h2 class="heading heading-margin-alt" id="display-tekst">Display tekst</h2>
   
   <div class="row">
   <div class="col-12">
-    <p>Display headings giver extra store overskrifter eller tekst. Bruges til at skabe extra focus.</p>
+    <p>Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.</p>
   </div>
 </div>
 
@@ -3188,14 +3220,14 @@ Note: Some pairings require more font weights than others. While this allows mor
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Display heading 1<span class="nt">&lt;/h5&gt;</span>
+            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Display text 1<span class="nt">&lt;/h5&gt;</span>
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"displayheading-1"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-positive"</span><span class="nt">&gt;</span>10 dage<span class="nt">&lt;/span&gt;</span> Positiv
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-negative"</span><span class="nt">&gt;</span>55°/12°E<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Display heading 2<span class="nt">&lt;/h5&gt;</span>
+            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Display text 2<span class="nt">&lt;/h5&gt;</span>
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"displayheading-2"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-negative"</span><span class="nt">&gt;</span>80 centimeter<span class="nt">&lt;/span&gt;</span> tredive kilogram sytten nætter tilgodehavende
                 feriedage
@@ -3213,11 +3245,11 @@ Note: Some pairings require more font weights than others. While this allows mor
 </section>
 
 <section id="section-/styling/typography/04-lead-paragraph">
-  <h2 class="heading heading-margin-alt" id="lead-paragraph">Lead paragraph</h2>
+  <h2 class="heading heading-margin-alt" id="manchet-tekst">Manchet tekst</h2>
   
   <div class="row">
   <div class="col-12">
-    <p>Giv en paragraf extra focus ved at give den klassen <code>.font-lead</code>.</p>
+    <p>Giv tekst extra focus ved at give den klassen <code>.font-lead</code>.</p>
   </div>
 </div>
 
@@ -3401,28 +3433,6 @@ Note: Some pairings require more font weights than others. While this allows mor
 		$font-style-italic
 	</code>
 </div>
-
-<h4 class="h4">Headings</h4>
-<p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. </p>
-<div class="code-highlight">
-	<code>
-		@mixin h1{ <br />
-		&nbsp;&nbsp;&nbsp;font-family: $font-name; <br />
-		&nbsp;&nbsp;&nbsp;font-size: $h1-font-size; <br />
-		&nbsp;&nbsp;&nbsp;line-height: $h1-line-height; <br />
-		&nbsp;&nbsp;&nbsp;font-weight: $font-weight-bold; <br />
-		&nbsp;&nbsp;&nbsp;color: $color-black;<br />
-	}
-	</code>
-</div>
-<div class="code-highlight">
-	<code>
-		h1, .h1 {<br />
-		&nbsp;&nbsp;&nbsp;@include h1;<br />
-		}
-	</code>
-</div>
-<p>Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på &lt;h1 class="h2"&gt;</p>
 
 </section>
 

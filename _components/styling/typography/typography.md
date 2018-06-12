@@ -10,16 +10,14 @@ subnav:
   href: '#typefaces'
 - text: Headings
   href: '#headings'
-- text: Display text
-  href: '#displaytext'
 - text: Lead paragraph
   href: '#lead-paragraph'
 - text: Inline text elements
   href: '#inlinetext'
+- text: Display text
+  href: '#displaytext'
 - text: Global settings
   href: '#global-settings'
-- text: Pairings and styles
-  href: '#pairings-and-styles'
 - text: Typesetting
   href: '#typesetting'
 - text: Links
