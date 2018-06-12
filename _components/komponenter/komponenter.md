@@ -38,4 +38,6 @@ subnav:
   href: '/components/komponenter/tabnav/'
 - text: Multi Select
   href: '/components/komponenter/select2-multiselect/'
+- text: Spinner
+  href: '/components/komponenter/spinner/'
 ---
