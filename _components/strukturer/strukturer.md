@@ -12,4 +12,6 @@ subnav:
   href: '/components/strukturer/form-templates/'
 - text: Header
   href: '/components/strukturer/headers/'
+- text: Modals
+  href: '/components/strukturer/modals/'
 ---
