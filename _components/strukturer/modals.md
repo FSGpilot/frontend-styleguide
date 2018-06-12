@@ -16,6 +16,28 @@ lead: Modals lead.
     Documentation
   </button>
   <div id="footer-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Implementation</h4>
+    <p>Der er to typer af modalvinduer, herunder: </p>
+    <ul class="content-list">
+      <li>Passive modal, som kun indeholder tekst</li>
+      <li>Transactional modal, der også indeholder interaktion, som knapper og links</li>
+    </ul>
+    <p>Begge modaltyper har tilhørende classes, der skal tilføjes afhængig af, hvilken modal der skal bruges. </p>
+    <h5>Passive modal</h5>
+    <ul>
+      <li><code>.js-open-modal-passive</code> som sættes på knappen, der skal åbne modalvinduet</li>
+      <li><code>.js-modal-passive</code> som sættes på selve modalvinduet</li>
+      <li><code>.js-close-modal-passive</code> som sættes på knappen, der skal lukke modalvinduet</li>
+      <li><code>.js-modal-overlay-passive</code> som sættes på modalets overlay</li>
+    </ul>
+    <h5>Transactional modal</h5>
+    <ul>
+      <li><code>.js-open-modal-transactional</code> som sættes på knappen, der skal åbne modalvinduet</li>
+      <li><code>.js-modal-transactional</code> som sættes på selve modalvinduet</li>
+      <li><code>.js-close-modal-transactional</code> som sættes på knappen, der skal lukke modalvinduet</li>
+      <li><code>.js-modal-overlay-transactional</code> som sættes på modalets overlay</li>
+    </ul>
+    <p>I transactional modaler skal knapper og links tilføjes i en div, der har en <code>.modalbuttons</code> class.</p>
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
       <li>Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.</li>
