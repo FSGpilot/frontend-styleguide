@@ -40,6 +40,8 @@ subnav:
   href: '/components/komponenter/select2-multiselect/'
 - text: Spinner
   href: '/components/komponenter/spinner/'
+- text: Overflow menu
+  href: '/components/komponenter/overflowmenu/'
 - text: Modals
   href: '/components/komponenter/modals/'
 ---
