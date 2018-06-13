@@ -80,26 +80,6 @@ subnav:
       </div>
     </div>
   </div>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <!-- Empty -->
-      </div>
-
-      <div class="col-12 col-sm-9 content">
-        <h2 class="heading" id="extended--header">Den fulde header</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12 content">
-        {% include code/preview.html component="header--simpel" %}
-      </div>
-    </div>
-  </div>
 
   <div class="container">
     <div class="row">
@@ -108,109 +88,36 @@ subnav:
       </div>
 
       <div class="col-12 col-sm-9 content">
-        {% include code/accordion.html component="header--simpel" %}
-        <div class="accordion-bordered">
-          <button class="button-unstyled accordion-button"
-            aria-expanded="true" aria-controls="docs-header-basic">
-            Documentation
-          </button>
-          <div id="docs-header-basic" class="accordion-content">
-            <h4 class="heading">What it does</h4>
-            <p>The basic header is great if you have a modest number of sections in your main navigation. You can customize it (depending on your site structure) and use it with:</p>
-            <ul>
-              <li>A text or image logo</li>
-              <li>With or without dropdown menus</li>
-              <li>With or without a search bar</li>
-              <li>With or without call-to-action buttons in place of the search bar</li>
-            </ul>
-            <h4 class="heading">Why use it</h4>
-            <p>Use the basic header if you have few enough sections in your main navigation to fit comfortably next to your logo; this will depend on the length of your text and whether you include a search bar. You may also use it if you’d like to include the full search bar in your header, or if each main section listed in the horizontal navigation has six or fewer subsections that you’d like to include in a dropdown menu.</p>
-            <h4 class="heading">When not to use it</h4>
-            <p>Consider using the extended header if you have more sections in your horizontal navigation than will fit comfortably next to your logo, or if you have complex sections that require the use of a mega menu.</p>
-          </div>
-        </div>
 
-        <h2 class="heading" id="basic-mega-menu">Basic header with mega menu</h2>
+        <h2 class="h2" id="basic">Grundliggende header</h2>
         <div class="preview">
-          <a class="media_link" href="#">
-            <img src="{{ site.baseurl }}/assets/img/headers/header-basic-mega-menu.png" alt="Basic header with mega menu">
+          <a class="media_link" href="{{ site.baseurl }}/components/headers/simple/">
+            <img src="{{ site.baseurl }}/assets/img/headers/header-simple.png" alt="Grundliggende header">
           </a>
+          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/simple/">Demo grundliggende header</a>
         </div>
-        {% include code/accordion.html component="header-basic-mega" %}
-        <div class="accordion-bordered">
-          <button class="button-unstyled accordion-button"
-            aria-expanded="true" aria-controls="docs-header-basic-mega">
-            Documentation
-          </button>
-          <div id="docs-header-basic-mega" class="accordion-content">
-            <h4 class="heading">What it does</h4>
-            <p>The basic header with mega menu is similar to our basic header — it simply allows for the inclusion of more links in the dropdown menus. You can customize it (depending on your site structure) and use it with:</p>
-            <ul>
-              <li>A text or image logo</li>
-              <li>With or without a search bar</li>
-              <li>With or without call-to-action buttons in place of the search bar</li>
-            </ul>
-            <h4 class="heading">Why use it</h4>
-            <p>Use the basic header with mega menu if you’d like to include more than six links in any of your dropdown menus, and if you have few enough main sections to allow your horizontal navigation to fit comfortably in the basic header.</p>
-            <h4 class="heading">When not to use it</h4>
-            <p>Consider using a basic dropdown rather than a mega menu unless you need to link to a very large number of sub pages.</p>
-          </div>
-        </div>
+        {% include code/accordion.html component="header-simpel" %}
 
-        <h2 class="heading" id="extended">Extended header</h2>
-        <div class="preview">
-          <a class="media_link" href="#">
-            <img src="{{ site.baseurl }}/assets/img/headers/header-extended.png" alt="Extended header">
-          </a>
-        </div>
-        {% include code/accordion.html component="header-extended" %}
-        <div class="accordion-bordered">
-          <button class="button-unstyled accordion-button"
-            aria-expanded="true" aria-controls="docs-header-extended">
-            Documentation
-          </button>
-          <div id="docs-header-extended" class="accordion-content">
-            <h4 class="heading">What it does</h4>
-            <p>The extended header allows for inclusion of more sections in the horizontal navigation. You can customize the header (depending on your site structure) and use it:</p>
-            <ul>
-              <li>With a text or image logo</li>
-              <li>With or without dropdown menus</li>
-              <li>With or without the expandable search bar</li>
-              <li>With or without call-to-action buttons in place of the secondary links featured in your horizontal navigation</li>
-            </ul>
-            <h4 class="heading">Why use it</h4>
-            <p>Use the extended header if you have too many sections in your horizontal navigation to fit comfortably in the basic header format. You may also consider using it if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example Log in and Sign up links.</p>
-            <h4 class="heading">When not to use it</h4>
-            <p>Consider using the basic header if you have less information — the basic header takes up less space.</p>
-          </div>
-        </div>
 
-        <h2 class="heading" id="extended-mega-menu">Extended header with mega menu</h2>
+        <h2 class="h2" id="basic-mega-menu">Header med topmenu</h2>
         <div class="preview">
-          <a class="media_link" href="#">
-            <img src="{{ site.baseurl }}/assets/img/headers/header-extended-mega-menu.png" alt="Extended header with mega menu">
+          <a class="media_link" href="{{ site.baseurl }}/components/headers/medium/">
+            <img src="{{ site.baseurl }}/assets/img/headers/header-medium.png" alt="Header med topmenu">
           </a>
+          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/medium/">Demo header med topmenu</a>
         </div>
-        {% include code/accordion.html component="header-extended-mega" %}
-        <div class="accordion-bordered">
-          <button class="button-unstyled accordion-button"
-            aria-expanded="true" aria-controls="docs-header-extended-mega">
-            Documentation
-          </button>
-          <div id="docs-header-extended-mega" class="accordion-content">
-            <h4 class="heading">What it does</h4>
-            <p>Like the extended header, the extended header with mega menu allows for inclusion of more sections in your horizontal navigation; it also allows you to include more links in any of your dropdowns. You can customize the header (depending on your site structure) and use it:</p>
-            <ul>
-              <li>With a text or image logo</li>
-              <li>With or without the expandable search bar</li>
-              <li>With or without call-to-action buttons in place of the secondary links in the horizontal navigation</li>
-            </ul>
-            <h4 class="heading">Why use it</h4>
-            <p>Use an extended header with mega menu if you have too many sections in your horizontal navigation to fit comfortably in the basic header format. It’s also useful if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example Log in and Sign up links — or if you’d like to include more than six links in any of your dropdowns.</p>
-            <h4 class="heading">When not to use it</h4>
-            <P>Consider using a basic dropdown rather than a mega menu unless you need to link to a very large number of sub pages.</P>
-          </div>
+        {% include code/accordion.html component="header-medium" %}
+        
+
+        <h2 class="h2" id="extended">Udvidet header</h2>
+        <div class="preview">
+          <a class="media_link" href="{{ site.baseurl }}/components/headers/full/">
+            <img src="{{ site.baseurl }}/assets/img/headers/header-full.png" alt="Udvidet header">
+          </a>
+           <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/full/">Demo udvidet header</a>
         </div>
+        {% include code/accordion.html component="header-full" %}
+
       </div>
     </div>
   </div>
