@@ -109,14 +109,14 @@ body {
 
 //   background-color: $color-primary-darkest;
 
-//   @include media($nav-width) {
+//   @include media($nav-responsive-breakpoint) {
 //     border-bottom: none;
 //   }
 
 //   .site-logo {
 //     margin-left: $site-margins-mobile;
 
-//     @include media($nav-width) {
+//     @include media($nav-responsive-breakpoint) {
 //       margin-left: $site-margins;
 //     }
 //   }
@@ -134,7 +134,7 @@ body {
 //     display: none;
 //     margin-top: -5px;
 
-//     @include media($nav-width) {
+//     @include media($nav-responsive-breakpoint) {
 //       line-height: 8rem;
 //       margin-top: 0;
 //       display: block;
@@ -160,7 +160,7 @@ body {
 // .site-header-navbar {
 //   border-bottom: none;
 
-//   @include media($nav-width) {
+//   @include media($nav-responsive-breakpoint) {
 //     height: 8rem;
 //     width: 100%;
 //     display: block;
@@ -168,7 +168,7 @@ body {
 
 //   // Firefox fix so that navbar buttons to align right
 //   @-moz-document url-prefix() {
-//     @include media($nav-width) {
+//     @include media($nav-responsive-breakpoint) {
 //       padding-top: 1px;
 //     }
 //   }
@@ -190,7 +190,7 @@ body {
 // .sidenav-mobile {
 //   @include outline-inverse-button;
 
-//   @include media($nav-width) {
+//   @include media($nav-responsive-breakpoint) {
 //     display: none;
 //   }
 
@@ -233,7 +233,7 @@ body {
 // }
 
 // .site-logo {
-//   @include media($nav-width) {
+//   @include media($nav-responsive-breakpoint) {
 //     margin-top: 0;
 //   }
 
@@ -246,7 +246,7 @@ body {
 //     font-size: 1.4rem;
 //     line-height: 4rem;
 
-//     @include media($nav-width) {
+//     @include media($nav-responsive-breakpoint) {
 //       font-size: $h3-font-size;
 //       line-height: 8rem;
 //     }
@@ -256,7 +256,7 @@ body {
 // .site-nav-secondary {
 //   display: none;
 
-//   @include media($nav-width) {
+//   @include media($nav-responsive-breakpoint) {
 //     background-color: $color-white;
 //     border-bottom: 1px solid $color-gray-medium-light;
 //     clear: both;
@@ -294,34 +294,6 @@ body {
 //   }
 // }
 
-// Sidebar Nav --------- //
-
-// .sidenav {
-//   display: none;
-
-//   @include media($nav-width) {
-//     display: block;
-//     float: left;
-//     margin-bottom: 525px;
-//     margin-top: 50px;
-//     padding-right: 1rem;
-//     padding-left: 3rem;
-//     overflow-y: auto;
-//     top: 5rem;
-//     width: $width-nav-sidebar;
-//   }
-
-//   .lt-ie9 & {
-//     width: 25%;
-//   }
-
-//   .navigation-submenu {
-//     &[aria-hidden="false"] {
-//       display: block;
-//     }
-//   }
-// }
-
 // Main Content --------- //
 
 .main-content {
@@ -332,8 +304,8 @@ body {
   width: 100%;
   top: 6.3rem; // height of disclaimer + navbar on mobile
 
-  @include media($nav-width) {
-    width: calc(100% - #{$width-nav-sidebar});
+  @include media($nav-responsive-breakpoint) {
+    width: calc(100% - 268px);
     top: 0;
   }
 
@@ -350,7 +322,7 @@ body {
   // max-width: $site-max-width;
   position: relative;
 
-  // @media (min-width: $nav-width) {
+  // @media (min-width: $nav-responsive-breakpoint) {
   //   @include padding(null $site-margins);
   // }
 
@@ -1310,23 +1282,6 @@ p, .body-text,
 .accordion-docs {
   margin-bottom: 6rem;
 }
-
-// This adds styleguide-only right and left margins for our disclaimer
-// Since the layout we use is not in a grid
-.banner {
-  &.is-scrolled {
-    @media (min-width: $medium-screen + $width-nav-sidebar) {
-      display: none;
-    }
-  }
-}
-
-.disclaimer-stage {
-  @media (min-width: $medium-screen + $width-nav-sidebar) {
-    display: block;
-  }
-}
-
 // External link styles
 
 // #{$external-href} {

@@ -1,158 +1,160 @@
-<header class="header header-extended" role="banner">
-
+<header class="container header header-extended" role="banner">
+    <!--1A: Portal header -->
     <div class="portal-header">
-        <div class="portal-header-inner">
-            <a href="/" title="Home" aria-label="Home">
-                <div class="logo" id="basic-logo"></div>
+        <a href="/frontend-styleguide/" title="Home" aria-label="Home" class="logo"></a>
+        <button class="button button-secondary button-menu-open js-menu-open ml-auto"
+            aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+
+        <!-- 1B: Portal header: info + actions-->
+        <div class="portal-info">
+            <p class="user"><b>Lone Hansen</b> · Snedkeren fra Nordvest ApS</p>
+
+            <a href="/frontend-styleguide/getting-started/download/" class="button button-primary"
+                role="button">
+                Download kode og designfiler
             </a>
+            <a href="https://github.com/FSGpilot/frontend-styleguide-components" class="button button-secondary"
+                role="button">
+                Se på GitHub
+            </a>
+
         </div>
     </div>
 
-    <div class="navbar solution-header">
+    <!--2A: Solutiuon header -->
+    <div class="solution-header">
         <div class="solution-heading">
-            <a href="/" title="Home" aria-label="Home">
-                Solution Header from config
-            </a>
+            <a href="/frontend-styleguide/" title="Home" aria-label="Home">Frontend Styleguide</a>
         </div>
-        <button class="menu-btn">Menu</button>
+
+        <!--2B: Solution header: Authority name + text-->
+        <div class="solution-info">
+            <!-- nav-secondary -->
+            <h6 class="h6">Erhvervsstyrelsen</h6>
+            <p>Support: 78 73 64 12</p>
+        </div>
     </div>
 
     <nav role="navigation" class="nav">
-        <div class="nav-inner">
-
-            <div class="nav-secondary">
-                <ul class="unstyled-list nav-secondary-links">
-                    <li>
-                        <a href="" class="button button-primary">
-                            Secondary priority link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="">
-                            Easy to comprehend link
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="nav-tertiary">
-                <ul class="unstyled-list nav-secondary-links">
-                    <li>
-                        <a href="">
-                            Secondary priority link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="button button-small">
-                            Easy to comprehend
-                        </a>
-                    </li>
-                    <li>
-                        <select name="options" id="options">
-                            <option value>- Vælg -</option>
-                            <option value="option1">Mulighed 1</option>
-                            <option value="option2">Mulighed 2</option>
-                            <option value="option3">Mulighed 3</option>
-                        </select>
-                    </li>
-
-                </ul>
-            </div>
-
-            <button class="nav-close">
-
-            </button>
-
-            <ul class="nav-primary accordion">
+        <!-- collapsible-->
+        <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu">
+            <svg class="icon-svg "><use xlink:href="#close"></use></svg> Luk
+        </button>
+        <!-- 3: Main navigation-->
+        <div class="navbar navbar-primary">
+            <!--3A: Main navigation-->
+            <ul class="nav-primary">
                 <li>
-                    <button class="accordion-button nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-one">
-                        <span>Section title</span>
-                    </button>
-                    <ul id="extended-mega-nav-section-one" class="nav-submenu megamenu grid-full">
-                        <div class="megamenu-col">
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                        </div>
-                        <div class="megamenu-col">
-                            <li>
-                                <a href="#">Subsection title longer</a>
-                            </li>
-                            <li>
-                                <a href="#">A very long page title that goes onto two lines</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                        </div>
-                        <div class="megamenu-col">
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                        </div>
-                    </ul>
-                </li>
-                <li>
-                    <button class="accordion-button nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-two">
-                        <span>Simple terms</span>
-                    </button>
-                    <ul id="extended-mega-nav-section-two" class="nav-submenu megamenu grid-full">
-                        <div class="megamenu-col">
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                        </div>
-                        <div class="megamenu-col">
-                            <li>
-                                <a href="#">Subsection title longer</a>
-                            </li>
-                            <li>
-                                <a href="#">A very long page title that goes onto two lines</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                        </div>
-                        <div class="megamenu-col">
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                            <li>
-                                <a href="#">Subsection title</a>
-                            </li>
-                        </div>
-                    </ul>
-                </li>
-                <li>
-
-                    <a class="nav-link" href="javascript:void(0)">
-                        <span>Distinct from each other</span>
+                    <a href="/frontend-styleguide/components/" class="nav-link" title="Designsystem">
+                        <span>Designsystem</span>
                     </a>
+                </li>
+                <li>
+                    <a href="/frontend-styleguide/page-templates/" class="nav-link" title="Eksempler">
+                        <span>Eksempler</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/frontend-styleguide/getting-started/" class="nav-link" title="Kom godt i gang">
+                        <span>Kom godt i gang</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/frontend-styleguide/faellesoffentlige-krav/" class="nav-link" title="Fællesoffentlige krav">
+                        <span>Fællesoffentlige krav</span>
+                    </a>
+                </li>
+                <li>
+                    <button class="nav-link js-nav-submenu" title="Om design systemet" data-js-target="#dropdown-nav-section-one"
+                        aria-expanded="false" aria-controls="#dropdown-nav-section-one"
+                        aria-haspopup="true">
+                        <span>Om designsystemet</span>
+                    </button>
+                    <ul id="dropdown-nav-section-one" class="nav-submenu" aria-hidden="true">
+                        <li>
+                            <a href="#">Subsection title</a>
+                        </li>
+                        <li>
+                            <a href="#">Subsection title</a>
+                        </li>
+                        <li>
+                            <a href="#">Subsection title</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
 
+            <!-- 3B: Main navigation - secondary menu-->
+            <ul class="unstyled-list nav-actions">
+                <li>
+                    <button class="button button-tertiary">Tertiary</button>
+                </li>
+                <li>
+                    <select class="form-select style-switcher" name="Style switcher" aria-label="Skift mellem temaer">
+                        <option value="">- Vælg tema -</option>
+                        <option value="styleguide">Tema: Neutralt</option>
+                        <option value="virkdk">Tema: Virk.dk</option>
+                        <option value="borgerdk">Tema: Borger.dk</option>
+                    </select>
+                </li>
+            </ul>
         </div>
+        <!-- 3: Main navigation end-->
+
+        <!-- 4: Secondary navigation-->
+        <div class="navbar">
+            <div class="nav-secondary">
+                <h4 class="nav-secondary-heading">Solution variable</h4>
+                <ul class="unstyled-list nav-actions">
+                    <li>
+                        <button class="button button-primary">Toggle</button>
+                    </li>
+                    <li>
+                        <button class="button button-primary">Toggle</button>
+                    </li>
+                    <li>
+                        <button class="button button-primary">Toggle</button>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="unstyled-list nav-actions">
+                <li>
+                    <a href="/frontend-styleguide/components/" class="button button-ghost">Ghost</a>
+                </li>
+                <li>
+                    <a href="/frontend-styleguide/page-templates/" class="button button-tertiary">Tertiary</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 4: Secondary header end-->
+
+        <!-- 5: Contextual actions-->
+        <div class="navbar navbar-context-actions">
+            <div class="nav-actions">
+                <a href="" class="function-link">Print entire guide
+
+                    <svg class="icon-svg "><use xlink:href="#printer"></use></svg>
+
+                </a>
+            </div>
+        </div>
+        <!-- 5: Contextual actions end-->
+
+        <div class="portal-info-mobile">
+            <p class="user"><b>Christian Emil Vestergaard Christiansen</b></p>
+            <p>Københavns Urmager Værksted v/Martin Elsig</p>
+            <a href="https://github.com/FSGpilot/frontend-styleguide-components" class="button button-secondary button-signout">
+                Sign out
+            </a>
+        </div>
+
+        <div class="solution-info-mobile">
+            <p><b>Styrelsen for International Rekruttering og Integration</b></p>
+            <p>Support: 12 34 56 78</p>
+        </div>
+
     </nav>
+    <!-- collapsible nav end-->
 </header>
 <div class="overlay"></div>
