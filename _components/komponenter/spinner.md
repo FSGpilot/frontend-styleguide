@@ -21,5 +21,6 @@ lead: Spinner lead
     <ul>
     <li>Eksempel: <code>&lt;div class="spinner"&gt;&lt;/div&gt;</code></li>
     </ul>
+    <p>For at ændre spinnerens størrelse kan <code>font-size</code> gøres større eller mindre.</p>
   </div>
 </div>
