@@ -363,6 +363,11 @@ td,
 th {
   padding: 0; }
 
+.header .portal-header .logo {
+  background-image: url("./../assets/img/logo_virk_indberet.svg");
+  width: 200px;
+  height: 58px; }
+
 /*
 Removes the unit (e.g. px, em, rem) from a value, returning the number only.
 @param {Number} $num - Number to strip unit from.
