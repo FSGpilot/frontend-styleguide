@@ -1,6 +1,6 @@
 ---
 type: component
-title: Display headings
+title: Display tekst
 parent: typography
 order: 03
 ---
@@ -8,7 +8,7 @@ order: 03
 
 <div class="row">
   <div class="col-12">
-    <p>Display headings giver extra store overskrifter eller tekst. Bruges til at skabe extra focus.</p>
+    <p>Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.</p>
   </div>
 </div>
 {% include code/preview.html component="displaytext" %}

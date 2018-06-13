@@ -1,64 +1,65 @@
 <a class="skipnav" href="#main-content">Skip to main content</a>
+
+
 <header class="header header-extended" role="banner">
+    <!--1A: Portal header -->
+    <div class="portal-header">
+      <div class="portal-header-inner container">
+        <a href="/frontend-styleguide/" title="Home" aria-label="Home" class="logo"></a>
+        <button class="button button-secondary button-menu-open js-menu-open ml-auto" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
 
-  <!-- Solution Header -->
-  <div class="navbar solution-header">
-    <div class="solution-heading">
-      <em class="heading-text">
-        <a href="{{ site.baseurl }}/"
-          title="Home"
-          aria-label="Home">
-          Frontend Styleguide
-        </a>
-      </em>
+        <!-- 1B: Portal header: info + actions-->
+        <div class="portal-info">
+          <a href="/frontend-styleguide/getting-started/download/" class="button button-primary" role="button">
+            Download kode og designfiler
+          </a>
+          <a href="https://github.com/FSGpilot/frontend-styleguide-components" class="button button-secondary" role="button">
+            Se på GitHub
+          </a>       
+        </div> 
+      </div>
     </div>
-    <button class="menu-btn">Menu</button>
-  </div>
 
-  <nav role="navigation" class="nav">
-   <div class="nav-inner">
-      <div class="nav-secondary">
-        <ul class="unstyled-list nav-secondary-links">
-          <li> 
-            <a href="{{ site.baseurl }}/getting-started/download/" class="button button-primary">
-              Download kode og designfiler
-            </a>
-          </li>
-          <li> 
-            <a href="https://github.com/FSGpilot/frontend-styleguide-components" class="button button-secondary">
-              Se på GitHub
-            </a>
-          </li>
-        </ul>
+     <!--2A: Solutiuon header -->
+    <div class="solution-header">
+      <div class="solution-header-inner container">
+        <div class="solution-heading">
+            <a href="/frontend-styleguide/" title="Home" aria-label="Home">Frontend Styleguide</a>
+        </div>
       </div>
+    </div>
 
-      <div class="nav-tertiary">
-        <ul class="unstyled-list nav-secondary-links">
-          <li> 
-            <select class="style-switcher" name="Style switcher">
-              <option value>- Vælg tema -</option>
-              <option value="styleguide">Tema: Neutralt</option>
-              <option value="virkdk">Tema: Virk.dk</option>
-              <option value="borgerdk">Tema: Borger.dk</option>
-            </select>
-          </li>
-        </ul>
+    <nav role="navigation" class="nav"> <!-- collapsible-->
+      <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
+      <!-- 3: Main navigation-->
+      <div class="navbar navbar-primary">
+        <!--3A: Main navigation-->
+        
+        <div class="navbar-inner container">
+          <ul class="nav-primary">
+            {%
+              include nav/list.html
+              links=site.data.nav.primary
+              rel='contains'
+              flat=true
+            %}
+          </ul>
+
+          <!-- 3B: Main navigation - secondary menu-->
+          <ul class="unstyled-list nav-actions">
+            <li>
+              <select class="form-select style-switcher" name="Style switcher" aria-label="Skift mellem temaer">
+                <option value="">- Vælg tema -</option>
+                <option value="styleguide">Tema: Neutralt</option>
+                <option value="virkdk">Tema: Virk.dk</option>
+                <option value="borgerdk">Tema: Borger.dk</option>
+              </select>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <button class="nav-close"></button>
-
-      <ul class="nav-primary accordion">
-        {%
-            include nav/list.html
-            links=site.data.nav.primary
-            rel='contains'
-            flat=true
-        %}
-      </ul>
-
+      <!-- 3: Main navigation end-->
       
-      
-    </div> <!-- nav-inner end -->
-  </nav> 
-</header> 
+    </nav> <!-- collapsible nav end-->
+</header>
 <div class="overlay"></div>
