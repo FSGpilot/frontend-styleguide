@@ -1,5 +1,5 @@
 ---
-permalink: /components/strukturer/modals/
+permalink: /components/komponenter/modals/
 layout: styleguide
 type: component
 title: Modals
