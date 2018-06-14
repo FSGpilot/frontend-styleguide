@@ -3914,7 +3914,7 @@ dfn {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: all .2s ease-in-out; }
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, .2s ease-in-out; }
   @media screen and (min-width: 576px) {
     .button {
       width: auto; } }
@@ -4515,12 +4515,13 @@ legend {
   display: flex;
   align-items: flex-end; }
   .date-group label {
-    margin-top: 0; }
+    margin-top: 0;
+    font-weight: 400; }
   .date-group .form-group-day,
   .date-group .form-group-month,
   .date-group .form-group-year {
     margin-right: 16px;
-    margin-top: 8px; }
+    margin-top: 0; }
   .date-group .form-group-day,
   .date-group .form-group-month {
     width: calc(2px + 16px + 16px + 2ch ); }
@@ -6407,7 +6408,8 @@ input.input-medium {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; }
+    z-index: 9999;
+    padding: 16px; }
   .modal .modal__container {
     background-color: #fff;
     padding: 16px 24px;
@@ -6446,26 +6448,9 @@ input.input-medium {
       margin-top: 8px;
       margin-right: 16px; }
   .modal .modal__close {
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    -webkit-font-smoothing: auto;
-    font-family: "IBMPlexSans";
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-weight: 400;
-    color: #454545;
     right: 32px;
     position: absolute;
-    top: 24px;
-    width: 40px;
-    text-align: center; }
-    .modal .modal__close:hover {
-      background-color: transparent; }
+    top: 24px; }
     @media (max-width: 767px) {
       .modal .modal__close {
         position: initial;
@@ -8321,7 +8306,8 @@ h6, .h6,
 
 .page-modal-html {
   padding-top: 150px;
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  text-align: center; }
 
 @media screen and (min-width: 768px) {
   .page-design-principles .main-content .grid-full {
