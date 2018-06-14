@@ -39,7 +39,6 @@
                 &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-1-title&quot;&amp;gt;
                     Modal
                 &amp;lt;/h2&amp;gt;
-                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
             &amp;lt;/header&amp;gt;
             &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-1-content&quot;&amp;gt;
                 &amp;lt;p&amp;gt;Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -48,9 +47,10 @@
                     ullamco laboris nisi ut aliquip ex ea commodo consequat&amp;lt;/p&amp;gt;
             &amp;lt;/main&amp;gt;
             &amp;lt;footer class=&quot;modal__footer&quot;&amp;gt;
-                &amp;lt;button class=&quot;button button-primary&quot;&amp;gt;En knap&amp;lt;/button&amp;gt;
-                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Close this dialog window&quot;&amp;gt;Knap som lukker modal&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-primary&quot; aria-label=&quot;Fx bekræft handling&quot;&amp;gt;Primærknap&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Fx lukker modal vinduet&quot;&amp;gt;Sekundærknap&amp;lt;/button&amp;gt;
             &amp;lt;/footer&amp;gt;
+            &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
@@ -62,7 +62,6 @@
                 &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-2-title&quot;&amp;gt;
                     Modal
                 &amp;lt;/h2&amp;gt;
-                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
             &amp;lt;/header&amp;gt;
             &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-2-content&quot;&amp;gt;
                 &amp;lt;p&amp;gt;Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -70,6 +69,7 @@
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat&amp;lt;/p&amp;gt;
             &amp;lt;/main&amp;gt;
+            &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
@@ -86,50 +86,18 @@
   
   
     Implementation
-    Der er to typer af modalvinduer, herunder: 
+    Modal komponenten er implementeret med scriptet Micromodal.
+    En modal kan åbens ved at sætte følgende attribut på fx en knap: data-micromodal-trigger=&quot;modal-id&quot;. Dette vil åbne modalen som har id'et 'modal-id'
+    En modal kan lukkes ved at sætte følgende attribut på en knap inde i modalen: data-micromodal-close.
+    Det er også muligt at åbne og lukke modalen programmatisk via javascript: MicroModal.show('modal-id'); og MicroModal.close('modal-id');&amp;lt;/p&amp;gt;
+    Html struktur af en modal
     
-      Passiv modal, som kun indeholder tekst
-      Interaktiv modal, der også indeholder interaktion, som knapper og links
+      For at modalen kan åbne skal denne have et id: &amp;lt;div class=&quot;modal&quot; id=&quot;modal-id&quot; aria-hidden=&quot;false&quot;&amp;gt;
+      Der sættes automatisk fokus på det første fokusbare element i modalen. Luk-knappen skal derfor HTML-mæssigt placeres til sidste i modalen.
+      En modal er opdelt i tre dele: modal__header, modal__content og modal__footer
     
-    Begge modaltyper har tilhørende classes, der skal tilføjes afhængig af, hvilken modal der skal bruges. 
-    Passiv modal
-    
-      .js-open-modal-passive som sættes på knappen, der skal åbne modalvinduet
-      .js-modal-passive som sættes på selve modalvinduet
-      .js-close-modal-passive som sættes på knappen, der skal lukke modalvinduet
-      .js-modal-overlay-passive som sættes på modalets overlay
-    
-    Interaktiv modal
-    
-      .js-open-modal-interactive som sættes på knappen, der skal åbne modalvinduet
-      .js-modal-interactive som sættes på selve modalvinduet
-      .js-close-modal-interactive som sættes på knappen, der skal lukke modalvinduet
-      .js-modal-overlay-interactive som sættes på modalets overlay
-    
-    I Interaktive modaler skal knapper og links tilføjes i en div, der har en .modalbuttons class.
-    Accessibility
-    
-      Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.
-      On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the &quot;Accordion&quot; section.
-    
-    Usability
-    When to use
-    
-      Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.
-      Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.
-      Use the slim footer when you only want to offer a few footer links and nothing else.
-    
-    When to consider something else
-    
-      Avoid using the medium and slim footers when your footer has more than five links.
-    
-    Guidance
-    
-      Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.
-      Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).
-      Include the newsletter sign up if one of your website’s goals is getting visitors to sign up for a newsletter.
-      Link only to social media your agency updates frequently or uses to communicate with customers.
-      Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.">
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;">
 <meta property="og:description" content="Code
   
     
@@ -148,7 +116,6 @@
                 &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-1-title&quot;&amp;gt;
                     Modal
                 &amp;lt;/h2&amp;gt;
-                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
             &amp;lt;/header&amp;gt;
             &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-1-content&quot;&amp;gt;
                 &amp;lt;p&amp;gt;Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -157,9 +124,10 @@
                     ullamco laboris nisi ut aliquip ex ea commodo consequat&amp;lt;/p&amp;gt;
             &amp;lt;/main&amp;gt;
             &amp;lt;footer class=&quot;modal__footer&quot;&amp;gt;
-                &amp;lt;button class=&quot;button button-primary&quot;&amp;gt;En knap&amp;lt;/button&amp;gt;
-                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Close this dialog window&quot;&amp;gt;Knap som lukker modal&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-primary&quot; aria-label=&quot;Fx bekræft handling&quot;&amp;gt;Primærknap&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Fx lukker modal vinduet&quot;&amp;gt;Sekundærknap&amp;lt;/button&amp;gt;
             &amp;lt;/footer&amp;gt;
+            &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
@@ -171,7 +139,6 @@
                 &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-2-title&quot;&amp;gt;
                     Modal
                 &amp;lt;/h2&amp;gt;
-                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
             &amp;lt;/header&amp;gt;
             &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-2-content&quot;&amp;gt;
                 &amp;lt;p&amp;gt;Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -179,6 +146,7 @@
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat&amp;lt;/p&amp;gt;
             &amp;lt;/main&amp;gt;
+            &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
@@ -195,50 +163,18 @@
   
   
     Implementation
-    Der er to typer af modalvinduer, herunder: 
+    Modal komponenten er implementeret med scriptet Micromodal.
+    En modal kan åbens ved at sætte følgende attribut på fx en knap: data-micromodal-trigger=&quot;modal-id&quot;. Dette vil åbne modalen som har id'et 'modal-id'
+    En modal kan lukkes ved at sætte følgende attribut på en knap inde i modalen: data-micromodal-close.
+    Det er også muligt at åbne og lukke modalen programmatisk via javascript: MicroModal.show('modal-id'); og MicroModal.close('modal-id');&amp;lt;/p&amp;gt;
+    Html struktur af en modal
     
-      Passiv modal, som kun indeholder tekst
-      Interaktiv modal, der også indeholder interaktion, som knapper og links
+      For at modalen kan åbne skal denne have et id: &amp;lt;div class=&quot;modal&quot; id=&quot;modal-id&quot; aria-hidden=&quot;false&quot;&amp;gt;
+      Der sættes automatisk fokus på det første fokusbare element i modalen. Luk-knappen skal derfor HTML-mæssigt placeres til sidste i modalen.
+      En modal er opdelt i tre dele: modal__header, modal__content og modal__footer
     
-    Begge modaltyper har tilhørende classes, der skal tilføjes afhængig af, hvilken modal der skal bruges. 
-    Passiv modal
-    
-      .js-open-modal-passive som sættes på knappen, der skal åbne modalvinduet
-      .js-modal-passive som sættes på selve modalvinduet
-      .js-close-modal-passive som sættes på knappen, der skal lukke modalvinduet
-      .js-modal-overlay-passive som sættes på modalets overlay
-    
-    Interaktiv modal
-    
-      .js-open-modal-interactive som sættes på knappen, der skal åbne modalvinduet
-      .js-modal-interactive som sættes på selve modalvinduet
-      .js-close-modal-interactive som sættes på knappen, der skal lukke modalvinduet
-      .js-modal-overlay-interactive som sættes på modalets overlay
-    
-    I Interaktive modaler skal knapper og links tilføjes i en div, der har en .modalbuttons class.
-    Accessibility
-    
-      Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.
-      On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the &quot;Accordion&quot; section.
-    
-    Usability
-    When to use
-    
-      Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.
-      Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.
-      Use the slim footer when you only want to offer a few footer links and nothing else.
-    
-    When to consider something else
-    
-      Avoid using the medium and slim footers when your footer has more than five links.
-    
-    Guidance
-    
-      Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.
-      Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).
-      Include the newsletter sign up if one of your website’s goals is getting visitors to sign up for a newsletter.
-      Link only to social media your agency updates frequently or uses to communicate with customers.
-      Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.">
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;">
 
 
 
@@ -859,7 +795,6 @@
                 <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"modal__title"</span> <span class="na">id=</span><span class="s">"modal-1-title"</span><span class="nt">&gt;</span>
                     Modal
                 <span class="nt">&lt;/h2&gt;</span>
-                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-ghost"</span> <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
             <span class="nt">&lt;/header&gt;</span>
             <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"modal__content"</span> <span class="na">id=</span><span class="s">"modal-1-content"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;p&gt;</span>Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -868,9 +803,10 @@
                     ullamco laboris nisi ut aliquip ex ea commodo consequat<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;/main&gt;</span>
             <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"modal__footer"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary"</span><span class="nt">&gt;</span>En knap<span class="nt">&lt;/button&gt;</span>
-                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary"</span> <span class="na">data-micromodal-close</span> <span class="na">aria-label=</span><span class="s">"Close this dialog window"</span><span class="nt">&gt;</span>Knap som lukker modal<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary"</span> <span class="na">aria-label=</span><span class="s">"Fx bekræft handling"</span><span class="nt">&gt;</span>Primærknap<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary"</span> <span class="na">data-micromodal-close</span> <span class="na">aria-label=</span><span class="s">"Fx lukker modal vinduet"</span><span class="nt">&gt;</span>Sekundærknap<span class="nt">&lt;/button&gt;</span>
             <span class="nt">&lt;/footer&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-ghost"</span> <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -882,7 +818,6 @@
                 <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"modal__title"</span> <span class="na">id=</span><span class="s">"modal-2-title"</span><span class="nt">&gt;</span>
                     Modal
                 <span class="nt">&lt;/h2&gt;</span>
-                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-ghost"</span> <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
             <span class="nt">&lt;/header&gt;</span>
             <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"modal__content"</span> <span class="na">id=</span><span class="s">"modal-2-content"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;p&gt;</span>Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -890,6 +825,7 @@
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;/main&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-ghost"</span> <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -901,58 +837,24 @@
 </div>
 
 <div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="footer-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="modal-docs">
     Documentation
   </button>
-  <div id="footer-docs" aria-hidden="false" class="accordion-content">
+  <div id="modal-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>
-    <p>Der er to typer af modalvinduer, herunder: </p>
-    <ul class="content-list">
-      <li>Passiv modal, som kun indeholder tekst</li>
-      <li>Interaktiv modal, der også indeholder interaktion, som knapper og links</li>
-    </ul>
-    <p>Begge modaltyper har tilhørende classes, der skal tilføjes afhængig af, hvilken modal der skal bruges. </p>
-    <h5>Passiv modal</h5>
+    <p>Modal komponenten er implementeret med scriptet <a href="https://micromodal.now.sh">Micromodal</a>.</p>
+    <p>En modal kan åbens ved at sætte følgende attribut på fx en knap: <code>data-micromodal-trigger="modal-id"</code>. Dette vil åbne modalen som har id'et 'modal-id'</p>
+    <p>En modal kan lukkes ved at sætte følgende attribut på en knap inde i modalen: <code>data-micromodal-close</code>.</p>
+    <p>Det er også muligt at åbne og lukke modalen programmatisk via javascript: <code>MicroModal.show('modal-id');</code> og <code>MicroModal.close('modal-id');&lt;/p&gt;
+    <h6>Html struktur af en modal</h6>
     <ul>
-      <li><code>.js-open-modal-passive</code> som sættes på knappen, der skal åbne modalvinduet</li>
-      <li><code>.js-modal-passive</code> som sættes på selve modalvinduet</li>
-      <li><code>.js-close-modal-passive</code> som sættes på knappen, der skal lukke modalvinduet</li>
-      <li><code>.js-modal-overlay-passive</code> som sættes på modalets overlay</li>
+      <li>For at modalen kan åbne skal denne have et id: <code>&lt;div class="modal" id="modal-id" aria-hidden="false"&gt;</code></li>
+      <li>Der sættes automatisk fokus på det første fokusbare element i modalen. Luk-knappen skal derfor HTML-mæssigt placeres til sidste i modalen.</li>
+      <li>En modal er opdelt i tre dele: modal__header, modal__content og modal__footer</li>
     </ul>
-    <h5>Interaktiv modal</h5>
-    <ul>
-      <li><code>.js-open-modal-interactive</code> som sættes på knappen, der skal åbne modalvinduet</li>
-      <li><code>.js-modal-interactive</code> som sættes på selve modalvinduet</li>
-      <li><code>.js-close-modal-interactive</code> som sættes på knappen, der skal lukke modalvinduet</li>
-      <li><code>.js-modal-overlay-interactive</code> som sættes på modalets overlay</li>
-    </ul>
-    <p>I Interaktive modaler skal knapper og links tilføjes i en div, der har en <code>.modalbuttons</code> class.</p>
-    <h4 class="heading">Accessibility</h4>
-    <ul class="content-list">
-      <li>Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.</li>
-      <li>On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.</li>
-    </ul>
-    <h4 class="heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="content-list">
-      <li>Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.</li>
-      <li>Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.</li>
-      <li>Use the slim footer when you only want to offer a few footer links and nothing else.</li>
-    </ul>
-    <h5>When to consider something else</h5>
-    <ul class="content-list">
-      <li>Avoid using the medium and slim footers when your footer has more than five links.</li>
-    </ul>
-    <h5>Guidance</h5>
-    <ul class="content-list">
-      <li>Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.</li>
-      <li>Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).</li>
-      <li>Include the newsletter sign up if one of your website’s goals is getting visitors to sign up for a newsletter.</li>
-      <li>Link only to social media your agency updates frequently or uses to communicate with customers.</li>
-      <li>Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.</li>
-    </ul>
-  </div>
-</div>
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></p></div></div>
 
       </section>
     </div>

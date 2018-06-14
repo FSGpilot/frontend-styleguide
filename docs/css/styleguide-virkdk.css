@@ -3912,15 +3912,15 @@ dfn {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out, .2s ease-in-out; }
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out; }
   @media screen and (min-width: 576px) {
     .button {
       width: auto; } }
-  .button.focus, .button:focus {
+  .button:not(.button-ghost).focus, .button:not(.button-ghost):focus {
     border-color: #febb30;
     outline-color: #febb30;
     position: relative; }
-    .button.focus:after, .button:focus:after {
+    .button:not(.button-ghost).focus:after, .button:not(.button-ghost):focus:after {
       content: "";
       background: #febb30;
       position: absolute;
@@ -3977,9 +3977,7 @@ dfn {
       text-decoration: underline; }
     .button.button-ghost.focus, .button.button-ghost:focus {
       color: #1a1a1a;
-      background-color: #febb30;
-      box-shadow: none;
-      border-color: #febb30; }
+      box-shadow: none; }
   .button.button-tertiary {
     border-color: #BFBFBF;
     background-color: transparent;
@@ -5225,6 +5223,8 @@ table.dataTable {
     *cursor: hand;
     background-repeat: no-repeat;
     background-position: center right; }
+  table.dataTable thead .sorting {
+    background-image: url("../assets/img/svg-icons//menu-up.svg"); }
   table.dataTable thead .sorting_asc {
     background-image: url("../assets/img/svg-icons//menu-up.svg"); }
   table.dataTable thead .sorting_desc {
@@ -7193,10 +7193,10 @@ input[type=search] {
     margin-bottom: 0;
     color: #747474; }
 
-.card-content {
+.card-text {
   background-color: #ffffff;
   padding: 16px 24px; }
-  .card-content .content {
+  .card-text .text {
     font-family: "IBMPlexSans";
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -7206,25 +7206,23 @@ input[type=search] {
     color: #454545;
     margin-bottom: 0; }
 
-.card-media {
+.card-content {
   font-family: "IBMPlexSans";
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
   color: #454545;
-  padding: 16px 24px;
+  padding: 0 0;
   background: #BFBFBF;
   color: #454545; }
-  .card-media ul {
+  .card-content ul {
     margin-bottom: 0; }
-  .card-media div:first-child {
+  .card-content div:first-child {
     margin-top: 0; }
-  .card-media .media-content {
+  .card-content .content-text {
     margin-top: 16px; }
-  .card-media .media {
-    margin-top: 16px; }
-    .card-media .media img {
-      width: 100%; }
+  .card-content .content {
+    text-align: center; }
 
 .card-action {
   font-family: "IBMPlexSans";
@@ -7233,17 +7231,19 @@ input[type=search] {
   font-weight: 400;
   color: #454545;
   padding: 16px 24px;
-  border-bottom: 1px solid #BFBFBF;
   color: #454545;
   margin-bottom: 0; }
   .card-action div:first-child {
     margin-top: 0; }
   .card-action:last-child {
     border-bottom: 0; }
-  .card-action .action-buttons {
-    margin-top: 24px; }
-    .card-action .action-buttons button {
-      margin-right: 8px; }
+  .card-action .action-buttons button {
+    margin-right: 8px;
+    margin-top: 8px; }
+    @media (max-width: 767px) {
+      .card-action .action-buttons button {
+        margin-right: 0;
+        margin-top: 8px; } }
   .card-action .action-links {
     margin-top: 16px; }
     .card-action .action-links ul {
@@ -7260,35 +7260,44 @@ input[type=search] {
           content: "" !important;
           padding-right: 0 !important; }
       .card-action .action-links ul li {
-        margin-top: 8px; }
+        margin-top: 8px !important; }
   .card-action .action-functionlinks {
     margin-top: 16px;
     text-align: right; }
     .card-action .action-functionlinks .function-link {
       margin-left: 16px; }
 
-.card-content + .card-header {
+.card-header + .card-text {
   padding-top: 0; }
 
 .card-header + .card-content {
   padding-top: 0; }
 
-.card-content + .card-action {
-  padding-top: 0; }
-
-.card-action + .card-content {
-  padding-top: 0; }
-
 .card-header + .card-action {
-  padding-top: 0; }
-
-.card-action + .card-header {
   padding-top: 0; }
 
 .card-header + .card-header {
   padding-top: 0; }
 
-.card-content + .card-content {
+.card-text + .card-header {
+  padding-top: 0; }
+
+.card-text + .card-content {
+  padding-top: 0; }
+
+.card-text + .card-action {
+  padding-top: 0; }
+
+.card-text + .card-text {
+  padding-top: 0; }
+
+.card-action + .card-text {
+  padding-top: 0; }
+
+.card-action + .card-header {
+  padding-top: 0; }
+
+.card-action + .card-content {
   padding-top: 0; }
 
 .card-action + .card-action {
