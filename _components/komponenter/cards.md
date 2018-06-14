@@ -17,39 +17,30 @@ lead: A card is a sheet of material that serves as an entry point to more detail
   </button>
   <div id="alert-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>
-    <p>Der findes tre typer af cards: lille, mellem og stor. Fælles for dem alle er, at de har en <code>.card</code> class. For at ændre størrelse på et card tilføjes enten:</p> 
-    <ul>
-      <li><code>.card-small</code></li>
-      <li><code>.card-medium</code></li>
-      <li><code>.card-large</code></li>
-    </ul>
-    <p>Eksempelvis: <code>&lt;div class="card card-small"&gt;...&lt;/div&gt;</code>
-    <h5>Lille, mellem og stort card</h5>
-    <ul>
-      <li>Det <em>lille</em> card indeholder en 'header', som har en <code>.card-header</code> class.</li>
-      <li>Det <em>mellem</em> card indeholder et 'medie område', som har en <code>.card-content</code> class, og en 'header' som har en <code>.card-header</code> class.</li>
-      <li>Det <em>store</em> card indeholder en 'header', som har en <code>.card-header</code> class, og et 'content område' som har en <code>.card-content</code> class, og derudover til sidst et 'aktionsområde' som har en <code>.card-action</code> class.</li>
-    </ul>
+    <p>Alle cards har en <code>.card</code> class. Cards kan bestå af en header, et tekstområde, et contentområde og et aktionområde. Der er ingen specifik rækkefølge af områder og de kan derfor sammensættes efter eget behov og i alle størrelser. Der skal dog overholdes, hvad der bliver placeret i de forskellige områder. Hver område er beskrevet nedenfor. </p> 
     <h5>Header</h5>
-    <p>Headeren indeholder en titel, en understøttende tekst og brødtekst, som alle er p-tags med hver deres class.</p>
+    <p>Headeren har en <code>.card-header</code> class, og indeholder en titel og en understøttende tekst, som alle er p-tags med hver deres class.</p>
     <ul>
       <li><code>.header-titel</code></li>
       <li><code>.subheader</code></li>
-      <li><code>.header-content</code></li>
     </ul>
-    <h5>Medie område</h5>
-    <p>Medie området kan indeholde brødtekst og medier, såsom fotos og grafik, som har hver deres div med hver deres class.</p>
+    <h5>Tekstområde</h5>
+    <p>Tekstområdet har en <code>.card-text</code> class, og indeholder brødtekst, som har en class.</p>
     <ul>
+      <li><code>.text</code></li>
+    </ul>
+    <h5>Contentområde</h5>
+    <p>Contentområdet har en <code>.card-content</code> class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class.</p>
+    <ul>
+      <li><code>.content-text</code></li>
       <li><code>.content</code></li>
-      <li><code>.content-media</code></li>
     </ul>
     <h5>Aktionsområde</h5>
-    <p>Aktionsområdet kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.</p>
+    <p>Aktionsområdet har en <code>.card-action</code> class, kan indeholde brødtekst, knapper, links og funktionelle link, som alle har hver deres div med hver deres class.</p>
     <ul>
       <li><code>.action-content</code></li>
       <li><code>.action-buttons</code></li>
       <li><code>.action-links</code></li>
-      <li><code>.action-functionlinks</code></li>
     </ul>
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
