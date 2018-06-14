@@ -24,75 +24,97 @@
 <meta name="description" content="Code
   
     
-&amp;lt;!-- MODAL START --&amp;gt;
-&amp;lt;div class=&quot;modal-overlay js-modal-overlay-transactional&quot; id=&quot;js-modal-overlay&quot;
-    tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&amp;gt;
-
-    &amp;lt;div class=&quot;modal js-modal-transactional&quot; role=&quot;modal&quot; aria-labelledby=&quot;modal-title&quot;
-        aria-describedby=&quot;modal-description&quot;&amp;gt;
-        &amp;lt;button type=&quot;button&quot; aria-label=&quot;Close Navigation&quot; class=&quot;js-close-modal close-modal button button-ghost&quot;&amp;gt;Luk&amp;lt;/button&amp;gt;
-        &amp;lt;h3 class=&quot;modal-title&quot; class=&quot;font-lead&quot;&amp;gt;Datatable details row&amp;lt;/h3&amp;gt;
-        &amp;lt;p class=&quot;modal-description&quot;&amp;gt;Suspendisse quis nisi vel ex condimentum vehicula. Donec fermentum sapien
-            eget vehicula interdum. Integer mollis nibh faucibus ullamcorper
-            varius&amp;lt;/p&amp;gt;
-
-        &amp;lt;!-- EDIT FORM START --&amp;gt;
-        &amp;lt;div class=&quot;row&quot;&amp;gt;
-            &amp;lt;div class=&quot;col-12&quot;&amp;gt;
+&amp;lt;!-- MODAL EDIT START --&amp;gt;
+&amp;lt;div class=&quot;modal&quot; id=&quot;modal-edit&quot; aria-hidden=&quot;true&quot;&amp;gt;
+    &amp;lt;div class=&quot;modal__overlay&quot; tabindex=&quot;-1&quot; data-micromodal-close&amp;gt;
+        &amp;lt;div class=&quot;modal__container&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-edit-title&quot;&amp;gt;
+            &amp;lt;header class=&quot;modal__header&quot;&amp;gt;
+                &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-edit-title&quot;&amp;gt;
+                    Datatable details row edit
+                &amp;lt;/h2&amp;gt;
+                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
+            &amp;lt;/header&amp;gt;
+            &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-edit-content&quot;&amp;gt;
                 &amp;lt;div class=&quot;row&quot;&amp;gt;
                     &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-                        &amp;lt;div class=&quot;alert alert-error alert--show-icon&quot; role=&quot;alert&quot; aria-label=&quot;Beskedbox der viser en fejlmeddelselse&quot;&amp;gt;
-                            &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
-                                &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Error alert - with icon&amp;lt;/h3&amp;gt;
-                                &amp;lt;p class=&quot;alert-text&quot;&amp;gt;Sed ut perspiciatis unde omnis iste natus error
-                                    sit voluptatem accusantium doloremque laudantium.&amp;lt;/p&amp;gt;
+                        &amp;lt;div class=&quot;row&quot;&amp;gt;
+                            &amp;lt;div class=&quot;col-12&quot;&amp;gt;
+                                &amp;lt;div class=&quot;alert alert-error alert--show-icon&quot; role=&quot;alert&quot; aria-label=&quot;Beskedbox der viser en fejlmeddelselse&quot;&amp;gt;
+                                    &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
+                                        &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Error alert - with icon&amp;lt;/h3&amp;gt;
+                                        &amp;lt;p class=&quot;alert-text&quot;&amp;gt;Sed ut perspiciatis unde omnis iste
+                                            natus error sit voluptatem accusantium
+                                            doloremque laudantium.&amp;lt;/p&amp;gt;
+                                    &amp;lt;/div&amp;gt;
+                                &amp;lt;/div&amp;gt;
                             &amp;lt;/div&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;input id=&quot;edit-row-id&quot; name=&quot;&quot; type=&quot;hidden&quot;&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Navn:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-navn&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Email:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-email&quot; name=&quot;&quot; type=&quot;email&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group input-error&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label &quot; for=&quot;input-error&quot;&amp;gt;Vejnavn&amp;lt;/label&amp;gt;
+                            &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;Fejl i vejnavn&amp;lt;/span&amp;gt;
+                            &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-error&quot;&amp;gt;For example, lærkevej&amp;lt;/span&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-vejnavn&quot; name=&quot;input-error&quot; type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-error&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;By:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-by&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Telefon:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-telefon&quot; name=&quot;&quot; type=&quot;tel&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Firmanavn:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-firmanavn&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
                         &amp;lt;/div&amp;gt;
                     &amp;lt;/div&amp;gt;
                 &amp;lt;/div&amp;gt;
-                &amp;lt;form method=&quot;&quot; name=&quot;&quot; action=&quot;&quot;&amp;gt;
-
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;Navn:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;Email:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;email&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group input-error&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-error&quot;&amp;gt;Fejl i vejnavn&amp;lt;/label&amp;gt;
-                        &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;Vejnavn&amp;lt;/span&amp;gt;
-                        &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-error&quot;&amp;gt;For example, lærkevej&amp;lt;/span&amp;gt;
-                        &amp;lt;input class=&quot;form-input  &quot; id=&quot;input-error&quot; name=&quot;input-error&quot; type=&quot;text&quot;
-                            aria-describedby=&quot;input-error-message-input-error&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;By:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;Telefon:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;tel&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;Firmanavn:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;input type=&quot;submit&quot; class=&quot;button button-primary&quot; value=&quot;Gem&quot; /&amp;gt;
-                        &amp;lt;button class=&quot;button button-ghost&quot;&amp;gt;Annuller&amp;lt;/button&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                &amp;lt;/form&amp;gt;
-            &amp;lt;/div&amp;gt;
+            &amp;lt;/main&amp;gt;
+            &amp;lt;footer class=&quot;modal__footer&quot;&amp;gt;
+                &amp;lt;button class=&quot;button button-primary js-edit-save-trigger&quot; aria-label=&quot;Save changes to the row&quot;&amp;gt;Gem&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-ghost&quot; data-micromodal-close aria-label=&quot;Close this dialog window, no changes saved&quot;&amp;gt;Annuller&amp;lt;/button&amp;gt;
+                &amp;lt;!--&amp;lt;button class=&quot;button button-primary&quot;&amp;gt;En knap&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Close this dialog window&quot;&amp;gt;Knap som lukker modal&amp;lt;/button&amp;gt;--&amp;gt;
+            &amp;lt;/footer&amp;gt;
         &amp;lt;/div&amp;gt;
-        &amp;lt;!-- EDIT FORM END --&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
-&amp;lt;!-- MODAL END --&amp;gt;
+&amp;lt;!-- MODAL EDIT END --&amp;gt;
+
+&amp;lt;!-- MODAL DELETE START --&amp;gt;
+&amp;lt;div class=&quot;modal&quot; id=&quot;modal-delete&quot; aria-hidden=&quot;true&quot;&amp;gt;
+    &amp;lt;div class=&quot;modal__overlay&quot; tabindex=&quot;-1&quot; data-micromodal-close&amp;gt;
+        &amp;lt;div class=&quot;modal__container&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-delete-title&quot;&amp;gt;
+            &amp;lt;header class=&quot;modal__header&quot;&amp;gt;
+                &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-delete-title&quot;&amp;gt;
+                    Godkend slet
+                &amp;lt;/h2&amp;gt;
+                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
+            &amp;lt;/header&amp;gt;
+            &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-delete-content&quot;&amp;gt;
+                &amp;lt;p&amp;gt;Er du sikker på at du gerne vil slette rækken?&amp;lt;/p&amp;gt;
+            &amp;lt;/main&amp;gt;
+            &amp;lt;footer class=&quot;modal__footer&quot;&amp;gt;
+                &amp;lt;button class=&quot;button button-primary js-delete-trigger&quot;&amp;gt;Ja&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Close this dialog window&quot;&amp;gt;Nej&amp;lt;/button&amp;gt;
+            &amp;lt;/footer&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;!-- MODAL DELETE END --&amp;gt;
+
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
-        &amp;lt;table id=&quot;js-datatable-example-detailsrow&quot; class=&quot;table zebra hover&quot;&amp;gt;
+        &amp;lt;table id=&quot;js-datatable-example-detailsrow&quot; class=&quot;table lines&quot;&amp;gt;
             &amp;lt;thead&amp;gt;
                 &amp;lt;tr&amp;gt;
                     &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;
@@ -114,75 +136,97 @@
 <meta property="og:description" content="Code
   
     
-&amp;lt;!-- MODAL START --&amp;gt;
-&amp;lt;div class=&quot;modal-overlay js-modal-overlay-transactional&quot; id=&quot;js-modal-overlay&quot;
-    tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&amp;gt;
-
-    &amp;lt;div class=&quot;modal js-modal-transactional&quot; role=&quot;modal&quot; aria-labelledby=&quot;modal-title&quot;
-        aria-describedby=&quot;modal-description&quot;&amp;gt;
-        &amp;lt;button type=&quot;button&quot; aria-label=&quot;Close Navigation&quot; class=&quot;js-close-modal close-modal button button-ghost&quot;&amp;gt;Luk&amp;lt;/button&amp;gt;
-        &amp;lt;h3 class=&quot;modal-title&quot; class=&quot;font-lead&quot;&amp;gt;Datatable details row&amp;lt;/h3&amp;gt;
-        &amp;lt;p class=&quot;modal-description&quot;&amp;gt;Suspendisse quis nisi vel ex condimentum vehicula. Donec fermentum sapien
-            eget vehicula interdum. Integer mollis nibh faucibus ullamcorper
-            varius&amp;lt;/p&amp;gt;
-
-        &amp;lt;!-- EDIT FORM START --&amp;gt;
-        &amp;lt;div class=&quot;row&quot;&amp;gt;
-            &amp;lt;div class=&quot;col-12&quot;&amp;gt;
+&amp;lt;!-- MODAL EDIT START --&amp;gt;
+&amp;lt;div class=&quot;modal&quot; id=&quot;modal-edit&quot; aria-hidden=&quot;true&quot;&amp;gt;
+    &amp;lt;div class=&quot;modal__overlay&quot; tabindex=&quot;-1&quot; data-micromodal-close&amp;gt;
+        &amp;lt;div class=&quot;modal__container&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-edit-title&quot;&amp;gt;
+            &amp;lt;header class=&quot;modal__header&quot;&amp;gt;
+                &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-edit-title&quot;&amp;gt;
+                    Datatable details row edit
+                &amp;lt;/h2&amp;gt;
+                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
+            &amp;lt;/header&amp;gt;
+            &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-edit-content&quot;&amp;gt;
                 &amp;lt;div class=&quot;row&quot;&amp;gt;
                     &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-                        &amp;lt;div class=&quot;alert alert-error alert--show-icon&quot; role=&quot;alert&quot; aria-label=&quot;Beskedbox der viser en fejlmeddelselse&quot;&amp;gt;
-                            &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
-                                &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Error alert - with icon&amp;lt;/h3&amp;gt;
-                                &amp;lt;p class=&quot;alert-text&quot;&amp;gt;Sed ut perspiciatis unde omnis iste natus error
-                                    sit voluptatem accusantium doloremque laudantium.&amp;lt;/p&amp;gt;
+                        &amp;lt;div class=&quot;row&quot;&amp;gt;
+                            &amp;lt;div class=&quot;col-12&quot;&amp;gt;
+                                &amp;lt;div class=&quot;alert alert-error alert--show-icon&quot; role=&quot;alert&quot; aria-label=&quot;Beskedbox der viser en fejlmeddelselse&quot;&amp;gt;
+                                    &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
+                                        &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Error alert - with icon&amp;lt;/h3&amp;gt;
+                                        &amp;lt;p class=&quot;alert-text&quot;&amp;gt;Sed ut perspiciatis unde omnis iste
+                                            natus error sit voluptatem accusantium
+                                            doloremque laudantium.&amp;lt;/p&amp;gt;
+                                    &amp;lt;/div&amp;gt;
+                                &amp;lt;/div&amp;gt;
                             &amp;lt;/div&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;input id=&quot;edit-row-id&quot; name=&quot;&quot; type=&quot;hidden&quot;&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Navn:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-navn&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Email:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-email&quot; name=&quot;&quot; type=&quot;email&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group input-error&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label &quot; for=&quot;input-error&quot;&amp;gt;Vejnavn&amp;lt;/label&amp;gt;
+                            &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;Fejl i vejnavn&amp;lt;/span&amp;gt;
+                            &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-error&quot;&amp;gt;For example, lærkevej&amp;lt;/span&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-vejnavn&quot; name=&quot;input-error&quot; type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-error&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;By:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-by&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Telefon:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-telefon&quot; name=&quot;&quot; type=&quot;tel&quot;&amp;gt;
+                        &amp;lt;/div&amp;gt;
+                        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Firmanavn:&amp;lt;/label&amp;gt;
+                            &amp;lt;input class=&quot;form-input&quot; id=&quot;edit-firmanavn&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
                         &amp;lt;/div&amp;gt;
                     &amp;lt;/div&amp;gt;
                 &amp;lt;/div&amp;gt;
-                &amp;lt;form method=&quot;&quot; name=&quot;&quot; action=&quot;&quot;&amp;gt;
-
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;Navn:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;Email:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;email&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group input-error&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-error&quot;&amp;gt;Fejl i vejnavn&amp;lt;/label&amp;gt;
-                        &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;Vejnavn&amp;lt;/span&amp;gt;
-                        &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-error&quot;&amp;gt;For example, lærkevej&amp;lt;/span&amp;gt;
-                        &amp;lt;input class=&quot;form-input  &quot; id=&quot;input-error&quot; name=&quot;input-error&quot; type=&quot;text&quot;
-                            aria-describedby=&quot;input-error-message-input-error&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;By:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;Telefon:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;tel&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;label class=&quot;form-label&quot;&amp;gt;Firmanavn:&amp;lt;/label&amp;gt;
-                        &amp;lt;input class=&quot;form-input&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-                        &amp;lt;input type=&quot;submit&quot; class=&quot;button button-primary&quot; value=&quot;Gem&quot; /&amp;gt;
-                        &amp;lt;button class=&quot;button button-ghost&quot;&amp;gt;Annuller&amp;lt;/button&amp;gt;
-                    &amp;lt;/div&amp;gt;
-                &amp;lt;/form&amp;gt;
-            &amp;lt;/div&amp;gt;
+            &amp;lt;/main&amp;gt;
+            &amp;lt;footer class=&quot;modal__footer&quot;&amp;gt;
+                &amp;lt;button class=&quot;button button-primary js-edit-save-trigger&quot; aria-label=&quot;Save changes to the row&quot;&amp;gt;Gem&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-ghost&quot; data-micromodal-close aria-label=&quot;Close this dialog window, no changes saved&quot;&amp;gt;Annuller&amp;lt;/button&amp;gt;
+                &amp;lt;!--&amp;lt;button class=&quot;button button-primary&quot;&amp;gt;En knap&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Close this dialog window&quot;&amp;gt;Knap som lukker modal&amp;lt;/button&amp;gt;--&amp;gt;
+            &amp;lt;/footer&amp;gt;
         &amp;lt;/div&amp;gt;
-        &amp;lt;!-- EDIT FORM END --&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
-&amp;lt;!-- MODAL END --&amp;gt;
+&amp;lt;!-- MODAL EDIT END --&amp;gt;
+
+&amp;lt;!-- MODAL DELETE START --&amp;gt;
+&amp;lt;div class=&quot;modal&quot; id=&quot;modal-delete&quot; aria-hidden=&quot;true&quot;&amp;gt;
+    &amp;lt;div class=&quot;modal__overlay&quot; tabindex=&quot;-1&quot; data-micromodal-close&amp;gt;
+        &amp;lt;div class=&quot;modal__container&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-delete-title&quot;&amp;gt;
+            &amp;lt;header class=&quot;modal__header&quot;&amp;gt;
+                &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-delete-title&quot;&amp;gt;
+                    Godkend slet
+                &amp;lt;/h2&amp;gt;
+                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
+            &amp;lt;/header&amp;gt;
+            &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-delete-content&quot;&amp;gt;
+                &amp;lt;p&amp;gt;Er du sikker på at du gerne vil slette rækken?&amp;lt;/p&amp;gt;
+            &amp;lt;/main&amp;gt;
+            &amp;lt;footer class=&quot;modal__footer&quot;&amp;gt;
+                &amp;lt;button class=&quot;button button-primary js-delete-trigger&quot;&amp;gt;Ja&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Close this dialog window&quot;&amp;gt;Nej&amp;lt;/button&amp;gt;
+            &amp;lt;/footer&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;!-- MODAL DELETE END --&amp;gt;
+
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
-        &amp;lt;table id=&quot;js-datatable-example-detailsrow&quot; class=&quot;table zebra hover&quot;&amp;gt;
+        &amp;lt;table id=&quot;js-datatable-example-detailsrow&quot; class=&quot;table lines&quot;&amp;gt;
             &amp;lt;thead&amp;gt;
                 &amp;lt;tr&amp;gt;
                     &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;
@@ -470,75 +514,97 @@
   <button class="accordion-button" aria-controls="code-datatables--expandable-row">Code</button>
   <div id="code-datatables--expandable-row" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="c">&lt;!-- MODAL START --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-overlay js-modal-overlay-transactional"</span> <span class="na">id=</span><span class="s">"js-modal-overlay"</span>
-    <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal js-modal-transactional"</span> <span class="na">role=</span><span class="s">"modal"</span> <span class="na">aria-labelledby=</span><span class="s">"modal-title"</span>
-        <span class="na">aria-describedby=</span><span class="s">"modal-description"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"Close Navigation"</span> <span class="na">class=</span><span class="s">"js-close-modal close-modal button button-ghost"</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">class=</span><span class="s">"font-lead"</span><span class="nt">&gt;</span>Datatable details row<span class="nt">&lt;/h3&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"modal-description"</span><span class="nt">&gt;</span>Suspendisse quis nisi vel ex condimentum vehicula. Donec fermentum sapien
-            eget vehicula interdum. Integer mollis nibh faucibus ullamcorper
-            varius<span class="nt">&lt;/p&gt;</span>
-
-        <span class="c">&lt;!-- EDIT FORM START --&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="c">&lt;!-- MODAL EDIT START --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"modal-edit"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__overlay"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__container"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">aria-labelledby=</span><span class="s">"modal-edit-title"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"modal__header"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"modal__title"</span> <span class="na">id=</span><span class="s">"modal-edit-title"</span><span class="nt">&gt;</span>
+                    Datatable details row edit
+                <span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-ghost"</span> <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/header&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"modal__content"</span> <span class="na">id=</span><span class="s">"modal-edit-content"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error alert--show-icon"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Beskedbox der viser en fejlmeddelselse"</span><span class="nt">&gt;</span>
-                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
-                                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Error alert - with icon<span class="nt">&lt;/h3&gt;</span>
-                                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste natus error
-                                    sit voluptatem accusantium doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error alert--show-icon"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Beskedbox der viser en fejlmeddelselse"</span><span class="nt">&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Error alert - with icon<span class="nt">&lt;/h3&gt;</span>
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-text"</span><span class="nt">&gt;</span>Sed ut perspiciatis unde omnis iste
+                                            natus error sit voluptatem accusantium
+                                            doloremque laudantium.<span class="nt">&lt;/p&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
                             <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"edit-row-id"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"hidden"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Navn:<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-navn"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Email:<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-email"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"email"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group input-error"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Vejnavn<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Fejl i vejnavn<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>For example, lærkevej<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-vejnavn"</span> <span class="na">name=</span><span class="s">"input-error"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-error"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>By:<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-by"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Telefon:<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-telefon"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Firmanavn:<span class="nt">&lt;/label&gt;</span>
+                            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"edit-firmanavn"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
                         <span class="nt">&lt;/div&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;form</span> <span class="na">method=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
-
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Navn:<span class="nt">&lt;/label&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Email:<span class="nt">&lt;/label&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"email"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group input-error"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Fejl i vejnavn<span class="nt">&lt;/label&gt;</span>
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Vejnavn<span class="nt">&lt;/span&gt;</span>
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>For example, lærkevej<span class="nt">&lt;/span&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">name=</span><span class="s">"input-error"</span> <span class="na">type=</span><span class="s">"text"</span>
-                            <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-error"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>By:<span class="nt">&lt;/label&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Telefon:<span class="nt">&lt;/label&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Firmanavn:<span class="nt">&lt;/label&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"button button-primary"</span> <span class="na">value=</span><span class="s">"Gem"</span> <span class="nt">/&gt;</span>
-                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-ghost"</span><span class="nt">&gt;</span>Annuller<span class="nt">&lt;/button&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/form&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/main&gt;</span>
+            <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"modal__footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-edit-save-trigger"</span> <span class="na">aria-label=</span><span class="s">"Save changes to the row"</span><span class="nt">&gt;</span>Gem<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-ghost"</span> <span class="na">data-micromodal-close</span> <span class="na">aria-label=</span><span class="s">"Close this dialog window, no changes saved"</span><span class="nt">&gt;</span>Annuller<span class="nt">&lt;/button&gt;</span>
+                <span class="c">&lt;!--&lt;button class="button button-primary"&gt;En knap&lt;/button&gt;
+                &lt;button class="button button-secondary" data-micromodal-close aria-label="Close this dialog window"&gt;Knap som lukker modal&lt;/button&gt;--&gt;</span>
+            <span class="nt">&lt;/footer&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="c">&lt;!-- EDIT FORM END --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="c">&lt;!-- MODAL END --&gt;</span>
+<span class="c">&lt;!-- MODAL EDIT END --&gt;</span>
+
+<span class="c">&lt;!-- MODAL DELETE START --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"modal-delete"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__overlay"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__container"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">aria-labelledby=</span><span class="s">"modal-delete-title"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"modal__header"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"modal__title"</span> <span class="na">id=</span><span class="s">"modal-delete-title"</span><span class="nt">&gt;</span>
+                    Godkend slet
+                <span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-ghost"</span> <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/header&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"modal__content"</span> <span class="na">id=</span><span class="s">"modal-delete-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Er du sikker på at du gerne vil slette rækken?<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/main&gt;</span>
+            <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"modal__footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary js-delete-trigger"</span><span class="nt">&gt;</span>Ja<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary"</span> <span class="na">data-micromodal-close</span> <span class="na">aria-label=</span><span class="s">"Close this dialog window"</span><span class="nt">&gt;</span>Nej<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/footer&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- MODAL DELETE END --&gt;</span>
+
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"js-datatable-example-detailsrow"</span> <span class="na">class=</span><span class="s">"table zebra hover"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"js-datatable-example-detailsrow"</span> <span class="na">class=</span><span class="s">"table lines"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;thead&gt;</span>
                 <span class="nt">&lt;tr&gt;</span>
                     <span class="nt">&lt;th&gt;&lt;/th&gt;</span>

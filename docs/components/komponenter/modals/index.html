@@ -24,28 +24,53 @@
 <meta name="description" content="Code
   
     
-&amp;lt;div class=&quot;modal-overlay js-modal-overlay-passive&quot; tabindex=&quot;-1&quot;&amp;gt;
+&amp;lt;div&amp;gt;
 
 &amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;modal-overlay js-modal-overlay-interactive&quot; tabindex=&quot;-1&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;button class=&quot;button button-primary&quot; data-micromodal-trigger=&quot;modal-1&quot;&amp;gt;Åben modal (aktiv)&amp;lt;/button&amp;gt;
+&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+&amp;lt;button class=&quot;button button-primary&quot; data-micromodal-trigger=&quot;modal-2&quot;&amp;gt;Åben modal (passive)&amp;lt;/button&amp;gt;
 
-&amp;lt;h4&amp;gt;Passiv Modal&amp;lt;/h4&amp;gt;
-&amp;lt;button type=&quot;button&quot; aria-label=&quot;Open Modal&quot; class=&quot;js-open-modal-passive open-modal button button-primary&quot;&amp;gt;Åben passiv modal &amp;lt;/button&amp;gt;
-&amp;lt;div class=&quot;modal js-modal-passive&quot; role=&quot;modal&quot;&amp;gt;
-    &amp;lt;button type=&quot;button&quot; aria-label=&quot;Close Modal&quot; class=&quot;js-close-modal-passive close-modal button button-ghost&quot;&amp;gt;Luk&amp;lt;/button&amp;gt;
-    &amp;lt;h3 class=&quot;modal-title font-lead&quot;&amp;gt;Modaltitel for passiv modal&amp;lt;/h3&amp;gt;
-    &amp;lt;p class=&quot;modal-description&quot;&amp;gt;Beskrivelse af den passive modals inhold&amp;lt;/p&amp;gt;
+&amp;lt;div class=&quot;modal&quot; id=&quot;modal-1&quot; aria-hidden=&quot;true&quot;&amp;gt;
+    &amp;lt;div class=&quot;modal__overlay&quot; tabindex=&quot;-1&quot; data-micromodal-close&amp;gt;
+        &amp;lt;div class=&quot;modal__container&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-1-title&quot;&amp;gt;
+            &amp;lt;header class=&quot;modal__header&quot;&amp;gt;
+                &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-1-title&quot;&amp;gt;
+                    Modal
+                &amp;lt;/h2&amp;gt;
+                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
+            &amp;lt;/header&amp;gt;
+            &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-1-content&quot;&amp;gt;
+                &amp;lt;p&amp;gt;Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat&amp;lt;/p&amp;gt;
+            &amp;lt;/main&amp;gt;
+            &amp;lt;footer class=&quot;modal__footer&quot;&amp;gt;
+                &amp;lt;button class=&quot;button button-primary&quot;&amp;gt;En knap&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Close this dialog window&quot;&amp;gt;Knap som lukker modal&amp;lt;/button&amp;gt;
+            &amp;lt;/footer&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 
-&amp;lt;h4&amp;gt;Interaktiv Modal&amp;lt;/h4&amp;gt;
-&amp;lt;button type=&quot;button&quot; aria-label=&quot;Open Modal&quot; class=&quot;js-open-modal-interactive open-modal button button-primary&quot;&amp;gt;Åben interaktiv modal &amp;lt;/button&amp;gt;
-&amp;lt;div class=&quot;modal js-modal-interactive&quot; role=&quot;modal&quot;&amp;gt;
-    &amp;lt;button type=&quot;button&quot; aria-label=&quot;Close Modal&quot; class=&quot;js-close-modal-interactive close-modal button button-ghost&quot;&amp;gt;Luk&amp;lt;/button&amp;gt;
-    &amp;lt;h3 class=&quot;modal-title font-lead&quot;&amp;gt;Modaltitel for interaktiv modal&amp;lt;/h3&amp;gt;
-    &amp;lt;p class=&quot;modal-description&quot;&amp;gt;Beskrivelse af den interaktive modals inhold&amp;lt;/p&amp;gt;
-    &amp;lt;div class=&quot;modalbuttons&quot;&amp;gt;
-        &amp;lt;button class=&quot;button button-primary&quot;&amp;gt;Primary&amp;lt;/button&amp;gt;
-        &amp;lt;button class=&quot;button button-secondary&quot;&amp;gt;Secondary&amp;lt;/button&amp;gt;
+&amp;lt;div class=&quot;modal&quot; id=&quot;modal-2&quot; aria-hidden=&quot;true&quot;&amp;gt;
+    &amp;lt;div class=&quot;modal__overlay&quot; tabindex=&quot;-1&quot; data-micromodal-close&amp;gt;
+        &amp;lt;div class=&quot;modal__container&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-2-title&quot;&amp;gt;
+            &amp;lt;header class=&quot;modal__header&quot;&amp;gt;
+                &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-2-title&quot;&amp;gt;
+                    Modal
+                &amp;lt;/h2&amp;gt;
+                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
+            &amp;lt;/header&amp;gt;
+            &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-2-content&quot;&amp;gt;
+                &amp;lt;p&amp;gt;Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat&amp;lt;/p&amp;gt;
+            &amp;lt;/main&amp;gt;
+        &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 
@@ -108,28 +133,53 @@
 <meta property="og:description" content="Code
   
     
-&amp;lt;div class=&quot;modal-overlay js-modal-overlay-passive&quot; tabindex=&quot;-1&quot;&amp;gt;
+&amp;lt;div&amp;gt;
 
 &amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;modal-overlay js-modal-overlay-interactive&quot; tabindex=&quot;-1&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;button class=&quot;button button-primary&quot; data-micromodal-trigger=&quot;modal-1&quot;&amp;gt;Åben modal (aktiv)&amp;lt;/button&amp;gt;
+&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+&amp;lt;button class=&quot;button button-primary&quot; data-micromodal-trigger=&quot;modal-2&quot;&amp;gt;Åben modal (passive)&amp;lt;/button&amp;gt;
 
-&amp;lt;h4&amp;gt;Passiv Modal&amp;lt;/h4&amp;gt;
-&amp;lt;button type=&quot;button&quot; aria-label=&quot;Open Modal&quot; class=&quot;js-open-modal-passive open-modal button button-primary&quot;&amp;gt;Åben passiv modal &amp;lt;/button&amp;gt;
-&amp;lt;div class=&quot;modal js-modal-passive&quot; role=&quot;modal&quot;&amp;gt;
-    &amp;lt;button type=&quot;button&quot; aria-label=&quot;Close Modal&quot; class=&quot;js-close-modal-passive close-modal button button-ghost&quot;&amp;gt;Luk&amp;lt;/button&amp;gt;
-    &amp;lt;h3 class=&quot;modal-title font-lead&quot;&amp;gt;Modaltitel for passiv modal&amp;lt;/h3&amp;gt;
-    &amp;lt;p class=&quot;modal-description&quot;&amp;gt;Beskrivelse af den passive modals inhold&amp;lt;/p&amp;gt;
+&amp;lt;div class=&quot;modal&quot; id=&quot;modal-1&quot; aria-hidden=&quot;true&quot;&amp;gt;
+    &amp;lt;div class=&quot;modal__overlay&quot; tabindex=&quot;-1&quot; data-micromodal-close&amp;gt;
+        &amp;lt;div class=&quot;modal__container&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-1-title&quot;&amp;gt;
+            &amp;lt;header class=&quot;modal__header&quot;&amp;gt;
+                &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-1-title&quot;&amp;gt;
+                    Modal
+                &amp;lt;/h2&amp;gt;
+                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
+            &amp;lt;/header&amp;gt;
+            &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-1-content&quot;&amp;gt;
+                &amp;lt;p&amp;gt;Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat&amp;lt;/p&amp;gt;
+            &amp;lt;/main&amp;gt;
+            &amp;lt;footer class=&quot;modal__footer&quot;&amp;gt;
+                &amp;lt;button class=&quot;button button-primary&quot;&amp;gt;En knap&amp;lt;/button&amp;gt;
+                &amp;lt;button class=&quot;button button-secondary&quot; data-micromodal-close aria-label=&quot;Close this dialog window&quot;&amp;gt;Knap som lukker modal&amp;lt;/button&amp;gt;
+            &amp;lt;/footer&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 
-&amp;lt;h4&amp;gt;Interaktiv Modal&amp;lt;/h4&amp;gt;
-&amp;lt;button type=&quot;button&quot; aria-label=&quot;Open Modal&quot; class=&quot;js-open-modal-interactive open-modal button button-primary&quot;&amp;gt;Åben interaktiv modal &amp;lt;/button&amp;gt;
-&amp;lt;div class=&quot;modal js-modal-interactive&quot; role=&quot;modal&quot;&amp;gt;
-    &amp;lt;button type=&quot;button&quot; aria-label=&quot;Close Modal&quot; class=&quot;js-close-modal-interactive close-modal button button-ghost&quot;&amp;gt;Luk&amp;lt;/button&amp;gt;
-    &amp;lt;h3 class=&quot;modal-title font-lead&quot;&amp;gt;Modaltitel for interaktiv modal&amp;lt;/h3&amp;gt;
-    &amp;lt;p class=&quot;modal-description&quot;&amp;gt;Beskrivelse af den interaktive modals inhold&amp;lt;/p&amp;gt;
-    &amp;lt;div class=&quot;modalbuttons&quot;&amp;gt;
-        &amp;lt;button class=&quot;button button-primary&quot;&amp;gt;Primary&amp;lt;/button&amp;gt;
-        &amp;lt;button class=&quot;button button-secondary&quot;&amp;gt;Secondary&amp;lt;/button&amp;gt;
+&amp;lt;div class=&quot;modal&quot; id=&quot;modal-2&quot; aria-hidden=&quot;true&quot;&amp;gt;
+    &amp;lt;div class=&quot;modal__overlay&quot; tabindex=&quot;-1&quot; data-micromodal-close&amp;gt;
+        &amp;lt;div class=&quot;modal__container&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;modal-2-title&quot;&amp;gt;
+            &amp;lt;header class=&quot;modal__header&quot;&amp;gt;
+                &amp;lt;h2 class=&quot;modal__title&quot; id=&quot;modal-2-title&quot;&amp;gt;
+                    Modal
+                &amp;lt;/h2&amp;gt;
+                &amp;lt;button class=&quot;modal__close button button-ghost&quot; aria-label=&quot;Close modal&quot; data-micromodal-close&amp;gt;Luk&amp;lt;/button&amp;gt;
+            &amp;lt;/header&amp;gt;
+            &amp;lt;main class=&quot;modal__content&quot; id=&quot;modal-2-content&quot;&amp;gt;
+                &amp;lt;p&amp;gt;Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat&amp;lt;/p&amp;gt;
+            &amp;lt;/main&amp;gt;
+        &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 
@@ -794,28 +844,53 @@
   <button class="accordion-button" aria-controls="code-modal">Code</button>
   <div id="code-modal" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-overlay js-modal-overlay-passive"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>
 
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-overlay js-modal-overlay-interactive"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary"</span> <span class="na">data-micromodal-trigger=</span><span class="s">"modal-1"</span><span class="nt">&gt;</span>Åben modal (aktiv)<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary"</span> <span class="na">data-micromodal-trigger=</span><span class="s">"modal-2"</span><span class="nt">&gt;</span>Åben modal (passive)<span class="nt">&lt;/button&gt;</span>
 
-<span class="nt">&lt;h4&gt;</span>Passiv Modal<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"Open Modal"</span> <span class="na">class=</span><span class="s">"js-open-modal-passive open-modal button button-primary"</span><span class="nt">&gt;</span>Åben passiv modal <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal js-modal-passive"</span> <span class="na">role=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"Close Modal"</span> <span class="na">class=</span><span class="s">"js-close-modal-passive close-modal button button-ghost"</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"modal-title font-lead"</span><span class="nt">&gt;</span>Modaltitel for passiv modal<span class="nt">&lt;/h3&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"modal-description"</span><span class="nt">&gt;</span>Beskrivelse af den passive modals inhold<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"modal-1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__overlay"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__container"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">aria-labelledby=</span><span class="s">"modal-1-title"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"modal__header"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"modal__title"</span> <span class="na">id=</span><span class="s">"modal-1-title"</span><span class="nt">&gt;</span>
+                    Modal
+                <span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-ghost"</span> <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/header&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"modal__content"</span> <span class="na">id=</span><span class="s">"modal-1-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/main&gt;</span>
+            <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"modal__footer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary"</span><span class="nt">&gt;</span>En knap<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary"</span> <span class="na">data-micromodal-close</span> <span class="na">aria-label=</span><span class="s">"Close this dialog window"</span><span class="nt">&gt;</span>Knap som lukker modal<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/footer&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;h4&gt;</span>Interaktiv Modal<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"Open Modal"</span> <span class="na">class=</span><span class="s">"js-open-modal-interactive open-modal button button-primary"</span><span class="nt">&gt;</span>Åben interaktiv modal <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal js-modal-interactive"</span> <span class="na">role=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"Close Modal"</span> <span class="na">class=</span><span class="s">"js-close-modal-interactive close-modal button button-ghost"</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"modal-title font-lead"</span><span class="nt">&gt;</span>Modaltitel for interaktiv modal<span class="nt">&lt;/h3&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"modal-description"</span><span class="nt">&gt;</span>Beskrivelse af den interaktive modals inhold<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modalbuttons"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"modal-2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__overlay"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal__container"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">aria-labelledby=</span><span class="s">"modal-2-title"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"modal__header"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"modal__title"</span> <span class="na">id=</span><span class="s">"modal-2-title"</span><span class="nt">&gt;</span>
+                    Modal
+                <span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"modal__close button button-ghost"</span> <span class="na">aria-label=</span><span class="s">"Close modal"</span> <span class="na">data-micromodal-close</span><span class="nt">&gt;</span>Luk<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/header&gt;</span>
+            <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"modal__content"</span> <span class="na">id=</span><span class="s">"modal-2-content"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/main&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
