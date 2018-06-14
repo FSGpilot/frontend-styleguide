@@ -3729,36 +3729,36 @@ a {
 
 h1, .h1 {
   font-family: "IBMPlexSans";
-  font-size: 4.2rem;
-  line-height: 6.4rem;
+  font-size: 3.6rem;
+  line-height: 4rem;
   font-weight: 700;
   color: #1a1a1a; }
 
 h2, .h2 {
   font-family: "IBMPlexSans";
-  font-size: 3.2rem;
-  line-height: 4.8rem;
+  font-size: 2.7rem;
+  line-height: 3.2rem;
   font-weight: 600;
   color: #1a1a1a; }
 
 h3, .h3 {
   font-family: "IBMPlexSans";
-  font-size: 2.6rem;
-  line-height: 4rem;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
   font-weight: 600;
   color: #1a1a1a; }
 
 h4, .h4 {
   font-family: "IBMPlexSans";
-  font-size: 2.1rem;
-  line-height: 3.2rem;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
   font-weight: 600;
   color: #1a1a1a; }
 
 h5, .h5 {
   font-family: "IBMPlexSans";
-  font-size: 1.8rem;
-  line-height: 3.2rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
   font-weight: 600;
   color: #1a1a1a; }
 
@@ -3823,8 +3823,6 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
     margin-left: 4px; }
     .background-dark .function-link .icon-svg {
       fill: white; }
-  .function-link + .function-link {
-    margin-left: 8px; }
 
 .icon-link {
   display: inline-flex;
@@ -3843,12 +3841,12 @@ dfn {
 .content p,
 .content ul:not(.accordion):not(.accordion-bordered),
 .content ol:not(.accordion):not(.accordion-bordered) {
-  max-width: 75ch; }
+  max-width: 66ch; }
 .content .font-lead {
-  max-width: 75ch; }
+  max-width: 66ch; }
 
 .content-list {
-  max-width: 75ch; }
+  max-width: 66ch; }
 
 .heading p,
 .heading a,
@@ -3880,7 +3878,7 @@ dfn {
   font-size: 2.6rem;
   font-weight: 500;
   line-height: 4rem;
-  max-width: 75ch;
+  max-width: 66ch;
   color: #454545; }
 
 .background-dark {
@@ -5798,7 +5796,7 @@ tbody tr.shown .details-control {
   margin-bottom: 24px;
   border-left: 8px solid #8f8f8f; }
   .alert.alert--paragraph {
-    width: 75ch; }
+    width: 66ch; }
   .alert .alert-heading {
     margin-top: 0;
     margin-bottom: 0;
@@ -5810,7 +5808,7 @@ tbody tr.shown .details-control {
     margin-bottom: 0;
     margin-top: 0;
     color: #454545;
-    max-width: 75ch; }
+    max-width: 66ch; }
 
 .alert-success {
   background-color: #e7fbe4;
@@ -5856,7 +5854,7 @@ tbody tr.shown .details-control {
   padding-bottom: 3px;
   padding-left: 1.5rem;
   background-color: transparent;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding-top: 2rem;
   width: 100%; }
   @media screen and (min-width: 768px) {
@@ -5922,7 +5920,7 @@ tbody tr.shown .details-control {
   align-items: center;
   border-bottom: 1px solid #BFBFBF;
   display: flex;
-  font-size: 1.8rem;
+  font-size: 2rem;
   min-height: 5.6rem;
   padding-right: 3rem; }
   @media screen and (min-width: 576px) {
@@ -6072,7 +6070,7 @@ form a {
 
 .form-note {
   float: right;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0 0 1.5rem; }
   .form-note + * {
     clear: both; }
@@ -6429,8 +6427,8 @@ input.input-medium {
     align-items: center; }
   .modal .modal__title {
     font-family: "IBMPlexSans";
-    font-size: 2.6rem;
-    line-height: 4rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
     font-weight: 600;
     color: #1a1a1a;
     margin: 0;
@@ -7196,8 +7194,8 @@ input[type=search] {
     margin: 0; }
     .card-header .header-title.large-text {
       font-family: "IBMPlexSans";
-      font-size: 4.2rem;
-      line-height: 6.4rem;
+      font-size: 3.6rem;
+      line-height: 4rem;
       font-weight: 700;
       color: #1a1a1a;
       color: #454545; }
@@ -8211,7 +8209,7 @@ code {
   background-color: #F5F5F5;
   padding: 16px; }
   .code-highlight pre, .code-highlight code {
-    max-width: 75ch; }
+    max-width: 66ch; }
 
 .code-sample pre,
 .code-sample code {
@@ -8370,7 +8368,7 @@ h6, .h6,
 .page-for-developers .content > ul:not(.content-list),
 .page-for-designers .content > ul:not(.content-list),
 .page-component-maturity-scale .content > ul:not(.content-list) {
-  max-width: 75ch; }
+  max-width: 66ch; }
 
 .page-for-developers h2,
 .page-for-designers h2,
@@ -8496,8 +8494,8 @@ article {
     text-transform: none; }
   article.post-excerpt .post-title {
     font-family: "IBMPlexSans";
-    font-size: 3.2rem;
-    line-height: 4.8rem;
+    font-size: 2.7rem;
+    line-height: 3.2rem;
     font-weight: 600;
     color: #1a1a1a; }
   article.post-excerpt .post-content p {
