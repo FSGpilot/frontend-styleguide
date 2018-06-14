@@ -1326,6 +1326,15 @@ p, .body-text,
     height: 500px; //so that datepicker is visible
   } 
 }
+.page-modal-html{
+  padding-top: 150px;
+  padding-bottom: 200px;
+  [data-micromodal-trigger]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .page-design-principles {
   @include media($medium-screen) {
