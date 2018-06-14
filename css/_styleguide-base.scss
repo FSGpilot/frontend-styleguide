@@ -1329,7 +1329,11 @@ p, .body-text,
 .page-modal-html{
   padding-top: 150px;
   padding-bottom: 200px;
-  text-align: center;
+  [data-micromodal-trigger]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-design-principles {

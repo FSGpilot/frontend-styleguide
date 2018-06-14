@@ -6453,8 +6453,9 @@ input.input-medium {
     top: 24px; }
     @media (max-width: 767px) {
       .modal .modal__close {
-        position: initial;
-        margin-bottom: 24px; } }
+        top: 8px;
+        right: 24px;
+        width: inherit; } }
 @keyframes modalfadeIn {
   from {
     opacity: 0; }
@@ -8306,8 +8307,11 @@ h6, .h6,
 
 .page-modal-html {
   padding-top: 150px;
-  padding-bottom: 200px;
-  text-align: center; }
+  padding-bottom: 200px; }
+  .page-modal-html [data-micromodal-trigger] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 @media screen and (min-width: 768px) {
   .page-design-principles .main-content .grid-full {
