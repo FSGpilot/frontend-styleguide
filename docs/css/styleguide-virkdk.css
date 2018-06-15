@@ -3750,21 +3750,21 @@ h4, .h4 {
   font-family: "IBMPlexSans";
   font-size: 2.2rem;
   line-height: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1a1a1a; }
 
 h5, .h5 {
   font-family: "IBMPlexSans";
   font-size: 2rem;
   line-height: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1a1a1a; }
 
 h6, .h6 {
   font-family: "IBMPlexSans";
   font-size: 1.6rem;
   line-height: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1a1a1a; }
 
 p, .body-text, .body-copy-text {
@@ -3873,9 +3873,9 @@ dfn {
 
 .font-lead {
   font-family: "IBMPlexSans", "system";
-  font-size: 2.6rem;
-  font-weight: 500;
-  line-height: 4rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
   max-width: 66ch;
   color: #454545; }
 
@@ -4283,8 +4283,8 @@ textarea.form-input {
     text-shadow: 0 0 0 #1a1a1a; }
 
 legend {
-  font-size: 2.6rem;
-  line-height: 4rem; }
+  font-size: 2rem;
+  line-height: 3.2rem; }
 
 .form-group.input-error {
   border-left: 4px solid #E92021;
@@ -4591,27 +4591,6 @@ ol {
       counter-increment: item;
       font-weight: 500;
       position: absolute; }
-
-ul.paragraph-list {
-  font-size: 2rem;
-  line-height: 3.2rem; }
-  ul.paragraph-list li {
-    padding-left: 46px;
-    line-height: 3.2rem; }
-    ul.paragraph-list li:before {
-      left: 22px; }
-    ul.paragraph-list li ul li {
-      padding-left: 46px; }
-
-ol.paragraph-list {
-  font-size: 2rem;
-  line-height: 3.2rem; }
-  ol.paragraph-list li {
-    padding-left: 46px; }
-    ol.paragraph-list li:before {
-      left: 22px; }
-    ol.paragraph-list li ol li:before {
-      left: 8px; }
 
 ul.body-list {
   font-size: 1.6rem;
@@ -6231,6 +6210,8 @@ input.input-medium {
           align-items: center; }
           .header .portal-header .portal-info > * {
             margin-left: 16px; } }
+      .header .portal-header .portal-info .username {
+        font-weight: 600; }
   .header .solution-header {
     border-bottom: 1px solid #BFBFBF;
     width: 100%; }
@@ -6243,14 +6224,13 @@ input.input-medium {
         .header .solution-header .solution-header-inner {
           align-items: center;
           flex-direction: row; } }
-    .header .solution-header .solution-heading {
+    .header .solution-header .solution-heading a {
       font-size: 2.8rem;
       line-height: 3.2rem;
       font-weight: 600;
-      color: #1a1a1a; }
-      .header .solution-header .solution-heading a {
-        color: #1a1a1a;
-        text-decoration: none; }
+      color: #1a1a1a;
+      text-decoration: none;
+      display: inline-block; }
     .header .solution-header .solution-info {
       display: none; }
       @media screen and (min-width: 992px) {
@@ -6259,6 +6239,13 @@ input.input-medium {
           text-align: right;
           max-width: 60%;
           display: block; } }
+      .header .solution-header .solution-info .authority-name {
+        color: #454545; }
+    .header .solution-header .button-contact {
+      display: inline-flex; }
+      .header .solution-header .button-contact .icon-svg {
+        position: relative;
+        top: -1px; }
   .header .portal-info-mobile {
     padding: 24px 16px;
     border-bottom: 1px solid #BFBFBF;
@@ -6425,14 +6412,11 @@ input.input-medium {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media screen and (min-width: 768px) {
+      .modal .modal__header {
+        padding-right: 48px; } }
   .modal .modal__title {
-    font-family: "IBMPlexSans";
-    font-size: 2.4rem;
-    line-height: 3.2rem;
-    font-weight: 600;
-    color: #1a1a1a;
-    margin: 0;
-    font-weight: 600; }
+    margin: 0; }
   .modal .modal__content {
     margin-top: 8px; }
     .modal .modal__content > *:first-child {
@@ -6452,7 +6436,7 @@ input.input-medium {
     @media (max-width: 767px) {
       .modal .modal__close {
         top: 8px;
-        right: 24px;
+        right: 8px;
         width: inherit; } }
 @keyframes modalfadeIn {
   from {
@@ -7699,7 +7683,7 @@ h2 + .tooltip a {
   font-family: "IBMPlexSans";
   font-size: 1.6rem;
   line-height: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1a1a1a;
   color: #747474;
   display: block;
