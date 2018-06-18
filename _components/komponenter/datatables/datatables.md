@@ -14,9 +14,11 @@ subnav:
 - text: Ajax data
   href: '#ajax-data'
 - text: Expandable row
-  href: '#expandable-row'
+  href: '#expandable-table'
+- text: Selectable row
+  href: '#selectable-row'
 - text: Edit and delete
-  href: '#edit-and-delete'
+  href: '#edit-and-delete-row'
 ---
 
 <div class="alert alert-warning alert--show-icon mb-5" role="alert">
