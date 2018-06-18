@@ -1,7 +1,7 @@
 ---
-title: Datatables - edit and delete row
+title: Edit and delete row
 parent: Datatables
-order: 02
+order: 06
 lead: Overflow menu with edit and delete functionality
 ---
 
