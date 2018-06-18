@@ -1,0 +1,186 @@
+---
+permalink: /components/strukturer/footers/
+layout: styleguide-wide
+title: Footers
+category: UI components
+subcategory: Strukturer (organismer)
+lead: En footer har til formål at betjene brugere, som når til siden bund uden at finde det de søgte
+subnav:
+- text: Accessibility
+  href: '#accessibility'
+- text: Footer basic
+  href: '#footer-basic'
+- text: Footer med to linjer
+  href: '#footer-two-line'
+- text: Footer med header
+  href: '#footer-header'
+- text: Footer med header og udvidet support
+  href: '#footer-header-ext-support'
+- text: Footer med header, links og udvidet support
+  href: '#footer-header-links-ext-support'
+- text: Footer med header, links og simpel support
+  href: '#footer-header-links-sim-support'
+- text: Footer med logo
+  href: '#footer-logo'
+---
+
+
+<main class="section" id="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <aside class="sidenav sticky">
+          {% assign sidenav = site.data.nav[page.category] %}
+          {% if sidenav %}
+          <ul class="sidenav-list">
+            {% include nav/list.html links=sidenav %}
+          </ul>
+          {% endif %}
+        </aside>
+      </div>
+
+      <div class="col-12 col-sm-9 styleguide-content content">
+        <section id="section-{{page.id}}">
+          <header>
+            <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+          </header>
+          {% if page.lead != null %}
+            <p class="font-lead">{{ page.lead }}</p>
+          {% endif %}
+          <h3 class="heading">Implementation</h3>
+          <p></p>
+          <ul class="content-list">
+            <li>Der er syv forskellige typer af footers:
+              <ul>
+                <li>Footer basic</li>
+                <li>Footer med to linjer</li>
+                <li>Footer med header</li>
+                <li>Footer med header og udvidet support</li>
+                <li>Footer med header, links og udvidet support</li>
+                <li>Footer med header, links og simpel support</li>
+                <li>Footer med logo</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="content-list">
+            <li>Footers er opsat i kolonner, hvor informationerne er vist i unordered unstyled lister ved brug af en <code>.unstyled-list</code> class på ul elementet.</li>
+            <li>Footer basic har udover den .unstyled-list class, en <code>.inline-list</code> class, der sørger for at informationerne er vist ved siden af hinanden.</li>
+            <li>Alle ul's har en margin i bunden, pånær den sidste ul i hver kolonne.</li>
+            <li>Den yderste venstre kolonne gør brug af en <code>.nopaddingleft</code> class, der fjerner paddingen i venstre side, så teksten aligner med borderen i top og bund af footeren. Paddingen kommer tilbage når footeren vises i mobil. <code>.nopaddingright</code> class gør ligeledes det samme, dog for den yderste højre kolonne.</li>
+            <li>Dertil har alle kolonner en <code>.footer-col</code> class, der styrer margin mellem kolonner i mobil.</li>
+          </ul>
+          <h2 class="heading heading-margin-alt"  id="accessibility">Accessibility</h2>
+          <ul class="content-list">
+            <li>Include skip navigation links to allow users with screen readers to bypass long navigation lists. Make sure you include an id at the beginning of your main content and that it matches the skipnav link. Find more information here: <a href="http://webaim.org/techniques/skipnav/">http://webaim.org/techniques/skipnav/</a></li>
+            <li>Include Tab focus for all top-level navigation navigation items — this will allow keyboard-reliant users to easily navigate interactive items.</li>
+            <li>Ensure your horizontal navigation is keyboard compatible; test to make sure users can use Tab to navigate and Space (or Enter) to open pages.</li>
+            <li>Avoid using hover to expand dropdown lists. Hover is difficult for some users and won't work on touch screens. Drop downs should expand on click or with keyboard navigation.</li>
+            <li>We use semantic header and nav elements with <code>role="banner"</code> and <code>role="navigation"</code> respectively. <code>role="banner"</code> is your masthead.</li>
+            <li>You can use multiple nav elements for groups of navigation links, but you should only use one <code>role="navigation"</code> for the main nav of a page.</li>
+            <li>Use lists for your nav links — this enables screen readers to decipher header contents.</li>
+            <li>If you’re using a logo that’s an image rather than text, make sure you include alternative text for screen readers.</li>
+            <li>If you’re using a logo that’s text, use an <code>em</code>, not an <code>h1</code>, unless it’s the homepage. Find more information here: <a href="http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/">http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/</a></li>
+          </ul>
+
+          <h3 class="heading">Usability</h3>
+          <h4>When to use</h4>
+          <ul class="content-list">
+            <li>We recommend that all federal government sites include the “official government site” banner and a logo or site name.</li>
+            <li>Most sites will require some form of navigation to help users find the information they’re looking for. While a horizontal navigation bar is just one option for navigation design, it is one of the most visible and familiar ways of helping users navigate a site.</li>
+          </ul>
+
+          <h4>Guidance</h4>
+          <ul class="content-list">
+            <li>List all important website sections as links in the horizontal navigation bar.</li>
+            <li>For large websites, use drop-down menus to help users preview lower-level content. If lower-level sections are closely related and users will need to quickly jump between them, consider using a side navigation instead of — or in addition to — a drop down.</li>
+            <li>Use descriptive, recognizable link labels. Don’t label links with jargon or unfamiliar terms.</li>
+            <li>Left-justify link labels to make them more easily scannable.</li>
+            <li>Present links in priority order: Higher-demand links should appear farther to the left, and lower-demand links should appear farther to the right.</li>
+            <li>Don’t model your navigation after your agency’s org structure. Instead, structure it according to the tasks and information your users most frequently need to access.</li>
+            <li>Show users where they are within the menu options by highlighting the current section.</li>
+            <li>Conduct research with your users and base decisions about your site’s information architecture and navigation structure on your findings. Continue researching to confirm that updates meet your users’ needs.</li>
+          </ul>
+
+          <h4>For further reading</h4>
+          <ul>
+            <li><a href="https://www.nngroup.com/articles/menu-design/">https://www.nngroup.com/articles/menu-design/</a></li>
+            <li><a href="https://www.usertesting.com/blog/2015/03/19/site-navigation-tree-testing/">https://www.usertesting.com/blog/2015/03/19/site-navigation-tree-testing/</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <!-- Empty -->
+      </div>
+
+      <div class="col-12 col-sm-9 content">
+        <h2 class="h2" id="footer-basic">Footer basic</h2>
+        <div class="preview">
+          <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-basic/">
+            <img src="{{ site.baseurl }}/assets/img/footers/footer-basic.PNG" alt="Footer basic">
+          </a>
+          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-basic/">Demo footer basic</a>
+        </div>
+        {% include code/accordion.html component="footer-basic" %}
+
+        <h2 class="h2" id="footer-two-line">Footer med to linjer</h2>
+        <div class="preview">
+          <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-two-line/">
+            <img src="{{ site.baseurl }}/assets/img/footers/footer-two-line.PNG" alt="Footer two-line">
+          </a>
+          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-two-line/">Demo footer med to linjer</a>
+        </div>
+        {% include code/accordion.html component="footer-two-line" %}
+
+        <h2 class="h2" id="footer-header">Footer med header</h2>
+        <div class="preview">
+          <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-header/">
+            <img src="{{ site.baseurl }}/assets/img/footers/footer-header.PNG" alt="Footer med header">
+          </a>
+          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-header/">Demo footer med header</a>
+        </div>
+        {% include code/accordion.html component="footer-header" %}
+
+        <h2 class="h2" id="footer-header-ext-support">Footer med header og udvidet support</h2>
+        <div class="preview">
+          <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-header-ext-support/">
+            <img src="{{ site.baseurl }}/assets/img/footers/footer-header-ext-support.PNG" alt="Footer med header og udvidet support">
+          </a>
+          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-header-ext-support/">Demo footer med header og udvidet support</a>
+        </div>
+        {% include code/accordion.html component="footer-header-ext-support" %}
+
+        <h2 class="h2" id="footer-header-links-ext-support">Footer med header, links og udvidet support</h2>
+        <div class="preview">
+          <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-header-links-ext-support/">
+            <img src="{{ site.baseurl }}/assets/img/footers/footer-header-links-ext-support.PNG" alt="Footer med header, links og udvidet support">
+          </a>
+          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-header-links-ext-support/">Demo footer med header, links og udvidet support</a>
+        </div>
+        {% include code/accordion.html component="footer-header-links-sim-support" %}
+
+         <h2 class="h2" id="footer-header-links-sim-support">Footer med header, links og simpel support</h2>
+        <div class="preview">
+          <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-header-links-sim-support/">
+            <img src="{{ site.baseurl }}/assets/img/footers/footer-header-links-sim-support.PNG" alt="Footer med header, links og simpel support">
+          </a>
+          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-header-links-sim-support/">Demo footer med header, links og simpel support</a>
+        </div>
+        {% include code/accordion.html component="footer-header-links-sim-support" %}
+
+        <h2 class="h2" id="footer-logo">Footer med logo</h2>
+        <div class="preview">
+          <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-logo/">
+            <img src="{{ site.baseurl }}/assets/img/footers/footer-logo.PNG" alt="Footer med logo">
+          </a>
+          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/footers/footer-logo/">Demo footer med logo</a>
+        </div>
+        {% include code/accordion.html component="footer-logo" %}
+      </div>
+    </div>
+  </div>
+</main>
