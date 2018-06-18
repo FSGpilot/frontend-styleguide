@@ -11,12 +11,12 @@ lead:
 subnav:
 - text: Datatable
   href: '#datatable'
-- text: Full pagination
-  href: '#full-pagination'
-- text: Expandable row
-  href: '#expandable-row'
 - text: Ajax data
   href: '#ajax-data'
+- text: Expandable row
+  href: '#expandable-row'
+- text: Edit and delete
+  href: '#edit-and-delete'
 ---
 
 <div class="alert alert-warning alert--show-icon mb-5" role="alert">
@@ -25,7 +25,6 @@ subnav:
         <p class="alert-text">Datatables are still under development which might result in unexpected behaviors. Consequently responsive behaviour has not been implemented yet. </p>
     </div>
 </div>
-
 
 {% include child-sections.html parent='Datatables' %}
 
