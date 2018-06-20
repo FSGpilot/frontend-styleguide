@@ -19,13 +19,13 @@ lead: A block that allows users to search for specific content if they know what
       <h4 class="heading">Implementation</h4>
     <p>For at styre bredde på inputfelter bruges nedenstående class:</p>
     <ul>
-      <li><code>.input-width-55</code> er 55px bred</li>
-      <li><code>.input-width-100</code> er 100px bred</li>
-      <li><code>.input-width-150</code> er 150px bred</li>
-      <li><code>.input-width-200</code> er 200px bred</li>
-      <li><code>.input-width-300</code> er 300px bred</li>
-      <li><code>.input-width-400</code> er 400px bred</li>
-      <li><code>.input-width-500</code> er 500px bred</li>
+      <li><code>.input-width-55</code> er 5.5rem bred</li>
+      <li><code>.input-width-100</code> er 10rem bred</li>
+      <li><code>.input-width-150</code> er 15rem bred</li>
+      <li><code>.input-width-200</code> er 20rem bred</li>
+      <li><code>.input-width-300</code> er 30rem bred</li>
+      <li><code>.input-width-400</code> er 40rem bred</li>
+      <li><code>.input-width-500</code> er 50rem bred</li>
     </ul>
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
