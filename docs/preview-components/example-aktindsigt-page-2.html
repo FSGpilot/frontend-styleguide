@@ -169,7 +169,7 @@
 
             <div class="overflow-menu  overflow-menu--open-right ">
                 <button class="button-overflow-menu js-dropdown" data-js-target="#overflow_steps" aria-haspopup="true" aria-expanded="false">
-                    Trin 2 af 5
+                    Trin 2 af 4
                     <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
                 </button>
@@ -217,7 +217,74 @@
                         <div class="form-group">
                             <label class="form-label " for="id-fornavn">Fornavn</label>
 
-                            <input class="form-input  " id="id-fornavn" name="Input til fornavn" type="text" />
+                            <input class="form-input  input-width-400" id="id-fornavn" name="Input til fornavn" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label " for="id-efternavn">Efternavn</label>
+
+                            <input class="form-input  input-width-400" id="id-efternavn" name="Input til efternavn" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label " for="id-gade-vej">Gade/vej</label>
+
+                            <input class="form-input  input-width-400" id="id-gade-vej" name="Input til gade/vej" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label " for="id-husnummer">Husnummer</label>
+
+                            <input class="form-input  input-width-100" id="id-husnummer" name="Input til husnummer" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label " for="id-etage">Etage
+                                <span class="weight-normal"> (frivilligt)</span>
+                            </label>
+
+                            <input class="form-input  input-width-100" id="id-etage" name="Input til etage" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label " for="id-side">Side
+                                <span class="weight-normal"> (frivilligt)</span>
+                            </label>
+
+                            <span class="form-hint" id="input-hint-message-id-side">Fx: TV, 2. dør</span>
+                            <input class="form-input  input-width-100" id="id-side" name="Input til side" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label " for="id-postnummer">Postnummer</label>
+
+                            <input class="form-input  input-width-150" id="id-postnummer" name="Input til postnummer" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label " for="id-by">By</label>
+
+                            <input class="form-input  input-width-400" id="id-by" name="Input til by" type="text" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label " for="id-co-adresse">Evt. CO-adresse
+                                <span class="weight-normal"> (frivilligt)</span>
+                            </label>
+
+                            <input class="form-input  input-width-400" id="id-co-adresse" name="Input til CO-adresse" type="text" />
+                        </div>
+
+                        <label class="form-label">Er der tidligere søgt om aktindsigt?</label>
+
+                        <div class="form-group">
+                            <input id="id-aktindsigt-ja" type="radio" name="aktindsigt" value="Ja" class=" radio-large" />
+                            <label for="id-aktindsigt-ja" class="radio-large">Ja</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="id-aktindsigt-nej" type="radio" name="aktindsigt" value="Ja" class=" radio-large" />
+                            <label for="id-aktindsigt-nej" class="radio-large">Nej</label>
                         </div>
 
                     </fieldset>
@@ -225,65 +292,34 @@
                 <a href="#" class="button button-primary">Næste</a>
 &lt;/section&gt;
 
-<footer class="footer" role="contentinfo">
-    <div class="container footer-return-to-top">
-        <a href="#">Return to top</a>
-    </div>
-    <div class="footer-primary-section">
+<footer>
+    <div class="footer">
         <div class="container">
-            <nav class="footer-nav row">
-                <div class="col-12 col-sm-4 col-md-6">
-                    <ul class="unstyled-list footer-primary-content">
-                        <li class="footer-primary-link">
-                            <h5>Ansvarlig myndighed</h5>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-12 col-sm-4 col-md-3">
-                    <ul class="unstyled-list footer-primary-content">
-                        <li class="footer-primary-link">
-                            <h5>Kontakt</h5>
-                        </li>
-                        <address>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 footer-col">
+                    <div class="align-left">
+                        <ul class="unstyled-list">
                             <li>
-                                <a href="tel:70707070">70707070</a>
+                                <span class="h6 weight-semibold" title="Ansvarlig myndighed" aria-label="Ansvarlig myndighed">Undervisningsministeriet</span>
                             </li>
                             <li>
-                                <a href="mailto:kontakt@mailadresse.dk">kontakt@mailadresse.dk</a>
+                                <p>Styrelsen for IT og læring</p>
                             </li>
-                        </address>
-                    </ul>
-
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="col-12 col-sm-4 col-md-3">
-                    <ul class="unstyled-list footer-primary-content">
-                        <li class="footer-primary-link">
-                            <h5>Emne</h5>
-                        </li>
-
-                        <li>
-                            <a href="javascript:void(0);">Myndighedslink</a>
-                        </li>
-
-                        <li>
-                            <a href="javascript:void(0);">Myndighedslink</a>
-                        </li>
-
-                    </ul>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 footer-col">
+                    <div class="align-right">
+                        <ul class="unstyled-list">
+                            <li>
+                                <a class="function-link" href="mailto:support@stil.dk">support@stil.dk</a>
+                            </li>
+                            <li>
+                                <a class="function-link" href="tel:004533925200">(+45) 33 92 52 00</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
-        </div>
-    </div>
-
-    <div class="footer-secondary_section">
-        <div class="container">
-            <div class="footer-logo row">
-                <div class="footer-logo-img col-12">En del af</div>
             </div>
         </div>
     </div>
