@@ -16,6 +16,17 @@ lead: A block that allows users to search for specific content if they know what
     Documentation
   </button>
   <div id="search-bar-docs" aria-hidden="false" class="accordion-content">
+      <h4 class="heading">Implementation</h4>
+    <p>For at styre bredde på inputfelter bruges nedenstående class:</p>
+    <ul>
+      <li><code>.input-width-55</code> er 55px bred</li>
+      <li><code>.input-width-100</code> er 100px bred</li>
+      <li><code>.input-width-150</code> er 150px bred</li>
+      <li><code>.input-width-200</code> er 200px bred</li>
+      <li><code>.input-width-300</code> er 300px bred</li>
+      <li><code>.input-width-400</code> er 400px bred</li>
+      <li><code>.input-width-500</code> er 500px bred</li>
+    </ul>
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
       <li>As you customize this form template, ensure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>

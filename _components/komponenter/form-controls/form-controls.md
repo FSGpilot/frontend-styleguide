@@ -11,6 +11,8 @@ lead: Form controls allow users to enter information into a page.
 subnav:
 - text: Text inputs and area
   href: '#text-input'
+- text: Text inputs width
+  href: '#text-input-width'
 - text: Select
   href: '#select'
 - text: Checkboxes
