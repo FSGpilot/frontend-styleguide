@@ -7159,7 +7159,6 @@ input[type=search] {
     line-height: 2.4rem; }
     .sidenav-sub_list a.current {
       /* stylelint-disable-line selector-no-qualifying-type */
-      border: none;
       padding-left: 32px; }
     .sidenav-sub_list a.active {
       /* stylelint-disable-line selector-no-qualifying-type */
@@ -7170,7 +7169,6 @@ input[type=search] {
       outline-offset: 0; }
     .sidenav-sub_list .sidenav-sub_list a.current {
       /* stylelint-disable-line selector-no-qualifying-type */
-      border: none;
       padding-left: 48px; }
     .sidenav-sub_list .sidenav-sub_list a.active {
       /* stylelint-disable-line selector-no-qualifying-type */
