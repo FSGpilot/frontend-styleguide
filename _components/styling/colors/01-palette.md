@@ -541,55 +541,25 @@ order: 01
   </div>
 </div>
 
-<h3 class="heading">Tilpasningsmuligheder: </h3>
-<h4>Eksempel</h4>
-<p>Tilpas Styleguiden med vores indbyggede brugerdefinerede variabler fil og nemt skifte globale CSS præferencer med nye $color- * Sass variabler. Overstyr værdien af en variabel og genkompilere med den medfølgende gruntfile efter behov.</p>
+### Tilpasningsmuligheder
 
-
-<p>Styleguiden leveres med en nem overstyring af standardvariabler i /scss/variables.scss. Opret og ændre relevante linjer derfra i filen, rediger værdierne og genkompil din Sass for at ændre vores standardværdier.
+Alle farver i styleguiden er opsat med variable. Farverne i styleguiden kan skiftes ved at overskrive eksisterende farve-variable. <br />
+Alle farvevariable har en navngivning der starter med '$color-' og findes i filen '/scss/variables.scss'.<br />
+Farvevariablene kommer i to grupper: 'Swatches and Theming' og 'Component variables'. 'Swatches and Theming' definere alle farverne i farvepaletten. I 'Component variables', overføres disse farver til specifikke komponenter i styleguiden, fx links. <br />
 <br />
-<br />
-Som udgangspunkt har Styleguiden en række globale farverkode (Swatches and Theming) disse farvekoder er som udgangpunkt fast defineret.
-<br />
-<br />
-Måden hvorpå vi håndtere variable gøres eksempelvis ved, at ændre farven for "color-text", skal du gøre følgende:
-<br />
-1) Der oprettes en ny global farve kode, med foreløbende number - eksempelvis:  $color-gray-007"
-<br />
-2) Mapping mellem global variabler & standardvariabler sker efter "Swatches and Theming" i dette tilfælde "$color-text" sættes den nye værdi med vores nye global ($color-gray-007)
-<br />
-</p>
+Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændre de blå farver gennem hele løsningen skal du overskrive '$color-blue-*' variablene. Hvis du derimod ønsker en anderledes linkfarve som ikke er koblet til de blå farver skal du overskrive de to '$color-link' variable.
 
 <p style='font-family: Consolas, Monaco, "Andale Mono", monospace; font-size:13px;'>
   //------ Swatches and Theming ----------- <br />
   //--------------------------------------- <br />
-  //color contrasting
+  $color-blue-001:              #1B86C3 !default;<br />
+  $color-blue-002:              #125880 !default;<br />
   <br />
-  $color-base-001:              #ffffff !default;<br />
-  $color-base-002:              #1a1a1a !default;<br />
-  <br />
-  //Gray
-  <br />
-  $color-gray-001:              $color-base-002 !default;<br />
-  $color-gray-002:              #454545 !default;<br />
-  $color-gray-003:              #747474 !default;<br />
-  $color-gray-004:              #999999 !default;<br />
-  $color-gray-005:              #BFBFBF !default;<br />
-  $color-gray-006:              #F5F5F5 !default;
-  <br />
-  <br />
+  
   //------ colors variables ------------ <br />
   //------------------------------------ <br />
-  // Text color
+  //Links color
   <br />
-  $color-text:                  $color-gray-002 !default;<br />
-  $color-text-secondary:        $color-gray-003 !default;<br />
-  $color-text-bright:           $color-gray-006 !default;
+  $color-link:                  $color-blue-001 !default;<br />
+  $color-link-hover:            $color-blue-002 !default;
 </p>
-
-
-<div class="container color-row-container">
-  <div class="row color-row">
-
-  </div>
-</div>

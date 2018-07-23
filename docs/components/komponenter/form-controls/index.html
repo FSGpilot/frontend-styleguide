@@ -78,14 +78,6 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
-
-<!-- highlight.js -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
-<script src="/frontend-styleguide/assets/js/vendor/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
   </head>
   <body class="page-form-controls layout-styleguide">
     <div class="hide-base-svg">
@@ -648,6 +640,34 @@
     
   </li>
 
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/tooltip/" 
+  class="  nav-link">
+  <span>Tooltip</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/frontend-styleguide/components/komponenter/collapse/" 
+  class="  nav-link">
+  <span>Collapse</span>
+</a>
+
+
+    
+  </li>
+
 </ul>
     
   
@@ -753,27 +773,29 @@
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text"</span><span class="nt">&gt;</span>Text input label<span class="nt">&lt;/label&gt;</span>
 
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-type-text"</span><span class="nt">&gt;</span>For example, VO123456D<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">name=</span><span class="s">"input-type-text"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">name=</span><span class="s">"input-type-text"</span>
+            <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-focus"</span><span class="nt">&gt;</span>Text input focused<span class="nt">&lt;/label&gt;</span>
 
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  focus"</span> <span class="na">id=</span><span class="s">"input-focus"</span> <span class="na">name=</span><span class="s">"input-focus"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  focus"</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-focus"</span> <span class="na">name=</span><span class="s">"input-focus"</span>
+            <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group input-error"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Text input error<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Helpful error message<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>For example, VO123456D<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">name=</span><span class="s">"input-error"</span> <span class="na">type=</span><span class="s">"text"</span>
-            <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-error"</span> <span class="na">aria-describedby=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">name=</span><span class="s">"input-error"</span>
+            <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-error"</span> <span class="na">aria-describedby=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group input-success"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-success"</span><span class="nt">&gt;</span>Text input success<span class="nt">&lt;/label&gt;</span>
 
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">id=</span><span class="s">"input-success"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-success"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;/div&gt;</span>
@@ -1532,7 +1554,7 @@
             <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Indsendelsesfrist<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;/span&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span><span class="nt">&gt;</span>For eksempel: 05 12 2018<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-group js-calendar-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-group js-calendar-group mt-3"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date_of_day_2"</span><span class="nt">&gt;</span>Day<span class="nt">&lt;/label&gt;</span>
                     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-day-input"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span>

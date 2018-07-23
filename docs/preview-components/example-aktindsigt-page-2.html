@@ -78,14 +78,6 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
-
-<!-- highlight.js -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
-<script src="/frontend-styleguide/assets/js/vendor/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
   </head>
   <body class="page-example-aktindsigt-page-2-html layout-iframed">
     <div class="hide-base-svg">
@@ -164,7 +156,7 @@
         <div class="col-12">
 
             <div class="overflow-menu  overflow-menu--open-right ">
-                <button class="button-overflow-menu js-dropdown" data-js-target="#overflow_steps" aria-haspopup="true" aria-expanded="false">
+                <button class="button-overflow-menu js-dropdown  js-dropdown--responsive-collapse " data-js-target="#overflow_steps" aria-haspopup="true" aria-expanded="false">
                     Trin 2 af 3
                     <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
@@ -204,7 +196,7 @@
                             <div class="form-group">
                                 <label class="form-label " for="id-fornavn">Fornavn</label>
 
-                                <input class="form-input  input-width-400" id="id-fornavn" name="Input til fornavn" type="text" />
+                                <input class="form-input  input-width-400" placeholder="" id="id-fornavn" name="Input til fornavn" type="text" />
                             </div>
 
                         </div>
@@ -213,7 +205,7 @@
                             <div class="form-group">
                                 <label class="form-label " for="id-efternavn">Efternavn</label>
 
-                                <input class="form-input  input-width-400" id="id-efternavn" name="Input til efternavn" type="text" />
+                                <input class="form-input  input-width-400" placeholder="" id="id-efternavn" name="Input til efternavn" type="text" />
                             </div>
 
                         </div>
@@ -222,7 +214,7 @@
                             <div class="form-group">
                                 <label class="form-label " for="id-gade-vej">Gade/vej</label>
 
-                                <input class="form-input  input-width-400" id="id-gade-vej" name="Input til gade/vej" type="text" />
+                                <input class="form-input  input-width-400" placeholder="" id="id-gade-vej" name="Input til gade/vej" type="text" />
                             </div>
 
                         </div>
@@ -231,7 +223,7 @@
                             <div class="form-group">
                                 <label class="form-label " for="id-husnummer">Husnummer</label>
 
-                                <input class="form-input  input-width-100" id="id-husnummer" name="Input til husnummer" type="text" />
+                                <input class="form-input  input-width-100" placeholder="" id="id-husnummer" name="Input til husnummer" type="text" />
                             </div>
 
                         </div>
@@ -242,19 +234,18 @@
                                     <span class="weight-normal"> (frivilligt)</span>
                                 </label>
 
-                                <input class="form-input  input-width-100" id="id-etage" name="Input til etage" type="text" />
+                                <input class="form-input  input-width-100" placeholder="" id="id-etage" name="Input til etage" type="text" />
                             </div>
 
                         </div>
                         <div class="mt-5">
 
-                            <div class="form-group">
+                            <div class="form-group input-disabled">
                                 <label class="form-label " for="id-side">Side
                                     <span class="weight-normal"> (frivilligt)</span>
                                 </label>
 
-                                <span class="form-hint" id="input-hint-message-id-side">Fx: TV, 2. dør</span>
-                                <input class="form-input  input-width-100" id="id-side" name="Input til side" type="text" />
+                                <input class="form-input  input-width-100" placeholder="" id="id-side" name="Input til side" type="text" disabled="disabled" />
                             </div>
 
                         </div>
@@ -263,7 +254,7 @@
                             <div class="form-group">
                                 <label class="form-label " for="id-postnummer">Postnummer</label>
 
-                                <input class="form-input  input-width-150" id="id-postnummer" name="Input til postnummer" type="text" />
+                                <input class="form-input  input-width-150" placeholder="" id="id-postnummer" name="Input til postnummer" type="text" />
                             </div>
 
                         </div>
@@ -272,7 +263,7 @@
                             <div class="form-group">
                                 <label class="form-label " for="id-by">By</label>
 
-                                <input class="form-input  input-width-400" id="id-by" name="Input til by" type="text" />
+                                <input class="form-input  input-width-400" placeholder="" id="id-by" name="Input til by" type="text" />
                             </div>
 
                         </div>
@@ -284,7 +275,7 @@
                                     (frivilligt)</span>
                                 </label>
 
-                                <input class="form-input  input-width-400" id="id-co-adresse" name="Input til CO-adresse" type="text" />
+                                <input class="form-input  input-width-400" placeholder="" id="id-co-adresse" name="Input til CO-adresse" type="text" />
                             </div>
 
                         </div>
@@ -309,7 +300,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <a href="example-aktindsigt-page-3" class="button button-primary">Næste</a>
+                <a href="example-aktindsigt-page-3" class="button button-primary mt-7">Næste</a>
                 <div class="breadcrumb">
                     <a href="example-aktindsigt-page-1" class="button button-ghost">Tilbage</a>
                 </div>

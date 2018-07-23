@@ -78,14 +78,6 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
-
-<!-- highlight.js -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github-gist.min.css">
-<script src="/frontend-styleguide/assets/js/vendor/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
   </head>
   <body class="page-example-aes-page-5-html layout-iframed">
     <div class="hide-base-svg">
@@ -177,7 +169,7 @@
         <div class="col-12">
 
             <div class="overflow-menu  overflow-menu--open-right ">
-                <button class="button-overflow-menu js-dropdown" data-js-target="#overflow_steps" aria-haspopup="true" aria-expanded="false">
+                <button class="button-overflow-menu js-dropdown  js-dropdown--responsive-collapse " data-js-target="#overflow_steps" aria-haspopup="true" aria-expanded="false">
                     Trin 5 af 9
                     <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
@@ -257,7 +249,7 @@
                             <label class="form-label">Skadedato</label>
                             <span class="input-error-message" id="input-error-message-input-error" role="alert"></span>
                             <span class="form-hint">Fx. 28 04 1996</span>
-                            <div class="date-group js-calendar-group">
+                            <div class="date-group js-calendar-group mt-3">
                                 <div class="form-group form-group-day">
                                     <label class="form-label" for="date_of_day_2">Dato</label>
                                     <input class="form-input js-calendar-day-input" type="tel" min="1" max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på månenden som tal" />
@@ -280,16 +272,16 @@
                     </fieldset>
 
                 </div>
-                <div class="mt-5">
+                <div class="mt-6">
 
                     <div class="form-group">
                         <label class="form-label " for="id-skadenummer">Jeres sags-/skadenummer</label>
 
-                        <input class="form-input  input-width-200" id="id-skadenummer" name="Input til Jeres sags-/skadenummer." type="text" />
+                        <input class="form-input  input-width-200" placeholder="" id="id-skadenummer" name="Input til Jeres sags-/skadenummer." type="text" />
                     </div>
 
                 </div>
-                <div class="mt-5">
+                <div class="mt-6">
 
                     <div class="form-group">
                         <input id="id-retssag" type="checkbox" name="Der verserer en retssag" value="Der verserer en retssag" class=" checkbox-large" checked="" />
@@ -298,7 +290,7 @@
 
                 </div>
 
-                <a href="example-aes-page-6" class="button button-primary">Næste</a>
+                <a href="example-aes-page-6" class="button button-primary mt-7">Næste</a>
                 <div class="breadcrumb">
                     <a href="example-aes-page-4" class="button button-ghost">Tilbage</a>
                 </div>

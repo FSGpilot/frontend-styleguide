@@ -44,4 +44,8 @@ subnav:
   href: '/components/komponenter/overflowmenu/'
 - text: Modals
   href: '/components/komponenter/modals/'
+- text: Tooltip
+  href: '/components/komponenter/tooltip/'
+- text: Collapse
+  href: '/components/komponenter/collapse/'
 ---
