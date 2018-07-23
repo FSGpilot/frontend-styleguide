@@ -6,9 +6,14 @@ title: Frontend Styleguiden
 
 <div class="row mb-md-7">
   <div class="col-12 styleguide-content content">
-    <header>
-      <h1>Designsystemet er åbent</h1>
-    </header>
+    <div class="alert alert-info alert--show-icon" role="alert" aria-label="Beskedbox der viser information">
+        <div class="alert-body">
+            <h3 class="alert-heading">Projektet har sommerpause</h3>
+            <p class="alert-text">Fra den 25. juni til den 20. juli holder mange af projektdeltagerne sommerferie. Projektet holder derfor en pause og er tilbage igen i uge 30. Når projektet igen går i gang vil vi hovedsageligt fokusere på sideeksempler, testing og en grundig opdatering af dette dokumentationssite.
+            </p>
+        </div>
+    </div>
+    <h1>Designsystemet er åbent</h1>
     <p class="font-lead">
       Designsystemet er Open Source. Det betyder først og fremmest at du frit kan benytte systemet og den bagvedliggende kode - men også at du kan bidrage til at det udvikles og forbedres. På den måde kan netop dine indsigter få lov at gavne os alle.
     </p>

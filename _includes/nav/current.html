@@ -1,7 +1,9 @@
 {% capture void %}
 {% assign _current = false %}
+{% assign _active = false %}
 {% if include.page.url == page.url %}
   {% assign _current = true %}
+  {% assign _active = true %}
 {% elsif page.collection and include.page.subnav.type == page.collection %}
   {% assign _current = true %}
 {% elsif include.page.subnav %}

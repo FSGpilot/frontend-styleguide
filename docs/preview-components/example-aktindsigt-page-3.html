@@ -114,9 +114,9 @@
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading">
+            <div class="solution-heading content">
                 <a href="#" title="Hjem" aria-label="logo link">
-                    Løsningstitel
+                    Ansøg om indsigt
                 </a>
             </div>
 
@@ -160,16 +160,12 @@
 <div class="overlay"></div>
 
 <section class="container">
-    <div class="breadcrumb">
-        <a href="#">Tilbage</a>
-    </div>
-
     <div class="row page-container">
         <div class="col-12">
 
             <div class="overflow-menu  overflow-menu--open-right ">
                 <button class="button-overflow-menu js-dropdown" data-js-target="#overflow_steps" aria-haspopup="true" aria-expanded="false">
-                    Trin 3 af 4
+                    Trin 3 af 3
                     <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
                     <span class="sr-only">Åbner overflow menu</span>
                 </button>
@@ -177,7 +173,7 @@
 
                     <ul class="sidenav-list">
                         <li>
-                            <a href="#">
+                            <a href="example-aktindsigt-page-1">
                                 1. Trin 1
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -185,7 +181,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="example-aktindsigt-page-2">
                                 2. Trin 2
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -193,18 +189,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="active">
+                            <a href="example-aktindsigt-page-3" class="active">
                                 3. Trin 3
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                4. Trin 4
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                5. Trin 5
                             </a>
                         </li>
                     </ul>
@@ -215,21 +201,28 @@
             <div class="content">
 
                 <h1>Bekræft oplysninger</h1>
-
-                <label class="form-label">Navn</label>
-                <span>Karen Jensen</span>
-
-                <label class="form-label">Adresse</label>
-                <span>Vængetstræde 77 <br /> 0081 Købstad</span>
-
-                <label class="form-label">Alder</label>
-                <span>39</span>
-
-                <label class="form-label">Tidligere ansøgninger</label>
-                <span>Nej</span>
-
+                <div class="mt-0">
+                    <label class="form-label">Navn</label>
+                    <p class="mt-0">Karen Jensen</p>
+                </div>
+                <div class="mt-5">
+                    <label class="form-label">Adresse</label>
+                    <p class="mt-0">Vængetstræde 77 <br /> 0081 Købstad</p>
+                </div>
+                <div class="mt-5">
+                    <label class="form-label">Alder</label>
+                    <p class="mt-0">39</p>
+                </div>
+                <div class="mt-5">
+                    <label class="form-label">Tidligere ansøgninger</label>
+                    <p class="mt-0">Nej</p>
+                </div>
                 <br />
-                <a href="#" class="button button-primary">Indsend</a>
+                <a href="example-aktindsigt-page-4" class="button button-primary">Næste</a>
+                <div class="breadcrumb">
+                    <a href="example-aktindsigt-page-2" class="button button-ghost">Tilbage</a>
+                </div>
+            </div>
 &lt;/section&gt;
 
 <footer>
@@ -302,7 +295,7 @@
         </div>
     </div>
 </div>
-</div></div></div></section>
+</div></div></section>
 
     <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
 

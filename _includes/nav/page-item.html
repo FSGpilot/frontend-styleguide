@@ -1,6 +1,6 @@
 {% include nav/current.html page=include.page %}
-<a href="{{ include.page.url | relative_url }}" class="{%
-  if _current -%}current {% endif %}nav-link">
+<a href="{{ include.page.url | relative_url }}" 
+  class="{% if _current -%}current {% endif %} {%  if _active -%}active {% endif %} nav-link">
   <span>{{ include.page.title | smartify }}</span>
 </a>
 {% if _current -%}
