@@ -4491,6 +4491,10 @@ legend {
   border: 2px solid #87c51c;
   padding: calc(8px - 2px) calc(16px - 2px); }
 
+.input-disabled input {
+  background: #F5F5F5;
+  color: #999999; }
+
 .input-required:after {
   color: #CC0000;
   content: ' (*required)'; }
@@ -4535,7 +4539,7 @@ legend {
   margin-bottom: 0;
   display: block;
   outline: none;
-  color: #454545;
+  color: #1a1a1a;
   position: relative;
   padding-left: calc(18px + 8px);
   min-height: 18px; }
@@ -7160,7 +7164,8 @@ input[type=search] {
   .table td, .table th {
     padding: calc(16px - 1px);
     background-color: inherit;
-    border-right: 1px solid #BFBFBF; }
+    border-right: 1px solid #BFBFBF;
+    vertical-align: top; }
     .table td:last-child, .table th:last-child {
       border-right: none; }
   .table tr td {
@@ -7182,7 +7187,8 @@ input[type=search] {
         .table.table--borderless thead th:first-child {
           padding-left: 0; }
         .table.table--borderless thead th:last-child {
-          padding-right: 0; }
+          padding-right: 0;
+          text-align: right; }
     .table.table--borderless tbody tr td {
       border: 1px solid #BFBFBF;
       border-left-color: transparent;
@@ -7190,7 +7196,8 @@ input[type=search] {
       .table.table--borderless tbody tr td:first-child {
         padding-left: 0; }
       .table.table--borderless tbody tr td:last-child {
-        padding-right: 0; }
+        padding-right: 0;
+        text-align: right; }
     .table.table--borderless tbody tr:first-child td {
       border-top-color: transparent;
       border-top-color: transparent; }
@@ -7552,9 +7559,6 @@ input[type=search] {
 .overflow-menu {
   display: inline-block;
   position: relative; }
-  @media (max-width: 991px) {
-    .overflow-menu {
-      width: 100%; } }
   .overflow-menu .button-overflow-menu {
     position: relative;
     background-color: transparent;
@@ -7570,7 +7574,7 @@ input[type=search] {
     padding: 8px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     color: #1a1a1a; }
     .overflow-menu .button-overflow-menu:hover {
       background-color: transparent; }
