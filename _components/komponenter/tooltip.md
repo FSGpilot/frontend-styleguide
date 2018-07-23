@@ -16,7 +16,7 @@ lead:
     Documentation
   </button>
   <div id="label-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
+    <h4>Implementation</h4>
     <p>Tooltips  bygger på <a href="https://atomiks.github.io/tippyjs/">tippy.js.</a></p>
     <p>For at initializere et tooltip skal et HTML-element have klassen ’. js-tooltip’ og en ’title’-attribut:</p>
     <div class="code-highlight">
