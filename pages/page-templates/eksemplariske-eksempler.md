@@ -22,13 +22,16 @@ subnav:
 
 <h2 class="heading" id="solution-2">Løsning 2: Børnetilskud</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
-<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/boernetilskud.png" style="max-width: 100%; width: 1018px"></a>
+<a href="{{ site.baseurl }}/pages/page-templates/boernetilskud/boernetilskud-oversigt"><img src="{{ site.baseurl }}/img/examples_pages/boernetilskud.png" style="max-width: 100%; width: 1018px"></a>
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/boernetilskud/boernetilskud-oversigt">Demo børnetilskud</a>
 
 <!-- {% include code/accordion.html component="example-aes-page-1" %} -->
  
 <h2 class="heading" id="solution-3">Løsning 3: Erstatningssag</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
-<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/erstatningssag.png" style="max-width: 100%; width: 1018px"></a>
+<a href="{{ site.baseurl }}/pages/page-templates/AES-erstatningssag/aes-1"><img src="{{ site.baseurl }}/img/examples_pages/erstatningssag.png" style="max-width: 100%; width: 1018px"></a>
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/AES-erstatningssag/aes-1">Demo Erstatningssag</a>
+
 
 <!-- {% include code/accordion.html component="example-boernetilskud-ansoegning-1" %} -->
 
