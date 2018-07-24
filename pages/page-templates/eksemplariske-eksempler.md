@@ -15,24 +15,25 @@ subnav:
 
 <h2 class="heading" id="solution-1">Løsning 1: Aktindsigt</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
-<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__simpel__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/aktindsigt.PNG" style="max-width: 1000%; width: 1018px"></a>
-
-{% include code/accordion.html component="template-landing" %}
+<a href="{{ site.baseurl }}/pages/page-templates/aktindsigt/aktindsigt-1"><img src="{{ site.baseurl }}/img/examples_pages/aktindsigt.PNG" style="max-width: 100%; width: 1018px"></a>
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/aktindsigt/aktindsigt-1">Demo aktindsigt</a>
+ 
+<!-- {% include code/accordion.html component="example-aktindsigt-page-1" %} -->
 
 <h2 class="heading" id="solution-2">Løsning 2: Børnetilskud</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
-<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/boernetilskud.png" style="max-width: 1000%; width: 1018px"></a>
+<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/boernetilskud.png" style="max-width: 100%; width: 1018px"></a>
 
-{% include code/accordion.html component="template-landing" %}
+<!-- {% include code/accordion.html component="example-aes-page-1" %} -->
  
 <h2 class="heading" id="solution-3">Løsning 3: Erstatningssag</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
-<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/erstatningssag.png" style="max-width: 1000%; width: 1018px"></a>
+<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/erstatningssag.png" style="max-width: 100%; width: 1018px"></a>
 
-{% include code/accordion.html component="template-landing" %}
+<!-- {% include code/accordion.html component="example-boernetilskud-ansoegning-1" %} -->
 
 <!-- <h2 class="heading" id="hyper-blanket">Template: Den hyper løsning</h2>
-<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/hyper.png" style="max-width: 1000%; width: 1018px"></a>
+<a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/hyper.png" style="max-width: 100%; width: 1018px"></a>
 
 {% include code/accordion.html component="template-landing" %} -->
 
