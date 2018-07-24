@@ -1,9 +1,9 @@
 ---
-permalink: /components/styling/ikoner/
+permalink: /designandcode/ikoner/
 layout: styleguide
 title: Ikoner
 category: UI components
-subcategory: Atomer
+subcategory: Design og kode
 lead: Der findes en række standardikoner i designmanualen. Symboler kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
 order: 25
 ---

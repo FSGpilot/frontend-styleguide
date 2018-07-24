@@ -4,7 +4,7 @@ layout: styleguide
 type: component
 title: Sidenavigation
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: "Hierarchical, vertical navigation to place at the side of a page."
 ---
 <h2>Sidenavigation</h2>
@@ -13,7 +13,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
     <h4>Implementation</h4>
@@ -33,7 +33,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

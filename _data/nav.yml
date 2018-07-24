@@ -8,16 +8,18 @@ primary:
 mobile:
   - href: /designandcode/
   - href: /page-templates/
-  - href: /getting-started/
-    collapsible: true
-  - href: /faellesoffentlige-krav/
-  - href: /whats-new/
-    collapsible: true
+#  - href: /getting-started/
+#  - href: /faellesoffentlige-krav/
+#  - href: /whats-new/
 
 UI components:
   - text: Overblik
     href: /designandcode/
+  - href: /designandcode/accessibility/
   - href: /designandcode/typography/
+  - href: /designandcode/colors/
+  - href: /designandcode/ikoner/
+  - href: /designandcode/kanter/
   - href: /designandcode/grids/
   - href: /designandcode/buttons/
   - href: /designandcode/tags/
@@ -26,15 +28,12 @@ UI components:
   - href: /designandcode/cards/
   - href: /designandcode/form-controls/
   - href: /designandcode/search/
-  - href: /designandcode/labels/
   - href: /designandcode/badges/
   - href: /designandcode/tables/
-  - href: /designandcode/datatables/
   - href: /designandcode/tekstelementer/
   - href: /designandcode/trinindikatorer/
   - href: /designandcode/sidenav/
   - href: /designandcode/tabnav/
-  - href: /designandcode/select2-multiselect/
   - href: /designandcode/spinner/
   - href: /designandcode/overflowmenu/
   - href: /designandcode/modals/
@@ -42,6 +41,8 @@ UI components:
   - href: /designandcode/collapse/
   - href: /designandcode/headers/
   - href: /designandcode/footers/
+  - href: /designandcode/select2-multiselect/
+  - href: /designandcode/datatables/
 
 Getting started:
   - text: Overblik

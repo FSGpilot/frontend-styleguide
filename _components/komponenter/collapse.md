@@ -2,9 +2,9 @@
 permalink: /designandcode/collapse/
 layout: styleguide
 type: component
-title: Collapse
+title: Skjul og vis (Collapse)
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Collapse and expand content.
 ---
 
@@ -13,7 +13,7 @@ lead: Collapse and expand content.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="label-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="label-docs" aria-hidden="false" class="accordion-content">
     <h4>Implementation</h4>

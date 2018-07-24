@@ -11,7 +11,7 @@ lead: Stating validation requirements up front, with live feedback, means users 
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="validation-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="validation-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Guidance</h4>

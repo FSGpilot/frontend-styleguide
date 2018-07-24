@@ -1,5 +1,5 @@
 ---
-permalink: /components/styling/
+permalink: /designandcode/styling/
 layout: styleguide
 title: Styling
 category: UI components

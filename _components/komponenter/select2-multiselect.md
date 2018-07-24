@@ -4,7 +4,7 @@ layout: styleguide
 type: component
 title: Multiselect dropdown
 category: UI components
-subcategory: Avancerede komponenter
+subcategory: Design og kode
 lead: The multiselect dropdown uses Select2. Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and pagination (infinite scrolling) of results.
 ---
 
@@ -13,7 +13,7 @@ lead: The multiselect dropdown uses Select2. Select2 is a jQuery based replaceme
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="accordion-bordered-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="accordion-bordered-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

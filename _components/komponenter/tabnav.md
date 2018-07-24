@@ -4,7 +4,7 @@ layout: styleguide
 type: component
 title: Faneblade
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: "Horizontal navigation."
 ---
 <h2>Faneblade</h2>
@@ -13,7 +13,7 @@ lead: "Horizontal navigation."
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

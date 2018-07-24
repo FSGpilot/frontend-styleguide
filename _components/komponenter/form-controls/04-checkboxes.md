@@ -11,7 +11,7 @@ lead: Checkboxes allow users to select one or more options from a visible list.
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="checkbox-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="checkbox-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

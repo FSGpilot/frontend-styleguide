@@ -4,9 +4,9 @@ redirect_from:
 - /datatables/
 layout: styleguide
 type: component
-title: Datatables
+title: Datatabeller
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead:
 subnav:
 - text: Datatable

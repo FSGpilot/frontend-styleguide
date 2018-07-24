@@ -22,10 +22,10 @@ layout: default
     <div class="col-12 col-sm-9 styleguide-content content">
       <section id="section-{{page.id}}">
         <header>
-          <p class="site-subheading">
+          <p class="small-text m-0 uppercase">
             {{ page.subcategory }}
           </p>
-          <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+          <h1 class="mt-0" id="{{ page.title | slugify }}">{{ page.title }}</h1>
         </header>
         {% if page.lead != null %}
           <p class="font-lead">{{ page.lead }}</p>

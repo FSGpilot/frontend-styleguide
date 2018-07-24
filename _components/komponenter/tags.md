@@ -4,7 +4,7 @@ layout: styleguide
 type: element
 title: Tags
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Tags
 ---
 
@@ -13,7 +13,7 @@ lead: Tags
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="accordion-bordered-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="accordion-bordered-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

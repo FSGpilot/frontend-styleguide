@@ -4,7 +4,7 @@ layout: styleguide
 type: element
 title: Spinner
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Spinner lead
 ---
 
@@ -13,7 +13,7 @@ lead: Spinner lead
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="label-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="label-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

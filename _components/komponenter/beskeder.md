@@ -2,9 +2,9 @@
 permalink: /designandcode/beskeder/
 layout: styleguide
 type: component
-title: Beskeder
+title: Beskeder (Alerts)
 category: UI components
-subcategory: Komponenter 
+subcategory: Design og kode 
 lead: Alerts keep users informed of important and sometimes time-sensitive changes.
 ---
 
@@ -13,7 +13,7 @@ lead: Alerts keep users informed of important and sometimes time-sensitive chang
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="alert-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="alert-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

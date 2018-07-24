@@ -3,7 +3,6 @@ permalink: /designandcode/
 layout: styleguide
 title: Design og kode
 category: UI components
-subcategory: Komponenter
 lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjeningsløsninger. Designsystemet gør det let og hurtigt at bygge løsninger, som er konsistente og logiske for brugeren. 
 ---
 

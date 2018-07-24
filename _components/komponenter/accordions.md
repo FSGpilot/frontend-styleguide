@@ -4,7 +4,7 @@ layout: styleguide
 type: component
 title: Accordions
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Accordions are a list of headers that can be clicked to hide or reveal additional content.
 ---
 
@@ -13,7 +13,7 @@ lead: Accordions are a list of headers that can be clicked to hide or reveal add
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="true" aria-controls="documentation">
-    Documentation
+    Dokumentation
   </button>
   <div id="documentation" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

@@ -16,7 +16,7 @@ order: 02
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="headings-docs-tech">
-    Documentation
+    Dokumentation
   </button>
   <div id="headings-docs-tech" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

@@ -11,7 +11,7 @@ lead: A select-element allows users to select one option from a list.
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="dropdown-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="dropdown-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

@@ -3,7 +3,7 @@ permalink: /designandcode/typography/
 layout: styleguide
 title: Typografi
 category: UI components
-subcategory: Atomer
+subcategory: Design og kode
 lead: ""
 subnav:
 - text: Typefaces

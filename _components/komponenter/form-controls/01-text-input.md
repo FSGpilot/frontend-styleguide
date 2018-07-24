@@ -10,7 +10,7 @@ lead: Text inputs allow people to enter any combination of letters, numbers, or 
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="text-input-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="text-input-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

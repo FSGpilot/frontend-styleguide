@@ -4,7 +4,7 @@ layout: styleguide
 type: component
 title: Cards
 category: UI components
-subcategory: Komponenter 
+subcategory: Design og kode 
 lead: A card is a sheet of material that serves as an entry point to more detailed information.
 ---
 
@@ -13,7 +13,7 @@ lead: A card is a sheet of material that serves as an entry point to more detail
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="alert-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="alert-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>
