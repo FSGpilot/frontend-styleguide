@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/spinner/
+permalink: /designandcode/spinner/
 layout: styleguide
 type: element
 title: Spinner

@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/collapse/
+permalink: /designandcode/collapse/
 layout: styleguide
 type: component
 title: Collapse

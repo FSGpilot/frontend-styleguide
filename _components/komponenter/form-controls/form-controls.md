@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/form-controls/
+permalink: /designandcode/form-controls/
 redirect_from:
 - /form-controls/
 layout: styleguide

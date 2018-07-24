@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/beskeder/
+permalink: /designandcode/beskeder/
 layout: styleguide
 type: component
 title: Beskeder

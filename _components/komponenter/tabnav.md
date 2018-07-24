@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/tabnav/
+permalink: /designandcode/tabnav/
 layout: styleguide
 type: component
 title: Faneblade

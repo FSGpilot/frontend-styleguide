@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/tables/
+permalink: /designandcode/tables/
 redirect_from:
 - /tables/
 layout: styleguide

@@ -7,10 +7,13 @@ layout: default
 
     <div class="col-3">
       <aside class="sidenav">
-        {% assign sidenav = site.data.nav[page.category] %}
-        {% if sidenav %}
+        {% assign sidenavFromNavData = site.data.nav[page.category] %}
+        {% if sidenavFromNavData %}
         <ul class="sidenav-list">
-          {% include nav/list.html links=sidenav %}
+          {% include nav/list.html 
+            links=sidenavFromNavData               
+            is_sidenav=true
+          %}
         </ul>
         {% endif %}
       </aside>

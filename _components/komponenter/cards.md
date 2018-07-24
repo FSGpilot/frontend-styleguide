@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/cards/
+permalink: /designandcode/cards/
 layout: styleguide
 type: component
 title: Cards

@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/baggrundsbokse/
+permalink: /designandcode/baggrundsbokse/
 layout: styleguide
 type: component
 title: Baggrundsbokse

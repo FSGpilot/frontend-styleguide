@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/select2-multiselect/
+permalink: /designandcode/select2-multiselect/
 layout: styleguide
 type: component
 title: Multiselect dropdown

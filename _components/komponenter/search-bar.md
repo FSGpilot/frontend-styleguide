@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/search/
+permalink: /designandcode/search/
 layout: styleguide
 type: component
 title: Search bar

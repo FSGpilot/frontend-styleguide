@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/labels/
+permalink: /designandcode/labels/
 layout: styleguide
 type: element
 title: Labels

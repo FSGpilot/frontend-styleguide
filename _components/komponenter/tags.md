@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/tags/
+permalink: /designandcode/tags/
 layout: styleguide
 type: element
 title: Tags

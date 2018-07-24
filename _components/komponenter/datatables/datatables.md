@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/datatables/
+permalink: /designandcode/datatables/
 redirect_from:
 - /datatables/
 layout: styleguide

@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/buttons/
+permalink: /designandcode/buttons/
 layout: styleguide
 type: element
 title: Knapper

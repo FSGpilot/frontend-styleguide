@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/tooltip/
+permalink: /designandcode/tooltip/
 layout: styleguide
 type: element
 title: Tooltip

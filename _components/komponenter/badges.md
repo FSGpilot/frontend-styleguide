@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/badges/
+permalink: /designandcode/badges/
 layout: styleguide
 type: element
 title: Badges

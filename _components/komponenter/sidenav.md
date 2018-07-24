@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/sidenav/
+permalink: /designandcode/sidenav/
 layout: styleguide
 type: component
 title: Sidenavigation

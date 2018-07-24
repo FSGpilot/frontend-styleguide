@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/overflowmenu/
+permalink: /designandcode/overflowmenu/
 layout: styleguide
 type: component
 title: Overflow menu

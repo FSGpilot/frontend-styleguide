@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/tekstelementer/
+permalink: /designandcode/tekstelementer/
 layout: styleguide
 type: element
 title: Tekstelementer

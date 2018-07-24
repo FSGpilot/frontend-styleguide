@@ -1,5 +1,5 @@
 ---
-permalink: /components/komponenter/trinindikatorer/
+permalink: /designandcode/trinindikatorer/
 layout: styleguide
 type: component
 title: Trinindikatorer
