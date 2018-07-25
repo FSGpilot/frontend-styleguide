@@ -12,11 +12,10 @@ lead: A card is a sheet of material that serves as an entry point to more detail
 {% include code/accordion.html component="cards" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="alert-docs">
-    Dokumentation
+    aria-expanded="false" aria-controls="code-documentation">
+    Kode dokumentation
   </button>
-  <div id="alert-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
+  <div id="code-documentation" class="accordion-content">
     <p>Alle cards har en <code>.card</code> class. Cards kan bestå af en header, et tekstområde, et contentområde og et aktionområde. Der er ingen specifik rækkefølge af områder og de kan derfor sammensættes efter eget behov og i alle størrelser. Der skal dog overholdes, hvad der bliver placeret i de forskellige områder. Hver område er beskrevet nedenfor. </p> 
     <h5>Header</h5>
     <p>Headeren har en <code>.card-header</code> class, og indeholder en titel og en understøttende tekst, som alle er p-tags med hver deres class.</p>
@@ -42,6 +41,15 @@ lead: A card is a sheet of material that serves as an entry point to more detail
       <li><code>.action-buttons</code></li>
       <li><code>.action-links</code></li>
     </ul>
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="alert-docs">
+    Dokumentation
+  </button>
+  <div id="alert-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
       <li>Use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the <code>alertdialog</code> role instead.</li>

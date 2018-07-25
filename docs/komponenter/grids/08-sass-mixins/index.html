@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Sass mixins | Frontend styleguide - version 2</title>
+<meta property="og:title" content="Sass mixins | Frontend styleguide - version 2">
+
+
+<meta name="description" content="When using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.">
+<meta property="og:description" content="When using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="http://localhost:4000/komponenter/grids/08-sass-mixins/">
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+  </head>
+  <body class="page-sass-mixins layout-component">
+    <div class="hide-base-svg">
+      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="add" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></symbol><symbol id="alert-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol><symbol id="angle-arrow-down-white" viewBox="0 0 24 24"><path fill="#fff" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-down" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-up" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></symbol><symbol id="arrow-left" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></symbol><symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5z"/></symbol><symbol id="check-box-checked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#1A1A1A" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm12.293 4.293l-6.921 6.921-3.665-3.664-1.414 1.414 5.079 5.079 8.335-8.336-1.414-1.414z"/></g></symbol><symbol id="check-box-disabled" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect width="16" height="16" x="4" y="4" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2" rx="2"/></g></symbol><symbol id="check-box-focus" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#FEBB30" d="M0 0h24v24H0V0z"/><rect width="16" height="16" x="4" y="4" fill="#FFF" stroke="#1A1A1A" stroke-width="2" rx="2"/></g></symbol><symbol id="check-box-unchecked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect width="16" height="16" x="4" y="4" fill="#FFF" stroke="#1A1A1A" stroke-width="2" rx="2"/></g></symbol><symbol id="check-circle-outline" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></symbol><symbol id="checkbox-blank-outline" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5h14z"/></symbol><symbol id="checkbox-marked" viewBox="0 0 24 24"><path d="M10 17l-5-5 1.41-1.42L10 14.17l7.59-7.59L19 8m0-5H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></symbol><symbol id="chevron-left" viewBox="0 0 24 24"><path d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.42z"/></symbol><symbol id="chevron-right" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></symbol><symbol id="close-circle-outline" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="close-circle" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#FFF" d="M13.414 12l2.314-2.314-1.414-1.414L12 10.586 9.686 8.272 8.272 9.686 10.586 12l-2.31 2.31 1.413 1.415L12 13.415l2.31 2.31 1.415-1.414L13.415 12zM12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></g></symbol><symbol id="close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></symbol><symbol id="content-save" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4z"/></symbol><symbol id="delete-outline" viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4z"/><path fill="none" d="M0 0h24v24H0V0z"/></symbol><symbol id="delete" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12z"/></symbol><symbol id="dots-vertical" viewBox="0 0 24 24"><path d="M12 16a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z"/></symbol><symbol id="download" viewBox="0 0 24 24"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"/><path fill="none" d="M0 0h24v24H0z"/></symbol><symbol id="error" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="file" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><g><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></g></symbol><symbol id="help-circle-outline" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4z"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></symbol><symbol id="language" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.08 16zm2.95-8H5.08a7.987 7.987 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></symbol><symbol id="magnify" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></symbol><symbol id="menu-down" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></symbol><symbol id="menu-left" viewBox="0 0 24 24"><path d="M14 7l-5 5 5 5V7z"/></symbol><symbol id="menu-right" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5v10z"/></symbol><symbol id="menu-up" viewBox="0 0 24 24"><path d="M7 15l5-5 5 5H7z"/></symbol><symbol id="minus" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></symbol><symbol id="open-in-new" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></symbol><symbol id="pencil" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol><symbol id="printer" viewBox="0 0 24 24"><path d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3z"/></symbol><symbol id="radio-disabled" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2"/></g></symbol><symbol id="radio-focused" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#FFF" stroke="#1A1A1A" stroke-linejoin="square" stroke-width="2"/><circle cx="12" cy="12" r="10.5" stroke="#FEBB30" stroke-width="3"/></g></symbol><symbol id="radio-marked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><g stroke-linejoin="square"><circle cx="12" cy="12" r="6.5" fill="#1A1A1A" stroke="#FFF" stroke-width="5"/><circle cx="12" cy="12" r="8" stroke="#1A1A1A" stroke-width="2"/></g></g></symbol><symbol id="radio-unmarked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#FFF" stroke="#1A1A1A" stroke-width="2"/></g></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></symbol><symbol id="save" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></symbol><symbol id="sort-acending" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#1A1A1A" d="M6 13l6 6 6-6z"/><path stroke="#1A1A1A" d="M16.793 10.5L12 5.707 7.207 10.5h9.586z"/></g></symbol><symbol id="sort-descending" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path stroke="#1A1A1A" d="M7.207 13.5L12 18.293l4.793-4.793H7.207z"/><path fill="#1A1A1A" d="M18 11l-6-6-6 6z"/></g></symbol><symbol id="sort-none" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M7.207 13.5L12 18.293l4.793-4.793H7.207zm9.586-3L12 5.707 7.207 10.5h9.586z" stroke="#1A1A1A"/></g></symbol><symbol id="success" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="warning" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol></svg>       </div>
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+
+
+<header class="header header-extended" role="banner">
+     <!--2A: Solutiuon header -->
+    <div class="solution-header">
+      <div class="solution-header-inner container">
+        <div class="solution-heading">
+            <a href="/frontend-styleguide/" title="Home" aria-label="Home">Frontend Styleguide</a>
+        </div>
+        <button class="button button-secondary button-menu-open js-menu-open ml-auto" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+    <nav role="navigation" class="nav"> <!-- collapsible-->
+      <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
+      <!-- 3: Main navigation-->
+      <div class="navbar navbar-primary">
+        <!--3A: Main navigation-->
+        
+        <div class="navbar-inner container">
+          <ul class="nav-primary">
+            
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/" 
+  class="  nav-link">
+  <span>Design og kode</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/page-templates/" 
+  class="  nav-link">
+  <span>Eksempler</span>
+</a>
+
+
+    
+  </li>
+
+
+          </ul>
+
+          <!-- 3B: Main navigation - secondary menu-->
+          <ul class="unstyled-list nav-actions">
+            <li>
+              <select class="form-select style-switcher" name="Style switcher" aria-label="Skift mellem temaer">
+                <option value="">- Vælg tema -</option>
+                <option value="styleguide">Tema: Neutralt</option>
+                <option value="virkdk">Tema: Virk.dk</option>
+                <option value="borgerdk">Tema: Borger.dk</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 3: Main navigation end-->
+      
+    </nav> <!-- collapsible nav end-->
+</header>
+
+<main class="container page-container">
+  <div class="row">
+
+    <div class="col-12 col-md-3 sidebar-col">
+      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
+      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
+        
+        
+      </nav>
+    </div>    
+
+    <div class="col-12 col-md-9">
+      <section id="section-/komponenter/grids/08-sass-mixins">
+        <header>
+          <p class="small-text m-0 uppercase">
+            
+          </p>
+          <h1 class="mt-0" id="sass-mixins">Sass mixins</h1>
+        </header>
+        
+      <p>When using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
+
+<h3 id="variables">Variables</h3>
+
+<p>Variables and maps determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.</p>
+
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/grid--sass-variables.html" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/grid--sass-variables.html"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-grid--sass-variables">Kode</button>
+  <div id="code-grid--sass-variables" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;pre&gt;</span>
+    <span class="nt">&lt;code&gt;</span>$grid-columns:      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/span&gt;</span>;
+$grid-gutter-width: 1rem; <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cl"</span><span class="nt">&gt;</span>// 32px<span class="nt">&lt;/span&gt;</span>
+
+$grid-breakpoints: (
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cl"</span><span class="nt">&gt;</span>// Extra small screen / phone<span class="nt">&lt;/span&gt;</span>
+    xs: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>0<span class="nt">&lt;/span&gt;</span>,
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cl"</span><span class="nt">&gt;</span>// Small screen / phone<span class="nt">&lt;/span&gt;</span>
+    sm: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>576px<span class="nt">&lt;/span&gt;</span>,
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cl"</span><span class="nt">&gt;</span>// Medium screen / tablet<span class="nt">&lt;/span&gt;</span>
+    md: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>768px<span class="nt">&lt;/span&gt;</span>,
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cl"</span><span class="nt">&gt;</span>// Large screen / desktop<span class="nt">&lt;/span&gt;</span>
+    lg: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>992px<span class="nt">&lt;/span&gt;</span>,
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cl"</span><span class="nt">&gt;</span>// Extra large screen / wide desktop<span class="nt">&lt;/span&gt;</span>
+    xl: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>1200px<span class="nt">&lt;/span&gt;</span>
+);
+
+$container-max-widths: (
+    sm: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>540px<span class="nt">&lt;/span&gt;</span>,
+    md: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>720px<span class="nt">&lt;/span&gt;</span>,
+    lg: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>960px<span class="nt">&lt;/span&gt;</span>,
+    xl: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>1140px<span class="nt">&lt;/span&gt;</span>
+);<span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/pre&gt;</span>
+
+
+<span class="nt">&lt;style </span><span class="na">scoped</span><span class="nt">&gt;</span>
+    <span class="nt">pre</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="n">SFMono-Regular</span><span class="p">,</span> <span class="n">Menlo</span><span class="p">,</span> <span class="n">Monaco</span><span class="p">,</span> <span class="n">Consolas</span><span class="p">,</span> <span class="s1">"Liberation Mono"</span><span class="p">,</span> <span class="s1">"Courier New"</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">98%</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#212529</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">code</span> <span class="p">{</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.cl</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#999</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.m</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#f60</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<h3 id="mixins">Mixins</h3>
+
+<p>Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.</p>
+
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/grid--sass-mixins.html" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/grid--sass-mixins.html"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-grid--sass-mixins">Kode</button>
+  <div id="code-grid--sass-mixins" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;pre&gt;</span>
+    <span class="nt">&lt;code&gt;&lt;span</span> <span class="na">class=</span><span class="s">"cl"</span><span class="nt">&gt;</span>// Creates a wrapper for a series of columns<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-row<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>();<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cl"</span><span class="nt">&gt;</span>// Make the element grid-ready (applying everything but the width)<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-col-ready<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>();<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-col<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"nv"</span><span class="nt">&gt;</span>$size<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nv"</span><span class="nt">&gt;</span>$columns<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nv"</span><span class="nt">&gt;</span>$grid-columns<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>);<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cl"</span><span class="nt">&gt;</span>// Get fancy by offsetting, or changing the sort order<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-col-offset<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"nv"</span><span class="nt">&gt;</span>$size<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nv"</span><span class="nt">&gt;</span>$columns<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"o"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nv"</span><span class="nt">&gt;</span>$grid-columns<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>);<span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/pre&gt;</span>
+
+
+<span class="nt">&lt;style </span><span class="na">scoped</span><span class="nt">&gt;</span>
+    <span class="nt">pre</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="n">SFMono-Regular</span><span class="p">,</span> <span class="n">Menlo</span><span class="p">,</span> <span class="n">Monaco</span><span class="p">,</span> <span class="n">Consolas</span><span class="p">,</span> <span class="s1">"Liberation Mono"</span><span class="p">,</span> <span class="s1">"Courier New"</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">98%</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#212529</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">code</span> <span class="p">{</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.cl</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#999</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.m</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#f60</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.k</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#069</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.nd</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#99f</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.p</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#212529</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.o</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#555</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.nv</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#033</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<h3 id="example-usage">Example usage</h3>
+
+<p>You can modify the variables to your own custom values, or just use the mixins with their default values. Here’s an example of using the default settings to create a two-column layout with a gap between.</p>
+
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/grid--sass-example.html" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/grid--sass-example.html"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-grid--sass-example">Kode</button>
+  <div id="code-grid--sass-example" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;pre&gt;</span>
+    <span class="nt">&lt;code&gt;&lt;span</span> <span class="na">class=</span><span class="s">"nc"</span><span class="nt">&gt;</span>.example-container<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nl"</span><span class="nt">&gt;</span>width<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>800px<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>;<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-container<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>();<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nc"</span><span class="nt">&gt;</span>.example-row<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-row<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>();<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nc"</span><span class="nt">&gt;</span>.example-content-main<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-col-ready<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>();<span class="nt">&lt;/span&gt;</span>
+
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>media-breakpoint-up<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>sm<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>) {<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-col<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>);<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>media-breakpoint-up<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>lg<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>) {<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-col<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>);<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nc"</span><span class="nt">&gt;</span>.example-content-secondary<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-col-ready<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>();<span class="nt">&lt;/span&gt;</span>
+
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>media-breakpoint-up<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>sm<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>) {<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-col<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>);<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>media-breakpoint-up<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>lg<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>) {<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"k"</span><span class="nt">&gt;</span>@include<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nd"</span><span class="nt">&gt;</span>make-col<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"m"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>);<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"p"</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;&lt;/code&gt;</span>
+<span class="nt">&lt;/pre&gt;</span>
+
+
+<span class="nt">&lt;style </span><span class="na">scoped</span><span class="nt">&gt;</span>
+    <span class="nt">pre</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+        <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="n">SFMono-Regular</span><span class="p">,</span> <span class="n">Menlo</span><span class="p">,</span> <span class="n">Monaco</span><span class="p">,</span> <span class="n">Consolas</span><span class="p">,</span> <span class="s1">"Liberation Mono"</span><span class="p">,</span> <span class="s1">"Courier New"</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">98%</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#212529</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">code</span> <span class="p">{</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.p</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#212529</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.nc</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#0a8</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.nl</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#99f</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.m</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#f60</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.k</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#069</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.nd</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="m">#99f</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+
+
+      </section>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+            <ul class="unstyled-list">
+              <li><p class="h6 semibold" title="Ansvarlig myndighed" aria-label="Ansvarlig myndighed">Ansvarlig myndighed</p></li>
+            </ul>
+            <ul class="unstyled-list">
+              <li><p>Erhvervsstyrelsen og Digitaliseringsstyrelsen</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+           
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+           
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+            <ul class="unstyled-list">
+              <li><p class="h6 semibold"  title="Skriftlig kontakt" aria-label="Skriftlig kontakt">Bidrag til arbejdet</p></li>
+            </ul>
+            <ul class="unstyled-list">
+              <li><p><a class="function-link" href="https://github.com/FSGpilot/frontend-styleguide">Github repository</a></p></li>
+            </ul>
+            <ul class="unstyled-list">
+              <li><p>Opret gerne issues hvis du har spørgsmål eller finder fejl i systemt.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+<script src="/frontend-styleguide/assets/js/vendor/dkwds-vendor-examples.js"></script>
+
+  </body>
+</html>

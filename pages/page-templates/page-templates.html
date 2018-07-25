@@ -12,21 +12,25 @@ subnav:
 ---
 
 
-<main class="section" id="main-content">
-  <div class="container">
+<main class="container page-container">
+  <div class="page-content content">
     <div class="row">
-      <div class="col-3">
-        <aside class="sidenav">
-          {% assign sidenav = site.data.nav[page.category] %}
-          {% if sidenav %}
+      <div class="col-12 col-md-3 sidebar-col">
+        <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
+        <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
+          {% assign sidenavFromNavData = site.data.nav[page.category] %}
+          {% if sidenavFromNavData %}
           <ul class="sidenav-list">
-            {% include nav/list.html links=sidenav %}
+            {% include nav/list.html 
+              links=sidenavFromNavData               
+              is_sidenav=true
+            %}
           </ul>
           {% endif %}
-        </aside>
+        </nav>
       </div>
 
-      <div class="col-12 col-sm-9 styleguide-content content">
+      <div class="col-12 col-md-9">
         <section id="section-{{page.id}}">
           <header>
             <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
@@ -34,35 +38,8 @@ subnav:
           {% if page.lead != null %}
             <p class="font-lead">{{ page.lead }}</p>
           {% endif %}
-          <h2 id="accessibility">Eksempel 1: Virk-blanket</h2>
-          <p>Et eksempel på en virk-blanket.</p>
         </section>
       </div>
-
-      <div class="col-12 content">
-        {% include code/preview.html component="example-a-page1" %}
-        {% include code/accordion.html component="example-a-page1" %}
-      </div>
-
-      <div class="col-12 content">
-        {% include code/preview.html component="example-b-page1" %}
-        {% include code/accordion.html component="example-b-page1" %}
-      </div>
-
-      <div class="col-12 content">
-        {% include code/preview.html component="example-b-page2" %}
-        {% include code/accordion.html component="example-b-page2" %}
-      </div>
-
-      <div class="col-12 content">
-        {% include code/preview.html component="example-b-page3" %}
-        {% include code/accordion.html component="example-b-page3" %}
-      </div>
-
-      <div class="col-12 content">
-        {% include code/preview.html component="example-b-page4" %}
-        {% include code/accordion.html component="example-b-page4" %}
-      </div>
-
     </div>
   </div>
+</main>

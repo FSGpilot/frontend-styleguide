@@ -1,9 +1,9 @@
 primary:
   - href: /designandcode/
   - href: /page-templates/
-  - href: /getting-started/
-  - href: /faellesoffentlige-krav/
-  - href: /whats-new/
+#  - href: /getting-started/
+#  - href: /faellesoffentlige-krav/
+#  - href: /whats-new/
 
 mobile:
   - href: /designandcode/

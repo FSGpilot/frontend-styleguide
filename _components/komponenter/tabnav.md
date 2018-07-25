@@ -12,11 +12,10 @@ lead: "Horizontal navigation."
 {% include code/accordion.html component="tabnav" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="sidenav-docs">
-    Dokumentation
+      aria-expanded="true" aria-controls="code-tabnav-docs">
+    Kode dokumentation
   </button>
-  <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
+  <div id="code-tabnav-docs" aria-hidden="false" class="accordion-content">
     <ul class="content-list">
       <li>Det aktive menupunkt skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
       <li>Det aktive menupunkt skal have en <code>.active</code> class, som har en border-bottom, som bliver sat med variablen <code>$tabs-border-bottom</code></li>

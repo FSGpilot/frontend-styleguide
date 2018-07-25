@@ -13,10 +13,9 @@ lead: The multiselect dropdown uses Select2. Select2 is a jQuery based replaceme
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="accordion-bordered-docs">
-    Dokumentation
+   Kode dokumentation
   </button>
   <div id="accordion-bordered-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
     <p>In order to use the multiselect component you have to inklude the <code>dkwds-advanced.js</code> file on your site</p>
     <p>
       You insert the component by making a normal <code>select</code> html element.<br>

@@ -12,11 +12,11 @@ lead: Badges draw attention to new or important content.
 {% include code/accordion.html component="badges" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="label-docs">
-    Dokumentation
+    aria-expanded="false" aria-controls="code-documentation">
+    Kode dokumentation
   </button>
-  <div id="label-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
+  <div id="code-documentation" class="accordion-content">
+    <h4>Implementation</h4>
     <p>Alle badges skal have en <code>.badge</code> class på <code>&lt;label&gt;&lt;/label&gt;</code> elementet.</p>
     <p>Badges findes i to størrelser, store og små:</p>
     <ul>
@@ -31,6 +31,15 @@ lead: Badges draw attention to new or important content.
     <ul>
       <li><code>&lt;label class="badge badge-small"My badge&lt;/label&gt;</code></li>
     </ul>
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="label-docs">
+    Dokumentation
+  </button>
+  <div id="label-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>
     <p>When labels are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</p>
     <h4 class="heading">Usability</h4>

@@ -12,11 +12,10 @@ lead: Spinner lead
 {% include code/accordion.html component="spinner" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="label-docs">
-    Dokumentation
+      aria-expanded="true" aria-controls="code-spinner-docs">
+    Kode dokumentation
   </button>
-  <div id="label-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
+  <div id="code-spinner-docs" aria-hidden="false" class="accordion-content">
     <p>For at implementere en spinner tilføjes en <code>.spinner</code> class på en lukket div.</p>
     <ul>
     <li>Eksempel: <code>&lt;div class="spinner"&gt;&lt;/div&gt;</code></li>

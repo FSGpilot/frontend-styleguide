@@ -12,11 +12,10 @@ lead: Tags
 {% include code/accordion.html component="tags" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="accordion-bordered-docs">
-    Dokumentation
+    aria-expanded="false" aria-controls="tags-code-documentation">
+    Kode dokumentation
   </button>
-  <div id="accordion-bordered-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
+  <div id="tags-code-documentation" class="accordion-content">
     <p>Der er to eksempler på hvordan tags kan se ud. Ét uden ikon og ét med ikon.</p>
     <p>Alle tags skal have en <code>.tag</code> class og en <code>.tag-primary</code> class på <code>&lt;button&gt;&lt;/button&gt;</code> elementet.</p>
     <p>Hvis et tag skal have ikon, skal der yderligere tilføjes en <code>.tag-icon</code> class.</p>
@@ -29,6 +28,14 @@ lead: Tags
     <ul>
       <li><code>&lt;button class="tag tag-icon tag-primary"My tag&lt;/button&gt;</code></li>
     </ul>
+  </div>
+</div>
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="accordion-bordered-docs">
+    Dokumentation
+  </button>
+  <div id="accordion-bordered-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
       <li>Buttons should display a visible focus state when users tab to them.</li>

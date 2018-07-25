@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Overflow menu | Frontend styleguide - version 2</title>
+<meta property="og:title" content="Overflow menu | Frontend styleguide - version 2">
+
+
+<meta name="description" content="Kode
+  
+    
+&amp;lt;div class=&quot;container pt-6&quot;&amp;gt;
+
+    &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Overflow menu&amp;lt;/h5&amp;gt;
+
+    &amp;lt;div class=&quot;overflow-menu  overflow-menu--open-right &quot;&amp;gt;
+        &amp;lt;button class=&quot;button-overflow-menu js-dropdown &quot; data-js-target=&quot;#overflow1&quot;
+            aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&amp;gt;
+            Overflow menu
+            &amp;lt;svg class=&quot;icon-svg&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#dots-vertical&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+            &amp;lt;span class=&quot;sr-only&quot;&amp;gt;Åbner overflow menu&amp;lt;/span&amp;gt;
+        &amp;lt;/button&amp;gt;
+        &amp;lt;div class=&quot;overflow-menu-inner&quot; id=&quot;overflow1&quot; aria-hidden=&quot;true&quot;&amp;gt;
+
+            &amp;lt;ul class='overflow-list'&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;Option 3 as link&amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                &amp;lt;/li&amp;gt;
+            &amp;lt;/ul&amp;gt;
+
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div style=&quot;padding-bottom: 50px;&quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Overflow menu - åbner til venstre&amp;lt;/h5&amp;gt;
+
+    &amp;lt;div style=&quot;padding-left: 100px;&quot;&amp;gt;
+
+        &amp;lt;div class=&quot;overflow-menu  overflow-menu--open-left &quot;&amp;gt;
+            &amp;lt;button class=&quot;button-overflow-menu js-dropdown &quot; data-js-target=&quot;#overflow2&quot;
+                aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&amp;gt;
+                Overflow menu
+                &amp;lt;svg class=&quot;icon-svg&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#dots-vertical&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+                &amp;lt;span class=&quot;sr-only&quot;&amp;gt;Åbner overflow menu&amp;lt;/span&amp;gt;
+            &amp;lt;/button&amp;gt;
+            &amp;lt;div class=&quot;overflow-menu-inner&quot; id=&quot;overflow2&quot; aria-hidden=&quot;true&quot;&amp;gt;
+
+                &amp;lt;ul class='overflow-list'&amp;gt;
+                    &amp;lt;li&amp;gt;
+                        &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;
+                        &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;
+                        &amp;lt;a href='#'&amp;gt;Option 3 as link&amp;lt;/a&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;
+                        &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div style=&quot;padding-bottom: 50px;&quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Overflow menu - trin-guide&amp;lt;/h5&amp;gt;
+
+    &amp;lt;div class=&quot;overflow-menu  overflow-menu--open-right &quot;&amp;gt;
+        &amp;lt;button class=&quot;button-overflow-menu js-dropdown &quot; data-js-target=&quot;#overflow3&quot;
+            aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&amp;gt;
+            Trin 3 af 5
+            &amp;lt;svg class=&quot;icon-svg&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#menu-down&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+            &amp;lt;span class=&quot;sr-only&quot;&amp;gt;Åbner overflow menu&amp;lt;/span&amp;gt;
+        &amp;lt;/button&amp;gt;
+        &amp;lt;div class=&quot;overflow-menu-inner&quot; id=&quot;overflow3&quot; aria-hidden=&quot;true&quot;&amp;gt;
+
+            &amp;lt;ul class='sidenav-list'&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;
+                        1. Trin 1
+                        &amp;lt;span class='sidenav-icon'&amp;gt;
+                            &amp;lt;svg class='icon-svg'&amp;gt;&amp;lt;use xlink:href='#check'&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+                        &amp;lt;/span&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;
+                        2. Trin 2
+                        &amp;lt;span class='sidenav-icon'&amp;gt;
+                            &amp;lt;svg class='icon-svg'&amp;gt;&amp;lt;use xlink:href='#check'&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+                        &amp;lt;/span&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#' class='active'&amp;gt;
+                        3. Trin 3 (valgt)
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;
+                        4. Trin 4
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;
+                        5. Trin 5
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+            &amp;lt;/ul&amp;gt;
+
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div style=&quot;padding-bottom: 240px;&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Kode dokumentation
+  
+  
+    Følgende aria tags styrer hvorvidt menuen er foldet ud:
+    
+      Button: aria-expanded=&quot;false&quot;
+      Overflow menu: aria-hidden=&quot;true&quot;
+    
+    Følgende klasser styrer i hvilken retning menuen skal folde ud:
+    
+      Venstre: .overflow-menu--open-left
+      Højre: .overflow-menu--open-right
+    
+    Der er lavet et specifikt liste element til overflow-menuen (se .overflow-list) som kan indeholder links eller buttons. Det er dog ikke nødvendigt at benytte denne liste. Overflow-menuen er bare en container hvor man kan placere det indhold man nu har lyst til. I eksemplet ovenfor er en trin-guide indsat i overflow-menuen.
+    Javascript
+    Initializer collapse/expand javascript med at placere følgende på button elementet: class=&quot;js-dropdown&quot; data-js-target=&quot;#overflow1&quot;
+    Elementet som skal collapses/expandes skal have et matchende id id=&quot;overflow1&quot; (placeres på .overflow-menu-inner)">
+<meta property="og:description" content="Kode
+  
+    
+&amp;lt;div class=&quot;container pt-6&quot;&amp;gt;
+
+    &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Overflow menu&amp;lt;/h5&amp;gt;
+
+    &amp;lt;div class=&quot;overflow-menu  overflow-menu--open-right &quot;&amp;gt;
+        &amp;lt;button class=&quot;button-overflow-menu js-dropdown &quot; data-js-target=&quot;#overflow1&quot;
+            aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&amp;gt;
+            Overflow menu
+            &amp;lt;svg class=&quot;icon-svg&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#dots-vertical&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+            &amp;lt;span class=&quot;sr-only&quot;&amp;gt;Åbner overflow menu&amp;lt;/span&amp;gt;
+        &amp;lt;/button&amp;gt;
+        &amp;lt;div class=&quot;overflow-menu-inner&quot; id=&quot;overflow1&quot; aria-hidden=&quot;true&quot;&amp;gt;
+
+            &amp;lt;ul class='overflow-list'&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;Option 3 as link&amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                &amp;lt;/li&amp;gt;
+            &amp;lt;/ul&amp;gt;
+
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div style=&quot;padding-bottom: 50px;&quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Overflow menu - åbner til venstre&amp;lt;/h5&amp;gt;
+
+    &amp;lt;div style=&quot;padding-left: 100px;&quot;&amp;gt;
+
+        &amp;lt;div class=&quot;overflow-menu  overflow-menu--open-left &quot;&amp;gt;
+            &amp;lt;button class=&quot;button-overflow-menu js-dropdown &quot; data-js-target=&quot;#overflow2&quot;
+                aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&amp;gt;
+                Overflow menu
+                &amp;lt;svg class=&quot;icon-svg&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#dots-vertical&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+                &amp;lt;span class=&quot;sr-only&quot;&amp;gt;Åbner overflow menu&amp;lt;/span&amp;gt;
+            &amp;lt;/button&amp;gt;
+            &amp;lt;div class=&quot;overflow-menu-inner&quot; id=&quot;overflow2&quot; aria-hidden=&quot;true&quot;&amp;gt;
+
+                &amp;lt;ul class='overflow-list'&amp;gt;
+                    &amp;lt;li&amp;gt;
+                        &amp;lt;button&amp;gt;Option 1&amp;lt;/button&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;
+                        &amp;lt;button&amp;gt;Option 2&amp;lt;/button&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;
+                        &amp;lt;a href='#'&amp;gt;Option 3 as link&amp;lt;/a&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;
+                        &amp;lt;button&amp;gt;Option 4 is longer text&amp;lt;/button&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div style=&quot;padding-bottom: 50px;&quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Overflow menu - trin-guide&amp;lt;/h5&amp;gt;
+
+    &amp;lt;div class=&quot;overflow-menu  overflow-menu--open-right &quot;&amp;gt;
+        &amp;lt;button class=&quot;button-overflow-menu js-dropdown &quot; data-js-target=&quot;#overflow3&quot;
+            aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&amp;gt;
+            Trin 3 af 5
+            &amp;lt;svg class=&quot;icon-svg&quot;&amp;gt;&amp;lt;use xlink:href=&quot;#menu-down&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+            &amp;lt;span class=&quot;sr-only&quot;&amp;gt;Åbner overflow menu&amp;lt;/span&amp;gt;
+        &amp;lt;/button&amp;gt;
+        &amp;lt;div class=&quot;overflow-menu-inner&quot; id=&quot;overflow3&quot; aria-hidden=&quot;true&quot;&amp;gt;
+
+            &amp;lt;ul class='sidenav-list'&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;
+                        1. Trin 1
+                        &amp;lt;span class='sidenav-icon'&amp;gt;
+                            &amp;lt;svg class='icon-svg'&amp;gt;&amp;lt;use xlink:href='#check'&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+                        &amp;lt;/span&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;
+                        2. Trin 2
+                        &amp;lt;span class='sidenav-icon'&amp;gt;
+                            &amp;lt;svg class='icon-svg'&amp;gt;&amp;lt;use xlink:href='#check'&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+                        &amp;lt;/span&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#' class='active'&amp;gt;
+                        3. Trin 3 (valgt)
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;
+                        4. Trin 4
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href='#'&amp;gt;
+                        5. Trin 5
+                    &amp;lt;/a&amp;gt;
+                &amp;lt;/li&amp;gt;
+            &amp;lt;/ul&amp;gt;
+
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div style=&quot;padding-bottom: 240px;&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Kode dokumentation
+  
+  
+    Følgende aria tags styrer hvorvidt menuen er foldet ud:
+    
+      Button: aria-expanded=&quot;false&quot;
+      Overflow menu: aria-hidden=&quot;true&quot;
+    
+    Følgende klasser styrer i hvilken retning menuen skal folde ud:
+    
+      Venstre: .overflow-menu--open-left
+      Højre: .overflow-menu--open-right
+    
+    Der er lavet et specifikt liste element til overflow-menuen (se .overflow-list) som kan indeholder links eller buttons. Det er dog ikke nødvendigt at benytte denne liste. Overflow-menuen er bare en container hvor man kan placere det indhold man nu har lyst til. I eksemplet ovenfor er en trin-guide indsat i overflow-menuen.
+    Javascript
+    Initializer collapse/expand javascript med at placere følgende på button elementet: class=&quot;js-dropdown&quot; data-js-target=&quot;#overflow1&quot;
+    Elementet som skal collapses/expandes skal have et matchende id id=&quot;overflow1&quot; (placeres på .overflow-menu-inner)">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="http://localhost:4000/designandcode/overflowmenu/">
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+  </head>
+  <body class="page-overflow-menu layout-styleguide">
+    <div class="hide-base-svg">
+      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="add" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></symbol><symbol id="alert-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol><symbol id="angle-arrow-down-white" viewBox="0 0 24 24"><path fill="#fff" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-down" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-up" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></symbol><symbol id="arrow-left" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></symbol><symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5z"/></symbol><symbol id="check-box-checked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#1A1A1A" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm12.293 4.293l-6.921 6.921-3.665-3.664-1.414 1.414 5.079 5.079 8.335-8.336-1.414-1.414z"/></g></symbol><symbol id="check-box-disabled" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect width="16" height="16" x="4" y="4" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2" rx="2"/></g></symbol><symbol id="check-box-focus" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#FEBB30" d="M0 0h24v24H0V0z"/><rect width="16" height="16" x="4" y="4" fill="#FFF" stroke="#1A1A1A" stroke-width="2" rx="2"/></g></symbol><symbol id="check-box-unchecked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect width="16" height="16" x="4" y="4" fill="#FFF" stroke="#1A1A1A" stroke-width="2" rx="2"/></g></symbol><symbol id="check-circle-outline" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></symbol><symbol id="checkbox-blank-outline" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5h14z"/></symbol><symbol id="checkbox-marked" viewBox="0 0 24 24"><path d="M10 17l-5-5 1.41-1.42L10 14.17l7.59-7.59L19 8m0-5H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></symbol><symbol id="chevron-left" viewBox="0 0 24 24"><path d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.42z"/></symbol><symbol id="chevron-right" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></symbol><symbol id="close-circle-outline" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="close-circle" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#FFF" d="M13.414 12l2.314-2.314-1.414-1.414L12 10.586 9.686 8.272 8.272 9.686 10.586 12l-2.31 2.31 1.413 1.415L12 13.415l2.31 2.31 1.415-1.414L13.415 12zM12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></g></symbol><symbol id="close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></symbol><symbol id="content-save" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4z"/></symbol><symbol id="delete-outline" viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4z"/><path fill="none" d="M0 0h24v24H0V0z"/></symbol><symbol id="delete" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12z"/></symbol><symbol id="dots-vertical" viewBox="0 0 24 24"><path d="M12 16a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z"/></symbol><symbol id="download" viewBox="0 0 24 24"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"/><path fill="none" d="M0 0h24v24H0z"/></symbol><symbol id="error" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="file" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><g><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></g></symbol><symbol id="help-circle-outline" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4z"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></symbol><symbol id="language" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.08 16zm2.95-8H5.08a7.987 7.987 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></symbol><symbol id="magnify" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></symbol><symbol id="menu-down" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></symbol><symbol id="menu-left" viewBox="0 0 24 24"><path d="M14 7l-5 5 5 5V7z"/></symbol><symbol id="menu-right" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5v10z"/></symbol><symbol id="menu-up" viewBox="0 0 24 24"><path d="M7 15l5-5 5 5H7z"/></symbol><symbol id="minus" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></symbol><symbol id="open-in-new" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></symbol><symbol id="pencil" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol><symbol id="printer" viewBox="0 0 24 24"><path d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3z"/></symbol><symbol id="radio-disabled" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2"/></g></symbol><symbol id="radio-focused" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#FFF" stroke="#1A1A1A" stroke-linejoin="square" stroke-width="2"/><circle cx="12" cy="12" r="10.5" stroke="#FEBB30" stroke-width="3"/></g></symbol><symbol id="radio-marked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><g stroke-linejoin="square"><circle cx="12" cy="12" r="6.5" fill="#1A1A1A" stroke="#FFF" stroke-width="5"/><circle cx="12" cy="12" r="8" stroke="#1A1A1A" stroke-width="2"/></g></g></symbol><symbol id="radio-unmarked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#FFF" stroke="#1A1A1A" stroke-width="2"/></g></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></symbol><symbol id="save" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></symbol><symbol id="sort-acending" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#1A1A1A" d="M6 13l6 6 6-6z"/><path stroke="#1A1A1A" d="M16.793 10.5L12 5.707 7.207 10.5h9.586z"/></g></symbol><symbol id="sort-descending" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path stroke="#1A1A1A" d="M7.207 13.5L12 18.293l4.793-4.793H7.207z"/><path fill="#1A1A1A" d="M18 11l-6-6-6 6z"/></g></symbol><symbol id="sort-none" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M7.207 13.5L12 18.293l4.793-4.793H7.207zm9.586-3L12 5.707 7.207 10.5h9.586z" stroke="#1A1A1A"/></g></symbol><symbol id="success" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="warning" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol></svg>       </div>
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+
+
+<header class="header header-extended" role="banner">
+     <!--2A: Solutiuon header -->
+    <div class="solution-header">
+      <div class="solution-header-inner container">
+        <div class="solution-heading">
+            <a href="/frontend-styleguide/" title="Home" aria-label="Home">Frontend Styleguide</a>
+        </div>
+        <button class="button button-secondary button-menu-open js-menu-open ml-auto" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+    <nav role="navigation" class="nav"> <!-- collapsible-->
+      <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
+      <!-- 3: Main navigation-->
+      <div class="navbar navbar-primary">
+        <!--3A: Main navigation-->
+        
+        <div class="navbar-inner container">
+          <ul class="nav-primary">
+            
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/" 
+  class="  nav-link">
+  <span>Design og kode</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/page-templates/" 
+  class="  nav-link">
+  <span>Eksempler</span>
+</a>
+
+
+    
+  </li>
+
+
+          </ul>
+
+          <!-- 3B: Main navigation - secondary menu-->
+          <ul class="unstyled-list nav-actions">
+            <li>
+              <select class="form-select style-switcher" name="Style switcher" aria-label="Skift mellem temaer">
+                <option value="">- Vælg tema -</option>
+                <option value="styleguide">Tema: Neutralt</option>
+                <option value="virkdk">Tema: Virk.dk</option>
+                <option value="borgerdk">Tema: Borger.dk</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 3: Main navigation end-->
+      
+    </nav> <!-- collapsible nav end-->
+</header>
+
+<main class="container page-container">
+  <div class="row">
+
+    <div class="col-12 col-md-3 sidebar-col">
+      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
+      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
+        
+        
+        <ul class="sidenav-list">
+          
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/" 
+  class="  nav-link">
+  <span>Overblik</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/accessibility/" 
+  class="  nav-link">
+  <span>Tilgængelighed</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/typography/" 
+  class="  nav-link">
+  <span>Typografi</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/colors/" 
+  class="  nav-link">
+  <span>Farver</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/ikoner/" 
+  class="  nav-link">
+  <span>Ikoner</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/kanter/" 
+  class="  nav-link">
+  <span>Kanter, streger og skygger</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/grids/" 
+  class="  nav-link">
+  <span>Grid</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/buttons/" 
+  class="  nav-link">
+  <span>Knapper</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tags/" 
+  class="  nav-link">
+  <span>Tags</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/accordions/" 
+  class="  nav-link">
+  <span>Accordions</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/beskeder/" 
+  class="  nav-link">
+  <span>Beskeder (Alerts)</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/cards/" 
+  class="  nav-link">
+  <span>Cards</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/form-controls/" 
+  class="  nav-link">
+  <span>Formular elementer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/search/" 
+  class="  nav-link">
+  <span>Søg</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/badges/" 
+  class="  nav-link">
+  <span>Badges</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tables/" 
+  class="  nav-link">
+  <span>Tabeller</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tekstelementer/" 
+  class="  nav-link">
+  <span>Tekstelementer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/trinindikatorer/" 
+  class="  nav-link">
+  <span>Trinindikatorer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/sidenav/" 
+  class="  nav-link">
+  <span>Sidenavigation</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tabnav/" 
+  class="  nav-link">
+  <span>Faneblade</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/spinner/" 
+  class="  nav-link">
+  <span>Spinner</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/overflowmenu/" 
+  class="current  active  nav-link">
+  <span>Overflow menu</span>
+</a>
+
+  
+    
+    
+    
+    
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/modals/" 
+  class="  nav-link">
+  <span>Modalvinduer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tooltip/" 
+  class="  nav-link">
+  <span>Tooltip</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/collapse/" 
+  class="  nav-link">
+  <span>Skjul og vis (Collapse)</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/headers/" 
+  class="  nav-link">
+  <span>Headers</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/footers/" 
+  class="  nav-link">
+  <span>Footers</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/select2-multiselect/" 
+  class="  nav-link">
+  <span>Multiselect dropdown</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/datatables/" 
+  class="  nav-link">
+  <span>Datatabeller</span>
+</a>
+
+
+    
+  </li>
+
+
+        </ul>
+        
+      </nav>
+    </div>    
+
+    <div class="col-12 col-md-9">
+      <section id="section-/designandcode/overflowmenu">
+        <header>
+          <p class="small-text m-0 uppercase">
+            Design og kode
+          </p>
+          <h1 class="mt-0" id="overflow-menu">Overflow menu</h1>
+        </header>
+        
+          <p class="font-lead">Toggle overlay with lists of links or buttons.</p>
+        
+      
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/overflow-menu" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/overflow-menu"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-overflow-menu">Kode</button>
+  <div id="code-overflow-menu" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container pt-6"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Overflow menu<span class="nt">&lt;/h5&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu  overflow-menu--open-right "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-overflow-menu js-dropdown "</span> <span class="na">data-js-target=</span><span class="s">"#overflow1"</span>
+            <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            Overflow menu
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#dots-vertical"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Åbner overflow menu<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-inner"</span> <span class="na">id=</span><span class="s">"overflow1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">'overflow-list'</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;button&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;button&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span><span class="nt">&gt;</span>Option 3 as link<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;button&gt;</span>Option 4 is longer text<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"padding-bottom: 50px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Overflow menu - åbner til venstre<span class="nt">&lt;/h5&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"padding-left: 100px;"</span><span class="nt">&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu  overflow-menu--open-left "</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-overflow-menu js-dropdown "</span> <span class="na">data-js-target=</span><span class="s">"#overflow2"</span>
+                <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+                Overflow menu
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#dots-vertical"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Åbner overflow menu<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-inner"</span> <span class="na">id=</span><span class="s">"overflow2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">'overflow-list'</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                        <span class="nt">&lt;button&gt;</span>Option 1<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                        <span class="nt">&lt;button&gt;</span>Option 2<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span><span class="nt">&gt;</span>Option 3 as link<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>
+                        <span class="nt">&lt;button&gt;</span>Option 4 is longer text<span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"padding-bottom: 50px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Overflow menu - trin-guide<span class="nt">&lt;/h5&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu  overflow-menu--open-right "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-overflow-menu js-dropdown "</span> <span class="na">data-js-target=</span><span class="s">"#overflow3"</span>
+            <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            Trin 3 af 5
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#menu-down"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Åbner overflow menu<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu-inner"</span> <span class="na">id=</span><span class="s">"overflow3"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">'sidenav-list'</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span><span class="nt">&gt;</span>
+                        1. Trin 1
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sidenav-icon'</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">'icon-svg'</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">'#check'</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span><span class="nt">&gt;</span>
+                        2. Trin 2
+                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">'sidenav-icon'</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">'icon-svg'</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">'#check'</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                        <span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span> <span class="na">class=</span><span class="s">'active'</span><span class="nt">&gt;</span>
+                        3. Trin 3 (valgt)
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span><span class="nt">&gt;</span>
+                        4. Trin 4
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'#'</span><span class="nt">&gt;</span>
+                        5. Trin 5
+                    <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"padding-bottom: 240px;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="overflow-docs">
+    Kode dokumentation
+  </button>
+  <div id="overflow-docs" aria-hidden="false" class="accordion-content">
+    <p>Følgende aria tags styrer hvorvidt menuen er foldet ud:</p>
+    <ul>
+      <li>Button: <code>aria-expanded="false"</code></li>
+      <li>Overflow menu: <code>aria-hidden="true"</code></li>
+    </ul>
+    <p>Følgende klasser styrer i hvilken retning menuen skal folde ud:</p>
+    <ul>
+      <li>Venstre: <code>.overflow-menu--open-left</code></li>
+      <li>Højre: <code>.overflow-menu--open-right</code></li>
+    </ul>
+    <p>Der er lavet et specifikt liste element til overflow-menuen (se <code>.overflow-list</code>) som kan indeholder links eller buttons. Det er dog ikke nødvendigt at benytte denne liste. Overflow-menuen er bare en container hvor man kan placere det indhold man nu har lyst til. I eksemplet ovenfor er en trin-guide indsat i overflow-menuen.</p>
+    <h6>Javascript</h6>
+    <p>Initializer collapse/expand javascript med at placere følgende på button elementet: <code>class="js-dropdown" data-js-target="#overflow1"</code>
+    Elementet som skal collapses/expandes skal have et matchende id <code>id="overflow1"</code> (placeres på <code>.overflow-menu-inner</code>)</p>
+  </div>
+</div>
+
+      </section>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+            <ul class="unstyled-list">
+              <li><p class="h6 semibold" title="Ansvarlig myndighed" aria-label="Ansvarlig myndighed">Ansvarlig myndighed</p></li>
+            </ul>
+            <ul class="unstyled-list">
+              <li><p>Erhvervsstyrelsen og Digitaliseringsstyrelsen</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+           
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+           
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+            <ul class="unstyled-list">
+              <li><p class="h6 semibold"  title="Skriftlig kontakt" aria-label="Skriftlig kontakt">Bidrag til arbejdet</p></li>
+            </ul>
+            <ul class="unstyled-list">
+              <li><p><a class="function-link" href="https://github.com/FSGpilot/frontend-styleguide">Github repository</a></p></li>
+            </ul>
+            <ul class="unstyled-list">
+              <li><p>Opret gerne issues hvis du har spørgsmål eller finder fejl i systemt.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+<script src="/frontend-styleguide/assets/js/vendor/dkwds-vendor-examples.js"></script>
+
+  </body>
+</html>

@@ -12,11 +12,10 @@ lead: Toggle overlay with lists of links or buttons.
 {% include code/accordion.html component="overflow-menu" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="label-docs">
-    Dokumentation
+      aria-expanded="true" aria-controls="overflow-docs">
+    Kode dokumentation
   </button>
-  <div id="label-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
+  <div id="overflow-docs" aria-hidden="false" class="accordion-content">
     <p>Følgende aria tags styrer hvorvidt menuen er foldet ud:</p>
     <ul>
       <li>Button: <code>aria-expanded="false"</code></li>
