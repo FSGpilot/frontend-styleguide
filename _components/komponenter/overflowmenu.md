@@ -1,10 +1,10 @@
 ---
-permalink: /components/komponenter/overflowmenu/
+permalink: /designandcode/overflowmenu/
 layout: styleguide
 type: component
 title: Overflow menu
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Toggle overlay with lists of links or buttons.
 ---
 
@@ -13,7 +13,7 @@ lead: Toggle overlay with lists of links or buttons.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="label-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="label-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

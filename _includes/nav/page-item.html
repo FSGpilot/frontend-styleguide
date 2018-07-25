@@ -1,7 +1,12 @@
 {% include nav/current.html page=include.page %}
+
+{% assign titletext = include.page.title  %}
+{% if include.is_sidenav and include.text %}
+  {% assign titletext = include.text %}
+{% endif %}
 <a href="{{ include.page.url | relative_url }}" 
   class="{% if _current -%}current {% endif %} {%  if _active -%}active {% endif %} nav-link">
-  <span>{{ include.page.title | smartify }}</span>
+  <span>{{ titletext | smartify }}</span>
 </a>
 {% if _current -%}
   {% unless include.flat -%}

@@ -10,7 +10,7 @@ lead: Tables show tabular data in columns and rows.
 
 <!-- 
 <div class="accordion-bordered accordion-docs">
-    <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="datatable-docs">Documentation</button>
+    <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="datatable-docs">Dokumentation</button>
     <div id="datatable-docs" aria-hidden="false" class="accordion-content">
         <h4>SCSS classes</h4>
         <p>Each part of the datatable has a scss-class which defines its style and behaviour. All necessary classes are listed in the tables below.</p>

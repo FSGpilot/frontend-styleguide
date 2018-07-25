@@ -1,12 +1,12 @@
 ---
-permalink: /components/fundament/grids/
+permalink: /designandcode/grids/
 redirect_from:
 - /grids/
 layout: styleguide
 type: component
-title: Grids
+title: Grid
 category: UI components
-subcategory: Partikler - Retningslinjer
+subcategory: Design og kode
 lead: Frontend Styleguiden benytter Boostrap's mobile-first flexbox grid til opbygning af sider. Gridsystemet er et standard 12-kolonne system, med fem responsive breakpoints.
 subnav:
 - text: Introduktion
@@ -65,42 +65,3 @@ subnav:
         </div>
     </div>
 </section>
-
-<style scoped>
-    .highlight {
-        padding: 3px 6px;
-        background-color: #eee;
-        border-radius: 4px;
-        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        font-size: 90%;
-        color: #bd4147;
-    }
-    pre {
-        display: block;
-        padding: 0;
-        margin-top: 15px;
-        margin-bottom: 0;
-        word-break: normal;
-        white-space: nowrap;
-        background-color: transparent;
-        border: 0;
-        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        font-size: 98%;
-        color: #212529;
-    }
-    code {
-        padding: 0;
-        background-color: transparent;
-        border-radius: 0;
-        font-family: inherit;
-        font-size: 90%;
-        color: inherit;
-        word-break: break-all;
-        word-wrap: break-word;
-        white-space: pre-wrap;
-    }
-    .hljs {
-        background: #eee;
-        padding: 2.4rem;
-    }
-</style>

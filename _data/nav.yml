@@ -1,30 +1,51 @@
 primary:
-  - href: /components/
+  - href: /designandcode/
   - href: /page-templates/
   - href: /getting-started/
   - href: /faellesoffentlige-krav/
   - href: /whats-new/
 
 mobile:
-  - href: /components/
-    collapsible: true
+  - href: /designandcode/
   - href: /page-templates/
-  - href: /getting-started/
-    collapsible: true
-  - href: /faellesoffentlige-krav/
-  - href: /whats-new/
-    collapsible: true
+#  - href: /getting-started/
+#  - href: /faellesoffentlige-krav/
+#  - href: /whats-new/
 
 UI components:
-  - text: Overview
-    href: /components/
-  - href: /components/fundament/
-  - href: /components/styling/
-  - href: /components/komponenter/
-  - href: /components/strukturer/
+  - text: Overblik
+    href: /designandcode/
+  - href: /designandcode/accessibility/
+  - href: /designandcode/typography/
+  - href: /designandcode/colors/
+  - href: /designandcode/ikoner/
+  - href: /designandcode/kanter/
+  - href: /designandcode/grids/
+  - href: /designandcode/buttons/
+  - href: /designandcode/tags/
+  - href: /designandcode/accordions/
+  - href: /designandcode/beskeder/
+  - href: /designandcode/cards/
+  - href: /designandcode/form-controls/
+  - href: /designandcode/search/
+  - href: /designandcode/badges/
+  - href: /designandcode/tables/
+  - href: /designandcode/tekstelementer/
+  - href: /designandcode/trinindikatorer/
+  - href: /designandcode/sidenav/
+  - href: /designandcode/tabnav/
+  - href: /designandcode/spinner/
+  - href: /designandcode/overflowmenu/
+  - href: /designandcode/modals/
+  - href: /designandcode/tooltip/
+  - href: /designandcode/collapse/
+  - href: /designandcode/headers/
+  - href: /designandcode/footers/
+  - href: /designandcode/select2-multiselect/
+  - href: /designandcode/datatables/
 
 Getting started:
-  - text: Overview
+  - text: Overblik
     href: /getting-started/
   - href: /getting-started/developers/
   - href: /getting-started/designers/
@@ -38,7 +59,7 @@ Page templates:
   - href: /page-templates/
 
 What’s new:
-  - text: Overview
+  - text: Overblik
     href: /whats-new/
   - href: /whats-new/releases/
   - href: /whats-new/updates/

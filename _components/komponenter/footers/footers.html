@@ -1,9 +1,9 @@
 ---
-permalink: /components/strukturer/footers/
+permalink: /designandcode/footers/
 layout: styleguide-wide
 title: Footers
 category: UI components
-subcategory: Strukturer (organismer)
+subcategory: Design og kode
 lead: En footer har til formål at betjene brugere, som når til siden bund uden at finde det de søgte
 subnav:
 - text: Accessibility
@@ -25,7 +25,7 @@ subnav:
 ---
 
 
-<main class="section" id="main-content">
+<main class="section">
   <div class="container">
     <div class="row">
       <div class="col-3">
@@ -47,7 +47,7 @@ subnav:
           {% if page.lead != null %}
             <p class="font-lead">{{ page.lead }}</p>
           {% endif %}
-          <h3 class="heading">Implementation</h3>
+          <h3>Implementation</h3>
           <p></p>
           <ul class="content-list">
             <li>Der er syv forskellige typer af footers:
@@ -68,7 +68,7 @@ subnav:
             <li>Alle ul's har en margin i bunden, pånær den sidste ul i hver kolonne.</li>
             <li>Alle kolonner har en <code>.footer-col</code> class, der styrer margin mellem kolonner i mobil.</li>
           </ul>
-          <h2 class="heading heading-margin-alt"  id="accessibility">Accessibility</h2>
+          <h2 id="accessibility">Accessibility</h2>
           <ul class="content-list">
             <li>Include skip navigation links to allow users with screen readers to bypass long navigation lists. Make sure you include an id at the beginning of your main content and that it matches the skipnav link. Find more information here: <a href="http://webaim.org/techniques/skipnav/">http://webaim.org/techniques/skipnav/</a></li>
             <li>Include Tab focus for all top-level navigation navigation items — this will allow keyboard-reliant users to easily navigate interactive items.</li>
@@ -81,7 +81,7 @@ subnav:
             <li>If you’re using a logo that’s text, use an <code>em</code>, not an <code>h1</code>, unless it’s the homepage. Find more information here: <a href="http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/">http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/</a></li>
           </ul>
 
-          <h3 class="heading">Usability</h3>
+          <h3>Usability</h3>
           <h4>When to use</h4>
           <ul class="content-list">
             <li>We recommend that all federal government sites include the “official government site” banner and a logo or site name.</li>
@@ -117,7 +117,7 @@ subnav:
       </div>
 
       <div class="col-12 col-sm-9 content">
-        <h2 class="h2" id="footer-basic">Footer basic</h2>
+        <h2 id="footer-basic">Footer basic</h2>
         <div class="preview">
           <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-basic/">
             <img src="{{ site.baseurl }}/assets/img/footers/footer-basic.PNG" alt="Footer basic">
@@ -126,7 +126,7 @@ subnav:
         </div>
         {% include code/accordion.html component="footer-basic" %}
 
-        <h2 class="h2" id="footer-two-line">Footer med to linjer</h2>
+        <h2 id="footer-two-line">Footer med to linjer</h2>
         <div class="preview">
           <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-two-line/">
             <img src="{{ site.baseurl }}/assets/img/footers/footer-two-line.PNG" alt="Footer two-line">
@@ -135,7 +135,7 @@ subnav:
         </div>
         {% include code/accordion.html component="footer-two-line" %}
 
-        <h2 class="h2" id="footer-header">Footer med header</h2>
+        <h2 id="footer-header">Footer med header</h2>
         <div class="preview">
           <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-header/">
             <img src="{{ site.baseurl }}/assets/img/footers/footer-header.PNG" alt="Footer med header">
@@ -144,7 +144,7 @@ subnav:
         </div>
         {% include code/accordion.html component="footer-header" %}
 
-        <h2 class="h2" id="footer-header-ext-support">Footer med header og udvidet support</h2>
+        <h2 id="footer-header-ext-support">Footer med header og udvidet support</h2>
         <div class="preview">
           <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-header-ext-support/">
             <img src="{{ site.baseurl }}/assets/img/footers/footer-header-ext-support.PNG" alt="Footer med header og udvidet support">
@@ -153,7 +153,7 @@ subnav:
         </div>
         {% include code/accordion.html component="footer-header-ext-support" %}
 
-        <h2 class="h2" id="footer-header-links-ext-support">Footer med header, links og udvidet support</h2>
+        <h2 id="footer-header-links-ext-support">Footer med header, links og udvidet support</h2>
         <div class="preview">
           <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-header-links-ext-support/">
             <img src="{{ site.baseurl }}/assets/img/footers/footer-header-links-ext-support.PNG" alt="Footer med header, links og udvidet support">
@@ -162,7 +162,7 @@ subnav:
         </div>
         {% include code/accordion.html component="footer-header-links-sim-support" %}
 
-         <h2 class="h2" id="footer-header-links-sim-support">Footer med header, links og simpel support</h2>
+         <h2 id="footer-header-links-sim-support">Footer med header, links og simpel support</h2>
         <div class="preview">
           <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-header-links-sim-support/">
             <img src="{{ site.baseurl }}/assets/img/footers/footer-header-links-sim-support.PNG" alt="Footer med header, links og simpel support">
@@ -171,7 +171,7 @@ subnav:
         </div>
         {% include code/accordion.html component="footer-header-links-sim-support" %}
 
-        <h2 class="h2" id="footer-logo">Footer med logo</h2>
+        <h2 id="footer-logo">Footer med logo</h2>
         <div class="preview">
           <a class="media_link" href="{{ site.baseurl }}/components/footers/footer-logo/">
             <img src="{{ site.baseurl }}/assets/img/footers/footer-logo.PNG" alt="Footer med logo">

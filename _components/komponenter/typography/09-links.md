@@ -15,7 +15,7 @@ order: 07
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="link-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="link-docs" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

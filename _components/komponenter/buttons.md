@@ -1,10 +1,10 @@
 ---
-permalink: /components/komponenter/buttons/
+permalink: /designandcode/buttons/
 layout: styleguide
 type: element
 title: Knapper
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Use buttons to signal actions.
 ---
 
@@ -13,7 +13,7 @@ lead: Use buttons to signal actions.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="accordion-bordered-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="accordion-bordered-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

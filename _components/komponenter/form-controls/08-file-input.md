@@ -11,7 +11,7 @@ lead: A control that lets the user select a file.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="date-input-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="date-input-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

@@ -1,10 +1,10 @@
 ---
-permalink: /components/komponenter/trinindikatorer/
+permalink: /designandcode/trinindikatorer/
 layout: styleguide
 type: component
 title: Trinindikatorer
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: "Der findes tre varianter af tringuides: den tvungne, den klikbare og den betingede tringuide. De to første er designmæssigt identiske, og adskiller sig kun ved at brugeren med den tvungne tringuide begrænses fra at trykke på menupunkter, der ikke ligger i direkte forlængelse af det aktuelle trin. Trinindikatoren fortæller både, hvor langt brugeren er kommet i forløbet, og om de enkelte trin er godkendt eller ej.
 
 Det er et bærende princip for trinindikationen, at brugeren orienterer sig vertikalt nedad, ligesom siderne i en tringuide bør designes, så brugeren bevæger sig nedad siden, der sagtens kan være længere end det område, der umiddelbart vises på skærmen."
@@ -15,7 +15,7 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
   <h4 class="heading">Implementering</h4>

@@ -1,10 +1,10 @@
 ---
-permalink: /components/komponenter/search/
+permalink: /designandcode/search/
 layout: styleguide
 type: component
-title: Search bar
+title: Søg
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: A block that allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation
 ---
 
@@ -13,7 +13,7 @@ lead: A block that allows users to search for specific content if they know what
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="search-bar-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="search-bar-docs" aria-hidden="false" class="accordion-content">
       <h4 class="heading">Implementation</h4>

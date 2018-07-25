@@ -1,12 +1,12 @@
 ---
-permalink: /components/komponenter/tables/
+permalink: /designandcode/tables/
 redirect_from:
 - /tables/
 layout: styleguide
 type: component
-title: Tables
+title: Tabeller
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Tables show tabular data in columns and rows.
 subnav:
 - text: Standard

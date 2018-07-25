@@ -10,7 +10,7 @@ lead: A standard template for collecting a person’s full name
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="name-form-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="name-form-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

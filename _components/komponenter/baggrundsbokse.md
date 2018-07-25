@@ -1,10 +1,10 @@
 ---
-permalink: /components/komponenter/baggrundsbokse/
+permalink: /designandcode/baggrundsbokse/
 layout: styleguide
 type: component
 title: Baggrundsbokse
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Baggrundsbokse are a list of headers that can be clicked to hide or reveal additional content.
 ---
 
@@ -13,7 +13,7 @@ lead: Baggrundsbokse are a list of headers that can be clicked to hide or reveal
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="true" aria-controls="documentation">
-    Documentation
+    Dokumentation
   </button>
   <div id="documentation" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

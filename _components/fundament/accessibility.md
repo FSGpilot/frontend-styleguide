@@ -1,18 +1,18 @@
 ---
-permalink: /components/fundament/accessibility/
+permalink: /designandcode/accessibility/
 layout: styleguide
 title: Tilgængelighed
 category: UI components
-subcategory: Partikler - Retningslinjer
+subcategory: Design og kode
 lead: Offentlige myndigheders hjemmesider og selvbetjeningsløsninger, skal leve op til visse tilgængelighedsstandarder. Disse standarder er med til at sikre, at løsningen er brugbar for alle  - inklusive brugere med nedsat syn, blindhed, nedsat hørelse, cognitive hæmninger og motoriske hæmninger. 
 order: 25
 ---
 
 Standarden for tilgængelighed hedder WCAG 2.0, og den er inddelt i 3 niveauer: A, AA og AAA.Det er besluttet at vi i Danmark skal leve op til niveau AA. 
 
-For hvert menupunkt i [komponentbiblioteket]({{site.baseurl}}/components/komponenter), vil retningslinjer for tilgængelighed være specificeret yderligere. 
+For hvert menupunkt i [komponentbiblioteket]({{site.baseurl}}/designandcode), vil retningslinjer for tilgængelighed være specificeret yderligere. 
 
-## GØR DIN LØSNING OPFATTELIGT
+## Gør din løsning tilgængelig
 
 Indholdet på siden skal kunne opfattes af alle typer brugere. Dette betyder blandt bl.a:
 
@@ -23,7 +23,7 @@ Indholdet på siden skal kunne opfattes af alle typer brugere. Dette betyder bla
 
 
 
-## GØR DIN LØSNING ANVENDELIG
+## Gør din løsning anvendelig
 
 Navigation og elementer i din brugerflade skal kunne bruges af de fleste.Dette betyder blandt bl.a at:
 
@@ -34,7 +34,7 @@ Navigation og elementer i din brugerflade skal kunne bruges af de fleste.Dette b
 
 
 
-## GØR DIN LØSNING ROBUST
+## Gør din løsning robust
 
 Koden til løsningen skal laves sådan, at forskellige teknologier og programmer (fx browsere og skærmlæsere) kan aflæse indholdet nogenlunde pålideligt. Dette betyder blandt bl.a at:
 
@@ -44,7 +44,7 @@ Koden til løsningen skal laves sådan, at forskellige teknologier og programmer
 
 
 
-## GØR DIN LØSNING FORSTÅELIG
+## Gør din løsning forståelig
 
 Både indholdet i din selvbetjeningsløsning og interaktionen med den skal være forståelig for brugeren. Dette betyder blandt bl.a at:
 
@@ -55,7 +55,7 @@ Både indholdet i din selvbetjeningsløsning og interaktionen med den skal være
 Læs mere om de enkelte punkter [her](http://arkitekturguiden.digitaliser.dk/godselvbetjening/kravbanken/Tilg%C3%A6ngelighed ) 
 
 
-## LINKS OM TILGÆNGELIGHED
+## Links om tilgængelighed
 
 - Web Content Accessibility Guidelines (WCAG) 2.0
 

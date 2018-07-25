@@ -10,7 +10,7 @@ lead: Radio buttons allow users to see all available choices at once and select 
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="radio-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="radio-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

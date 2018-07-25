@@ -1,12 +1,12 @@
 ---
-permalink: /components/komponenter/form-controls/
+permalink: /designandcode/form-controls/
 redirect_from:
 - /form-controls/
 layout: styleguide
 type: component
-title: Form controls
+title: Formular elementer
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Form controls allow users to enter information into a page.
 subnav:
 - text: Text inputs and area

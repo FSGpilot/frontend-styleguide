@@ -1,10 +1,10 @@
 ---
-permalink: /components/komponenter/modals/
+permalink: /designandcode/modals/
 layout: styleguide
 type: component
-title: Modals
+title: Modalvinduer
 category: UI components
-subcategory: Strukturer (organismer)
+subcategory: Design og kode
 lead: Modals lead.
 ---
 
@@ -13,7 +13,7 @@ lead: Modals lead.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="modal-docs">
-    Documentation
+    Dokumentation
   </button>
   <div id="modal-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>

@@ -1,10 +1,10 @@
 ---
-permalink: /components/komponenter/tekstelementer/
+permalink: /designandcode/tekstelementer/
 layout: styleguide
 type: element
 title: Tekstelementer
 category: UI components
-subcategory: Komponenter
+subcategory: Design og kode
 lead: Tekstelementer show tabular data in columns and rows.
 ---
 
