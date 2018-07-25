@@ -178,7 +178,7 @@
 
                     <ul class="sidenav-list">
                         <li>
-                            <a href="example-aes-page-1">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-1">
                                 1. Trin 1
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -186,7 +186,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-2">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-2">
                                 2. Trin 2
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -194,7 +194,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-3">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-3">
                                 3. Trin 3
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -202,7 +202,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-4">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-4">
                                 4. Trin 4
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -210,7 +210,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-5">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-5">
                                 5. Trin 5
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -218,7 +218,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-6">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-6">
                                 6. Trin 6
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -226,17 +226,17 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-7" class="active">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-7" class="active">
                                 7. Trin 7
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-8">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-8">
                                 8. Trin 8
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-9">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-9">
                                 9. Trin 9
                             </a>
                         </li>
@@ -250,10 +250,79 @@
                 <div class="mt-0">
 
                     <div class="form-group">
-                        <input id="id-documentation-1" type="checkbox" name="Oplysninger om varigt mén" value="Oplysninger om varigt mén" class=" checkbox-large" checked="" />
-                        <label for="id-documentation-1" class="">Oplysninger om varigt mén</label>
+                        <input id="id-documentation-1" type="checkbox" name="Oplysninger om varigt mén" value="Oplysninger om varigt mén" class=" checkbox-large" />
+                        <label for="id-documentation-1" class="js-collapse" data-js-target="#collapse-check" aria-controls="collapse-check" aria-expanded="false">Oplysninger om varigt mén</label>
                     </div>
 
+                    <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+                            <button href="example-aes-page-8" class="button button-secondary mt-4">Tilføj dokument</button>
+                            <table class="table table--borderless table--compact table--responsive-headers mt-5">
+                                <thead>
+                                    <tr>
+                                        <th>Filnavn</th>
+                                        <th>Navngiv dokument</th>
+                                        <th>Kommentar (frivilligt)</th>
+                                        <th>Slet dokument</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <svg class="icon-svg "><use xlink:href="#file"></use></svg>                                            prn1023152_attest.pdf
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label" for="Navngiv dokument"></label>
+                                                <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype">
+                                                    <option value="">- Vælg -</option>
+
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label " for="id-documentation-1-expanded"></label>
+                                                <textarea class="form-input textarea input-width-400" placeholder="" id="id-documentation-1-expanded" name="Kommentar" type="text"></textarea>
+                                            </div>
+
+                                        </td>
+                                        <td class="table-text-right mt-4 mt-lg-0">
+                                            <a href="#" class="function-link link-right">
+                                                <svg class="icon-svg "><use xlink:href="#delete-outline"></use></svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mt-4 mt-lg-0">
+                                            <svg class="icon-svg "><use xlink:href="#file"></use></svg>                                            sgn1023152_attest.pdf
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label" for="Navngiv dokument"></label>
+                                                <select class=" form-select" name="Navngiv dokument" id="select-dokumentationdtype">
+                                                    <option value="">- Vælg -</option>
+
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="mt-4 mt-lg-0">
+                                            <div class="form-group">
+                                                <label class="form-label " for="id-documentation-1-expanded"></label>
+                                                <textarea class="form-input textarea input-width-400" placeholder="" id="id-documentation-1-expanded" name="Kommentar" type="text"></textarea>
+                                            </div>
+
+                                        </td>
+                                        <td class="table-text-right mt-4 mt-lg-0">
+                                            <a href="#" class="function-link link-right">
+                                                <svg class="icon-svg "><use xlink:href="#delete-outline"></use></svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
                 <div class="mt-3">
 
@@ -271,9 +340,9 @@
                     </div>
 
                 </div>
-                <a href="example-aes-page-8" class="button button-primary mt-7">Næste</a>
+                <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-8" class="button button-primary mt-7">Næste</a>
                 <div class="breadcrumb">
-                    <a href="example-aes-page-6" class="button button-ghost">Tilbage</a>
+                    <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-6" class="button button-ghost">Tilbage</a>
                 </div>
             </div>
         </div>
@@ -284,26 +353,26 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 footer-col">
-                    <div class="align-left">
+                <div class="col-12 col-sm-12 col-md-6 footer-col">
+                    <div class=" align-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold" title="Ansvarlig myndighed" aria-label="Ansvarlig myndighed">Undervisningsministeriet</span>
+                                <span class="h6 weight-semibold">Ministeriet for Eksempel</span>
                             </li>
                             <li>
-                                <p>Styrelsen for IT og læring</p>
+                                <p>Styrelsen for Eksempel</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 footer-col">
-                    <div class="align-right">
+                <div class="col-12 col-sm-12 col-md-6 footer-col">
+                    <div class=" align-right ">
                         <ul class="unstyled-list">
                             <li>
-                                <a class="function-link" href="mailto:support@stil.dk">support@stil.dk</a>
+                                <a class="" href="mailto:support@example.dk">support@example.dk</a>
                             </li>
                             <li>
-                                <a class="function-link" href="tel:004533925200">(+45) 33 92 52 00</a>
+                                <a class="" href="tel:12 34 56 78">12 34 56 78</a>
                             </li>
                         </ul>
                     </div>

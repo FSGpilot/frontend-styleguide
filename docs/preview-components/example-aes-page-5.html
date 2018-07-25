@@ -178,7 +178,7 @@
 
                     <ul class="sidenav-list">
                         <li>
-                            <a href="example-aes-page-1">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-1">
                                 1. Trin 1
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -186,7 +186,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-2">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-2">
                                 2. Trin 2
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -194,7 +194,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-3">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-3">
                                 3. Trin 3
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -202,7 +202,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-4">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-4">
                                 4. Trin 4
                                 <span class="sidenav-icon">
                                     <svg class="icon-svg"><use xlink:href="#check"></use></svg>
@@ -210,27 +210,27 @@
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-5" class="active">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-5" class="active">
                                 5. Trin 5
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-6">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-6">
                                 6. Trin 6
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-7">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-7">
                                 7. Trin 7
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-8">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-8">
                                 8. Trin 8
                             </a>
                         </li>
                         <li>
-                            <a href="example-aes-page-9">
+                            <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-9">
                                 9. Trin 9
                             </a>
                         </li>
@@ -284,15 +284,55 @@
                 <div class="mt-6">
 
                     <div class="form-group">
-                        <input id="id-retssag" type="checkbox" name="Der verserer en retssag" value="Der verserer en retssag" class=" checkbox-large" checked="" />
-                        <label for="id-retssag" class="">Der verserer en retssag</label>
+                        <input id="id-retssag" type="checkbox" name="Der verserer en retssag" value="Der verserer en retssag" class=" checkbox-large" />
+                        <label for="id-retssag" class="js-collapse" data-js-target="#collapse-check" aria-controls="collapse-check" aria-expanded="false">Der verserer en retssag</label>
                     </div>
 
+                    <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
+                        <div class="py-4">
+
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="form-label">Berammelsesdato</label>
+                                    <span class="input-error-message" id="input-error-message-input-error" role="alert"></span>
+                                    <span class="form-hint">Fx. 28 04 1996</span>
+                                    <div class="date-group js-calendar-group mt-3">
+                                        <div class="form-group form-group-day">
+                                            <label class="form-label" for="date_of_day_2">Dato</label>
+                                            <input class="form-input js-calendar-day-input" type="tel" min="1" max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på månenden som tal" />
+                                        </div>
+                                        <div class="form-group form-group-month">
+                                            <label class="form-label" for="date_of_month_1">Måned</label>
+                                            <input class="form-input js-calendar-month-input" type="tel" min="1" max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                                        </div>
+                                        <div class="form-group form-group-year ">
+                                            <label class="form-label" for="date_of_year_3">År</label>
+                                            <input class="form-input js-calendar-year-input" type="tel" min="1900" max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                                        </div>
+                                        <button class="button-unstyled button-open-calendar js-calendar-datepicker">
+
+                                            <svg class="icon-svg "><use xlink:href="#calendar"></use></svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="mt-5">
+
+                                <div class="form-group">
+                                    <input id="id-berammet" type="checkbox" name="Ikke berammet" value="Ikke berammet" class=" checkbox-large" />
+                                    <label for="id-berammet" class="">Ikke berammet</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <a href="example-aes-page-6" class="button button-primary mt-7">Næste</a>
+                <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-6" class="button button-primary mt-7">Næste</a>
                 <div class="breadcrumb">
-                    <a href="example-aes-page-4" class="button button-ghost">Tilbage</a>
+                    <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-4" class="button button-ghost">Tilbage</a>
                 </div>
             </div>
         </div>
@@ -303,26 +343,26 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 footer-col">
-                    <div class="align-left">
+                <div class="col-12 col-sm-12 col-md-6 footer-col">
+                    <div class=" align-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold" title="Ansvarlig myndighed" aria-label="Ansvarlig myndighed">Undervisningsministeriet</span>
+                                <span class="h6 weight-semibold">Ministeriet for Eksempel</span>
                             </li>
                             <li>
-                                <p>Styrelsen for IT og læring</p>
+                                <p>Styrelsen for Eksempel</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 footer-col">
-                    <div class="align-right">
+                <div class="col-12 col-sm-12 col-md-6 footer-col">
+                    <div class=" align-right ">
                         <ul class="unstyled-list">
                             <li>
-                                <a class="function-link" href="mailto:support@stil.dk">support@stil.dk</a>
+                                <a class="" href="mailto:support@example.dk">support@example.dk</a>
                             </li>
                             <li>
-                                <a class="function-link" href="tel:004533925200">(+45) 33 92 52 00</a>
+                                <a class="" href="tel:12 34 56 78">12 34 56 78</a>
                             </li>
                         </ul>
                     </div>

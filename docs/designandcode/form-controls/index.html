@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Formular elementer | Frontend styleguide - version 2</title>
+<meta property="og:title" content="Formular elementer | Frontend styleguide - version 2">
+
+
+<meta name="description" content="If you are a building a form with multiple controls, also consider the accessibility guidelines in the “Form Templates” section.">
+<meta property="og:description" content="If you are a building a form with multiple controls, also consider the accessibility guidelines in the “Form Templates” section.">
+
+
+
+
+
+
+
+
+  
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon2-erst.png">
+  <link rel="icon" type="image/png" href="/frontend-styleguide/assets/img/favicons/favicon-erst.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <!--<link rel="icon" type="image/png" sizes="192x192" href="/frontend-styleguide/assets/img/favicons/favicon-192.png">-->
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <!--<link rel="apple-touch-icon-precomposed" href="/frontend-styleguide/assets/img/favicons/favicon-57.png">-->
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/frontend-styleguide/assets/img/favicons/favicon-72.png">-->
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/frontend-styleguide/assets/img/favicons/favicon-114.png">-->
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/frontend-styleguide/assets/img/favicons/favicon-144.png">-->
+
+<!-- CSS
+================================================== -->
+<!--<link rel="stylesheet" href="/frontend-styleguide/css/styleguide.css">-->
+<style>
+  body {
+    opacity: 0;
+  }
+</style>
+<script type="text/javascript">
+    var lnk = document.createElement('link');
+    lnk.type='text/css';
+    lnk.rel='stylesheet';
+
+    window.baseurl='/frontend-styleguide';
+    if (window.location.search.indexOf('s=virkdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      window.curStyle = "virkdk";
+    } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      window.curStyle = "borgerdk";
+    } else {
+      lnk.href= window.baseurl + '/css/styleguide.css';
+    }
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+</script>
+  </head>
+  <body class="page-formular-elementer layout-styleguide">
+    <div class="hide-base-svg">
+      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="add" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></symbol><symbol id="alert-outline" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol><symbol id="angle-arrow-down-white" viewBox="0 0 24 24"><path fill="#fff" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-down" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></symbol><symbol id="angle-arrow-up" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></symbol><symbol id="arrow-left" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></symbol><symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></symbol><symbol id="calendar" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5z"/></symbol><symbol id="check-box-checked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#1A1A1A" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm12.293 4.293l-6.921 6.921-3.665-3.664-1.414 1.414 5.079 5.079 8.335-8.336-1.414-1.414z"/></g></symbol><symbol id="check-box-disabled" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect width="16" height="16" x="4" y="4" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2" rx="2"/></g></symbol><symbol id="check-box-focus" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path fill="#FEBB30" d="M0 0h24v24H0V0z"/><rect width="16" height="16" x="4" y="4" fill="#FFF" stroke="#1A1A1A" stroke-width="2" rx="2"/></g></symbol><symbol id="check-box-unchecked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect width="16" height="16" x="4" y="4" fill="#FFF" stroke="#1A1A1A" stroke-width="2" rx="2"/></g></symbol><symbol id="check-circle-outline" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></symbol><symbol id="checkbox-blank-outline" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5h14z"/></symbol><symbol id="checkbox-marked" viewBox="0 0 24 24"><path d="M10 17l-5-5 1.41-1.42L10 14.17l7.59-7.59L19 8m0-5H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></symbol><symbol id="chevron-left" viewBox="0 0 24 24"><path d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.42z"/></symbol><symbol id="chevron-right" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></symbol><symbol id="close-circle-outline" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="close-circle" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#FFF" d="M13.414 12l2.314-2.314-1.414-1.414L12 10.586 9.686 8.272 8.272 9.686 10.586 12l-2.31 2.31 1.413 1.415L12 13.415l2.31 2.31 1.415-1.414L13.415 12zM12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></g></symbol><symbol id="close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></symbol><symbol id="content-save" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4z"/></symbol><symbol id="delete-outline" viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4z"/><path fill="none" d="M0 0h24v24H0V0z"/></symbol><symbol id="delete" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12z"/></symbol><symbol id="dots-vertical" viewBox="0 0 24 24"><path d="M12 16a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z"/></symbol><symbol id="download" viewBox="0 0 24 24"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"/><path fill="none" d="M0 0h24v24H0z"/></symbol><symbol id="error" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m2.59 6L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8z"/></symbol><symbol id="file" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><g><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></g></symbol><symbol id="help-circle-outline" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4z"/></symbol><symbol id="info" viewBox="0 0 24 24"><path d="M11 15h2v2h-2v-2m0-8h2v6h-2V7m1-5C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8z"/></symbol><symbol id="language" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.08 16zm2.95-8H5.08a7.987 7.987 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></symbol><symbol id="magnify" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></symbol><symbol id="menu-down" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></symbol><symbol id="menu-left" viewBox="0 0 24 24"><path d="M14 7l-5 5 5 5V7z"/></symbol><symbol id="menu-right" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5v10z"/></symbol><symbol id="menu-up" viewBox="0 0 24 24"><path d="M7 15l5-5 5 5H7z"/></symbol><symbol id="minus" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></symbol><symbol id="open-in-new" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></symbol><symbol id="pencil" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol><symbol id="printer" viewBox="0 0 24 24"><path d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3z"/></symbol><symbol id="radio-disabled" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2"/></g></symbol><symbol id="radio-focused" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#FFF" stroke="#1A1A1A" stroke-linejoin="square" stroke-width="2"/><circle cx="12" cy="12" r="10.5" stroke="#FEBB30" stroke-width="3"/></g></symbol><symbol id="radio-marked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><g stroke-linejoin="square"><circle cx="12" cy="12" r="6.5" fill="#1A1A1A" stroke="#FFF" stroke-width="5"/><circle cx="12" cy="12" r="8" stroke="#1A1A1A" stroke-width="2"/></g></g></symbol><symbol id="radio-unmarked" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="8" fill="#FFF" stroke="#1A1A1A" stroke-width="2"/></g></symbol><symbol id="refresh" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></symbol><symbol id="save" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></symbol><symbol id="sort-acending" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="#1A1A1A" d="M6 13l6 6 6-6z"/><path stroke="#1A1A1A" d="M16.793 10.5L12 5.707 7.207 10.5h9.586z"/></g></symbol><symbol id="sort-descending" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path stroke="#1A1A1A" d="M7.207 13.5L12 18.293l4.793-4.793H7.207z"/><path fill="#1A1A1A" d="M18 11l-6-6-6 6z"/></g></symbol><symbol id="sort-none" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M7.207 13.5L12 18.293l4.793-4.793H7.207zm9.586-3L12 5.707 7.207 10.5h9.586z" stroke="#1A1A1A"/></g></symbol><symbol id="success" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8m-1 12.5L6.5 12l1.41-1.41L11 13.67l5.59-5.58L18 9.5l-7 7z"/></symbol><symbol id="warning" viewBox="0 0 24 24"><path d="M12 2L1 21h22M12 6l7.53 13H4.47M11 10v4h2v-4m-2 6v2h2v-2"/></symbol></svg>       </div>
+    <a class="skipnav" href="#main-content">Skip to main content</a>
+
+
+<header class="header header-extended" role="banner">
+     <!--2A: Solutiuon header -->
+    <div class="solution-header">
+      <div class="solution-header-inner container">
+        <div class="solution-heading">
+            <a href="/frontend-styleguide/" title="Home" aria-label="Home">Frontend Styleguide</a>
+        </div>
+        <button class="button button-secondary button-menu-open js-menu-open ml-auto" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
+      </div>
+    </div>
+
+    <nav role="navigation" class="nav"> <!-- collapsible-->
+      <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
+      <!-- 3: Main navigation-->
+      <div class="navbar navbar-primary">
+        <!--3A: Main navigation-->
+        
+        <div class="navbar-inner container">
+          <ul class="nav-primary">
+            
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/" 
+  class="  nav-link">
+  <span>Design og kode</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/page-templates/" 
+  class="  nav-link">
+  <span>Eksempler</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/getting-started/" 
+  class="  nav-link">
+  <span>Kom godt i gang</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/faellesoffentlige-krav/" 
+  class="  nav-link">
+  <span>Fællesoffentlige krav</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/whats-new/" 
+  class="  nav-link">
+  <span>Om designsystemet</span>
+</a>
+
+
+    
+  </li>
+
+
+          </ul>
+
+          <!-- 3B: Main navigation - secondary menu-->
+          <ul class="unstyled-list nav-actions">
+            <li>
+              <select class="form-select style-switcher" name="Style switcher" aria-label="Skift mellem temaer">
+                <option value="">- Vælg tema -</option>
+                <option value="styleguide">Tema: Neutralt</option>
+                <option value="virkdk">Tema: Virk.dk</option>
+                <option value="borgerdk">Tema: Borger.dk</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 3: Main navigation end-->
+      
+    </nav> <!-- collapsible nav end-->
+</header>
+<div class="overlay"></div>
+
+<main class="container page-container" id="main-content">
+  <div class="row">
+
+    <div class="col-3">
+      <aside class="sidenav">
+        
+        
+        <ul class="sidenav-list">
+          
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/" 
+  class="  nav-link">
+  <span>Overblik</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/accessibility/" 
+  class="  nav-link">
+  <span>Tilgængelighed</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/typography/" 
+  class="  nav-link">
+  <span>Typografi</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/colors/" 
+  class="  nav-link">
+  <span>Farver</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/ikoner/" 
+  class="  nav-link">
+  <span>Ikoner</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/kanter/" 
+  class="  nav-link">
+  <span>Kanter, streger og skygger</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/grids/" 
+  class="  nav-link">
+  <span>Grid</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/buttons/" 
+  class="  nav-link">
+  <span>Knapper</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tags/" 
+  class="  nav-link">
+  <span>Tags</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/accordions/" 
+  class="  nav-link">
+  <span>Accordions</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/beskeder/" 
+  class="  nav-link">
+  <span>Beskeder (Alerts)</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/cards/" 
+  class="  nav-link">
+  <span>Cards</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/form-controls/" 
+  class="current  active  nav-link">
+  <span>Formular elementer</span>
+</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="sidenav-sub_list">
+  
+  <li>
+    
+      
+
+
+<a href="#text-input">Text inputs and area</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#text-input-width">Text inputs width</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#select">Select</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#checkboxes">Checkboxes</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#radio-buttons">Radio buttons</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#date-input">Date input</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#validation">Validation</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#file-input">File input</a>
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/search/" 
+  class="  nav-link">
+  <span>Søg</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/badges/" 
+  class="  nav-link">
+  <span>Badges</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tables/" 
+  class="  nav-link">
+  <span>Tabeller</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tekstelementer/" 
+  class="  nav-link">
+  <span>Tekstelementer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/trinindikatorer/" 
+  class="  nav-link">
+  <span>Trinindikatorer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/sidenav/" 
+  class="  nav-link">
+  <span>Sidenavigation</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tabnav/" 
+  class="  nav-link">
+  <span>Faneblade</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/spinner/" 
+  class="  nav-link">
+  <span>Spinner</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/overflowmenu/" 
+  class="  nav-link">
+  <span>Overflow menu</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/modals/" 
+  class="  nav-link">
+  <span>Modalvinduer</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tooltip/" 
+  class="  nav-link">
+  <span>Tooltip</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/collapse/" 
+  class="  nav-link">
+  <span>Skjul og vis (Collapse)</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/headers/" 
+  class="  nav-link">
+  <span>Headers</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/footers/" 
+  class="  nav-link">
+  <span>Footers</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/select2-multiselect/" 
+  class="  nav-link">
+  <span>Multiselect dropdown</span>
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/datatables/" 
+  class="  nav-link">
+  <span>Datatabeller</span>
+</a>
+
+
+    
+  </li>
+
+
+        </ul>
+        
+      </aside>
+    </div>
+
+    <div class="col-12 col-sm-9 styleguide-content content">
+      <section id="section-/designandcode/form-controls">
+        <header>
+          <p class="small-text m-0 uppercase">
+            Design og kode
+          </p>
+          <h1 class="mt-0" id="formular-elementer">Formular elementer</h1>
+        </header>
+        
+          <p class="font-lead">Form controls allow users to enter information into a page.</p>
+        
+      <p>If you are a building a form with multiple controls, also consider the <a href="/frontend-styleguide/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</p>
+
+<section id="section-/komponenter/form-controls/01-text-input">
+  <h2 class="heading heading-margin-alt" id="text-input">Text input</h2>
+  
+    <p class="font-lead">Text inputs allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted). Text input boxes can span single or multiple lines.</p>
+  
+  
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/text-input" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/text-input"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-text-input">Kode</button>
+  <div id="code-text-input" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text"</span><span class="nt">&gt;</span>Text input label<span class="nt">&lt;/label&gt;</span>
+
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-type-text"</span><span class="nt">&gt;</span>For example, VO123456D<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">name=</span><span class="s">"input-type-text"</span>
+            <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-focus"</span><span class="nt">&gt;</span>Text input focused<span class="nt">&lt;/label&gt;</span>
+
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  focus"</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-focus"</span> <span class="na">name=</span><span class="s">"input-focus"</span>
+            <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group input-error"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Text input error<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Helpful error message<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>For example, VO123456D<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">name=</span><span class="s">"input-error"</span>
+            <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-error"</span> <span class="na">aria-describedby=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group input-success"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-success"</span><span class="nt">&gt;</span>Text input success<span class="nt">&lt;/label&gt;</span>
+
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-success"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="text-input-docs">
+    Dokumentation
+  </button>
+  <div id="text-input-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Accessibility</h4>
+    <p>If you customize the text inputs, ensure they continue to meet the the <a href="/frontend-styleguide/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
+    <ul class="content-list">
+      <li>Avoid placeholder text for accessibility reasons. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
+      <li>Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
+    </ul>
+    <h4 class="heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="content-list">
+      <li>If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.</li>
+      <li>When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a calendar picker.</li>
+      <li>When users want to be able to paste in a response.</li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="content-list">
+      <li>When users are choosing from a specific set of options.</li>
+    </ul>
+    <h5>Guidance</h5>
+    <ul class="content-list">
+      <li>The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.</li>
+      <li>Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.</li>
+      <li>Only show error validation messages or stylings after a user has interacted with a particular field.</li>
+      <li>Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<section id="section-/komponenter/form-controls/02-text-input-width">
+  <h2 class="heading heading-margin-alt" id="text-input-width">Text input width</h2>
+  
+    <p class="font-lead">Text inputs allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted). Text input boxes can span single or multiple lines.</p>
+  
+  
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/text-input-width" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/text-input-width"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-text-input-width">Kode</button>
+  <div id="code-text-input-width" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-55"</span><span class="nt">&gt;</span>Tekst input med bredde på 55px<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-55"</span> <span class="na">id=</span><span class="s">"input-type-text-55"</span> <span class="na">name=</span><span class="s">"input-type-text-55"</span>
+            <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-type-text-55"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-100"</span><span class="nt">&gt;</span>Tekst input med bredde på 100px<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-100"</span> <span class="na">id=</span><span class="s">"input-type-text-100"</span> <span class="na">name=</span><span class="s">"input-type-text-100"</span>
+            <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-type-text-100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-150"</span><span class="nt">&gt;</span>Tekst input med bredde på 150px<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-150"</span> <span class="na">id=</span><span class="s">"input-type-text-150"</span> <span class="na">name=</span><span class="s">"input-type-text-100"</span>
+            <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-type-text-150"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-200"</span><span class="nt">&gt;</span>Tekst input med bredde på 200px<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-200"</span> <span class="na">id=</span><span class="s">"input-type-text-200"</span> <span class="na">name=</span><span class="s">"input-type-text-200"</span>
+            <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-type-text-200"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-300"</span><span class="nt">&gt;</span>Tekst input med bredde på 300px<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-300"</span> <span class="na">id=</span><span class="s">"input-type-text-300"</span> <span class="na">name=</span><span class="s">"input-type-text-300"</span>
+            <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-type-text-300"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-400"</span><span class="nt">&gt;</span>Tekst input med bredde på 400px<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-400"</span> <span class="na">id=</span><span class="s">"input-type-text-400"</span> <span class="na">name=</span><span class="s">"input-type-text-400"</span>
+            <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-type-text-400"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text-500"</span><span class="nt">&gt;</span>Tekst input med bredde på 500px<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input input-width-500"</span> <span class="na">id=</span><span class="s">"input-type-text-500"</span> <span class="na">name=</span><span class="s">"input-type-text-500"</span>
+            <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-type-text-500"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="text-input-width-docs">
+    Dokumentation
+  </button>
+  <div id="text-input-width-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Implementation</h4>
+    <p>For at styre bredde på inputfelter bruges nedenstående class:</p>
+    <ul>
+      <li><code>.input-width-55</code> er 5.5rem bred</li>
+      <li><code>.input-width-100</code> er 10rem bred</li>
+      <li><code>.input-width-150</code> er 15rem bred</li>
+      <li><code>.input-width-200</code> er 20rem bred</li>
+      <li><code>.input-width-300</code> er 30rem bred</li>
+      <li><code>.input-width-400</code> er 40rem bred</li>
+      <li><code>.input-width-500</code> er 50rem bred</li>
+    </ul>
+    <h4 class="heading">Accessibility</h4>
+    <p>If you customize the text inputs, ensure they continue to meet the the <a href="/frontend-styleguide/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
+    <ul class="content-list">
+      <li>Avoid placeholder text for accessibility reasons. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
+      <li>Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
+    </ul>
+    <h4 class="heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="content-list">
+      <li>If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.</li>
+      <li>When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a calendar picker.</li>
+      <li>When users want to be able to paste in a response.</li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="content-list">
+      <li>When users are choosing from a specific set of options.</li>
+    </ul>
+    <h5>Guidance</h5>
+    <ul class="content-list">
+      <li>The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.</li>
+      <li>Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.</li>
+      <li>Only show error validation messages or stylings after a user has interacted with a particular field.</li>
+      <li>Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<section id="section-/komponenter/form-controls/03-dropdown">
+  <h2 class="heading heading-margin-alt" id="select">Select</h2>
+  
+    <p class="font-lead">A select-element allows users to select one option from a list.</p>
+  
+  
+<div class="component-preview preview-dropdown">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/select" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/select"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-select">Kode</button>
+  <div id="code-select" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form mb-7 input-width-200"</span><span class="nt">&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"options"</span><span class="nt">&gt;</span>Select label<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">" form-select"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"options"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;option</span> <span class="na">value</span><span class="nt">&gt;</span>- Vælg -<span class="nt">&lt;/option&gt;</span>
+
+                <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>Mulighed 1<span class="nt">&lt;/option&gt;</span>
+
+                <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>Mulighed 2<span class="nt">&lt;/option&gt;</span>
+
+                <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span>Mulighed 3<span class="nt">&lt;/option&gt;</span>
+
+            <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="dropdown-docs">
+    Dokumentation
+  </button>
+  <div id="dropdown-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Accessibility</h4>
+    <p>If you customize the dropdown, ensure it continues to meet the the <a href="/frontend-styleguide/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
+    <ul class="content-list">
+      <li>Make sure your dropdown has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).</li>
+      <li>Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.</li>
+    </ul>
+
+    <h4 class="heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="content-list">
+      <li>Use sparingly — only when a user needs to choose from about seven to 15 possible options and you have limited space to display the options.</li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="content-list">
+      <li>If the list of options is very short. Use radio buttons instead.</li>
+      <li>If the list of options is very long. Let users type the same information into a text input that suggests possible options instead.</li>
+      <li>If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from dropdowns. Use checkboxes instead.</li>
+      <li>For site navigation (use the navigation components instead).</li>
+    </ul>
+    <h5>Guidance</h5>
+    <ul class="content-list">
+      <li>Test dropdowns thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.</li>
+      <li>Avoid making options in one dropdown menu change based on the input to another. Users often don’t understand how selecting an item in one impacts another.</li>
+      <li>When most users will (or should) pick a particular option, make it the default: <code>&lt;option selected=<wbr />"selected"&gt;Default<wbr />&lt;/option&gt;</code></li>
+      <li>Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<section id="section-/komponenter/form-controls/04-checkboxes">
+  <h2 class="heading heading-margin-alt" id="checkboxes">Checkboxes</h2>
+  
+    <p class="font-lead">Checkboxes allow users to select one or more options from a visible list.</p>
+  
+  
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/checkbox" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/checkbox"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-checkbox">Kode</button>
+  <div id="code-checkbox" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"fieldset-inputs sans"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"unstyled-list bottom-spacing"</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Unchecked"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"unchecked"</span> <span class="na">value=</span><span class="s">"unchecked"</span> <span class="na">class=</span><span class="s">" "</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Unchecked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Unchecked<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checked"</span> <span class="na">value=</span><span class="s">"checked"</span> <span class="na">class=</span><span class="s">" "</span>
+                        <span class="na">checked</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checked<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"disabled"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"disabled"</span> <span class="na">value=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">" "</span>
+                        <span class="na">disabled</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabled"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"fokus"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Focus"</span> <span class="na">value=</span><span class="s">"fokus"</span> <span class="na">class=</span><span class="s">"focus "</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fokus"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Unchecked-large"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"unchecked-large"</span> <span class="na">value=</span><span class="s">"unchecked-large"</span>
+                        <span class="na">class=</span><span class="s">" checkbox-large"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Unchecked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Unchecked-large<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked-large"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checked-large"</span> <span class="na">value=</span><span class="s">"checked-large"</span>
+                        <span class="na">class=</span><span class="s">" checkbox-large"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checked-large<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"disabled-large"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"disabled-large"</span> <span class="na">value=</span><span class="s">"disabled-large"</span>
+                        <span class="na">class=</span><span class="s">" checkbox-large"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabled-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Disabled-large<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"fokus-large"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Focus-large"</span> <span class="na">value=</span><span class="s">"fokus-large"</span>
+                        <span class="na">class=</span><span class="s">"focus checkbox-large"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fokus-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Focus-large<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="checkbox-docs">
+    Dokumentation
+  </button>
+  <div id="checkbox-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Accessibility</h4>
+    <p>If you customize the text inputs, ensure they continue to meet the the <a href="/frontend-styleguide/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
+    <ul class="content-list">
+      <li>Surround a related set of checkboxes with a <code>&lt;fieldset&gt;</code>. The <code>&lt;legend&gt;</code> provides context for the grouping. Do not use fieldset and legend for a single check.</li>
+      <li>The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with <code>position: absolute; left: -999em</code>.</li>
+      <li>Each input should have a semantic <code>id</code> attribute, and its corresponding label should have the same value in it’s <code>for</code> attribute.</li>
+      <li>The <code>title</code> attribute can replace <code>&lt;label&gt;</code>.</li>
+    </ul>
+
+    <h4 class="heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="content-list">
+      <li>When a user can select any number of choices from a set list.</li>
+      <li>When a user needs to choose “yes” or “no” on only one option (use a stand-alone checkbox). For example, to toggle a setting on or off.</li>
+      <li>When users need to see all the available options at a glance.</li>
+    </ul>
+    <h5>When to consider something different</h5>
+    <ul class="content-list">
+      <li>If there are too many options to display on a mobile screen.</li>
+      <li>If a user can only select one option from a list (use radio buttons instead).</li>
+    </ul>
+    <h5>Guidelines</h5>
+    <ul class="content-list">
+      <li>Users should be able to tap on or click on either the text label or the checkbox to select or deselect an option.</li>
+      <li>List options vertically if possible; horizontal listings can make it difficult to tell which label pertains to which checkbox.</li>
+      <li>Avoid using negative language in labels as they can be counterintuitive. For example, “I want to receive a promotional email” instead of “I don’t want to receive promotional email.”</li>
+      <li>If you customize, make sure selections are adequately spaced for touch screens.</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<section id="section-/komponenter/form-controls/05-radio-buttons">
+  <h2 class="heading heading-margin-alt" id="radio-buttons">Radio buttons</h2>
+  
+    <p class="font-lead">Radio buttons allow users to see all available choices at once and select exactly one option.</p>
+  
+  
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/radiobutton" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/radiobutton"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-radiobutton">Kode</button>
+  <div id="code-radiobutton" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"fieldset-inputs sans"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"unstyled-list bottom-spacing"</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"unchecked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"unchecked"</span> <span class="na">value=</span><span class="s">"truth"</span> <span class="na">class=</span><span class="s">" "</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"unchecked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Unchecked<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Checked"</span> <span class="na">value=</span><span class="s">"Checked"</span> <span class="na">class=</span><span class="s">" "</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checked<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Disabled"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Disabled"</span> <span class="na">value=</span><span class="s">"Disabled"</span> <span class="na">class=</span><span class="s">" "</span>
+                        <span class="na">disabled</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Focus"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Focus"</span> <span class="na">value=</span><span class="s">"Focus"</span> <span class="na">class=</span><span class="s">"focus "</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Focus"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Focus<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Unchecked-large"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Unchecked-large"</span> <span class="na">value=</span><span class="s">"Unchecked-large"</span>
+                        <span class="na">class=</span><span class="s">" radio-large"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Unchecked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Unchecked-large<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Checked-large"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Checked-large"</span> <span class="na">value=</span><span class="s">"Checked-large"</span>
+                        <span class="na">class=</span><span class="s">" radio-large"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Checked-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checked-large<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Disabled-large"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Disabled-large"</span> <span class="na">value=</span><span class="s">"Disabled-large"</span>
+                        <span class="na">class=</span><span class="s">" radio-large"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Disabled-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Disabled-large<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;li&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"Focus-large"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Focus-large"</span> <span class="na">value=</span><span class="s">"Focus-large"</span>
+                        <span class="na">class=</span><span class="s">"focus radio-large"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"Focus-large"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Focus-large<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;/li&gt;</span>
+
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="radio-docs">
+    Dokumentation
+  </button>
+  <div id="radio-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Accessibility</h4>
+    <p>If you customize the radio buttons, ensure they continue to meet the the <a href="/frontend-styleguide/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
+    <ul class="content-list">
+      <li>Group related radio buttons together with <code>&lt;fieldset&gt;</code> and describe the group with <code>&lt;legend&gt;</code>.</li>
+      <li>Each radio button should have a <code>&lt;label&gt;</code>. Associate the two by matching the <code>&lt;label&gt;</code>’s for attribute to the <code>&lt;input&gt;</code>’s <code>id</code> attribute.</li>
+      <li>The <code>title</code> attribute can replace <code>&lt;label&gt;</code>.</li>
+    </ul>
+
+    <h4 class="heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="content-list">
+      <li>When users need to select only one option out of a set of mutually exclusive choices.</li>
+      <li>When the number of available options can fit onto a mobile screen.</li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="content-list">
+      <li>Consider checkboxes if  users need to select more than one option or if there is only one item to select.</li>
+      <li>Consider a  dropdown if you don’t have enough space to list out all available options.</li>
+      <li>If users should be able to select zero of the options.</li>
+    </ul>
+    <h5>Guidance</h5>
+    <ul class="content-list">
+      <li>Users should be able to tap on or click on either the text "label" or the radio button to select or deselect an option.</li>
+      <li>Options that are listed vertically are easier to read than those that are listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which radio button.</li>
+      <li>If you customize, make sure selections are adequately spaced for touch screens.</li>
+      <li>Use caution if you decide to set a default value. Setting a default value can discourage users from making conscious decisions, seem pushy, or alienate users who don’t fit into your assumptions. If you are unsure, leave nothing selected by default.</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<section id="section-/komponenter/form-controls/06-date-input">
+  <h2 class="heading heading-margin-alt" id="date-input">Date input</h2>
+  
+    <p class="font-lead">Three text fields are the easiest way for users to enter most dates.</p>
+  
+  
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/date-input" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/date-input"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-date-input">Kode</button>
+  <div id="code-date-input" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span><span class="nt">&gt;</span>Indsendelsesfrist<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span><span class="nt">&gt;</span>For eksempel: 05 12 2018<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date-group js-calendar-group mt-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-day"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date_of_day_2"</span><span class="nt">&gt;</span>Day<span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-day-input"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"31"</span>
+                        <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span> <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
+                        <span class="na">title=</span><span class="s">"Indskriv dag på månenden som tal"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-month"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date_of_month_1"</span><span class="nt">&gt;</span>Måned<span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-month-input"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"12"</span>
+                        <span class="na">maxlength=</span><span class="s">"2"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,2}$"</span> <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,2}$"</span>
+                        <span class="na">title=</span><span class="s">"Indskriv månedens nummer"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-year "</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"date_of_year_3"</span><span class="nt">&gt;</span>År<span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input js-calendar-year-input"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">min=</span><span class="s">"1900"</span> <span class="na">max=</span><span class="s">"3000"</span>
+                        <span class="na">maxlength=</span><span class="s">"4"</span> <span class="na">pattern=</span><span class="s">"^[0-9]{0,4}$"</span> <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span>
+                        <span class="na">title=</span><span class="s">"Indskriv årstal"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-unstyled button-open-calendar js-calendar-datepicker"</span><span class="nt">&gt;</span>
+
+                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="date-input-docs">
+    Dokumentation
+  </button>
+  <div id="date-input-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Implementation</h4>
+    <p></p>
+    <ul>
+      <li>The date input component consist of 2 parts, 3 inputs and a datepicker.</li>
+      <li>The datepicker is implemented with the vendor script <a href="https://github.com/dbushell/Pikaday">Pikaday</a>. This script and the javascript code used to initialize the datepicker component is included in the core javascript file (dkwds.js).</li>
+      <li>The input fields uses the 'regex-input-mask' script to prevent the user from inputting more than 2 numbers for the day and month input and 4 numbers for the year input. Additionally the 'regex-input-mask' prevents the user from inputting non-numeric characters. Example from the day and month input: <code> data-input-regex="^[0-9]{0,2}$"</code></li>
+      <li>
+        In order to initialize the javascript the date-group must have the class <code>.js-calendar-group</code>. Furthormore the three inputs must have the following classes:
+        <ul>
+          <li>Day input: <code>.js-calendar-day-input</code></li>
+          <li>Month input: <code>.js-calendar-month-input</code></li>
+          <li>Year input: <code>.js-calendar-year-input</code></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4 class="heading">Accessibility</h4>
+    <ul class="content-list">
+      <li>These text fields should follow the <a href="/frontend-styleguide/form-controls/#text-inputs"> accessibility guidelines for all text inputs.</a></li>
+      <li>Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.</li>
+    </ul>
+
+    <h4 class="heading">Usability</h4>
+    <ul class="content-list">
+      <li>Be sure each field is properly labeled — some countries enter dates in month, day, year order.</li>
+      <li>It may be tempting to switch all or some of these text fields to drop downs, but these tend to be more difficult to use than text boxes.</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<section id="section-/komponenter/form-controls/08-file-input">
+  <h2 class="heading heading-margin-alt" id="file-input">File input</h2>
+  
+    <p class="font-lead">A control that lets the user select a file.</p>
+  
+  
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/file-input" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/file-input"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-file-input">Kode</button>
+  <div id="code-file-input" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group file-input"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"file"</span><span class="nt">&gt;</span>Vedhæft fil<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"file"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="date-input-docs">
+    Dokumentation
+  </button>
+  <div id="date-input-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Implementation</h4>
+    <p>We recommend using a native input using type="file", rather than a custom implementation.</p>
+    <p>This is so:</p>
+      <ul class="content-list">
+      <li>the control gains focus when tabbing through the page</li>
+      <li>the control functions using a keyboard</li>
+      <li>the control functions using assistive technology</li>
+      <li>the control functions when javascript is not available</li>
+    </ul>
+    <br />
+    <p>A custom implementation of this control would need to meet the criteria above.</p>
+  </div>
+</div>
+
+</section>
+
+<section id="section-/komponenter/form-controls/07-validation">
+  <h2 class="heading heading-margin-alt" id="validation">Validation</h2>
+  
+    <p class="font-lead">Stating validation requirements up front, with live feedback, means users won't be left guessing.</p>
+  
+  
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/validation" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/validation"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-validation">Kode</button>
+  <div id="code-validation" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Validation examples<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;legend&gt;</span>Enter a code<span class="nt">&lt;/legend&gt;</span>
+            <span class="nt">&lt;br&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert-body"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Codes must:<span class="nt">&lt;/h3&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"validate-code"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"uppercase"</span><span class="nt">&gt;</span>Have at least 1 uppercase character<span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">data-validator=</span><span class="s">"numerical"</span><span class="nt">&gt;</span>Have at least 1 numerical character<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group mt-5"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"code"</span><span class="nt">&gt;</span>Code<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"code"</span> <span class="na">name=</span><span class="s">"code"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"validate-code"</span>
+                    <span class="na">data-validate-uppercase=</span><span class="s">"[A-Z]"</span> <span class="na">data-validate-numerical=</span><span class="s">"\d"</span>
+                    <span class="na">data-validation-element=</span><span class="s">"#validate-code"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"button button-primary mt-5"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit code"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Mask<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fieldset&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"code"</span><span class="nt">&gt;</span>Numbers only regex (max-length of 4)<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-2"</span><span class="nt">&gt;</span>Input mask that prevent user from typing certain input.<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input"</span> <span class="na">id=</span><span class="s">"code"</span> <span class="na">name=</span><span class="s">"code"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">data-input-regex=</span><span class="s">"^[0-9]{0,4}$"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/fieldset&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="validation-docs">
+    Dokumentation
+  </button>
+  <div id="validation-docs" aria-hidden="false" class="accordion-content">
+    <h4 class="heading">Guidance</h4>
+    <ul class="content-list">
+      <li>Input fields which have custom validation logic can automatically
+        provide helpful feedback to users if they are assigned a
+        <code>data-validation-element</code> attribute set to a
+        CSS selector that uniquely identifies a <code>.checklist</code>,
+        e.g. <code>data-validation-element="#validate-code"</code>.</li>
+      <li>
+        For each kind of validation you'd like to provide feedback on:
+        <ol>
+          <li>Come up with a name for the validator, e.g.
+            <code>uppercase</code>. It shouldn't have any spaces in it.</li>
+          <li>On one of the list elements in the <code>.checklist</code>,
+            set the <code>data-validator</code> attribute to the
+            name of the validator, e.g. <code>data-validator="uppercase"</code>.
+            This is the list item that will appear "checked" when the
+            validator's condition is met.</li>
+          <li>On the input field, add a field called
+            <code>data-validate-<em>validator name</em></code> and set
+            its value to a <a href="https://regexone.com/">regular
+            expression</a> that represents whether the validator's
+            condition is met, e.g. <code>data-validate-uppercase="[A-Z]"</code>.</li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</section>
+
+<h3 class="heading heading-margin-alt">Accessibility</h3>
+
+<p>As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.</p>
+
+<ul class="content-list">
+  <li>Display form controls in the same order in HTML as they appear on screen. Do not use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.</li>
+  <li>Visually align validation messages with the input fields, so people using screen magnifiers can read them quickly.</li>
+  <li>Group each set of thematically related controls in a fieldset element. Use the legend element to offer a label within each one. The fieldset and legend elements make it easier for screen reader users to navigate the form.</li>
+  <li>Use a single legend for fieldset (this is required). One example of a common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.</li>
+  <li>Embed multiple fieldsets and legends for more complex forms.</li>
+  <li>Keep your form blocks in a vertical pattern. This approach is ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.</li>
+</ul>
+
+<h4>Supporting screen readers</h4>
+
+<p><b>Note:</b> These code examples have been designed to support a range of screen readers. That said, they may not work with all versions.</p>
+
+<h5>Known issues</h5>
+
+<ul class="content-list">
+  <li>VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using <code>aria-labeledby="for-attribute-of-label id-of-legend id-of-additional-info"</code> on each input in the fieldset. Using <code>aria-labeledby</code> will overwrite the default text read by the screen reader, so it is important to include all relevant information.</li>
+  <li>VoiceOver on OS X currently does not support <code>aria-describedby</code>. Use <code>aria-labeledby</code> instead, and include all related fields, including, labels, legend, and hint text</li>
+</ul>
+
+
+      </section>
+    </div>
+
+  </div>
+</main>
+
+
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+            <ul class="unstyled-list">
+              <li><p class="h6 semibold" title="Ansvarlig myndighed" aria-label="Ansvarlig myndighed">Ansvarlig myndighed</p></li>
+            </ul>
+            <ul class="unstyled-list">
+              <li><p>Erhvervsstyrelsen og Digitaliseringsstyrelsen</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+           
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+           
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+          <div class="align-left">
+            <ul class="unstyled-list">
+              <li><p class="h6 semibold"  title="Skriftlig kontakt" aria-label="Skriftlig kontakt">Bidrag til arbejdet</p></li>
+            </ul>
+            <ul class="unstyled-list">
+              <li><p><a class="function-link" href="https://github.com/FSGpilot/frontend-styleguide">Github repository</a></p></li>
+            </ul>
+            <ul class="unstyled-list">
+              <li><p>Opret gerne issues hvis du har spørgsmål eller finder fejl i systemt.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
+
+<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+<script src="/frontend-styleguide/assets/js/vendor/dkwds-vendor-examples.js"></script>
+
+  </body>
+</html>
