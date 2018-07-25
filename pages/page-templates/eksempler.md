@@ -13,6 +13,8 @@ subnav:
   href: '#solution-3'
 - text: Løsning 4
   href: '#solution-4'
+- text: løsning 5
+  href: '#solution-5'
 ---
 
 <h2 id="solution-1">Løsning 1: Aktindsigt</h2>
@@ -34,3 +36,8 @@ subnav:
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <a href="{{ site.baseurl }}/pages/page-templates/digital-flytning/flytning-1"><img src="{{ site.baseurl }}/img/examples_pages/digital-flytning.png" style="max-width: 100%; width: 1018px"></a>
 <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/digital-flytning/flytning-1">Demo digital flytning</a>
+
+<h2 id="solution-5">Løsning 5: Strategiske virksomhedsalliancer</h2>
+<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
+<a href="{{ site.baseurl }}/pages/page-templates/strategiske-virksomhedsalliancer/virksomhedsalliancer-1"><img src="{{ site.baseurl }}/img/examples_pages/strategiske-virksomhedsalliancer.png" style="max-width: 100%; width: 1018px"></a>
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">Demo strategiske virksomhedsalliancer</a>
