@@ -1,13 +1,13 @@
 primary:
   - href: /designandcode/
-  - href: /page-templates/
+  - href: /examples/
 #  - href: /getting-started/
 #  - href: /faellesoffentlige-krav/
 #  - href: /whats-new/
 
 mobile:
   - href: /designandcode/
-  - href: /page-templates/
+  - href: /examples/
 #  - href: /getting-started/
 #  - href: /faellesoffentlige-krav/
 #  - href: /whats-new/
@@ -30,7 +30,6 @@ UI components:
   - href: /designandcode/search/
   - href: /designandcode/badges/
   - href: /designandcode/tables/
-  - href: /designandcode/tekstelementer/
   - href: /designandcode/trinindikatorer/
   - href: /designandcode/sidenav/
   - href: /designandcode/tabnav/
@@ -56,7 +55,7 @@ Getting started:
   - href: /getting-started/loesninger/
 
 Page templates:
-  - href: /page-templates/
+  - href: /examples/
 
 What’s new:
   - text: Overblik
