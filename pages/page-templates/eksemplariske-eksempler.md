@@ -44,8 +44,3 @@ subnav:
 
 <!-- <h2 class="heading" id="hyper-blanket">Template: Den hyper løsning</h2>
 <a href="http://qjma9y.axshare.com/#g=1&p=indberetning__kompleks__-_desktop"><img src="{{ site.baseurl }}/img/examples_pages/hyper.png" style="max-width: 100%; width: 1018px"></a>
-
-{% include code/accordion.html component="template-landing" %} -->
-
-
-<!-- {% include code/accordion.html component="template-landing" %} -->
