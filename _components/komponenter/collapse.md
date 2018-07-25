@@ -12,11 +12,10 @@ lead: Collapse and expand content.
 {% include code/accordion.html component="collapse" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="label-docs">
-    Dokumentation
+      aria-expanded="true" aria-controls="collapse-docs">
+    Kode dokumentation
   </button>
-  <div id="label-docs" aria-hidden="false" class="accordion-content">
-    <h4>Implementation</h4>
+  <div id="collapse-docs" aria-hidden="false" class="accordion-content">
     <p>For at initializere collapse funktionaliteten skal et HTML-element have klassen <code>.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>
     <p>Dette HTML-element skal yderligere have følgende attributter:</p>
     <ul>

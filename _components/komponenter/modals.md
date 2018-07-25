@@ -13,10 +13,9 @@ lead: Modals lead.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="modal-docs">
-    Dokumentation
+    Kode dokumentation
   </button>
   <div id="modal-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
     <p>Modal komponenten er implementeret med scriptet <a href="https://micromodal.now.sh">Micromodal</a>.</p>
     <p>En modal kan åbens ved at sætte følgende attribut på fx en knap: <code>data-micromodal-trigger="modal-id"</code>. Dette vil åbne modalen som har id'et 'modal-id'</p>
     <p>En modal kan lukkes ved at sætte følgende attribut på en knap inde i modalen: <code>data-micromodal-close</code>.</p>

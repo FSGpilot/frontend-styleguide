@@ -13,10 +13,9 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">
-    Dokumentation
+    Kode dokumentation
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
-    <h4>Implementation</h4>
     <ul>
       <li>Alle aktive menupunkter skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
       <li>Teksten i det aktive menupunkt skal være primærfarven, som og sættes med variablen <code>$color-primary</code></li>
@@ -32,11 +31,10 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
 {% include code/accordion.html component="sidenav--responsive" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="sidenav-docs">
-    Dokumentation
+      aria-expanded="true" aria-controls="resp-sidenav-docs">
+    Kode dokumentation
   </button>
-  <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
+  <div id="resp-sidenav-docs" aria-hidden="false" class="accordion-content">
     <p>Responsivt kan man vælge mellem to tilgange:</p>
     <ul>
       <li>På små skærme bliver menuen skjult og der vises i stedet en knap. Det er collapse funktionaliteten der benyttes.</li>

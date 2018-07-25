@@ -12,10 +12,10 @@ lead:
 {% include code/accordion.html component="tooltip" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="label-docs">
-    Dokumentation
+      aria-expanded="true" aria-controls="code-label-docs">
+    Kode dokumentation
   </button>
-  <div id="label-docs" aria-hidden="false" class="accordion-content">
+  <div id="code-label-docs" aria-hidden="false" class="accordion-content">
     <h4>Implementation</h4>
     <p>Tooltips  bygger på <a href="https://atomiks.github.io/tippyjs/">tippy.js.</a></p>
     <p>For at initializere et tooltip skal et HTML-element have klassen ’. js-tooltip’ og en ’title’-attribut:</p>

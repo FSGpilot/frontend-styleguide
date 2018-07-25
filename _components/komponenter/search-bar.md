@@ -12,11 +12,10 @@ lead: A block that allows users to search for specific content if they know what
 {% include code/accordion.html component="search" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="search-bar-docs">
-    Dokumentation
+    aria-expanded="false" aria-controls="search-code-documentation">
+    Kode dokumentation
   </button>
-  <div id="search-bar-docs" aria-hidden="false" class="accordion-content">
-      <h4 class="heading">Implementation</h4>
+  <div id="search-code-documentation" class="accordion-content">
     <p>For at styre bredde på inputfelter bruges nedenstående class:</p>
     <ul>
       <li><code>.input-width-55</code> er 5.5rem bred</li>
@@ -27,6 +26,15 @@ lead: A block that allows users to search for specific content if they know what
       <li><code>.input-width-400</code> er 40rem bred</li>
       <li><code>.input-width-500</code> er 50rem bred</li>
     </ul>
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="search-bar-docs">
+    Dokumentation
+  </button>
+  <div id="search-bar-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
       <li>As you customize this form template, ensure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>

@@ -14,11 +14,10 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
 {% include code/accordion.html component="tringuide" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="sidenav-docs">
-    Dokumentation
+    aria-expanded="false" aria-controls="trin-code-documentation">
+    Kode dokumentation
   </button>
-  <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
-  <h4 class="heading">Implementering</h4>
+  <div id="trin-code-documentation" class="accordion-content">
     <ul class="content-list">
       <li>For en klikbar trinindikator bruges <code>.sidenav-list</code> class på ul elementet.</li>
       <li>For en tvunget trinindikator bruges <code>.sidenav-list-locked</code> class på ul elementet.</li>
@@ -27,6 +26,14 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
       <li>Det aktive menupunkt skal have en .active class, der har en border i venstre side, som bliver sat med variablen <code>$sidenav-active-border-width</code></li>
       <li>På hover skal baggrundsfarven og teksten på trinene skifte, her skal variablen <code>$color-gray-pale</code>bruges til baggrunden og variablen<code>$color-link-hover</code> bruges til teksten</li> 
     </ul>
+  </div>
+</div>
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="sidenav-docs">
+    Dokumentation
+  </button>
+  <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Krav</h4>
     <ul class="content-list">
       <li>Krav til størrelse af knapper mv. fremgår af HTML/CSS, som kan downloades ovenfor</li>

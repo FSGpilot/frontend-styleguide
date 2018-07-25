@@ -12,22 +12,31 @@ lead: Use buttons to signal actions.
 {% include code/accordion.html component="buttons" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
+    aria-expanded="false" aria-controls="code-documentation">
+    Kode dokumentation
+  </button>
+  <div id="code-documentation" class="accordion-content">
+      <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>button</code> class to your anchor link.</p>
+      <p>To use a different style button on your anchor link, add the special button class in addition to <code>button</code>:</p>
+      <ul>
+        <li><code>button-primary</code></li>
+        <li><code>button-secondary</code></li>
+        <li><code>button-ghost</code></li>
+        <li><code>button-disabled</code></li>
+        <li><code>button-small</code></li>
+      </ul>
+      <p>For example, a secondary button style would use the following code:
+      <code>&lt;a class="button button-secondary" href=&quot;/my-link"&gt;My button&lt;/a&gt;</code></p>
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="accordion-bordered-docs">
     Dokumentation
   </button>
   <div id="accordion-bordered-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
-    <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>button</code> class to your anchor link.</p>
-    <p>To use a different style button on your anchor link, add the special button class in addition to <code>button</code>:</p>
-    <ul>
-      <li><code>button-primary</code></li>
-      <li><code>button-secondary</code></li>
-      <li><code>button-ghost</code></li>
-      <li><code>button-disabled</code></li>
-      <li><code>button-small</code></li>
-    </ul>
-    <p>For example, a secondary button style would use the following code:
-    <code>&lt;a class="button button-secondary" href=&quot;/my-link"&gt;My button&lt;/a&gt;</code></p>
+   
     <h4 class="heading">Accessibility</h4>
     <ul class="content-list">
       <li>Buttons should display a visible focus state when users tab to them.</li>
