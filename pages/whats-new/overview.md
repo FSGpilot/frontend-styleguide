@@ -1,7 +1,7 @@
 ---
 permalink: /whats-new/
 layout: styleguide
-title: Om designsystemet
+title: Information
 category: What’s new
 lead: Here you will be able to find the latest news and information about the Frontend Styleguide. Latest release notes, news and updates, roadmap and component status can be find here.
 columns:
