@@ -82,14 +82,6 @@
           
         
         
-            
-              
-            
-            
-              Breadcrumb
-            
-          
-        
           
             
           
@@ -186,19 +178,11 @@
           
         
         
-            
-              
-            
-            
-              List
-            
-          
-        
           
             
           
           
-            Topmenu
+            List
           
         
       
@@ -296,14 +280,6 @@
           
         
         
-            
-              
-            
-            
-              Breadcrumb
-            
-          
-        
           
             
           
@@ -400,19 +376,11 @@
           
         
         
-            
-              
-            
-            
-              List
-            
-          
-        
           
             
           
           
-            Topmenu
+            List
           
         
       
@@ -522,6 +490,7 @@
       </div>
     </div>
 
+    <div class="overlay"></div>
     <nav role="navigation" class="nav"> <!-- collapsible-->
       <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
@@ -567,57 +536,6 @@
     
   </li>
 
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/getting-started/" 
-  class="  nav-link">
-  <span>Kom godt i gang</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/faellesoffentlige-krav/" 
-  class="  nav-link">
-  <span>Fællesoffentlige krav</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/whats-new/" 
-  class="  nav-link">
-  <span>Om designsystemet</span>
-</a>
-
-
-    
-  </li>
-
 
           </ul>
 
@@ -638,13 +556,13 @@
       
     </nav> <!-- collapsible nav end-->
 </header>
-<div class="overlay"></div>
 
-<main class="container page-container" id="main-content">
+<main class="container page-container">
   <div class="row">
 
-    <div class="col-3">
-      <aside class="sidenav">
+    <div class="col-12 col-md-3 sidebar-col">
+      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
+      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
         
         
         <ul class="sidenav-list">
@@ -1153,10 +1071,10 @@
 
         </ul>
         
-      </aside>
-    </div>
+      </nav>
+    </div>    
 
-    <div class="col-12 col-sm-9 styleguide-content content">
+    <div class="col-12 col-md-9">
       <section id="section-/komponenter">
         <header>
           <p class="small-text m-0 uppercase">
@@ -1174,7 +1092,7 @@
       <div class="row componentbox-row">
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/styling/colors"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/colors"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Farver</p>
@@ -1182,7 +1100,7 @@
         </div>
         <div class="col-md-4 componentbox-col ">
             <div class="componentbox-container">
-              <a href="/frontend-styleguide/components/fundament/grids/"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
+              <a href="/frontend-styleguide/designandcode/grids/"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
             </div>
             <div class="componentbox-text-container">
               <p class="h5">Grid</p>
@@ -1190,7 +1108,7 @@
           </div>
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/styling/ikoner/"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/ikoner/"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Ikoner</p>
@@ -1200,7 +1118,7 @@
       <div class="row componentbox-row">
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/fundament/layout/"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/layout/"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Layout</p>
@@ -1208,7 +1126,7 @@
         </div>
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/styling/typography/"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/typography/"><img src="/frontend-styleguide/assets/img/componentimages/placeholderimage.PNG" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Typografi</p>
@@ -1223,23 +1141,15 @@
       <div class="row componentbox-row">
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/komponenter/accordions/"><img src="/frontend-styleguide/assets/img/componentimages/Accordion.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/accordions/"><img src="/frontend-styleguide/assets/img/componentimages/Accordion.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Accordion</p>
           </div>
         </div>
         <div class="col-md-4 componentbox-col ">
-            <div class="componentbox-container">
-              <a href=""><img src="/frontend-styleguide/assets/img/componentimages/Breadcrumbs.svg" alt="" /></a>
-            </div>
-            <div class="componentbox-text-container">
-              <p class="h5">Breadcrumb</p>
-            </div>
-          </div>
-        <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/komponenter/buttons/"><img src="/frontend-styleguide/assets/img/componentimages/Button.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/buttons/"><img src="/frontend-styleguide/assets/img/componentimages/Button.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Knapper</p>
@@ -1249,7 +1159,7 @@
       <div class="row componentbox-row">
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/komponenter/form-controls/#checkboxes"><img src="/frontend-styleguide/assets/img/componentimages/Checkbox.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/form-controls/#checkboxes"><img src="/frontend-styleguide/assets/img/componentimages/Checkbox.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Checkbox</p>
@@ -1257,7 +1167,7 @@
         </div>
         <div class="col-md-4 componentbox-col ">
             <div class="componentbox-container">
-              <a href="/frontend-styleguide/components/komponenter/beskeder"><img src="/frontend-styleguide/assets/img/componentimages/Alerts.svg" alt="" /></a>
+              <a href="/frontend-styleguide/designandcode/beskeder"><img src="/frontend-styleguide/assets/img/componentimages/Alerts.svg" alt="" /></a>
             </div>
             <div class="componentbox-text-container">
               <p class="h5">Beskeder</p>
@@ -1265,7 +1175,7 @@
           </div>
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/komponenter/cards"><img src="/frontend-styleguide/assets/img/componentimages/Cards.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/cards"><img src="/frontend-styleguide/assets/img/componentimages/Cards.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Cards</p>
@@ -1275,7 +1185,7 @@
       <div class="row componentbox-row">
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/komponenter/tables"><img src="/frontend-styleguide/assets/img/componentimages/Data_table.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/tables"><img src="/frontend-styleguide/assets/img/componentimages/Data_table.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Tabeller</p>
@@ -1283,7 +1193,7 @@
         </div>
         <div class="col-md-4 componentbox-col ">
             <div class="componentbox-container">
-              <a href="/frontend-styleguide/components/strukturer/headers/"><img src="/frontend-styleguide/assets/img/componentimages/Header.svg" alt="" /></a>
+              <a href="/frontend-styleguide/designandcode/headers/"><img src="/frontend-styleguide/assets/img/componentimages/Header.svg" alt="" /></a>
             </div>
             <div class="componentbox-text-container">
               <p class="h5">Header</p>
@@ -1291,7 +1201,7 @@
           </div>
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/strukturer/footers/"><img src="/frontend-styleguide/assets/img/componentimages/Footer.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/footers/"><img src="/frontend-styleguide/assets/img/componentimages/Footer.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Footer</p>
@@ -1301,7 +1211,7 @@
       <div class="row componentbox-row">
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/komponenter/form-controls/#dropdown"><img src="/frontend-styleguide/assets/img/componentimages/Dropdown.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/form-controls/#dropdown"><img src="/frontend-styleguide/assets/img/componentimages/Dropdown.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Dropdown</p>
@@ -1309,7 +1219,7 @@
         </div>
         <div class="col-md-4 componentbox-col ">
             <div class="componentbox-container">
-              <a href="/frontend-styleguide/components/komponenter/sidenav/"><img src="/frontend-styleguide/assets/img/componentimages/Sidemenu.svg" alt="" /></a>
+              <a href="/frontend-styleguide/designandcode/sidenav/"><img src="/frontend-styleguide/assets/img/componentimages/Sidemenu.svg" alt="" /></a>
             </div>
             <div class="componentbox-text-container">
               <p class="h5">Sidenavigation</p>
@@ -1317,7 +1227,7 @@
           </div>
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/komponenter/form-controls/"><img src="/frontend-styleguide/assets/img/componentimages/Form_controls.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/form-controls/"><img src="/frontend-styleguide/assets/img/componentimages/Form_controls.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Form</p>
@@ -1327,33 +1237,25 @@
       <div class="row componentbox-row">
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/komponenter/trinindikatorer"><img src="/frontend-styleguide/assets/img/componentimages/Step_indicator.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/trinindikatorer"><img src="/frontend-styleguide/assets/img/componentimages/Step_indicator.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Trinindikatorer</p>
           </div>
         </div>
         <div class="col-md-4 componentbox-col ">
-            <div class="componentbox-container">
-              <a href="/frontend-styleguide/components/styling/typography/#lists"><img src="/frontend-styleguide/assets/img/componentimages/List.svg" alt="" /></a>
-            </div>
-            <div class="componentbox-text-container">
-              <p class="h5">List</p>
-            </div>
-          </div>
-        <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href=""><img src="/frontend-styleguide/assets/img/componentimages/Topmenu.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/typography/#lists"><img src="/frontend-styleguide/assets/img/componentimages/List.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
-            <p class="h5">Topmenu</p>
+            <p class="h5">List</p>
           </div>
         </div>
       </div>
       <div class="row componentbox-row">
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href=""><img src="/frontend-styleguide/assets/img/componentimages/Modal.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/modals"><img src="/frontend-styleguide/assets/img/componentimages/Modal.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Modal</p>
@@ -1361,7 +1263,7 @@
         </div>
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href="/frontend-styleguide/components/komponenter/form-controls/#radio-buttons"><img src="/frontend-styleguide/assets/img/componentimages/Radio_buttons.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/form-controls/#radio-buttons"><img src="/frontend-styleguide/assets/img/componentimages/Radio_buttons.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Radio Buttons</p>
@@ -1369,7 +1271,7 @@
         </div>
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href=""><img src="/frontend-styleguide/assets/img/componentimages/Search.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/search"><img src="/frontend-styleguide/assets/img/componentimages/Search.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Search</p>
@@ -1379,7 +1281,7 @@
       <div class="row componentbox-row">
         <div class="col-md-4 componentbox-col ">
           <div class="componentbox-container">
-            <a href=""><img src="/frontend-styleguide/assets/img/componentimages/Tabs.svg" alt="" /></a>
+            <a href="/frontend-styleguide/designandcode/tabnav/"><img src="/frontend-styleguide/assets/img/componentimages/Tabs.svg" alt="" /></a>
           </div>
           <div class="componentbox-text-container">
             <p class="h5">Tabs</p>
@@ -1395,7 +1297,6 @@
 
   </div>
 </main>
-
 
 <footer>
   <div class="footer">

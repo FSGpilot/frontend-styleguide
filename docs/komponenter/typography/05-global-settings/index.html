@@ -46,6 +46,8 @@ For at skifte i mellem fonte bruges font-weight variablerne:
 
 
   
+  <link rel="canonical" href="http://localhost:4000/komponenter/typography/05-global-settings/">
+  
 
 <!-- Favicons
 ================================================== -->
@@ -110,6 +112,7 @@ For at skifte i mellem fonte bruges font-weight variablerne:
       </div>
     </div>
 
+    <div class="overlay"></div>
     <nav role="navigation" class="nav"> <!-- collapsible-->
       <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
@@ -153,57 +156,6 @@ For at skifte i mellem fonte bruges font-weight variablerne:
     
   </li>
 
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/getting-started/" 
-  class="  nav-link">
-  <span>Kom godt i gang</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/faellesoffentlige-krav/" 
-  class="  nav-link">
-  <span>Fællesoffentlige krav</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/whats-new/" 
-  class="  nav-link">
-  <span>Om designsystemet</span>
-</a>
-
-
-    
-  </li>
-
 
           </ul>
 
@@ -224,19 +176,19 @@ For at skifte i mellem fonte bruges font-weight variablerne:
       
     </nav> <!-- collapsible nav end-->
 </header>
-<div class="overlay"></div>
 
-<main class="container page-container" id="main-content">
+<main class="container page-container">
   <div class="row">
 
-    <div class="col-3">
-      <aside class="sidenav">
+    <div class="col-12 col-md-3 sidebar-col">
+      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
+      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
         
         
-      </aside>
-    </div>
+      </nav>
+    </div>    
 
-    <div class="col-12 col-sm-9 styleguide-content content">
+    <div class="col-12 col-md-9">
       <section id="section-/komponenter/typography/05-global-settings">
         <header>
           <p class="small-text m-0 uppercase">
@@ -271,7 +223,6 @@ For at skifte i mellem fonte bruges font-weight variablerne:
 
   </div>
 </main>
-
 
 <footer>
   <div class="footer">

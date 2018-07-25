@@ -98,6 +98,7 @@
       </div>
     </div>
 
+    <div class="overlay"></div>
     <nav role="navigation" class="nav"> <!-- collapsible-->
       <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
@@ -141,57 +142,6 @@
     
   </li>
 
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/getting-started/" 
-  class="  nav-link">
-  <span>Kom godt i gang</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/faellesoffentlige-krav/" 
-  class="  nav-link">
-  <span>Fællesoffentlige krav</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/whats-new/" 
-  class="  nav-link">
-  <span>Om designsystemet</span>
-</a>
-
-
-    
-  </li>
-
 
           </ul>
 
@@ -212,13 +162,13 @@
       
     </nav> <!-- collapsible nav end-->
 </header>
-<div class="overlay"></div>
 
-<main class="container page-container" id="main-content">
+<main class="container page-container">
   <div class="row">
 
-    <div class="col-3">
-      <aside class="sidenav">
+    <div class="col-12 col-md-3 sidebar-col">
+      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
+      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
         
         
         <ul class="sidenav-list">
@@ -267,56 +217,6 @@
 
 
 <a href="#installation">Installation</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#css-architecture">CSS architecture</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#customization-and-theming">Customization</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#where-things-live">Where things live</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#notes-on-accessibility">Accessibility</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#contribution-guidelines">Contributions</a>
     
   </li>
 
@@ -433,10 +333,10 @@
 
         </ul>
         
-      </aside>
-    </div>
+      </nav>
+    </div>    
 
-    <div class="col-12 col-sm-9 styleguide-content content">
+    <div class="col-12 col-md-9">
       <section id="section-">
         <header>
           <p class="small-text m-0 uppercase">
@@ -445,320 +345,15 @@
           <h1 class="mt-0" id="til-udviklerne">Til udviklerne</h1>
         </header>
         
-          <p class="font-lead">The UI components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and experiences regardless of what browser they use, although those experiences will render better in newer browsers. If JavaScript fails, users will still get a robust HTML foundation.</p>
-        
-      <div class="alert alert-warning">
-    <div class="alert-body">
-        <h3 class="alert-heading">Work-in-progress!</h3>
-        <div class="alert-text">
-        <p>The Frontend Styleguiden is still a work-in-progress.</p>
-        <ul>
-          <li> The documentation is far from finished </li>
-          <li> There are many more components planned for later releases </li>
-          <li> Same goes for examples: many more are planned. </li>
-        </ul>
-        <p>Etc. etc. The bottomlines is this: The Fronten Styleguide is currently is an early, but still functioning, prototyping-stage. <br />The road ahead is exciting! </p>
-        </div>
-    </div>
-</div>
+      <h2 id="installation">Installation</h2>
 
-<h2 id="installation">Installation</h2>
-
-<p>Here are a few different ways to use the Standards within your project.</p>
-
-<h3 id="download">Download</h3>
-
-<p>To use the Web Design Standards on your project, you’ll need to include the CSS and JavaScript files in each HTML page in your project.</p>
-
-<p>First, download the Web Design Standards assets:</p>
-
-<p><a class="link-download" href="https://github.com/FSGpilot/frontend-styleguide-components/releases/download/v2.0.0/dkwds-2.0.0.zip">Download code</a>
-<span class="link-download-subtext">Version 2.0.0</span></p>
-
-<p>Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>dkwds-2.0.0/
-├── js/
-│   ├── dkwds.min.js.map
-│   ├── dkwds.min.js
-│   └── dkwds.js
-├── css/
-│   ├── dkwds.min.css.map
-│   ├── dkwds.min.css
-│   └── dkwds.css
-├── img/
-└── fonts/
-</code></pre>
-</div>
-
-<p>Refer to these files by adding the following <code class="highlighter-rouge">&lt;link&gt;</code> and <code class="highlighter-rouge">&lt;script&gt;</code> elements
-into your HTML pages:</p>
-
-<p>Add this to your <code class="highlighter-rouge">&lt;head&gt;</code> element:</p>
-
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/path/to/your/assets/css/lib/dkwds.min.css"</span><span class="nt">&gt;</span>
-</code></pre>
-</div>
-
-<p>Add this before the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag:</p>
-
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/path/to/your/assets/js/lib/dkwds.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-</code></pre>
-</div>
-
-<p>We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size
-of your downloaded assets. And the un-minified version is better if you are in a
-development environment or would like to debug the CSS or JavaScript assets in
-the browser. The examples above recommend using the minified versions.</p>
-
-<p>And that’s it — you should be set to use the Standards.</p>
-
-<h3 id="using-npm">Using npm</h3>
-
-<p>Note: Using npm to install the Standards will include jQuery version <code class="highlighter-rouge">2.2.0</code>. Please make sure that you’re not including any other version of jQuery on your page.</p>
-
-<p>If you have <code class="highlighter-rouge">node</code> installed on your machine, you can use npm to install the Standards. Add <code class="highlighter-rouge">dkwds</code>
-to your project’s <code class="highlighter-rouge">package.json</code> as a dependency:</p>
-
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>npm install --save dkwds
-</code></pre>
-</div>
-
-<p>The package will be installed in <code class="highlighter-rouge">node_modules/dkwds</code>. You can use the un-compiled files
-found in the <code class="highlighter-rouge">src/</code> or the compiled files in the <code class="highlighter-rouge">dist/</code> directory.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>node_modules/dkwds/
-├── dist/
-│   ├── css/
-│   ├── fonts/
-│   ├── img/
-│   ├── js/
-└── src/
-    ├── fonts/
-    ├── img/
-    ├── js/
-    └── stylesheets/
-</code></pre>
-</div>
-
-<p><code class="highlighter-rouge">require('dkwds')</code> will load all of the Frontend Styleguide’s JavaScript onto the page. The <code class="highlighter-rouge">dkwds</code> module itself does not export anything.</p>
-
-<p>The main Sass (SCSS) source file is here:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>node_modules/dkwds/src/stylesheets/all.scss
-</code></pre>
-</div>
-
-<p>The non-minified CSS that’s been precompiled is here:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>node_modules/dkwds/dist/css/dkwds.css
-</code></pre>
-</div>
-
-<h3 id="using-another-framework-or-package-manager">Using another framework or package manager</h3>
-
-<p>If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the <a href="#download">download instructions</a>. Please note that the core team isn’t responsible for all frameworks’ implementations.</p>
-
-<p>If you’re interested in maintaining a package that helps us distribute the Frontend Styleguide, the project’s build system can help you create distribution bundles to use in your project. Please read our <a href="https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md">contribution guidelines</a> to locally build distributions for your framework or package manager.</p>
-
-<h3 id="need-installation-help">Need installation help?</h3>
-
-<p>Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:</p>
-
-<p><a href="https://github.com/18F/web-design-standards/issues">https://github.com/18F/web-design-standards/issues</a>.</p>
-
-<div class="row">
-  <div class="col-12">
-    <h2>Browser Compatibility</h2>
-      <p>Due to the use of <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">flexbox</a>, we do not support IE&lt;11. There are too many bugs and workarounds to be solved, and as IE10 is only partially supporting flexbox, we use <em>vendor prefixes</em> to make flexbox work in IE11, and only support modern browsers.</p>
-      <p>If the content looks off to you, we encourage you to simply upgrade your browser, or try a more modern one.</p>
-  </div>
-  <div class="row mt-3" style="width: 100%;">
-    <div class="col-12">
-      <ul class="transparent-list" style="max-width: 100%;">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <li>
-              <ul class="list-tile">
-                <div class="list-tile-icon">
-                  <i class="mdi mdi-internet-explorer"></i>
-                </div>
-                <div class="list-tile-content">
-                  <div class="list-tile-title">IE9 / IE10</div>
-                  <div class="list-tile-subtitle">Not supported</div>
-                </div>
-                <div class="list-tile-action">
-                  <i class="mdi mdi-close text-error"></i>
-                </div>
-              </ul>
-            </li>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <li>
-              <ul class="list-tile">
-                <div class="list-tile-icon">
-                  <i class="mdi mdi-internet-explorer"></i>
-                </div>
-                <div class="list-tile-content">
-                  <div class="list-tile-title">IE11</div>
-                  <div class="list-tile-subtitle">Supported by prefixes</div>
-                </div>
-                <div class="list-tile-action">
-                  <i class="mdi mdi-check text-success"></i>
-                </div>
-              </ul>
-            </li>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <li>
-              <ul class="list-tile">
-                <div class="list-tile-icon">
-                  <i class="mdi mdi-edge"></i>
-                </div>
-                <div class="list-tile-content">
-                  <div class="list-tile-title">Edge</div>
-                  <div class="list-tile-subtitle">Supported</div>
-                </div>
-                <div class="list-tile-action">
-                  <i class="mdi mdi-check text-success"></i>
-                </div>
-              </ul>
-            </li>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <li>
-              <ul class="list-tile">
-                <div class="list-tile-icon">
-                  <i class="mdi mdi-google-chrome"></i>
-                </div>
-                <div class="list-tile-content">
-                  <div class="list-tile-title">Chrome</div>
-                  <div class="list-tile-subtitle">Supported</div>
-                </div>
-                <div class="list-tile-action">
-                  <i class="mdi mdi-check text-success"></i>
-                </div>
-              </ul>
-            </li>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <li>
-              <ul class="list-tile">
-                <div class="list-tile-icon">
-                  <i class="mdi mdi-firefox"></i>
-                </div>
-                <div class="list-tile-content">
-                  <div class="list-tile-title">Firefox</div>
-                  <div class="list-tile-subtitle">Supported</div>
-                </div>
-                <div class="list-tile-action">
-                  <i class="mdi mdi-check text-success"></i>
-                </div>
-              </ul>
-            </li>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <li>
-              <ul class="list-tile">
-                <div class="list-tile-icon">
-                  <i class="mdi mdi-apple-safari"></i>
-                </div>
-                <div class="list-tile-content">
-                  <div class="list-tile-title">Safari 9+</div>
-                  <div class="list-tile-subtitle">Supported</div>
-                </div>
-                <div class="list-tile-action">
-                  <i class="mdi mdi-check text-success"></i>
-                </div>
-              </ul>
-            </li>
-          </div>
-        </div>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<h2 id="examples-and-prototyping-setups">Examples and prototyping setups</h2>
-
-<p>In the <strong><a href="https://github.com/FSGpilot/frontend-styleguide-components/tree/master/examples">component-library repository</a></strong> you will find a number of example setups: Gulp, webpack, browserify etc.
-You will also find a <strong><a href="https://github.com/FSGpilot/frontend-styleguide-components/tree/master/examples/gulp-prototyping-setup">complete rapid-prototyping setup</a></strong> that will get you started building a prototype in no time!</p>
-
-<h2 id="css-architecture">CSS architecture</h2>
-
-<ul>
-  <li>The CSS foundation of this site is built with the <strong><a href="https://sass-lang.com">Sass</a></strong> preprocessor language.</li>
-  <li>Uses <strong><a href="http://bourbon.io/">Bourbon</a></strong> for its simple and lightweight Sass mixin library, and, as per default, uses the <strong><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">flexbox version</a></strong> of the <strong><a href="https://getbootstrap.com">Bootstrap</a></strong> grid for its rigid and industry standard-grade rules.</li>
-  <li>Uses <strong>modular CSS</strong> for scalable, modular, and flexible code.</li>
-  <li>Uses <strong>nesting</strong> when appropriate. Nest minimally with up to two levels of nesting.</li>
-  <li>Hard-coded magic numbers are avoided and, if necessary, defined in the <code class="highlighter-rouge">core/variables</code> scss file.</li>
-  <li>Media queries are built <strong>mobile first</strong>.</li>
-  <li><strong>Spacing units</strong> are as much as possible defined as rem or em units so they scale appropriately with text size. Pixels can be used for detail work and should not exceed 5px (For example: 3px borders).</li>
-</ul>
-
-<h2 id="customization-and-theming">Customization and theming</h2>
-
-<p>The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards’ global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Standards set.</p>
-
-<p>To start theming through Sass, copy the <code class="highlighter-rouge">core/variables</code> file into your own project’s Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Standards all.scss file.</p>
-
-<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// src/main.scss
-</span><span class="k">@import</span> <span class="s1">'path/to/my/scss/files/main/scss/my-custom-vars'</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s1">'lib/dkwds/src/stylesheets/all'</span><span class="p">;</span>
-</code></pre>
-</div>
-
-<div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="c1">// path/to/my/scss/files/main/scss/my-custom_vars.scss
-</span>
-<span class="c1">// Colors
-</span><span class="nv">$color-primary</span><span class="p">:</span> <span class="mh">#2c3e50</span><span class="p">;</span>
-<span class="nv">$color-secondary</span><span class="p">:</span> <span class="mh">#ad2020</span><span class="p">;</span>
-<span class="nv">$color-secondary-dark</span><span class="p">:</span> <span class="mh">#b0392e</span><span class="p">;</span>
-
-<span class="c1">// Typography
-</span><span class="nv">$font-serif</span><span class="p">:</span> <span class="s1">'Georgia'</span><span class="o">,</span> <span class="s1">'Times'</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
-<span class="nv">$h2-font-size</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
-<span class="nv">$h3-font-size</span><span class="p">:</span> <span class="m">1</span><span class="mi">.75rem</span><span class="p">;</span>
-<span class="nv">$heading-line-height</span><span class="p">:</span> <span class="m">1</span><span class="mi">.4</span><span class="p">;</span>
-
-<span class="c1">// Grid breakpoints
-</span><span class="nv">$grid-sm</span><span class="p">:</span>  <span class="m">540px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-<span class="nv">$grid-md</span><span class="p">:</span>  <span class="m">620px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-<span class="nv">$grid-lg</span><span class="p">:</span>  <span class="m">1120px</span> <span class="o">!</span><span class="nb">default</span><span class="p">;</span>
-</code></pre>
-</div>
-
-<p>NOTE: If you plan on upgrading to newer versions of the Standards in the future, or are not using your own forked version of the Standards, try to avoid making changes in the Standards folder themselves. Doing so could make it impossible to upgrade in the future without undoing your custom changes.</p>
-
-<h2 id="where-things-live">Where things live</h2>
-
-<ul>
-  <li><strong>HTML</strong> markup for the components is located in: <code class="highlighter-rouge">src/html</code> in the site root.</li>
-  <li><strong>Sass</strong> styles are located in: <code class="highlighter-rouge">src/stylesheets/ (/core, /elements, /components)</code>. <strong>Compiled CSS</strong> is located in the <a href="https://github.com/FSGpilot/frontend-styleguide-components/releases/download/v2.0.0/dkwds-2.0.0.zip">downloadable zip file</a> .</li>
-  <li><strong>JS</strong> is located in: <code class="highlighter-rouge">src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)</code>.</li>
-  <li><strong>Fonts</strong> are located in: <code class="highlighter-rouge">src/fonts</code>.</li>
-  <li><strong>Images</strong> and icons are located in: <code class="highlighter-rouge">src/img</code>.</li>
-</ul>
-
-<h2 id="notes-on-accessibility">Notes on accessibility</h2>
-
-<p>We’ve designed the Standards to support older and newer browsers through progressive enhancement, and they officially support Internet Explorer 9 and up, along with the latest versions of Chrome, Firefox, and Safari. Internet Explorer 8 and below generally see very low usage, and most agency websites should be able to safely begin support at Internet Explorer 9.</p>
-
-<p>The Standards also meet the <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0 AA accessibility guidelines</a> and are compliant with <a href="http://www.section508.gov/">Section 508 of the Rehabilitation Act</a>. We’re happy to answer questions about accessibility — email us for more information.</p>
-
-<h2 id="contribution-guidelines">Contribution guidelines</h2>
-
-<p>We’re so glad you’re thinking about contributing to the Standards! You can find our complete <a href="https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md">contribution guidelines</a> in our repo — please review them before submitting your contribution.</p>
-
-<p>If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to <a href="mailto:test@test.test">email us</a> — we’ll get back to you within 48 hours.</p>
-
+<p>En guide til setup af projektet for udvikelre kan findes på <a href="https://github.com/FSGpilot/frontend-styleguide-components">github</a></p>
 
       </section>
     </div>
 
   </div>
 </main>
-
 
 <footer>
   <div class="footer">

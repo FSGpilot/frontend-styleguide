@@ -98,6 +98,7 @@
       </div>
     </div>
 
+    <div class="overlay"></div>
     <nav role="navigation" class="nav"> <!-- collapsible-->
       <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
@@ -141,57 +142,6 @@
     
   </li>
 
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/getting-started/" 
-  class="  nav-link">
-  <span>Kom godt i gang</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/faellesoffentlige-krav/" 
-  class="  nav-link">
-  <span>Fællesoffentlige krav</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/whats-new/" 
-  class="  nav-link">
-  <span>Om designsystemet</span>
-</a>
-
-
-    
-  </li>
-
 
           </ul>
 
@@ -212,13 +162,13 @@
       
     </nav> <!-- collapsible nav end-->
 </header>
-<div class="overlay"></div>
 
-<main class="container page-container" id="main-content">
+<main class="container page-container">
   <div class="row">
 
-    <div class="col-3">
-      <aside class="sidenav">
+    <div class="col-12 col-md-3 sidebar-col">
+      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
+      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
         
         
         <ul class="sidenav-list">
@@ -473,10 +423,10 @@
 
         </ul>
         
-      </aside>
-    </div>
+      </nav>
+    </div>    
 
-    <div class="col-12 col-sm-9 styleguide-content content">
+    <div class="col-12 col-md-9">
       <section id="section-">
         <header>
           <p class="small-text m-0 uppercase">
@@ -489,34 +439,22 @@
         
       <h2 id="proces-for-løsningsdesign">Proces for løsningsdesign</h2>
 
-<p>Indhold i stil med: <a href="http://uxmastery.com/resources/process/">UXmasterys’s best-practice process</a>. Dog mere konkret ift. offentlige selvbetjeningsløsninger.</p>
-
 <h2 id="prototypeværktøj">Prototypeværktøj</h2>
-
-<p>Link og forklaring til et tool ala. <a href="https://bootstrapstudio.io/">Bootstrapstudio</a> og <a href="http://docs.usecreator.com/docs/slider">Ionic Creator</a>
-<br /></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KSJ7Kfonn7I?rel=0" frameborder="0" allowfullscreen=""></iframe>
 
 <h2 id="brugerinddragelse">Brugerinddragelse</h2>
 
-<p>Indhold i stil med: 
-<a href="http://mind-lab.dk/innovation-metoder-guide/">http://mind-lab.dk/innovation-metoder-guide/</a> og 
-<a href="http://cfiaarhus.dk/proces-og-metoder">http://cfiaarhus.dk/proces-og-metoder</a></p>
-
 <h2 id="agil-ux-og-agil-udvikling">Agil UX og agil udvikling</h2>
-
-<p>Indhold i stil med: 
-<a href="https://www.gov.uk/service-manual/agile-delivery">https://www.gov.uk/service-manual/agile-delivery</a></p>
 
 <h2 id="team">Team</h2>
 
-<p>Indhold i stil med: 
-<a href="https://www.gov.uk/service-manual/the-team">https://www.gov.uk/service-manual/the-team</a></p>
-
 <h2 id="brugertests">Brugertests</h2>
+
 <h2 id="måling-og-kpier">Måling og kpi’er</h2>
+
 <h2 id="teknologivalg">Teknologivalg</h2>
+
 <h2 id="tjekliste-til-den-godkendte-løsning">Tjekliste til den godkendte løsning</h2>
+
 <h2 id="målinger">Målinger</h2>
 
 
@@ -525,7 +463,6 @@
 
   </div>
 </main>
-
 
 <footer>
   <div class="footer">

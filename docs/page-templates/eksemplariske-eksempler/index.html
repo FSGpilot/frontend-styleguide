@@ -98,6 +98,7 @@
       </div>
     </div>
 
+    <div class="overlay"></div>
     <nav role="navigation" class="nav"> <!-- collapsible-->
       <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
@@ -143,57 +144,6 @@
     
   </li>
 
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/getting-started/" 
-  class="  nav-link">
-  <span>Kom godt i gang</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/faellesoffentlige-krav/" 
-  class="  nav-link">
-  <span>Fællesoffentlige krav</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/whats-new/" 
-  class="  nav-link">
-  <span>Om designsystemet</span>
-</a>
-
-
-    
-  </li>
-
 
           </ul>
 
@@ -214,13 +164,13 @@
       
     </nav> <!-- collapsible nav end-->
 </header>
-<div class="overlay"></div>
 
-<main class="container page-container" id="main-content">
+<main class="container page-container">
   <div class="row">
 
-    <div class="col-3">
-      <aside class="sidenav">
+    <div class="col-12 col-md-3 sidebar-col">
+      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
+      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
         
         
         <ul class="sidenav-list">
@@ -341,10 +291,10 @@
 
         </ul>
         
-      </aside>
-    </div>
+      </nav>
+    </div>    
 
-    <div class="col-12 col-sm-9 styleguide-content content">
+    <div class="col-12 col-md-9">
       <section id="section-">
         <header>
           <p class="small-text m-0 uppercase">
@@ -409,6 +359,7 @@
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">" nav"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!-- collapsible--&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary button-menu-close js-menu-close"</span> <span class="na">title=</span><span class="s">"Luk mobil menu"</span><span class="nt">&gt;</span>
@@ -432,7 +383,6 @@
     <span class="nt">&lt;/nav&gt;</span>
     <span class="c">&lt;!-- collapsible nav end--&gt;</span>
 <span class="nt">&lt;/header&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
 <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"container page-container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
@@ -624,6 +574,7 @@
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">" nav"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!-- collapsible--&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary button-menu-close js-menu-close"</span> <span class="na">title=</span><span class="s">"Luk mobil menu"</span><span class="nt">&gt;</span>
@@ -660,7 +611,6 @@
     <span class="nt">&lt;/nav&gt;</span>
     <span class="c">&lt;!-- collapsible nav end--&gt;</span>
 <span class="nt">&lt;/header&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
 <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"container page-container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
@@ -918,6 +868,7 @@
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
     <span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span> <span class="na">class=</span><span class="s">" nav"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!-- collapsible--&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary button-menu-close js-menu-close"</span> <span class="na">title=</span><span class="s">"Luk mobil menu"</span><span class="nt">&gt;</span>
@@ -988,7 +939,6 @@
     <span class="nt">&lt;/nav&gt;</span>
     <span class="c">&lt;!-- collapsible nav end--&gt;</span>
 <span class="nt">&lt;/header&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
 <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"container page-container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"page-header"</span><span class="nt">&gt;</span>
@@ -1628,7 +1578,6 @@
 
   </div>
 </main>
-
 
 <footer>
   <div class="footer">

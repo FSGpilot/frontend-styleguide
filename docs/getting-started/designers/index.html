@@ -98,6 +98,7 @@
       </div>
     </div>
 
+    <div class="overlay"></div>
     <nav role="navigation" class="nav"> <!-- collapsible-->
       <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
@@ -141,57 +142,6 @@
     
   </li>
 
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/getting-started/" 
-  class="  nav-link">
-  <span>Kom godt i gang</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/faellesoffentlige-krav/" 
-  class="  nav-link">
-  <span>Fællesoffentlige krav</span>
-</a>
-
-
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-
-
-<a href="/frontend-styleguide/whats-new/" 
-  class="  nav-link">
-  <span>Om designsystemet</span>
-</a>
-
-
-    
-  </li>
-
 
           </ul>
 
@@ -212,13 +162,13 @@
       
     </nav> <!-- collapsible nav end-->
 </header>
-<div class="overlay"></div>
 
-<main class="container page-container" id="main-content">
+<main class="container page-container">
   <div class="row">
 
-    <div class="col-3">
-      <aside class="sidenav">
+    <div class="col-12 col-md-3 sidebar-col">
+      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
+      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
         
         
         <ul class="sidenav-list">
@@ -453,10 +403,10 @@
 
         </ul>
         
-      </aside>
-    </div>
+      </nav>
+    </div>    
 
-    <div class="col-12 col-sm-9 styleguide-content content">
+    <div class="col-12 col-md-9">
       <section id="section-">
         <header>
           <p class="small-text m-0 uppercase">
@@ -467,70 +417,29 @@
         
           <p class="font-lead">While many programs maintain their own unique brand identities, the Standards offer a common visual style that you can flexibly apply to a range of government digital platforms. Our visual style offers a clean, modern aesthetic that meets high standards of visual accessibility while promoting credibility, trust, and warmth in the design.</p>
         
-      <p>We expect many teams will need to customize this guide, but we encourage you to incorporate as much consistency in look, feel, and usability as you can.</p>
-
-<p>As a complement to this visual style guidance, we strongly recommend you use <a href="https://pages.18f.gov/content-guide/">18F’s Content Guide</a> when writing language for government services.</p>
-
-<h2 id="prototypeværktøj">Prototypeværktøj</h2>
-
-<p>Link og forklaring til et tool ala. <a href="https://bootstrapstudio.io/">Bootstrapstudio</a> og <a href="http://docs.usecreator.com/docs/slider">Ionic Creator</a>
-<br /></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KSJ7Kfonn7I?rel=0" frameborder="0" allowfullscreen=""></iframe>
+      <h2 id="prototypeværktøj">Prototypeværktøj</h2>
 
 <h2 id="retningslinjer-for-gode-selvbetjeningsløsninger">Retningslinjer for gode selvbetjeningsløsninger</h2>
 
-<p>Her kommer der retningslinjer for gode løsninger. Det kommer til at udforme sig i stil med: <a href="http://www.copenux.dk/digital-selvbetjening">copenux’s guidelines for digital selvbetjening</a></p>
-
 <h2 id="tilgængelighed">Tilgængelighed</h2>
-
-<p>All of our designs meet the <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0 AA accessibility guidelines</a> and are compliant with <a href="http://www.section508.gov/">Section 508 of the Rehabilitation Act</a>. If you choose to customize these designs, please make sure they continue to meet the requirements listed in the “Accessibility” section of each design.</p>
-
-<p>Dette afsnit kommer derudover til at indeholde indhold i stil med:
-<a href="https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333">Contrast tool</a><br />
-<a href="http://www.accessibilityoz.com/factsheets/content/2622-2/">Accesibility guidelines</a><br />
-<a href="https://www.digitalpulse.pwc.com.au/wp-content/uploads/2014/08/WCAG20Map.pdf">Wcag 2.0 map</a><br /></p>
 
 <h2 id="designprincipper">Designprincipper</h2>
 
-<p>Indhold i stil med: <a href="http://www.copenux.dk/heuristikker">CopenUX - Principper for webusability</a></p>
-
 <h2 id="brugervenligt-design">Brugervenligt design</h2>
-
-<p>Indhold i stil med: <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">10 Usability Heuristics for User Interface Design</a></p>
 
 <h2 id="design-resources">Design resources</h2>
 
-<p>The site contains HTML mockups of common UI components designed to follow the U.S. Web Design Standards’ visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.</p>
-
-<p>All of these designs are also available in various file formats, which are available for download:</p>
-
-<div class="link_group-download">
-  <a class="link-download" href="/frontend-styleguide/files/uswds-assets-ai.zip" onclick="ga('send', 'event', 'Downloaded design files - Illustrator', 'Clicked download design files button inside site');">Download design files (Illustrator)</a>
-  <a class="link-download" href="/frontend-styleguide/files/uswds-assets-sketch.zip" onclick="ga('send', 'event', 'Downloaded design files - Sketch', 'Clicked download design files button inside site');">Download design files (Sketch)</a>
-  <a class="link-download" href="/frontend-styleguide/files/uswds-assets-eps.zip" onclick="ga('send', 'event', 'Downloaded design files - EPS', 'Clicked download design files button inside site');">Download design files (EPS)</a>
-</div>
-
 <h3 id="retired-design-files">Retired design files</h3>
-<p>The following design files are no longer being maintained by the U.S. Web Design Standards team as of version 1.0.0. The most recent versions remain available for download at the links below. While the Standards team is no longer maintaining these files, we’d love to hear from any teams that are using these files and adding new components when new versions of the Standards are released. <a href="mailto:@uswebdesignstandards@gsa.gov">Send us an email</a>.</p>
-
-<p><a class="link-download" href="/frontend-styleguide/files/uswds-assets-omnigraffle.zip" onclick="ga('send', 'event', 'Downloaded design files - OmniGraffle', 'Clicked download design files button inside site');">Download design files (OmniGraffle)</a></p>
 
 <h2 id="den-visuelle-identitet">Den visuelle identitet</h2>
 
 <h2 id="contribution-guidelines">Contribution guidelines</h2>
-
-<p>We’re glad you’re considering contributing to the Standards — their success relies on contributions from designers like you.</p>
-
-<p>Please visit our <a href="https://github.com/18F/web-design-standards/wiki/Contribution-Guidelines:-Design">wiki</a> to read our full contribution guidelines. Also, please note that every submission we receive goes through a full design review. (Changes that only affect underlying code are reviewed by our developers.)</p>
-
-<p>Questions or comments? <a href="mailto:uswebdesignstandards@gsa.gov">Email us</a> and we’ll get back to you as quickly as we can.</p>
 
       </section>
     </div>
 
   </div>
 </main>
-
 
 <footer>
   <div class="footer">
