@@ -1,7 +1,7 @@
 ---
 permalink: /page-templates/eksemplariske-eksempler/
 layout: styleguide
-title: Eksemplariske eksempler
+title: Løsningseksempler
 category: Page templates
 lead: Vi opererer med 4 typer af løsninger - lille, mellem, stor og hyper. I den endelige guide skal der på denne side vises eksempler for hvordan styleguiden er anvendt til at bygge alt lige fra den simpleste blanket til store offentlige portaler. Nedenfor ser i hvordan US Web Design Standards har vist en Landing page og en Documentation page.
 subnav:
