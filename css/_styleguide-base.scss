@@ -641,24 +641,27 @@ iframe {
 
 .component-preview {
   border: $outer-border;
-  margin-bottom: $spacing-small;
   position: relative;
-  padding-left: $spacing-small;
-  padding-right: $spacing-small;
-  padding-bottom: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .preview-buttons {
   position: absolute;
   top: $spacing-small;
   right: 0;
+  display: none;
 }
 
 .preview-iframe {
   border: none;
   display: block;
-  margin: 4.2rem auto $spacing-small auto;
+  margin-bottom: 0;
   max-width: 100%;
+  width: 100%;
+  height: 350px; //wil be overwritten by js
 }
 
 .component-preview-item {

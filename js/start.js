@@ -10,11 +10,12 @@ require('./vendor/stickyfill.min.js');
 var iFrameResize = require('./vendor/iframeResizer');
 
 // Initialize sticky fill
-var stickyElements = document.getElementsByClassName('sticky');
+/*var stickyElements = document.getElementsByClassName('sticky');
 
 for (var i = stickyElements.length - 1; i >= 0; i--) {
   Stickyfill.add(stickyElements[i]);
 }
+*/
 
 // Initialize The style switcher fill
 $('.style-switcher').val(window.curStyle);
@@ -42,6 +43,22 @@ for (var j = previewElements.length - 1; j >= 0; j--) {
   }
 }
 
+
+iFrameResize({ log: false, heightCalculationMethod: 'taggedElement', resizeFrom: 'child' }, '.preview-iframe');
+
+//quick fix to trigger iframeresizer. 
+setTimeout(function () {
+  var iframes = $('.preview-iframe');
+  iframes.each(function(index) {
+    if($(this)[0].iFrameResizer !== undefined){
+      $(this)[0].iFrameResizer.resize();
+    }
+  });
+}, 2000);
+
+
+//Below: resize the iframe to different sizes. Not used anymore.
+/*
 // Initialize the component previews
 var activePreview = function(btnClicked){
   var $width = undefined;
@@ -78,55 +95,10 @@ $('#'+currentlyClicked).each(function() {
 });
 
 iFrameResize({ log: false, heightCalculationMethod: 'taggedElement', resizeFrom: 'child' }, '.preview-iframe');
-// });
-
-
-// $('.preview-iframe').on('load', function () {
-//   var $iframe = $(this);
-
-//   $(this.contentWindow).on('resize', function () {
-//     var $body = $iframe.contents().find('body');
-//     var $margin = 0;
-//     var $height = $iframe.contents().outerHeight();//$body.prop('scrollHeight') + $margin;
-//     $iframe.css('height', $height + 'px');
-//   });
-
-//   $('.loader-container').hide();
-//   $(this).show();
-// });
-
 
 $('.component-preview-button').on('click', function () {
   if(this.id != 'full') {
     activePreview(this);
   }
 });
-
-
-// Annotations 
-$(document).ready(function () {
-  $('.marker').bind('click mouseenter', function (e) {
-    $(this).children('.desc').show();
-    $(this).children('.desc').css('z-index', '-1');
-    $(this).css('z-index', '1');
-  });
-
-  $('.marker').bind('mouseleave', function (e) {
-    $(this).children('.desc').hide();
-    $(this).css('z-index', 'auto');
-  });
-
-  //hide the description if clicked on anywhere on page
-  $(document).on('mouseup', function (e) {
-    var container = $('.desc');
-
-    if (!container.is(e.target) // if the target of the click isn't the container...
-      && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-      container.hide();
-    }
-  });  
-});
-
-
-
+*/
