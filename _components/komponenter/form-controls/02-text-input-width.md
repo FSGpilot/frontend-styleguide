@@ -16,13 +16,13 @@ lead: Text inputs allow people to enter any combination of letters, numbers, or 
     <h4 class="heading">Implementation</h4>
     <p>Inputfelter har en standard bredde på 40rem, for at ændre bredden på inputfelter bruges nedenstående class:</p>
     <ul>
-      <li><code>.input-width-55</code> er 5.5rem bred</li>
-      <li><code>.input-width-100</code> er 10rem bred</li>
-      <li><code>.input-width-150</code> er 15rem bred</li>
-      <li><code>.input-width-200</code> er 20rem bred</li>
-      <li><code>.input-width-300</code> er 30rem bred</li>
-      <li><code>.input-width-400</code> er 40rem bred</li>
-      <li><code>.input-width-500</code> er 50rem bred</li>
+      <li><code>.input-width-xxs</code> er 5.5rem bred</li>
+      <li><code>.input-width-xs</code> er 10rem bred</li>
+      <li><code>.input-width-s</code> er 15rem bred</li>
+      <li><code>.input-width-m</code> er 20rem bred</li>
+      <li><code>.input-width-l</code> er 30rem bred</li>
+      <li><code>.input-width-xl</code> er 40rem bred</li>
+      <li><code>.input-width-xxl</code> er 50rem bred</li>
     </ul>
     <h4 class="heading">Accessibility</h4>
     <p>If you customize the text inputs, ensure they continue to meet the the <a href="{{ site.baseurl }}/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
