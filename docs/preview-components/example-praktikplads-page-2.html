@@ -129,7 +129,7 @@
     <div class="overlay"></div>
     <nav role="navigation" class=" nav">
         <!-- collapsible-->
-        <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu">
+        <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu">
             <svg class="icon-svg "><use xlink:href="#close"></use></svg> Luk
         </button>
 
@@ -256,10 +256,10 @@
                     <div class=" align-right ">
                         <ul class="unstyled-list">
                             <li>
-                                <a class="" href="mailto:support@example.dk">support@example.dk</a>
+                                <a class="function-link" href="mailto:support@example.dk">support@example.dk</a>
                             </li>
                             <li>
-                                <a class="" href="tel:12 34 56 78">12 34 56 78</a>
+                                <a class="function-link" href="tel:12 34 56 78">12 34 56 78</a>
                             </li>
                         </ul>
                     </div>
@@ -268,6 +268,44 @@
         </div>
     </div>
 </footer>
+
+<div class="modal" id="modal-contact" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-contact-1">
+            <header class="modal__header">
+                <h1 class="modal__title h2" id="modal-contact-1">
+                    Kontakt
+                </h1>
+            </header>
+            <main class="modal__content content">
+                <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
+                    <div class="alert-body">
+                        <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>
+                        <p class="alert-text">Noget tekst, der forklarer det af advarende karakter,
+                            som brugeren bør vide inden denne ringer eller skriver.
+                            Noget tekst, der forklarer det af advarende karakter,
+                            som brugeren bør vide inden denne ringer eller skriver.</p>
+                    </div>
+                </div>
+                <h3>En form for support</h3>
+                <p>Hvis du har spørgsmål om:</p>
+                <ul>
+                    <li>En ting som denne</li>
+                    <li>Et andet emne som dette</li>
+                </ul>
+                <p>Kan du ringe direkte til: 12 34 56 78</p>
+                <p>Telefonen er åben:</p>
+                <p class="m-0">Mandag:&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp
+                    kl. 9-17</p>
+                <p class="m-0">Tirsdag-torsdag:&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp kl. 9-17</p>
+                <p class="m-0">Fredag:&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp
+                    kl. kl. 9-14</p>
+            </main>
+
+            <button class="modal__close button button-ghost" aria-label="Close modal" data-micromodal-close="">Luk</button>
+        </div>
+    </div>
+</div>
 </ul></div></div></div></nav></header>
 
     <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
