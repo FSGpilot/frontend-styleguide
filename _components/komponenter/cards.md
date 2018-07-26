@@ -13,7 +13,7 @@ lead: A card is a sheet of material that serves as an entry point to more detail
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="code-documentation">
-    Kode dokumentation
+    Implementation
   </button>
   <div id="code-documentation" class="accordion-content">
     <p>Alle cards har en <code>.card</code> class. Cards kan bestå af en header, et tekstområde, et contentområde og et aktionområde. Der er ingen specifik rækkefølge af områder og de kan derfor sammensættes efter eget behov og i alle størrelser. Der skal dog overholdes, hvad der bliver placeret i de forskellige områder. Hver område er beskrevet nedenfor. </p> 

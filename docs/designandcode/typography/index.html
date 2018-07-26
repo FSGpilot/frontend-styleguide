@@ -21,44 +21,19 @@
 <meta property="og:title" content="Typografi | Frontend styleguide - version 2">
 
 
-<meta name="description" content="Typefaces
+<meta name="description" content="Font
   
   IBM Plex Sans
-
-
-  
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum mollis elit, in faucibus mi consectetur vel. In quis scelerisque lectus. Aliquam aliquam gravida lorem at pharetra. Fusce malesuada sed nisl eget interdum.
-    Nunc eu lorem molestie, pretium eros in, elementum lectus. Donec vitae facilisis mauris. In sed urna ut felis pellentesque tincidunt at quis dolor. Donec sed velit vel massa tempus venenatis vitae vel urna. Duis tincidunt molestie diam sit amet vehicula. Sed non hendrerit ex, et convallis urna.
-    Variablen @font-name bruges til at styre typefacen.
-  
-
-  
-    Aa
-    
-      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-      a b c d e f g h i j k l m n o p q r s t u v w x y z
-      0 1 2 3 4 5 6 7 8 9
-    
-  
-
-
-
-  
-    Fallback font
-    Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.
-  
-
+Der benyttes fonten 'IBM Plex Sans' til at tekst. Fonten er 'open source' og kan derfor frit benyttes af alle sites.
+Fallback font
+Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.
 
 
 
 
   Titler
   
-  
-  
-    Alle HTML titler, &amp;lt;h1&amp;gt; til &amp;lt;h6&amp;gt;, er stylet. Kan benyttes enten vis tags, klasser eller mixins.
-  
-
+  Alle HTML titler, &amp;lt;h1&amp;gt; til &amp;lt;h6&amp;gt;, er stylet. Kan benyttes enten vis tags, klasser eller mixins.
 
 
     
@@ -113,7 +88,7 @@
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
         &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h6&amp;gt;As heading tags&amp;lt;/h6&amp;gt;
+            &amp;lt;h6&amp;gt;Semantisk overskrift&amp;lt;/h6&amp;gt;
             &amp;lt;h1&amp;gt;Heading 1&amp;lt;/h1&amp;gt;
             &amp;lt;h2&amp;gt;Heading 2&amp;lt;/h2&amp;gt;
             &amp;lt;h3&amp;gt;Heading 3&amp;lt;/h3&amp;gt;
@@ -122,7 +97,7 @@
             &amp;lt;h6&amp;gt;Heading 6&amp;lt;/h6&amp;gt;
         &amp;lt;/div&amp;gt;
         &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h6&amp;gt;As classes&amp;lt;/h6&amp;gt;
+            &amp;lt;p class=&quot;h6&quot;&amp;gt;Ligner en overskrift&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;h1&quot;&amp;gt;Heading 1&amp;lt;/div&amp;gt;
             &amp;lt;div class=&quot;h2&quot;&amp;gt;Heading 2&amp;lt;/div&amp;gt;
             &amp;lt;div class=&quot;h3&quot;&amp;gt;Heading 3&amp;lt;/div&amp;gt;
@@ -141,11 +116,9 @@
 
 
   
-    Dokumentation
-  
-  
     Implementation
-    We recommend using a native input using type=&quot;file&quot;, rather than a custom implementation.
+  
+  
     Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. 
       
         
@@ -169,16 +142,20 @@
   
 
 
+  
+    Dokumentation
+  
+  
+    
+  
+
 
 
 
-  Display tekst
-  
-  
-  
-    Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.
-  
 
+  Manchettekst (lead paragraph)
+  
+  Giv tekst extra focus ved at give den klassen .font-lead.
 
 
     
@@ -231,28 +208,17 @@
   
     
 &amp;lt;div class=&quot;container&quot;&amp;gt;
-    &amp;lt;div class=&quot;row&quot;&amp;gt;
-        &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display text 1&amp;lt;/h5&amp;gt;
-            &amp;lt;p class=&quot;displayheading-1&quot;&amp;gt;
-                &amp;lt;span class=&quot;text-positive&quot;&amp;gt;10 dage&amp;lt;/span&amp;gt; Positiv
-                &amp;lt;span class=&quot;text-negative&quot;&amp;gt;55°/12°E&amp;lt;/span&amp;gt;
-            &amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-        &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display text 2&amp;lt;/h5&amp;gt;
-            &amp;lt;p class=&quot;displayheading-2&quot;&amp;gt;
-                &amp;lt;span class=&quot;text-negative&quot;&amp;gt;80 centimeter&amp;lt;/span&amp;gt; tredive kilogram sytten nætter tilgodehavende
-                feriedage
-            &amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
+    &amp;lt;p class=&quot;font-lead&quot;&amp;gt;
+        Indledende manchet tekst som leder op til noget mere tekst med rigtigt brød-tekst
+        indhold.
+    &amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 
 
 
 
   
+
 
 
 
@@ -260,9 +226,7 @@
 
   Brødtekst (body copy)
   
-  Body copy
-
-The Frontend styleguide's global default font-size is 16px, with a line-height of 1.428. This is applied to the &amp;lt;body&amp;gt; and all paragraphs. In addition, &amp;lt;p&amp;gt; (paragraphs) receive a bottom margin of half their computed line-height (10px by default).
+  The Frontend styleguide's global default font-size is 16px, with a line-height of 24px. This is applied to the &amp;lt;body&amp;gt; and all paragraphs. In addition, &amp;lt;p&amp;gt; (paragraphs) receive a bottom margin of half their computed line-height (10px by default).
 
 
     
@@ -317,92 +281,15 @@ The Frontend styleguide's global default font-size is 16px, with a line-height o
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
         &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-            &amp;lt;p&amp;gt;This is a normal body text &amp;lt;/p&amp;gt;
-            &amp;lt;p class=&quot;bold&quot;&amp;gt;This is a bold body text&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;em&amp;gt;This is an italic body text &amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is an italic body text &amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-
-
-  Inline text elements
-  
-  
-  
-    Styling for common inline HTML5 elements.
-  
-
-
-
-    
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                    
-                        
-                            
-                                
-                                    
-                                    
-                                
-                            
-                        
-                    
-                
-            
-        
-    
-
-    
-
-    
-
-
-  
-  Kode
-  
-    
-&amp;lt;div class=&quot;container&quot;&amp;gt;
-    &amp;lt;div class=&quot;row&quot;&amp;gt;
-        &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;u&amp;gt;This line of text will render as underlined&amp;lt;/u&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This line of with small text (small-tag)&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p class=&quot;small-text&quot;&amp;gt;This line of with small text (.small-text-class)&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;This line rendered as bold text.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This line rendered as bold text with b-tag.&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;em&amp;gt;This line rendered as italicized text.&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;Dette er brødtekst.&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;u&amp;gt;Dette er brødtekst med understregning&amp;lt;/u&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;Dette er lille brødtekst (small-tag)&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;small-text&quot;&amp;gt;Dette er lille brødtekst (.small-text-class)&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Dette er fed brødtekst&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Dette er også fed brødtekst lavet med et b-tag.&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;em&amp;gt;Dette er brødtekst skrevet i kursiv.&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;
             &amp;lt;p&amp;gt;
-                &amp;lt;i&amp;gt;This line rendered as italicized text with i-tag.&amp;lt;/i&amp;gt;
+                &amp;lt;i&amp;gt;Dette er brødtekst skrevet i kursiv med et i-tag.&amp;lt;/i&amp;gt;
             &amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
@@ -415,16 +302,183 @@ The Frontend styleguide's global default font-size is 16px, with a line-height o
 
 
 
+  
+    Implementation
+  
+  
+    Fontstørrelsen for brødtekst er som udgangspunkt 16px, og har en liniehøjde som svarer til 24px.
+    Alle fontstørrelser er angiver i rem-værdier og forholder sig derfor til fontstørrelsen som er angivet &amp;lt;html&amp;gt;-tagget.
+    HTML-taggets fontstørrelse er angivet i procent således at fontstørrelen er relativ til broswerens brugervalgte fontstørrelse. De fleste brugere har en standardinstilling på 16px, 62.5% af dette er 10px og en font-størrelse på 1.6rem giver derfor en fontstørrelse på 16px. Hvis brugeren vælger at indstille en standard fontstørrelse som er større end 16px vil hele sitet afspejle brugerens ønske.
+    &amp;lt;/p&amp;gt;
+    
+                
+            html { font-size: 62.5%; } 
+            p &amp;nbsp;&amp;nbsp;&amp;nbsp;{ font-size: 1.6rem; } /* =16px */ 
+        
+    
+  
+
+
+  
+    Dokumentation
+  
+  
+    
+  
 
 
 
-  Manchet tekst
+
+
+  Links
   
-  
-  
-    Giv tekst extra focus ved at give den klassen .font-lead.
   
 
+Links lead users to a different page or further information.
+
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot;&amp;gt;default link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-hover&quot;&amp;gt;hover link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-active&quot;&amp;gt;active link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-visited&quot;&amp;gt;visited link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-focus&quot;&amp;gt;focus link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a link that goes to an
+        &amp;lt;a href=&quot;&quot; class=&quot;icon-link&quot;&amp;gt;external website
+            &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+        &amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a text
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;
+            tabindex=&quot;-1&quot;&amp;gt;disabled link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This is a 
+  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
+ in bold&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is a 
+  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
+ in smalltext&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
+
+    &amp;lt;div class=&quot;background-dark p-6&quot;&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot;&amp;gt;default link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-hover&quot;&amp;gt;hover link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-active&quot;&amp;gt;active link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-visited&quot;&amp;gt;visited link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-focus&quot;&amp;gt;focus link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a link that goes to an
+            &amp;lt;a href=&quot;&quot; class=&quot;icon-link&quot;&amp;gt;external website
+                &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+            &amp;lt;/a&amp;gt; on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a text
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;
+                tabindex=&quot;-1&quot;&amp;gt;disabled link state&amp;lt;/a&amp;gt; on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This is a 
+  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
+ in bold&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is a 
+  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
+ in smalltext&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+   
+  
+
+
+
+
+
+  Display tekst
+  
+  Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.
 
 
     
@@ -478,10 +532,20 @@ The Frontend styleguide's global default font-size is 16px, with a line-height o
     
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
-        &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-            &amp;lt;p class=&quot;font-lead&quot;&amp;gt;
-                Indledende manchet tekst som leder op til noget mere tekst med rigtigt brød-tekst
-                indhold.
+        &amp;lt;div class=&quot;col-6&quot;&amp;gt;
+            &amp;lt;p class=&quot;h5&quot;&amp;gt;Display text 1&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;displayheading-1&quot;&amp;gt;
+                10 dage
+                &amp;lt;span class=&quot;text-positive&quot;&amp;gt; Positiv&amp;lt;/span&amp;gt;
+                &amp;lt;span class=&quot;text-negative&quot;&amp;gt;12°&amp;lt;/span&amp;gt;
+            &amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;col-6&quot;&amp;gt;
+            &amp;lt;p class=&quot;h5&quot;&amp;gt;Display text 2&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;displayheading-2&quot;&amp;gt;
+                10 dage
+                &amp;lt;span class=&quot;text-positive&quot;&amp;gt; Positiv&amp;lt;/span&amp;gt;
+                &amp;lt;span class=&quot;text-negative&quot;&amp;gt;12°&amp;lt;/span&amp;gt;
             &amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
@@ -496,27 +560,181 @@ The Frontend styleguide's global default font-size is 16px, with a line-height o
 
 
 
-
-  Global settings
+  Lister
   
   
-Fonts
-For at skifte i mellem fonte bruges font-weight variablerne:
-
-	
-		$font-weight-normal
-		$font-weight medium
-		$font-weight-semibold
-		$font-weight-bold
-	
 
 
-For at ændre font-style bruges variablerne:
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
 
-	
-		$font-style-normal
-		$font-style-italic
-	
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;div class=&quot;row&quot;&amp;gt;
+        &amp;lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&amp;gt;
+            &amp;lt;p class=&quot;h4&quot;&amp;gt;Unordered body list&amp;lt;/p&amp;gt;
+
+            &amp;lt;ul class=&quot;body-list&quot;&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                    &amp;lt;ul class=&quot;sub_list&quot;&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                    &amp;lt;/ul&amp;gt;
+
+                &amp;lt;/li&amp;gt;
+
+            &amp;lt;/ul&amp;gt;
+
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&amp;gt;
+            &amp;lt;p class=&quot;h4&quot;&amp;gt;Ordered body list&amp;lt;/p&amp;gt;
+
+            &amp;lt;ol class=&quot;body-list&quot;&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                    &amp;lt;ol class=&quot;sub_list&quot;&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                    &amp;lt;/ol&amp;gt;
+
+                &amp;lt;/li&amp;gt;
+
+            &amp;lt;/ol&amp;gt;
+
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementation
+  
+  
+    For at lave en liste uden styling kan enten klassen .unstyled-list benyttes eller et mixin @include unstyled-list;.
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    
+  
 
 
 
@@ -526,8 +744,6 @@ For at ændre font-style bruges variablerne:
   
   
 
-Readable text allows users to efficiently read and take in textual information, whereas text that is not readable turns off readers or makes it challenging for them to stay focused. The following guidelines promote good readability.
-
 
     
         
@@ -581,25 +797,25 @@ Readable text allows users to efficiently read and take in textual information, 
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
         &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-            &amp;lt;h6 class=&quot;heading-alt&quot;&amp;gt;Line length for paragraph - Desktop&amp;lt;/h6&amp;gt;
+            &amp;lt;p class=&quot;h6&quot;&amp;gt;Linielængde for brødtekst (paragraph) - Desktop&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;content&quot;&amp;gt;
                 &amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. &amp;lt;/p&amp;gt;
-                &amp;lt;p class=&quot;help-text&quot;&amp;gt;Equivalent of 75 characters on desktop&amp;lt;/p&amp;gt;
+                &amp;lt;p class=&quot;help-text&quot;&amp;gt;Svarer til ca 75 tegn på desktop&amp;lt;/p&amp;gt;
             &amp;lt;/div&amp;gt;
 
-            &amp;lt;h6 class=&quot;heading-alt&quot;&amp;gt;Line length for lead-text - Desktop&amp;lt;/h6&amp;gt;
+            &amp;lt;p class=&quot;h6&quot;&amp;gt;Linielængde for manchettekst (lead paragraph)- Desktop&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;content&quot;&amp;gt;
                 &amp;lt;p class=&quot;font-lead&quot;&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. &amp;lt;/p&amp;gt;
-                &amp;lt;p class=&quot;font-lead help-text&quot;&amp;gt;Equivalent of 75 characters on desktop&amp;lt;/p&amp;gt;
+                &amp;lt;p class=&quot;font-lead help-text&quot;&amp;gt;Svarer til ca 75 tegn på desktop&amp;lt;/p&amp;gt;
             &amp;lt;/div&amp;gt;
 
-            &amp;lt;h6 class=&quot;heading-alt&quot;&amp;gt;Spacing&amp;lt;/h6&amp;gt;
+            &amp;lt;p class=&quot;h6&quot;&amp;gt;Spacing&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;content&quot;&amp;gt;
                 &amp;lt;h1&amp;gt;Page heading&amp;lt;/h1&amp;gt;
                 &amp;lt;p class=&quot;font-lead&quot;&amp;gt;Great Smoky Mountains National Park straddles the border of
@@ -626,165 +842,9 @@ Readable text allows users to efficiently read and take in textual information, 
                 &amp;lt;p&amp;gt;Entrance to Great Smoky Mountains National Park is free. The
                     park is one of the few national parks where no entrance
                     fees are charged.&amp;lt;/p&amp;gt;
-                &amp;lt;/p&amp;gt;
             &amp;lt;/div&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Dokumentation
-  
-  
-    Implementation
-    To get the max-width on body text, add the class content to your document. Use at the specificity that best suits your project's needs.
-    Lists must use content-list for the above.
-    You can change the max-width value $text-max-width in src/stylesheets/core/_variables.scss.
-    Usability
-    
-      Alignment: Type set flush left provides the eye a constant starting point for each line, making text easier to read.
-      Line length: Controlling the length of lines of text in extended copy makes reading more comfortable by helping readers’ eyes flow easily from one line to the next. Somewhere between 50 and 75 characters per line is broadly considered to be a readable line length, while 66 characters is considered the ideal. Other factors beyond line length also affect reading comfort. Text with more space between lines can have somewhat longer line length. Also, contexts in which users will not be reading long passages of text (such as footnotes or alerts) can safely be set with somewhat longer lines as well.
-      Spacing: White space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. When setting headers and body copy, white space should be 60px, 30px, 20px, or 15px.
-    
-  
-
-
-
-
-
-  Links
-  
-  
-
-Links lead users to a different page or further information.
-
-
-
-    
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                    
-                        
-                            
-                                
-                                    
-                                    
-                                
-                            
-                        
-                    
-                
-            
-        
-    
-
-    
-
-    
-
-
-  
-  Kode
-  
-    
-&amp;lt;p&amp;gt;
-
-    This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot;&amp;gt;default link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-hover&quot;&amp;gt;hover link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-active&quot;&amp;gt;active link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-visited&quot;&amp;gt;visited link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-focus&quot;&amp;gt;focus link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a link that goes to an
-    &amp;lt;a href=&quot;&quot; class=&quot;icon-link&quot;&amp;gt;external website
-        &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
-    &amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a text
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;
-        tabindex=&quot;-1&quot;&amp;gt;disabled link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This is a 
-  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
- in bold&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is a 
-  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
- in smalltext&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
-
-&amp;lt;div class=&quot;background-dark p-6&quot;&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot;&amp;gt;default link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-hover&quot;&amp;gt;hover link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-active&quot;&amp;gt;active link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-visited&quot;&amp;gt;visited link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-focus&quot;&amp;gt;focus link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a link that goes to an
-        &amp;lt;a href=&quot;&quot; class=&quot;icon-link&quot;&amp;gt;external website
-            &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
-        &amp;lt;/a&amp;gt; on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a text
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;
-            tabindex=&quot;-1&quot;&amp;gt;disabled link state&amp;lt;/a&amp;gt; on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This is a 
-  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
- in bold&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is a 
-  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
- in smalltext&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 
 
@@ -795,249 +855,30 @@ Links lead users to a different page or further information.
 
 
   
-    Dokumentation
-  
-  
-    Accessibility
-    
-      Users should be able to tab to navigate between links.
-      Users should be able to activate a link when pressing ‘Enter’ on their keyboard.
-      Users should be able to identify links without relying on color alone.
-      Users should be able to activate hover and focus states with both a mouse and a keyboard.
-    
-  
-
-
-
-
-
-  Lists
-  
-  
-
-Lists organize written information for users.
-
-
-    
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                    
-                        
-                            
-                                
-                                    
-                                    
-                                
-                            
-                        
-                    
-                
-            
-        
-    
-
-    
-
-    
-
-
-  
-  Kode
-  
-    
-&amp;lt;div class=&quot;row&quot;&amp;gt;
-
-    &amp;lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&amp;gt;
-        &amp;lt;h4&amp;gt;Unordered body list&amp;lt;/h4&amp;gt;
-
-        &amp;lt;ul class=&quot;body-list&quot;&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-                &amp;lt;ul class=&quot;sub_list&quot;&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                &amp;lt;/ul&amp;gt;
-
-            &amp;lt;/li&amp;gt;
-
-        &amp;lt;/ul&amp;gt;
-
-    &amp;lt;/div&amp;gt;
-    &amp;lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&amp;gt;
-        &amp;lt;h4&amp;gt;Ordered body list&amp;lt;/h4&amp;gt;
-
-        &amp;lt;ol class=&quot;body-list&quot;&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-                &amp;lt;ol class=&quot;sub_list&quot;&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                &amp;lt;/ol&amp;gt;
-
-            &amp;lt;/li&amp;gt;
-
-        &amp;lt;/ol&amp;gt;
-
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&amp;lt;style scoped&amp;gt;
-    h4 {
-        margin-bottom: 1rem;
-        margin-top: 2rem;
-    }
-&amp;lt;/style&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Dokumentation
-  
-  
     Implementation
-    Alle lister har default styling. Dog kan der tilføjes en class på ul afhængig af, om man vil have paragraph tekst eller body tekst. For paragraph tekst tilføjes en paragraph-list class og for body tekst tilføjes en body-list class.
-    For lister uden styling bruges en .unstyled-list class eller et mixin @include unstyled-list;.
-    Usability
-    When to use
-    
-      Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.
-      Use unordered lists to display text in no specific order.
-    
-    When to consider something different
-    
-      If you need to communicate long lists of narrative text.
-    
-    Guidelines
-    
-      Use sentence case and begin lists with a capital letter.
-      Use punctuation appropriate to the text. Do not leave sentences without periods.">
-<meta property="og:description" content="Typefaces
+  
+  
+    For at give en max-bredde på 75 karaktere skal brødteksten være placeret inde i et html-element som har klassen .content
+    Bredden er styret af variablen $text-max-width in src/stylesheets/core/_variables.scss.
+  
+
+
+
+  
+    Dokumentation">
+<meta property="og:description" content="Font
   
   IBM Plex Sans
-
-
-  
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum mollis elit, in faucibus mi consectetur vel. In quis scelerisque lectus. Aliquam aliquam gravida lorem at pharetra. Fusce malesuada sed nisl eget interdum.
-    Nunc eu lorem molestie, pretium eros in, elementum lectus. Donec vitae facilisis mauris. In sed urna ut felis pellentesque tincidunt at quis dolor. Donec sed velit vel massa tempus venenatis vitae vel urna. Duis tincidunt molestie diam sit amet vehicula. Sed non hendrerit ex, et convallis urna.
-    Variablen @font-name bruges til at styre typefacen.
-  
-
-  
-    Aa
-    
-      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-      a b c d e f g h i j k l m n o p q r s t u v w x y z
-      0 1 2 3 4 5 6 7 8 9
-    
-  
-
-
-
-  
-    Fallback font
-    Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.
-  
-
+Der benyttes fonten 'IBM Plex Sans' til at tekst. Fonten er 'open source' og kan derfor frit benyttes af alle sites.
+Fallback font
+Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.
 
 
 
 
   Titler
   
-  
-  
-    Alle HTML titler, &amp;lt;h1&amp;gt; til &amp;lt;h6&amp;gt;, er stylet. Kan benyttes enten vis tags, klasser eller mixins.
-  
-
+  Alle HTML titler, &amp;lt;h1&amp;gt; til &amp;lt;h6&amp;gt;, er stylet. Kan benyttes enten vis tags, klasser eller mixins.
 
 
     
@@ -1092,7 +933,7 @@ Lists organize written information for users.
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
         &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h6&amp;gt;As heading tags&amp;lt;/h6&amp;gt;
+            &amp;lt;h6&amp;gt;Semantisk overskrift&amp;lt;/h6&amp;gt;
             &amp;lt;h1&amp;gt;Heading 1&amp;lt;/h1&amp;gt;
             &amp;lt;h2&amp;gt;Heading 2&amp;lt;/h2&amp;gt;
             &amp;lt;h3&amp;gt;Heading 3&amp;lt;/h3&amp;gt;
@@ -1101,7 +942,7 @@ Lists organize written information for users.
             &amp;lt;h6&amp;gt;Heading 6&amp;lt;/h6&amp;gt;
         &amp;lt;/div&amp;gt;
         &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h6&amp;gt;As classes&amp;lt;/h6&amp;gt;
+            &amp;lt;p class=&quot;h6&quot;&amp;gt;Ligner en overskrift&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;h1&quot;&amp;gt;Heading 1&amp;lt;/div&amp;gt;
             &amp;lt;div class=&quot;h2&quot;&amp;gt;Heading 2&amp;lt;/div&amp;gt;
             &amp;lt;div class=&quot;h3&quot;&amp;gt;Heading 3&amp;lt;/div&amp;gt;
@@ -1120,11 +961,9 @@ Lists organize written information for users.
 
 
   
-    Dokumentation
-  
-  
     Implementation
-    We recommend using a native input using type=&quot;file&quot;, rather than a custom implementation.
+  
+  
     Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. 
       
         
@@ -1148,16 +987,20 @@ Lists organize written information for users.
   
 
 
+  
+    Dokumentation
+  
+  
+    
+  
+
 
 
 
-  Display tekst
-  
-  
-  
-    Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.
-  
 
+  Manchettekst (lead paragraph)
+  
+  Giv tekst extra focus ved at give den klassen .font-lead.
 
 
     
@@ -1210,28 +1053,17 @@ Lists organize written information for users.
   
     
 &amp;lt;div class=&quot;container&quot;&amp;gt;
-    &amp;lt;div class=&quot;row&quot;&amp;gt;
-        &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display text 1&amp;lt;/h5&amp;gt;
-            &amp;lt;p class=&quot;displayheading-1&quot;&amp;gt;
-                &amp;lt;span class=&quot;text-positive&quot;&amp;gt;10 dage&amp;lt;/span&amp;gt; Positiv
-                &amp;lt;span class=&quot;text-negative&quot;&amp;gt;55°/12°E&amp;lt;/span&amp;gt;
-            &amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-        &amp;lt;div class=&quot;col-6&quot;&amp;gt;
-            &amp;lt;h5 class=&quot;h5&quot;&amp;gt;Display text 2&amp;lt;/h5&amp;gt;
-            &amp;lt;p class=&quot;displayheading-2&quot;&amp;gt;
-                &amp;lt;span class=&quot;text-negative&quot;&amp;gt;80 centimeter&amp;lt;/span&amp;gt; tredive kilogram sytten nætter tilgodehavende
-                feriedage
-            &amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
+    &amp;lt;p class=&quot;font-lead&quot;&amp;gt;
+        Indledende manchet tekst som leder op til noget mere tekst med rigtigt brød-tekst
+        indhold.
+    &amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 
 
 
 
   
+
 
 
 
@@ -1239,9 +1071,7 @@ Lists organize written information for users.
 
   Brødtekst (body copy)
   
-  Body copy
-
-The Frontend styleguide's global default font-size is 16px, with a line-height of 1.428. This is applied to the &amp;lt;body&amp;gt; and all paragraphs. In addition, &amp;lt;p&amp;gt; (paragraphs) receive a bottom margin of half their computed line-height (10px by default).
+  The Frontend styleguide's global default font-size is 16px, with a line-height of 24px. This is applied to the &amp;lt;body&amp;gt; and all paragraphs. In addition, &amp;lt;p&amp;gt; (paragraphs) receive a bottom margin of half their computed line-height (10px by default).
 
 
     
@@ -1296,92 +1126,15 @@ The Frontend styleguide's global default font-size is 16px, with a line-height o
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
         &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-            &amp;lt;p&amp;gt;This is a normal body text &amp;lt;/p&amp;gt;
-            &amp;lt;p class=&quot;bold&quot;&amp;gt;This is a bold body text&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;em&amp;gt;This is an italic body text &amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is an italic body text &amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-
-
-  Inline text elements
-  
-  
-  
-    Styling for common inline HTML5 elements.
-  
-
-
-
-    
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                    
-                        
-                            
-                                
-                                    
-                                    
-                                
-                            
-                        
-                    
-                
-            
-        
-    
-
-    
-
-    
-
-
-  
-  Kode
-  
-    
-&amp;lt;div class=&quot;container&quot;&amp;gt;
-    &amp;lt;div class=&quot;row&quot;&amp;gt;
-        &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;u&amp;gt;This line of text will render as underlined&amp;lt;/u&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This line of with small text (small-tag)&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p class=&quot;small-text&quot;&amp;gt;This line of with small text (.small-text-class)&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;This line rendered as bold text.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This line rendered as bold text with b-tag.&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;&amp;lt;em&amp;gt;This line rendered as italicized text.&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;Dette er brødtekst.&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;u&amp;gt;Dette er brødtekst med understregning&amp;lt;/u&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;Dette er lille brødtekst (small-tag)&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;small-text&quot;&amp;gt;Dette er lille brødtekst (.small-text-class)&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Dette er fed brødtekst&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Dette er også fed brødtekst lavet med et b-tag.&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;&amp;lt;em&amp;gt;Dette er brødtekst skrevet i kursiv.&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;
             &amp;lt;p&amp;gt;
-                &amp;lt;i&amp;gt;This line rendered as italicized text with i-tag.&amp;lt;/i&amp;gt;
+                &amp;lt;i&amp;gt;Dette er brødtekst skrevet i kursiv med et i-tag.&amp;lt;/i&amp;gt;
             &amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
@@ -1394,16 +1147,183 @@ The Frontend styleguide's global default font-size is 16px, with a line-height o
 
 
 
+  
+    Implementation
+  
+  
+    Fontstørrelsen for brødtekst er som udgangspunkt 16px, og har en liniehøjde som svarer til 24px.
+    Alle fontstørrelser er angiver i rem-værdier og forholder sig derfor til fontstørrelsen som er angivet &amp;lt;html&amp;gt;-tagget.
+    HTML-taggets fontstørrelse er angivet i procent således at fontstørrelen er relativ til broswerens brugervalgte fontstørrelse. De fleste brugere har en standardinstilling på 16px, 62.5% af dette er 10px og en font-størrelse på 1.6rem giver derfor en fontstørrelse på 16px. Hvis brugeren vælger at indstille en standard fontstørrelse som er større end 16px vil hele sitet afspejle brugerens ønske.
+    &amp;lt;/p&amp;gt;
+    
+                
+            html { font-size: 62.5%; } 
+            p &amp;nbsp;&amp;nbsp;&amp;nbsp;{ font-size: 1.6rem; } /* =16px */ 
+        
+    
+  
+
+
+  
+    Dokumentation
+  
+  
+    
+  
 
 
 
-  Manchet tekst
+
+
+  Links
   
-  
-  
-    Giv tekst extra focus ved at give den klassen .font-lead.
   
 
+Links lead users to a different page or further information.
+
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot;&amp;gt;default link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-hover&quot;&amp;gt;hover link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-active&quot;&amp;gt;active link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-visited&quot;&amp;gt;visited link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-focus&quot;&amp;gt;focus link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a link that goes to an
+        &amp;lt;a href=&quot;&quot; class=&quot;icon-link&quot;&amp;gt;external website
+            &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+        &amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;This is a text
+        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;
+            tabindex=&quot;-1&quot;&amp;gt;disabled link state&amp;lt;/a&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This is a 
+  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
+ in bold&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+
+    &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is a 
+  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
+ in smalltext&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
+
+    &amp;lt;div class=&quot;background-dark p-6&quot;&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot;&amp;gt;default link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-hover&quot;&amp;gt;hover link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-active&quot;&amp;gt;active link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-visited&quot;&amp;gt;visited link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-focus&quot;&amp;gt;focus link state&amp;lt;/a&amp;gt;
+            on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a link that goes to an
+            &amp;lt;a href=&quot;&quot; class=&quot;icon-link&quot;&amp;gt;external website
+                &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+            &amp;lt;/a&amp;gt; on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;This is a text
+            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;
+                tabindex=&quot;-1&quot;&amp;gt;disabled link state&amp;lt;/a&amp;gt; on a dark background.&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This is a 
+  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
+ in bold&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+        &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is a 
+  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
+ in smalltext&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+   
+  
+
+
+
+
+
+  Display tekst
+  
+  Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.
 
 
     
@@ -1457,10 +1377,20 @@ The Frontend styleguide's global default font-size is 16px, with a line-height o
     
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
-        &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-            &amp;lt;p class=&quot;font-lead&quot;&amp;gt;
-                Indledende manchet tekst som leder op til noget mere tekst med rigtigt brød-tekst
-                indhold.
+        &amp;lt;div class=&quot;col-6&quot;&amp;gt;
+            &amp;lt;p class=&quot;h5&quot;&amp;gt;Display text 1&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;displayheading-1&quot;&amp;gt;
+                10 dage
+                &amp;lt;span class=&quot;text-positive&quot;&amp;gt; Positiv&amp;lt;/span&amp;gt;
+                &amp;lt;span class=&quot;text-negative&quot;&amp;gt;12°&amp;lt;/span&amp;gt;
+            &amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;col-6&quot;&amp;gt;
+            &amp;lt;p class=&quot;h5&quot;&amp;gt;Display text 2&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;displayheading-2&quot;&amp;gt;
+                10 dage
+                &amp;lt;span class=&quot;text-positive&quot;&amp;gt; Positiv&amp;lt;/span&amp;gt;
+                &amp;lt;span class=&quot;text-negative&quot;&amp;gt;12°&amp;lt;/span&amp;gt;
             &amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
@@ -1475,27 +1405,181 @@ The Frontend styleguide's global default font-size is 16px, with a line-height o
 
 
 
-
-  Global settings
+  Lister
   
   
-Fonts
-For at skifte i mellem fonte bruges font-weight variablerne:
-
-	
-		$font-weight-normal
-		$font-weight medium
-		$font-weight-semibold
-		$font-weight-bold
-	
 
 
-For at ændre font-style bruges variablerne:
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
 
-	
-		$font-style-normal
-		$font-style-italic
-	
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;div class=&quot;row&quot;&amp;gt;
+        &amp;lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&amp;gt;
+            &amp;lt;p class=&quot;h4&quot;&amp;gt;Unordered body list&amp;lt;/p&amp;gt;
+
+            &amp;lt;ul class=&quot;body-list&quot;&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                    &amp;lt;ul class=&quot;sub_list&quot;&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                    &amp;lt;/ul&amp;gt;
+
+                &amp;lt;/li&amp;gt;
+
+            &amp;lt;/ul&amp;gt;
+
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&amp;gt;
+            &amp;lt;p class=&quot;h4&quot;&amp;gt;Ordered body list&amp;lt;/p&amp;gt;
+
+            &amp;lt;ol class=&quot;body-list&quot;&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                &amp;lt;/li&amp;gt;
+
+                &amp;lt;li&amp;gt;
+                    Ordered list
+
+                    &amp;lt;ol class=&quot;sub_list&quot;&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                        &amp;lt;li&amp;gt;
+                            Ordered sublist
+
+                        &amp;lt;/li&amp;gt;
+
+                    &amp;lt;/ol&amp;gt;
+
+                &amp;lt;/li&amp;gt;
+
+            &amp;lt;/ol&amp;gt;
+
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementation
+  
+  
+    For at lave en liste uden styling kan enten klassen .unstyled-list benyttes eller et mixin @include unstyled-list;.
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    
+  
 
 
 
@@ -1505,8 +1589,6 @@ For at ændre font-style bruges variablerne:
   
   
 
-Readable text allows users to efficiently read and take in textual information, whereas text that is not readable turns off readers or makes it challenging for them to stay focused. The following guidelines promote good readability.
-
 
     
         
@@ -1560,25 +1642,25 @@ Readable text allows users to efficiently read and take in textual information, 
 &amp;lt;div class=&quot;container&quot;&amp;gt;
     &amp;lt;div class=&quot;row&quot;&amp;gt;
         &amp;lt;div class=&quot;col-12&quot;&amp;gt;
-            &amp;lt;h6 class=&quot;heading-alt&quot;&amp;gt;Line length for paragraph - Desktop&amp;lt;/h6&amp;gt;
+            &amp;lt;p class=&quot;h6&quot;&amp;gt;Linielængde for brødtekst (paragraph) - Desktop&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;content&quot;&amp;gt;
                 &amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. &amp;lt;/p&amp;gt;
-                &amp;lt;p class=&quot;help-text&quot;&amp;gt;Equivalent of 75 characters on desktop&amp;lt;/p&amp;gt;
+                &amp;lt;p class=&quot;help-text&quot;&amp;gt;Svarer til ca 75 tegn på desktop&amp;lt;/p&amp;gt;
             &amp;lt;/div&amp;gt;
 
-            &amp;lt;h6 class=&quot;heading-alt&quot;&amp;gt;Line length for lead-text - Desktop&amp;lt;/h6&amp;gt;
+            &amp;lt;p class=&quot;h6&quot;&amp;gt;Linielængde for manchettekst (lead paragraph)- Desktop&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;content&quot;&amp;gt;
                 &amp;lt;p class=&quot;font-lead&quot;&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. &amp;lt;/p&amp;gt;
-                &amp;lt;p class=&quot;font-lead help-text&quot;&amp;gt;Equivalent of 75 characters on desktop&amp;lt;/p&amp;gt;
+                &amp;lt;p class=&quot;font-lead help-text&quot;&amp;gt;Svarer til ca 75 tegn på desktop&amp;lt;/p&amp;gt;
             &amp;lt;/div&amp;gt;
 
-            &amp;lt;h6 class=&quot;heading-alt&quot;&amp;gt;Spacing&amp;lt;/h6&amp;gt;
+            &amp;lt;p class=&quot;h6&quot;&amp;gt;Spacing&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;content&quot;&amp;gt;
                 &amp;lt;h1&amp;gt;Page heading&amp;lt;/h1&amp;gt;
                 &amp;lt;p class=&quot;font-lead&quot;&amp;gt;Great Smoky Mountains National Park straddles the border of
@@ -1605,165 +1687,9 @@ Readable text allows users to efficiently read and take in textual information, 
                 &amp;lt;p&amp;gt;Entrance to Great Smoky Mountains National Park is free. The
                     park is one of the few national parks where no entrance
                     fees are charged.&amp;lt;/p&amp;gt;
-                &amp;lt;/p&amp;gt;
             &amp;lt;/div&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Dokumentation
-  
-  
-    Implementation
-    To get the max-width on body text, add the class content to your document. Use at the specificity that best suits your project's needs.
-    Lists must use content-list for the above.
-    You can change the max-width value $text-max-width in src/stylesheets/core/_variables.scss.
-    Usability
-    
-      Alignment: Type set flush left provides the eye a constant starting point for each line, making text easier to read.
-      Line length: Controlling the length of lines of text in extended copy makes reading more comfortable by helping readers’ eyes flow easily from one line to the next. Somewhere between 50 and 75 characters per line is broadly considered to be a readable line length, while 66 characters is considered the ideal. Other factors beyond line length also affect reading comfort. Text with more space between lines can have somewhat longer line length. Also, contexts in which users will not be reading long passages of text (such as footnotes or alerts) can safely be set with somewhat longer lines as well.
-      Spacing: White space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. When setting headers and body copy, white space should be 60px, 30px, 20px, or 15px.
-    
-  
-
-
-
-
-
-  Links
-  
-  
-
-Links lead users to a different page or further information.
-
-
-
-    
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                    
-                        
-                            
-                                
-                                    
-                                    
-                                
-                            
-                        
-                    
-                
-            
-        
-    
-
-    
-
-    
-
-
-  
-  Kode
-  
-    
-&amp;lt;p&amp;gt;
-
-    This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot;&amp;gt;default link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-hover&quot;&amp;gt;hover link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-active&quot;&amp;gt;active link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-visited&quot;&amp;gt;visited link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-focus&quot;&amp;gt;focus link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a link that goes to an
-    &amp;lt;a href=&quot;&quot; class=&quot;icon-link&quot;&amp;gt;external website
-        &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
-    &amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;This is a text
-    &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;
-        tabindex=&quot;-1&quot;&amp;gt;disabled link state&amp;lt;/a&amp;gt;
-&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This is a 
-  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
- in bold&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is a 
-  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
- in smalltext&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
-
-&amp;lt;div class=&quot;background-dark p-6&quot;&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot;&amp;gt;default link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-hover&quot;&amp;gt;hover link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-active&quot;&amp;gt;active link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-visited&quot;&amp;gt;visited link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;link-focus&quot;&amp;gt;focus link state&amp;lt;/a&amp;gt;
-        on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a link that goes to an
-        &amp;lt;a href=&quot;&quot; class=&quot;icon-link&quot;&amp;gt;external website
-            &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#open-in-new&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
-        &amp;lt;/a&amp;gt; on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;This is a text
-        &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;disabled&quot; disabled=&quot;disabled&quot;
-            tabindex=&quot;-1&quot;&amp;gt;disabled link state&amp;lt;/a&amp;gt; on a dark background.&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;This is a 
-  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
- in bold&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt;&amp;lt;small&amp;gt;This is a 
-  &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot; &amp;gt;link&amp;lt;/a&amp;gt;
- in smalltext&amp;lt;/small&amp;gt;&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 
 
@@ -1774,211 +1700,17 @@ Links lead users to a different page or further information.
 
 
   
-    Dokumentation
-  
-  
-    Accessibility
-    
-      Users should be able to tab to navigate between links.
-      Users should be able to activate a link when pressing ‘Enter’ on their keyboard.
-      Users should be able to identify links without relying on color alone.
-      Users should be able to activate hover and focus states with both a mouse and a keyboard.
-    
-  
-
-
-
-
-
-  Lists
-  
-  
-
-Lists organize written information for users.
-
-
-    
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                
-                
-            
-        
-        
-            
-                
-                    
-                        
-                            
-                                
-                                    
-                                    
-                                
-                            
-                        
-                    
-                
-            
-        
-    
-
-    
-
-    
-
-
-  
-  Kode
-  
-    
-&amp;lt;div class=&quot;row&quot;&amp;gt;
-
-    &amp;lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&amp;gt;
-        &amp;lt;h4&amp;gt;Unordered body list&amp;lt;/h4&amp;gt;
-
-        &amp;lt;ul class=&quot;body-list&quot;&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-                &amp;lt;ul class=&quot;sub_list&quot;&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                &amp;lt;/ul&amp;gt;
-
-            &amp;lt;/li&amp;gt;
-
-        &amp;lt;/ul&amp;gt;
-
-    &amp;lt;/div&amp;gt;
-    &amp;lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&amp;gt;
-        &amp;lt;h4&amp;gt;Ordered body list&amp;lt;/h4&amp;gt;
-
-        &amp;lt;ol class=&quot;body-list&quot;&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-            &amp;lt;/li&amp;gt;
-
-            &amp;lt;li&amp;gt;
-                Ordered list
-
-                &amp;lt;ol class=&quot;sub_list&quot;&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                    &amp;lt;li&amp;gt;
-                        Ordered sublist
-
-                    &amp;lt;/li&amp;gt;
-
-                &amp;lt;/ol&amp;gt;
-
-            &amp;lt;/li&amp;gt;
-
-        &amp;lt;/ol&amp;gt;
-
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&amp;lt;style scoped&amp;gt;
-    h4 {
-        margin-bottom: 1rem;
-        margin-top: 2rem;
-    }
-&amp;lt;/style&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Dokumentation
-  
-  
     Implementation
-    Alle lister har default styling. Dog kan der tilføjes en class på ul afhængig af, om man vil have paragraph tekst eller body tekst. For paragraph tekst tilføjes en paragraph-list class og for body tekst tilføjes en body-list class.
-    For lister uden styling bruges en .unstyled-list class eller et mixin @include unstyled-list;.
-    Usability
-    When to use
-    
-      Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.
-      Use unordered lists to display text in no specific order.
-    
-    When to consider something different
-    
-      If you need to communicate long lists of narrative text.
-    
-    Guidelines
-    
-      Use sentence case and begin lists with a capital letter.
-      Use punctuation appropriate to the text. Do not leave sentences without periods.">
+  
+  
+    For at give en max-bredde på 75 karaktere skal brødteksten være placeret inde i et html-element som har klassen .content
+    Bredden er styret af variablen $text-max-width in src/stylesheets/core/_variables.scss.
+  
+
+
+
+  
+    Dokumentation">
 
 
 
@@ -2187,7 +1919,7 @@ Lists organize written information for users.
       
 
 
-<a href="#typefaces">Typefaces</a>
+<a href="#font">Font</a>
     
   </li>
 
@@ -2197,7 +1929,7 @@ Lists organize written information for users.
       
 
 
-<a href="#headings">Headings</a>
+<a href="#titler">Titler</a>
     
   </li>
 
@@ -2207,7 +1939,7 @@ Lists organize written information for users.
       
 
 
-<a href="#lead-paragraph">Lead paragraph</a>
+<a href="#manchettekst-lead-paragraph">Manchettekst</a>
     
   </li>
 
@@ -2217,37 +1949,7 @@ Lists organize written information for users.
       
 
 
-<a href="#inlinetext">Inline text elements</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#displaytext">Display text</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#global-settings">Global settings</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#typesetting">Typesetting</a>
+<a href="#brødtekst-body-copy">Brødtekst</a>
     
   </li>
 
@@ -2258,6 +1960,26 @@ Lists organize written information for users.
 
 
 <a href="#links">Links</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#display-tekst">Display text</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#typesetting">Typesetting</a>
     
   </li>
 
@@ -2712,55 +2434,28 @@ Lists organize written information for users.
 
     <div class="col-12 col-md-9">
       <section id="section-/designandcode/typography">
-        <header>
+        
           <p class="small-text m-0 uppercase">
             Design og kode
           </p>
           <h1 class="mt-0" id="typografi">Typografi</h1>
-        </header>
-        
-          <p class="font-lead"></p>
-        
+          
       
-<section id="section-/komponenter/typography/01-typefaces">
-  <h2 class="heading heading-margin-alt" id="typefaces">Typefaces</h2>
+          
+<section class="styleguide-child-container content" id="section-/komponenter/typography/01-typefaces">
+  <h2 id="font">Font</h2>
   
-  <h4 class="h4">IBM Plex Sans</h4>
-
-<div class="row">
-  <div class="col-12 col-sm-6">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum mollis elit, in faucibus mi consectetur vel. In quis scelerisque lectus. Aliquam aliquam gravida lorem at pharetra. Fusce malesuada sed nisl eget interdum.</p>
-    <p>Nunc eu lorem molestie, pretium eros in, elementum lectus. Donec vitae facilisis mauris. In sed urna ut felis pellentesque tincidunt at quis dolor. Donec sed velit vel massa tempus venenatis vitae vel urna. Duis tincidunt molestie diam sit amet vehicula. Sed non hendrerit ex, et convallis urna.</p>
-    <p>Variablen @font-name bruges til at styre typefacen.</p>
-  </div>
-
-  <div class="typography-sans-intro col-12 col-sm-6">
-    <span class="displayheading-1">Aa</span>
-    <div>
-      <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-      <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-      <p>0 1 2 3 4 5 6 7 8 9</p>
-    </div>
-  </div>
-</div>
-
-<div class="row mt-6">
-  <div class="col-12">
-    <h4>Fallback font</h4>
-    <p>Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.</p>
-  </div>
-</div>
+  <h3 class="h6">IBM Plex Sans</h3>
+<p>Der benyttes fonten 'IBM Plex Sans' til at tekst. Fonten er 'open source' og kan derfor frit benyttes af alle sites.</p>
+<h3 class="h6">Fallback font</h3>
+<p>Fallback fonten 'system' er default til det enkelte styresystem. Dette gør performance bedre, da browseren ikke skal hente nye fonte, men i stedet bruger en den har i forvejen.</p>
 
 </section>
 
-<section id="section-/komponenter/typography/02-headings">
-  <h2 class="heading heading-margin-alt" id="titler">Titler</h2>
+<section class="styleguide-child-container content" id="section-/komponenter/typography/02-headings">
+  <h2 id="titler">Titler</h2>
   
-  <div class="row">
-  <div class="col-12">
-    <p>Alle HTML titler, <code>&lt;h1&gt;</code> til <code>&lt;h6&gt;</code>, er stylet. Kan benyttes enten vis tags, klasser eller mixins.</p>
-  </div>
-</div>
+  <p>Alle HTML titler, <code>&lt;h1&gt;</code> til <code>&lt;h6&gt;</code>, er stylet. Kan benyttes enten vis tags, klasser eller mixins.</p>
 
 <div class="component-preview ">
     <ul class="unstyled-list preview-buttons">
@@ -2817,7 +2512,7 @@ Lists organize written information for users.
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h6&gt;</span>As heading tags<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;h6&gt;</span>Semantisk overskrift<span class="nt">&lt;/h6&gt;</span>
             <span class="nt">&lt;h1&gt;</span>Heading 1<span class="nt">&lt;/h1&gt;</span>
             <span class="nt">&lt;h2&gt;</span>Heading 2<span class="nt">&lt;/h2&gt;</span>
             <span class="nt">&lt;h3&gt;</span>Heading 3<span class="nt">&lt;/h3&gt;</span>
@@ -2826,7 +2521,7 @@ Lists organize written information for users.
             <span class="nt">&lt;h6&gt;</span>Heading 6<span class="nt">&lt;/h6&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h6&gt;</span>As classes<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>Ligner en overskrift<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h1"</span><span class="nt">&gt;</span>Heading 1<span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;</span>Heading 2<span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;</span>Heading 3<span class="nt">&lt;/div&gt;</span>
@@ -2844,12 +2539,10 @@ Lists organize written information for users.
 </div>
 
 <div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="headings-docs-tech">
-    Dokumentation
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="headings-docs-tech">
+    Implementation
   </button>
-  <div id="headings-docs-tech" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
-    <p>We recommend using a native input using type="file", rather than a custom implementation.</p>
+  <div id="headings-docs-tech" aria-hidden="true" class="accordion-content">
     <p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. </p>
       <div class="code-highlight">
         <code>
@@ -2872,17 +2565,21 @@ Lists organize written information for users.
       <p>Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på &lt;h1 class="h2"&gt;</p>
   </div>
 </div>
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="link-docs">
+    Dokumentation
+  </button>
+  <div id="link-docs" class="accordion-content">
+    
+  </div>
+</div>
 
 </section>
 
-<section id="section-/komponenter/typography/03-displaytext">
-  <h2 class="heading heading-margin-alt" id="display-tekst">Display tekst</h2>
+<section class="styleguide-child-container content" id="section-/komponenter/typography/03-lead-paragraph">
+  <h2 id="manchettekst-lead-paragraph">Manchettekst (lead paragraph)</h2>
   
-  <div class="row">
-  <div class="col-12">
-    <p>Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.</p>
-  </div>
-</div>
+  <p>Giv tekst extra focus ved at give den klassen <code>.font-lead</code>.</p>
 
 <div class="component-preview ">
     <ul class="unstyled-list preview-buttons">
@@ -2908,7 +2605,7 @@ Lists organize written information for users.
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/displaytext" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/lead_paragraph" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -2929,30 +2626,18 @@ Lists organize written information for users.
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/displaytext"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/lead_paragraph"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
-  <button class="accordion-button" aria-controls="code-displaytext">Kode</button>
-  <div id="code-displaytext" class="accordion-content">
+  <button class="accordion-button" aria-controls="code-lead_paragraph">Kode</button>
+  <div id="code-lead_paragraph" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Display text 1<span class="nt">&lt;/h5&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"displayheading-1"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-positive"</span><span class="nt">&gt;</span>10 dage<span class="nt">&lt;/span&gt;</span> Positiv
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-negative"</span><span class="nt">&gt;</span>55°/12°E<span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Display text 2<span class="nt">&lt;/h5&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"displayheading-2"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-negative"</span><span class="nt">&gt;</span>80 centimeter<span class="nt">&lt;/span&gt;</span> tredive kilogram sytten nætter tilgodehavende
-                feriedage
-            <span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-lead"</span><span class="nt">&gt;</span>
+        Indledende manchet tekst som leder op til noget mere tekst med rigtigt brød-tekst
+        indhold.
+    <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
@@ -2961,94 +2646,13 @@ Lists organize written information for users.
   </div>
 </div>
 
-</section>
-
-<section id="section-/komponenter/typography/04-body-copy">
-  <h2 class="heading heading-margin-alt" id="brødtekst-body-copy">Brødtekst (body copy)</h2>
-  
-  <h2 id="body-copy">Body copy</h2>
-
-<p>The Frontend styleguide's global default <code>font-size</code> is <strong>16px</strong>, with a <code>line-height</code> of <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
-
-<div class="component-preview ">
-    <ul class="unstyled-list preview-buttons">
-        <li class="component-preview-item">
-            <button type="button" class="component-preview-button" id="mobil">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
-                </svg>
-            </button>
-        </li>
-        <li class="component-preview-item">
-            <button type="button" class="component-preview-button" id="tablet">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
-                </svg>
-            </button>
-        </li>
-        <li class="component-preview-item">
-            <button type="button" class="component-preview-button" id="desktop">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
-                </svg>
-            </button>
-        </li>
-        <li class="component-preview-item">
-            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/bodycopy" target="_blank">
-                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="fsview">
-                            <g>
-                                <g class="icon-color">
-                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
-                                    <rect x="10" y="8" width="13" height="6"></rect>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-            </a>
-        </li>
-    </ul>
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/bodycopy"></iframe>
-</div>
-<div class="accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-bodycopy">Kode</button>
-  <div id="code-bodycopy" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;</span>This is a normal body text <span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>This is a bold body text<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;em&gt;</span>This is an italic body text <span class="nt">&lt;/em&gt;&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;small&gt;</span>This is an italic body text <span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
 
 </section>
 
-<section id="section-/komponenter/typography/04-inlinetext">
-  <h2 class="heading heading-margin-alt" id="inline-text-elements">Inline text elements</h2>
+<section class="styleguide-child-container content" id="section-/komponenter/typography/04-body-copy">
+  <h2 id="brødtekst-body-copy">Brødtekst (body copy)</h2>
   
-  <div class="row">
-  <div class="col-12">
-    <p>Styling for common inline HTML5 elements.</p>
-  </div>
-</div>
+  <p>The Frontend styleguide's global default <code>font-size</code> is <strong>16px</strong>, with a <code>line-height</code> of <strong>24px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
 
 <div class="component-preview ">
     <ul class="unstyled-list preview-buttons">
@@ -3105,14 +2709,15 @@ Lists organize written information for users.
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;u&gt;</span>This line of text will render as underlined<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;small&gt;</span>This line of with small text (small-tag)<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-text"</span><span class="nt">&gt;</span>This line of with small text (.small-text-class)<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;strong&gt;</span>This line rendered as bold text.<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;b&gt;</span>This line rendered as bold text with b-tag.<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;em&gt;</span>This line rendered as italicized text.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Dette er brødtekst.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;u&gt;</span>Dette er brødtekst med understregning<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;small&gt;</span>Dette er lille brødtekst (small-tag)<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-text"</span><span class="nt">&gt;</span>Dette er lille brødtekst (.small-text-class)<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Dette er fed brødtekst<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;b&gt;</span>Dette er også fed brødtekst lavet med et b-tag.<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;em&gt;</span>Dette er brødtekst skrevet i kursiv.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span>
             <span class="nt">&lt;p&gt;</span>
-                <span class="nt">&lt;i&gt;</span>This line rendered as italicized text with i-tag.<span class="nt">&lt;/i&gt;</span>
+                <span class="nt">&lt;i&gt;</span>Dette er brødtekst skrevet i kursiv med et i-tag.<span class="nt">&lt;/i&gt;</span>
             <span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -3124,17 +2729,40 @@ Lists organize written information for users.
   </div>
 </div>
 
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="bodycopy-docs-tech">
+    Implementation
+  </button>
+  <div id="bodycopy-docs-tech" aria-hidden="true" class="accordion-content">
+    <p>Fontstørrelsen for brødtekst er som udgangspunkt <strong>16px</strong>, og har en liniehøjde som svarer til 24px.</p>
+    <p>Alle fontstørrelser er angiver i rem-værdier og forholder sig derfor til fontstørrelsen som er angivet <code>&lt;html&gt;</code>-tagget.</p>
+    <p>HTML-taggets fontstørrelse er angivet i procent således at fontstørrelen er relativ til broswerens brugervalgte fontstørrelse. De fleste brugere har en standardinstilling på 16px, 62.5% af dette er 10px og en font-størrelse på 1.6rem giver derfor en fontstørrelse på 16px. Hvis brugeren vælger at indstille en standard fontstørrelse som er større end 16px vil hele sitet afspejle brugerens ønske.</p>
+    &lt;/p&gt;
+    <div class="code-highlight">
+        <code>        
+            html { font-size: 62.5%; } <br />
+            p &nbsp;&nbsp;&nbsp;{ font-size: 1.6rem; } /* =16px */ <br />
+        </code>
+    </div>
+  </div>
+</div>
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="bodycopy-docs">
+    Dokumentation
+  </button>
+  <div id="bodycopy-docs" class="accordion-content">
+    
+  </div>
+</div>
 
 </section>
 
-<section id="section-/komponenter/typography/04-lead-paragraph">
-  <h2 class="heading heading-margin-alt" id="manchet-tekst">Manchet tekst</h2>
+<section class="styleguide-child-container content" id="section-/komponenter/typography/05-links">
+  <h2 id="links">Links</h2>
   
-  <div class="row">
-  <div class="col-12">
-    <p>Giv tekst extra focus ved at give den klassen <code>.font-lead</code>.</p>
-  </div>
-</div>
+  <!-- Links section begin -->
+
+<p class="font-lead">Links lead users to a different page or further information.</p>
 
 <div class="component-preview ">
     <ul class="unstyled-list preview-buttons">
@@ -3160,7 +2788,7 @@ Lists organize written information for users.
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/lead_paragraph" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/links" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -3181,19 +2809,175 @@ Lists organize written information for users.
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/lead_paragraph"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/links"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
-  <button class="accordion-button" aria-controls="code-lead_paragraph">Kode</button>
-  <div id="code-lead_paragraph" class="accordion-content">
+  <button class="accordion-button" aria-controls="code-links">Kode</button>
+  <div id="code-links" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This is a
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>default link state<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>This is a
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-hover"</span><span class="nt">&gt;</span>hover link state<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>This is a
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-active"</span><span class="nt">&gt;</span>active link state<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>This is a
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-visited"</span><span class="nt">&gt;</span>visited link state<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>This is a
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-focus"</span><span class="nt">&gt;</span>focus link state<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>This is a link that goes to an
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>external website
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>This is a text
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">disabled=</span><span class="s">"disabled"</span>
+            <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>disabled link state<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;&lt;b&gt;</span>This is a 
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span> <span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>
+ in bold<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;&lt;small&gt;</span>This is a 
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span> <span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>
+ in smalltext<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"background-dark p-6"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>default link state<span class="nt">&lt;/a&gt;</span>
+            on a dark background.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-hover"</span><span class="nt">&gt;</span>hover link state<span class="nt">&lt;/a&gt;</span>
+            on a dark background.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-active"</span><span class="nt">&gt;</span>active link state<span class="nt">&lt;/a&gt;</span>
+            on a dark background.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-visited"</span><span class="nt">&gt;</span>visited link state<span class="nt">&lt;/a&gt;</span>
+            on a dark background.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-focus"</span><span class="nt">&gt;</span>focus link state<span class="nt">&lt;/a&gt;</span>
+            on a dark background.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a link that goes to an
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>external website
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+            <span class="nt">&lt;/a&gt;</span> on a dark background.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a text
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">disabled=</span><span class="s">"disabled"</span>
+                <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>disabled link state<span class="nt">&lt;/a&gt;</span> on a dark background.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;b&gt;</span>This is a 
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span> <span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>
+ in bold<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;small&gt;</span>This is a 
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span> <span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>
+ in smalltext<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="link-docs">
+    Dokumentation
+  </button>
+  <div id="link-docs" class="accordion-content" aria-hidden="false">
+   
+  </div>
+</div>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/typography/06-displaytext">
+  <h2 id="display-tekst">Display tekst</h2>
+  
+  <p>Display tekst giver extra store tekst eller tekst. Bruges til at fremhæve tekst.</p>
+
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/displaytext" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/displaytext"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-displaytext">Kode</button>
+  <div id="code-displaytext" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-lead"</span><span class="nt">&gt;</span>
-                Indledende manchet tekst som leder op til noget mere tekst med rigtigt brød-tekst
-                indhold.
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Display text 1<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"displayheading-1"</span><span class="nt">&gt;</span>
+                10 dage
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-positive"</span><span class="nt">&gt;</span> Positiv<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-negative"</span><span class="nt">&gt;</span>12°<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Display text 2<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"displayheading-2"</span><span class="nt">&gt;</span>
+                10 dage
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-positive"</span><span class="nt">&gt;</span> Positiv<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-negative"</span><span class="nt">&gt;</span>12°<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -3205,40 +2989,194 @@ Lists organize written information for users.
   </div>
 </div>
 
-
 </section>
 
-<section id="section-/komponenter/typography/05-global-settings">
-  <h2 class="heading heading-margin-alt" id="global-settings">Global settings</h2>
+<section class="styleguide-child-container content" id="section-/komponenter/typography/08-lists">
+  <h2 id="lister">Lister</h2>
   
-  <!-- Global setting begin -->
-<h4 class="h4">Fonts</h4>
-<p>For at skifte i mellem fonte bruges font-weight variablerne:</p>
-<div class="code-highlight">
-	<code>
-		$font-weight-normal<br />
-		$font-weight medium<br />
-		$font-weight-semibold<br />
-		$font-weight-bold<br />
-	</code>
+  <!-- Lists section begin -->
+
+<div class="component-preview preview-lists">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/lists" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/lists"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-lists">Kode</button>
+  <div id="code-lists" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Unordered body list<span class="nt">&lt;/p&gt;</span>
+
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"body-list"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+                    Ordered list
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+                    Ordered list
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+                    Ordered list
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+                    Ordered list
+
+                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sub_list"</span><span class="nt">&gt;</span>
+
+                        <span class="nt">&lt;li&gt;</span>
+                            Ordered sublist
+
+                        <span class="nt">&lt;/li&gt;</span>
+
+                        <span class="nt">&lt;li&gt;</span>
+                            Ordered sublist
+
+                        <span class="nt">&lt;/li&gt;</span>
+
+                        <span class="nt">&lt;li&gt;</span>
+                            Ordered sublist
+
+                        <span class="nt">&lt;/li&gt;</span>
+
+                    <span class="nt">&lt;/ul&gt;</span>
+
+                <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;/ul&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Ordered body list<span class="nt">&lt;/p&gt;</span>
+
+            <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"body-list"</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+                    Ordered list
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+                    Ordered list
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+                    Ordered list
+
+                <span class="nt">&lt;/li&gt;</span>
+
+                <span class="nt">&lt;li&gt;</span>
+                    Ordered list
+
+                    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"sub_list"</span><span class="nt">&gt;</span>
+
+                        <span class="nt">&lt;li&gt;</span>
+                            Ordered sublist
+
+                        <span class="nt">&lt;/li&gt;</span>
+
+                        <span class="nt">&lt;li&gt;</span>
+                            Ordered sublist
+
+                        <span class="nt">&lt;/li&gt;</span>
+
+                        <span class="nt">&lt;li&gt;</span>
+                            Ordered sublist
+
+                        <span class="nt">&lt;/li&gt;</span>
+
+                    <span class="nt">&lt;/ol&gt;</span>
+
+                <span class="nt">&lt;/li&gt;</span>
+
+            <span class="nt">&lt;/ol&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
 </div>
 
-<p>For at ændre font-style bruges variablerne:</p>
-<div class="code-highlight">
-	<code>
-		$font-style-normal<br />
-		$font-style-italic
-	</code>
+
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="lists-docs-tech">
+    Implementation
+  </button>
+  <div id="lists-docs-tech" aria-hidden="true" class="accordion-content">
+    <p>For at lave en liste uden styling kan enten klassen <code>.unstyled-list</code> benyttes eller et mixin <code>@include unstyled-list;</code>.</p>
+  </div>
+</div>
+
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="list-docs">
+    Dokumentation
+  </button>
+  <div id="list-docs" class="accordion-content">
+    
+  </div>
 </div>
 
 </section>
 
-<section id="section-/komponenter/typography/06-typesetting">
-  <h2 class="heading heading-margin-alt" id="typesetting">Typesetting</h2>
+<section class="styleguide-child-container content" id="section-/komponenter/typography/07-typesetting">
+  <h2 id="typesetting">Typesetting</h2>
   
   <!-- Typsetting section begin -->
-
-<p>Readable text allows users to efficiently read and take in textual information, whereas text that is not readable turns off readers or makes it challenging for them to stay focused. The following guidelines promote good readability.</p>
 
 <div class="component-preview ">
     <ul class="unstyled-list preview-buttons">
@@ -3295,25 +3233,25 @@ Lists organize written information for users.
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"heading-alt"</span><span class="nt">&gt;</span>Line length for paragraph - Desktop<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>Linielængde for brødtekst (paragraph) - Desktop<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. <span class="nt">&lt;/p&gt;</span>
-                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-text"</span><span class="nt">&gt;</span>Equivalent of 75 characters on desktop<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-text"</span><span class="nt">&gt;</span>Svarer til ca 75 tegn på desktop<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"heading-alt"</span><span class="nt">&gt;</span>Line length for lead-text - Desktop<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>Linielængde for manchettekst (lead paragraph)- Desktop<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-lead"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. <span class="nt">&lt;/p&gt;</span>
-                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-lead help-text"</span><span class="nt">&gt;</span>Equivalent of 75 characters on desktop<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-lead help-text"</span><span class="nt">&gt;</span>Svarer til ca 75 tegn på desktop<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"heading-alt"</span><span class="nt">&gt;</span>Spacing<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>Spacing<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;h1&gt;</span>Page heading<span class="nt">&lt;/h1&gt;</span>
                 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-lead"</span><span class="nt">&gt;</span>Great Smoky Mountains National Park straddles the border of
@@ -3340,14 +3278,24 @@ Lists organize written information for users.
                 <span class="nt">&lt;p&gt;</span>Entrance to Great Smoky Mountains National Park is free. The
                     park is one of the few national parks where no entrance
                     fees are charged.<span class="nt">&lt;/p&gt;</span>
-                <span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>
 
 
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="typesetting-docs-tech">
+    Implementation
+  </button>
+  <div id="typesetting-docs-tech" aria-hidden="true" class="accordion-content">
+    <p>For at give en max-bredde på 75 karaktere skal brødteksten være placeret inde i et html-element som har klassen <code>.content</code></p>
+    <p>Bredden er styret af variablen <code>$text-max-width</code> in <code>src/stylesheets/core/<wbr />_variables.scss</code>.</p>
   </div>
 </div>
 
@@ -3356,369 +3304,7 @@ Lists organize written information for users.
     Dokumentation
   </button>
   <div id="typesetting-docs" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
-    <p>To get the max-width on body text, add the class <code>content</code> to your document. Use at the specificity that best suits your project's needs.</p>
-    <p>Lists must use <code>content-list</code> for the above.</p>
-    <p>You can change the max-width value <code>$text-max-width</code> in <code>src/stylesheets/core/<wbr />_variables.scss</code>.</p>
-    <h4 class="heading">Usability</h4>
-    <ul class="content-list">
-      <li>Alignment: Type set flush left provides the eye a constant starting point for each line, making text easier to read.</li>
-      <li>Line length: Controlling the length of lines of text in extended copy makes reading more comfortable by helping readers’ eyes flow easily from one line to the next. Somewhere between 50 and 75 characters per line is broadly considered to be a readable line length, while 66 characters is considered the ideal. Other factors beyond line length also affect reading comfort. Text with more space between lines can have somewhat longer line length. Also, contexts in which users will not be reading long passages of text (such as footnotes or alerts) can safely be set with somewhat longer lines as well.</li>
-      <li>Spacing: White space affects how the user focuses their attention on the content. It makes it easier to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements. When setting headers and body copy, white space should be 60px, 30px, 20px, or 15px.</li>
-    </ul>
-  </div>
-</div>
 
-</section>
-
-<section id="section-/komponenter/typography/09-links">
-  <h2 class="heading heading-margin-alt" id="links">Links</h2>
-  
-  <!-- Links section begin -->
-
-<p class="font-lead">Links lead users to a different page or further information.
-</p>
-
-<div class="component-preview ">
-    <ul class="unstyled-list preview-buttons">
-        <li class="component-preview-item">
-            <button type="button" class="component-preview-button" id="mobil">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
-                </svg>
-            </button>
-        </li>
-        <li class="component-preview-item">
-            <button type="button" class="component-preview-button" id="tablet">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
-                </svg>
-            </button>
-        </li>
-        <li class="component-preview-item">
-            <button type="button" class="component-preview-button" id="desktop">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
-                </svg>
-            </button>
-        </li>
-        <li class="component-preview-item">
-            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/links" target="_blank">
-                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="fsview">
-                            <g>
-                                <g class="icon-color">
-                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
-                                    <rect x="10" y="8" width="13" height="6"></rect>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-            </a>
-        </li>
-    </ul>
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/links"></iframe>
-</div>
-<div class="accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-links">Kode</button>
-  <div id="code-links" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
-
-    This is a
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>default link state<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-
-<span class="nt">&lt;p&gt;</span>This is a
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-hover"</span><span class="nt">&gt;</span>hover link state<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-
-<span class="nt">&lt;p&gt;</span>This is a
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-active"</span><span class="nt">&gt;</span>active link state<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-
-<span class="nt">&lt;p&gt;</span>This is a
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-visited"</span><span class="nt">&gt;</span>visited link state<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-
-<span class="nt">&lt;p&gt;</span>This is a
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-focus"</span><span class="nt">&gt;</span>focus link state<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-
-<span class="nt">&lt;p&gt;</span>This is a link that goes to an
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>external website
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-
-<span class="nt">&lt;p&gt;</span>This is a text
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">disabled=</span><span class="s">"disabled"</span>
-        <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>disabled link state<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
-
-<span class="nt">&lt;p&gt;&lt;b&gt;</span>This is a 
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span> <span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>
- in bold<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
-
-<span class="nt">&lt;p&gt;&lt;small&gt;</span>This is a 
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span> <span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>
- in smalltext<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"background-dark p-6"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p&gt;</span>This is a
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>default link state<span class="nt">&lt;/a&gt;</span>
-        on a dark background.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>This is a
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-hover"</span><span class="nt">&gt;</span>hover link state<span class="nt">&lt;/a&gt;</span>
-        on a dark background.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>This is a
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-active"</span><span class="nt">&gt;</span>active link state<span class="nt">&lt;/a&gt;</span>
-        on a dark background.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>This is a
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-visited"</span><span class="nt">&gt;</span>visited link state<span class="nt">&lt;/a&gt;</span>
-        on a dark background.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>This is a
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"link-focus"</span><span class="nt">&gt;</span>focus link state<span class="nt">&lt;/a&gt;</span>
-        on a dark background.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>This is a link that goes to an
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"icon-link"</span><span class="nt">&gt;</span>external website
-            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#open-in-new"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;/a&gt;</span> on a dark background.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>This is a text
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"disabled"</span> <span class="na">disabled=</span><span class="s">"disabled"</span>
-            <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>disabled link state<span class="nt">&lt;/a&gt;</span> on a dark background.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;&lt;b&gt;</span>This is a 
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span> <span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>
- in bold<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;&lt;small&gt;</span>This is a 
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">""</span> <span class="nt">&gt;</span>link<span class="nt">&lt;/a&gt;</span>
- in smalltext<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-<div class="accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="link-docs">
-    Dokumentation
-  </button>
-  <div id="link-docs" class="accordion-content">
-    <h4 class="heading">Accessibility</h4>
-    <ul class="content-list">
-      <li>Users should be able to tab to navigate between links.</li>
-      <li>Users should be able to activate a link when pressing ‘Enter’ on their keyboard.</li>
-      <li>Users should be able to identify links without relying on color alone.</li>
-      <li>Users should be able to activate hover and focus states with both a mouse and a keyboard.</li>
-    </ul>
-  </div>
-</div>
-
-</section>
-
-<section id="section-/komponenter/typography/08-lists">
-  <h2 class="heading heading-margin-alt" id="lists">Lists</h2>
-  
-  <!-- Lists section begin -->
-
-<p class="font-lead">Lists organize written information for users.</p>
-
-<div class="component-preview preview-lists">
-    <ul class="unstyled-list preview-buttons">
-        <li class="component-preview-item">
-            <button type="button" class="component-preview-button" id="mobil">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
-                </svg>
-            </button>
-        </li>
-        <li class="component-preview-item">
-            <button type="button" class="component-preview-button" id="tablet">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
-                </svg>
-            </button>
-        </li>
-        <li class="component-preview-item">
-            <button type="button" class="component-preview-button" id="desktop">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
-                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
-                </svg>
-            </button>
-        </li>
-        <li class="component-preview-item">
-            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/lists" target="_blank">
-                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="fsview">
-                            <g>
-                                <g class="icon-color">
-                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
-                                    <rect x="10" y="8" width="13" height="6"></rect>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-            </a>
-        </li>
-    </ul>
-
-    <!--<div class="loader-container">
-        <div class="loader"></div>
-    </div>-->
-
-    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/lists"></iframe>
-</div>
-<div class="accordion-bordered code-sample">
-  
-  <button class="accordion-button" aria-controls="code-lists">Kode</button>
-  <div id="code-lists" class="accordion-content">
-    
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h4&gt;</span>Unordered body list<span class="nt">&lt;/h4&gt;</span>
-
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"body-list"</span><span class="nt">&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>
-                Ordered list
-
-            <span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>
-                Ordered list
-
-            <span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>
-                Ordered list
-
-            <span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>
-                Ordered list
-
-                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sub_list"</span><span class="nt">&gt;</span>
-
-                    <span class="nt">&lt;li&gt;</span>
-                        Ordered sublist
-
-                    <span class="nt">&lt;/li&gt;</span>
-
-                    <span class="nt">&lt;li&gt;</span>
-                        Ordered sublist
-
-                    <span class="nt">&lt;/li&gt;</span>
-
-                    <span class="nt">&lt;li&gt;</span>
-                        Ordered sublist
-
-                    <span class="nt">&lt;/li&gt;</span>
-
-                <span class="nt">&lt;/ul&gt;</span>
-
-            <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;/ul&gt;</span>
-
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-lg-6"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h4&gt;</span>Ordered body list<span class="nt">&lt;/h4&gt;</span>
-
-        <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"body-list"</span><span class="nt">&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>
-                Ordered list
-
-            <span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>
-                Ordered list
-
-            <span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>
-                Ordered list
-
-            <span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;li&gt;</span>
-                Ordered list
-
-                <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"sub_list"</span><span class="nt">&gt;</span>
-
-                    <span class="nt">&lt;li&gt;</span>
-                        Ordered sublist
-
-                    <span class="nt">&lt;/li&gt;</span>
-
-                    <span class="nt">&lt;li&gt;</span>
-                        Ordered sublist
-
-                    <span class="nt">&lt;/li&gt;</span>
-
-                    <span class="nt">&lt;li&gt;</span>
-                        Ordered sublist
-
-                    <span class="nt">&lt;/li&gt;</span>
-
-                <span class="nt">&lt;/ol&gt;</span>
-
-            <span class="nt">&lt;/li&gt;</span>
-
-        <span class="nt">&lt;/ol&gt;</span>
-
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;style </span><span class="na">scoped</span><span class="nt">&gt;</span>
-    <span class="nt">h4</span> <span class="p">{</span>
-        <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
-        <span class="nl">margin-top</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="nt">&lt;/style&gt;</span>
-</code></pre>
-</div>
-
-
-  </div>
-</div>
-
-<div class="accordion-bordered accordion-docs">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="list-docs">
-    Dokumentation
-  </button>
-  <div id="list-docs" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
-    <p>Alle lister har default styling. Dog kan der tilføjes en class på ul afhængig af, om man vil have paragraph tekst eller body tekst. For paragraph tekst tilføjes en <code>paragraph-list</code> class og for body tekst tilføjes en <code>body-list</code> class.</p>
-    <p>For lister uden styling bruges en <code>.unstyled-list</code> class eller et mixin <code>@include unstyled-list;</code>.</p>
-    <h4 class="heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="content-list">
-      <li>Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.</li>
-      <li>Use unordered lists to display text in no specific order.</li>
-    </ul>
-    <h5>When to consider something different</h5>
-    <ul class="content-list">
-      <li>If you need to communicate long lists of narrative text.</li>
-    </ul>
-    <h5>Guidelines</h5>
-    <ul class="content-list">
-      <li>Use sentence case and begin lists with a capital letter.</li>
-      <li>Use punctuation appropriate to the text. Do not leave sentences without periods.</li>
-    </ul>
   </div>
 </div>
 

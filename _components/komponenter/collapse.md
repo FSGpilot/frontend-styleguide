@@ -13,7 +13,7 @@ lead: Collapse and expand content.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="collapse-docs">
-    Kode dokumentation
+    Implementation
   </button>
   <div id="collapse-docs" aria-hidden="false" class="accordion-content">
     <p>For at initializere collapse funktionaliteten skal et HTML-element have klassen <code>.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>

@@ -13,7 +13,7 @@ lead: A block that allows users to search for specific content if they know what
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="search-code-documentation">
-    Kode dokumentation
+    Implementation
   </button>
   <div id="search-code-documentation" class="accordion-content">
     <p></p>
