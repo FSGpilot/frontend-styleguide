@@ -21,8 +21,8 @@
 <meta property="og:title" content="Brødtekst (body copy) | Frontend styleguide - version 2">
 
 
-<meta name="description" content="Body copy">
-<meta property="og:description" content="Body copy">
+<meta name="description" content="The Frontend styleguide's global default font-size is 16px, with a line-height of 24px. This is applied to the &amp;lt;body&amp;gt; and all paragraphs. In addition, &amp;lt;p&amp;gt; (paragraphs) receive a bottom margin of half their computed line-height (10px by default).">
+<meta property="og:description" content="The Frontend styleguide's global default font-size is 16px, with a line-height of 24px. This is applied to the &amp;lt;body&amp;gt; and all paragraphs. In addition, &amp;lt;p&amp;gt; (paragraphs) receive a bottom margin of half their computed line-height (10px by default).">
 
 
 
@@ -174,16 +174,14 @@
 
     <div class="col-12 col-md-9">
       <section id="section-/komponenter/typography/04-body-copy">
-        <header>
+        
           <p class="small-text m-0 uppercase">
             
           </p>
           <h1 class="mt-0" id="brødtekst-body-copy">Brødtekst (body copy)</h1>
-        </header>
-        
-      <h2 id="body-copy">Body copy</h2>
-
-<p>The Frontend styleguide's global default <code>font-size</code> is <strong>16px</strong>, with a <code>line-height</code> of <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
+          
+      
+          <p>The Frontend styleguide's global default <code>font-size</code> is <strong>16px</strong>, with a <code>line-height</code> of <strong>24px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
 
 <div class="component-preview ">
     <ul class="unstyled-list preview-buttons">
@@ -209,7 +207,7 @@
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/bodycopy" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/inlinetext" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -230,20 +228,26 @@
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/bodycopy"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/inlinetext"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
-  <button class="accordion-button" aria-controls="code-bodycopy">Kode</button>
-  <div id="code-bodycopy" class="accordion-content">
+  <button class="accordion-button" aria-controls="code-inlinetext">Kode</button>
+  <div id="code-inlinetext" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;</span>This is a normal body text <span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>This is a bold body text<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;em&gt;</span>This is an italic body text <span class="nt">&lt;/em&gt;&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;&lt;small&gt;</span>This is an italic body text <span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Dette er brødtekst.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;u&gt;</span>Dette er brødtekst med understregning<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;small&gt;</span>Dette er lille brødtekst (small-tag)<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-text"</span><span class="nt">&gt;</span>Dette er lille brødtekst (.small-text-class)<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Dette er fed brødtekst<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;b&gt;</span>Dette er også fed brødtekst lavet med et b-tag.<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;em&gt;</span>Dette er brødtekst skrevet i kursiv.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>
+                <span class="nt">&lt;i&gt;</span>Dette er brødtekst skrevet i kursiv med et i-tag.<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -251,6 +255,32 @@
 </div>
 
 
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="bodycopy-docs-tech">
+    Implementation
+  </button>
+  <div id="bodycopy-docs-tech" aria-hidden="true" class="accordion-content">
+    <p>Fontstørrelsen for brødtekst er som udgangspunkt <strong>16px</strong>, og har en liniehøjde som svarer til 24px.</p>
+    <p>Alle fontstørrelser er angiver i rem-værdier og forholder sig derfor til fontstørrelsen som er angivet <code>&lt;html&gt;</code>-tagget.</p>
+    <p>HTML-taggets fontstørrelse er angivet i procent således at fontstørrelen er relativ til broswerens brugervalgte fontstørrelse. De fleste brugere har en standardinstilling på 16px, 62.5% af dette er 10px og en font-størrelse på 1.6rem giver derfor en fontstørrelse på 16px. Hvis brugeren vælger at indstille en standard fontstørrelse som er større end 16px vil hele sitet afspejle brugerens ønske.</p>
+    &lt;/p&gt;
+    <div class="code-highlight">
+        <code>        
+            html { font-size: 62.5%; } <br />
+            p &nbsp;&nbsp;&nbsp;{ font-size: 1.6rem; } /* =16px */ <br />
+        </code>
+    </div>
+  </div>
+</div>
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="bodycopy-docs">
+    Dokumentation
+  </button>
+  <div id="bodycopy-docs" class="accordion-content">
+    
   </div>
 </div>
 
