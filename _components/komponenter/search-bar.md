@@ -17,7 +17,7 @@ lead: A block that allows users to search for specific content if they know what
   </button>
   <div id="search-code-documentation" class="accordion-content">
     <p></p>
-    <p>Inputfelter har en standard bredde på 40rem, for at ændre bredde på inputfelter bruges nedenstående class:</p>
+    <p>Inputfelter har en standard bredde på 40rem, for at ændre bredden på inputfelter bruges nedenstående class:</p>
     <ul>
       <li><code>.input-width-55</code> er 5.5rem bred</li>
       <li><code>.input-width-100</code> er 10rem bred</li>
