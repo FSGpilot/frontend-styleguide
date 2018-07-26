@@ -13,7 +13,7 @@ lead:
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="code-label-docs">
-    Kode dokumentation
+    Implementation
   </button>
   <div id="code-label-docs" aria-hidden="false" class="accordion-content">
     <h4>Implementation</h4>

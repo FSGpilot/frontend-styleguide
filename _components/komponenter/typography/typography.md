@@ -6,22 +6,20 @@ category: UI components
 subcategory: Design og kode
 lead: ""
 subnav:
-- text: Typefaces
-  href: '#typefaces'
-- text: Headings
-  href: '#headings'
-- text: Lead paragraph
-  href: '#lead-paragraph'
-- text: Inline text elements
-  href: '#inlinetext'
-- text: Display text
-  href: '#displaytext'
-- text: Global settings
-  href: '#global-settings'
-- text: Typesetting
-  href: '#typesetting'
+- text: Font
+  href: '#font'
+- text: Titler
+  href: '#titler'
+- text: Manchettekst
+  href: '#manchettekst-lead-paragraph'
+- text: Brødtekst
+  href: '#brødtekst-body-copy'
 - text: Links
   href: '#links'
+- text: Display text
+  href: '#display-tekst'
+- text: Typesetting
+  href: '#typesetting'
 - text: Lists
   href: '#lists'
 ---

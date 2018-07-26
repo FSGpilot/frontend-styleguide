@@ -13,7 +13,7 @@ lead: Use buttons to signal actions.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="code-documentation">
-    Kode dokumentation
+    Implementation
   </button>
   <div id="code-documentation" class="accordion-content">
       <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>button</code> class to your anchor link.</p>

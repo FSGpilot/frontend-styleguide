@@ -5,22 +5,18 @@ parent: typography
 order: 02
 ---
 
-<div class="row">
-  <div class="col-12">
-    <p>Alle HTML titler, <code>&lt;h1&gt;</code> til <code>&lt;h6&gt;</code>, er stylet. Kan benyttes enten vis tags, klasser eller mixins.</p>
-  </div>
-</div>
+
+<p>Alle HTML titler, <code>&lt;h1&gt;</code> til <code>&lt;h6&gt;</code>, er stylet. Kan benyttes enten vis tags, klasser eller mixins.</p>
+
 {% include code/preview.html component="headings" %}
 {% include code/accordion.html component="headings" %}
 
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="headings-docs-tech">
-    Dokumentation
+      aria-expanded="false" aria-controls="headings-docs-tech">
+    Implementation
   </button>
-  <div id="headings-docs-tech" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
-    <p>We recommend using a native input using type="file", rather than a custom implementation.</p>
+  <div id="headings-docs-tech" aria-hidden="true" class="accordion-content">
     <p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. </p>
       <div class="code-highlight">
         <code>
@@ -41,5 +37,14 @@ order: 02
         </code>
       </div>
       <p>Der er oprettet klasser for hver heading, som arver styling fra heading mixins. Dette betyder at hvis der ønskes en h1 med styling fra h2, skal klassen .h2 blot indsættes på &lt;h1 class="h2"&gt;</p>
+  </div>
+</div>
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="link-docs">
+    Dokumentation
+  </button>
+  <div id="link-docs" class="accordion-content">
+    
   </div>
 </div>

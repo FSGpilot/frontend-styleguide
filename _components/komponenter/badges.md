@@ -13,7 +13,7 @@ lead: Badges draw attention to new or important content.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="code-documentation">
-    Kode dokumentation
+    Implementation
   </button>
   <div id="code-documentation" class="accordion-content">
     <h4>Implementation</h4>

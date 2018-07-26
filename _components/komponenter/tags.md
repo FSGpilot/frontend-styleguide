@@ -13,7 +13,7 @@ lead: Tags
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="tags-code-documentation">
-    Kode dokumentation
+    Implementation
   </button>
   <div id="tags-code-documentation" class="accordion-content">
     <p>Der er to eksempler på hvordan tags kan se ud. Ét uden ikon og ét med ikon.</p>

@@ -25,6 +25,14 @@
   padding: 0;
 }
 
+// Typography --------------
+.help-text{
+  border-top: 2px solid #205493;
+  color: #205493;
+  padding-top: 1rem;
+  text-align: center;
+}
+
 // Colors -------------- //
 
 .color-short {
@@ -561,14 +569,8 @@ code {
     height: 500px; //so that datepicker is visible
   } 
 }
-.page-modal-html{
-  padding-top: 150px;
-  padding-bottom: 200px;
-  [data-micromodal-trigger]{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.styleguide-spacer-modals{
+  height: 400px;
 }
 // Example images on headers and page templates pages -------------- //
 .page-headers,
@@ -631,9 +633,8 @@ code {
   }
 }
 
-
-iframe {
-  margin-bottom: 3rem;
+.styleguide-child-container + .styleguide-child-container{
+  margin-top: 40px;
 }
 
 
@@ -642,8 +643,7 @@ iframe {
 .component-preview {
   border: $outer-border;
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-bottom: 8px;
   padding-top: 15px;
   padding-bottom: 15px;
 }

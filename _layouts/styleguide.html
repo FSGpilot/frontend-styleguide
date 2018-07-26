@@ -22,16 +22,16 @@ layout: default
 
     <div class="col-12 col-md-9">
       <section id="section-{{page.id}}">
-        <header>
+        
           <p class="small-text m-0 uppercase">
             {{ page.subcategory }}
           </p>
           <h1 class="mt-0" id="{{ page.title | slugify }}">{{ page.title }}</h1>
-        </header>
-        {% if page.lead != null %}
-          <p class="font-lead">{{ page.lead }}</p>
-        {% endif %}
-      {{ content }}
+          {% if page.lead != null and page.lead != "" %}
+            <p class="font-lead">{{ page.lead }}</p>
+          {% endif %}
+      
+          {{ content }}
       </section>
     </div>
 

@@ -13,7 +13,7 @@ lead: Spinner lead
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="code-spinner-docs">
-    Kode dokumentation
+    Implementation
   </button>
   <div id="code-spinner-docs" aria-hidden="false" class="accordion-content">
     <p>For at implementere en spinner tilføjes en <code>.spinner</code> class på en lukket div.</p>
