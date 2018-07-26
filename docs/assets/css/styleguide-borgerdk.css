@@ -4415,7 +4415,6 @@ img {
 
 .form-label {
   display: block;
-  max-width: 46rem;
   font-family: "IBMPlexSans";
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -6286,10 +6285,11 @@ input, textarea, select {
           align-items: center; }
           .header .portal-header .portal-info > * {
             margin-left: 16px; } }
+      .header .portal-header .portal-info .user {
+        text-align: right;
+        max-width: 500px; }
       .header .portal-header .portal-info .button {
         white-space: nowrap; }
-      .header .portal-header .portal-info .username {
-        font-weight: 600; }
   .header .solution-header {
     border-bottom: 1px solid #BFBFBF;
     width: 100%; }
@@ -6663,12 +6663,13 @@ input, textarea, select {
   display: block;
   padding-top: calc(16px - 1px);
   padding-bottom: calc(16px - 1px);
-  padding-right: 44px;
   white-space: nowrap;
   width: 100%; }
   @media screen and (min-width: 992px) {
     .nav-primary .overflow-menu .button-overflow-menu {
       width: unset; } }
+  .nav-primary .overflow-menu .button-overflow-menu span {
+    padding-right: 24px; }
   .nav-primary .overflow-menu .button-overflow-menu:focus, .nav-primary .overflow-menu .button-overflow-menu:active {
     box-shadow: 4px solid #febb30; }
   .no-touchevents .nav-primary .overflow-menu .button-overflow-menu:hover {
@@ -6681,7 +6682,7 @@ input, textarea, select {
     @media screen and (min-width: 992px) {
       .nav-primary .overflow-menu .button-overflow-menu[aria-expanded=false] {
         background-image: url("../assets/img/svg-icons//angle-arrow-down.svg");
-        background-position: right 1.5rem center;
+        background-position: right 1rem center;
         border-left: 1px solid transparent;
         border-right: 1px solid transparent; } }
   .nav-primary .overflow-menu .button-overflow-menu[aria-expanded=true] {
@@ -6692,7 +6693,7 @@ input, textarea, select {
     @media screen and (min-width: 992px) {
       .nav-primary .overflow-menu .button-overflow-menu[aria-expanded=true] {
         background-image: url("../assets/img/svg-icons//angle-arrow-down-white.svg");
-        background-position: right 1.5rem center;
+        background-position: right 1rem center;
         border-left: 1px solid #999999;
         border-right: 1px solid #999999;
         background-color: #454545;
@@ -6753,8 +6754,11 @@ input, textarea, select {
       background-color: transparent; }
       @media screen and (min-width: 992px) {
         .no-touchevents .nav-primary .overflow-menu .overflow-menu-inner a:hover, .nav-primary .overflow-menu .overflow-menu-inner a:visited, .nav-primary .overflow-menu .overflow-menu-inner a:focus {
-          color: #fff;
+          color: #fff !important;
           text-decoration: underline; } }
+    @media screen and (min-width: 992px) {
+      .nav-primary .overflow-menu .overflow-menu-inner a {
+        color: #fff !important; } }
   .nav-primary .overflow-menu .overflow-menu-inner .current {
     font-weight: 600;
     color: #568331; }
@@ -7269,6 +7273,9 @@ input[type=search] {
 .table-responsive-scroll {
   overflow-x: auto;
   min-height: .01%; }
+
+#js-datatable-example-praktikplads_wrapper {
+  margin-top: 24px; }
 
 .card {
   position: relative;
@@ -8171,14 +8178,17 @@ code {
   margin-top: 0;
   padding: 0; }
 
+.styleguide-child-container + .styleguide-child-container {
+  margin-top: 40px; }
+
 .page-ui-components .font-lead:first-of-type {
   margin-top: 3.2rem; }
 
 .page-accordion-html {
   padding-top: 4px; }
 
-.page-buttons-html {
-  padding-left: 20px; }
+.page-tags-html {
+  min-height: 180px; }
 
 .page-date-input-html .container {
   height: 500px; }
@@ -8197,8 +8207,8 @@ code {
       margin-bottom: 5.9rem; } }
 
 .demo-footer {
-  background-color: #747474;
-  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  background-color: #000;
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -8210,7 +8220,10 @@ code {
     background-repeat: no-repeat;
     background-position: left 2rem center;
     background-size: 1rem;
-    padding-left: 3.3rem; }
+    padding-left: 3.3rem;
+    background-color: black; }
+    .demo-footer .button:hover {
+      color: white; }
     @media screen and (min-width: 768px) {
       .demo-footer .button {
         margin-top: 0;
@@ -8218,25 +8231,8 @@ code {
         margin-bottom: 0; } }
 
 .demo-footer-title {
-  margin-top: 0;
-  margin-bottom: 0.7rem;
   color: #ffffff;
   display: inline-block; }
-  @media screen and (min-width: 768px) {
-    .demo-footer-title {
-      margin-top: 1em;
-      margin-bottom: 1em; } }
-
-.demo-footer-content {
-  margin-right: 1.5rem;
-  margin-left: 1.5rem; }
-  @media screen and (min-width: 768px) {
-    .demo-footer-content {
-      margin-right: 16px;
-      margin-left: 16px; } }
-
-.styleguide-child-container + .styleguide-child-container {
-  margin-top: 40px; }
 
 .component-preview {
   border: 1px solid #999999;

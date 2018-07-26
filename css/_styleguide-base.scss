@@ -550,6 +550,11 @@ code {
 
 
 //----------------  Page styles
+
+.styleguide-child-container + .styleguide-child-container{
+  margin-top: 40px;
+}
+
 .page-ui-components {
 
   .font-lead {
@@ -561,8 +566,8 @@ code {
 .page-accordion-html{
   padding-top: 4px;
 }
-.page-buttons-html{
-  padding-left: 20px;
+.page-tags-html{
+  min-height: 180px;
 }
 .page-date-input-html{
   & .container{
@@ -593,8 +598,8 @@ code {
 
 // Demo fixed footer
 .demo-footer {
-  background-color: $color-gray-medium-dark;
-  box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.5);
+  padding: 8px;
+  background-color: #000;
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -608,6 +613,10 @@ code {
     background-position: left 2rem center;
     background-size: 1rem;
     padding-left: 3.3rem;
+    background-color: black;
+    &:hover{
+      color: white;
+    }
 
     @include media($medium-screen) {
       @include margin(0 1.5rem 0 null);
@@ -616,25 +625,8 @@ code {
 }
 
 .demo-footer-title {
-  @include margin(0 null 0.7rem null);
   color: $color-white;
   display: inline-block;
-
-  @include media($medium-screen) {
-    @include margin(1em null);
-  }
-}
-
-.demo-footer-content {
-  @include margin(null $site-margins-mobile);
-
-  @include media($medium-screen) {
-    @include margin(null $site-margins);
-  }
-}
-
-.styleguide-child-container + .styleguide-child-container{
-  margin-top: 40px;
 }
 
 
