@@ -15,6 +15,8 @@ subnav:
   href: '#solution-4'
 - text: løsning 5
   href: '#solution-5'
+- text: løsning 6
+  href: '#solution-6'
 ---
 
 <h2 id="solution-1">Løsning 1: Aktindsigt</h2>
@@ -41,3 +43,9 @@ subnav:
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <a href="{{ site.baseurl }}/pages/page-templates/strategiske-virksomhedsalliancer/virksomhedsalliancer-1"><img src="{{ site.baseurl }}/img/examples_pages/strategiske-virksomhedsalliancer.PNG" style="max-width: 100%; width: 1018px"></a>
 <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">Demo strategiske virksomhedsalliancer</a>
+
+<h2 id="solution-6">Løsning 6: Praktikplads</h2>
+<p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
+<a href="{{ site.baseurl }}/pages/page-templates/praktikplads/praktikplads-1"><img src="{{ site.baseurl }}/img/examples_pages/praktikplads.PNG" style="max-width: 100%; width: 1018px"></a>
+<a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/praktikplads/praktikplads-1">Demo praktikplads</a>
+
