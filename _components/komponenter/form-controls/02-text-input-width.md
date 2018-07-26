@@ -14,7 +14,7 @@ lead: Text inputs allow people to enter any combination of letters, numbers, or 
   </button>
   <div id="text-input-width-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementation</h4>
-    <p>For at styre bredde på inputfelter bruges nedenstående class:</p>
+    <p>Inputfelter har en standard bredde på 40rem, for at ændre bredden på inputfelter bruges nedenstående class:</p>
     <ul>
       <li><code>.input-width-55</code> er 5.5rem bred</li>
       <li><code>.input-width-100</code> er 10rem bred</li>
