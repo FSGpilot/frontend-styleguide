@@ -221,84 +221,86 @@
                 </div>
                 <label class="form-label mt-6">Har i modtaget støtte gennem andre internationale de-minimis-ordninger
                     (fx OECD)?</label>
-                <div class="mt-3">
+                <div class="js-radio-toggle-group">
+                    <div class="mt-3">
 
-                    <div class="form-group">
-                        <input id="id-state-yes" type="radio" name="minimis" value="Ja" class=" radio-large " />
-                        <label for="id-state-yes" class="radio-large js-collapse" data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false">Ja</label>
-                    </div>
+                        <div class="form-group">
+                            <input id="id-state-yes" type="radio" name="minimis" value="Ja" class=" radio-large " data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false" />
+                            <label for="id-state-yes" class="radio-large" data-js-target="#collapse-radio" aria-controls="collapse-radio" aria-expanded="false">Ja</label>
+                        </div>
 
-                    <div id="collapse-radio" aria-hidden="true" class="box-border-l collapsed">
-                        <div class="py-4">
-                            <div class="mt-0">
+                        <div id="collapse-radio" aria-hidden="true" class="box-border-l collapsed">
+                            <div class="py-4">
+                                <div class="mt-0">
 
-                                <div class="form-group">
-                                    <label class="form-label " for="id-minimis-name">Ordningens navn</label>
-
-                                    <input class="form-input  input-width-xl" placeholder="" id="id-minimis-name" name="Input til ordningens navn" type="text" />
-                                </div>
-
-                            </div>
-                            <div class="mt-6">
-
-                                <fieldset>
                                     <div class="form-group">
-                                        <label class="form-label">Dato for modtagelse</label>
-                                        <span class="input-error-message" id="input-error-message-input-error" role="alert"></span>
-                                        <span class="form-hint">Fx. 28 04 1996</span>
-                                        <div class="date-group js-calendar-group mt-3">
-                                            <div class="form-group form-group-day">
-                                                <label class="form-label" for="date_of_day_2">Dato</label>
-                                                <input class="form-input js-calendar-day-input" type="tel" min="1" max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på månenden som tal" />
-                                            </div>
-                                            <div class="form-group form-group-month">
-                                                <label class="form-label" for="date_of_month_1">Måned</label>
-                                                <input class="form-input js-calendar-month-input" type="tel" min="1" max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
-                                            </div>
-                                            <div class="form-group form-group-year ">
-                                                <label class="form-label" for="date_of_year_3">År</label>
-                                                <input class="form-input js-calendar-year-input" type="tel" min="1900" max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
-                                            </div>
-                                            <button class="button-unstyled button-open-calendar js-calendar-datepicker">
+                                        <label class="form-label " for="id-minimis-name">Ordningens navn</label>
 
-                                                <svg class="icon-svg "><use xlink:href="#calendar"></use></svg>
-
-                                            </button>
-                                        </div>
+                                        <input class="form-input  input-width-xl" placeholder="" id="id-minimis-name" name="Input til ordningens navn" type="text" />
                                     </div>
-                                </fieldset>
 
-                            </div>
-                            <div class="mt-6">
-
-                                <div class="form-group">
-                                    <label class="form-label " for="id-amount">Beløb i DKK</label>
-
-                                    <input class="form-input  input-width-m" placeholder="" id="id-amount" name="Input til beløb i DKK" type="text" />
                                 </div>
+                                <div class="mt-6">
 
-                            </div>
-                            <div class="mt-6">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="form-label">Dato for modtagelse</label>
+                                            <span class="input-error-message" id="input-error-message-input-error" role="alert"></span>
+                                            <span class="form-hint">Fx. 28 04 1996</span>
+                                            <div class="date-group js-calendar-group mt-3">
+                                                <div class="form-group form-group-day">
+                                                    <label class="form-label" for="date_of_day_2">Dato</label>
+                                                    <input class="form-input js-calendar-day-input" type="tel" min="1" max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv dag på månenden som tal" />
+                                                </div>
+                                                <div class="form-group form-group-month">
+                                                    <label class="form-label" for="date_of_month_1">Måned</label>
+                                                    <input class="form-input js-calendar-month-input" type="tel" min="1" max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indskriv månedens nummer" />
+                                                </div>
+                                                <div class="form-group form-group-year ">
+                                                    <label class="form-label" for="date_of_year_3">År</label>
+                                                    <input class="form-input js-calendar-year-input" type="tel" min="1900" max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indskriv årstal" />
+                                                </div>
+                                                <button class="button-unstyled button-open-calendar js-calendar-datepicker">
 
-                                <div class="form-group">
-                                    <label class="form-label " for="id-reference">Henvisning til yderligere information om
-                                        ordningen</label>
+                                                    <svg class="icon-svg "><use xlink:href="#calendar"></use></svg>
 
-                                    <span class="form-hint" id="input-hint-message-id-reference">Fx. et link</span>
-                                    <input class="form-input  input-width-xl" placeholder="" id="id-reference" name="Input til henvisning til yderligere information om ordningen" type="text" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
                                 </div>
+                                <div class="mt-6">
 
+                                    <div class="form-group">
+                                        <label class="form-label " for="id-amount">Beløb i DKK</label>
+
+                                        <input class="form-input  input-width-m" placeholder="" id="id-amount" name="Input til beløb i DKK" type="text" />
+                                    </div>
+
+                                </div>
+                                <div class="mt-6">
+
+                                    <div class="form-group">
+                                        <label class="form-label " for="id-reference">Henvisning til yderligere information
+                                            om ordningen</label>
+
+                                        <span class="form-hint" id="input-hint-message-id-reference">Fx. et link</span>
+                                        <input class="form-input  input-width-xl" placeholder="" id="id-reference" name="Input til henvisning til yderligere information om ordningen" type="text" />
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="mt-3">
+                    <div class="mt-3">
 
-                    <div class="form-group">
-                        <input id="id-state-no" type="radio" name="minimis" value="Nej" class=" radio-large " />
-                        <label for="id-state-no" class="radio-large">Nej</label>
+                        <div class="form-group">
+                            <input id="id-state-no" type="radio" name="minimis" value="Nej" class=" radio-large " />
+                            <label for="id-state-no" class="radio-large">Nej</label>
+                        </div>
+
                     </div>
-
                 </div>
 
                 <a href="/frontend-styleguide/pages/page-templates/strategiske-virksomhedsalliancer/virksomhedsalliancer-4" class="button button-primary mt-7">Næste</a>

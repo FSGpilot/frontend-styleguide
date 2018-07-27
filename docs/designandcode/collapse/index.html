@@ -21,36 +21,303 @@
 <meta property="og:title" content="Skjul og vis (Collapse) | Frontend styleguide - version 2">
 
 
-<meta name="description" content="Kode
+<meta name="description" content="Radioknap - skjul og vis inhold
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
   
     
-&amp;lt;div class=&quot;p-4&quot;&amp;gt;
+&amp;lt;div class=&quot;container js-radio-toggle-group&quot;&amp;gt;
 
     &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-        &amp;lt;input id=&quot;id-comments-3&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large&quot;&amp;gt;
-        &amp;lt;label for=&quot;id-comments-3&quot; class=&quot;js-collapse&quot; data-js-target='#collapse-check'
-            aria-controls='collapse-check' aria-expanded='false'&amp;gt;Collapse checkbox&amp;lt;/label&amp;gt;
+        &amp;lt;input id=&quot;id-radio1&quot; type=&quot;radio&quot; name=&quot;radio-group1&quot; value=&quot;Value&quot; class=&quot; radio-large &quot;
+            checked data-js-target='#collapse-radio1' aria-controls='collapse-radio1'
+            aria-expanded='false'&amp;gt;
+        &amp;lt;label for=&quot;id-radio1&quot; class=&quot;&quot;&amp;gt;Radioknap viser indhold&amp;lt;/label&amp;gt;
     &amp;lt;/div&amp;gt;
 
-    &amp;lt;div id=&quot;collapse-check&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
+    &amp;lt;div id=&quot;collapse-radio1&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
         &amp;lt;div class=&quot;py-4&quot;&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible check&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible check&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible check&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;Dette indhold bliver vist når radio-knappen er valgt.&amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 
     &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-        &amp;lt;input id=&quot;id-radio&quot; type=&quot;radio&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; radio-large&quot;&amp;gt;
-        &amp;lt;label for=&quot;id-radio&quot; class=&quot;js-collapse&quot; data-js-target='#collapse-radio' aria-controls='collapse-radio'
-            aria-expanded='false'&amp;gt;Collapse radiobutton&amp;lt;/label&amp;gt;
+        &amp;lt;input id=&quot;id-radio2&quot; type=&quot;radio&quot; name=&quot;radio-group1&quot; value=&quot;Value&quot; class=&quot; radio-large &quot;
+            data-js-target='#collapse-radio2'&amp;gt;
+        &amp;lt;label for=&quot;id-radio2&quot; class=&quot;&quot;&amp;gt;Radioknap viser indhold&amp;lt;/label&amp;gt;
     &amp;lt;/div&amp;gt;
 
-    &amp;lt;div id=&quot;collapse-radio&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
+    &amp;lt;div id=&quot;collapse-radio2&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
         &amp;lt;div class=&quot;py-4&quot;&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible radiobutton&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible radiobutton&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible radiobutton&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;Dette indhold bliver vist når radio-knappen er valgt.&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementation
+  
+  
+    For at initializere collapse funktionaliteten på en radioknap skal input[type=radio] have følgende:
+    
+      Attributten name: alle radioknapper I en gruppe skal have samme værdi i 'name'-attributten. Derved kan kun én af radioknapperne være valgt af gangen.
+      Attributten data-js-target=&quot;id-of-target-to-collapse&quot;: denne attribute skal have id'et på det element som skal vises på radioknappen er aktiveret. 
+      Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten 'checked'.
+      aria-controls=&quot;id-of-target-to-collapse&quot; 
+    
+    Alle radioknapperne i en gruppe skal placeres i en kontainer som har klassen js-radio-toggle-group.
+    Det element som skal collapses/expandes skal have følgende:
+    
+      id=”id-of-target-to-collapse”
+      aria-hidden=&quot;true/false&quot;
+       
+  
+
+
+  
+    Dokumentation
+  
+  
+    
+  
+
+
+
+
+
+  Checkbox - skjul og vis inhold
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;input id=&quot;id-checkbox1&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large js-checkbox-toggle-content&quot;
+            data-js-target='#collapse-check1' aria-controls='collapse-check1' aria-expanded='false'&amp;gt;
+        &amp;lt;label for=&quot;id-checkbox1&quot; class=&quot;&quot;&amp;gt;Checbox viser indhold&amp;lt;/label&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div id=&quot;collapse-check1&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
+        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
+            &amp;lt;p&amp;gt;Dette indhold bliver vist når checkboxen er valgt.&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;input id=&quot;id-checkbox2&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large js-checkbox-toggle-content&quot;
+            checked data-js-target='#collapse-check2' aria-controls='collapse-check2'
+            aria-expanded='false'&amp;gt;
+        &amp;lt;label for=&quot;id-checkbox2&quot; class=&quot;&quot;&amp;gt;Checbox viser indhold&amp;lt;/label&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div id=&quot;collapse-check2&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
+        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
+            &amp;lt;p&amp;gt;Dette indhold bliver vist når checkboxen er valgt.&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementation
+  
+  
+    For at initializere collapse funktionaliteten på en checkbox skal input[type=checkbox] have følgende:
+    
+      Klassen 'js-checkbox-toggle-content'. Denne klasse gør at funktionaliteten bliver initializeret. 
+      Attributten data-js-target=&quot;id-of-target-to-collapse&quot;: denne attribute skal have id'et på det element som skal vises på checkboxen er aktiveret. 
+      Hvis man ønsker at checkboxen skal være valgt fra starten af, skal den have attributten 'checked'.
+      aria-controls=&quot;id-of-target-to-collapse&quot; 
+    
+    Det element som skal collapses/expandes skal have følgende:
+    
+      id=”id-of-target-to-collapse”
+      aria-hidden=&quot;true/false&quot;
+       
+  
+
+
+  
+    Dokumentation
+  
+  
+    
+  
+
+
+
+
+
+  Generel skjul og vis indhold funktionalitet
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;button class=&quot;button button-secondary js-collapse&quot; data-js-target='#collapse1'
+        aria-controls='collapse1' aria-expanded='false'&amp;gt;Vis indhold&amp;lt;/button&amp;gt;
+    &amp;lt;div id=&quot;collapse1&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l mt-4 collapsed&quot;&amp;gt;
+        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
+            &amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.&amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
@@ -76,37 +343,310 @@
     Det element som skal collapses/expanded skal have følgende:
     
       id=”id-of-target-to-collapse”
-      aria-hidden=&quot;true/false&quot;">
-<meta property="og:description" content="Kode
+      aria-hidden=&quot;true/false&quot;
+    
+  
+
+
+  
+    Dokumentation">
+<meta property="og:description" content="Radioknap - skjul og vis inhold
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
   
     
-&amp;lt;div class=&quot;p-4&quot;&amp;gt;
+&amp;lt;div class=&quot;container js-radio-toggle-group&quot;&amp;gt;
 
     &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-        &amp;lt;input id=&quot;id-comments-3&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large&quot;&amp;gt;
-        &amp;lt;label for=&quot;id-comments-3&quot; class=&quot;js-collapse&quot; data-js-target='#collapse-check'
-            aria-controls='collapse-check' aria-expanded='false'&amp;gt;Collapse checkbox&amp;lt;/label&amp;gt;
+        &amp;lt;input id=&quot;id-radio1&quot; type=&quot;radio&quot; name=&quot;radio-group1&quot; value=&quot;Value&quot; class=&quot; radio-large &quot;
+            checked data-js-target='#collapse-radio1' aria-controls='collapse-radio1'
+            aria-expanded='false'&amp;gt;
+        &amp;lt;label for=&quot;id-radio1&quot; class=&quot;&quot;&amp;gt;Radioknap viser indhold&amp;lt;/label&amp;gt;
     &amp;lt;/div&amp;gt;
 
-    &amp;lt;div id=&quot;collapse-check&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
+    &amp;lt;div id=&quot;collapse-radio1&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
         &amp;lt;div class=&quot;py-4&quot;&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible check&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible check&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible check&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;Dette indhold bliver vist når radio-knappen er valgt.&amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 
     &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-        &amp;lt;input id=&quot;id-radio&quot; type=&quot;radio&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; radio-large&quot;&amp;gt;
-        &amp;lt;label for=&quot;id-radio&quot; class=&quot;js-collapse&quot; data-js-target='#collapse-radio' aria-controls='collapse-radio'
-            aria-expanded='false'&amp;gt;Collapse radiobutton&amp;lt;/label&amp;gt;
+        &amp;lt;input id=&quot;id-radio2&quot; type=&quot;radio&quot; name=&quot;radio-group1&quot; value=&quot;Value&quot; class=&quot; radio-large &quot;
+            data-js-target='#collapse-radio2'&amp;gt;
+        &amp;lt;label for=&quot;id-radio2&quot; class=&quot;&quot;&amp;gt;Radioknap viser indhold&amp;lt;/label&amp;gt;
     &amp;lt;/div&amp;gt;
 
-    &amp;lt;div id=&quot;collapse-radio&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
+    &amp;lt;div id=&quot;collapse-radio2&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
         &amp;lt;div class=&quot;py-4&quot;&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible radiobutton&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible radiobutton&amp;lt;/p&amp;gt;
-            &amp;lt;p&amp;gt;Content of collapsible radiobutton&amp;lt;/p&amp;gt;
+            &amp;lt;p&amp;gt;Dette indhold bliver vist når radio-knappen er valgt.&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementation
+  
+  
+    For at initializere collapse funktionaliteten på en radioknap skal input[type=radio] have følgende:
+    
+      Attributten name: alle radioknapper I en gruppe skal have samme værdi i 'name'-attributten. Derved kan kun én af radioknapperne være valgt af gangen.
+      Attributten data-js-target=&quot;id-of-target-to-collapse&quot;: denne attribute skal have id'et på det element som skal vises på radioknappen er aktiveret. 
+      Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten 'checked'.
+      aria-controls=&quot;id-of-target-to-collapse&quot; 
+    
+    Alle radioknapperne i en gruppe skal placeres i en kontainer som har klassen js-radio-toggle-group.
+    Det element som skal collapses/expandes skal have følgende:
+    
+      id=”id-of-target-to-collapse”
+      aria-hidden=&quot;true/false&quot;
+       
+  
+
+
+  
+    Dokumentation
+  
+  
+    
+  
+
+
+
+
+
+  Checkbox - skjul og vis inhold
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;input id=&quot;id-checkbox1&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large js-checkbox-toggle-content&quot;
+            data-js-target='#collapse-check1' aria-controls='collapse-check1' aria-expanded='false'&amp;gt;
+        &amp;lt;label for=&quot;id-checkbox1&quot; class=&quot;&quot;&amp;gt;Checbox viser indhold&amp;lt;/label&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div id=&quot;collapse-check1&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
+        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
+            &amp;lt;p&amp;gt;Dette indhold bliver vist når checkboxen er valgt.&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;input id=&quot;id-checkbox2&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large js-checkbox-toggle-content&quot;
+            checked data-js-target='#collapse-check2' aria-controls='collapse-check2'
+            aria-expanded='false'&amp;gt;
+        &amp;lt;label for=&quot;id-checkbox2&quot; class=&quot;&quot;&amp;gt;Checbox viser indhold&amp;lt;/label&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div id=&quot;collapse-check2&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
+        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
+            &amp;lt;p&amp;gt;Dette indhold bliver vist når checkboxen er valgt.&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementation
+  
+  
+    For at initializere collapse funktionaliteten på en checkbox skal input[type=checkbox] have følgende:
+    
+      Klassen 'js-checkbox-toggle-content'. Denne klasse gør at funktionaliteten bliver initializeret. 
+      Attributten data-js-target=&quot;id-of-target-to-collapse&quot;: denne attribute skal have id'et på det element som skal vises på checkboxen er aktiveret. 
+      Hvis man ønsker at checkboxen skal være valgt fra starten af, skal den have attributten 'checked'.
+      aria-controls=&quot;id-of-target-to-collapse&quot; 
+    
+    Det element som skal collapses/expandes skal have følgende:
+    
+      id=”id-of-target-to-collapse”
+      aria-hidden=&quot;true/false&quot;
+       
+  
+
+
+  
+    Dokumentation
+  
+  
+    
+  
+
+
+
+
+
+  Generel skjul og vis indhold funktionalitet
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;button class=&quot;button button-secondary js-collapse&quot; data-js-target='#collapse1'
+        aria-controls='collapse1' aria-expanded='false'&amp;gt;Vis indhold&amp;lt;/button&amp;gt;
+    &amp;lt;div id=&quot;collapse1&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l mt-4 collapsed&quot;&amp;gt;
+        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
+            &amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.&amp;lt;/p&amp;gt;
         &amp;lt;/div&amp;gt;
     &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
@@ -132,7 +672,13 @@
     Det element som skal collapses/expanded skal have følgende:
     
       id=”id-of-target-to-collapse”
-      aria-hidden=&quot;true/false&quot;">
+      aria-hidden=&quot;true/false&quot;
+    
+  
+
+
+  
+    Dokumentation">
 
 
 
@@ -691,6 +1237,39 @@
     
     
     
+    <ul class="sidenav-sub_list">
+  
+  <li>
+    
+      
+
+
+<a href="#radioknap-skjul-og-vis-inhold">Skjul/vis indhold via radioknap</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#checkbox-skjul-og-vis-inhold">Skjul/vis indhold via checkbox</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#generel-skjul-og-vis-indhold-funktionalitet">Generel Skjul/vis funktionalitet</a>
+    
+  </li>
+
+</ul>
+    
   
 
 
@@ -779,10 +1358,14 @@
           </p>
           <h1 class="mt-0" id="skjul-og-vis-collapse">Skjul og vis (Collapse)</h1>
           
-            <p class="font-lead">Collapse and expand content.</p>
+            <p class="font-lead">Skjul og vis inhold.</p>
           
       
           
+<section class="styleguide-child-container content" id="section-/komponenter/collapse/01-radio-collapse">
+  <h2 id="radioknap-skjul-og-vis-inhold">Radioknap - skjul og vis inhold</h2>
+  
+  
 <div class="component-preview ">
     <ul class="unstyled-list preview-buttons">
         <li class="component-preview-item">
@@ -807,7 +1390,7 @@
             </button>
         </li>
         <li class="component-preview-item">
-            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/collapse" target="_blank">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/radio-toggle-content" target="_blank">
                 <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="fsview">
@@ -828,40 +1411,37 @@
         <div class="loader"></div>
     </div>-->
 
-    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/collapse"></iframe>
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/radio-toggle-content"></iframe>
 </div>
 <div class="accordion-bordered code-sample">
   
-  <button class="accordion-button" aria-controls="code-collapse">Kode</button>
-  <div id="code-collapse" class="accordion-content">
+  <button class="accordion-button" aria-controls="code-radio-toggle-content">Kode</button>
+  <div id="code-radio-toggle-content" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-4"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container js-radio-toggle-group"</span><span class="nt">&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-comments-3"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Name"</span> <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">" checkbox-large"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-comments-3"</span> <span class="na">class=</span><span class="s">"js-collapse"</span> <span class="na">data-js-target=</span><span class="s">'#collapse-check'</span>
-            <span class="na">aria-controls=</span><span class="s">'collapse-check'</span> <span class="na">aria-expanded=</span><span class="s">'false'</span><span class="nt">&gt;</span>Collapse checkbox<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio1"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span> <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">" radio-large "</span>
+            <span class="na">checked</span> <span class="na">data-js-target=</span><span class="s">'#collapse-radio1'</span> <span class="na">aria-controls=</span><span class="s">'collapse-radio1'</span>
+            <span class="na">aria-expanded=</span><span class="s">'false'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-check"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Content of collapsible check<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Content of collapsible check<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Content of collapsible check<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når radio-knappen er valgt.<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"Name"</span> <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">" radio-large"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio"</span> <span class="na">class=</span><span class="s">"js-collapse"</span> <span class="na">data-js-target=</span><span class="s">'#collapse-radio'</span> <span class="na">aria-controls=</span><span class="s">'collapse-radio'</span>
-            <span class="na">aria-expanded=</span><span class="s">'false'</span><span class="nt">&gt;</span>Collapse radiobutton<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-radio2"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio-group1"</span> <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">" radio-large "</span>
+            <span class="na">data-js-target=</span><span class="s">'#collapse-radio2'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-radio2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Radioknap viser indhold<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-radio2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Content of collapsible radiobutton<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Content of collapsible radiobutton<span class="nt">&lt;/p&gt;</span>
-            <span class="nt">&lt;p&gt;</span>Content of collapsible radiobutton<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når radio-knappen er valgt.<span class="nt">&lt;/p&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -873,10 +1453,234 @@
 </div>
 
 <div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="collapse-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="radio-toggle-content-tech">
     Implementation
   </button>
-  <div id="collapse-docs" aria-hidden="false" class="accordion-content">
+  <div id="radio-toggle-content-tech" aria-hidden="false" class="accordion-content">
+    <p>For at initializere collapse funktionaliteten på en radioknap skal <code>input[type=radio]</code> have følgende:</p>
+    <ul>
+      <li>Attributten <code>name</code>: alle radioknapper I en gruppe skal have samme værdi i 'name'-attributten. Derved kan kun én af radioknapperne være valgt af gangen.</li>
+      <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id'et på det element som skal vises på radioknappen er aktiveret. </li>
+      <li>Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
+      <li><code>aria-controls="id-of-target-to-collapse" </code></li>
+    </ul>
+    <p>Alle radioknapperne i en gruppe skal placeres i en kontainer som har klassen <code>js-radio-toggle-group</code>.</p>
+    <p>Det element som skal collapses/expandes skal have følgende:</p>
+    <ul>
+      <li><code>id=”id-of-target-to-collapse”</code></li>
+      <li><code>aria-hidden="true/false"</code></li>
+    </ul>   
+  </div>
+</div>
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="checkbox-toggle-content-docs">
+    Dokumentation
+  </button>
+  <div id="checkbox-toggle-content-docs" class="accordion-content">
+    
+  </div>
+</div>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/collapse/02-checkbox-collapse">
+  <h2 id="checkbox-skjul-og-vis-inhold">Checkbox - skjul og vis inhold</h2>
+  
+  
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/checkbox-toggle-content" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/checkbox-toggle-content"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-checkbox-toggle-content">Kode</button>
+  <div id="code-checkbox-toggle-content" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox1"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Name"</span> <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">" checkbox-large js-checkbox-toggle-content"</span>
+            <span class="na">data-js-target=</span><span class="s">'#collapse-check1'</span> <span class="na">aria-controls=</span><span class="s">'collapse-check1'</span> <span class="na">aria-expanded=</span><span class="s">'false'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-checkbox1"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checbox viser indhold<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-check1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når checkboxen er valgt.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"id-checkbox2"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"Name"</span> <span class="na">value=</span><span class="s">"Value"</span> <span class="na">class=</span><span class="s">" checkbox-large js-checkbox-toggle-content"</span>
+            <span class="na">checked</span> <span class="na">data-js-target=</span><span class="s">'#collapse-check2'</span> <span class="na">aria-controls=</span><span class="s">'collapse-check2'</span>
+            <span class="na">aria-expanded=</span><span class="s">'false'</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"id-checkbox2"</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>Checbox viser indhold<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse-check2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"box-border-l collapsed"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Dette indhold bliver vist når checkboxen er valgt.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="checkbox-toggle-content-tech">
+    Implementation
+  </button>
+  <div id="checkbox-toggle-content-tech" aria-hidden="false" class="accordion-content">
+    <p>For at initializere collapse funktionaliteten på en checkbox skal <code>input[type=checkbox]</code> have følgende:</p>
+    <ul>
+      <li>Klassen <code>'js-checkbox-toggle-content'</code>. Denne klasse gør at funktionaliteten bliver initializeret. </li>
+      <li>Attributten <code>data-js-target="id-of-target-to-collapse"</code>: denne attribute skal have id'et på det element som skal vises på checkboxen er aktiveret. </li>
+      <li>Hvis man ønsker at checkboxen skal være valgt fra starten af, skal den have attributten <code>'checked'</code>.</li>
+      <li><code>aria-controls="id-of-target-to-collapse" </code></li>
+    </ul>
+    <p>Det element som skal collapses/expandes skal have følgende:</p>
+    <ul>
+      <li><code>id=”id-of-target-to-collapse”</code></li>
+      <li><code>aria-hidden="true/false"</code></li>
+    </ul>   
+  </div>
+</div>
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="checkbox-toggle-content-docs">
+    Dokumentation
+  </button>
+  <div id="checkbox-toggle-content-docs" class="accordion-content">
+    
+  </div>
+</div>
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/collapse/03-basic-collapse">
+  <h2 id="generel-skjul-og-vis-indhold-funktionalitet">Generel skjul og vis indhold funktionalitet</h2>
+  
+  
+<div class="component-preview ">
+    <ul class="unstyled-list preview-buttons">
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="mobil">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_2"><g><path class="icon-color" d="M22.2,24.7H10.1v-18h12.1V24.7z M11.9,22.9h8.5V8.5h-8.5V22.9z" /></g><circle class="icon-color" cx="16.2" cy="20.4" r="1.3" /></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="tablet">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g><path class="icon-color" d="M26.4,28.8h-19V4.2h19V28.8z M9.2,27h15.4V6H9.2V27z" /></g><circle class="icon-color" cx="16.9" cy="24.5" r="1.3" />
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <button type="button" class="component-preview-button" id="desktop">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80%" height="100%" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+                <g id="Layer_3"><g><g><path class="icon-color" d="M30.9,25H2.1V7.5h28.8V25z M3.9,23.2h25.2V9.3H3.9V23.2z" /></g><g><rect y="25.9" class="icon-color" width="33" height="1.8" /></g></g></g>
+                </svg>
+            </button>
+        </li>
+        <li class="component-preview-item">
+            <a class="component-preview-button" id="full" href="/frontend-styleguide/preview-components/basic-collapse" target="_blank">
+                <svg width="18px" height="20px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="fsview">
+                            <g>
+                                <g class="icon-color">
+                                    <path d="M33,21.3910948 L0,21.3910948 L0,-1.77635684e-15 L33,-1.77635684e-15 L33,21.3910948 L33,21.3910948 L33,21.3910948 Z M25,19.1908679 L30.9375,19.1908679 L30.9375,15.5672358 L33,15.5672358 L33,6.22689431 L30.9375,6.22689431 L30.9375,2.2002269 L25,2.2002269 L25,1.77635684e-15 L8,1.77635684e-15 L8,2.2002269 L2.0625,2.2002269 L2.0625,6.22689431 L0,6.22689431 L0,15.5672358 L2.0625,15.5672358 L2.0625,19.1908679 L8,19.1908679 L8,21.3899994 L25,21.3899994 L25,19.1908679 L25,19.1908679 Z" id="Combined-Shape"></path>
+                                    <rect x="10" y="8" width="13" height="6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+    </ul>
+
+    <!--<div class="loader-container">
+        <div class="loader"></div>
+    </div>-->
+
+    <iframe class="preview-iframe" src="/frontend-styleguide/preview-components/basic-collapse"></iframe>
+</div>
+<div class="accordion-bordered code-sample">
+  
+  <button class="accordion-button" aria-controls="code-basic-collapse">Kode</button>
+  <div id="code-basic-collapse" class="accordion-content">
+    
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button-secondary js-collapse"</span> <span class="na">data-js-target=</span><span class="s">'#collapse1'</span>
+        <span class="na">aria-controls=</span><span class="s">'collapse1'</span> <span class="na">aria-expanded=</span><span class="s">'false'</span><span class="nt">&gt;</span>Vis indhold<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapse1"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"box-border-l mt-4 collapsed"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="collapse-tech">
+    Implementation
+  </button>
+  <div id="collapse-tech" aria-hidden="false" class="accordion-content">
     <p>For at initializere collapse funktionaliteten skal et HTML-element have klassen <code>.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>
     <p>Dette HTML-element skal yderligere have følgende attributter:</p>
     <ul>
@@ -891,6 +1695,17 @@
     </ul>
   </div>
 </div>
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="collapse-docs">
+    Dokumentation
+  </button>
+  <div id="collapse-docs" class="accordion-content">
+    
+  </div>
+</div>
+
+</section>
+
 
       </section>
     </div>

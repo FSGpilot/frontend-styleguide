@@ -1,21 +1,18 @@
 ---
-permalink: /designandcode/collapse/
-layout: styleguide
-type: component
-title: Skjul og vis (Collapse)
-category: UI components
-subcategory: Design og kode
-lead: Collapse and expand content.
+title: Generel skjul og vis indhold funktionalitet
+parent: Collapse
+order: 03
+lead: 
 ---
 
-{% include code/preview.html component="collapse" %}
-{% include code/accordion.html component="collapse" %}
+{% include code/preview.html component="basic-collapse" %}
+{% include code/accordion.html component="basic-collapse" %}
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="collapse-docs">
+      aria-expanded="true" aria-controls="collapse-tech">
     Implementation
   </button>
-  <div id="collapse-docs" aria-hidden="false" class="accordion-content">
+  <div id="collapse-tech" aria-hidden="false" class="accordion-content">
     <p>For at initializere collapse funktionaliteten skal et HTML-element have klassen <code>.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>
     <p>Dette HTML-element skal yderligere have følgende attributter:</p>
     <ul>
@@ -30,3 +27,12 @@ lead: Collapse and expand content.
     </ul>
   </div>
 </div>
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="collapse-docs">
+    Dokumentation
+  </button>
+  <div id="collapse-docs" class="accordion-content">
+    
+  </div>
+</div> 

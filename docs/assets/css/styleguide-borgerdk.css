@@ -4765,7 +4765,7 @@ ul {
   line-height: 2.4rem; }
   ul li {
     margin-top: 8px;
-    list-style: none;
+    list-style-type: none;
     position: relative;
     padding-left: 37px;
     line-height: 2.4rem; }
@@ -8183,6 +8183,9 @@ code {
 
 .page-ui-components .font-lead:first-of-type {
   margin-top: 3.2rem; }
+
+.page-basic-collapse-html {
+  padding-top: 4px; }
 
 .page-accordion-html {
   padding-top: 4px; }
