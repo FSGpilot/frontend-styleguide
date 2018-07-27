@@ -6127,25 +6127,25 @@ input, textarea, select {
     @media screen and (min-width: 768px) {
       input.input-medium, textarea.input-medium, select.input-medium {
         max-width: 12rem; } }
-  input.input-width-55, textarea.input-width-55, select.input-width-55 {
+  input.input-width-xxs, textarea.input-width-xxs, select.input-width-xxs {
     max-width: 5.5rem !important;
     width: 100%; }
-  input.input-width-100, textarea.input-width-100, select.input-width-100 {
+  input.input-width-xs, textarea.input-width-xs, select.input-width-xs {
     max-width: 10rem !important;
     width: 100%; }
-  input.input-width-150, textarea.input-width-150, select.input-width-150 {
+  input.input-width-s, textarea.input-width-s, select.input-width-s {
     max-width: 15rem !important;
     width: 100%; }
-  input.input-width-200, textarea.input-width-200, select.input-width-200 {
+  input.input-width-m, textarea.input-width-m, select.input-width-m {
     max-width: 20rem !important;
     width: 100%; }
-  input.input-width-300, textarea.input-width-300, select.input-width-300 {
+  input.input-width-l, textarea.input-width-l, select.input-width-l {
     max-width: 30rem !important;
     width: 100%; }
-  input.input-width-400, textarea.input-width-400, select.input-width-400 {
+  input.input-width-xl, textarea.input-width-xl, select.input-width-xl {
     max-width: 40rem !important;
     width: 100%; }
-  input.input-width-500, textarea.input-width-500, select.input-width-500 {
+  input.input-width-xxl, textarea.input-width-xxl, select.input-width-xxl {
     max-width: 50rem !important;
     width: 100%; }
 
