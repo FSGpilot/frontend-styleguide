@@ -1,0 +1,50 @@
+{% include nav/current.html page=include.page %}
+
+{% assign titletext = include.page.title  %}
+{% if include.is_sidenav and include.text %}
+  {% assign titletext = include.text %}
+{% endif %}
+
+{% if include.flat -%}
+  <!-- Do not render subnavs-->
+  <a href="{{ include.page.url | relative_url }}" 
+    class="{% if _current -%}current {% endif %} {%  if _active -%}active {% endif %} nav-link">
+    <span>{{ titletext | smartify }}</span>
+  </a>
+{% else -%}
+  <!--Do render subnavs-->
+
+  {% assign _href_key = include.href_key %}
+  {% assign _text_key = include.href_key %}
+  {% if include.categorynav -%}
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    {% assign _links = site.data.nav[include.categorynav] %}
+  {% else -%}
+    <!-- Uses page.subnav as navmenu-->
+    {% assign _links = include.links | default: include.page.subnav %}
+  {% endif %}
+
+  {% if _links -%}
+    <div class="overflow-menu">
+      <button class="{% if _current -%}current {% endif %} button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow{{ include.uniqueid }}" aria-haspopup="true" aria-expanded="false">
+        <span>{{ titletext | smartify }}</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow{{ include.uniqueid }}" aria-hidden="true">
+        <ul class="overflow-list">{%
+            include nav/list.html
+            links=_links
+            text_key=_text_key
+            href_key=_href_key
+            subnav_class="overflow-list"
+          %}
+        </ul>
+      </div>
+    </div>
+  {% else -%}
+    <a href="{{ include.page.url | relative_url }}" 
+      class="{% if _current -%}current {% endif %} {%  if _active -%}active {% endif %} nav-link">
+      <span>{{ titletext | smartify }}</span>
+    </a>
+  {% endif %}
+{% endif %}
+
