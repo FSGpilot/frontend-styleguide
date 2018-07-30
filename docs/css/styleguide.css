@@ -4649,7 +4649,8 @@ textarea.form-input {
     text-shadow: 0 0 0 #1a1a1a; }
   .form-select:disabled {
     background: #F5F5F5;
-    color: #999999; }
+    color: #999999;
+    cursor: not-allowed; }
 
 table .form-select {
   margin-top: 0; }
@@ -4684,7 +4685,13 @@ legend {
 
 .input-disabled input {
   background: #F5F5F5;
-  color: #999999; }
+  color: #999999;
+  cursor: not-allowed; }
+
+input[type=text]:disabled, input[type=textarea]:disabled {
+  background: #F5F5F5;
+  color: #999999;
+  cursor: not-allowed; }
 
 .input-required:after {
   color: #CC0000;
@@ -5952,7 +5959,7 @@ tbody tr.shown .details-control {
 
 .page-container {
   padding-top: 2.4rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 5.6rem; }
   @media screen and (min-width: md) {
     .page-container {
       padding-top: 4rem;
@@ -6262,7 +6269,7 @@ fieldset + fieldset {
   margin-top: 4rem; }
 
 input, textarea, select {
-  max-width: 40rem;
+  max-width: 32rem;
   width: 100%; }
   input.input-tiny, textarea.input-tiny, select.input-tiny {
     /* stylelint-disable-line selector-no-qualifying-type */ }
@@ -6275,25 +6282,34 @@ input, textarea, select {
       input.input-medium, textarea.input-medium, select.input-medium {
         max-width: 12rem; } }
   input.input-width-xxs, textarea.input-width-xxs, select.input-width-xxs {
-    max-width: 5.5rem !important;
+    max-width: 8rem !important;
     width: 100%; }
   input.input-width-xs, textarea.input-width-xs, select.input-width-xs {
-    max-width: 10rem !important;
+    max-width: 16rem !important;
     width: 100%; }
   input.input-width-s, textarea.input-width-s, select.input-width-s {
-    max-width: 15rem !important;
+    max-width: 24rem !important;
     width: 100%; }
   input.input-width-m, textarea.input-width-m, select.input-width-m {
-    max-width: 20rem !important;
+    max-width: 32rem !important;
     width: 100%; }
   input.input-width-l, textarea.input-width-l, select.input-width-l {
-    max-width: 30rem !important;
-    width: 100%; }
-  input.input-width-xl, textarea.input-width-xl, select.input-width-xl {
     max-width: 40rem !important;
     width: 100%; }
-  input.input-width-xxl, textarea.input-width-xxl, select.input-width-xxl {
-    max-width: 50rem !important;
+  input.input-width-xl, textarea.input-width-xl, select.input-width-xl {
+    max-width: 48rem !important;
+    width: 100%; }
+  input.input-char-4, textarea.input-char-4, select.input-char-4 {
+    max-width: calc(2px + 16px + 16px + 4ch);
+    width: 100%; }
+  input.input-char-8, textarea.input-char-8, select.input-char-8 {
+    max-width: calc(2px + 16px + 16px + 8ch);
+    width: 100%; }
+  input.input-char-11, textarea.input-char-11, select.input-char-11 {
+    max-width: calc(2px + 16px + 16px + 11ch);
+    width: 100%; }
+  input.input-char-27, textarea.input-char-27, select.input-char-27 {
+    max-width: calc(2px + 16px + 16px + 27ch);
     width: 100%; }
 
 @media screen and (min-width: 768px) {

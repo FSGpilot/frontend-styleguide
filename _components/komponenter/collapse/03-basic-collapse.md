@@ -10,7 +10,7 @@ lead:
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="collapse-tech">
-    Implementation
+    Implementering
   </button>
   <div id="collapse-tech" aria-hidden="false" class="accordion-content">
     <p>For at initializere collapse funktionaliteten skal et HTML-element have klassen <code>.js-collapse</code>. Collapse/expand funktionaliteten bliver nu kaldt når man klikker på dette element.</p>
