@@ -1135,8 +1135,9 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class="nav"> <!-- collapsible-->
-      <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
+    <!-- Desktop main menu-->
+    <nav role="navigation" class="nav d-none d-lg-block"> 
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->
@@ -1144,38 +1145,46 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
         <div class="navbar-inner container">
           <ul class="nav-primary">
             
+
+
+  
   
   <li>
     
-      
 
 
 
 
-<a href="/frontend-styleguide/designandcode/" 
-  class="  nav-link">
-  <span>Design og kode</span>
-</a>
 
 
-    
+  <!-- Do not render subnavs-->
+  <a href="/frontend-styleguide/designandcode/" 
+    class="  nav-link">
+    <span>Design og kode</span>
+  </a>
+
+
+
   </li>
 
   
+  
   <li>
     
-      
 
 
 
 
-<a href="/frontend-styleguide/examples/" 
-  class="  nav-link">
-  <span>Eksempler</span>
-</a>
 
 
-    
+  <!-- Do not render subnavs-->
+  <a href="/frontend-styleguide/examples/" 
+    class="  nav-link">
+    <span>Eksempler</span>
+  </a>
+
+
+
   </li>
 
 
@@ -1195,20 +1204,47 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
         </div>
       </div>
       <!-- 3: Main navigation end-->
-      
-    </nav> <!-- collapsible nav end-->
-</header>
+    </nav> 
+    <!-- collapsible nav end-->
 
-<main class="container page-container">
-  <div class="row">
+    <!-- Mobile main menu-->
+    <nav role="navigation" class="nav d-lg-none"> 
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
+      <!-- 3: Main navigation-->
+      <div class="navbar navbar-primary">
+        <!--3A: Main navigation-->
+        
+        <div class="navbar-inner container">
+          <ul class="nav-primary">
+            
 
-    <div class="col-12 col-md-3 sidebar-col">
-      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
-      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
-        
-        
-        <ul class="sidenav-list">
-          
+
+  
+  
+  <li>
+    
+
+
+
+
+
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class=" button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="false">
+        <span>Design og kode</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+        <ul class="overflow-list">
   
   <li>
     
@@ -1219,7 +1255,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/" 
   class="  nav-link">
-  <span>Overblik</span>
+  Design og kode
 </a>
 
 
@@ -1236,7 +1272,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/accessibility/" 
   class="  nav-link">
-  <span>Tilgængelighed</span>
+  Tilgængelighed
 </a>
 
 
@@ -1253,7 +1289,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/typography/" 
   class="  nav-link">
-  <span>Typografi</span>
+  Typografi
 </a>
 
 
@@ -1270,7 +1306,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/colors/" 
   class="current  active  nav-link">
-  <span>Farver</span>
+  Farver
 </a>
 
   
@@ -1295,7 +1331,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/ikoner/" 
   class="  nav-link">
-  <span>Ikoner</span>
+  Ikoner
 </a>
 
 
@@ -1312,7 +1348,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/kanter/" 
   class="  nav-link">
-  <span>Kanter, streger og skygger</span>
+  Kanter, streger og skygger
 </a>
 
 
@@ -1329,7 +1365,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/grids/" 
   class="  nav-link">
-  <span>Grid</span>
+  Grid
 </a>
 
 
@@ -1346,7 +1382,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/buttons/" 
   class="  nav-link">
-  <span>Knapper</span>
+  Knapper
 </a>
 
 
@@ -1363,7 +1399,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/tags/" 
   class="  nav-link">
-  <span>Tags</span>
+  Tags
 </a>
 
 
@@ -1380,7 +1416,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/accordions/" 
   class="  nav-link">
-  <span>Accordions</span>
+  Accordions
 </a>
 
 
@@ -1397,7 +1433,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/beskeder/" 
   class="  nav-link">
-  <span>Beskeder (Alerts)</span>
+  Beskeder (Alerts)
 </a>
 
 
@@ -1414,7 +1450,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/cards/" 
   class="  nav-link">
-  <span>Cards</span>
+  Cards
 </a>
 
 
@@ -1431,7 +1467,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/form-controls/" 
   class="  nav-link">
-  <span>Formular elementer</span>
+  Formular elementer
 </a>
 
 
@@ -1448,7 +1484,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/search/" 
   class="  nav-link">
-  <span>Søg</span>
+  Søg
 </a>
 
 
@@ -1465,7 +1501,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/badges/" 
   class="  nav-link">
-  <span>Badges</span>
+  Badges
 </a>
 
 
@@ -1482,7 +1518,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/tables/" 
   class="  nav-link">
-  <span>Tabeller</span>
+  Tabeller
 </a>
 
 
@@ -1499,7 +1535,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/trinindikatorer/" 
   class="  nav-link">
-  <span>Trinindikatorer</span>
+  Trinindikatorer
 </a>
 
 
@@ -1516,7 +1552,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/sidenav/" 
   class="  nav-link">
-  <span>Sidenavigation</span>
+  Sidenavigation
 </a>
 
 
@@ -1533,7 +1569,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/tabnav/" 
   class="  nav-link">
-  <span>Faneblade</span>
+  Faneblade
 </a>
 
 
@@ -1550,7 +1586,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/spinner/" 
   class="  nav-link">
-  <span>Spinner</span>
+  Spinner
 </a>
 
 
@@ -1567,7 +1603,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/overflowmenu/" 
   class="  nav-link">
-  <span>Overflow menu</span>
+  Overflow menu
 </a>
 
 
@@ -1584,7 +1620,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/modals/" 
   class="  nav-link">
-  <span>Modalvinduer</span>
+  Modalvinduer
 </a>
 
 
@@ -1601,7 +1637,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/tooltip/" 
   class="  nav-link">
-  <span>Tooltip</span>
+  Tooltip
 </a>
 
 
@@ -1618,7 +1654,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/collapse/" 
   class="  nav-link">
-  <span>Skjul og vis (Collapse)</span>
+  Skjul og vis (Collapse)
 </a>
 
 
@@ -1635,7 +1671,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/headers/" 
   class="  nav-link">
-  <span>Headers</span>
+  Headers
 </a>
 
 
@@ -1652,7 +1688,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/footers/" 
   class="  nav-link">
-  <span>Footers</span>
+  Footers
 </a>
 
 
@@ -1669,7 +1705,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/select2-multiselect/" 
   class="  nav-link">
-  <span>Multiselect dropdown</span>
+  Multiselect dropdown
 </a>
 
 
@@ -1686,7 +1722,601 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
 
 <a href="/frontend-styleguide/designandcode/datatables/" 
   class="  nav-link">
-  <span>Datatabeller</span>
+  Datatabeller
+</a>
+
+
+    
+  </li>
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+  </li>
+
+  
+  
+  <li>
+    
+
+
+
+
+
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class=" button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow2" aria-haspopup="true" aria-expanded="false">
+        <span>Eksempler</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
+        <ul class="overflow-list">
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/examples/" 
+  class="  nav-link">
+  Eksempler
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/pageexamples/" 
+  class="  nav-link">
+  Sideeksempler
+</a>
+
+
+    
+  </li>
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+  </li>
+
+
+          </ul>
+
+          <!-- 3B: Main navigation - secondary menu-->
+          <ul class="unstyled-list nav-actions">
+            <li>
+              <select class="form-select style-switcher" name="Style switcher" aria-label="Skift mellem temaer">
+                <option value="">- Vælg tema -</option>
+                <option value="styleguide">Tema: Neutralt</option>
+                <option value="virkdk">Tema: Virk.dk</option>
+                <option value="borgerdk">Tema: Borger.dk</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 3: Main navigation end-->
+    </nav> 
+    <!-- collapsible nav end-->
+</header>
+
+<main class="container page-container">
+  <div class="row">
+
+    <div class="col-12 col-lg-3 sidebar-col">
+      <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav">
+        
+        
+        <ul class="sidenav-list">
+          
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/" 
+  class="  nav-link">
+  Overblik
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/accessibility/" 
+  class="  nav-link">
+  Tilgængelighed
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/typography/" 
+  class="  nav-link">
+  Typografi
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/colors/" 
+  class="current  active  nav-link">
+  Farver
+</a>
+
+  
+    
+    
+    
+    
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/ikoner/" 
+  class="  nav-link">
+  Ikoner
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/kanter/" 
+  class="  nav-link">
+  Kanter, streger og skygger
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/grids/" 
+  class="  nav-link">
+  Grid
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/buttons/" 
+  class="  nav-link">
+  Knapper
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tags/" 
+  class="  nav-link">
+  Tags
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/accordions/" 
+  class="  nav-link">
+  Accordions
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/beskeder/" 
+  class="  nav-link">
+  Beskeder (Alerts)
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/cards/" 
+  class="  nav-link">
+  Cards
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/form-controls/" 
+  class="  nav-link">
+  Formular elementer
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/search/" 
+  class="  nav-link">
+  Søg
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/badges/" 
+  class="  nav-link">
+  Badges
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tables/" 
+  class="  nav-link">
+  Tabeller
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/trinindikatorer/" 
+  class="  nav-link">
+  Trinindikatorer
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/sidenav/" 
+  class="  nav-link">
+  Sidenavigation
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tabnav/" 
+  class="  nav-link">
+  Faneblade
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/spinner/" 
+  class="  nav-link">
+  Spinner
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/overflowmenu/" 
+  class="  nav-link">
+  Overflow menu
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/modals/" 
+  class="  nav-link">
+  Modalvinduer
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tooltip/" 
+  class="  nav-link">
+  Tooltip
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/collapse/" 
+  class="  nav-link">
+  Skjul og vis (Collapse)
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/headers/" 
+  class="  nav-link">
+  Headers
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/footers/" 
+  class="  nav-link">
+  Footers
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/select2-multiselect/" 
+  class="  nav-link">
+  Multiselect dropdown
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/datatables/" 
+  class="  nav-link">
+  Datatabeller
 </a>
 
 
@@ -1699,7 +2329,7 @@ Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændr
       </nav>
     </div>    
 
-    <div class="col-12 col-md-9">
+    <div class="col-12 col-lg-9">
       <section id="section-/designandcode/colors">
         
           <p class="small-text m-0 uppercase">
