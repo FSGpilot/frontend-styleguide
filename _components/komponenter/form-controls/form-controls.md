@@ -19,8 +19,8 @@ subnav:
   href: '#checkboxes'
 - text: Radio buttons
   href: '#radio-buttons'
-- text: Date input
-  href: '#date-input'
+- text: Dato input
+  href: '#dato-input'
 - text: Validation
   href: '#validation'
 - text: File input
