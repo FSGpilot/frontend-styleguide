@@ -1143,8 +1143,9 @@ Footer med logo
     </div>
 
     <div class="overlay"></div>
-    <nav role="navigation" class="nav"> <!-- collapsible-->
-      <button class="button button-secondary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
+    <!-- Desktop main menu-->
+    <nav role="navigation" class="nav d-none d-lg-block"> 
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
       <!-- 3: Main navigation-->
       <div class="navbar navbar-primary">
         <!--3A: Main navigation-->
@@ -1152,38 +1153,46 @@ Footer med logo
         <div class="navbar-inner container">
           <ul class="nav-primary">
             
+
+
+  
   
   <li>
     
-      
 
 
 
 
-<a href="/frontend-styleguide/designandcode/" 
-  class="  nav-link">
-  <span>Design og kode</span>
-</a>
 
 
-    
+  <!-- Do not render subnavs-->
+  <a href="/frontend-styleguide/designandcode/" 
+    class="  nav-link">
+    <span>Design og kode</span>
+  </a>
+
+
+
   </li>
 
   
+  
   <li>
     
-      
 
 
 
 
-<a href="/frontend-styleguide/examples/" 
-  class="  nav-link">
-  <span>Eksempler</span>
-</a>
 
 
-    
+  <!-- Do not render subnavs-->
+  <a href="/frontend-styleguide/examples/" 
+    class="  nav-link">
+    <span>Eksempler</span>
+  </a>
+
+
+
   </li>
 
 
@@ -1203,8 +1212,713 @@ Footer med logo
         </div>
       </div>
       <!-- 3: Main navigation end-->
+    </nav> 
+    <!-- collapsible nav end-->
+
+    <!-- Mobile main menu-->
+    <nav role="navigation" class="nav d-lg-none"> 
+      <button class="button button-tertiary button-menu-close js-menu-close" title="Luk mobil menu"><svg class="icon-svg "><use xlink:href="#close"></use></svg>Luk</button>
+      <!-- 3: Main navigation-->
+      <div class="navbar navbar-primary">
+        <!--3A: Main navigation-->
+        
+        <div class="navbar-inner container">
+          <ul class="nav-primary">
+            
+
+
+  
+  
+  <li>
+    
+
+
+
+
+
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class=" button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="false">
+        <span>Design og kode</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+        <ul class="overflow-list">
+  
+  <li>
+    
       
-    </nav> <!-- collapsible nav end-->
+
+
+
+
+<a href="/frontend-styleguide/designandcode/" 
+  class="  nav-link">
+  Design og kode
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/accessibility/" 
+  class="  nav-link">
+  Tilgængelighed
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/typography/" 
+  class="  nav-link">
+  Typografi
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/colors/" 
+  class="  nav-link">
+  Farver
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/ikoner/" 
+  class="  nav-link">
+  Ikoner
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/kanter/" 
+  class="  nav-link">
+  Kanter, streger og skygger
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/grids/" 
+  class="  nav-link">
+  Grid
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/buttons/" 
+  class="  nav-link">
+  Knapper
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tags/" 
+  class="  nav-link">
+  Tags
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/accordions/" 
+  class="  nav-link">
+  Accordions
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/beskeder/" 
+  class="  nav-link">
+  Beskeder (Alerts)
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/cards/" 
+  class="  nav-link">
+  Cards
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/form-controls/" 
+  class="  nav-link">
+  Formular elementer
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/search/" 
+  class="  nav-link">
+  Søg
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/badges/" 
+  class="  nav-link">
+  Badges
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tables/" 
+  class="  nav-link">
+  Tabeller
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/trinindikatorer/" 
+  class="  nav-link">
+  Trinindikatorer
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/sidenav/" 
+  class="  nav-link">
+  Sidenavigation
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tabnav/" 
+  class="  nav-link">
+  Faneblade
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/spinner/" 
+  class="  nav-link">
+  Spinner
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/overflowmenu/" 
+  class="  nav-link">
+  Overflow menu
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/modals/" 
+  class="  nav-link">
+  Modalvinduer
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/tooltip/" 
+  class="  nav-link">
+  Tooltip
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/collapse/" 
+  class="  nav-link">
+  Skjul og vis (Collapse)
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/headers/" 
+  class="  nav-link">
+  Headers
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/footers/" 
+  class="current  active  nav-link">
+  Footers
+</a>
+
+  
+    
+    
+    
+    
+    
+    <ul class="overflow-list">
+  
+  <li>
+    
+      
+
+
+<a href="#accessibility">Accessibility</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#footer-basic">Footer basic</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#footer-two-line">Footer med to linjer</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#footer-header">Footer med header</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#footer-header-ext-support">Footer med header og udvidet support</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#footer-header-links-ext-support">Footer med header, links og udvidet support</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#footer-header-links-sim-support">Footer med header, links og simpel support</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#footer-logo">Footer med logo</a>
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/select2-multiselect/" 
+  class="  nav-link">
+  Multiselect dropdown
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/designandcode/datatables/" 
+  class="  nav-link">
+  Datatabeller
+</a>
+
+
+    
+  </li>
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+  </li>
+
+  
+  
+  <li>
+    
+
+
+
+
+
+
+  <!--Do render subnavs-->
+
+  
+  
+  
+    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
+    
+  
+
+  
+    <div class="overflow-menu">
+      <button class=" button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow2" aria-haspopup="true" aria-expanded="false">
+        <span>Eksempler</span>
+      </button>
+      <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
+        <ul class="overflow-list">
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/examples/" 
+  class="  nav-link">
+  Eksempler
+</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+
+
+<a href="/frontend-styleguide/pageexamples/" 
+  class="  nav-link">
+  Sideeksempler
+</a>
+
+
+    
+  </li>
+
+
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+  </li>
+
+
+          </ul>
+
+          <!-- 3B: Main navigation - secondary menu-->
+          <ul class="unstyled-list nav-actions">
+            <li>
+              <select class="form-select style-switcher" name="Style switcher" aria-label="Skift mellem temaer">
+                <option value="">- Vælg tema -</option>
+                <option value="styleguide">Tema: Neutralt</option>
+                <option value="virkdk">Tema: Virk.dk</option>
+                <option value="borgerdk">Tema: Borger.dk</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 3: Main navigation end-->
+    </nav> 
+    <!-- collapsible nav end-->
 </header>
 
 <!-- Abit hackish, when you want to use wide containers in the styleguide, you have to copy-paste all the stuff from the styleguide-layout into the file itself. See "headers" as an example-->
@@ -1227,7 +1941,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/" 
   class="  nav-link">
-  <span>Design og kode</span>
+  Design og kode
 </a>
 
 
@@ -1244,7 +1958,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/accessibility/" 
   class="  nav-link">
-  <span>Tilgængelighed</span>
+  Tilgængelighed
 </a>
 
 
@@ -1261,7 +1975,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/typography/" 
   class="  nav-link">
-  <span>Typografi</span>
+  Typografi
 </a>
 
 
@@ -1278,7 +1992,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/colors/" 
   class="  nav-link">
-  <span>Farver</span>
+  Farver
 </a>
 
 
@@ -1295,7 +2009,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/ikoner/" 
   class="  nav-link">
-  <span>Ikoner</span>
+  Ikoner
 </a>
 
 
@@ -1312,7 +2026,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/kanter/" 
   class="  nav-link">
-  <span>Kanter, streger og skygger</span>
+  Kanter, streger og skygger
 </a>
 
 
@@ -1329,7 +2043,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/grids/" 
   class="  nav-link">
-  <span>Grid</span>
+  Grid
 </a>
 
 
@@ -1346,7 +2060,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/buttons/" 
   class="  nav-link">
-  <span>Knapper</span>
+  Knapper
 </a>
 
 
@@ -1363,7 +2077,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/tags/" 
   class="  nav-link">
-  <span>Tags</span>
+  Tags
 </a>
 
 
@@ -1380,7 +2094,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/accordions/" 
   class="  nav-link">
-  <span>Accordions</span>
+  Accordions
 </a>
 
 
@@ -1397,7 +2111,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/beskeder/" 
   class="  nav-link">
-  <span>Beskeder (Alerts)</span>
+  Beskeder (Alerts)
 </a>
 
 
@@ -1414,7 +2128,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/cards/" 
   class="  nav-link">
-  <span>Cards</span>
+  Cards
 </a>
 
 
@@ -1431,7 +2145,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/form-controls/" 
   class="  nav-link">
-  <span>Formular elementer</span>
+  Formular elementer
 </a>
 
 
@@ -1448,7 +2162,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/search/" 
   class="  nav-link">
-  <span>Søg</span>
+  Søg
 </a>
 
 
@@ -1465,7 +2179,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/badges/" 
   class="  nav-link">
-  <span>Badges</span>
+  Badges
 </a>
 
 
@@ -1482,7 +2196,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/tables/" 
   class="  nav-link">
-  <span>Tabeller</span>
+  Tabeller
 </a>
 
 
@@ -1499,7 +2213,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/trinindikatorer/" 
   class="  nav-link">
-  <span>Trinindikatorer</span>
+  Trinindikatorer
 </a>
 
 
@@ -1516,7 +2230,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/sidenav/" 
   class="  nav-link">
-  <span>Sidenavigation</span>
+  Sidenavigation
 </a>
 
 
@@ -1533,7 +2247,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/tabnav/" 
   class="  nav-link">
-  <span>Faneblade</span>
+  Faneblade
 </a>
 
 
@@ -1550,7 +2264,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/spinner/" 
   class="  nav-link">
-  <span>Spinner</span>
+  Spinner
 </a>
 
 
@@ -1567,7 +2281,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/overflowmenu/" 
   class="  nav-link">
-  <span>Overflow menu</span>
+  Overflow menu
 </a>
 
 
@@ -1584,7 +2298,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/modals/" 
   class="  nav-link">
-  <span>Modalvinduer</span>
+  Modalvinduer
 </a>
 
 
@@ -1601,7 +2315,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/tooltip/" 
   class="  nav-link">
-  <span>Tooltip</span>
+  Tooltip
 </a>
 
 
@@ -1618,7 +2332,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/collapse/" 
   class="  nav-link">
-  <span>Skjul og vis (Collapse)</span>
+  Skjul og vis (Collapse)
 </a>
 
 
@@ -1635,7 +2349,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/headers/" 
   class="  nav-link">
-  <span>Headers</span>
+  Headers
 </a>
 
 
@@ -1652,7 +2366,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/footers/" 
   class="current  active  nav-link">
-  <span>Footers</span>
+  Footers
 </a>
 
   
@@ -1760,7 +2474,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/select2-multiselect/" 
   class="  nav-link">
-  <span>Multiselect dropdown</span>
+  Multiselect dropdown
 </a>
 
 
@@ -1777,7 +2491,7 @@ Footer med logo
 
 <a href="/frontend-styleguide/designandcode/datatables/" 
   class="  nav-link">
-  <span>Datatabeller</span>
+  Datatabeller
 </a>
 
 

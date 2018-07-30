@@ -5,22 +5,21 @@ layout: default
 <main class="container page-container">
   <div class="row">
 
-    <div class="col-12 col-md-3 sidebar-col">
-      <button class="button button-primary mb-4 d-md-none js-collapse" data-js-target="#docs-sidenav" aria-controls="docs-sidenav" aria-expanded="false">Vis sidemenu</button>
-      <nav class="sidenav d-md-block collapsed mb-4 mb-md-0" id="docs-sidenav" aria-hidden="true">
+    <div class="col-12 col-lg-3 sidebar-col">
+      <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav">
         {% assign sidenavFromNavData = site.data.nav[page.category] %}
         {% if sidenavFromNavData %}
         <ul class="sidenav-list">
           {% include nav/list.html 
             links=sidenavFromNavData               
-            is_sidenav=true
+            use_alt_text=true
           %}
         </ul>
         {% endif %}
       </nav>
     </div>    
 
-    <div class="col-12 col-md-9">
+    <div class="col-12 col-lg-9">
       <section id="section-{{page.id}}">
         
           <p class="small-text m-0 uppercase">
