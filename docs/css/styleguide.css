@@ -4027,7 +4027,7 @@ p, .body-text, .body-copy-text {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
-  color: #454545; }
+  color: #1a1a1a; }
 
 .font-lead {
   font-family: "IBMPlexSans", "system";
@@ -4035,14 +4035,14 @@ p, .body-text, .body-copy-text {
   font-weight: 400;
   line-height: 3.2rem;
   max-width: 66ch;
-  color: #454545; }
+  color: #1a1a1a; }
   @media (max-width: 767px) {
     .font-lead {
       font-family: "IBMPlexSans";
       font-size: 1.6rem;
       line-height: 2.4rem;
       font-weight: 400;
-      color: #454545; } }
+      color: #1a1a1a; } }
 
 .weight-normal {
   font-family: "IBMPlexSans";
@@ -4140,7 +4140,7 @@ p, .body-text {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
-  color: #454545;
+  color: #1a1a1a;
   display: inline-flex; }
   .function-link:hover, .function-link:visited, .function-link:focus {
     color: #1a1a1a; }
@@ -4706,7 +4706,7 @@ input[type=text]:disabled, input[type=textarea]:disabled {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
-  color: #454545;
+  color: #1a1a1a;
   display: block;
   color: #747474; }
 
@@ -4934,7 +4934,7 @@ input::-webkit-inner-spin-button {
 ul {
   padding-left: 0;
   list-style-type: none;
-  color: #454545;
+  color: #1a1a1a;
   line-height: 2.4rem; }
   ul li {
     margin-top: 8px;
@@ -4950,7 +4950,7 @@ ul {
 ol {
   padding-left: 0;
   counter-reset: item;
-  color: #454545; }
+  color: #1a1a1a; }
   ol li {
     margin-top: 8px;
     list-style: none;
@@ -6164,7 +6164,7 @@ body {
   .alert .alert-text {
     margin-bottom: 0;
     margin-top: 0;
-    color: #454545;
+    color: #1a1a1a;
     max-width: 66ch; }
 
 .alert-success {
@@ -6907,7 +6907,7 @@ input, textarea, select {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 400;
-    color: #454545;
+    color: #1a1a1a;
     display: block;
     text-decoration: none; }
     .no-touchevents .nav-primary .overflow-menu .overflow-menu-inner a:hover, .nav-primary .overflow-menu .overflow-menu-inner a:visited, .nav-primary .overflow-menu .overflow-menu-inner a:focus {
@@ -7467,7 +7467,7 @@ input[type=search] {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 400;
-    color: #454545;
+    color: #1a1a1a;
     font-weight: 600;
     color: #1a1a1a;
     margin: 0; }
@@ -7483,7 +7483,7 @@ input[type=search] {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 400;
-    color: #454545;
+    color: #1a1a1a;
     margin-top: 0;
     margin-bottom: 0;
     color: #747474; }
@@ -7496,7 +7496,7 @@ input[type=search] {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 400;
-    color: #454545;
+    color: #1a1a1a;
     margin-top: 16px;
     color: #454545;
     margin-bottom: 0; }
@@ -7506,7 +7506,7 @@ input[type=search] {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
-  color: #454545;
+  color: #1a1a1a;
   padding: 0;
   padding-left: 24px;
   padding-right: 24px;
@@ -7526,7 +7526,7 @@ input[type=search] {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
-  color: #454545;
+  color: #1a1a1a;
   padding: 16px 24px;
   color: #454545;
   margin-bottom: 0; }
@@ -7835,7 +7835,7 @@ input[type=search] {
       font-size: 1.6rem;
       line-height: 2.4rem;
       font-weight: 400;
-      color: #454545;
+      color: #1a1a1a;
       display: block;
       text-decoration: none; }
       .overflow-menu .overflow-list a:hover, .overflow-menu .overflow-list a:visited, .overflow-menu .overflow-list a:focus {
