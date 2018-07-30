@@ -7,13 +7,15 @@ primary:
 
 mobile:
   - href: /designandcode/
+    categorynav: 'UI components'
   - href: /examples/
+    categorynav: 'Page templates'
 #  - href: /getting-started/
 #  - href: /faellesoffentlige-krav/
 #  - href: /whats-new/
 
 UI components:
-  - text: Overblik
+  - alternative_text: Overblik
     href: /designandcode/
   - href: /designandcode/accessibility/
   - href: /designandcode/typography/
@@ -44,7 +46,7 @@ UI components:
   - href: /designandcode/datatables/
 
 Getting started:
-  - text: Overblik
+  - alternative_text: Overblik
     href: /getting-started/
   - href: /getting-started/developers/
   - href: /getting-started/designers/
@@ -59,7 +61,7 @@ Page templates:
   - href: /pageexamples/
 
 What’s new:
-  - text: Overblik
+  - alternative_text: Overblik
     href: /whats-new/
   - href: /whats-new/releases/
   - href: /whats-new/updates/

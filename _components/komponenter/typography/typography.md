@@ -18,10 +18,10 @@ subnav:
   href: '#links'
 - text: Display text
   href: '#display-tekst'
+- text: Lister
+  href: '#lister'
 - text: Typesetting
   href: '#typesetting'
-- text: Lists
-  href: '#lists'
 ---
 
 {% include child-sections.html parent='typography' %}

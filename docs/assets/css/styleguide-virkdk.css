@@ -4929,28 +4929,6 @@ input::-webkit-inner-spin-button {
 .required {
   color: #E92021; }
 
-/* .label {
-  background-color: $color-primary;
-  border-radius: $label-border-radius;
-  color: $color-primary-button-text;
-  font-size: $small-text;
-  font-weight: bold;
-  margin-right: 0.5rem;
-  padding: 0.1rem 0.7rem;
-  text-transform: uppercase;
-
-
-  &:only-of-type {
-    margin-right: 0;
-  }
-}
-
-.label-big { //TODO Is it relevant ??
-  @extend .label;
-  font-size: $base-font-size;
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
-} */
 ul {
   padding-left: 0;
   list-style-type: none;
@@ -4965,7 +4943,7 @@ ul {
     ul li:before {
       content: "\2022";
       position: absolute;
-      left: 20px; }
+      left: 23px; }
 
 ol {
   padding-left: 0;
@@ -4981,31 +4959,10 @@ ol {
       content: counters(item,".") ".";
       counter-increment: item;
       font-weight: 500;
-      position: absolute; }
-
-ul.body-list {
-  font-size: 1.6rem;
-  line-height: 2.4rem; }
-  ul.body-list li {
-    padding-left: 37px; }
-    ul.body-list li:before {
-      left: 23px; }
-    ul.body-list li ul li {
-      padding-left: 37px; }
-      ul.body-list li ul li:before {
-        left: 23px; }
-
-ol.body-list {
-  font-size: 1.6rem;
-  line-height: 2.4rem; }
-  ol.body-list li {
-    padding-left: 37px; }
-    ol.body-list li:before {
+      position: absolute;
       left: 20px; }
-    ol.body-list li ol li {
-      padding-left: 37px; }
-      ol.body-list li ol li:before {
-        left: 6px; }
+    ol li ol li:before {
+      left: 6px; }
 
 .unstyled-list {
   margin-top: 0;
@@ -7877,9 +7834,13 @@ input[type=search] {
       width: 100%; }
       .overflow-menu .overflow-list button:hover, .overflow-menu .overflow-list a:hover {
         background-color: #F5F5F5; }
-  .overflow-menu .sidenav-list {
+  .overflow-menu:not(.overflow-menu--md-no-responsive) .sidenav-list {
     border-top: 0;
     border-bottom: 0; }
+  @media (max-width: 991px) {
+    .overflow-menu.overflow-menu--md-no-responsive .sidenav-list {
+      border-top: 0;
+      border-bottom: 0; } }
   .overflow-menu--open-right .overflow-menu-inner {
     left: calc(50% - 19px); }
     .overflow-menu--open-right .overflow-menu-inner:after {
@@ -7899,6 +7860,20 @@ input[type=search] {
     .overflow-menu .button-overflow-menu.js-dropdown--responsive-collapse ~ .overflow-menu-inner {
       width: 100%;
       position: static; } }
+  @media (min-width: 768px) {
+    .overflow-menu.overflow-menu--md-no-responsive {
+      display: block; }
+      .overflow-menu.overflow-menu--md-no-responsive:before, .overflow-menu.overflow-menu--md-no-responsive:after {
+        display: none; }
+      .overflow-menu.overflow-menu--md-no-responsive .button-overflow-menu {
+        display: none; }
+      .overflow-menu.overflow-menu--md-no-responsive .overflow-menu-inner {
+        display: block !important;
+        width: 100%;
+        max-width: 100%;
+        position: static;
+        box-shadow: none;
+        border: none; } }
 
 .tabnav {
   margin-top: 0;
