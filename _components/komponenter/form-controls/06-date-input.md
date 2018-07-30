@@ -1,7 +1,6 @@
 ---
-title: Date input
+title: Dato input
 parent: Form controls
-maturity: alpha
 order: 06
 lead: Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.
 ---

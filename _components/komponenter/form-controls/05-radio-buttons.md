@@ -1,5 +1,5 @@
 ---
-title: Radio buttons
+title: Radio knap
 parent: Form controls
 order: 05
 lead: 

@@ -1,9 +1,8 @@
 ---
-title: File input
+title: Fil input
 parent: Form controls
-maturity: alpha
 order: 07
-lead: A control that lets the user select a file.
+lead: Lader brugeren vælge en fil.
 ---
 
 {% include code/preview.html component="file-input" %}

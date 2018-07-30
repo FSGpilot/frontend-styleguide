@@ -1,5 +1,5 @@
 ---
-title: Text input
+title: Tekst input
 parent: Form controls
 order: 01
 lead: 

@@ -7,28 +7,22 @@ type: component
 title: Formular elementer
 category: UI components
 subcategory: Design og kode
-lead: Form controls allow users to enter information into a page.
+lead: Brug formular elementerne til at opbygge blanketter til din selvbetjeningsløsning. 
 subnav:
-- text: Text inputs and area
-  href: '#text-input'
-- text: Text inputs width
-  href: '#text-input-width'
+- text: Tekst inputs
+  href: '#tekst-input'
+- text: Tekst input bredde
+  href: '#input-bredde'
 - text: Select
   href: '#select'
-- text: Checkboxes
-  href: '#checkboxes'
-- text: Radio buttons
-  href: '#radio-buttons'
+- text: Checkbox
+  href: '#checkbox'
+- text: Radio knap
+  href: '#radio-knap'
 - text: Dato input
   href: '#dato-input'
-- text: Validation
-  href: '#validation'
-- text: File input
-  href: '#file-input'
+- text: Fil input
+  href: '#fil-input'
 ---
 
-<p>If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</p>
-
 {% include child-sections.html parent='Form controls' %}
-
-{% include accessibility.html %}

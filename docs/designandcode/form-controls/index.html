@@ -21,8 +21,2068 @@
 <meta property="og:title" content="Formular elementer | Frontend styleguide - version 2">
 
 
-<meta name="description" content="If you are a building a form with multiple controls, also consider the accessibility guidelines in the “Form Templates” section.">
-<meta property="og:description" content="If you are a building a form with multiple controls, also consider the accessibility guidelines in the “Form Templates” section.">
+<meta name="description" content="Tekst input
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text&quot;&amp;gt;Text input label&amp;lt;/label&amp;gt;
+
+        &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-type-text&quot;&amp;gt;For example, VO123456D&amp;lt;/span&amp;gt;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;input-type-text&quot;
+            type=&quot;text&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-focus&quot;&amp;gt;Text input focused&amp;lt;/label&amp;gt;
+
+        &amp;lt;input class=&quot;form-input  focus&quot; placeholder=&quot;&quot; id=&quot;input-focus&quot; name=&quot;input-focus&quot;
+            type=&quot;text&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group input-error&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-error&quot;&amp;gt;Text input error&amp;lt;/label&amp;gt;
+        &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;Helpful error message&amp;lt;/span&amp;gt;
+        &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-error&quot;&amp;gt;For example, VO123456D&amp;lt;/span&amp;gt;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-error&quot; name=&quot;input-error&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-error&quot; aria-describedby=&quot;input-hint-message-input-error&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group input-success&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-success&quot;&amp;gt;Text input success&amp;lt;/label&amp;gt;
+
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-success&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+  
+  
+
+
+
+
+
+  Input bredde
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;h4&amp;gt;Input bredde med rem&amp;lt;/h4&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-xxs&quot;&amp;gt;Inputfelt med klassen input-width-xxs (8rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-xxs&quot; id=&quot;input-type-text-xxs&quot; name=&quot;input-type-text-xxs&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-xxs&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-xs&quot;&amp;gt;Inputfelt med klassen input-width-xs (16rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-xs&quot; id=&quot;input-type-text-xs&quot; name=&quot;input-type-text-xs&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-xs&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-s&quot;&amp;gt;Inputfelt med klassen input-width-s (24rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-s&quot; id=&quot;input-type-text-s&quot; name=&quot;input-type-text-s&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-s&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-m&quot;&amp;gt;Inputfelt med klassen input-width-m (32rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-m&quot; id=&quot;input-type-text-m&quot; name=&quot;input-type-text-m&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-m&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-l&quot;&amp;gt;Inputfelt med klassen input-width-l (40rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-l&quot; id=&quot;input-type-text-l&quot; name=&quot;input-type-text-l&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-l&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-xl&quot;&amp;gt;Inputfelt med klassen input-width-xl (48rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-xl&quot; id=&quot;input-type-text-xl&quot; name=&quot;input-type-text-xl&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-xl&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;h4 class=&quot;mt-7&quot;&amp;gt;Input bredde med tegn&amp;lt;/h4&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-char-4&quot;&amp;gt;Inputfelt med klassen input-char-4 (4 tegn)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-char-4&quot; id=&quot;input-type-text-char-4&quot; name=&quot;input-type-text-char-4&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-char-4&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-char-8&quot;&amp;gt;Inputfelt med klassen input-char-8 (8 tegn)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-char-8&quot; id=&quot;input-type-text-char-8&quot; name=&quot;input-type-text-char-8&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-char-8&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-char-11&quot;&amp;gt;Inputfelt med klassen input-char-11 (11 tegn)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-char-11&quot; id=&quot;input-type-text-char-11&quot; name=&quot;input-type-text-char-11&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-char-11&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-char-27&quot;&amp;gt;Inputfelt med klassen input-char-27 (27 tegn)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-char-27&quot; id=&quot;input-type-text-char-27&quot; name=&quot;input-type-text-char-27&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-char-27&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementering
+  
+  
+    Input bredde med rem
+    Inputfelter har en standard bredde på 32rem, for at ændre bredden på inputfelter bruges nedenstående klasser:
+    
+      .input-width-xxs har en bredde på 8rem
+      .input-width-xs har en bredde på 16rem
+      .input-width-s har en bredde på 24rem
+      .input-width-m har en bredde på 32rem
+      .input-width-l har en bredde på 40rem
+      .input-width-xl har en bredde på 48rem
+    
+    Input bredde med tegn
+    For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:
+    
+      .input-char-4 har en bredde der passer til 4 tegn
+      .input-char-8 har en bredde der passer til 8 tegn
+      .input-char-11 har en bredde der passer til 11 tegn
+      .input-char-27 har en bredde der passer til 27 tegn
+      For at tilføje flere input bredder, der er styret af tegn, skal der tilføjes en ny klasse, hvor det nye tal skal erstattes med X.
+      
+        .input-char-X { max-width: calc(2px + 16px + 16px + Xch); }
+      
+    
+    Validering
+    Vi anbefaler at der laves validering på inputfelter. Nedenfor ses et eksempel på validering af en e-mail, samt validering af et felt der kun må indeholde tal.
+    
+      &amp;lt;input type=&quot;email&quot; pattern=&quot;/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/&quot;&amp;gt;
+      &amp;lt;input type=&quot;number&quot; pattern=&quot;[0-9]&quot;&amp;gt;
+    
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    
+  
+
+
+
+
+
+  Select
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;form class=&quot;form mb-7 input-width-m&quot;&amp;gt;
+
+        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot; for=&quot;options&quot;&amp;gt;Select label&amp;lt;/label&amp;gt;
+            &amp;lt;select class=&quot; form-select&quot; name=&quot;options&quot; id=&quot;options&quot;&amp;gt;
+                &amp;lt;option value&amp;gt;- Vælg -&amp;lt;/option&amp;gt;
+
+                &amp;lt;option value=&quot;option1&quot;&amp;gt;Mulighed 1&amp;lt;/option&amp;gt;
+
+                &amp;lt;option value=&quot;option2&quot;&amp;gt;Mulighed 2&amp;lt;/option&amp;gt;
+
+                &amp;lt;option value=&quot;option3&quot;&amp;gt;Mulighed 3&amp;lt;/option&amp;gt;
+
+            &amp;lt;/select&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+    &amp;lt;/form&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+   
+  
+
+
+
+
+
+  Checkbox
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;fieldset class=&quot;fieldset-inputs sans&quot;&amp;gt;
+        &amp;lt;ul class=&quot;unstyled-list bottom-spacing&quot;&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Unchecked&quot; type=&quot;checkbox&quot; name=&quot;unchecked&quot; value=&quot;unchecked&quot; class=&quot;  &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Unchecked&quot; class=&quot;&quot;&amp;gt;Unchecked&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Checked&quot; type=&quot;checkbox&quot; name=&quot;checked&quot; value=&quot;checked&quot; class=&quot;  &quot;
+                        checked&amp;gt;
+                    &amp;lt;label for=&quot;Checked&quot; class=&quot;&quot;&amp;gt;Checked&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;disabled&quot; type=&quot;checkbox&quot; name=&quot;disabled&quot; value=&quot;disabled&quot; class=&quot;  &quot;
+                        disabled&amp;gt;
+                    &amp;lt;label for=&quot;disabled&quot; class=&quot;&quot;&amp;gt;Disabled&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;fokus&quot; type=&quot;checkbox&quot; name=&quot;Focus&quot; value=&quot;fokus&quot; class=&quot;focus  &quot;&amp;gt;
+                    &amp;lt;label for=&quot;fokus&quot; class=&quot;&quot;&amp;gt;Focus&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Unchecked-large&quot; type=&quot;checkbox&quot; name=&quot;unchecked-large&quot; value=&quot;unchecked-large&quot;
+                        class=&quot; checkbox-large &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Unchecked-large&quot; class=&quot;&quot;&amp;gt;Unchecked-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Checked-large&quot; type=&quot;checkbox&quot; name=&quot;checked-large&quot; value=&quot;checked-large&quot;
+                        class=&quot; checkbox-large &quot; checked&amp;gt;
+                    &amp;lt;label for=&quot;Checked-large&quot; class=&quot;&quot;&amp;gt;Checked-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;disabled-large&quot; type=&quot;checkbox&quot; name=&quot;disabled-large&quot; value=&quot;disabled-large&quot;
+                        class=&quot; checkbox-large &quot; disabled&amp;gt;
+                    &amp;lt;label for=&quot;disabled-large&quot; class=&quot;&quot;&amp;gt;Disabled-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;fokus-large&quot; type=&quot;checkbox&quot; name=&quot;Focus-large&quot; value=&quot;fokus-large&quot;
+                        class=&quot;focus checkbox-large &quot;&amp;gt;
+                    &amp;lt;label for=&quot;fokus-large&quot; class=&quot;&quot;&amp;gt;Focus-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+        &amp;lt;/ul&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    
+  
+
+
+
+
+
+  Radio knap
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;fieldset class=&quot;fieldset-inputs sans&quot;&amp;gt;
+        &amp;lt;ul class=&quot;unstyled-list bottom-spacing&quot;&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;unchecked&quot; type=&quot;radio&quot; name=&quot;unchecked&quot; value=&quot;truth&quot; class=&quot;  &quot;&amp;gt;
+                    &amp;lt;label for=&quot;unchecked&quot; class=&quot;&quot;&amp;gt;Unchecked&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Checked&quot; type=&quot;radio&quot; name=&quot;Checked&quot; value=&quot;Checked&quot; class=&quot;  &quot; checked&amp;gt;
+                    &amp;lt;label for=&quot;Checked&quot; class=&quot;&quot;&amp;gt;Checked&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Disabled&quot; type=&quot;radio&quot; name=&quot;Disabled&quot; value=&quot;Disabled&quot; class=&quot;  &quot;
+                        disabled&amp;gt;
+                    &amp;lt;label for=&quot;Disabled&quot; class=&quot;&quot;&amp;gt;Disabled&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Focus&quot; type=&quot;radio&quot; name=&quot;Focus&quot; value=&quot;Focus&quot; class=&quot;focus  &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Focus&quot; class=&quot;&quot;&amp;gt;Focus&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Unchecked-large&quot; type=&quot;radio&quot; name=&quot;Unchecked-large&quot; value=&quot;Unchecked-large&quot;
+                        class=&quot; radio-large &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Unchecked-large&quot; class=&quot;&quot;&amp;gt;Unchecked-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Checked-large&quot; type=&quot;radio&quot; name=&quot;Checked-large&quot; value=&quot;Checked-large&quot;
+                        class=&quot; radio-large &quot; checked&amp;gt;
+                    &amp;lt;label for=&quot;Checked-large&quot; class=&quot;&quot;&amp;gt;Checked-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Disabled-large&quot; type=&quot;radio&quot; name=&quot;Disabled-large&quot; value=&quot;Disabled-large&quot;
+                        class=&quot; radio-large &quot; disabled&amp;gt;
+                    &amp;lt;label for=&quot;Disabled-large&quot; class=&quot;&quot;&amp;gt;Disabled-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Focus-large&quot; type=&quot;radio&quot; name=&quot;Focus-large&quot; value=&quot;Focus-large&quot;
+                        class=&quot;focus radio-large &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Focus-large&quot; class=&quot;&quot;&amp;gt;Focus-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+        &amp;lt;/ul&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+   
+  
+
+
+
+
+
+  Dato input
+  
+    Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+
+    &amp;lt;fieldset&amp;gt;
+        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Indsendelsesfrist&amp;lt;/label&amp;gt;
+            &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;&amp;lt;/span&amp;gt;
+            &amp;lt;span class=&quot;form-hint&quot;&amp;gt;For eksempel: 05 12 2018&amp;lt;/span&amp;gt;
+            &amp;lt;div class=&quot;date-group js-calendar-group mt-3&quot;&amp;gt;
+                &amp;lt;div class=&quot;form-group form-group-day&quot;&amp;gt;
+                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_day_2&quot;&amp;gt;Day&amp;lt;/label&amp;gt;
+                    &amp;lt;input class=&quot;form-input js-calendar-day-input&quot; type=&quot;tel&quot; min=&quot;1&quot; max=&quot;31&quot;
+                        maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                        title=&quot;Indskriv dag på månenden som tal&quot;&amp;gt;
+                &amp;lt;/div&amp;gt;
+                &amp;lt;div class=&quot;form-group form-group-month&quot;&amp;gt;
+                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_month_1&quot;&amp;gt;Måned&amp;lt;/label&amp;gt;
+                    &amp;lt;input class=&quot;form-input js-calendar-month-input&quot; type=&quot;tel&quot; min=&quot;1&quot; max=&quot;12&quot;
+                        maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                        title=&quot;Indskriv månedens nummer&quot;&amp;gt;
+                &amp;lt;/div&amp;gt;
+                &amp;lt;div class=&quot;form-group form-group-year &quot;&amp;gt;
+                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_year_3&quot;&amp;gt;År&amp;lt;/label&amp;gt;
+                    &amp;lt;input class=&quot;form-input js-calendar-year-input&quot; type=&quot;tel&quot; min=&quot;1900&quot; max=&quot;3000&quot;
+                        maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;
+                        title=&quot;Indskriv årstal&quot;&amp;gt;
+                &amp;lt;/div&amp;gt;
+                &amp;lt;button class=&quot;button-unstyled button-open-calendar js-calendar-datepicker&quot;&amp;gt;
+
+                    &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#calendar&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+
+                &amp;lt;/button&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementering
+  
+  
+     
+      Dato-komponenten består af 2 dele: 3 input-felter og en datepicker.
+      Datepickeren er implementeret med vendor scriptet Pikaday. Dette script og den javascript-kode som initialisere dato-komponenten er inkluderet i core javascript filen (dkwds.js).
+      Inputfelterne bruger 'regex-input-mask' scriptet som forhindre brugeren i at indskrive mere end 2 tal for dag og måned, og 4 tal i år-inputtet. Derudover forhindre 'regex-input-mask' at brugeren indskriver tegn som ikke er tal. Eksempel for day og måned:  data-input-regex=&quot;^[0-9]{0,2}$&quot;
+      
+        For at initialisere dato-komponenten skal .date-group-elementet have klassen .js-calendar-group. Derudover skal de tre inputfelter have følgende klasser:
+        
+          Dag input: .js-calendar-day-input
+          Måned input: .js-calendar-month-input
+          År input: .js-calendar-year-input
+        
+      
+    
+  
+
+
+  
+    Dokumentation
+  
+  
+
+  
+
+
+
+
+
+  Fil input
+  
+    Lader brugeren vælge en fil.
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;form class=&quot;form&quot;&amp;gt;
+    &amp;lt;fieldset&amp;gt;
+        &amp;lt;div class=&quot;form-group file-input&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot; for=&quot;file&quot;&amp;gt;Vedhæft fil&amp;lt;/label&amp;gt;
+            &amp;lt;input type=&quot;file&quot; id=&quot;file&quot; name=&quot;file&quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+&amp;lt;/form&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    Implementation
+    We recommend using a native input using type=&quot;file&quot;, rather than a custom implementation.
+    This is so:
+      
+      the control gains focus when tabbing through the page
+      the control functions using a keyboard
+      the control functions using assistive technology
+      the control functions when javascript is not available
+    
+    
+    A custom implementation of this control would need to meet the criteria above.
+  
+
+
+
+
+
+  Validering
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;h1&amp;gt;Validation examples&amp;lt;/h1&amp;gt;
+    &amp;lt;form class=&quot;form&quot;&amp;gt;
+        &amp;lt;fieldset&amp;gt;
+            &amp;lt;legend&amp;gt;Enter a code&amp;lt;/legend&amp;gt;
+            &amp;lt;br&amp;gt;
+            &amp;lt;div class=&quot;alert alert-info&quot;&amp;gt;
+                &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
+                    &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Codes must:&amp;lt;/h3&amp;gt;
+                &amp;lt;/div&amp;gt;
+                &amp;lt;ul id=&quot;validate-code&quot;&amp;gt;
+                    &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
+                    &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+
+            &amp;lt;div class=&quot;form-group mt-5&quot;&amp;gt;
+                &amp;lt;label class=&quot;form-label&quot; for=&quot;code&quot;&amp;gt;Code&amp;lt;/label&amp;gt;
+                &amp;lt;input class=&quot;form-input&quot; id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; aria-describedby=&quot;validate-code&quot;
+                    data-validate-uppercase=&quot;[A-Z]&quot; data-validate-numerical=&quot;\d&quot;
+                    data-validation-element=&quot;#validate-code&quot;&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;input class=&quot;button button-primary mt-5&quot; type=&quot;submit&quot; value=&quot;Submit code&quot;&amp;gt;
+        &amp;lt;/fieldset&amp;gt;
+    &amp;lt;/form&amp;gt;
+
+    &amp;lt;h2&amp;gt;Mask&amp;lt;/h2&amp;gt;
+    &amp;lt;form class=&quot;form&quot;&amp;gt;
+        &amp;lt;fieldset&amp;gt;
+            &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                &amp;lt;label class=&quot;form-label&quot; for=&quot;code&quot;&amp;gt;Numbers only regex (max-length of 4)&amp;lt;/label&amp;gt;
+                &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-2&quot;&amp;gt;Input mask that prevent user from typing certain input.&amp;lt;/span&amp;gt;
+                &amp;lt;input class=&quot;form-input&quot; id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/fieldset&amp;gt;
+    &amp;lt;/form&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    Guidance
+    
+      Input fields which have custom validation logic can automatically
+        provide helpful feedback to users if they are assigned a
+        data-validation-element attribute set to a
+        CSS selector that uniquely identifies a .checklist,
+        e.g. data-validation-element=&quot;#validate-code&quot;.
+      
+        For each kind of validation you'd like to provide feedback on:
+        
+          Come up with a name for the validator, e.g.
+            uppercase. It shouldn't have any spaces in it.
+          On one of the list elements in the .checklist,
+            set the data-validator attribute to the
+            name of the validator, e.g. data-validator=&quot;uppercase&quot;.
+            This is the list item that will appear &quot;checked&quot; when the
+            validator's condition is met.
+          On the input field, add a field called
+            data-validate-validator name and set
+            its value to a regular
+            expression that represents whether the validator's
+            condition is met, e.g. data-validate-uppercase=&quot;[A-Z]&quot;.">
+<meta property="og:description" content="Tekst input
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text&quot;&amp;gt;Text input label&amp;lt;/label&amp;gt;
+
+        &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-type-text&quot;&amp;gt;For example, VO123456D&amp;lt;/span&amp;gt;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;input-type-text&quot;
+            type=&quot;text&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-focus&quot;&amp;gt;Text input focused&amp;lt;/label&amp;gt;
+
+        &amp;lt;input class=&quot;form-input  focus&quot; placeholder=&quot;&quot; id=&quot;input-focus&quot; name=&quot;input-focus&quot;
+            type=&quot;text&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group input-error&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-error&quot;&amp;gt;Text input error&amp;lt;/label&amp;gt;
+        &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;Helpful error message&amp;lt;/span&amp;gt;
+        &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-error&quot;&amp;gt;For example, VO123456D&amp;lt;/span&amp;gt;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-error&quot; name=&quot;input-error&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-error&quot; aria-describedby=&quot;input-hint-message-input-error&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group input-success&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-success&quot;&amp;gt;Text input success&amp;lt;/label&amp;gt;
+
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-success&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+  
+  
+
+
+
+
+
+  Input bredde
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;h4&amp;gt;Input bredde med rem&amp;lt;/h4&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-xxs&quot;&amp;gt;Inputfelt med klassen input-width-xxs (8rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-xxs&quot; id=&quot;input-type-text-xxs&quot; name=&quot;input-type-text-xxs&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-xxs&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-xs&quot;&amp;gt;Inputfelt med klassen input-width-xs (16rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-xs&quot; id=&quot;input-type-text-xs&quot; name=&quot;input-type-text-xs&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-xs&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-s&quot;&amp;gt;Inputfelt med klassen input-width-s (24rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-s&quot; id=&quot;input-type-text-s&quot; name=&quot;input-type-text-s&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-s&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-m&quot;&amp;gt;Inputfelt med klassen input-width-m (32rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-m&quot; id=&quot;input-type-text-m&quot; name=&quot;input-type-text-m&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-m&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-l&quot;&amp;gt;Inputfelt med klassen input-width-l (40rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-l&quot; id=&quot;input-type-text-l&quot; name=&quot;input-type-text-l&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-l&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-xl&quot;&amp;gt;Inputfelt med klassen input-width-xl (48rem)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-width-xl&quot; id=&quot;input-type-text-xl&quot; name=&quot;input-type-text-xl&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-xl&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;h4 class=&quot;mt-7&quot;&amp;gt;Input bredde med tegn&amp;lt;/h4&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-char-4&quot;&amp;gt;Inputfelt med klassen input-char-4 (4 tegn)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-char-4&quot; id=&quot;input-type-text-char-4&quot; name=&quot;input-type-text-char-4&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-char-4&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-char-8&quot;&amp;gt;Inputfelt med klassen input-char-8 (8 tegn)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-char-8&quot; id=&quot;input-type-text-char-8&quot; name=&quot;input-type-text-char-8&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-char-8&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-char-11&quot;&amp;gt;Inputfelt med klassen input-char-11 (11 tegn)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-char-11&quot; id=&quot;input-type-text-char-11&quot; name=&quot;input-type-text-char-11&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-char-11&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+        &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text-char-27&quot;&amp;gt;Inputfelt med klassen input-char-27 (27 tegn)&amp;lt;/label&amp;gt;
+        &amp;lt;input class=&quot;form-input input-char-27&quot; id=&quot;input-type-text-char-27&quot; name=&quot;input-type-text-char-27&quot;
+            type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-type-text-char-27&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementering
+  
+  
+    Input bredde med rem
+    Inputfelter har en standard bredde på 32rem, for at ændre bredden på inputfelter bruges nedenstående klasser:
+    
+      .input-width-xxs har en bredde på 8rem
+      .input-width-xs har en bredde på 16rem
+      .input-width-s har en bredde på 24rem
+      .input-width-m har en bredde på 32rem
+      .input-width-l har en bredde på 40rem
+      .input-width-xl har en bredde på 48rem
+    
+    Input bredde med tegn
+    For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:
+    
+      .input-char-4 har en bredde der passer til 4 tegn
+      .input-char-8 har en bredde der passer til 8 tegn
+      .input-char-11 har en bredde der passer til 11 tegn
+      .input-char-27 har en bredde der passer til 27 tegn
+      For at tilføje flere input bredder, der er styret af tegn, skal der tilføjes en ny klasse, hvor det nye tal skal erstattes med X.
+      
+        .input-char-X { max-width: calc(2px + 16px + 16px + Xch); }
+      
+    
+    Validering
+    Vi anbefaler at der laves validering på inputfelter. Nedenfor ses et eksempel på validering af en e-mail, samt validering af et felt der kun må indeholde tal.
+    
+      &amp;lt;input type=&quot;email&quot; pattern=&quot;/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/&quot;&amp;gt;
+      &amp;lt;input type=&quot;number&quot; pattern=&quot;[0-9]&quot;&amp;gt;
+    
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    
+  
+
+
+
+
+
+  Select
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;form class=&quot;form mb-7 input-width-m&quot;&amp;gt;
+
+        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot; for=&quot;options&quot;&amp;gt;Select label&amp;lt;/label&amp;gt;
+            &amp;lt;select class=&quot; form-select&quot; name=&quot;options&quot; id=&quot;options&quot;&amp;gt;
+                &amp;lt;option value&amp;gt;- Vælg -&amp;lt;/option&amp;gt;
+
+                &amp;lt;option value=&quot;option1&quot;&amp;gt;Mulighed 1&amp;lt;/option&amp;gt;
+
+                &amp;lt;option value=&quot;option2&quot;&amp;gt;Mulighed 2&amp;lt;/option&amp;gt;
+
+                &amp;lt;option value=&quot;option3&quot;&amp;gt;Mulighed 3&amp;lt;/option&amp;gt;
+
+            &amp;lt;/select&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+    &amp;lt;/form&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+   
+  
+
+
+
+
+
+  Checkbox
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;fieldset class=&quot;fieldset-inputs sans&quot;&amp;gt;
+        &amp;lt;ul class=&quot;unstyled-list bottom-spacing&quot;&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Unchecked&quot; type=&quot;checkbox&quot; name=&quot;unchecked&quot; value=&quot;unchecked&quot; class=&quot;  &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Unchecked&quot; class=&quot;&quot;&amp;gt;Unchecked&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Checked&quot; type=&quot;checkbox&quot; name=&quot;checked&quot; value=&quot;checked&quot; class=&quot;  &quot;
+                        checked&amp;gt;
+                    &amp;lt;label for=&quot;Checked&quot; class=&quot;&quot;&amp;gt;Checked&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;disabled&quot; type=&quot;checkbox&quot; name=&quot;disabled&quot; value=&quot;disabled&quot; class=&quot;  &quot;
+                        disabled&amp;gt;
+                    &amp;lt;label for=&quot;disabled&quot; class=&quot;&quot;&amp;gt;Disabled&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;fokus&quot; type=&quot;checkbox&quot; name=&quot;Focus&quot; value=&quot;fokus&quot; class=&quot;focus  &quot;&amp;gt;
+                    &amp;lt;label for=&quot;fokus&quot; class=&quot;&quot;&amp;gt;Focus&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Unchecked-large&quot; type=&quot;checkbox&quot; name=&quot;unchecked-large&quot; value=&quot;unchecked-large&quot;
+                        class=&quot; checkbox-large &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Unchecked-large&quot; class=&quot;&quot;&amp;gt;Unchecked-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Checked-large&quot; type=&quot;checkbox&quot; name=&quot;checked-large&quot; value=&quot;checked-large&quot;
+                        class=&quot; checkbox-large &quot; checked&amp;gt;
+                    &amp;lt;label for=&quot;Checked-large&quot; class=&quot;&quot;&amp;gt;Checked-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;disabled-large&quot; type=&quot;checkbox&quot; name=&quot;disabled-large&quot; value=&quot;disabled-large&quot;
+                        class=&quot; checkbox-large &quot; disabled&amp;gt;
+                    &amp;lt;label for=&quot;disabled-large&quot; class=&quot;&quot;&amp;gt;Disabled-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;fokus-large&quot; type=&quot;checkbox&quot; name=&quot;Focus-large&quot; value=&quot;fokus-large&quot;
+                        class=&quot;focus checkbox-large &quot;&amp;gt;
+                    &amp;lt;label for=&quot;fokus-large&quot; class=&quot;&quot;&amp;gt;Focus-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+        &amp;lt;/ul&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    
+  
+
+
+
+
+
+  Radio knap
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;fieldset class=&quot;fieldset-inputs sans&quot;&amp;gt;
+        &amp;lt;ul class=&quot;unstyled-list bottom-spacing&quot;&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;unchecked&quot; type=&quot;radio&quot; name=&quot;unchecked&quot; value=&quot;truth&quot; class=&quot;  &quot;&amp;gt;
+                    &amp;lt;label for=&quot;unchecked&quot; class=&quot;&quot;&amp;gt;Unchecked&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Checked&quot; type=&quot;radio&quot; name=&quot;Checked&quot; value=&quot;Checked&quot; class=&quot;  &quot; checked&amp;gt;
+                    &amp;lt;label for=&quot;Checked&quot; class=&quot;&quot;&amp;gt;Checked&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Disabled&quot; type=&quot;radio&quot; name=&quot;Disabled&quot; value=&quot;Disabled&quot; class=&quot;  &quot;
+                        disabled&amp;gt;
+                    &amp;lt;label for=&quot;Disabled&quot; class=&quot;&quot;&amp;gt;Disabled&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Focus&quot; type=&quot;radio&quot; name=&quot;Focus&quot; value=&quot;Focus&quot; class=&quot;focus  &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Focus&quot; class=&quot;&quot;&amp;gt;Focus&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Unchecked-large&quot; type=&quot;radio&quot; name=&quot;Unchecked-large&quot; value=&quot;Unchecked-large&quot;
+                        class=&quot; radio-large &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Unchecked-large&quot; class=&quot;&quot;&amp;gt;Unchecked-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Checked-large&quot; type=&quot;radio&quot; name=&quot;Checked-large&quot; value=&quot;Checked-large&quot;
+                        class=&quot; radio-large &quot; checked&amp;gt;
+                    &amp;lt;label for=&quot;Checked-large&quot; class=&quot;&quot;&amp;gt;Checked-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Disabled-large&quot; type=&quot;radio&quot; name=&quot;Disabled-large&quot; value=&quot;Disabled-large&quot;
+                        class=&quot; radio-large &quot; disabled&amp;gt;
+                    &amp;lt;label for=&quot;Disabled-large&quot; class=&quot;&quot;&amp;gt;Disabled-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+            &amp;lt;li&amp;gt;
+
+                &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                    &amp;lt;input id=&quot;Focus-large&quot; type=&quot;radio&quot; name=&quot;Focus-large&quot; value=&quot;Focus-large&quot;
+                        class=&quot;focus radio-large &quot;&amp;gt;
+                    &amp;lt;label for=&quot;Focus-large&quot; class=&quot;&quot;&amp;gt;Focus-large&amp;lt;/label&amp;gt;
+                &amp;lt;/div&amp;gt;
+
+            &amp;lt;/li&amp;gt;
+
+        &amp;lt;/ul&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+   
+  
+
+
+
+
+
+  Dato input
+  
+    Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+
+    &amp;lt;fieldset&amp;gt;
+        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot;&amp;gt;Indsendelsesfrist&amp;lt;/label&amp;gt;
+            &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;&amp;lt;/span&amp;gt;
+            &amp;lt;span class=&quot;form-hint&quot;&amp;gt;For eksempel: 05 12 2018&amp;lt;/span&amp;gt;
+            &amp;lt;div class=&quot;date-group js-calendar-group mt-3&quot;&amp;gt;
+                &amp;lt;div class=&quot;form-group form-group-day&quot;&amp;gt;
+                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_day_2&quot;&amp;gt;Day&amp;lt;/label&amp;gt;
+                    &amp;lt;input class=&quot;form-input js-calendar-day-input&quot; type=&quot;tel&quot; min=&quot;1&quot; max=&quot;31&quot;
+                        maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                        title=&quot;Indskriv dag på månenden som tal&quot;&amp;gt;
+                &amp;lt;/div&amp;gt;
+                &amp;lt;div class=&quot;form-group form-group-month&quot;&amp;gt;
+                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_month_1&quot;&amp;gt;Måned&amp;lt;/label&amp;gt;
+                    &amp;lt;input class=&quot;form-input js-calendar-month-input&quot; type=&quot;tel&quot; min=&quot;1&quot; max=&quot;12&quot;
+                        maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                        title=&quot;Indskriv månedens nummer&quot;&amp;gt;
+                &amp;lt;/div&amp;gt;
+                &amp;lt;div class=&quot;form-group form-group-year &quot;&amp;gt;
+                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_year_3&quot;&amp;gt;År&amp;lt;/label&amp;gt;
+                    &amp;lt;input class=&quot;form-input js-calendar-year-input&quot; type=&quot;tel&quot; min=&quot;1900&quot; max=&quot;3000&quot;
+                        maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;
+                        title=&quot;Indskriv årstal&quot;&amp;gt;
+                &amp;lt;/div&amp;gt;
+                &amp;lt;button class=&quot;button-unstyled button-open-calendar js-calendar-datepicker&quot;&amp;gt;
+
+                    &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#calendar&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
+
+                &amp;lt;/button&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Implementering
+  
+  
+     
+      Dato-komponenten består af 2 dele: 3 input-felter og en datepicker.
+      Datepickeren er implementeret med vendor scriptet Pikaday. Dette script og den javascript-kode som initialisere dato-komponenten er inkluderet i core javascript filen (dkwds.js).
+      Inputfelterne bruger 'regex-input-mask' scriptet som forhindre brugeren i at indskrive mere end 2 tal for dag og måned, og 4 tal i år-inputtet. Derudover forhindre 'regex-input-mask' at brugeren indskriver tegn som ikke er tal. Eksempel for day og måned:  data-input-regex=&quot;^[0-9]{0,2}$&quot;
+      
+        For at initialisere dato-komponenten skal .date-group-elementet have klassen .js-calendar-group. Derudover skal de tre inputfelter have følgende klasser:
+        
+          Dag input: .js-calendar-day-input
+          Måned input: .js-calendar-month-input
+          År input: .js-calendar-year-input
+        
+      
+    
+  
+
+
+  
+    Dokumentation
+  
+  
+
+  
+
+
+
+
+
+  Fil input
+  
+    Lader brugeren vælge en fil.
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;form class=&quot;form&quot;&amp;gt;
+    &amp;lt;fieldset&amp;gt;
+        &amp;lt;div class=&quot;form-group file-input&quot;&amp;gt;
+            &amp;lt;label class=&quot;form-label&quot; for=&quot;file&quot;&amp;gt;Vedhæft fil&amp;lt;/label&amp;gt;
+            &amp;lt;input type=&quot;file&quot; id=&quot;file&quot; name=&quot;file&quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+&amp;lt;/form&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    Implementation
+    We recommend using a native input using type=&quot;file&quot;, rather than a custom implementation.
+    This is so:
+      
+      the control gains focus when tabbing through the page
+      the control functions using a keyboard
+      the control functions using assistive technology
+      the control functions when javascript is not available
+    
+    
+    A custom implementation of this control would need to meet the criteria above.
+  
+
+
+
+
+
+  Validering
+  
+  
+
+    
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                
+                
+            
+        
+        
+            
+                
+                    
+                        
+                            
+                                
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+    
+
+    
+
+
+  
+  Kode
+  
+    
+&amp;lt;div class=&quot;container&quot;&amp;gt;
+    &amp;lt;h1&amp;gt;Validation examples&amp;lt;/h1&amp;gt;
+    &amp;lt;form class=&quot;form&quot;&amp;gt;
+        &amp;lt;fieldset&amp;gt;
+            &amp;lt;legend&amp;gt;Enter a code&amp;lt;/legend&amp;gt;
+            &amp;lt;br&amp;gt;
+            &amp;lt;div class=&quot;alert alert-info&quot;&amp;gt;
+                &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
+                    &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Codes must:&amp;lt;/h3&amp;gt;
+                &amp;lt;/div&amp;gt;
+                &amp;lt;ul id=&quot;validate-code&quot;&amp;gt;
+                    &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
+                    &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+
+            &amp;lt;div class=&quot;form-group mt-5&quot;&amp;gt;
+                &amp;lt;label class=&quot;form-label&quot; for=&quot;code&quot;&amp;gt;Code&amp;lt;/label&amp;gt;
+                &amp;lt;input class=&quot;form-input&quot; id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; aria-describedby=&quot;validate-code&quot;
+                    data-validate-uppercase=&quot;[A-Z]&quot; data-validate-numerical=&quot;\d&quot;
+                    data-validation-element=&quot;#validate-code&quot;&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;input class=&quot;button button-primary mt-5&quot; type=&quot;submit&quot; value=&quot;Submit code&quot;&amp;gt;
+        &amp;lt;/fieldset&amp;gt;
+    &amp;lt;/form&amp;gt;
+
+    &amp;lt;h2&amp;gt;Mask&amp;lt;/h2&amp;gt;
+    &amp;lt;form class=&quot;form&quot;&amp;gt;
+        &amp;lt;fieldset&amp;gt;
+            &amp;lt;div class=&quot;form-group&quot;&amp;gt;
+                &amp;lt;label class=&quot;form-label&quot; for=&quot;code&quot;&amp;gt;Numbers only regex (max-length of 4)&amp;lt;/label&amp;gt;
+                &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-2&quot;&amp;gt;Input mask that prevent user from typing certain input.&amp;lt;/span&amp;gt;
+                &amp;lt;input class=&quot;form-input&quot; id=&quot;code&quot; name=&quot;code&quot; type=&quot;text&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/fieldset&amp;gt;
+    &amp;lt;/form&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+  
+
+
+
+  
+    Dokumentation
+  
+  
+    Guidance
+    
+      Input fields which have custom validation logic can automatically
+        provide helpful feedback to users if they are assigned a
+        data-validation-element attribute set to a
+        CSS selector that uniquely identifies a .checklist,
+        e.g. data-validation-element=&quot;#validate-code&quot;.
+      
+        For each kind of validation you'd like to provide feedback on:
+        
+          Come up with a name for the validator, e.g.
+            uppercase. It shouldn't have any spaces in it.
+          On one of the list elements in the .checklist,
+            set the data-validator attribute to the
+            name of the validator, e.g. data-validator=&quot;uppercase&quot;.
+            This is the list item that will appear &quot;checked&quot; when the
+            validator's condition is met.
+          On the input field, add a field called
+            data-validate-validator name and set
+            its value to a regular
+            expression that represents whether the validator's
+            condition is met, e.g. data-validate-uppercase=&quot;[A-Z]&quot;.">
 
 
 
@@ -437,7 +2497,7 @@
       
 
 
-<a href="#text-input">Text inputs and area</a>
+<a href="#tekst-input">Tekst inputs</a>
     
   </li>
 
@@ -447,7 +2507,7 @@
       
 
 
-<a href="#text-input-width">Text inputs width</a>
+<a href="#input-bredde">Tekst input bredde</a>
     
   </li>
 
@@ -467,7 +2527,7 @@
       
 
 
-<a href="#checkboxes">Checkboxes</a>
+<a href="#checkbox">Checkbox</a>
     
   </li>
 
@@ -477,7 +2537,7 @@
       
 
 
-<a href="#radio-buttons">Radio buttons</a>
+<a href="#radio-knap">Radio knap</a>
     
   </li>
 
@@ -497,17 +2557,7 @@
       
 
 
-<a href="#validation">Validation</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#file-input">File input</a>
+<a href="#fil-input">Fil input</a>
     
   </li>
 
@@ -1114,7 +3164,7 @@
       
 
 
-<a href="#text-input">Text inputs and area</a>
+<a href="#tekst-input">Tekst inputs</a>
     
   </li>
 
@@ -1124,7 +3174,7 @@
       
 
 
-<a href="#text-input-width">Text inputs width</a>
+<a href="#input-bredde">Tekst input bredde</a>
     
   </li>
 
@@ -1144,7 +3194,7 @@
       
 
 
-<a href="#checkboxes">Checkboxes</a>
+<a href="#checkbox">Checkbox</a>
     
   </li>
 
@@ -1154,7 +3204,7 @@
       
 
 
-<a href="#radio-buttons">Radio buttons</a>
+<a href="#radio-knap">Radio knap</a>
     
   </li>
 
@@ -1174,17 +3224,7 @@
       
 
 
-<a href="#validation">Validation</a>
-    
-  </li>
-
-  
-  <li>
-    
-      
-
-
-<a href="#file-input">File input</a>
+<a href="#fil-input">Fil input</a>
     
   </li>
 
@@ -1465,13 +3505,12 @@
           </p>
           <h1 class="mt-0" id="formular-elementer">Formular elementer</h1>
           
-            <p class="font-lead">Form controls allow users to enter information into a page.</p>
+            <p class="font-lead">Brug formular elementerne til at opbygge blanketter til din selvbetjeningsløsning.</p>
           
       
-          <p>If you are a building a form with multiple controls, also consider the <a href="/frontend-styleguide/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</p>
-
+          
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/01-text-input">
-  <h2 id="text-input">Text input</h2>
+  <h2 id="tekst-input">Tekst input</h2>
   
   
 <div class="component-preview ">
@@ -1849,7 +3888,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/04-checkboxes">
-  <h2 id="checkboxes">Checkboxes</h2>
+  <h2 id="checkbox">Checkbox</h2>
   
   
 <div class="component-preview ">
@@ -2008,7 +4047,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/05-radio-buttons">
-  <h2 id="radio-buttons">Radio buttons</h2>
+  <h2 id="radio-knap">Radio knap</h2>
   
   
 <div class="component-preview ">
@@ -2166,7 +4205,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/06-date-input">
-  <h2 id="date-input">Date input</h2>
+  <h2 id="dato-input">Dato input</h2>
   
     <p class="font-lead">Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.</p>
   
@@ -2298,9 +4337,9 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/08-file-input">
-  <h2 id="file-input">File input</h2>
+  <h2 id="fil-input">Fil input</h2>
   
-    <p class="font-lead">A control that lets the user select a file.</p>
+    <p class="font-lead">Lader brugeren vælge en fil.</p>
   
   
 <div class="component-preview ">
@@ -2392,9 +4431,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/07-validation">
-  <h2 id="validation">Validation</h2>
-  
-    <p class="font-lead">Stating validation requirements up front, with live feedback, means users won't be left guessing.</p>
+  <h2 id="validering">Validering</h2>
   
   
 <div class="component-preview ">
@@ -2527,30 +4564,6 @@
 </div>
 
 </section>
-
-<h3 class="heading heading-margin-alt">Accessibility</h3>
-
-<p>As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.</p>
-
-<ul class="content-list">
-  <li>Display form controls in the same order in HTML as they appear on screen. Do not use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.</li>
-  <li>Visually align validation messages with the input fields, so people using screen magnifiers can read them quickly.</li>
-  <li>Group each set of thematically related controls in a fieldset element. Use the legend element to offer a label within each one. The fieldset and legend elements make it easier for screen reader users to navigate the form.</li>
-  <li>Use a single legend for fieldset (this is required). One example of a common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.</li>
-  <li>Embed multiple fieldsets and legends for more complex forms.</li>
-  <li>Keep your form blocks in a vertical pattern. This approach is ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.</li>
-</ul>
-
-<h4>Supporting screen readers</h4>
-
-<p><b>Note:</b> These code examples have been designed to support a range of screen readers. That said, they may not work with all versions.</p>
-
-<h5>Known issues</h5>
-
-<ul class="content-list">
-  <li>VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using <code>aria-labeledby="for-attribute-of-label id-of-legend id-of-additional-info"</code> on each input in the fieldset. Using <code>aria-labeledby</code> will overwrite the default text read by the screen reader, so it is important to include all relevant information.</li>
-  <li>VoiceOver on OS X currently does not support <code>aria-describedby</code>. Use <code>aria-labeledby</code> instead, and include all related fields, including, labels, legend, and hint text</li>
-</ul>
 
 
       </section>

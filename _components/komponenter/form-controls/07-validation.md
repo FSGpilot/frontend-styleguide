@@ -1,9 +1,9 @@
 ---
-title: Validation
+title: Validering
 parent: Form controls
 maturity: alpha
 order: 07
-lead: Stating validation requirements up front, with live feedback, means users won't be left guessing.
+lead: 
 ---
 
 {% include code/preview.html component="validation" %}

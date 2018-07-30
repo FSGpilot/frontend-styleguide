@@ -1,5 +1,5 @@
 ---
-title: Checkboxes
+title: Checkbox
 parent: Form controls
 order: 04
 lead:
