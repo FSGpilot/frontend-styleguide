@@ -7717,6 +7717,9 @@ input[type=search] {
 .breadcrumb {
   margin-top: 8px; }
 
+.popover {
+  cursor: pointer; }
+
 .tippy-popper .tippy-tooltip {
   background-color: #1a1a1a; }
 .tippy-popper .tippy-content {
