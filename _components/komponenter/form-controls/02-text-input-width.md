@@ -37,8 +37,12 @@ lead:
     </ul>
     <h5>Validering</h5>
     <p>Vi anbefaler at der laves validering på inputfelter. Nedenfor ses et eksempel på validering af en e-mail, samt validering af et felt der kun må indeholde tal.</p>
+    <p class="h6">Felt med email validering</p>
     <ul>
       <li><code>&lt;input type="email" pattern="/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/"&gt;</code></li>
+    </ul>
+    <p class="h6">Felt med kun tal validering</p>
+    <ul>
       <li><code>&lt;input type="number" pattern="[0-9]"&gt;</code></li>
     </ul>
   </div>
