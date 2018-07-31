@@ -13,7 +13,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="sidenav-docs">
-    Implementation
+    Implementering
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
     <ul>
@@ -32,7 +32,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="resp-sidenav-docs">
-    Implementation
+    Implementering
   </button>
   <div id="resp-sidenav-docs" aria-hidden="false" class="accordion-content">
     <p>Responsivt kan man vælge mellem to tilgange:</p>

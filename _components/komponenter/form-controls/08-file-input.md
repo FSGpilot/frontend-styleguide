@@ -13,8 +13,8 @@ lead: Lader brugeren vælge en fil.
     Dokumentation
   </button>
   <div id="date-input-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Implementation</h4>
-    <p>We recommend using a native input using type="file", rather than a custom implementation.</p>
+    <h4 class="heading">Implementering</h4>
+    <p>We recommend using a native input using type="file", rather than a custom Implementering.</p>
     <p>This is so:</p>
       <ul class="content-list">
       <li>the control gains focus when tabbing through the page</li>
@@ -23,6 +23,6 @@ lead: Lader brugeren vælge en fil.
       <li>the control functions when javascript is not available</li>
     </ul>
     <br>
-    <p>A custom implementation of this control would need to meet the criteria above.</p>
+    <p>A custom Implementering of this control would need to meet the criteria above.</p>
   </div>
 </div>

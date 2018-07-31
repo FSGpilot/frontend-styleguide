@@ -13,7 +13,7 @@ lead:
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="code-documentation">
-    Implementation
+    Implementering
   </button>
   <div id="code-documentation" class="accordion-content">
       <p>Knap styling kan både sættes på &lt;button&gt; og &lt;a&gt; tags ved at tilføje følgende klasser:</p>

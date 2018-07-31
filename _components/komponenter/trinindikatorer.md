@@ -15,7 +15,7 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="trin-code-documentation">
-    Implementation
+    Implementering
   </button>
   <div id="trin-code-documentation" class="accordion-content">
     <ul class="content-list">

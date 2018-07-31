@@ -13,7 +13,7 @@ order: 07
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="lists-docs-tech">
-    Implementation
+    Implementering
   </button>
   <div id="lists-docs-tech" aria-hidden="true" class="accordion-content">
     <p>For at lave en liste uden styling kan enten klassen <code>.unstyled-list</code> benyttes eller et mixin <code>@include unstyled-list;</code>.</p>
