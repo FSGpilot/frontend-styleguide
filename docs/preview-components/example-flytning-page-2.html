@@ -61,6 +61,8 @@
     opacity: 0;
   }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"> <!-- Vender example-->
+
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -78,6 +80,7 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
   </head>
   <body class="page-example-flytning-page-2-html layout-iframed">
     <div class="hide-base-svg">
@@ -221,9 +224,13 @@
                 <p class="mt-6">Hvis der er flere personer i din husstand, som skal medtages
                     i flytteanmeldelsen, skal de tilføjes særskilt ved angivelse
                     af CPR-nr. Angiv maks 5 cpr-numre (10 cifre uden bindestreg)</p>
-                <a href="#" class="mt-5">Regler i forbindelse med flytning når vi har børn sammen</a>
+                <a href="#" class="mt-5">Regler i forbindelse med flytning når vi har børn sammen
+                    <svg class="icon-svg ">
+                        <use xlink:href="#open-in-new"></use>
+                        </svg>
+                </a>
                 <div class="mt-5">
-                    <h5>Valgte personer</h5>
+                    <h2 class="h5">Valgte personer</h2>
                 </div>
                 <button class="button button-secondary mt-5">
                     <svg class="icon-svg "><use xlink:href="#add"></use></svg>                    Tilføj personer
@@ -237,20 +244,18 @@
                                     <th></th>
                                     <th>Navn</th>
                                     <th>CPR nummer</th>
-                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
                                         <div class="form-group">
-                                            <input id="id-person-1" type="checkbox" name="Checkbox for Klaus" value="" class="  " checked="" />
-                                            <label for="id-person-1" class=""></label>
+                                            <input id="id-person-1" type="checkbox" name="Checkbox for Klaus" value="" class="  " disabled="" checked="" />
+                                            <label for="id-person-1" class="checkbox"></label>
                                         </div>
                                     </td>
                                     <td>Klaus Egegreen Hansen</td>
                                     <td>090889-2210</td>
-                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -261,9 +266,6 @@
                                     </td>
                                     <td>Line Von Larsen</td>
                                     <td>240789-4695</td>
-                                    <td>
-                                        <a href="#" class="text-negative">slet</a>
-                                    </td>
                                 </tr>
                             </tbody>
                         </table>

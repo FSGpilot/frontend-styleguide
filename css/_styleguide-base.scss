@@ -556,12 +556,15 @@ code {
     }
   }
 }
-.page-basic-collapse-html{
+.page-basic-collapse-html, .page-modal-html{
   padding-top: 4px;
   padding-bottom: 4px;
 }
 .page-accordion-html{
   padding-top: 4px;
+}
+.page-basic-collapse-html{
+  min-height: 150px;
 }
 .page-tags-html{
   min-height: 180px;
@@ -573,6 +576,13 @@ code {
 }
 .styleguide-spacer-modals{
   height: 400px;
+}
+.page-select2-multiselect-html{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  .container{
+    min-height: 200px;
+  }
 }
 // Example images on headers and page templates pages -------------- //
 .page-headers,

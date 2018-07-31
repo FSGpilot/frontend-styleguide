@@ -61,6 +61,8 @@
     opacity: 0;
   }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"> <!-- Vender example-->
+
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -78,6 +80,7 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
   </head>
   <body class="page-example-flytning-page-3-html layout-iframed">
     <div class="hide-base-svg">
@@ -216,7 +219,16 @@
 
             <div class="content">
                 <h1>Adresse</h1>
-                <div class="mt-0">
+
+                <div class="alert alert alert-warning alert--show-icon" role="alert" aria-label="warning">
+                    <div class="alert-body">
+                        <p class="alert-text">Ikke alle adresser er registreret i dette register <br />Kan
+                            du ikke finde din tilflytningsadresse, bedes du
+                            kontakte din tilflytningskommune.</p>
+                    </div>
+                </div>
+
+                <div class="mt-6">
 
                     <fieldset>
                         <div class="form-group">
@@ -261,8 +273,8 @@
 
                     <div class="form-group">
                         <label class="form-label" for="Husnr. / bogstav">Husnr. / bogstav</label>
-                        <select class="input-width-m form-select" name="Husnr. / bogstav" id="select-dokumentationdtype" disabled="disabled">
-                            <option value="">- Vælg -</option>
+                        <select class="input-width-xxs form-select" name="Husnr. / bogstav" id="select-dokumentationdtype" disabled="disabled">
+                            <option value=""></option>
 
                         </select>
                     </div>
@@ -272,8 +284,8 @@
 
                     <div class="form-group">
                         <label class="form-label" for="Etage, side/dør">Etage, side/dør</label>
-                        <select class="input-width-m form-select" name="Etage, side/dør" id="select-dokumentationdtype" disabled="disabled">
-                            <option value="">- Vælg -</option>
+                        <select class="input-width-xxs form-select" name="Etage, side/dør" id="select-dokumentationdtype" disabled="disabled">
+                            <option value=""></option>
 
                         </select>
                     </div>
@@ -281,12 +293,14 @@
                 </div>
                 <div class="mt-6">
 
-                    <div class="form-group input-disabled">
+                    <div class="form-group">
                         <label class="form-label " for="id-co">C/O navn
                             <span class="weight-normal"> (frivilligt)</span>
                         </label>
 
-                        <input class="form-input  input-width-m" placeholder="" id="id-co" name="Input til C/O navn" type="text" disabled="disabled" />
+                        <span class="form-hint" id="input-hint-message-id-co">C/O navn skal kun udfyldes, hvis du skal bo til leje
+                            hos de nuværende beboere.</span>
+                        <input class="form-input  input-width-m" placeholder="" id="id-co" name="Input til C/O navn" type="text" />
                     </div>
 
                 </div>
