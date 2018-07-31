@@ -2,7 +2,7 @@
 permalink: /designandcode/search/
 layout: styleguide
 type: component
-title: Søg
+title: Søgefelt
 category: UI components
 subcategory: Design og kode
 lead: A block that allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation
@@ -16,17 +16,9 @@ lead: A block that allows users to search for specific content if they know what
     Implementation
   </button>
   <div id="search-code-documentation" class="accordion-content">
-    <p></p>
-    <p>Inputfelter har en standard bredde på 40rem, for at ændre bredden på inputfelter bruges nedenstående class:</p>
-    <ul>
-      <li><code>.input-width-55</code> er 5.5rem bred</li>
-      <li><code>.input-width-100</code> er 10rem bred</li>
-      <li><code>.input-width-150</code> er 15rem bred</li>
-      <li><code>.input-width-200</code> er 20rem bred</li>
-      <li><code>.input-width-300</code> er 30rem bred</li>
-      <li><code>.input-width-400</code> er 40rem bred</li>
-      <li><code>.input-width-500</code> er 50rem bred</li>
-    </ul>
+    <h5>Søgefelt</h5>
+    <p>Du kan styre søgefeltets bredde via input-width- og input-char- se mere under punktet formular elementer og input bredde og validering.</p>
+    <p>Du bør som oftest implementere auto-suggest på søgefelter, så brugeren foreslås relevante søge ord/sætninger</p>
   </div>
 </div>
 

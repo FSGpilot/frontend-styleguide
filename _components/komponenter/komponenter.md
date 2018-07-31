@@ -195,7 +195,7 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
             <a href="{{site.baseurl}}/designandcode/search"><img src="{{site.baseurl}}/assets/img/componentimages/Search.svg" alt=""></a>
           </div>
           <div class="componentbox-text-container">
-            <p class="h5">Search</p>
+            <p class="h5">Søgefelt</p>
           </div>
         </div>
       </div>

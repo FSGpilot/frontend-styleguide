@@ -11,7 +11,7 @@ lead: Brug formular elementerne til at opbygge blanketter til din selvbetjenings
 subnav:
 - text: Tekst inputs
   href: '#tekst-input'
-- text: Tekst input bredde
+- text: Input bredde og validering
   href: '#input-bredde'
 - text: Select
   href: '#select'
