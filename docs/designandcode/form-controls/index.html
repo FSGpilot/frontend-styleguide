@@ -80,14 +80,14 @@
         &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text&quot;&amp;gt;Text input label&amp;lt;/label&amp;gt;
 
         &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-type-text&quot;&amp;gt;For example, VO123456D&amp;lt;/span&amp;gt;
-        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;input-type-text&quot;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-type-text&quot; value=&quot;&quot; name=&quot;input-type-text&quot;
             type=&quot;text&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 
     &amp;lt;div class=&quot;form-group&quot;&amp;gt;
         &amp;lt;label class=&quot;form-label &quot; for=&quot;input-focus&quot;&amp;gt;Text input focused&amp;lt;/label&amp;gt;
 
-        &amp;lt;input class=&quot;form-input  focus&quot; placeholder=&quot;&quot; id=&quot;input-focus&quot; name=&quot;input-focus&quot;
+        &amp;lt;input class=&quot;form-input  focus&quot; placeholder=&quot;&quot; id=&quot;input-focus&quot; value=&quot;&quot; name=&quot;input-focus&quot;
             type=&quot;text&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 
@@ -95,14 +95,15 @@
         &amp;lt;label class=&quot;form-label &quot; for=&quot;input-error&quot;&amp;gt;Text input error&amp;lt;/label&amp;gt;
         &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;Helpful error message&amp;lt;/span&amp;gt;
         &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-error&quot;&amp;gt;For example, VO123456D&amp;lt;/span&amp;gt;
-        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-error&quot; name=&quot;input-error&quot;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-error&quot; value=&quot;&quot; name=&quot;input-error&quot;
             type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-error&quot; aria-describedby=&quot;input-hint-message-input-error&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 
     &amp;lt;div class=&quot;form-group input-success&quot;&amp;gt;
         &amp;lt;label class=&quot;form-label &quot; for=&quot;input-success&quot;&amp;gt;Text input success&amp;lt;/label&amp;gt;
 
-        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-success&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-success&quot; value=&quot;&quot; name=&quot;&quot;
+            type=&quot;text&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 
 &amp;lt;/div&amp;gt;
@@ -125,7 +126,7 @@
 
 
 
-  Input bredde
+  Input bredde og validering
   
   
 
@@ -283,8 +284,12 @@
     
     Validering
     Vi anbefaler at der laves validering på inputfelter. Nedenfor ses et eksempel på validering af en e-mail, samt validering af et felt der kun må indeholde tal.
+    Felt med email validering
     
       &amp;lt;input type=&quot;email&quot; pattern=&quot;/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/&quot;&amp;gt;
+    
+    Felt med kun tal validering
+    
       &amp;lt;input type=&quot;number&quot; pattern=&quot;[0-9]&quot;&amp;gt;
     
   
@@ -1153,14 +1158,14 @@
         &amp;lt;label class=&quot;form-label &quot; for=&quot;input-type-text&quot;&amp;gt;Text input label&amp;lt;/label&amp;gt;
 
         &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-type-text&quot;&amp;gt;For example, VO123456D&amp;lt;/span&amp;gt;
-        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-type-text&quot; name=&quot;input-type-text&quot;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-type-text&quot; value=&quot;&quot; name=&quot;input-type-text&quot;
             type=&quot;text&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 
     &amp;lt;div class=&quot;form-group&quot;&amp;gt;
         &amp;lt;label class=&quot;form-label &quot; for=&quot;input-focus&quot;&amp;gt;Text input focused&amp;lt;/label&amp;gt;
 
-        &amp;lt;input class=&quot;form-input  focus&quot; placeholder=&quot;&quot; id=&quot;input-focus&quot; name=&quot;input-focus&quot;
+        &amp;lt;input class=&quot;form-input  focus&quot; placeholder=&quot;&quot; id=&quot;input-focus&quot; value=&quot;&quot; name=&quot;input-focus&quot;
             type=&quot;text&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 
@@ -1168,14 +1173,15 @@
         &amp;lt;label class=&quot;form-label &quot; for=&quot;input-error&quot;&amp;gt;Text input error&amp;lt;/label&amp;gt;
         &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;Helpful error message&amp;lt;/span&amp;gt;
         &amp;lt;span class=&quot;form-hint&quot; id=&quot;input-hint-message-input-error&quot;&amp;gt;For example, VO123456D&amp;lt;/span&amp;gt;
-        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-error&quot; name=&quot;input-error&quot;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-error&quot; value=&quot;&quot; name=&quot;input-error&quot;
             type=&quot;text&quot; aria-describedby=&quot;input-error-message-input-error&quot; aria-describedby=&quot;input-hint-message-input-error&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 
     &amp;lt;div class=&quot;form-group input-success&quot;&amp;gt;
         &amp;lt;label class=&quot;form-label &quot; for=&quot;input-success&quot;&amp;gt;Text input success&amp;lt;/label&amp;gt;
 
-        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-success&quot; name=&quot;&quot; type=&quot;text&quot;&amp;gt;
+        &amp;lt;input class=&quot;form-input  &quot; placeholder=&quot;&quot; id=&quot;input-success&quot; value=&quot;&quot; name=&quot;&quot;
+            type=&quot;text&quot;&amp;gt;
     &amp;lt;/div&amp;gt;
 
 &amp;lt;/div&amp;gt;
@@ -1198,7 +1204,7 @@
 
 
 
-  Input bredde
+  Input bredde og validering
   
   
 
@@ -1356,8 +1362,12 @@
     
     Validering
     Vi anbefaler at der laves validering på inputfelter. Nedenfor ses et eksempel på validering af en e-mail, samt validering af et felt der kun må indeholde tal.
+    Felt med email validering
     
       &amp;lt;input type=&quot;email&quot; pattern=&quot;/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/&quot;&amp;gt;
+    
+    Felt med kun tal validering
+    
       &amp;lt;input type=&quot;number&quot; pattern=&quot;[0-9]&quot;&amp;gt;
     
   
@@ -3658,14 +3668,14 @@
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-type-text"</span><span class="nt">&gt;</span>Text input label<span class="nt">&lt;/label&gt;</span>
 
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-type-text"</span><span class="nt">&gt;</span>For example, VO123456D<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">name=</span><span class="s">"input-type-text"</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-type-text"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-type-text"</span>
             <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-focus"</span><span class="nt">&gt;</span>Text input focused<span class="nt">&lt;/label&gt;</span>
 
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  focus"</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-focus"</span> <span class="na">name=</span><span class="s">"input-focus"</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  focus"</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-focus"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-focus"</span>
             <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
@@ -3673,14 +3683,15 @@
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Text input error<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Helpful error message<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"form-hint"</span> <span class="na">id=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>For example, VO123456D<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">name=</span><span class="s">"input-error"</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-error"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"input-error"</span>
             <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-error"</span> <span class="na">aria-describedby=</span><span class="s">"input-hint-message-input-error"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group input-success"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-success"</span><span class="nt">&gt;</span>Text input success<span class="nt">&lt;/label&gt;</span>
 
-        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-success"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-input  "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-success"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">""</span>
+            <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;/div&gt;</span>
@@ -3703,7 +3714,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/02-text-input-width">
-  <h2 id="input-bredde">Input bredde</h2>
+  <h2 id="input-bredde-og-validering">Input bredde og validering</h2>
   
   
 <div class="component-preview ">
@@ -3863,8 +3874,12 @@
     </ul>
     <h5>Validering</h5>
     <p>Vi anbefaler at der laves validering på inputfelter. Nedenfor ses et eksempel på validering af en e-mail, samt validering af et felt der kun må indeholde tal.</p>
+    <p class="h6">Felt med email validering</p>
     <ul>
       <li><code>&lt;input type="email" pattern="/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/"&gt;</code></li>
+    </ul>
+    <p class="h6">Felt med kun tal validering</p>
+    <ul>
       <li><code>&lt;input type="number" pattern="[0-9]"&gt;</code></li>
     </ul>
   </div>

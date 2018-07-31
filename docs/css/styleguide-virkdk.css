@@ -6775,7 +6775,7 @@ input, textarea, select {
 .search {
   max-width: none;
   position: relative;
-  margin: 0.4rem; }
+  margin-top: 8px; }
   .search::after {
     clear: both;
     content: "";
