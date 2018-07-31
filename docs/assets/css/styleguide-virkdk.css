@@ -8161,7 +8161,7 @@ code {
 .page-ui-components .font-lead:first-of-type {
   margin-top: 3.2rem; }
 
-.page-basic-collapse-html, .page-modal-html {
+.page-basic-collapse-html, .page-modal-html, .page-text-input-html {
   padding-top: 4px;
   padding-bottom: 4px; }
 
