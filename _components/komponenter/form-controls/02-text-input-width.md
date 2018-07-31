@@ -1,5 +1,5 @@
 ---
-title: Input bredde
+title: Input bredde og validering
 parent: Form controls
 order: 02
 lead: 
