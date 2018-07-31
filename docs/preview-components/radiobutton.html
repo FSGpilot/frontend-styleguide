@@ -61,6 +61,8 @@
     opacity: 0;
   }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"> <!-- Vender example-->
+
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -78,6 +80,7 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
   </head>
   <body class="page-radiobutton-html layout-iframed">
     <div class="hide-base-svg">
@@ -117,6 +120,15 @@
             <li>
 
                 <div class="form-group">
+                    <input id="Disabled-checked" type="radio" name="Disabled-checked" value="Disabled-checked" class="  " disabled="" checked="" />
+                    <label for="Disabled-checked" class="">Disabled checked</label>
+                </div>
+
+            </li>
+
+            <li>
+
+                <div class="form-group">
                     <input id="Focus" type="radio" name="Focus" value="Focus" class="focus  " />
                     <label for="Focus" class="">Focus</label>
                 </div>
@@ -146,6 +158,15 @@
                 <div class="form-group">
                     <input id="Disabled-large" type="radio" name="Disabled-large" value="Disabled-large" class=" radio-large " disabled="" />
                     <label for="Disabled-large" class="">Disabled-large</label>
+                </div>
+
+            </li>
+
+            <li>
+
+                <div class="form-group">
+                    <input id="Disabled-checked-large" type="radio" name="Disabled-checked-large" value="Disabled-checked-large" class=" radio-large " disabled="" checked="" />
+                    <label for="Disabled-checked-large" class="">Disabled-checked-large</label>
                 </div>
 
             </li>

@@ -61,6 +61,8 @@
     opacity: 0;
   }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"> <!-- Vender example-->
+
 <script type="text/javascript">
     var lnk = document.createElement('link');
     lnk.type='text/css';
@@ -78,6 +80,7 @@
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
+
   </head>
   <body class="page-checkbox-html layout-iframed">
     <div class="hide-base-svg">
@@ -117,6 +120,15 @@
             <li>
 
                 <div class="form-group">
+                    <input id="disabled-checked" type="checkbox" name="disabled-checked" value="disabled-checked" class="  " disabled="" checked="" />
+                    <label for="disabled-checked" class="">Disabled checked</label>
+                </div>
+
+            </li>
+
+            <li>
+
+                <div class="form-group">
                     <input id="fokus" type="checkbox" name="Focus" value="fokus" class="focus  " />
                     <label for="fokus" class="">Focus</label>
                 </div>
@@ -146,6 +158,15 @@
                 <div class="form-group">
                     <input id="disabled-large" type="checkbox" name="disabled-large" value="disabled-large" class=" checkbox-large " disabled="" />
                     <label for="disabled-large" class="">Disabled-large</label>
+                </div>
+
+            </li>
+
+            <li>
+
+                <div class="form-group">
+                    <input id="disabled-checked-large" type="checkbox" name="disabled-checked-large" value="disabled-checked-large" class=" checkbox-large " disabled="" checked="" />
+                    <label for="disabled-checked-large" class="">Disabled-checked-large</label>
                 </div>
 
             </li>
