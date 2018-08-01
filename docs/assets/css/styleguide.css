@@ -7726,6 +7726,11 @@ input[type=search] {
   .tippy-popper .tippy-content h1, .tippy-popper .tippy-content h2, .tippy-popper .tippy-content h3, .tippy-popper .tippy-content h4, .tippy-popper .tippy-content h5, .tippy-popper .tippy-content h6, .tippy-popper .tippy-content p {
     color: #fff; }
 
+.tooltip {
+  border: none;
+  background: none;
+  padding: 0; }
+
 .preview {
   margin-bottom: 2em;
   background-color: #ffffff;
