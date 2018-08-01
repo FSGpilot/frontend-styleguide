@@ -168,25 +168,18 @@
     <!-- collapsible nav end-->
 </header>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
+<section class="container page-container">
 
-            <div class="alert alert alert-error alert--show-icon" role="alert" aria-label="error">
-                <div class="alert-body">
-                    <p class="alert-heading">Der er sket en fejl</p>
-                    <p class="alert-text">Der er sket en fejl hos KRAK. Afstanden til din nuværende
-                        læge kan ikke beregnes i øjeblikket. Beregningen er
-                        vigtig for at dit lægevalg kan blive registreret korrekt.
-                        Fejlen er blevet registreret og vil blive rettet hurtigst
-                        muligt. Prøv at registrere din flytning senere.</p>
-                </div>
-            </div>
-
+    <div class="alert alert alert-error alert--show-icon" role="alert" aria-label="error">
+        <div class="alert-body">
+            <p class="alert-heading">Der er sket en fejl</p>
+            <p class="alert-text">Der er sket en fejl hos KRAK. Afstanden til din nuværende læge kan
+                ikke beregnes i øjeblikket. Beregningen er vigtig for at dit
+                lægevalg kan blive registreret korrekt. Fejlen er blevet registreret
+                og vil blive rettet hurtigst muligt. Prøv at registrere din
+                flytning senere.</p>
         </div>
     </div>
-</div>
-<section class="container page-container">
 
     <div class="row">
         <div class="col-12">
@@ -246,45 +239,9 @@
 
             <div class="content">
                 <h1>Lægevalg</h1>
-                <p class="font-lead mt-0">Når du anmelder flytning skal du altid vælge læge, også selvom
-                    det er tidligere læge du ønsker</p>
-                <div class="mt-6">
-                    <label class="form-label">Ny adresse</label>
-                    <p class="mt-0">Odensegade 23, 4.tv. 2100 København Ø</p>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                        <div class="mt-5">
-                            <h5 class="h5">Valg af læge</h5>
-                        </div>
-                        <table class="table table--borderless table--compact table--responsive-headers mt-5">
-                            <thead>
-                                <tr>
-                                    <th>Personer som flytter</th>
-                                    <th>Læge efter flytning</th>
-                                    <th>Afstand</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Klaus Egegreen Hansen</td>
-                                    <td>John Doe <br>Østerbrogade 893 18.tv. <br>2100
-                                        København Ø</td>
-                                    <td>0,6 Km</td>
-                                    <td>
-                                        <a href="#">Skift læge</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <a href="#" class="button button-primary mt-7">Næste</a>
-                <div class="mt-7">
+                <div class="mt-0">
 
-                    <div class="alert alert alert-info alert--show-icon alert--paragraph" role="alert"
-                        aria-label="warning">
+                    <div class="alert alert alert-info alert--paragraph" role="alert" aria-label="warning">
                         <div class="alert-body">
                             <p class="alert-heading">Når du anmelder flytning skal du altid vælge læge
                                 også selv om det er tidligere læge du ønsker.</p>
@@ -310,6 +267,40 @@
                         </div>
                     </div>
 
+                </div>
+                <div class="mt-6">
+                    <label class="form-label">Ny adresse</label>
+                    <p class="mt-0">Odensegade 23, 4.tv. 2100 København Ø</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                        <table class="table table--borderless table--compact table--responsive-headers mt-5">
+                            <thead>
+                                <tr>
+                                    <th>Personer som flytter</th>
+                                    <th>Læge efter flytning</th>
+                                    <th>Afstand</th>
+                                    <th class="align-text-md-right">Skift læge</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Klaus Egegreen Hansen</td>
+                                    <td>John Doe <br>Østerbrogade 893 18.tv. <br>2100
+                                        København Ø</td>
+                                    <td>0,6 Km</td>
+                                    <td class="align-text-md-right">
+                                        <a href="#"> <svg class='icon-svg'><use xlink:href='#pencil'></use></svg></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <a href="#" class="button button-primary mt-7">Næste</a>
+                <div class="breadcrumb">
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-4'
+                        class="button button-ghost">Tilbage</a>
                 </div>
             </div>
         </div>
