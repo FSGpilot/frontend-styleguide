@@ -4,7 +4,7 @@ parent: Hjælpefunktioner
 order: 05
 ---
 
-Der er opsat en hjælpefunktion som automatisk generere klasser som styrer bredde i procent. De responsive klasser er baseret på de definerede breakpoints i <code>$grid-breakpoints</code>.
+<p>Der er opsat en hjælpefunktion som automatisk generere klasser som styrer bredde i procent. De responsive klasser er baseret på de definerede breakpoints i <code>$grid-breakpoints</code>.</p>
 Format: <code>w-percent-{bredde}</code> og <code>w-percent-{breakpoint}-{bredde}</code>
 
 <h6 class="mb-0">Bredde</h6>
