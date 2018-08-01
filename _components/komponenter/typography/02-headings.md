@@ -14,7 +14,7 @@ order: 02
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="headings-docs-tech">
-    Implementation
+    Implementering
   </button>
   <div id="headings-docs-tech" aria-hidden="true" class="accordion-content">
     <p>Alle headings (h1-h6) er stylet med mixins, som styrer hver enkel headings font-family, font-size, line-height, font-weight og color. </p>

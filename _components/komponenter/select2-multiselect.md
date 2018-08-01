@@ -12,7 +12,7 @@ lead: Gør det muligt for brugeren at vælge flere elementer fra en liste.
   <div class="alert-body">
     <h3 class="alert-heading">Kræver speciel implementering</h3>
     <p class="alert-text">
-      Multiselect gør brug af et eksternt bibliotek som skal inkluderes ud over standard filerne til Frontend Styleguiden, se implementeringsafsnittet.  
+      Multiselect gør brug af et eksternt bibliotek som skal inkluderes ud over standard filerne til Frontend Styleguiden, se implementeringsafsnittet nedenfor.  
     </p>
   </div>
 </div>

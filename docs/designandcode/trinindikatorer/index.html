@@ -30,10 +30,10 @@
 
             &amp;lt;p class=&quot;h6&quot;&amp;gt;Klikbar trinindikator&amp;lt;/p&amp;gt;
 
-            &amp;lt;ul class=&quot;sidenav-list-locked&quot;&amp;gt;
+            &amp;lt;ul class=&quot;sidenav-list&quot;&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot;&amp;gt;
                         1. Trin 1
 
                         &amp;lt;span class=&quot;sidenav-icon&quot;&amp;gt;
@@ -45,8 +45,8 @@
                     &amp;lt;/a&amp;gt;
                 &amp;lt;/li&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot;&amp;gt;
                         2. Trin 2
 
                         &amp;lt;span class=&quot;sidenav-icon&quot;&amp;gt;
@@ -58,22 +58,22 @@
                     &amp;lt;/a&amp;gt;
                 &amp;lt;/li&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a class=&quot;active&quot; disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot; class=&quot;active&quot;&amp;gt;
                         3. Trin 3 (valgt)
 
                     &amp;lt;/a&amp;gt;
                 &amp;lt;/li&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot;&amp;gt;
                         4. Trin 4
 
                     &amp;lt;/a&amp;gt;
                 &amp;lt;/li&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot;&amp;gt;
                         5. Trin 5
 
                     &amp;lt;/a&amp;gt;
@@ -182,7 +182,8 @@
                 &amp;lt;/div&amp;gt;
             &amp;lt;/div&amp;gt;
 
-            &amp;lt;p class=&quot;h6 mt-6&quot;&amp;gt;Trinindikator - responsivt i overflow-menu&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;h6 mt-6 mb-3&quot;&amp;gt;Trinindikator - responsivt i overflow-menu&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;form-hint mt-0&quot;&amp;gt;Du skal gøre browservinduet mindre for at se ændringen&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;overflow-menu  overflow-menu--open-right overflow-menu--md-no-responsive&quot;&amp;gt;
                 &amp;lt;button class=&quot;button-overflow-menu js-dropdown &quot; data-js-target=&quot;#overflow4&quot;
                     aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&amp;gt;
@@ -239,59 +240,25 @@
 
 
   
-    Implementation
+    Implementering
   
   
     
-      For en klikbar trinindikator bruges .sidenav-list class på ul elementet.
-      For en tvunget trinindikator bruges .sidenav-list-locked class på ul elementet.
-      Teksten i det aktive menupunkt skal være semibold og sættes med variablen $font-weight-semibold
-      Teksten i det aktive menupunkt skal være primærfarven, som og sættes med variablen $color-primary
-      Det aktive menupunkt skal have en .active class, der har en border i venstre side, som bliver sat med variablen $sidenav-active-border-width
-      På hover skal baggrundsfarven og teksten på trinene skifte, her skal variablen $color-gray-palebruges til baggrunden og variablen$color-link-hover bruges til teksten 
+      For en klikbar trinindikator bruges .sidenav-list klassen på ul elementet.
+      For en tvunget trinindikator bruges .sidenav-list-locked klassen på ul elementet.
+      Teksten i det aktive menupunkt bliver styret af primærfarven, som og sættes med variablen $color-primary
+      Det aktive menupunkt skal have klassen active.
+    
+    Trinindikatoren kan indlejres i en dropdown. Der er her to valgmuligheder:
+    
+      På alle skærmstørrelser er trinindikatoren indlejret i dropdownen. Dette kræver blot at trinindukatoren placeret inde i .overflow-menu-inner kontaineren. Dette er vist i ekssemplet &quot;Trinindikator i overflow-menu&quot;.
+      Hvis man ønsker at få vist trinindikatoren på større skærme, men at den bliver vist i en dropdown på mindre skærme, skal .overflow-menu  have klassen .overflow-menu--md-no-responsive. Dette er vist i eksemplet &quot;Trinindikator - responsivt i overflow-menu&quot;.
     
   
 
 
   
-    Dokumentation
-  
-  
-    Krav
-    
-      Krav til størrelse af knapper mv. fremgår af HTML/CSS, som kan downloades ovenfor
-      Krav til placering på siden fremgår af den eksemplariske løsning
-      Tvungen tringuide skal altid have forrige-næste knapper
-      Man behøver ikke bruge tringuide til løsninger med tre trin eller derunder, da det kan give brugerne problemer med at afkode, hvilket trin de er på. Alle oplysninger kan i stedet samles på én side og en af sidetyperne uden tringuide anvendes.
-      Der skal udvikles en logik, der holder styr på, hvilke trin brugeren har besøgt, og validerer om trinnet er afsluttet eller har mangler. Man kan validere ud fra flere forskellige faktorer. Der kan f.eks. valideres på, om de obligatoriske informationer på et trin er udfyldt og valideret korrekt. Der skal altid skrives fortløbende numre ud for trinene for at tydeliggøre for brugeren, at venstrenavigationen er en trinindikation. På små skærme skal det af en drop down-knap fremgå, hvilket trin brugeren er på. Knapteksten skal altid være ’Trin x af x’, hvor der skal udvikles logik til at skrive både det aktuelle trin og det samlede antal trin. Kvitteringer indgår ikke i antallet af trin
-    
-    Anvendelse
-    
-      Tvungen tringuide bruges, hvor brugeren forventes at have alle oplysninger i forvejen, og hvor brugeren kan gennemføre og afslutte indberetningen i et kortvarigt og sammenhængende forløb
-      Meget komplekse løsninger kan evt. opdeles på flere og mindre løsninger, som hver for sig er egnede til den tvungne tringuide
-      Skal det være muligt for brugeren at udfylde løsningen delvist for senere at vende tilbage og udfylde resten på et mere oplyst grundlag, anbefales det at bruge den klikbare tringuide
-    
-    Accessibility
-    
-      Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.
-    
-    Usability
-    When to use
-    
-      To display a navigational hierarchy with one to three levels.
-      To display the “sub-navigation” within a section of the website.
-    
-    When to consider something else
-    
-      If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.
-      If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.
-      If your content is within a frame or sub-area of a page, consider ways to simplify your navigation system.
-    
-    Guidance
-    
-      Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
-      Keep the navigation links short. They can be shorter derivatives of page titles themselves.
-      If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.">
+    Dokumentation">
 <meta property="og:description" content="Kode
   
     
@@ -301,10 +268,10 @@
 
             &amp;lt;p class=&quot;h6&quot;&amp;gt;Klikbar trinindikator&amp;lt;/p&amp;gt;
 
-            &amp;lt;ul class=&quot;sidenav-list-locked&quot;&amp;gt;
+            &amp;lt;ul class=&quot;sidenav-list&quot;&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot;&amp;gt;
                         1. Trin 1
 
                         &amp;lt;span class=&quot;sidenav-icon&quot;&amp;gt;
@@ -316,8 +283,8 @@
                     &amp;lt;/a&amp;gt;
                 &amp;lt;/li&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot;&amp;gt;
                         2. Trin 2
 
                         &amp;lt;span class=&quot;sidenav-icon&quot;&amp;gt;
@@ -329,22 +296,22 @@
                     &amp;lt;/a&amp;gt;
                 &amp;lt;/li&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a class=&quot;active&quot; disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot; class=&quot;active&quot;&amp;gt;
                         3. Trin 3 (valgt)
 
                     &amp;lt;/a&amp;gt;
                 &amp;lt;/li&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot;&amp;gt;
                         4. Trin 4
 
                     &amp;lt;/a&amp;gt;
                 &amp;lt;/li&amp;gt;
 
-                &amp;lt;li class=&quot;disabled&quot;&amp;gt;
-                    &amp;lt;a disabled tab-index=&quot;-1&quot; aria-disabled=&quot;true&quot;&amp;gt;
+                &amp;lt;li&amp;gt;
+                    &amp;lt;a href=&quot;&quot;&amp;gt;
                         5. Trin 5
 
                     &amp;lt;/a&amp;gt;
@@ -453,7 +420,8 @@
                 &amp;lt;/div&amp;gt;
             &amp;lt;/div&amp;gt;
 
-            &amp;lt;p class=&quot;h6 mt-6&quot;&amp;gt;Trinindikator - responsivt i overflow-menu&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;h6 mt-6 mb-3&quot;&amp;gt;Trinindikator - responsivt i overflow-menu&amp;lt;/p&amp;gt;
+            &amp;lt;p class=&quot;form-hint mt-0&quot;&amp;gt;Du skal gøre browservinduet mindre for at se ændringen&amp;lt;/p&amp;gt;
             &amp;lt;div class=&quot;overflow-menu  overflow-menu--open-right overflow-menu--md-no-responsive&quot;&amp;gt;
                 &amp;lt;button class=&quot;button-overflow-menu js-dropdown &quot; data-js-target=&quot;#overflow4&quot;
                     aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&amp;gt;
@@ -510,59 +478,25 @@
 
 
   
-    Implementation
+    Implementering
   
   
     
-      For en klikbar trinindikator bruges .sidenav-list class på ul elementet.
-      For en tvunget trinindikator bruges .sidenav-list-locked class på ul elementet.
-      Teksten i det aktive menupunkt skal være semibold og sættes med variablen $font-weight-semibold
-      Teksten i det aktive menupunkt skal være primærfarven, som og sættes med variablen $color-primary
-      Det aktive menupunkt skal have en .active class, der har en border i venstre side, som bliver sat med variablen $sidenav-active-border-width
-      På hover skal baggrundsfarven og teksten på trinene skifte, her skal variablen $color-gray-palebruges til baggrunden og variablen$color-link-hover bruges til teksten 
+      For en klikbar trinindikator bruges .sidenav-list klassen på ul elementet.
+      For en tvunget trinindikator bruges .sidenav-list-locked klassen på ul elementet.
+      Teksten i det aktive menupunkt bliver styret af primærfarven, som og sættes med variablen $color-primary
+      Det aktive menupunkt skal have klassen active.
+    
+    Trinindikatoren kan indlejres i en dropdown. Der er her to valgmuligheder:
+    
+      På alle skærmstørrelser er trinindikatoren indlejret i dropdownen. Dette kræver blot at trinindukatoren placeret inde i .overflow-menu-inner kontaineren. Dette er vist i ekssemplet &quot;Trinindikator i overflow-menu&quot;.
+      Hvis man ønsker at få vist trinindikatoren på større skærme, men at den bliver vist i en dropdown på mindre skærme, skal .overflow-menu  have klassen .overflow-menu--md-no-responsive. Dette er vist i eksemplet &quot;Trinindikator - responsivt i overflow-menu&quot;.
     
   
 
 
   
-    Dokumentation
-  
-  
-    Krav
-    
-      Krav til størrelse af knapper mv. fremgår af HTML/CSS, som kan downloades ovenfor
-      Krav til placering på siden fremgår af den eksemplariske løsning
-      Tvungen tringuide skal altid have forrige-næste knapper
-      Man behøver ikke bruge tringuide til løsninger med tre trin eller derunder, da det kan give brugerne problemer med at afkode, hvilket trin de er på. Alle oplysninger kan i stedet samles på én side og en af sidetyperne uden tringuide anvendes.
-      Der skal udvikles en logik, der holder styr på, hvilke trin brugeren har besøgt, og validerer om trinnet er afsluttet eller har mangler. Man kan validere ud fra flere forskellige faktorer. Der kan f.eks. valideres på, om de obligatoriske informationer på et trin er udfyldt og valideret korrekt. Der skal altid skrives fortløbende numre ud for trinene for at tydeliggøre for brugeren, at venstrenavigationen er en trinindikation. På små skærme skal det af en drop down-knap fremgå, hvilket trin brugeren er på. Knapteksten skal altid være ’Trin x af x’, hvor der skal udvikles logik til at skrive både det aktuelle trin og det samlede antal trin. Kvitteringer indgår ikke i antallet af trin
-    
-    Anvendelse
-    
-      Tvungen tringuide bruges, hvor brugeren forventes at have alle oplysninger i forvejen, og hvor brugeren kan gennemføre og afslutte indberetningen i et kortvarigt og sammenhængende forløb
-      Meget komplekse løsninger kan evt. opdeles på flere og mindre løsninger, som hver for sig er egnede til den tvungne tringuide
-      Skal det være muligt for brugeren at udfylde løsningen delvist for senere at vende tilbage og udfylde resten på et mere oplyst grundlag, anbefales det at bruge den klikbare tringuide
-    
-    Accessibility
-    
-      Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.
-    
-    Usability
-    When to use
-    
-      To display a navigational hierarchy with one to three levels.
-      To display the “sub-navigation” within a section of the website.
-    
-    When to consider something else
-    
-      If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.
-      If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.
-      If your content is within a frame or sub-area of a page, consider ways to simplify your navigation system.
-    
-    Guidance
-    
-      Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
-      Keep the navigation links short. They can be shorter derivatives of page titles themselves.
-      If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.">
+    Dokumentation">
 
 
 
@@ -981,7 +915,7 @@
 
 <a href="/frontend-styleguide/designandcode/search/" 
   class="  nav-link">
-  Søg
+  Søgefelt
 </a>
 
 
@@ -1142,7 +1076,7 @@
 
 <a href="/frontend-styleguide/designandcode/tooltip/" 
   class="  nav-link">
-  Tooltip
+  Tooltip og popover
 </a>
 
 
@@ -1575,7 +1509,7 @@
 
 <a href="/frontend-styleguide/designandcode/search/" 
   class="  nav-link">
-  Søg
+  Søgefelt
 </a>
 
 
@@ -1736,7 +1670,7 @@
 
 <a href="/frontend-styleguide/designandcode/tooltip/" 
   class="  nav-link">
-  Tooltip
+  Tooltip og popover
 </a>
 
 
@@ -1842,9 +1776,6 @@
           </p>
           <h1 class="mt-0" id="trinindikatorer">Trinindikatorer</h1>
           
-            <p class="font-lead">Der findes tre varianter af tringuides: den tvungne, den klikbare og den betingede tringuide. De to første er designmæssigt identiske, og adskiller sig kun ved at brugeren med den tvungne tringuide begrænses fra at trykke på menupunkter, der ikke ligger i direkte forlængelse af det aktuelle trin. Trinindikatoren fortæller både, hvor langt brugeren er kommet i forløbet, og om de enkelte trin er godkendt eller ej.
-Det er et bærende princip for trinindikationen, at brugeren orienterer sig vertikalt nedad, ligesom siderne i en tringuide bør designes, så brugeren bevæger sig nedad siden, der sagtens kan være længere end det område, der umiddelbart vises på skærmen.</p>
-          
       
           
 <div class="component-preview ">
@@ -1905,10 +1836,10 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
 
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>Klikbar trinindikator<span class="nt">&lt;/p&gt;</span>
 
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list-locked"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
 
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">disabled</span> <span class="na">tab-index=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
                         1. Trin 1
 
                         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
@@ -1920,8 +1851,8 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
                     <span class="nt">&lt;/a&gt;</span>
                 <span class="nt">&lt;/li&gt;</span>
 
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">disabled</span> <span class="na">tab-index=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
                         2. Trin 2
 
                         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
@@ -1933,22 +1864,22 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
                     <span class="nt">&lt;/a&gt;</span>
                 <span class="nt">&lt;/li&gt;</span>
 
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">disabled</span> <span class="na">tab-index=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
                         3. Trin 3 (valgt)
 
                     <span class="nt">&lt;/a&gt;</span>
                 <span class="nt">&lt;/li&gt;</span>
 
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">disabled</span> <span class="na">tab-index=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
                         4. Trin 4
 
                     <span class="nt">&lt;/a&gt;</span>
                 <span class="nt">&lt;/li&gt;</span>
 
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">disabled</span> <span class="na">tab-index=</span><span class="s">"-1"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
                         5. Trin 5
 
                     <span class="nt">&lt;/a&gt;</span>
@@ -2057,7 +1988,8 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
 
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>Trinindikator - responsivt i overflow-menu<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6 mb-3"</span><span class="nt">&gt;</span>Trinindikator - responsivt i overflow-menu<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-hint mt-0"</span><span class="nt">&gt;</span>Du skal gøre browservinduet mindre for at se ændringen<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu  overflow-menu--open-right overflow-menu--md-no-responsive"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button-overflow-menu js-dropdown "</span> <span class="na">data-js-target=</span><span class="s">"#overflow4"</span>
                     <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
@@ -2114,60 +2046,27 @@ Det er et bærende princip for trinindikationen, at brugeren orienterer sig vert
 
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="trin-code-documentation">
-    Implementation
+    Implementering
   </button>
   <div id="trin-code-documentation" class="accordion-content">
     <ul class="content-list">
-      <li>For en klikbar trinindikator bruges <code>.sidenav-list</code> class på ul elementet.</li>
-      <li>For en tvunget trinindikator bruges <code>.sidenav-list-locked</code> class på ul elementet.</li>
-      <li>Teksten i det aktive menupunkt skal være semibold og sættes med variablen <code>$font-weight-semibold</code></li>
-      <li>Teksten i det aktive menupunkt skal være primærfarven, som og sættes med variablen <code>$color-primary</code></li>
-      <li>Det aktive menupunkt skal have en .active class, der har en border i venstre side, som bliver sat med variablen <code>$sidenav-active-border-width</code></li>
-      <li>På hover skal baggrundsfarven og teksten på trinene skifte, her skal variablen <code>$color-gray-pale</code>bruges til baggrunden og variablen<code>$color-link-hover</code> bruges til teksten</li> 
+      <li>For en klikbar trinindikator bruges <code>.sidenav-list</code> klassen på ul elementet.</li>
+      <li>For en tvunget trinindikator bruges <code>.sidenav-list-locked</code> klassen på ul elementet.</li>
+      <li>Teksten i det aktive menupunkt bliver styret af primærfarven, som og sættes med variablen <code>$color-primary</code></li>
+      <li>Det aktive menupunkt skal have klassen <code>active</code>.</li>
+    </ul>
+    <p>Trinindikatoren kan indlejres i en dropdown. Der er her to valgmuligheder:</p>
+    <ul>
+      <li>På alle skærmstørrelser er trinindikatoren indlejret i dropdownen. Dette kræver blot at trinindukatoren placeret inde i <code>.overflow-menu-inner</code> kontaineren. Dette er vist i ekssemplet "Trinindikator i overflow-menu".</li>
+      <li>Hvis man ønsker at få vist trinindikatoren på større skærme, men at den bliver vist i en dropdown på mindre skærme, skal <code>.overflow-menu </code> have klassen <code>.overflow-menu--md-no-responsive</code>. Dette er vist i eksemplet "Trinindikator - responsivt i overflow-menu".</li>
     </ul>
   </div>
 </div>
 <div class="accordion-bordered">
-  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="sidenav-docs">
+  <button class="button-unstyled accordion-button" aria-expanded="true" aria-controls="trin-documentation">
     Dokumentation
   </button>
-  <div id="sidenav-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Krav</h4>
-    <ul class="content-list">
-      <li>Krav til størrelse af knapper mv. fremgår af HTML/CSS, som kan downloades ovenfor</li>
-      <li>Krav til placering på siden fremgår af den eksemplariske løsning</li>
-      <li>Tvungen tringuide skal altid have forrige-næste knapper</li>
-      <li>Man behøver ikke bruge tringuide til løsninger med tre trin eller derunder, da det kan give brugerne problemer med at afkode, hvilket trin de er på. Alle oplysninger kan i stedet samles på én side og en af sidetyperne uden tringuide anvendes.</li>
-      <li>Der skal udvikles en logik, der holder styr på, hvilke trin brugeren har besøgt, og validerer om trinnet er afsluttet eller har mangler. Man kan validere ud fra flere forskellige faktorer. Der kan f.eks. valideres på, om de obligatoriske informationer på et trin er udfyldt og valideret korrekt. Der skal altid skrives fortløbende numre ud for trinene for at tydeliggøre for brugeren, at venstrenavigationen er en trinindikation. På små skærme skal det af en drop down-knap fremgå, hvilket trin brugeren er på. Knapteksten skal altid være ’Trin x af x’, hvor der skal udvikles logik til at skrive både det aktuelle trin og det samlede antal trin. Kvitteringer indgår ikke i antallet af trin</li>
-    </ul>
-    <h4 class="heading">Anvendelse</h4>
-    <ul class="content-list">
-      <li>Tvungen tringuide bruges, hvor brugeren forventes at have alle oplysninger i forvejen, og hvor brugeren kan gennemføre og afslutte indberetningen i et kortvarigt og sammenhængende forløb</li>
-      <li>Meget komplekse løsninger kan evt. opdeles på flere og mindre løsninger, som hver for sig er egnede til den tvungne tringuide</li>
-      <li>Skal det være muligt for brugeren at udfylde løsningen delvist for senere at vende tilbage og udfylde resten på et mere oplyst grundlag, anbefales det at bruge den klikbare tringuide</li>
-    </ul>
-    <h4 class="heading">Accessibility</h4>
-    <ul class="content-list">
-      <li>Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.</li>
-    </ul>
-    <h4 class="heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="content-list">
-      <li>To display a navigational hierarchy with one to three levels.</li>
-      <li>To display the “sub-navigation” within a section of the website.</li>
-    </ul>
-    <h5>When to consider something else</h5>
-    <ul class="content-list">
-      <li>If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.</li>
-      <li>If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.</li>
-      <li>If your content is within a frame or sub-area of a page, consider ways to simplify your navigation system.</li>
-    </ul>
-    <h5>Guidance</h5>
-    <ul class="content-list">
-      <li>Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.</li>
-      <li>Keep the navigation links short. They can be shorter derivatives of page titles themselves.</li>
-      <li>If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.</li>
-    </ul>
+  <div id="trin-documentation" aria-hidden="false" class="accordion-content">
   </div>
 </div>
 

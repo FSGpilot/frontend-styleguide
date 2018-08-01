@@ -13,7 +13,7 @@ lead:
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="modal-tech-docs">
-    Implementation
+    Implementering
   </button>
   <div id="modal-tech-docs" aria-hidden="true" class="accordion-content">
     <p>Modal komponenten er implementeret med scriptet <a href="https://micromodal.now.sh">Micromodal</a>.</p>

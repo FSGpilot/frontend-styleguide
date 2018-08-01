@@ -13,7 +13,7 @@ lead: "Horizontal navigation."
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="code-tabnav-docs">
-    Implementation
+    Implementering
   </button>
   <div id="code-tabnav-docs" aria-hidden="false" class="accordion-content">
     <ul class="content-list">

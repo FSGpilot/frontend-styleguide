@@ -97,7 +97,7 @@
             <!-- 1B: Portal header: info + actions-->
             <div class="portal-info">
 
-                <p class="user"><b class="username">Christian Emil Vestergaard Christiansen</b>                    </p>
+                <p class="user"><b class="username">Christian Emil Vestergaard Christiansen <br /><span class="weight-normal">Forsikringens Forsikringsfirma</span></b>                    </p>
 
                 <a href="#" class="button button-secondary" role="button">
                     Log ud
@@ -122,7 +122,9 @@
                 <h6 class="h6 authority-name"> Ministeriet for Eksempel</h6>
 
                 <p>
-                    <button class="button-unstyled button-contact" data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+                    <p>Support: 72 20 60 00 ·
+                        <button class="button-unstyled button-contact" data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
+                    </p>
                 </p>
 
             </div>
@@ -137,8 +139,8 @@
         </button>
 
         <div class="portal-info-mobile">
-            <p class="user"><b>Christian Emil Vestergaard Christiansen</b></p>
-            <p class="mt-0">Københavns Urmager Værksted v/Martin Elsig</p>
+            <p class="user"><b>Christian Emil Vestergaard Christiansen</b><br />Forsikringens
+                Forsikringsfirma</p>
             <a href="#" class="button button-secondary button-signout">
                 Log ud
             </a>
@@ -146,7 +148,7 @@
 
         <div class="solution-info-mobile">
             <p><b>Erhvervsministeriet</b></p>
-            <p>
+            <p>Support: 72 20 60 00 <br />
                 <button class="button-unstyled button-contact" data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
             </p>
         </div>
@@ -249,7 +251,9 @@
 
                     <fieldset>
                         <div class="form-group">
-                            <label class="form-label">Skadedato</label>
+                            <label class="form-label">Skadedato
+                                <button class="js-tooltip tooltip" data-tippy-trigger="click" title="Her står relevant uddybbende hjælpetekst.  Lorem ipsum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum."><svg class="icon-svg"><use xlink:href="#help-circle-outline"></use></svg></button>
+                            </label>
                             <span class="input-error-message" id="input-error-message-input-error" role="alert"></span>
                             <span class="form-hint">Fx. 28 04 1996</span>
                             <div class="date-group js-calendar-group mt-3">
@@ -278,9 +282,17 @@
                 <div class="mt-6">
 
                     <div class="form-group">
-                        <label class="form-label " for="id-skadenummer">Jeres sags-/skadenummer</label>
+                        <label class="form-label " for=""> </label>
 
-                        <input class="form-input  input-width-m" placeholder="" id="id-skadenummer" name="Input til Jeres sags-/skadenummer." type="text" />
+                        <input class="form-input  " placeholder="" value="" name="" type="text" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label " for="id-skadenummer">Jeres sags-/skadenummer
+                            <button class="js-tooltip tooltip" data-tippy-trigger="click" title="Her står relevant uddybbende hjælpetekst.  Lorem ipsum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum lorem ipsum psum lorem ipsum."><svg class="icon-svg"><use xlink:href="#help-circle-outline"></use></svg></button>
+                        </label>
+
+                        <input class="form-input  input-width-m" placeholder="" id="id-skadenummer" value="" name="Input til Jeres sags-/skadenummer." type="text" />
                     </div>
 
                 </div>
@@ -296,7 +308,7 @@
 
                             <fieldset>
                                 <div class="form-group">
-                                    <label class="form-label">Berammelsesdato</label>
+                                    <label class="form-label">Berammelsesdato </label>
                                     <span class="input-error-message" id="input-error-message-input-error" role="alert"></span>
                                     <span class="form-hint">Fx. 28 04 1996</span>
                                     <div class="date-group js-calendar-group mt-3">
@@ -332,7 +344,6 @@
                         </div>
                     </div>
                 </div>
-
                 <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-6" class="button button-primary mt-7">Næste</a>
                 <div class="breadcrumb">
                     <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-4" class="button button-ghost">Tilbage</a>

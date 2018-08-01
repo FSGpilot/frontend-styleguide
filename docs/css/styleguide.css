@@ -6770,7 +6770,7 @@ input, textarea, select {
 .search {
   max-width: none;
   position: relative;
-  margin: 0.4rem; }
+  margin-top: 8px; }
   .search::after {
     clear: both;
     content: "";
@@ -7710,6 +7710,27 @@ input[type=search] {
 .breadcrumb {
   margin-top: 8px; }
 
+.popover {
+  cursor: pointer; }
+
+.tippy-popper .tippy-tooltip {
+  background-color: #1a1a1a; }
+.tippy-popper .tippy-content {
+  font-family: "IBMPlexSans";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  color: #fff;
+  font-size: 1.3rem; }
+  .tippy-popper .tippy-content h1, .tippy-popper .tippy-content h2, .tippy-popper .tippy-content h3, .tippy-popper .tippy-content h4, .tippy-popper .tippy-content h5, .tippy-popper .tippy-content h6, .tippy-popper .tippy-content p {
+    color: #fff; }
+
+.tooltip {
+  border: none;
+  background: none;
+  padding: 0; }
+
 .preview {
   margin-bottom: 2em;
   background-color: #ffffff;
@@ -8143,7 +8164,7 @@ code {
 .page-ui-components .font-lead:first-of-type {
   margin-top: 3.2rem; }
 
-.page-basic-collapse-html, .page-modal-html {
+.page-basic-collapse-html, .page-modal-html, .page-text-input-html {
   padding-top: 4px;
   padding-bottom: 4px; }
 
@@ -8167,6 +8188,9 @@ code {
   padding-bottom: 4px; }
   .page-select2-multiselect-html .container {
     min-height: 200px; }
+
+.page-tooltip-html .container {
+  min-height: 350px; }
 
 .page-headers .preview img,
 .page-page-templates .preview img {

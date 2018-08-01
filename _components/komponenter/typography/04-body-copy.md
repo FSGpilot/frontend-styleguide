@@ -13,7 +13,7 @@ order: 04
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="false" aria-controls="bodycopy-docs-tech">
-    Implementation
+    Implementering
   </button>
   <div id="bodycopy-docs-tech" aria-hidden="true" class="accordion-content">
     <p>Fontstørrelsen for brødtekst er som udgangspunkt <strong>16px</strong>, og har en liniehøjde som svarer til 24px.</p>

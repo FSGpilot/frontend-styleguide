@@ -556,7 +556,7 @@ code {
     }
   }
 }
-.page-basic-collapse-html, .page-modal-html{
+.page-basic-collapse-html, .page-modal-html, .page-text-input-html{
   padding-top: 4px;
   padding-bottom: 4px;
 }
@@ -583,6 +583,9 @@ code {
   .container{
     min-height: 200px;
   }
+}
+.page-tooltip-html .container{
+  min-height: 350px;
 }
 // Example images on headers and page templates pages -------------- //
 .page-headers,

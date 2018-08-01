@@ -13,10 +13,10 @@ lead: Badges draw attention to new or important content.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="false" aria-controls="code-documentation">
-    Implementation
+    Implementering
   </button>
   <div id="code-documentation" class="accordion-content">
-    <h4>Implementation</h4>
+    <h4>Implementering</h4>
     <p>Alle badges skal have en <code>.badge</code> class på <code>&lt;label&gt;&lt;/label&gt;</code> elementet.</p>
     <p>Badges findes i to størrelser, store og små:</p>
     <ul>
@@ -57,7 +57,7 @@ lead: Badges draw attention to new or important content.
     </ul>
     <h5>Guidance</h5>
     <ul class="content-list">
-      <li>Users frequently confuse labels as buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.</li>
+      <li>Users frequently confuse labels as buttons. Always conduct usability testing to make sure your particular Implementering is not causing frustration.</li>
       <li>If your labels are not interactive, be sure to disable hover, focus, and active styles.</li>
       <li>Don’t mix interactive and static labels on your site. Once you establish a pattern for how labels behave, users will expect that behavior every time.</li>
       <li>Don’t overdo it — if everything on a page is called out as important, nothing is important.</li>
