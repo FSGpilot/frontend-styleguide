@@ -3741,7 +3741,7 @@ a:focus, button:focus, input:focus, select:focus,
   width: 90%; }
 
 .w-percent-100 {
-  width: 10%; }
+  width: 100%; }
 
 @media (min-width: 576px) {
   .w-percent-sm-10 {
@@ -3772,7 +3772,7 @@ a:focus, button:focus, input:focus, select:focus,
     width: 90%; }
 
   .w-percent-sm-100 {
-    width: 10%; } }
+    width: 100%; } }
 @media (min-width: 768px) {
   .w-percent-md-10 {
     width: 10%; }
@@ -3802,7 +3802,7 @@ a:focus, button:focus, input:focus, select:focus,
     width: 90%; }
 
   .w-percent-md-100 {
-    width: 10%; } }
+    width: 100%; } }
 @media (min-width: 992px) {
   .w-percent-lg-10 {
     width: 10%; }
@@ -3832,7 +3832,7 @@ a:focus, button:focus, input:focus, select:focus,
     width: 90%; }
 
   .w-percent-lg-100 {
-    width: 10%; } }
+    width: 100%; } }
 @media (min-width: 1200px) {
   .w-percent-xl-10 {
     width: 10%; }
@@ -3862,7 +3862,7 @@ a:focus, button:focus, input:focus, select:focus,
     width: 90%; }
 
   .w-percent-xl-100 {
-    width: 10%; } }
+    width: 100%; } }
 .align-text-left {
   text-align: left !important; }
 
@@ -6046,48 +6046,99 @@ fieldset {
 fieldset + fieldset {
   margin-top: 4rem; }
 
-input, textarea, select {
+input, select {
   max-width: 32rem;
   width: 100%; }
-  input.input-tiny, textarea.input-tiny, select.input-tiny {
+  input.input-tiny, select.input-tiny {
     /* stylelint-disable-line selector-no-qualifying-type */ }
     @media screen and (min-width: 768px) {
-      input.input-tiny, textarea.input-tiny, select.input-tiny {
+      input.input-tiny, select.input-tiny {
         max-width: 6rem; } }
-  input.input-medium, textarea.input-medium, select.input-medium {
+  input.input-medium, select.input-medium {
     /* stylelint-disable-line selector-no-qualifying-type */ }
     @media screen and (min-width: 768px) {
-      input.input-medium, textarea.input-medium, select.input-medium {
+      input.input-medium, select.input-medium {
         max-width: 12rem; } }
-  input.input-width-xxs, textarea.input-width-xxs, select.input-width-xxs {
+  input.input-width-xxs, select.input-width-xxs {
     max-width: 8rem !important;
     width: 100%; }
-  input.input-width-xs, textarea.input-width-xs, select.input-width-xs {
+  input.input-width-xs, select.input-width-xs {
     max-width: 16rem !important;
     width: 100%; }
-  input.input-width-s, textarea.input-width-s, select.input-width-s {
+  input.input-width-s, select.input-width-s {
     max-width: 24rem !important;
     width: 100%; }
-  input.input-width-m, textarea.input-width-m, select.input-width-m {
+  input.input-width-m, select.input-width-m {
     max-width: 32rem !important;
     width: 100%; }
-  input.input-width-l, textarea.input-width-l, select.input-width-l {
+  input.input-width-l, select.input-width-l {
     max-width: 40rem !important;
     width: 100%; }
-  input.input-width-xl, textarea.input-width-xl, select.input-width-xl {
+  input.input-width-xl, select.input-width-xl {
     max-width: 48rem !important;
     width: 100%; }
-  input.input-char-4, textarea.input-char-4, select.input-char-4 {
+  input.input-char-4, select.input-char-4 {
     max-width: calc(2px + 16px + 16px + 4ch);
     width: 100%; }
-  input.input-char-8, textarea.input-char-8, select.input-char-8 {
+  input.input-char-8, select.input-char-8 {
     max-width: calc(2px + 16px + 16px + 8ch);
     width: 100%; }
-  input.input-char-11, textarea.input-char-11, select.input-char-11 {
+  input.input-char-11, select.input-char-11 {
     max-width: calc(2px + 16px + 16px + 11ch);
     width: 100%; }
-  input.input-char-27, textarea.input-char-27, select.input-char-27 {
+  input.input-char-27, select.input-char-27 {
     max-width: calc(2px + 16px + 16px + 27ch);
+    width: 100%; }
+
+textarea {
+  min-width: 32rem !important;
+  width: 32rem;
+  max-width: 100%; }
+  textarea.input-tiny {
+    /* stylelint-disable-line selector-no-qualifying-type */ }
+    @media screen and (min-width: 768px) {
+      textarea.input-tiny {
+        min-width: 6rem; } }
+  textarea.input-medium {
+    /* stylelint-disable-line selector-no-qualifying-type */ }
+    @media screen and (min-width: 768px) {
+      textarea.input-medium {
+        min-width: 12rem; } }
+  textarea.input-width-xxs {
+    min-width: 8rem !important;
+    width: 8rem;
+    max-width: 100%; }
+  textarea.input-width-xs {
+    min-width: 16rem !important;
+    width: 16rem;
+    max-width: 100%; }
+  textarea.input-width-s {
+    min-width: 24rem !important;
+    width: 24rem;
+    max-width: 100%; }
+  textarea.input-width-m {
+    min-width: 32rem !important;
+    width: 32rem;
+    max-width: 100%; }
+  textarea.input-width-l {
+    min-width: 40rem !important;
+    width: 40rem;
+    max-width: 100%; }
+  textarea.input-width-xl {
+    min-width: 48rem !important;
+    width: 48rem;
+    max-width: 100%; }
+  textarea.input-char-4 {
+    min-width: calc(2px + 16px + 16px + 4ch);
+    width: 100%; }
+  textarea.input-char-8 {
+    min-width: calc(2px + 16px + 16px + 8ch);
+    width: 100%; }
+  textarea.input-char-11 {
+    min-width: calc(2px + 16px + 16px + 11ch);
+    width: 100%; }
+  textarea.input-char-27 {
+    min-width: calc(2px + 16px + 16px + 27ch);
     width: 100%; }
 
 @media screen and (min-width: 768px) {
