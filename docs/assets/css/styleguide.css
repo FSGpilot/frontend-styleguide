@@ -5360,7 +5360,7 @@ table.dataTable .row-control {
 table.dataTable [type=checkbox] + label:before, table.dataTable [type=radio] + label:before {
   box-sizing: border-box; }
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before, table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
-  background-image: url(../img/svg-icons/plus.svg);
+  background-image: url("../assets/img/svg-icons//plus.svg");
   height: 24px;
   width: 24px;
   background-color: transparent;
@@ -5373,7 +5373,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td, table.dataTable.d
   table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child, table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child {
     box-shadow: inset 2px 0 0 0 #454545; }
   table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:before, table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:before {
-    background-image: url(../img/svg-icons/minus.svg); }
+    background-image: url("../assets/img/svg-icons//minus.svg") !important; }
 table.dataTable.no-footer {
   border-bottom: 1px solid #999999; }
 table.dataTable.table--zebra tr.odd {
