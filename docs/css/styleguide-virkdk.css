@@ -3713,6 +3713,18 @@ a:focus, button:focus, input:focus, select:focus,
   border: 0;
   left: -999em; }
 
+.alternative-background-1 {
+  background: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important; }
+
+.alternative-background-2 {
+  background: #f5f5f5 !important;
+  background-color: #f5f5f5 !important; }
+
+.alternative-background-3 {
+  background: #ffffff !important;
+  background-color: #ffffff !important; }
+
 .w-percent-10 {
   width: 10% !important; }
 
@@ -5111,7 +5123,7 @@ ol {
 
 /*!
  * Styling for Pikaday
- * Copyright ┬⌐ 2014 David Bushell | BSD & MIT license | http://dbushell.com/
+ * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
  */
 .js-calendar-datepicker {
   cursor: pointer; }
@@ -5765,23 +5777,6 @@ body {
 
 .alert + .alert {
   margin-top: 16px; }
-
-.box-gray {
-  padding: 24px;
-  background: #F5F5F5; }
-  .box-gray .box-function-link {
-    margin-left: auto;
-    display: block;
-    align-items: baseline;
-    justify-content: flex-end;
-    flex-wrap: wrap; }
-    @media (min-width: 768px) {
-      .box-gray .box-function-link {
-        display: flex; } }
-
-.box-border-l {
-  padding-left: calc(16px - 4px);
-  border-left: 4px solid #BFBFBF; }
 
 footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   margin: 0; }

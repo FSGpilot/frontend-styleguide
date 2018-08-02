@@ -55,7 +55,6 @@ GEM
     scss_lint (0.50.2)
       rake (>= 0.9, < 12)
       sass (~> 3.4.20)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -72,7 +71,6 @@ DEPENDENCIES
   rspec-core
   rspec-expectations
   scss_lint
-  wdm (>= 0.1.0)
 
 BUNDLED WITH
-   1.16.2
+   1.16.3

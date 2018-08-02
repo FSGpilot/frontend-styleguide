@@ -214,7 +214,36 @@ Eksempel:
 
     
         &amp;lt;h1 class=&quot;w-percent-100&quot;&amp;gt; Dette element har en bredde på 100% &amp;lt;/h1&amp;gt; 
-        &amp;lt;h1 class=&quot;w-percent-md-30&quot;&amp;gt; Dette element har en bredde på 30% på skærme over 768px &amp;lt;/h1&amp;gt;">
+        &amp;lt;h1 class=&quot;w-percent-md-30&quot;&amp;gt; Dette element har en bredde på 30% på skærme over 768px &amp;lt;/h1&amp;gt;
+    
+
+
+
+
+
+
+  Baggrundsfarver
+  
+  Der er opsat en hjælpefunktion som automatisk generere klasser som styrer baggrundsfarver. 
+Format: alternative-{baggrund}
+
+Baggrundsfarver
+
+    background-1: rgba(0, 0, 0, 0.75)
+    background-2: #F5F5F5
+    background-3: #FFFFFF
+
+
+Eksempel:
+
+    
+        &amp;lt;div class=&quot;alternative-background-1&quot;&amp;gt; Dette element har en sort baggrund med opacity på 0.75 &amp;lt;/div&amp;gt; 
+        &amp;lt;div class=&quot;alternative-background-2&quot;&amp;gt; Dette element har lysegrå baggrund &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;alternative-background-3&quot;&amp;gt; Dette element har hvid baggrund &amp;lt;/div&amp;gt;
+    
+
+
+Du kan selv tilføje flere baggrundsfarver ved at tilføje dem til $backgroundcolors variablen.">
 <meta property="og:description" content="Responsive hjælpeklasser
   
   Alle de klasser som bliver genereret af hjælpefunktionerne findes i både i en version som virker i alle browserstørrelser og i responsive versioner som genereres på baggrund af de breakpoints som er defineret i scss-variablen $grid-breakpoints:
@@ -408,7 +437,36 @@ Eksempel:
 
     
         &amp;lt;h1 class=&quot;w-percent-100&quot;&amp;gt; Dette element har en bredde på 100% &amp;lt;/h1&amp;gt; 
-        &amp;lt;h1 class=&quot;w-percent-md-30&quot;&amp;gt; Dette element har en bredde på 30% på skærme over 768px &amp;lt;/h1&amp;gt;">
+        &amp;lt;h1 class=&quot;w-percent-md-30&quot;&amp;gt; Dette element har en bredde på 30% på skærme over 768px &amp;lt;/h1&amp;gt;
+    
+
+
+
+
+
+
+  Baggrundsfarver
+  
+  Der er opsat en hjælpefunktion som automatisk generere klasser som styrer baggrundsfarver. 
+Format: alternative-{baggrund}
+
+Baggrundsfarver
+
+    background-1: rgba(0, 0, 0, 0.75)
+    background-2: #F5F5F5
+    background-3: #FFFFFF
+
+
+Eksempel:
+
+    
+        &amp;lt;div class=&quot;alternative-background-1&quot;&amp;gt; Dette element har en sort baggrund med opacity på 0.75 &amp;lt;/div&amp;gt; 
+        &amp;lt;div class=&quot;alternative-background-2&quot;&amp;gt; Dette element har lysegrå baggrund &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;alternative-background-3&quot;&amp;gt; Dette element har hvid baggrund &amp;lt;/div&amp;gt;
+    
+
+
+Du kan selv tilføje flere baggrundsfarver ved at tilføje dem til $backgroundcolors variablen.">
 
 
 
@@ -706,6 +764,16 @@ Eksempel:
     
   </li>
 
+  
+  <li>
+    
+      
+
+
+<a href="#backgrounds">Baggrundsfarver</a>
+    
+  </li>
+
 </ul>
     
   
@@ -860,7 +928,7 @@ Eksempel:
 
 <a href="/frontend-styleguide/designandcode/beskeder/" 
   class="  nav-link">
-  Beskeder (Alerts)
+  Beskeder (Alerts!)
 </a>
 
 
@@ -1370,6 +1438,16 @@ Eksempel:
     
   </li>
 
+  
+  <li>
+    
+      
+
+
+<a href="#backgrounds">Baggrundsfarver</a>
+    
+  </li>
+
 </ul>
     
   
@@ -1524,7 +1602,7 @@ Eksempel:
 
 <a href="/frontend-styleguide/designandcode/beskeder/" 
   class="  nav-link">
-  Beskeder (Alerts)
+  Beskeder (Alerts!)
 </a>
 
 
@@ -2033,6 +2111,33 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</co
         &lt;h1 class="w-percent-md-30"&gt; Dette element har en bredde på 30% på skærme over 768px &lt;/h1&gt;
     </code>
 </div>
+
+
+</section>
+
+<section class="styleguide-child-container content" id="section-/komponenter/hjaelpefunktioner/06-backgrounds">
+  <h2 id="baggrundsfarver">Baggrundsfarver</h2>
+  
+  <p>Der er opsat en hjælpefunktion som automatisk generere klasser som styrer baggrundsfarver. </p>
+<p>Format: <code>alternative-{baggrund}</code></p>
+
+<h6 class="mb-0">Baggrundsfarver</h6>
+<ul>
+    <li>background-1: <code>rgba(0, 0, 0, 0.75)</code></li>
+    <li>background-2: <code>#F5F5F5</code></li>
+    <li>background-3: <code>#FFFFFF</code></li>
+</ul>
+
+<h6>Eksempel:</h6>
+<div class="code-highlight">
+    <code>
+        &lt;div class="alternative-background-1"&gt; Dette element har en sort baggrund med opacity på 0.75 &lt;/div&gt; <br />
+        &lt;div class="alternative-background-2"&gt; Dette element har lysegrå baggrund &lt;/div&gt;<br />
+        &lt;div class="alternative-background-3"&gt; Dette element har hvid baggrund &lt;/div&gt;
+    </code>
+</div>
+
+<p>Du kan selv tilføje flere baggrundsfarver ved at tilføje dem til $backgroundcolors variablen.</p>
 
 
 </section>
