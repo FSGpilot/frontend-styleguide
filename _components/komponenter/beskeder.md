@@ -2,7 +2,7 @@
 permalink: /designandcode/beskeder/
 layout: styleguide
 type: component
-title: Beskeder (Alerts!)
+title: Beskeder (Alerts)
 category: UI components
 subcategory: Design og kode
 lead: Alerts keep users informed of important and sometimes time-sensitive changes.
