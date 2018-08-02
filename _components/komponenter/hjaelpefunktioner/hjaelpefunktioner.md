@@ -17,6 +17,8 @@ subnav:
   href: '#display'
 - text: Bredde i procent
   href: '#bredde-i-procent'
+- text: Baggrundsfarver
+  href: '#backgrounds'
 ---
 
 {% include child-sections.html parent='Hjælpefunktioner' %}
