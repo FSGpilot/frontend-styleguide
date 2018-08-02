@@ -7,7 +7,6 @@ node_modules/
 npm-debug.log
 .bundle/
 .jekyll_get_cache/
-_includes/code/
 
 # Preview components are fetched and generated from components repository 
 _preview-components

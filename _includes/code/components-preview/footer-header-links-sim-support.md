@@ -1,0 +1,79 @@
+--- 
+permalink: /preview-components/footer-header-links-sim-support.html
+layout: iframed 
+title: Footer-header-links-sim-support.html
+---
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 footer-col">
+                    <div class="align-left">
+                        <ul class="unstyled-list">
+                            <li>
+                                <p class="h6 weight-semibold" title="Ansvarlig myndighed"
+                                    aria-label="Ansvarlig myndighed">Ansvarlig myndighed</p>
+                            </li>
+                        </ul>
+                        <ul class="unstyled-list">
+                            <li>
+                                <p>Undervisningsministeriet</p>
+                            </li>
+                            <li>
+                                <p>Styrelsen for IT og læring</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+                    <div class="align-left">
+                        <ul class="unstyled-list">
+                            <li>
+                                <p class="h6 weight-semibold" title="Hjælpende links"
+                                    aria-label="Hjælpende links">Hjælpende links</p>
+                            </li>
+                        </ul>
+                        <ul class="unstyled-list footer-links">
+                            <li>
+                                <a href="javascript:void(0);">Link til et sted på siden</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Link til et sted på siden</p>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Link til et sted på siden</p>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon-link">Link til en ekstern side
+                                    <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="icon-link">Link til en ekstern side
+                                    <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
+                    <div class="align-left">
+                        <ul class="unstyled-list">
+                            <li>
+                                <p class="h6 weight-semibold" title="Kontakt" aria-label="Kontakt">Kontakt</p>
+                            </li>
+                        </ul>
+                        <ul class="unstyled-list">
+                            <li>
+                                <a class="function-link" href="mailto:support@stil.dk">support@stil.dk</a>
+                            </li>
+                            <li>
+                                <a class="function-link" href="tel:004533925200">(+45) 33 92 52 00</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

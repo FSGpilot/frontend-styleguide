@@ -1,0 +1,76 @@
+--- 
+permalink: /preview-components/links.html
+layout: iframed 
+title: Links.html
+---
+<div class="container">
+    <p>This is a
+        <a href="javascript:void(0);" class="">default link state</a>
+    </p>
+
+    <p>This is a
+        <a href="javascript:void(0);" class="link-hover">hover link state</a>
+    </p>
+
+    <p>This is a
+        <a href="javascript:void(0);" class="link-active">active link state</a>
+    </p>
+
+    <p>This is a
+        <a href="javascript:void(0);" class="link-visited">visited link state</a>
+    </p>
+
+    <p>This is a
+        <a href="javascript:void(0);" class="link-focus">focus link state</a>
+    </p>
+
+    <p>This is a link that goes to an
+        <a href="" class="icon-link">external website
+            <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg>
+        </a>
+    </p>
+
+    <p>This is a text
+        <a href="javascript:void(0);" class="disabled" disabled="disabled"
+            tabindex="-1">disabled link state</a>
+    </p>
+
+    <p><b>This is a 
+  <a href="javascript:void(0);" class="" >link</a>
+ in bold</b></p>
+
+    <p><small>This is a 
+  <a href="javascript:void(0);" class="" >link</a>
+ in smalltext</small></p>
+
+    <div class="background-dark p-6">
+        <p>This is a
+            <a href="javascript:void(0);" class="">default link state</a>
+            on a dark background.</p>
+        <p>This is a
+            <a href="javascript:void(0);" class="link-hover">hover link state</a>
+            on a dark background.</p>
+        <p>This is a
+            <a href="javascript:void(0);" class="link-active">active link state</a>
+            on a dark background.</p>
+        <p>This is a
+            <a href="javascript:void(0);" class="link-visited">visited link state</a>
+            on a dark background.</p>
+        <p>This is a
+            <a href="javascript:void(0);" class="link-focus">focus link state</a>
+            on a dark background.</p>
+        <p>This is a link that goes to an
+            <a href="" class="icon-link">external website
+                <svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg>
+            </a> on a dark background.</p>
+        <p>This is a text
+            <a href="javascript:void(0);" class="disabled" disabled="disabled"
+                tabindex="-1">disabled link state</a> on a dark background.</p>
+        <p><b>This is a 
+  <a href="javascript:void(0);" class="" >link</a>
+ in bold</b></p>
+        <p><small>This is a 
+  <a href="javascript:void(0);" class="" >link</a>
+ in smalltext</small></p>
+    </div>
+</div>
