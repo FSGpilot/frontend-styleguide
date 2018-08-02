@@ -19,6 +19,6 @@ Format: <code>align-text-{retning}</code> og <code>align-text-{breakpoint}-{retn
 <div class="code-highlight">
     <code>
         &lt;h1 class="align-text-right"&gt; Tekst til højre &lt;/h1&gt; <br>
-        &lt;h1 class="align-text-md-left"&gt; Tekst til højre på skærme op til 768px &lt;/h1&gt;
+        &lt;h1 class="align-text-md-left"&gt; Tekst til højre på skærme over 768px &lt;/h1&gt;
     </code>
 </div>

@@ -25,7 +25,7 @@ Format: <code>w-percent-{bredde}</code> og <code>w-percent-{breakpoint}-{bredde}
 <div class="code-highlight">
     <code>
         &lt;h1 class="w-percent-100"&gt; Dette element har en bredde på 100% &lt;/h1&gt; <br>
-        &lt;h1 class="w-percent-md-30"&gt; Dette element har en bredde på 30% på skærme op til 768px &lt;/h1&gt;
+        &lt;h1 class="w-percent-md-30"&gt; Dette element har en bredde på 30% på skærme over 768px &lt;/h1&gt;
     </code>
 </div>
 
