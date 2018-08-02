@@ -29,7 +29,7 @@ lead: A card is a sheet of material that serves as an entry point to more detail
       <li><code>.text</code></li>
     </ul>
     <h5>Contentområde</h5>
-    <p>Contentområdet har en <code>.card-content</code> class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class.</p>
+    <p>Contentområdet har en <code>.card-content</code> class, og kan indeholde brødtekst og andet, såsom displaytekst og grafer, der har hver deres div med hver deres class. <code>.card-content</code> har en stribet baggrundsfarve, denne baggrundsfarve er midlertidig og vises kun for at indikere contentområdet. For at se hvilke andre baggrundsfarver der kan bruges, se på "Baggrundsfarver" under "Hjælpefunktioner" i sidenavigationen. Det er også muligt at tilføje andre farver.</p> 
     <ul>
       <li><code>.content-text</code></li>
       <li><code>.content</code></li>
