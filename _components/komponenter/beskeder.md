@@ -13,7 +13,7 @@ lead: Alerts keep users informed of important and sometimes time-sensitive chang
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="alert-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="alert-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>
