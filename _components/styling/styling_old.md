@@ -10,6 +10,8 @@ subnav:
   href: '/components/styling/billeder-og-grafik/'
 - text: Farver
   href: '/components/styling/colors/'
+- text: Kanter, streger og skygger
+  href: '/components/styling/borders-shadows/'
 - text: Ikoner
   href: '/components/styling/ikoner/'
 - text: Kanter, streger, skygger
