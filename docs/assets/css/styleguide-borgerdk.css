@@ -3715,15 +3715,15 @@ a:focus, button:focus, input:focus, select:focus,
   border: 0;
   left: -999em; }
 
-.alternative-background-1 {
+.bg-1 {
   background: rgba(0, 0, 0, 0.75) !important;
   background-color: rgba(0, 0, 0, 0.75) !important; }
 
-.alternative-background-2 {
+.bg-2 {
   background: #f5f5f5 !important;
   background-color: #f5f5f5 !important; }
 
-.alternative-background-3 {
+.bg-3 {
   background: #ffffff !important;
   background-color: #ffffff !important; }
 

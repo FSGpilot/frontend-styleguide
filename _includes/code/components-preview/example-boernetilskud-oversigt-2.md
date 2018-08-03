@@ -130,7 +130,7 @@ title: Example-boernetilskud-oversigt-2.html
                     <div class="card-header">
                         <p class="h6 header-title" title="Card header" aria-label="Card header">Beskeder</p>
                     </div>
-                    <div class="card-content alternative-background-2 py-4">
+                    <div class="card-content bg-2 py-4">
                         <div class="content">
                             <div class="row justify-content-center">
                                 <div class="col-12">
@@ -152,7 +152,7 @@ title: Example-boernetilskud-oversigt-2.html
                     <div class="card-header">
                         <p class="h6 header-title" title="Card header" aria-label="Card header">Udbetalinger</p>
                     </div>
-                    <div class="card-content alternative-background-2 py-4">
+                    <div class="card-content bg-2 py-4">
                         <div class="content">
                             <div class="row justify-content-center">
                                 <div class="col-12">
@@ -174,7 +174,7 @@ title: Example-boernetilskud-oversigt-2.html
                     <div class="card-header">
                         <p class="h6 header-title" title="Card header" aria-label="Card header">Sager</p>
                     </div>
-                    <div class="card-content alternative-background-2 py-4">
+                    <div class="card-content bg-2 py-4">
                         <div class="content">
                             <div class="row justify-content-center">
                                 <div class="col-12">
@@ -198,7 +198,7 @@ title: Example-boernetilskud-oversigt-2.html
                     <div class="card-header">
                         <p class="h6 header-title" title="Card header" aria-label="Card header">Ansøgninger</p>
                     </div>
-                    <div class="card-content alternative-background-2 py-4">
+                    <div class="card-content bg-2 py-4">
                         <div class="content">
                             <div class="row justify-content-center">
                                 <div class="col-12">
@@ -220,7 +220,7 @@ title: Example-boernetilskud-oversigt-2.html
                     <div class="card-header">
                         <p class="h6 header-title" title="Card header" aria-label="Card header">Ændringer</p>
                     </div>
-                    <div class="card-content alternative-background-2 py-4">
+                    <div class="card-content bg-2 py-4">
                         <div class="content">
                             <div class="row justify-content-center">
                                 <div class="col-12">
@@ -242,7 +242,7 @@ title: Example-boernetilskud-oversigt-2.html
                     <div class="card-header">
                         <p class="h6 header-title" title="Card header" aria-label="Card header">Dokumentation</p>
                     </div>
-                    <div class="card-content alternative-background-2 py-4">
+                    <div class="card-content bg-2 py-4">
                         <div class="content">
                             <div class="row justify-content-center">
                                 <div class="col-12">
