@@ -632,6 +632,11 @@ code {
       @include margin(0 1.5rem 0 null);
     }
   }
+
+  .form-select{
+    background-color: black;
+    color: #fff;
+  }
 }
 
 .demo-footer-title {
