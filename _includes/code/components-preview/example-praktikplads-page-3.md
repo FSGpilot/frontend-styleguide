@@ -288,7 +288,7 @@ title: Example-praktikplads-page-3.html
                     <div class=" align-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold">Ministeriet for Eksempel</span>
+                                <span class="h6 weight-semibold">Ansvarlig myndighed</span>
                             </li>
                             <li>
                                 <p>Styrelsen for Eksempel</p>

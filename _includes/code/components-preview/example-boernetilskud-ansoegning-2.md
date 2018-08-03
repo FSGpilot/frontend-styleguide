@@ -37,7 +37,7 @@ title: Example-boernetilskud-ansoegning-2.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Ministeriet for Eksempel</h6>
+                <h6 class="h6 authority-name"> Ansvarlig myndighed</h6>
 
                 <p>Tlf.: 33 28 38 38</p>
 
@@ -240,7 +240,7 @@ title: Example-boernetilskud-ansoegning-2.html
                     <div class=" align-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold">Ministeriet for Eksempel</span>
+                                <span class="h6 weight-semibold">Ansvarlig myndighed</span>
                             </li>
                             <li>
                                 <p>Styrelsen for Eksempel</p>

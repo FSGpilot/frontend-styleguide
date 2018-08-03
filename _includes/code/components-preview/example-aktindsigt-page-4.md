@@ -37,7 +37,7 @@ title: Example-aktindsigt-page-4.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Ministeriet for Eksempel</h6>
+                <h6 class="h6 authority-name"> Ansvarlig myndighed</h6>
 
                 <p>
                     <button class="button-unstyled button-contact" data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
@@ -119,7 +119,7 @@ title: Example-aktindsigt-page-4.html
                     <div class=" align-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold">Ministeriet for Eksempel</span>
+                                <span class="h6 weight-semibold">Ansvarlig myndighed</span>
                             </li>
                             <li>
                                 <p>Styrelsen for Eksempel</p>
