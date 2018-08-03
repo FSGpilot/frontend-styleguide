@@ -1,13 +1,11 @@
 ---
 permalink: /designandcode/headers/
-layout: styleguide-wide
+layout: styleguide
 title: Headers
 category: UI components
 subcategory: Design og kode
 lead: En header har til formål, at være identitetsgivende for siden, samt at give brugeren mulighed for let, at kunne navigere til essentielt indhold. 
 subnav:
-- text: Accessibility
-  href: '#accessibility'
 - text: Standard header
   href: '#header-simple'
 - text: Standard header med topmenu
@@ -17,108 +15,31 @@ subnav:
 ---
 
 
-<main class="section" >
-  <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <aside class="sidenav sticky">
-          {% assign sidenav = site.data.nav[page.category] %}
-          {% if sidenav %}
-          <ul class="sidenav-list">
-            {% include nav/list.html links=sidenav %}
-          </ul>
-          {% endif %}
-        </aside>
-      </div>
-
-      <div class="col-12 col-sm-9 styleguide-content content">
-        <section id="section-{{page.id}}">
-          <header>
-            <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
-          </header>
-          {% if page.lead != null %}
-            <p class="font-lead">{{ page.lead }}</p>
-          {% endif %}
-          <h2 class="heading heading-margin-alt"  id="accessibility">Accessibility</h2>
-          <ul class="content-list">
-            <li>Include skip navigation links to allow users with screen readers to bypass long navigation lists. Make sure you include an id at the beginning of your main content and that it matches the skipnav link. Find more information here: <a href="http://webaim.org/techniques/skipnav/">http://webaim.org/techniques/skipnav/</a></li>
-            <li>Include Tab focus for all top-level navigation navigation items — this will allow keyboard-reliant users to easily navigate interactive items.</li>
-            <li>Ensure your horizontal navigation is keyboard compatible; test to make sure users can use Tab to navigate and Space (or Enter) to open pages.</li>
-            <li>Avoid using hover to expand dropdown lists. Hover is difficult for some users and won't work on touch screens. Drop downs should expand on click or with keyboard navigation.</li>
-            <li>We use semantic header and nav elements with <code>role="banner"</code> and <code>role="navigation"</code> respectively. <code>role="banner"</code> is your masthead.</li>
-            <li>You can use multiple nav elements for groups of navigation links, but you should only use one <code>role="navigation"</code> for the main nav of a page.</li>
-            <li>Use lists for your nav links — this enables screen readers to decipher header contents.</li>
-            <li>If you’re using a logo that’s an image rather than text, make sure you include alternative text for screen readers.</li>
-            <li>If you’re using a logo that’s text, use an <code>em</code>, not an <code>h1</code>, unless it’s the homepage. Find more information here: <a href="http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/">http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/</a></li>
-          </ul>
-
-          <h3 class="heading">Usability</h3>
-          <h4>When to use</h4>
-          <ul class="content-list">
-            <li>We recommend that all federal government sites include the “official government site” banner and a logo or site name.</li>
-            <li>Most sites will require some form of navigation to help users find the information they’re looking for. While a horizontal navigation bar is just one option for navigation design, it is one of the most visible and familiar ways of helping users navigate a site.</li>
-          </ul>
-
-          <h4>Guidance</h4>
-          <ul class="content-list">
-            <li>List all important website sections as links in the horizontal navigation bar.</li>
-            <li>For large websites, use drop-down menus to help users preview lower-level content. If lower-level sections are closely related and users will need to quickly jump between them, consider using a side navigation instead of — or in addition to — a drop down.</li>
-            <li>Use descriptive, recognizable link labels. Don’t label links with jargon or unfamiliar terms.</li>
-            <li>Left-justify link labels to make them more easily scannable.</li>
-            <li>Present links in priority order: Higher-demand links should appear farther to the left, and lower-demand links should appear farther to the right.</li>
-            <li>Don’t model your navigation after your agency’s org structure. Instead, structure it according to the tasks and information your users most frequently need to access.</li>
-            <li>Show users where they are within the menu options by highlighting the current section.</li>
-            <li>Conduct research with your users and base decisions about your site’s information architecture and navigation structure on your findings. Continue researching to confirm that updates meet your users’ needs.</li>
-          </ul>
-
-          <h4>For further reading</h4>
-          <ul>
-            <li><a href="https://www.nngroup.com/articles/menu-design/">https://www.nngroup.com/articles/menu-design/</a></li>
-            <li><a href="https://www.usertesting.com/blog/2015/03/19/site-navigation-tree-testing/">https://www.usertesting.com/blog/2015/03/19/site-navigation-tree-testing/</a></li>
-          </ul>
-        </section>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <!-- Empty -->
-      </div>
-
-      <div class="col-12 col-sm-9 content">
-
-        <h2 class="h2" id="header-simple">Standard header</h2>
-        <div class="preview">
-          <a class="media_link" href="{{ site.baseurl }}/components/headers/simple/">
-            <img src="{{ site.baseurl }}/assets/img/headers/header-simple.PNG" alt="Standard header">
-          </a>
-          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/simple/">Demo standard header</a>
-        </div>
-        {% include code/accordion.html component="header-simple" %}
+<h2 id="header-simple">Standard header</h2>
+<div class="preview">
+  <a class="media_link" href="{{ site.baseurl }}/components/headers/simple/">
+    <img src="{{ site.baseurl }}/assets/img/headers/header-simple.PNG" alt="Standard header">
+  </a>
+  <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/simple/">Demo standard header</a>
+</div>
+{% include code/accordion.html component="header-simple" %}
 
 
-        <h2 class="h2" id="header-medium">Standard header med topmenu</h2>
-        <div class="preview">
-          <a class="media_link" href="{{ site.baseurl }}/components/headers/medium/">
-            <img src="{{ site.baseurl }}/assets/img/headers/header-medium.PNG" alt="Standard header med topmenu">
-          </a>
-          <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/medium/">Demo standard header med topmenu</a>
-        </div>
-        {% include code/accordion.html component="header-medium" %}
-        
+<h2 id="header-medium">Standard header med topmenu</h2>
+<div class="preview">
+  <a class="media_link" href="{{ site.baseurl }}/components/headers/medium/">
+    <img src="{{ site.baseurl }}/assets/img/headers/header-medium.PNG" alt="Standard header med topmenu">
+  </a>
+  <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/medium/">Demo standard header med topmenu</a>
+</div>
+{% include code/accordion.html component="header-medium" %}
 
-        <h2 class="h2" id="header-full">Kompleks header</h2>
-        <div class="preview">
-          <a class="media_link" href="{{ site.baseurl }}/components/headers/full/">
-            <img src="{{ site.baseurl }}/assets/img/headers/header-full.PNG" alt="Kompleks header">
-          </a>
-           <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/full/">Demo kompleks header</a>
-        </div>
-        {% include code/accordion.html component="header-full" %}
 
-      </div>
-    </div>
-  </div>
-</main>
+<h2  id="header-full">Kompleks header</h2>
+<div class="preview">
+  <a class="media_link" href="{{ site.baseurl }}/components/headers/full/">
+    <img src="{{ site.baseurl }}/assets/img/headers/header-full.PNG" alt="Kompleks header">
+  </a>
+    <a class="button button-secondary mt-5" href="{{ site.baseurl }}/components/headers/full/">Demo kompleks header</a>
+</div>
+{% include code/accordion.html component="header-full" %}
