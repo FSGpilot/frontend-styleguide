@@ -10,7 +10,6 @@ var calculateAnchorPosition = require('./calculate-anchor-position');
 
 $(document).ready(function () {
   // Initialize The style switcher fill
-  console.log("start.js");
   $('.style-switcher').val(window.curStyle);
   $('.style-switcher').on('change', function () {
     if (window.curStyle !== this.value) {
