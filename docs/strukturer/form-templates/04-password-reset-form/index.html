@@ -21,130 +21,8 @@
 <meta property="og:title" content="Password reset form | Frontend styleguide - version 2">
 
 
-<meta name="description" content="Kode
-  
-    
-&amp;lt;form class=&quot;form&quot;&amp;gt;
-    &amp;lt;fieldset&amp;gt;
-        &amp;lt;legend class=&quot;drop_text&quot;&amp;gt;Reset password&amp;lt;/legend&amp;gt;
-        &amp;lt;span class=&quot;serif&quot;&amp;gt;Please enter your new password&amp;lt;/span&amp;gt;
-
-        &amp;lt;div class=&quot;alert alert-info&quot;&amp;gt;
-            &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
-                &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Passwords must:&amp;lt;/h3&amp;gt;
-            &amp;lt;/div&amp;gt;
-            &amp;lt;ul class=&quot;checklist&quot; id=&quot;validation_list&quot;&amp;gt;
-                &amp;lt;li data-validator=&quot;length&quot;&amp;gt;Be at least 8 characters&amp;lt;/li&amp;gt;
-                &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
-                &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
-                &amp;lt;li&amp;gt;Another requirement&amp;lt;/li&amp;gt;
-            &amp;lt;/ul&amp;gt;
-        &amp;lt;/div&amp;gt;
-
-        &amp;lt;label for=&quot;password&quot;&amp;gt;New password&amp;lt;/label&amp;gt;
-        &amp;lt;input id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; aria-describedby=&quot;validation_list&quot;
-            data-validate-length=&quot;.{8,}&quot; data-validate-uppercase=&quot;[A-Z]&quot; data-validate-numerical=&quot;\d&quot;
-            data-validation-element=&quot;#validation_list&quot;&amp;gt;
-
-        &amp;lt;label for=&quot;confirmPassword&quot;&amp;gt;Confirm password&amp;lt;/label&amp;gt;
-        &amp;lt;input id=&quot;confirmPassword&quot; name=&quot;confirmPassword&quot; type=&quot;password&quot;&amp;gt;
-        &amp;lt;p class=&quot;form-note&quot;&amp;gt;
-            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;show_multipassword&quot; aria-controls=&quot;password-reset confirmPassword&quot;&amp;gt;Show my typing&amp;lt;/a&amp;gt;
-        &amp;lt;/p&amp;gt;
-
-        &amp;lt;input type=&quot;submit&quot; value=&quot;Reset password&quot;&amp;gt;
-    &amp;lt;/fieldset&amp;gt;
-&amp;lt;/form&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Dokumentation
-  
-  
-    Accessibility
-    
-      As you customize this form template, make sure it continues to follow the accessibility guidelines for form templates and the accessibility guidelines for form controls.
-    
-    Usability
-    When to use
-    
-      To offer a way to easily reset a password any time users are able to sign in to your site.
-    
-    Guidance
-    
-      If users need a password to access your site, they will forget that password and need a way to reset it.
-      For guidance on the technical details of validation, see the
-        validation documentation.
-      State any password requirements (for example, “Must include one capital letter”) up front. Don’t leave users guessing about password requirements, only to hit them with an error message later.
-      The requirements shown above are just provided as an example and should not be taken as recommendations.">
-<meta property="og:description" content="Kode
-  
-    
-&amp;lt;form class=&quot;form&quot;&amp;gt;
-    &amp;lt;fieldset&amp;gt;
-        &amp;lt;legend class=&quot;drop_text&quot;&amp;gt;Reset password&amp;lt;/legend&amp;gt;
-        &amp;lt;span class=&quot;serif&quot;&amp;gt;Please enter your new password&amp;lt;/span&amp;gt;
-
-        &amp;lt;div class=&quot;alert alert-info&quot;&amp;gt;
-            &amp;lt;div class=&quot;alert-body&quot;&amp;gt;
-                &amp;lt;h3 class=&quot;alert-heading&quot;&amp;gt;Passwords must:&amp;lt;/h3&amp;gt;
-            &amp;lt;/div&amp;gt;
-            &amp;lt;ul class=&quot;checklist&quot; id=&quot;validation_list&quot;&amp;gt;
-                &amp;lt;li data-validator=&quot;length&quot;&amp;gt;Be at least 8 characters&amp;lt;/li&amp;gt;
-                &amp;lt;li data-validator=&quot;uppercase&quot;&amp;gt;Have at least 1 uppercase character&amp;lt;/li&amp;gt;
-                &amp;lt;li data-validator=&quot;numerical&quot;&amp;gt;Have at least 1 numerical character&amp;lt;/li&amp;gt;
-                &amp;lt;li&amp;gt;Another requirement&amp;lt;/li&amp;gt;
-            &amp;lt;/ul&amp;gt;
-        &amp;lt;/div&amp;gt;
-
-        &amp;lt;label for=&quot;password&quot;&amp;gt;New password&amp;lt;/label&amp;gt;
-        &amp;lt;input id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; aria-describedby=&quot;validation_list&quot;
-            data-validate-length=&quot;.{8,}&quot; data-validate-uppercase=&quot;[A-Z]&quot; data-validate-numerical=&quot;\d&quot;
-            data-validation-element=&quot;#validation_list&quot;&amp;gt;
-
-        &amp;lt;label for=&quot;confirmPassword&quot;&amp;gt;Confirm password&amp;lt;/label&amp;gt;
-        &amp;lt;input id=&quot;confirmPassword&quot; name=&quot;confirmPassword&quot; type=&quot;password&quot;&amp;gt;
-        &amp;lt;p class=&quot;form-note&quot;&amp;gt;
-            &amp;lt;a href=&quot;javascript:void(0);&quot; class=&quot;show_multipassword&quot; aria-controls=&quot;password-reset confirmPassword&quot;&amp;gt;Show my typing&amp;lt;/a&amp;gt;
-        &amp;lt;/p&amp;gt;
-
-        &amp;lt;input type=&quot;submit&quot; value=&quot;Reset password&quot;&amp;gt;
-    &amp;lt;/fieldset&amp;gt;
-&amp;lt;/form&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Dokumentation
-  
-  
-    Accessibility
-    
-      As you customize this form template, make sure it continues to follow the accessibility guidelines for form templates and the accessibility guidelines for form controls.
-    
-    Usability
-    When to use
-    
-      To offer a way to easily reset a password any time users are able to sign in to your site.
-    
-    Guidance
-    
-      If users need a password to access your site, they will forget that password and need a way to reset it.
-      For guidance on the technical details of validation, see the
-        validation documentation.
-      State any password requirements (for example, “Must include one capital letter”) up front. Don’t leave users guessing about password requirements, only to hit them with an error message later.
-      The requirements shown above are just provided as an example and should not be taken as recommendations.">
+<meta name="description" content="A standard template for resetting a password">
+<meta property="og:description" content="A standard template for resetting a password">
 
 
 
@@ -1121,7 +999,7 @@
 
     <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+    <script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
 <script src="/frontend-styleguide/assets/js/vendor/dkwds-vendor-examples.js"></script>
 
   </body>

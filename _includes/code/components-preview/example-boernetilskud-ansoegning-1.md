@@ -37,7 +37,7 @@ title: Example-boernetilskud-ansoegning-1.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Ansvarlig myndighed</h6>
+                <h6 class="h6 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p>Tlf.: 33 28 38 38</p>
 

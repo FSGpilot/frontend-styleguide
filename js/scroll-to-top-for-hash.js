@@ -20,13 +20,15 @@ function scrollToTopForHash () {
     // setTimeout ensures proper ordering of events
     // and makes this happens after the browser's default jump
     timeout = setTimeout(function () {
+      console.log('scrollToTopForHash: ' + scrollTopPos);
       $(window).scrollTop(scrollTopPos);
     }, 1);
   }
 }
 
-$(function () {
-  // check every XXX milliseconds
-  setTimeout(scrollToTopForHash, 150);
+$(document).ready(function () {
+  $(function () {
+    // check every XXX milliseconds
+    setTimeout(scrollToTopForHash, 150);
+  });
 });
-

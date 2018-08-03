@@ -37,7 +37,7 @@ title: Example-aes-page-9.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Ansvarlig myndighed</h6>
+                <h6 class="h6 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p>
                     <p>Support: 72 20 60 00 ·

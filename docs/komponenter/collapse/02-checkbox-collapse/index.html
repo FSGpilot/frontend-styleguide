@@ -21,125 +21,6 @@
 <meta property="og:title" content="Checkbox - skjul og vis inhold | Frontend styleguide - version 2">
 
 
-<meta name="description" content="Kode
-  
-    
-&amp;lt;div class=&quot;container&quot;&amp;gt;
-
-    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-        &amp;lt;input id=&quot;id-checkbox1&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large js-checkbox-toggle-content&quot;
-            data-js-target='#collapse-check1' aria-controls='collapse-check1' aria-expanded='false'&amp;gt;
-        &amp;lt;label for=&quot;id-checkbox1&quot; class=&quot;&quot;&amp;gt;Checbox viser indhold&amp;lt;/label&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div id=&quot;collapse-check1&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
-        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
-            &amp;lt;p&amp;gt;Dette indhold bliver vist når checkboxen er valgt.&amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-        &amp;lt;input id=&quot;id-checkbox2&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large js-checkbox-toggle-content&quot;
-            checked data-js-target='#collapse-check2' aria-controls='collapse-check2'
-            aria-expanded='false'&amp;gt;
-        &amp;lt;label for=&quot;id-checkbox2&quot; class=&quot;&quot;&amp;gt;Checbox viser indhold&amp;lt;/label&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div id=&quot;collapse-check2&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
-        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
-            &amp;lt;p&amp;gt;Dette indhold bliver vist når checkboxen er valgt.&amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Implementering
-  
-  
-    For at initializere collapse funktionaliteten på en checkbox skal input[type=checkbox] have følgende:
-    
-      Klassen 'js-checkbox-toggle-content'. Denne klasse gør at funktionaliteten bliver initializeret. 
-      Attributten data-js-target=&quot;id-of-target-to-collapse&quot;: denne attribute skal have id'et på det element som skal vises på checkboxen er aktiveret. 
-      Hvis man ønsker at checkboxen skal være valgt fra starten af, skal den have attributten 'checked'.
-      aria-controls=&quot;id-of-target-to-collapse&quot; 
-    
-    Det element som skal collapses/expandes skal have følgende:
-    
-      id=”id-of-target-to-collapse”
-      aria-hidden=&quot;true/false&quot;
-       
-  
-
-
-  
-    Dokumentation">
-<meta property="og:description" content="Kode
-  
-    
-&amp;lt;div class=&quot;container&quot;&amp;gt;
-
-    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-        &amp;lt;input id=&quot;id-checkbox1&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large js-checkbox-toggle-content&quot;
-            data-js-target='#collapse-check1' aria-controls='collapse-check1' aria-expanded='false'&amp;gt;
-        &amp;lt;label for=&quot;id-checkbox1&quot; class=&quot;&quot;&amp;gt;Checbox viser indhold&amp;lt;/label&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div id=&quot;collapse-check1&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
-        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
-            &amp;lt;p&amp;gt;Dette indhold bliver vist når checkboxen er valgt.&amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-        &amp;lt;input id=&quot;id-checkbox2&quot; type=&quot;checkbox&quot; name=&quot;Name&quot; value=&quot;Value&quot; class=&quot; checkbox-large js-checkbox-toggle-content&quot;
-            checked data-js-target='#collapse-check2' aria-controls='collapse-check2'
-            aria-expanded='false'&amp;gt;
-        &amp;lt;label for=&quot;id-checkbox2&quot; class=&quot;&quot;&amp;gt;Checbox viser indhold&amp;lt;/label&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div id=&quot;collapse-check2&quot; aria-hidden=&quot;true&quot; class=&quot;box-border-l collapsed&quot;&amp;gt;
-        &amp;lt;div class=&quot;py-4&quot;&amp;gt;
-            &amp;lt;p&amp;gt;Dette indhold bliver vist når checkboxen er valgt.&amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Implementering
-  
-  
-    For at initializere collapse funktionaliteten på en checkbox skal input[type=checkbox] have følgende:
-    
-      Klassen 'js-checkbox-toggle-content'. Denne klasse gør at funktionaliteten bliver initializeret. 
-      Attributten data-js-target=&quot;id-of-target-to-collapse&quot;: denne attribute skal have id'et på det element som skal vises på checkboxen er aktiveret. 
-      Hvis man ønsker at checkboxen skal være valgt fra starten af, skal den have attributten 'checked'.
-      aria-controls=&quot;id-of-target-to-collapse&quot; 
-    
-    Det element som skal collapses/expandes skal have følgende:
-    
-      id=”id-of-target-to-collapse”
-      aria-hidden=&quot;true/false&quot;
-       
-  
-
-
-  
-    Dokumentation">
-
 
 
 
@@ -1111,7 +992,7 @@
 
     <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+    <script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
 <script src="/frontend-styleguide/assets/js/vendor/dkwds-vendor-examples.js"></script>
 
   </body>

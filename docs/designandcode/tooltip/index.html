@@ -21,103 +21,6 @@
 <meta property="og:title" content="Tooltip og popover | Frontend styleguide - version 2">
 
 
-<meta name="description" content="Kode
-  
-    
-&amp;lt;div class=&quot;container&quot;&amp;gt;
-    &amp;lt;p class=&quot;h6&quot;&amp;gt;Tooltip (kommer frem ved mouse-over):&amp;lt;/p&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; role=&quot;tooltip&quot; title=&quot;Dette er et tooltip&quot;
-        aria-label=&quot;Dette er et tooltip&quot;&amp;gt;Knap med tooltip&amp;lt;/button&amp;gt;
-    &amp;lt;p class=&quot;h6&quot;&amp;gt;Popover (kræver tryk)&amp;lt;/p&amp;gt;
-    &amp;lt;a class=&quot;popover js-tooltip&quot; data-tippy-trigger=&quot;click&quot; role=&quot;tooltip&quot; title=&quot;Dette er en hjælpetekst i en popover&quot;
-        aria-label=&quot;Dette er en hjælpetekst i en popover&quot;&amp;gt;
-        &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#help-circle-outline&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
-    &amp;lt;/a&amp;gt;
-
-    &amp;lt;p class=&quot;h6&quot;&amp;gt;Eksempel på konfiguration - placering:&amp;lt;/p&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;top&quot;
-        title=&quot;Top tooltip&quot;&amp;gt;Top&amp;lt;/button&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;bottom&quot;
-        title=&quot;Bund tooltip&quot;&amp;gt;Bund&amp;lt;/button&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;left&quot;
-        title=&quot;Venstre tooltip&quot;&amp;gt;Venstre&amp;lt;/button&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;right&quot;
-        title=&quot;Højre tooltip&quot;&amp;gt;Højre&amp;lt;/button&amp;gt;
-&amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Implementering
-  
-  
-    Tooltips og popovers bygger på tippy.js.
-    For at initializere et tooltip eller en popover skal et HTML-element have klassen '.js-tooltip' og en 'title'-attribut:
-    
-      
-        &amp;lt;button class=&quot;button button-primary js-tooltip&quot; title=&quot;Dette er et tooltip&quot;&amp;gt;Knap med tooltip&amp;lt;/button&amp;gt;	
-       
-    
-    Vi definere et tooltip som en hjælpetekst som vises ved mouseover, og en popover som hjælpetekst der vises ved et klik. For at lave et tooltip om til en popover skal der tilføjes følgende attribut: data-tippy-trigger=&quot;click&quot;
-    Tippy.js har mange konfigurationsmuligheder, og den fulde liste kan ses på deres hjemmeside: https://atomiks.github.io/tippyjs/
-    I følgende eksempel er tooltippet konfigureret til at vises til venstre: 
-    
-      
-        &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;left&quot; title=&quot;Tooltip til venstre&quot;&amp;gt;Knap med tooltip til venstre&amp;lt;/button&amp;gt;">
-<meta property="og:description" content="Kode
-  
-    
-&amp;lt;div class=&quot;container&quot;&amp;gt;
-    &amp;lt;p class=&quot;h6&quot;&amp;gt;Tooltip (kommer frem ved mouse-over):&amp;lt;/p&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; role=&quot;tooltip&quot; title=&quot;Dette er et tooltip&quot;
-        aria-label=&quot;Dette er et tooltip&quot;&amp;gt;Knap med tooltip&amp;lt;/button&amp;gt;
-    &amp;lt;p class=&quot;h6&quot;&amp;gt;Popover (kræver tryk)&amp;lt;/p&amp;gt;
-    &amp;lt;a class=&quot;popover js-tooltip&quot; data-tippy-trigger=&quot;click&quot; role=&quot;tooltip&quot; title=&quot;Dette er en hjælpetekst i en popover&quot;
-        aria-label=&quot;Dette er en hjælpetekst i en popover&quot;&amp;gt;
-        &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#help-circle-outline&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
-    &amp;lt;/a&amp;gt;
-
-    &amp;lt;p class=&quot;h6&quot;&amp;gt;Eksempel på konfiguration - placering:&amp;lt;/p&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;top&quot;
-        title=&quot;Top tooltip&quot;&amp;gt;Top&amp;lt;/button&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;bottom&quot;
-        title=&quot;Bund tooltip&quot;&amp;gt;Bund&amp;lt;/button&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;left&quot;
-        title=&quot;Venstre tooltip&quot;&amp;gt;Venstre&amp;lt;/button&amp;gt;
-    &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;right&quot;
-        title=&quot;Højre tooltip&quot;&amp;gt;Højre&amp;lt;/button&amp;gt;
-&amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Implementering
-  
-  
-    Tooltips og popovers bygger på tippy.js.
-    For at initializere et tooltip eller en popover skal et HTML-element have klassen '.js-tooltip' og en 'title'-attribut:
-    
-      
-        &amp;lt;button class=&quot;button button-primary js-tooltip&quot; title=&quot;Dette er et tooltip&quot;&amp;gt;Knap med tooltip&amp;lt;/button&amp;gt;	
-       
-    
-    Vi definere et tooltip som en hjælpetekst som vises ved mouseover, og en popover som hjælpetekst der vises ved et klik. For at lave et tooltip om til en popover skal der tilføjes følgende attribut: data-tippy-trigger=&quot;click&quot;
-    Tippy.js har mange konfigurationsmuligheder, og den fulde liste kan ses på deres hjemmeside: https://atomiks.github.io/tippyjs/
-    I følgende eksempel er tooltippet konfigureret til at vises til venstre: 
-    
-      
-        &amp;lt;button class=&quot;button button-primary js-tooltip&quot; data-tippy-placement=&quot;left&quot; title=&quot;Tooltip til venstre&quot;&amp;gt;Knap med tooltip til venstre&amp;lt;/button&amp;gt;">
-
 
 
 
@@ -1600,7 +1503,7 @@
 
     <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+    <script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
 <script src="/frontend-styleguide/assets/js/vendor/dkwds-vendor-examples.js"></script>
 
   </body>

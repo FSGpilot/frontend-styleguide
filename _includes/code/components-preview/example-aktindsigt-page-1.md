@@ -37,7 +37,7 @@ title: Example-aktindsigt-page-1.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Ansvarlig myndighed</h6>
+                <h6 class="h6 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p>
                     <button class="button-unstyled button-contact" data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>

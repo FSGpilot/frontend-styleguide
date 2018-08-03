@@ -21,144 +21,8 @@
 <meta property="og:title" content="Dato input | Frontend styleguide - version 2">
 
 
-<meta name="description" content="Kode
-  
-    
-&amp;lt;div class=&quot;container&quot;&amp;gt;
-
-    &amp;lt;fieldset&amp;gt;
-        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-            &amp;lt;label class=&quot;form-label icon-link&quot;&amp;gt;Indsendelsesfrist&amp;lt;/label&amp;gt;
-            &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;&amp;lt;/span&amp;gt;
-            &amp;lt;span class=&quot;form-hint&quot;&amp;gt;For eksempel: 05 12 2018&amp;lt;/span&amp;gt;
-            &amp;lt;div class=&quot;date-group js-calendar-group mt-3&quot;&amp;gt;
-                &amp;lt;div class=&quot;form-group form-group-day&quot;&amp;gt;
-                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_day_2&quot;&amp;gt;Day&amp;lt;/label&amp;gt;
-                    &amp;lt;input class=&quot;form-input js-calendar-day-input&quot; type=&quot;tel&quot; min=&quot;1&quot; max=&quot;31&quot;
-                        maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
-                        title=&quot;Indskriv dag på månenden som tal&quot;&amp;gt;
-                &amp;lt;/div&amp;gt;
-                &amp;lt;div class=&quot;form-group form-group-month&quot;&amp;gt;
-                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_month_1&quot;&amp;gt;Måned&amp;lt;/label&amp;gt;
-                    &amp;lt;input class=&quot;form-input js-calendar-month-input&quot; type=&quot;tel&quot; min=&quot;1&quot; max=&quot;12&quot;
-                        maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
-                        title=&quot;Indskriv månedens nummer&quot;&amp;gt;
-                &amp;lt;/div&amp;gt;
-                &amp;lt;div class=&quot;form-group form-group-year &quot;&amp;gt;
-                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_year_3&quot;&amp;gt;År&amp;lt;/label&amp;gt;
-                    &amp;lt;input class=&quot;form-input js-calendar-year-input&quot; type=&quot;tel&quot; min=&quot;1900&quot; max=&quot;3000&quot;
-                        maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;
-                        title=&quot;Indskriv årstal&quot;&amp;gt;
-                &amp;lt;/div&amp;gt;
-                &amp;lt;button class=&quot;button-unstyled button-open-calendar js-calendar-datepicker&quot;&amp;gt;
-
-                    &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#calendar&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
-
-                &amp;lt;/button&amp;gt;
-            &amp;lt;/div&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/fieldset&amp;gt;
-
-&amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Implementering
-  
-  
-     
-      Dato-komponenten består af 2 dele: 3 input-felter og en datepicker.
-      Datepickeren er implementeret med vendor scriptet Pikaday. Dette script og den javascript-kode som initialisere dato-komponenten er inkluderet i core javascript filen (dkwds.js).
-      Inputfelterne bruger 'regex-input-mask' scriptet som forhindre brugeren i at indskrive mere end 2 tal for dag og måned, og 4 tal i år-inputtet. Derudover forhindre 'regex-input-mask' at brugeren indskriver tegn som ikke er tal. Eksempel for day og måned:  data-input-regex=&quot;^[0-9]{0,2}$&quot;
-      
-        For at initialisere dato-komponenten skal .date-group-elementet have klassen .js-calendar-group. Derudover skal de tre inputfelter have følgende klasser:
-        
-          Dag input: .js-calendar-day-input
-          Måned input: .js-calendar-month-input
-          År input: .js-calendar-year-input
-        
-      
-    
-  
-
-
-  
-    Dokumentation">
-<meta property="og:description" content="Kode
-  
-    
-&amp;lt;div class=&quot;container&quot;&amp;gt;
-
-    &amp;lt;fieldset&amp;gt;
-        &amp;lt;div class=&quot;form-group&quot;&amp;gt;
-            &amp;lt;label class=&quot;form-label icon-link&quot;&amp;gt;Indsendelsesfrist&amp;lt;/label&amp;gt;
-            &amp;lt;span class=&quot;input-error-message&quot; id=&quot;input-error-message-input-error&quot; role=&quot;alert&quot;&amp;gt;&amp;lt;/span&amp;gt;
-            &amp;lt;span class=&quot;form-hint&quot;&amp;gt;For eksempel: 05 12 2018&amp;lt;/span&amp;gt;
-            &amp;lt;div class=&quot;date-group js-calendar-group mt-3&quot;&amp;gt;
-                &amp;lt;div class=&quot;form-group form-group-day&quot;&amp;gt;
-                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_day_2&quot;&amp;gt;Day&amp;lt;/label&amp;gt;
-                    &amp;lt;input class=&quot;form-input js-calendar-day-input&quot; type=&quot;tel&quot; min=&quot;1&quot; max=&quot;31&quot;
-                        maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
-                        title=&quot;Indskriv dag på månenden som tal&quot;&amp;gt;
-                &amp;lt;/div&amp;gt;
-                &amp;lt;div class=&quot;form-group form-group-month&quot;&amp;gt;
-                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_month_1&quot;&amp;gt;Måned&amp;lt;/label&amp;gt;
-                    &amp;lt;input class=&quot;form-input js-calendar-month-input&quot; type=&quot;tel&quot; min=&quot;1&quot; max=&quot;12&quot;
-                        maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
-                        title=&quot;Indskriv månedens nummer&quot;&amp;gt;
-                &amp;lt;/div&amp;gt;
-                &amp;lt;div class=&quot;form-group form-group-year &quot;&amp;gt;
-                    &amp;lt;label class=&quot;form-label&quot; for=&quot;date_of_year_3&quot;&amp;gt;År&amp;lt;/label&amp;gt;
-                    &amp;lt;input class=&quot;form-input js-calendar-year-input&quot; type=&quot;tel&quot; min=&quot;1900&quot; max=&quot;3000&quot;
-                        maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;
-                        title=&quot;Indskriv årstal&quot;&amp;gt;
-                &amp;lt;/div&amp;gt;
-                &amp;lt;button class=&quot;button-unstyled button-open-calendar js-calendar-datepicker&quot;&amp;gt;
-
-                    &amp;lt;svg class=&quot;icon-svg &quot;&amp;gt;&amp;lt;use xlink:href=&quot;#calendar&quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/svg&amp;gt;
-
-                &amp;lt;/button&amp;gt;
-            &amp;lt;/div&amp;gt;
-        &amp;lt;/div&amp;gt;
-    &amp;lt;/fieldset&amp;gt;
-
-&amp;lt;/div&amp;gt;
-
-
-
-
-  
-
-
-
-  
-    Implementering
-  
-  
-     
-      Dato-komponenten består af 2 dele: 3 input-felter og en datepicker.
-      Datepickeren er implementeret med vendor scriptet Pikaday. Dette script og den javascript-kode som initialisere dato-komponenten er inkluderet i core javascript filen (dkwds.js).
-      Inputfelterne bruger 'regex-input-mask' scriptet som forhindre brugeren i at indskrive mere end 2 tal for dag og måned, og 4 tal i år-inputtet. Derudover forhindre 'regex-input-mask' at brugeren indskriver tegn som ikke er tal. Eksempel for day og måned:  data-input-regex=&quot;^[0-9]{0,2}$&quot;
-      
-        For at initialisere dato-komponenten skal .date-group-elementet have klassen .js-calendar-group. Derudover skal de tre inputfelter have følgende klasser:
-        
-          Dag input: .js-calendar-day-input
-          Måned input: .js-calendar-month-input
-          År input: .js-calendar-year-input
-        
-      
-    
-  
-
-
-  
-    Dokumentation">
+<meta name="description" content="Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.">
+<meta property="og:description" content="Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.">
 
 
 
@@ -1143,7 +1007,7 @@
 
     <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
 
-<script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
+    <script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
 <script src="/frontend-styleguide/assets/js/vendor/dkwds-vendor-examples.js"></script>
 
   </body>

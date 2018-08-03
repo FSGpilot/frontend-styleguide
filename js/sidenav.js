@@ -2,6 +2,7 @@
 
 var $ = require('jquery');
 var calculateAnchorPosition = require('./calculate-anchor-position');
+var SmoothScroll = require('./vendor/smooth-scroll.polyfills.min.js');
 
 /* Firefox needs html, others need body */
 var root = $('body, html');
@@ -27,42 +28,15 @@ $('.sidenav').on('click', 'a', function (e) {
 
   e.preventDefault();
 
-  root.animate({
-    scrollTop: scrollTopPos,
-  }, {
-    duration: 200,
-    start: function () {
-      var newHash = '#' + hashLocation;
+  var scroll = new SmoothScroll();
+  scroll.animateScroll(scrollTopPos);
 
-      // using pushState is easiest way to prevent double jumps
-      if (history && history.pushState && window.location.hash !== newHash) {
-        history.pushState(null, null, newHash);
-      } else if (window.location.hash !== newHash) {
-        window.location.hash = newHash;
-      }
-    },
-    done: function () {
-      // if keyboard was used, update keyboard focus to section
-      var link    = $(e.target);
-      var section = $('#' + hashLocation);
+  var newHash = '#' + hashLocation;
+  // using pushState is easiest way to prevent double jumps
+  if (history && history.pushState && window.location.hash !== newHash) {
+    history.pushState(null, null, newHash);
+  } else if (window.location.hash !== newHash) {
+    window.location.hash = newHash;
+  }
 
-      if (link.data('keypress') === true) {
-        link.removeData('keypress');
-        section.attr('tabindex', '-1');
-        section.focus();
-      }
-    },
-  });
 });
-
-//note: this has been commented out as it messed up pages where there is also full width content (like the "examples" page).
-// var navHeight = function () {
-//   $('.sidenav').css('height', (window.innerHeight - 50));
-// };
-
-// navHeight();
-
-// $( window ).resize(function () {
-//   navHeight();
-// });
-

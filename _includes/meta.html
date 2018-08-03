@@ -5,11 +5,8 @@
 <title>{{ title }}</title>
 <meta property="og:title" content="{{ title | xml_escape }}">
 {% assign desc = page.description
-  | default: page.excerpt
+  | default: page.lead
   | default: site.description
-  | strip_html
-  | strip
-  | xml_escape
 %}
 {% if desc -%}
 <meta name="description" content="{{ desc }}">

@@ -4282,8 +4282,7 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
   justify-content: center;
   text-decoration: none;
   user-select: none;
-  cursor: pointer;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out; }
+  cursor: pointer; }
   @media screen and (min-width: 576px) {
     .button {
       width: auto; } }
@@ -5787,6 +5786,9 @@ footer .footer {
   border-top: 1px solid #999999;
   padding-top: calc(16px - 1px);
   padding-bottom: calc(16px - 1px); }
+  @media (min-width: 768px) {
+    footer .footer {
+      padding-bottom: 56px; } }
   footer .footer .align-left {
     text-align: left; }
   footer .footer .align-right {
@@ -8052,7 +8054,8 @@ code {
     background-position: left 2rem center;
     background-size: 1rem;
     padding-left: 3.3rem;
-    background-color: black; }
+    background-color: black;
+    border-color: white !important; }
     .demo-footer .button:hover {
       color: white; }
     @media screen and (min-width: 768px) {
