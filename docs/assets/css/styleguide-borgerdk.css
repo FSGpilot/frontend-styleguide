@@ -5125,7 +5125,7 @@ ol {
 
 /*!
  * Styling for Pikaday
- * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
+ * Copyright ┬⌐ 2014 David Bushell | BSD & MIT license | http://dbushell.com/
  */
 .js-calendar-datepicker {
   cursor: pointer; }
@@ -5338,10 +5338,10 @@ table.dataTable thead .sorting_desc_disabled {
     height: 24px;
     width: 24px;
     background-repeat: no-repeat;
-    background-position: center -2px; }
+    background-position: center -1px; }
 table.dataTable thead .sorting:after {
   background-image: url("../assets/img/svg-icons//sort-none.svg");
-  opacity: .2; }
+  opacity: .75; }
 table.dataTable thead .sorting_asc:after {
   background-image: url("../assets/img/svg-icons//sort-acending.svg"); }
 table.dataTable thead .sorting_desc:after {
@@ -6941,6 +6941,52 @@ input[type=search] {
     top: 0;
     transition: all 0.2s ease-in-out; }
 
+.static-border-radius-example {
+  border-top-left-radius: 0;
+  width: 144px;
+  height: 120px;
+  background-color: #F5F5F5;
+  border-left: solid 6px #1a1a1a;
+  border-top: solid 6px #1a1a1a; }
+
+.interactive-border-radius-example {
+  border-top-left-radius: 4px;
+  width: 144px;
+  height: 120px;
+  background-color: #F5F5F5;
+  border-left: solid 6px #1a1a1a;
+  border-top: solid 6px #1a1a1a; }
+
+.outer-border-example {
+  border-top: 1px solid #999999; }
+
+.inner-border-example {
+  border-top: 1px solid #BFBFBF; }
+
+.button-border-example {
+  border-top: 2px solid #3C5C22; }
+
+.heavy-shadow-example {
+  width: 144px;
+  height: 104px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  border: 1px solid #999999; }
+
+.moderately-shadow-example {
+  width: 144px;
+  height: 104px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  border: 1px solid #999999; }
+
+.slightly-shadow-example {
+  width: 144px;
+  height: 104px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  border: 1px solid #999999; }
+
 .table {
   margin: 0;
   line-height: 2.4rem;
@@ -8074,6 +8120,9 @@ code {
         margin-top: 0;
         margin-right: 1.5rem;
         margin-bottom: 0; } }
+  .demo-footer .form-select {
+    background-color: black;
+    color: #fff; }
 
 .demo-footer-title {
   color: #ffffff;
