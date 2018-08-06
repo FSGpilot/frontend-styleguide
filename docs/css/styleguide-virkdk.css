@@ -1174,16 +1174,16 @@ a:focus, button:focus, input:focus, select:focus,
   left: -999em; }
 
 .bg-1 {
-  background: rgba(0, 0, 0, 0.75) !important;
-  background-color: rgba(0, 0, 0, 0.75) !important; }
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important; }
 
 .bg-2 {
-  background: #f5f5f5 !important;
-  background-color: #f5f5f5 !important; }
+  background: #F5F5F5 !important;
+  background-color: #F5F5F5 !important; }
 
 .bg-3 {
-  background: #ffffff !important;
-  background-color: #ffffff !important; }
+  background: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.75) !important; }
 
 .w-percent-10 {
   width: 10% !important; }
@@ -6739,19 +6739,28 @@ input[type=search] {
       font-weight: 600;
       padding-left: 12px;
       border-left: 4px solid #067293; }
-  .sidenav-list li a {
-    display: flex; }
-    .sidenav-list li a .sidenav-icon {
-      margin-left: auto;
-      width: 22px;
-      height: 22px;
-      line-height: 23px;
-      border-radius: 50%;
-      text-align: center; }
-      .sidenav-list li a .sidenav-icon i {
-        color: #fff; }
-    .sidenav-list li a:focus {
-      background-color: transparent; }
+  .sidenav-list li a ul {
+    width: 100%; }
+  .sidenav-list li a .sidenav-icon-before {
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    line-height: 23px;
+    text-align: left; }
+  .sidenav-list li a .sidenav-icon {
+    margin-left: auto;
+    width: 22px;
+    height: 22px;
+    line-height: 23px;
+    text-align: center;
+    float: right; }
+    .sidenav-list li a .sidenav-icon i {
+      color: #fff; }
+  .sidenav-list li a .sidenav-information {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .sidenav-list li a:focus {
+    background-color: transparent; }
 
 .sidenav-list-locked {
   margin-top: 0;
@@ -6809,17 +6818,24 @@ input[type=search] {
     cursor: not-allowed; }
     .sidenav-list-locked li.disabled a {
       cursor: not-allowed; }
-  .sidenav-list-locked li a {
-    display: flex; }
-    .sidenav-list-locked li a .sidenav-icon {
-      margin-left: auto;
-      width: 22px;
-      height: 22px;
-      line-height: 23px;
-      border-radius: 50%;
-      text-align: center; }
-      .sidenav-list-locked li a .sidenav-icon i {
-        color: #fff; }
+  .sidenav-list-locked li a .sidenav-icon-before {
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    line-height: 23px;
+    text-align: left; }
+  .sidenav-list-locked li a .sidenav-icon {
+    margin-left: auto;
+    width: 22px;
+    height: 22px;
+    line-height: 23px;
+    text-align: center;
+    float: right; }
+    .sidenav-list-locked li a .sidenav-icon i {
+      color: #fff; }
+  .sidenav-list-locked li a .sidenav-information {
+    margin-top: 0;
+    margin-bottom: 0; }
 
 .sidenav-sub_list {
   margin-top: 0;
