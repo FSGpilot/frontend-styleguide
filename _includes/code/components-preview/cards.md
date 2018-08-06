@@ -88,7 +88,7 @@ title: Cards.html
             </div>
 
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-6 mt-md-0">
             <div class="card">
 
                 <div class="card-content">
@@ -172,7 +172,7 @@ title: Cards.html
             </div>
 
         </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
             <div class="card">
 
                 <div class="card-header">
@@ -196,7 +196,7 @@ title: Cards.html
             </div>
 
         </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
             <div class="card">
 
                 <div class="card-header">
