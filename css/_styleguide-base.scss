@@ -560,6 +560,9 @@ code {
   padding-top: 4px;
   padding-bottom: 4px;
 }
+.page-text-input-html .container, .page-text-input-width-html .container{ //quick fix for iframe resize
+  padding-bottom: 4px;
+}
 .page-accordion-html{
   padding-top: 4px;
 }
@@ -584,6 +587,8 @@ code {
     min-height: 200px;
   }
 }
+
+
 .page-tooltip-html .container{
   min-height: 350px;
 }
