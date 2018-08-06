@@ -356,11 +356,49 @@ order: 01
 </div>
 
 <h3 class="heading">Data farver</h3>
+<h4 class="heading">Baggrundsfarver</h4>
+<div class="color-row-container">
+
+  <div class="row color-row">
+    <!-- color-positive START -->
+    <div class="col-md-3">
+      <div class="color-container bg-normal"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#FFFFFF</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$background-normal</p>
+      </div>
+    </div>
+    <!-- color-positive END -->
+    <!-- color-negative START -->
+    <div class="col-md-3">
+      <div class="color-container bg-alternative"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>#F5F5F5</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$background-alternative</p>
+      </div>
+    </div>
+    <!-- color-negative END -->
+    <!-- color-negative START -->
+    <div class="col-md-3">
+      <div class="color-container bg-modal"></div>
+      <div class="color-text-container">
+        <p class="is-neutral"><strong>rgba(0, 0, 0, 0.75)</strong></p>
+        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
+        <p class="is-borger"><strong>#588012</strong></p>-->
+        <p>$background-modal</p>
+      </div>
+    </div>
+    <!-- color-negative END -->
+  </div>
+</div>
 <h4 class="heading">Værdifarver</h4>
 <div class="color-row-container">
 
   <div class="row color-row">
-
     <!-- color-positive START -->
     <div class="col-md-3">
       <div class="color-container color-positive"></div>
@@ -372,7 +410,6 @@ order: 01
       </div>
     </div>
     <!-- color-positive END -->
-
     <!-- color-negative START -->
     <div class="col-md-3">
       <div class="color-container color-negative"></div>
@@ -384,9 +421,6 @@ order: 01
       </div>
     </div>
     <!-- color-negative END -->
-
-
-
   </div>
 </div>
 
