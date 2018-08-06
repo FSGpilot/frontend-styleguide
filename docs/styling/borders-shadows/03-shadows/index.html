@@ -29,8 +29,6 @@
 
 
   
-  <link rel="canonical" href="http://localhost:4000/styling/borders-shadows/03-shadows/">
-  
 
 <!-- Favicons
 ================================================== -->
@@ -327,7 +325,7 @@
 
 <a href="/frontend-styleguide/designandcode/kanter/" 
   class="  nav-link">
-  Kanter, streger og skygger
+  Hjørner, streger og skygger
 </a>
 
 
@@ -883,12 +881,16 @@
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>Stor skygge<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>Modalvindue<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"heavy-shadow-example"</span><span class="nt">&gt;&lt;/div&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>Moderat skygge<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6 mt-md-0"</span><span class="nt">&gt;</span>Overflowmenu<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"moderately-shadow-example"</span><span class="nt">&gt;&lt;/div&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>Lille skygge<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6 mt-md-0"</span><span class="nt">&gt;</span>Cards<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slightly-shadow-example"</span><span class="nt">&gt;&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -904,28 +906,25 @@
         Implementering
     </button>
     <div id="shadows-docs" class="accordion-content">
-        <h5>Stor skygge</h5>
+        <h5>Modalvindue</h5>
         <ul>
-            <li><p>Den store skygge har en sort skygge på 0 8px 16px 0 og har variablen <code>$box-shadow-heavy</code></p></li>
-            <li><p>Den store skygge bruges for eksempel på modalvinduer</p></li>
+            <li><p>Modalvinduer har en sort skygge på 0 8px 16px 0 og har variablen <code>$box-shadow-heavy</code></p></li>
         </ul>
         <p class="h6 mb-3">Eksempel:</p>
         <div class="code-highlight">
             <code> box-shadow: $box-shadow-heavy;</code>
         </div>
-        <h5>Moderat skygge</h5>
+        <h5>Overflowmenu</h5>
         <ul>
-            <li><p>Den moderate skygge har en sort skygge på 0 4px 16px 0 og har variablen <code>$box-shadow-moderately</code></p></li>
-            <li><p>Den moderate skygge bruges for eksempel på overflow menuer</p></li>
+            <li><p>Overflowmenuer har en sort skygge på 0 4px 16px 0 og har variablen <code>$box-shadow-moderately</code></p></li>
         </ul>
         <p class="h6 mb-3">Eksempel:</p>
         <div class="code-highlight">
             <code>box-shadow: $box-shadow-moderately;</code>
         </div>
-        <h5>Lille skygge</h5>
+        <h5>Cards</h5>
         <ul>
-            <li><p>Den lille skygge har en sort skygge på 0 2px 16px 0 og har variablen <code>$box-shadow-slightly</code></p></li>
-            <li><p>Den lille skygge bruges for eksempel på cards</p></li>
+            <li><p>Cards har en sort skygge på 0 2px 16px 0 og har variablen <code>$box-shadow-slightly</code></p></li>
         </ul>
         <p class="h6 mb-3">Eksempel:</p>
         <div class="code-highlight">
