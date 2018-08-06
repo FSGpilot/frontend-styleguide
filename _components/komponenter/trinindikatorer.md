@@ -27,10 +27,6 @@ lead:
       <li>Det aktive menupunkt skal have klassen <code>.active</code>.</li>
       <li>For at indikere et overstået trin, kan der indsættet et ikon med klassen <code>.sidenav-icon</code>. Dette ikon er sat til højre i trinet.</li>
     </ul>
-    <p class="h6">Tilføj ikon i tringuide</p>
-    <ul class="content-list">
-      <li>For at tilføje et ikon til ventre i tringuiden bruges klassen <code>.sidenav-icon-before</code>.</li>
-    </ul>
     <p class="h6">Tilføj information i tringuide</p>
     <ul class="content-list">
       <li>For at tilføje information til et trin bruges klassen <code>.sidenav-information</code>.</li>

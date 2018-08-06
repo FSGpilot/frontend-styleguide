@@ -19,56 +19,72 @@ title: Sidenav--responsive.html
 
                         <li>
                             <a href="">
+
                                 Parent link
+
                             </a>
 
                         </li>
 
                         <li>
                             <a href="" class="current">
+
                                 Current page
+
                             </a>
 
                             <ul class="sidenav-sub_list">
 
                                 <li>
                                     <a href="">
+
                                         Child link
+
                                     </a>
 
                                 </li>
 
                                 <li>
                                     <a href="" class="current">
+
                                         Child link
+
                                     </a>
 
                                     <ul class="sidenav-sub_list">
 
                                         <li>
                                             <a href="">
+
                                                 Grandchild link
+
                                             </a>
 
                                         </li>
 
                                         <li>
                                             <a href="">
+
                                                 Grandchild link
+
                                             </a>
 
                                         </li>
 
                                         <li>
                                             <a href="" class="active">
+
                                                 Grandchild link
+
                                             </a>
 
                                         </li>
 
                                         <li>
                                             <a href="">
+
                                                 Grandchild link
+
                                             </a>
 
                                         </li>
@@ -79,21 +95,27 @@ title: Sidenav--responsive.html
 
                                 <li>
                                     <a href="">
+
                                         Child link
+
                                     </a>
 
                                 </li>
 
                                 <li>
                                     <a href="">
+
                                         Child link
+
                                     </a>
 
                                 </li>
 
                                 <li>
                                     <a href="">
+
                                         Child link
+
                                     </a>
 
                                 </li>
@@ -104,7 +126,9 @@ title: Sidenav--responsive.html
 
                         <li>
                             <a href="">
+
                                 Another link
+
                             </a>
 
                         </li>
