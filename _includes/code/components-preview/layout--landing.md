@@ -43,22 +43,22 @@ title: Layout--landing.html
             <code class="Error-stack">
         <pre>Template render error: (unknown path)
   Error: Could not render component '@header--simpel' - component not found.
-    at Object.exports.prettifyError (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:34:15)
-    at C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:486:31
-    at eval (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:32:11)
-    at b_header (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:50:3)
-    at eval (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:31:85)
-    at b_banner (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:87:1)
-    at eval (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:27:85)
-    at b_skipnav (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:76:1)
-    at eval (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:23:86)
-    at b_styles (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:64:1)
-    at new_cls.root [as rootRenderFunc] (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:19:85)
-    at eval (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:28:16)
-    at eval (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:23:46)
-    at eval (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:23:85)
-    at eval (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:19:46)
-    at eval (eval at _compile (C:\Users\hma\Documents\repository\ERST_styleguide\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:19:83)</pre>
+    at Object.exports.prettifyError (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:34:15)
+    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:486:31
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:33:11)
+    at b_header (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:51:3)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:32:85)
+    at b_banner (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:88:1)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:28:85)
+    at b_skipnav (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:77:1)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:24:86)
+    at b_styles (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:65:1)
+    at new_cls.root [as rootRenderFunc] (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:20:85)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:29:16)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:24:46)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:24:85)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:20:46)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:20:83)</pre>
     </code>
 
         </div>

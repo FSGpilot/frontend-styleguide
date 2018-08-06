@@ -5,8 +5,9 @@ title: Tringuide.html
 ---
 <div class="container">
     <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-md-lg sidebar-col">
-            <p class="h6 mt-6">Klikbar trinindikator</p>
+        <div class="col-12 sidebar-col">
+
+            <p class="h6">Klikbar trinindikator</p>
 
             <ul class="sidenav-list">
 
@@ -59,8 +60,6 @@ title: Tringuide.html
 
             </ul>
 
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-md-lg sidebar-col">
             <p class="h6 mt-6">Låst trinindikator</p>
 
             <ul class="sidenav-list-locked">
@@ -114,168 +113,6 @@ title: Tringuide.html
 
             </ul>
 
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-md-lg sidebar-col">
-            <p class="h6 mt-6">Trinindikator med ikon</p>
-
-            <ul class="sidenav-list">
-
-                <li>
-                    <a href="">
-
-                        <span class="sidenav-icon-before">
-
-                            <svg class="icon-svg "><use xlink:href="#message"></use></svg>
-
-                        </span>
-
-                        1. Trin 1
-
-                        <span class="sidenav-icon">
-
-                            <svg class="icon-svg "><use xlink:href="#check"></use></svg>
-
-                        </span>
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-
-                        <span class="sidenav-icon-before">
-
-                            <svg class="icon-svg "><use xlink:href="#cash-multiple"></use></svg>
-
-                        </span>
-
-                        2. Trin 2
-
-                        <span class="sidenav-icon">
-
-                            <svg class="icon-svg "><use xlink:href="#check"></use></svg>
-
-                        </span>
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" class="active">
-
-                        <span class="sidenav-icon-before">
-
-                            <svg class="icon-svg "><use xlink:href="#folder-multiple"></use></svg>
-
-                        </span>
-
-                        3. Trin 3 (valgt)
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-
-                        <span class="sidenav-icon-before">
-
-                            <svg class="icon-svg "><use xlink:href="#file"></use></svg>
-
-                        </span>
-
-                        4. Trin 4
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-
-                        <span class="sidenav-icon-before">
-
-                            <svg class="icon-svg "><use xlink:href="#settings"></use></svg>
-
-                        </span>
-
-                        5. Trin 5
-
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-md-lg sidebar-col">
-            <p class="h6 mt-6">Trinindikator med information</p>
-
-            <ul class="sidenav-list">
-
-                <li>
-                    <a href="">
-                        1. Trin 1
-
-                        <span class="sidenav-icon">
-
-                            <svg class="icon-svg "><use xlink:href="#check"></use></svg>
-
-                        </span>
-
-                        <p class="sidenav-information">Informationstekst for trin 1</p>
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        2. Trin 2
-
-                        <span class="sidenav-icon">
-
-                            <svg class="icon-svg "><use xlink:href="#check"></use></svg>
-
-                        </span>
-
-                        <p class="sidenav-information">Informationstekst for trin 2</p>
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="" class="active">
-                        3. Trin 3 (valgt)
-
-                        <p class="sidenav-information">Informationstekst for trin 3</p>
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        4. Trin 4
-
-                        <p class="sidenav-information">Informationstekst for trin 4</p>
-
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        5. Trin 5
-
-                        <p class="sidenav-information">Informationstekst for trin 5</p>
-
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-md-lg sidebar-col">
-
             <p class="h6 mt-6">Trinindikator i overflow-menu</p>
 
             <div class="overflow-menu  overflow-menu--open-right ">
@@ -324,8 +161,6 @@ title: Tringuide.html
                 </div>
             </div>
 
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-md-lg sidebar-col">
             <p class="h6 mt-6 mb-3">Trinindikator - responsivt i overflow-menu</p>
             <p class="form-hint mt-0">Du skal gøre browservinduet mindre for at se ændringen</p>
             <div class="overflow-menu  overflow-menu--open-right overflow-menu--md-no-responsive">
@@ -371,7 +206,7 @@ title: Tringuide.html
                     </ul>
                 </div>
             </div>
+            <div style="padding-bottom: 240px;"></div>
         </div>
-        <div style="padding-bottom: 240px;"></div>
     </div>
 </div>
