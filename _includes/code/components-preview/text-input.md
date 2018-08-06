@@ -7,8 +7,8 @@ title: Text-input.html
 
     <div class="form-group">
         <label class="form-label icon-link " for="input-type-text">Text input label</label>
-
         <span class="form-hint" id="input-hint-message-input-type-text">For example, VO123456D</span>
+
         <input class="form-input  " placeholder="" id="input-type-text" value="" name="input-type-text"
             type="text">
     </div>
@@ -22,8 +22,8 @@ title: Text-input.html
 
     <div class="form-group input-error">
         <label class="form-label icon-link " for="input-error">Text input error</label>
-        <span class="input-error-message" id="input-error-message-input-error" role="alert">Helpful error message</span>
         <span class="form-hint" id="input-hint-message-input-error">For example, VO123456D</span>
+        <span class="input-error-message" id="input-error-message-input-error" role="alert">Helpful error message</span>
         <input class="form-input  " placeholder="" id="input-error" value="" name="input-error"
             type="text" aria-describedby="input-error-message-input-error" aria-describedby="input-hint-message-input-error">
     </div>

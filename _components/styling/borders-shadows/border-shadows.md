@@ -1,7 +1,7 @@
 ---
 permalink: /designandcode/kanter/
 layout: styleguide
-title: Kanter, streger og skygger
+title: Hjørner, streger og skygger
 category: UI components
 subcategory: Design og kode
 lead: ""

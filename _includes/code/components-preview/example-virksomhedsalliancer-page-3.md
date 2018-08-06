@@ -142,9 +142,9 @@ title: Example-virksomhedsalliancer-page-3.html
 
                     <div class="form-group">
                         <label class="form-label icon-link " for="id-state">Statsstøtte (EU de-minimis) i DKK</label>
-
                         <span class="form-hint" id="input-hint-message-id-state">Modtaget fra dags dato og de tre seneste løbende år
                             eksl. det aktuelle projekt.</span>
+
                         <input class="form-input  input-width-m" placeholder="" id="id-state" value=""
                             name="Input til statsstøtte (EU de-minimis) i DKK" type="text">
                     </div>
@@ -181,8 +181,8 @@ title: Example-virksomhedsalliancer-page-3.html
                                     <fieldset>
                                         <div class="form-group">
                                             <label class="form-label icon-link">Dato for modtagelse</label>
-                                            <span class="input-error-message" id="input-error-message-input-error" role="alert"></span>
                                             <span class="form-hint">Fx. 28 04 1996</span>
+                                            <span class="input-error-message" id="input-error-message-input-error" role="alert"></span>
                                             <div class="date-group js-calendar-group mt-3">
                                                 <div class="form-group form-group-day">
                                                     <label class="form-label" for="date_of_day_2">Dato</label>
@@ -230,8 +230,8 @@ title: Example-virksomhedsalliancer-page-3.html
                                     <div class="form-group">
                                         <label class="form-label icon-link " for="id-reference">Henvisning til yderligere information
                                             om ordningen</label>
-
                                         <span class="form-hint" id="input-hint-message-id-reference">Fx. et link (url)</span>
+
                                         <input class="form-input  input-width-m" placeholder="" id="id-reference" value=""
                                             name="Input til henvisning til yderligere information om ordningen"
                                             type="text">
@@ -297,7 +297,7 @@ title: Example-virksomhedsalliancer-page-3.html
 </footer>
 
 <div class="modal" id="modal-contact" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__overlay bg-modal" tabindex="-1" data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-contact-1">
             <header class="modal__header">
                 <h1 class="modal__title h2" id="modal-contact-1">

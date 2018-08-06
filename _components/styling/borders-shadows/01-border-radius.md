@@ -1,6 +1,6 @@
 ---
 type: component
-title: Kanter
+title: Hjørner
 parent: borders-shadows
 order: 01
 ---
@@ -13,20 +13,20 @@ order: 01
     Implementering
   </button>
   <div id="border-radius-docs" class="accordion-content">
-    <h5>Statiske kanter</h5>
+    <h5>Statiske hjørner</h5>
     <ul>
-        <li><p>Statiske kanter er lige og har en <code>border-radius: 0px;</code></p></li>
-        <li><p>For at få lige kanter bruges variablen <code>$static-border-radius</code></p></li>
+        <li><p>Statiske hjørner er lige og har en <code>border-radius: 0px;</code></p></li>
+        <li><p>For at få lige hjørner bruges variablen <code>$static-border-radius</code></p></li>
     </ul>
     <p class="h6 mb-3">Eksempel:</p>
     <div class="code-highlight">
         <code>border-radius: $static-border-radius;</code>
     </div>
-    <h5>Interaktive kanter</h5>
+    <h5>Interaktive hjørner</h5>
     <ul>
-        <li><p>Interaktive kanter er runde og har en <code>border-radius: 4px;</code></p></li>
-        <li><p>For at få runde kanter bruges variablen <code>$interactive-border-radius</code></p></li>
-        <li><p>Interaktive kanter bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</p></li>
+        <li><p>Interaktive hjørner er runde og har en <code>border-radius: 4px;</code></p></li>
+        <li><p>For at få runde hjørner bruges variablen <code>$interactive-border-radius</code></p></li>
+        <li><p>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</p></li>
     </ul>
     <p class="h6 mb-3">Eksempel:</p>
     <div class="code-highlight">

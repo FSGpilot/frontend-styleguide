@@ -146,8 +146,8 @@ title: Example-virksomhedsalliancer-page-2.html
 
                     <div class="form-group">
                         <label class="form-label icon-link " for="id-sales">Omsætning i DKK i seneste regnskabsår</label>
-
                         <span class="form-hint" id="input-hint-message-id-sales">Angives i helt tal, fx. 11.650.334</span>
+
                         <input class="form-input  input-width-m" placeholder="" id="id-sales" value=""
                             name="Input til omsætning i DKK i seneste regnskabsår"
                             type="text">
@@ -201,7 +201,7 @@ title: Example-virksomhedsalliancer-page-2.html
 </footer>
 
 <div class="modal" id="modal-contact" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__overlay bg-modal" tabindex="-1" data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-contact-1">
             <header class="modal__header">
                 <h1 class="modal__title h2" id="modal-contact-1">

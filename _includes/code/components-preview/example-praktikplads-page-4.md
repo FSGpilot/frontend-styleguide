@@ -107,15 +107,12 @@ title: Example-praktikplads-page-4.html
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
-                    <ul>
-                        <a href="#" class="function-link">Udskriv
-                            <svg class="icon-svg "><use xlink:href="#printer"></use></svg>
-                        </a>
-                        <a href="" class="function-link">Hjælp
-                            <svg class="icon-svg "><use xlink:href="#help-circle-outline"></use></svg>
-
-                        </a>
-
+                    <a href="#" class="function-link">Udskriv
+                        <svg class="icon-svg "><use xlink:href="#printer"></use></svg>
+                    </a>
+                    <a href="" class="function-link">Hjælp
+                        <svg class="icon-svg "><use xlink:href="#help-circle-outline"></use></svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -242,7 +239,7 @@ title: Example-praktikplads-page-4.html
 </footer>
 
 <div class="modal" id="modal-contact" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__overlay bg-modal" tabindex="-1" data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-contact-1">
             <header class="modal__header">
                 <h1 class="modal__title h2" id="modal-contact-1">
