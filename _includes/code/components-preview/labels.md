@@ -3,7 +3,6 @@ permalink: /preview-components/labels.html
 layout: iframed 
 title: Labels.html
 ---
-
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -17,6 +16,6 @@ title: Labels.html
                     </tr>
                 </thead>
             </table>
-		</div>
+        </div>
     </div>
 </div>
