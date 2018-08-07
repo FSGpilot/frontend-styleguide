@@ -17,6 +17,8 @@ subnav:
   href: '#table-med-zebra-linier'
 - text: Linjehøjde
   href: '#tabeller-med-forskellige-liniehøjde'
+- text: Med titel i venstre kolonne
+  href: '#med-titel-i-venstre-kolonne'
 ---
 
 {% include child-sections.html parent='Tables' %}
