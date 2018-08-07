@@ -14,6 +14,8 @@ subnav:
   href: '#manchettekst-lead-paragraph'
 - text: Brødtekst
   href: '#brødtekst-body-copy'
+- text: Labels
+  href: '#labels'
 - text: Links
   href: '#links'
 - text: Display text
