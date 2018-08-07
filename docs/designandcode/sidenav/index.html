@@ -1393,10 +1393,12 @@
   <button class="accordion-button" aria-controls="code-sidenav--compare">Kode</button>
   <div id="code-sidenav--compare" class="accordion-content">
     
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container mt-6 mb-6"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 sidebar-col"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"h4 mt-6"</span><span class="nt">&gt;</span>1 level<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h5&gt;</span>Normal sidenavigation<span class="nt">&lt;/h5&gt;</span>
+
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>1 level<span class="nt">&lt;/h6&gt;</span>
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
@@ -1406,21 +1408,27 @@
 
                                 <span class="nt">&lt;li&gt;</span>
                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                         Parent link
+
                                     <span class="nt">&lt;/a&gt;</span>
 
                                 <span class="nt">&lt;/li&gt;</span>
 
                                 <span class="nt">&lt;li&gt;</span>
                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+
                                         Current page
+
                                     <span class="nt">&lt;/a&gt;</span>
 
                                 <span class="nt">&lt;/li&gt;</span>
 
                                 <span class="nt">&lt;li&gt;</span>
                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                         Another link
+
                                     <span class="nt">&lt;/a&gt;</span>
 
                                 <span class="nt">&lt;/li&gt;</span>
@@ -1430,14 +1438,8 @@
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 sidebar-col"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"h4 mt-6"</span><span class="nt">&gt;</span>2 levels<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>2 levels<span class="nt">&lt;/h6&gt;</span>
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
@@ -1447,49 +1449,63 @@
 
                                 <span class="nt">&lt;li&gt;</span>
                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                         Parent link
+
                                     <span class="nt">&lt;/a&gt;</span>
 
                                 <span class="nt">&lt;/li&gt;</span>
 
                                 <span class="nt">&lt;li&gt;</span>
                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;</span>
+
                                         Current page
+
                                     <span class="nt">&lt;/a&gt;</span>
 
                                     <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-sub_list"</span><span class="nt">&gt;</span>
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                         <span class="nt">&lt;/li&gt;</span>
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                         <span class="nt">&lt;/li&gt;</span>
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                         <span class="nt">&lt;/li&gt;</span>
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                         <span class="nt">&lt;/li&gt;</span>
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                         <span class="nt">&lt;/li&gt;</span>
@@ -1500,7 +1516,9 @@
 
                                 <span class="nt">&lt;li&gt;</span>
                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                         Another link
+
                                     <span class="nt">&lt;/a&gt;</span>
 
                                 <span class="nt">&lt;/li&gt;</span>
@@ -1510,14 +1528,8 @@
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 sidebar-col"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"h4 mt-6"</span><span class="nt">&gt;</span>3 levels<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>3 levels<span class="nt">&lt;/h6&gt;</span>
 
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
@@ -1527,56 +1539,72 @@
 
                                 <span class="nt">&lt;li&gt;</span>
                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                         Parent link
+
                                     <span class="nt">&lt;/a&gt;</span>
 
                                 <span class="nt">&lt;/li&gt;</span>
 
                                 <span class="nt">&lt;li&gt;</span>
                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;</span>
+
                                         Current page
+
                                     <span class="nt">&lt;/a&gt;</span>
 
                                     <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-sub_list"</span><span class="nt">&gt;</span>
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                         <span class="nt">&lt;/li&gt;</span>
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-sub_list"</span><span class="nt">&gt;</span>
 
                                                 <span class="nt">&lt;li&gt;</span>
                                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                         Grandchild link
+
                                                     <span class="nt">&lt;/a&gt;</span>
 
                                                 <span class="nt">&lt;/li&gt;</span>
 
                                                 <span class="nt">&lt;li&gt;</span>
                                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                         Grandchild link
+
                                                     <span class="nt">&lt;/a&gt;</span>
 
                                                 <span class="nt">&lt;/li&gt;</span>
 
                                                 <span class="nt">&lt;li&gt;</span>
                                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+
                                                         Grandchild link
+
                                                     <span class="nt">&lt;/a&gt;</span>
 
                                                 <span class="nt">&lt;/li&gt;</span>
 
                                                 <span class="nt">&lt;li&gt;</span>
                                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                         Grandchild link
+
                                                     <span class="nt">&lt;/a&gt;</span>
 
                                                 <span class="nt">&lt;/li&gt;</span>
@@ -1587,21 +1615,27 @@
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                         <span class="nt">&lt;/li&gt;</span>
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                         <span class="nt">&lt;/li&gt;</span>
 
                                         <span class="nt">&lt;li&gt;</span>
                                             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                                 Child link
+
                                             <span class="nt">&lt;/a&gt;</span>
 
                                         <span class="nt">&lt;/li&gt;</span>
@@ -1612,7 +1646,9 @@
 
                                 <span class="nt">&lt;li&gt;</span>
                                     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
                                         Another link
+
                                     <span class="nt">&lt;/a&gt;</span>
 
                                 <span class="nt">&lt;/li&gt;</span>
@@ -1622,6 +1658,609 @@
                     <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-6 mt-md-0"</span><span class="nt">&gt;</span>Sidenavigation med ikon<span class="nt">&lt;/h5&gt;</span>
+
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>1 level<span class="nt">&lt;/h6&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 sidebar-col"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;nav&gt;</span>
+                            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
+
+                                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#message"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                                        <span class="nt">&lt;/span&gt;</span>
+
+                                        Parent link
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
+
+                                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#cash-multiple"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                                        <span class="nt">&lt;/span&gt;</span>
+
+                                        Current page
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
+
+                                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#settings"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                                        <span class="nt">&lt;/span&gt;</span>
+
+                                        Another link
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                            <span class="nt">&lt;/ul&gt;</span>
+                        <span class="nt">&lt;/nav&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>2 levels<span class="nt">&lt;/h6&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 sidebar-col"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;nav&gt;</span>
+                            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
+
+                                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#message"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                                        <span class="nt">&lt;/span&gt;</span>
+
+                                        Parent link
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
+
+                                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#cash-multiple"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                                        <span class="nt">&lt;/span&gt;</span>
+
+                                        Current page
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-sub_list"</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                    <span class="nt">&lt;/ul&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
+
+                                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#settings"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                                        <span class="nt">&lt;/span&gt;</span>
+
+                                        Another link
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                            <span class="nt">&lt;/ul&gt;</span>
+                        <span class="nt">&lt;/nav&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>3 levels<span class="nt">&lt;/h6&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 sidebar-col"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;nav&gt;</span>
+                            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
+
+                                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#message"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                                        <span class="nt">&lt;/span&gt;</span>
+
+                                        Parent link
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
+
+                                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#cash-multiple"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                                        <span class="nt">&lt;/span&gt;</span>
+
+                                        Current page
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-sub_list"</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-sub_list"</span><span class="nt">&gt;</span>
+
+                                                <span class="nt">&lt;li&gt;</span>
+                                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                        Grandchild link
+
+                                                    <span class="nt">&lt;/a&gt;</span>
+
+                                                <span class="nt">&lt;/li&gt;</span>
+
+                                                <span class="nt">&lt;li&gt;</span>
+                                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                        Grandchild link
+
+                                                    <span class="nt">&lt;/a&gt;</span>
+
+                                                <span class="nt">&lt;/li&gt;</span>
+
+                                                <span class="nt">&lt;li&gt;</span>
+                                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+
+                                                        Grandchild link
+
+                                                    <span class="nt">&lt;/a&gt;</span>
+
+                                                <span class="nt">&lt;/li&gt;</span>
+
+                                                <span class="nt">&lt;li&gt;</span>
+                                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                        Grandchild link
+
+                                                    <span class="nt">&lt;/a&gt;</span>
+
+                                                <span class="nt">&lt;/li&gt;</span>
+
+                                            <span class="nt">&lt;/ul&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                    <span class="nt">&lt;/ul&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
+
+                                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#settings"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+
+                                        <span class="nt">&lt;/span&gt;</span>
+
+                                        Another link
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                            <span class="nt">&lt;/ul&gt;</span>
+                        <span class="nt">&lt;/nav&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-6 mt-md-0"</span><span class="nt">&gt;</span>Sidenavigation med information<span class="nt">&lt;/h5&gt;</span>
+
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>1 level<span class="nt">&lt;/h6&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 sidebar-col"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;nav&gt;</span>
+                            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        Parent link
+
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for parent link<span class="nt">&lt;/p&gt;</span>
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+
+                                        Current page
+
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for current link<span class="nt">&lt;/p&gt;</span>
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        Another link
+
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for another link<span class="nt">&lt;/p&gt;</span>
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                            <span class="nt">&lt;/ul&gt;</span>
+                        <span class="nt">&lt;/nav&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>2 levels<span class="nt">&lt;/h6&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 sidebar-col"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;nav&gt;</span>
+                            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        Parent link
+
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for parent link<span class="nt">&lt;/p&gt;</span>
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;</span>
+
+                                        Current page
+
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for current link<span class="nt">&lt;/p&gt;</span>
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-sub_list"</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                    <span class="nt">&lt;/ul&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        Another link
+
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for another link<span class="nt">&lt;/p&gt;</span>
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                            <span class="nt">&lt;/ul&gt;</span>
+                        <span class="nt">&lt;/nav&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>3 levels<span class="nt">&lt;/h6&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 sidebar-col"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;nav&gt;</span>
+                            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        Parent link
+
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for parent link<span class="nt">&lt;/p&gt;</span>
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;</span>
+
+                                        Current page
+
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for current link<span class="nt">&lt;/p&gt;</span>
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-sub_list"</span><span class="nt">&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-sub_list"</span><span class="nt">&gt;</span>
+
+                                                <span class="nt">&lt;li&gt;</span>
+                                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                        Grandchild link
+
+                                                    <span class="nt">&lt;/a&gt;</span>
+
+                                                <span class="nt">&lt;/li&gt;</span>
+
+                                                <span class="nt">&lt;li&gt;</span>
+                                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                        Grandchild link
+
+                                                    <span class="nt">&lt;/a&gt;</span>
+
+                                                <span class="nt">&lt;/li&gt;</span>
+
+                                                <span class="nt">&lt;li&gt;</span>
+                                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+
+                                                        Grandchild link
+
+                                                    <span class="nt">&lt;/a&gt;</span>
+
+                                                <span class="nt">&lt;/li&gt;</span>
+
+                                                <span class="nt">&lt;li&gt;</span>
+                                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                        Grandchild link
+
+                                                    <span class="nt">&lt;/a&gt;</span>
+
+                                                <span class="nt">&lt;/li&gt;</span>
+
+                                            <span class="nt">&lt;/ul&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                        <span class="nt">&lt;li&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                                Child link
+
+                                            <span class="nt">&lt;/a&gt;</span>
+
+                                        <span class="nt">&lt;/li&gt;</span>
+
+                                    <span class="nt">&lt;/ul&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                                <span class="nt">&lt;li&gt;</span>
+                                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+                                        Another link
+
+                                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sidenav-information"</span><span class="nt">&gt;</span>Informationstekst for another link<span class="nt">&lt;/p&gt;</span>
+
+                                    <span class="nt">&lt;/a&gt;</span>
+
+                                <span class="nt">&lt;/li&gt;</span>
+
+                            <span class="nt">&lt;/ul&gt;</span>
+                        <span class="nt">&lt;/nav&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -1637,10 +2276,18 @@
     Implementering
   </button>
   <div id="sidenav-tech-docs" aria-hidden="false" class="accordion-content">
+    <h5>Sidenavigation</h5>
+    <h6>Aktivte menupunkter</h6>
     <ul>
       <li>Teksten i det aktive menupunkt bliver styret af primærfarven, som og sættes med variablen <code>$color-primary</code></li>
       <li>Aktive menupunkter skal have <code>.current</code> klassen.</li>
       <li>Kun det sidste aktive menupunkt skal i stedet have <code>.active</code> klassen.</li>
+    </ul>
+    <h6>Tilføj ikon og information i sidenavigation</h6>
+    <ul>
+      <li>For at tilføje et ikon til et punkt i sidenavigationen bruges klassen <code>.sidenav-icon-before</code>.</li>
+      <li>For at tilføje information til et punkt i sidenavigationen bruges klassen <code>.sidenav-information</code>.</li>
+      <li>Ikoner og informationer kan også sammensættes i én sidenavigation</li>
     </ul>
   </div>
 </div>
