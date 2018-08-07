@@ -13,6 +13,8 @@ subnav:
   href: '#tekst-input'
 - text: Input bredde og validering
   href: '#input-bredde'
+- text: Tekst area
+  href: '#tekst-area'
 - text: Select
   href: '#select'
 - text: Checkbox
@@ -21,8 +23,7 @@ subnav:
   href: '#radio-knap'
 - text: Dato input
   href: '#dato-input'
-- text: Tekst area
-  href: '#tekst-area'
+
 - text: Fil input
   href: '#fil-input'
 ---

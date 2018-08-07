@@ -128,6 +128,7 @@ title: Example-virksomhedsalliancer-page-4.html
                         <label class="form-label " for="id-advisors">Navn(-e) på rådgivere på ambassaden/generalkonsulatet</label>
                         <span class="form-hint" id="input-hint-message-id-advisors">Navne skal skrives i samme rækkefølge, som landene er
                             anført</span>
+
                         <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
                             id="id-advisors" name="Input til navn(-e) på rådgivere på ambassaden/generalkonsulatet"
                             type="text"></textarea>

@@ -9,11 +9,11 @@ lead:
 {% include code/accordion.html component="text-input-width" %}
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
-      aria-expanded="true" aria-controls="text-input-width-docs">
+      aria-expanded="false" aria-controls="text-input-width-docs">
     Implementering
   </button>
-  <div id="text-input-width-docs" aria-hidden="false" class="accordion-content">
-    <h5>Input bredde med rem</h5>
+  <div id="text-input-width-docs" aria-hidden="true" class="accordion-content">
+    <h5>Input bredde med rem</h5> 
     <p>Inputfelter har en standard bredde på 32rem, for at ændre bredden på inputfelter bruges nedenstående klasser:</p>
     <ul>
       <li><code>.input-width-xxs</code> har en bredde på 8rem</li>
