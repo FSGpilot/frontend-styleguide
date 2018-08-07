@@ -73,13 +73,13 @@
 
     window.baseurl='/frontend-styleguide';
     if (window.location.search.indexOf('s=virkdk') !== -1) {
-      lnk.href= window.baseurl + '/css/styleguide-virkdk.css';
+      lnk.href= window.baseurl + '/css/styleguide-virkdk.min.css';
       window.curStyle = "virkdk";
     } else if(window.location.search.indexOf('s=borgerdk') !== -1) {
-      lnk.href= window.baseurl + '/css/styleguide-borgerdk.css';
+      lnk.href= window.baseurl + '/css/styleguide-borgerdk.min.css';
       window.curStyle = "borgerdk";
     } else {
-      lnk.href= window.baseurl + '/css/styleguide.css';
+      lnk.href= window.baseurl + '/css/styleguide.min.css';
     }
     document.getElementsByTagName('head')[0].appendChild(lnk);
 </script>
