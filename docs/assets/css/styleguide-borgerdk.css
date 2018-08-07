@@ -6857,6 +6857,31 @@ textarea {
     .nav-secondary .nav-secondary-heading + ul {
       margin-left: 16px; } }
 
+@media (max-width: 992px) {
+  .nav .overflow-menu {
+    width: 100%; }
+    .nav .overflow-menu .button-overflow-menu {
+      width: 100%;
+      justify-content: left;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 16px;
+      padding-bottom: 16px; }
+      .nav .overflow-menu .button-overflow-menu:after, .nav .overflow-menu .button-overflow-menu:before {
+        display: none !important; }
+    .nav .overflow-menu .overflow-menu-inner {
+      position: static;
+      border: none;
+      box-shadow: none; }
+      .nav .overflow-menu .overflow-menu-inner .overflow-list {
+        padding-left: 16px; }
+      .nav .overflow-menu .overflow-menu-inner a, .nav .overflow-menu .overflow-menu-inner button {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 16px;
+        padding-bottom: 16px; } }
+
 .nav-primary .overflow-menu .button-overflow-menu {
   color: #1a1a1a;
   font-size: 1.6rem;
@@ -6911,7 +6936,9 @@ textarea {
   color: #1a1a1a;
   background-color: #fff;
   padding-left: 16px;
-  border-top: 1px solid #BFBFBF; }
+  border-top: 1px solid #BFBFBF;
+  padding-top: 0;
+  padding-bottom: 0; }
   .nav-primary .overflow-menu .overflow-menu-inner > li {
     margin-bottom: 0;
     margin-top: 0;
@@ -6990,31 +7017,6 @@ textarea {
   @media screen and (min-width: 992px) {
     .navbar-inner {
       flex-direction: row; } }
-
-@media (max-width: 992px) {
-  .nav .overflow-menu {
-    width: 100%; }
-    .nav .overflow-menu .button-overflow-menu {
-      width: 100%;
-      justify-content: left;
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 16px;
-      padding-bottom: 16px; }
-      .nav .overflow-menu .button-overflow-menu:after, .nav .overflow-menu .button-overflow-menu:before {
-        display: none !important; }
-    .nav .overflow-menu .overflow-menu-inner {
-      position: static;
-      border: none;
-      box-shadow: none; }
-      .nav .overflow-menu .overflow-menu-inner .overflow-list {
-        padding-left: 16px; }
-      .nav .overflow-menu .overflow-menu-inner a, .nav .overflow-menu .overflow-menu-inner button {
-        text-align: left;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 16px;
-        padding-bottom: 16px; } }
 
 .nav-info-list {
   display: flex;
@@ -7926,10 +7928,7 @@ input[type=search] {
     padding-left: 0;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: #1a1a1a;
-    /*&>li{
-        display: flex; //fixes bug for overflow lists inside datatables. 
-    }*/ }
+    color: #1a1a1a; }
     .overflow-menu .overflow-list > li {
       margin-bottom: 0;
       margin-top: 0;
