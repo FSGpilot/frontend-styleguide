@@ -125,9 +125,13 @@
 
 
 
+
+
+
+
   <!-- Do not render subnavs-->
   <a href="/frontend-styleguide/designandcode/" 
-    class="  nav-link">
+    class="current nav-link">
     <span>Design og kode</span>
   </a>
 
@@ -145,9 +149,13 @@
 
 
 
+
+
+
+
   <!-- Do not render subnavs-->
   <a href="/frontend-styleguide/examples/" 
-    class="  nav-link">
+    class="nav-link">
     <span>Eksempler</span>
   </a>
 
@@ -197,6 +205,10 @@
 
 
 
+
+
+
+
   <!--Do render subnavs-->
 
   
@@ -208,10 +220,10 @@
 
   
     <div class="overflow-menu">
-      <button class=" button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="false">
+      <button class="current  button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow1" aria-haspopup="true" aria-expanded="true"  >
         <span>Design og kode</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="false">
         <ul class="overflow-list">
   
   <li>
@@ -734,6 +746,10 @@
 
 
 
+
+
+
+
   <!--Do render subnavs-->
 
   
@@ -745,7 +761,7 @@
 
   
     <div class="overflow-menu">
-      <button class=" button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow2" aria-haspopup="true" aria-expanded="false">
+      <button class=" button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow2" aria-haspopup="true" aria-expanded="false"  >
         <span>Eksempler</span>
       </button>
       <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
@@ -775,7 +791,7 @@
 
 
 
-<a href="/frontend-styleguide/pageexamples/" 
+<a href="/frontend-styleguide/examples/pageexamples/" 
   class="  nav-link">
   Sideeksempler
 </a>
@@ -1395,7 +1411,7 @@
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-md-lg sidebar-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>Klikbar trinindikator<span class="nt">&lt;/p&gt;</span>
 
             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
@@ -1450,7 +1466,7 @@
             <span class="nt">&lt;/ul&gt;</span>
 
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-md-lg sidebar-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>Låst trinindikator<span class="nt">&lt;/p&gt;</span>
 
             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list-locked"</span><span class="nt">&gt;</span>
@@ -1505,99 +1521,7 @@
             <span class="nt">&lt;/ul&gt;</span>
 
         <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-md-lg sidebar-col"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>Trinindikator med ikon<span class="nt">&lt;/p&gt;</span>
-
-            <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
-
-                <span class="nt">&lt;li&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
-
-                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#message"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-
-                        <span class="nt">&lt;/span&gt;</span>
-
-                        1. Trin 1
-
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
-
-                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-
-                        <span class="nt">&lt;/span&gt;</span>
-
-                    <span class="nt">&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-
-                <span class="nt">&lt;li&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
-
-                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#cash-multiple"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-
-                        <span class="nt">&lt;/span&gt;</span>
-
-                        2. Trin 2
-
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon"</span><span class="nt">&gt;</span>
-
-                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#check"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-
-                        <span class="nt">&lt;/span&gt;</span>
-
-                    <span class="nt">&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-
-                <span class="nt">&lt;li&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
-
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
-
-                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#folder-multiple"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-
-                        <span class="nt">&lt;/span&gt;</span>
-
-                        3. Trin 3 (valgt)
-
-                    <span class="nt">&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-
-                <span class="nt">&lt;li&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
-
-                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#file"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-
-                        <span class="nt">&lt;/span&gt;</span>
-
-                        4. Trin 4
-
-                    <span class="nt">&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-
-                <span class="nt">&lt;li&gt;</span>
-                    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
-
-                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sidenav-icon-before"</span><span class="nt">&gt;</span>
-
-                            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-svg "</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#settings"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-
-                        <span class="nt">&lt;/span&gt;</span>
-
-                        5. Trin 5
-
-                    <span class="nt">&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-
-            <span class="nt">&lt;/ul&gt;</span>
-
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-md-lg sidebar-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>Trinindikator med information<span class="nt">&lt;/p&gt;</span>
 
             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"sidenav-list"</span><span class="nt">&gt;</span>
@@ -1664,7 +1588,7 @@
         <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-md-lg sidebar-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col"</span><span class="nt">&gt;</span>
 
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6"</span><span class="nt">&gt;</span>Trinindikator i overflow-menu<span class="nt">&lt;/p&gt;</span>
 
@@ -1715,7 +1639,7 @@
             <span class="nt">&lt;/div&gt;</span>
 
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-6 col-md-lg sidebar-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6 mt-6 mb-3"</span><span class="nt">&gt;</span>Trinindikator - responsivt i overflow-menu<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-hint mt-0"</span><span class="nt">&gt;</span>Du skal gøre browservinduet mindre for at se ændringen<span class="nt">&lt;/p&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-menu  overflow-menu--open-right overflow-menu--md-no-responsive"</span><span class="nt">&gt;</span>
@@ -1787,10 +1711,6 @@
       <li>Teksten i det aktive menupunkt bliver styret af primærfarven, som sættes med variablen <code>$color-primary</code></li>
       <li>Det aktive menupunkt skal have klassen <code>.active</code>.</li>
       <li>For at indikere et overstået trin, kan der indsættet et ikon med klassen <code>.sidenav-icon</code>. Dette ikon er sat til højre i trinet.</li>
-    </ul>
-    <p class="h6">Tilføj ikon i tringuide</p>
-    <ul class="content-list">
-      <li>For at tilføje et ikon til ventre i tringuiden bruges klassen <code>.sidenav-icon-before</code>.</li>
     </ul>
     <p class="h6">Tilføj information i tringuide</p>
     <ul class="content-list">

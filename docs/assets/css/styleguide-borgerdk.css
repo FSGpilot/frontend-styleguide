@@ -5181,7 +5181,8 @@ legend {
   font-weight: 600;
   color: #1a1a1a;
   display: block;
-  color: #E92021; }
+  color: #E92021;
+  margin-top: 4px; }
 
 .form-group.input-success .form-input,
 .form-group.input-success .form-select {
@@ -5907,6 +5908,8 @@ table.dataTable.table--zebra tr.even {
     background-color: #F5F5F5; }
     table.dataTable.table--zebra tr.even + tr.child:hover {
       background-color: #F5F5F5 !important; }
+table.dataTable .overflow-menu .overflow-list li {
+  display: flex; }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   padding: 8px 16px;
@@ -7223,9 +7226,7 @@ input[type=search] {
   .sidenav-list li a ul {
     width: 100%; }
   .sidenav-list li a .sidenav-icon-before {
-    margin-right: 10px;
-    width: 22px;
-    height: 22px;
+    margin-right: 4px;
     line-height: 23px;
     text-align: left; }
   .sidenav-list li a .sidenav-icon {
@@ -7239,7 +7240,14 @@ input[type=search] {
       color: #fff; }
   .sidenav-list li a .sidenav-information {
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-family: "IBMPlexSans";
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    display: block;
+    color: #747474; }
   .sidenav-list li a:focus {
     background-color: transparent; }
 
@@ -7300,9 +7308,6 @@ input[type=search] {
     .sidenav-list-locked li.disabled a {
       cursor: not-allowed; }
   .sidenav-list-locked li a .sidenav-icon-before {
-    margin-right: 10px;
-    width: 22px;
-    height: 22px;
     line-height: 23px;
     text-align: left; }
   .sidenav-list-locked li a .sidenav-icon {
@@ -7315,8 +7320,16 @@ input[type=search] {
     .sidenav-list-locked li a .sidenav-icon i {
       color: #fff; }
   .sidenav-list-locked li a .sidenav-information {
+    margin-right: 4px;
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-family: "IBMPlexSans";
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    display: block;
+    color: #747474; }
 
 .sidenav-sub_list {
   margin-top: 0;
@@ -7913,7 +7926,10 @@ input[type=search] {
     padding-left: 0;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: #1a1a1a; }
+    color: #1a1a1a;
+    /*&>li{
+        display: flex; //fixes bug for overflow lists inside datatables. 
+    }*/ }
     .overflow-menu .overflow-list > li {
       margin-bottom: 0;
       margin-top: 0;
@@ -7921,8 +7937,6 @@ input[type=search] {
       .overflow-menu .overflow-list > li:before {
         content: "" !important;
         padding-right: 0 !important; }
-    .overflow-menu .overflow-list > li {
-      display: flex; }
     .overflow-menu .overflow-list button {
       background-color: transparent;
       border: 0;

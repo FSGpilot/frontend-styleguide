@@ -1,4 +1,13 @@
-{% include nav/current.html page=include.page %}
+{% assign item_url = include.page.url %}
+{% assign current_url = page.url %}
+{% assign is_active = false %}
+{% if current_url contains item_url %}
+  {% assign is_active = true %}
+{% endif %}
+
+{% if include.is_sidenav and include.text %}
+  {% assign titletext = include.text %}
+{% endif %}
 
 {% assign titletext = include.page.title  %}
 {% if include.is_sidenav and include.text %}
@@ -8,7 +17,7 @@
 {% if include.flat -%}
   <!-- Do not render subnavs-->
   <a href="{{ include.page.url | relative_url }}" 
-    class="{% if _current -%}current {% endif %} {%  if _active -%}active {% endif %} nav-link">
+    class="{% if is_active == true -%}current {% endif %}nav-link">
     <span>{{ titletext | smartify }}</span>
   </a>
 {% else -%}
@@ -26,10 +35,10 @@
 
   {% if _links -%}
     <div class="overflow-menu">
-      <button class="{% if _current -%}current {% endif %} button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow{{ include.uniqueid }}" aria-haspopup="true" aria-expanded="false">
+      <button class="{% if is_active == true -%}current {% endif %} button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="#headeroverflow{{ include.uniqueid }}" aria-haspopup="true" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
         <span>{{ titletext | smartify }}</span>
       </button>
-      <div class="overflow-menu-inner" id="headeroverflow{{ include.uniqueid }}" aria-hidden="true">
+      <div class="overflow-menu-inner" id="headeroverflow{{ include.uniqueid }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
         <ul class="overflow-list">{%
             include nav/list.html
             links=_links

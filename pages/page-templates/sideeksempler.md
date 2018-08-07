@@ -1,5 +1,5 @@
 ---
-permalink: /pageexamples/
+permalink: /examples/pageexamples/
 layout: styleguide
 title: Sideeksempler
 category: Page templates
