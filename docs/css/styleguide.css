@@ -7919,10 +7919,7 @@ input[type=search] {
     padding-left: 0;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: #1a1a1a;
-    /*&>li{
-        display: flex; //fixes bug for overflow lists inside datatables. 
-    }*/ }
+    color: #1a1a1a; }
     .overflow-menu .overflow-list > li {
       margin-bottom: 0;
       margin-top: 0;

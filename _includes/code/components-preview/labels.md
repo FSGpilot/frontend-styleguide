@@ -3,11 +3,26 @@ permalink: /preview-components/labels.html
 layout: iframed 
 title: Labels.html
 ---
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <label>Dette er en label (label-tag)</label>
-            <label class="form-label">Dette er en label (.form-label)</label>
-        </div>
-    </div>
-</div>
+<ul class="unstyled-list">
+
+    <li>
+        <h4>Normal</h4>
+    </li>
+    <li>
+        <span class="label">Normal</span>
+    </li>
+
+    <li>
+        <h4>Big</h4>
+    </li>
+    <li>
+        <span class="label usa-label-big">Big</span>
+    </li>
+
+</ul>
+
+<style scoped>
+    h4 {
+        margin-bottom: 10px;
+    }
+</style>
