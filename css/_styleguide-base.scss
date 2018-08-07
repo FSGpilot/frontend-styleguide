@@ -530,6 +530,21 @@ code {
   }
 }
 
+//HEX colors for color page
+.code-color-hex {
+  font-family: $font-monospace;
+  font-size: 1.6rem;
+  font-weight: $font-weight-bold;
+}
+
+//Variables for color page
+.code-color-variable {
+  font-family: $font-monospace;
+  font-size: 1.3rem;
+  font-weight: $font-weight-normal;
+}
+
+
 // Code snippet boxes
 .code-sample {
   pre,
