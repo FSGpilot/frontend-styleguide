@@ -23,6 +23,7 @@ incremental_regeneration_fixer:
 #     - "_components/typography/*"
 
 sass:
+  style: compressed
   load_paths:
     - css
     - assets/css
