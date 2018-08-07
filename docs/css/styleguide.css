@@ -5174,7 +5174,8 @@ legend {
   font-weight: 600;
   color: #1a1a1a;
   display: block;
-  color: #E92021; }
+  color: #E92021;
+  margin-top: 4px; }
 
 .form-group.input-success .form-input,
 .form-group.input-success .form-select {
@@ -5900,6 +5901,8 @@ table.dataTable.table--zebra tr.even {
     background-color: #F5F5F5; }
     table.dataTable.table--zebra tr.even + tr.child:hover {
       background-color: #F5F5F5 !important; }
+table.dataTable .overflow-menu .overflow-list li {
+  display: flex; }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   padding: 8px 16px;
@@ -7916,7 +7919,10 @@ input[type=search] {
     padding-left: 0;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: #1a1a1a; }
+    color: #1a1a1a;
+    /*&>li{
+        display: flex; //fixes bug for overflow lists inside datatables. 
+    }*/ }
     .overflow-menu .overflow-list > li {
       margin-bottom: 0;
       margin-top: 0;
@@ -7924,8 +7930,6 @@ input[type=search] {
       .overflow-menu .overflow-list > li:before {
         content: "" !important;
         padding-right: 0 !important; }
-    .overflow-menu .overflow-list > li {
-      display: flex; }
     .overflow-menu .overflow-list button {
       background-color: transparent;
       border: 0;
