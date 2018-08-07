@@ -16,8 +16,8 @@ subnav:
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <div class="row mt-5">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-    <a href="{{ site.baseurl }}/pages/page-templates/AES-erstatningssag/aes-9"><img src="{{ site.baseurl }}/img/examples_pages/opsummeringsside.PNG" style="max-width: 100%; width: 1018px"></a>
-    <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/AES-erstatningssag/aes-9">Demo opsummeringsside</a>
+    <a href="{{ site.baseurl }}/pages/page-templates/opsummering/opsummering-1"><img src="{{ site.baseurl }}/img/examples_pages/opsummering/opsummeringsside.PNG" style="max-width: 100%; width: 1018px"></a>
+    <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/opsummering/opsummering-1">Demo opsummeringsside</a>
   </div>
 </div>
 <!-- SOLUTION 2 -->

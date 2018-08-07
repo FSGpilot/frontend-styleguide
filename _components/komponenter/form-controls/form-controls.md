@@ -21,6 +21,8 @@ subnav:
   href: '#radio-knap'
 - text: Dato input
   href: '#dato-input'
+- text: Tekst area
+  href: '#tekst-area'
 - text: Fil input
   href: '#fil-input'
 ---

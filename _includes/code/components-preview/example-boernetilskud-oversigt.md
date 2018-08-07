@@ -58,23 +58,39 @@ title: Example-boernetilskud-oversigt.html
             <div class="navbar-inner container">
                 <ul class="nav-primary">
                     <li>
-                        <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-oversigt"
-                            class="nav-link current" title="Designsystem">
-                            <span>Oversigt</span>
-                        </a>
+                        <div class="overflow-menu">
+                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
+                                data-js-target="#headeroverflow1" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span>Oversigt</span>
+                            </button>
+                            <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+                                <ul class="overflow-list">
+                                    <li>
+                                        <a class="current" href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-oversigt">Overssigtsside som liste</a>
+                                    </li>
+                                    <li>
+                                        <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-oversigt-2">Oversigt med cards</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Eksempler">
+                        <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1"
+                            class="nav-link" title="Eksempler">
                             <span>Beskeder</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Kom godt i gang">
+                        <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1"
+                            class="nav-link" title="Kom godt i gang">
                             <span>Udbetalinger</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1"
+                            class="nav-link" title="Fællesoffentlige krav">
                             <span>Sager</span>
                         </a>
                     </li>
@@ -85,12 +101,14 @@ title: Example-boernetilskud-oversigt.html
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1"
+                            class="nav-link" title="Fællesoffentlige krav">
                             <span>Ændringer</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" title="Fællesoffentlige krav">
+                        <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1"
+                            class="nav-link" title="Fællesoffentlige krav">
                             <span>Dokumentation</span>
                         </a>
                     </li>
@@ -125,15 +143,15 @@ title: Example-boernetilskud-oversigt.html
     <section class="page-content content">
         <p class="h3 mb-0">Beskeder</p>
         <p class="mt-0">
-            <a href="#">Læs beskeder omkring dine aktive sager</a>
+            <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1">Læs beskeder omkring dine aktive sager</a>
         </p>
         <p class="h3 mb-0">Udbetalinger</p>
         <p class="mt-0">
-            <a href="#">Se tidligere og kommende udbetalinger</a>
+            <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1">Se tidligere og kommende udbetalinger</a>
         </p>
         <p class="h3 mb-0">Sager</p>
         <p class="mt-0">
-            <a href="#">Få status på dine nuværende sager</a>
+            <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1">Få status på dine nuværende sager</a>
         </p>
         <p class="h3 mb-0">Ansøgninger</p>
         <p class="mt-0">
@@ -141,11 +159,11 @@ title: Example-boernetilskud-oversigt.html
         </p>
         <p class="h3 mb-0">Ændringer</p>
         <p class="mt-0">
-            <a href="#">Foretag ændringer omkring dit børnetilskud</a>
+            <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1">Foretag ændringer omkring dit børnetilskud</a>
         </p>
         <p class="h3 mb-0">Dokumentation</p>
         <p class="mt-0">
-            <a href="#">Opslagsværk for hvordan børnetilskud fungerer</a>
+            <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1">Opslagsværk for hvordan børnetilskud fungerer</a>
         </p>
     </section>
 </main>

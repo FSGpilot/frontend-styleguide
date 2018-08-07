@@ -214,7 +214,8 @@ title: Example-aes-page-7.html
                                             <div class="form-group">
                                                 <label class="form-label " for="id-documentation-1-expanded"></label>
 
-                                                <textarea class="form-input textarea input-width-m" placeholder="" id="id-documentation-1-expanded"
+                                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                                                    id="id-documentation-1-expanded"
                                                     name="Kommentar" type="text"></textarea>
                                             </div>
 
@@ -242,7 +243,8 @@ title: Example-aes-page-7.html
                                             <div class="form-group">
                                                 <label class="form-label " for="id-documentation-1-expanded"></label>
 
-                                                <textarea class="form-input textarea input-width-m" placeholder="" id="id-documentation-1-expanded"
+                                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                                                    id="id-documentation-1-expanded"
                                                     name="Kommentar" type="text"></textarea>
                                             </div>
 
@@ -298,7 +300,8 @@ title: Example-aes-page-7.html
                                             <div class="form-group">
                                                 <label class="form-label " for="id-documentation-1-expanded"></label>
 
-                                                <textarea class="form-input textarea input-width-m" placeholder="" id="id-documentation-1-expanded"
+                                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                                                    id="id-documentation-1-expanded"
                                                     name="Kommentar" type="text"></textarea>
                                             </div>
 
@@ -326,7 +329,8 @@ title: Example-aes-page-7.html
                                             <div class="form-group">
                                                 <label class="form-label " for="id-documentation-1-expanded"></label>
 
-                                                <textarea class="form-input textarea input-width-m" placeholder="" id="id-documentation-1-expanded"
+                                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                                                    id="id-documentation-1-expanded"
                                                     name="Kommentar" type="text"></textarea>
                                             </div>
 
@@ -382,7 +386,8 @@ title: Example-aes-page-7.html
                                             <div class="form-group">
                                                 <label class="form-label " for="id-documentation-1-expanded"></label>
 
-                                                <textarea class="form-input textarea input-width-m" placeholder="" id="id-documentation-1-expanded"
+                                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                                                    id="id-documentation-1-expanded"
                                                     name="Kommentar" type="text"></textarea>
                                             </div>
 
@@ -410,7 +415,8 @@ title: Example-aes-page-7.html
                                             <div class="form-group">
                                                 <label class="form-label " for="id-documentation-1-expanded"></label>
 
-                                                <textarea class="form-input textarea input-width-m" placeholder="" id="id-documentation-1-expanded"
+                                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                                                    id="id-documentation-1-expanded"
                                                     name="Kommentar" type="text"></textarea>
                                             </div>
 
