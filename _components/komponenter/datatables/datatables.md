@@ -22,5 +22,3 @@ subnav:
 ---
 
 {% include child-sections.html parent='Datatables' %}
-
-{% include accessibility.html %}
