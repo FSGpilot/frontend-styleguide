@@ -16,8 +16,8 @@ order: 01
       <div class="color-container borger-primary"></div>
       <div class="color-text-container">
         <p class="is-neutral code-color-hex">#568331</p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
         <p class="code-color-variable">$primary-color</p>
       </div>
     </div>
@@ -27,8 +27,8 @@ order: 01
       <div class="color-container borger-medium"></div>
       <div class="color-text-container">
         <p class="is-neutral code-color-hex">#3C5C22</p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
         <p class="code-color-variable">$primary-medium</p>
       </div>
     </div>
@@ -37,10 +37,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container borger-dark"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#233614</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$primary-dark</p>
+        <p class="is-neutral code-color-hex">#233614</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$primary-dark</p>
       </div>
     </div>
     <!-- borger dark END -->
@@ -52,10 +52,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container virk-primary"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#067293</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$primary-color</p>
+        <p class="is-neutral code-color-hex">#067293</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$primary-color</p>
       </div>
     </div>
     <!--virk primary END -->
@@ -63,10 +63,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container virk-medium"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#04556E</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$primary-medium </p>
+        <p class="is-neutral code-color-hex">#04556E</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$primary-medium </p>
       </div>
     </div>
     <!--virk medium END -->
@@ -74,22 +74,15 @@ order: 01
     <div class="col-md-3">
       <div class="color-container virk-dark"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#033747</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$primary-dark </p>
+        <p class="is-neutral code-color-hex">#033747</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$primary-dark </p>
       </div>
     </div>
     <!--virk dark END -->
   </div>
 </div>
-
-<div class="color-row-container ">
-  <div class="row color-row">
-   
-  </div>
-</div>
-
 
 <h3 class="heading h5">Gråtoneskala</h3>
 <div class="color-row-container">
@@ -98,8 +91,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-black"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#1A1A1A</strong></p>
-        <p>$color-black</p>
+        <p class="is-neutral code-color-hex">#1A1A1A</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-black</p>
       </div>
     </div>
     <!-- color-black end -->
@@ -107,10 +102,10 @@ order: 01
     <div class="col-md-3 ">
       <div class="color-container color-gray-dark"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#454545</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-gray-dark</p>
+        <p class="is-neutral code-color-hex">#454545</p>
+        <!-- <p class="is-virk">#F08B1E</p>
+        <p class="is-borger">#588012</p>-->
+        <p class="code-color-variable">$color-gray-dark</p>
       </div>
     </div>
     <!-- color-gray-dark end -->
@@ -118,10 +113,10 @@ order: 01
     <div class="col-md-3 ">
       <div class="color-container color-gray-medium-dark"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#747474</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-gray-medium-dark</p>
+        <p class="is-neutral code-color-hex">#747474</p>
+        <!-- <p class="is-virk">#F08B1E</p>
+        <p class="is-borger">#588012</p>-->
+        <p class="code-color-variable">$color-gray-medium-dark</p>
       </div>
     </div>
     <!-- color-gray-medium-dark end -->
@@ -129,10 +124,10 @@ order: 01
     <div class="col-md-3 ">
       <div class="color-container color-gray-medium-light"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#999999</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-gray-medium-light</p>
+        <p class="is-neutral code-color-hex">#999999</p>
+        <!-- <p class="is-virk">#F08B1E</p>
+        <p class="is-borger">#588012</p>-->
+        <p class="code-color-variable">$color-gray-medium-light</p>
       </div>
     </div>
     <!-- color-gray-medium-light end -->
@@ -140,10 +135,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-gray-light"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#BFBFBF</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-gray-light</p>
+        <p class="is-neutral code-color-hex">#BFBFBF</p>
+        <!-- <p class="is-virk">#F08B1E</p>
+        <p class="is-borger">#588012</p>-->
+        <p class="code-color-variable">$color-gray-light</p>
       </div>
     </div>
     <!-- color-gray-light end -->
@@ -151,10 +146,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-gray-pale"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#F5F5F5</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-gray-pale</p>
+        <p class="is-neutral code-color-hex">#F5F5F5</p>
+        <!-- <p class="is-virk">#F08B1E</p>
+        <p class="is-borger">#588012</p>-->
+        <p class="code-color-variable">$color-gray-pale</p>
       </div>
     </div>
     <!-- color-gray-pale end -->
@@ -162,8 +157,10 @@ order: 01
     <div class="col-md-3 ">
       <div class="color-container color-white"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#FFFFFF</strong></p>
-        <p>$color-white</p>
+        <p class="is-neutral code-color-hex">#FFFFFF</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-white</p>
       </div>
     </div>
     <!-- color-white end -->
@@ -177,10 +174,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-success"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#87C51C</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-success</p>
+        <p class="is-neutral code-color-hex">#87C51C</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-success</p>
       </div>
     </div>
     <!-- color-success END -->
@@ -188,10 +185,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-warning"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#FEBB30</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-warning</p>
+        <p class="is-neutral code-color-hex">#FEBB30</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-warning</p>
       </div>
     </div>
     <!-- color-warning END -->
@@ -199,10 +196,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-error"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#E92021</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-error</p>
+        <p class="is-neutral code-color-hex">#E92021</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-error</p>
       </div>
     </div>
     <!-- color-error END -->
@@ -210,10 +207,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-info"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#1B86C3</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-info</p>
+        <p class="is-neutral code-color-hex">#1B86C3</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-info</p>
       </div>
     </div>
     <!-- color-info END -->
@@ -221,10 +218,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-succes-light"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#E7FBE4</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-success-light</p>
+        <p class="is-neutral code-color-hex">#E7FBE4</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-success-light</p>
       </div>
     </div>
     <!-- color-success-light END -->
@@ -232,10 +229,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-warning-light"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#FFEECC</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-warning-light</p>
+        <p class="is-neutral code-color-hex">#FFEECC</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-warning-light</p>
       </div>
     </div>
     <!-- color-warning-light END -->
@@ -243,10 +240,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-error-light"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#FBD3D3</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-error-light</p>
+        <p class="is-neutral code-color-hex">#FBD3D3</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-error-light</p>
       </div>
     </div>
     <!-- color-error-light END -->
@@ -254,10 +251,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-info-light"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#E2F2FB</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-info-light</p>
+        <p class="is-neutral code-color-hex">#E2F2FB</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">>#588012</p>-->
+        <p class="code-color-variable">$color-info-light</p>
       </div>
     </div>
     <!-- color-info-light END -->
@@ -272,10 +269,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-link"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#0059B3</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-link</p>
+        <p class="is-neutral code-color-hex">#0059B3</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-link</p>
       </div>
     </div>
     <!-- color-link END -->
@@ -283,10 +280,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-link-hover"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#004080</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-link-hover</p>
+        <p class="is-neutral code-color-hex">#004080</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-link-hover</p>
       </div>
     </div>
     <!-- color-link-hover END -->
@@ -300,10 +297,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-active"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#000040</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-active</p>
+        <p class="is-neutral code-color-hex">#000040</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-active</p>
       </div>
     </div>
     <!-- color-active END -->
@@ -311,10 +308,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-visited"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#800080</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-visited</p>
+        <p class="is-neutral code-color-hex">#800080</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-visited</p>
       </div>
     </div>
     <!-- color-visited END -->
@@ -322,10 +319,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-focus"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#FEBB30</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-focus</p>
+        <p class="is-neutral code-color-hex">#FEBB30</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-focus</p>
       </div>
     </div>
     <!-- color-focus END -->
@@ -341,10 +338,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container bg-normal"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#FFFFFF</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$background-normal</p>
+        <p class="is-neutral code-color-hex">#FFFFFF</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$background-normal</p>
       </div>
     </div>
   <!-- color-positive END -->
@@ -352,10 +349,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container bg-alternative"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#F5F5F5</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$background-alternative</p>
+        <p class="is-neutral code-color-hex">#F5F5F5</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$background-alternative</p>
       </div>
     </div>
   <!-- color-negative END -->
@@ -363,10 +360,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container bg-modal"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>rgba(0, 0, 0, 0.75)</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$background-modal</p>
+        <p class="is-neutral code-color-hex">rgba(0, 0, 0, 0.75)</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$background-modal</p>
       </div>
     </div>
   </div>
@@ -380,10 +377,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-positive"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#3F9800</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-positive</p>
+        <p class="is-neutral code-color-hex">#3F9800</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-positive</p>
       </div>
     </div>
     <!-- color-positive END -->
@@ -391,10 +388,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-negative"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#CC0000</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-negative</p>
+        <p class="is-neutral code-color-hex">#CC0000</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-negative</p>
       </div>
     </div>
     <!-- color-negative END -->
@@ -408,10 +405,10 @@ order: 01
   <div class="col-md-3">
     <div class="color-container color-data-turqoice"></div>
     <div class="color-text-container">
-      <p class="is-neutral"><strong>#56D4D6</strong></p>
-      <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-      <p class="is-borger"><strong>#588012</strong></p>-->
-      <p>$color-data-turqoice</p>
+      <p class="is-neutra code-color-hex">#56D4D6</p>
+      <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+      <p class="is-borger code-color-hex">#588012</p>-->
+      <p class="code-color-variable">$color-data-turqoice</p>
     </div>
   </div>
   <!-- color-data-turqoice END -->
@@ -420,10 +417,10 @@ order: 01
   <div class="col-md-3">
     <div class="color-container color-data-purple"></div>
     <div class="color-text-container">
-      <p class="is-neutral"><strong>#8F2B8F</strong></p>
-      <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-      <p class="is-borger"><strong>#588012</strong></p>-->
-      <p>$color-data-purple</p>
+      <p class="is-neutral code-color-hex">#8F2B8F</p>
+      <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+      <p class="is-borger code-color-hex">#588012</p>-->
+      <p class="code-color-variable">$color-data-purple</p>
     </div>
   </div>
   <!-- color-data-purple END -->
@@ -431,10 +428,10 @@ order: 01
     <div class="col-md-3 ">
       <div class="color-container color-data-yellow"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#EBE049</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-data-yellow</p>
+        <p class="is-neutral code-color-hex">#EBE049</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-data-yellow</p>
       </div>
     </div>
     <!-- color-data-yellow END -->
@@ -442,10 +439,10 @@ order: 01
     <div class="col-md-3 ">
       <div class="color-container color-data-khaki"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#B89E5E</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-data-khaki</p>
+        <p class="is-neutral code-color-hex">#B89E5E</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-data-khaki</p>
       </div>
     </div>
     <!-- color-data-khaki END -->
@@ -453,10 +450,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-data-brown"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#6B4A21</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-data-brown</p>
+        <p class="is-neutral code-color-hex">#6B4A21</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-data-brown</p>
       </div>
     </div>
     <!-- color-data-brown END -->
@@ -464,10 +461,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-data-orange"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#FF531A</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-data-orange</p>
+        <p class="is-neutral code-color-hex">#FF531A</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-data-orange</p>
       </div>
     </div>
     <!-- color-data-orange END -->
@@ -475,10 +472,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-data-cyklamen"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#E64969</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-data-cyklamen</p>
+        <p class="is-neutral code-color-hex">#E64969</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-data-cyklamen</p>
       </div>
     </div>
     <!-- color-data-cyklamen END -->
@@ -486,10 +483,10 @@ order: 01
     <div class="col-md-3">
       <div class="color-container color-data-magenta"></div>
       <div class="color-text-container">
-        <p class="is-neutral"><strong>#E50081</strong></p>
-        <!-- <p class="is-virk"><strong>#F08B1E</strong></p>
-        <p class="is-borger"><strong>#588012</strong></p>-->
-        <p>$color-data-magenta</p>
+        <p class="is-neutral code-color-hex">#E50081</p>
+        <!-- <p class="is-virk code-color-hex">#F08B1E</p>
+        <p class="is-borger code-color-hex">#588012</p>-->
+        <p class="code-color-variable">$color-data-magenta</p>
       </div>
     </div>
     <!-- color-data-magenta END -->
