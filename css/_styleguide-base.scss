@@ -182,7 +182,7 @@
   background-color: $color-focus;
 }
 .color-visited {
-  background-color: $color-visited;
+  background-color: $color-link-visited;
 }
 
 // Neutral color
@@ -298,8 +298,8 @@
   background-color: $color-transparent;
 }
 
-.color-container {
-  height: 140px;
+.color-container-large {
+  height: 108px;
   border: solid 1px #e1e1e1;
 
   //Colors
@@ -324,7 +324,6 @@
   &.color-gray-pale {
     background-color: $color-gray-pale;
   }
-
   &.color-succes {
     background-color: $color-success;
   }
@@ -341,7 +340,7 @@
     background-color: $color-error;
   }
   &.color-active {
-    background-color: $color-active;
+    background-color: $color-link-active;
   }
   &.color-error-light {
     background-color: $color-error-light;
@@ -376,42 +375,84 @@
   &.color-negative {
     background-color: $color-negative;
   }
-  &.color-data-green {
-    background-color: $color-data-green;
+}
+.color-container-medium {
+  height: 64px;
+  border: solid 1px #e1e1e1;
+
+  &.color-data-turqoice {
+    background-color: $color-data-turqoice;
   }
-  &.color-data-moss {
-    background-color: $color-data-moss;
+  &.color-data-turqoice-high-opacity {
+    background-color: $color-data-turqoice-high-opacity;
+  }
+  &.color-data-turqoice-medium-opacity {
+    background-color: $color-data-turqoice-medium-opacity;
+  }
+  &.color-data-turqoice-low-opacity {
+    background-color: $color-data-turqoice-low-opacity;
   }
   &.color-data-teal {
     background-color: $color-data-teal;
   }
-  &.color-data-turqoice {
-    background-color: $color-data-turqoice;
+  &.color-data-teal-high-opacity {
+    background-color: $color-data-teal-high-opacity;
   }
-  &.color-data-violet {
-    background-color: $color-data-violet;
+  &.color-data-teal-medium-opacity {
+    background-color: $color-data-teal-medium-opacity;
   }
-  &.color-data-purple {
-    background-color: $color-data-purple;
-  }
-  &.color-data-yellow  {
-    background-color: $color-data-yellow;
-  }
-  &.color-data-brown {
-    background-color: $color-data-brown;
-  }
-  &.color-data-khaki {
-    background-color: $color-data-khaki;
+  &.color-data-teal-low-opacity {
+    background-color: $color-data-teal-low-opacity;
   }
   &.color-data-orange {
-    background-color: $color-data-orange ;
+    background-color: $color-data-orange;
+  }
+  &.color-data-orange-high-opacity {
+    background-color: $color-data-orange-high-opacity;
+  }
+  &.color-data-orange-medium-opacity {
+    background-color: $color-data-orange-medium-opacity;
+  }
+  &.color-data-orange-low-opacity {
+    background-color: $color-data-orange-low-opacity;
   }
   &.color-data-magenta {
     background-color: $color-data-magenta;
   }
-  &.color-data-cyklamen {
-    background-color: $color-data-cyklamen;
+  &.color-data-magenta-high-opacity {
+    background-color: $color-data-magenta-high-opacity;
   }
+  &.color-data-magenta-medium-opacity {
+    background-color: $color-data-magenta-medium-opacity;
+  }
+  &.color-data-magenta-low-opacity {
+    background-color: $color-data-magenta-low-opacity;
+  }
+  &.color-data-purple {
+    background-color: $color-data-purple;
+  }
+  &.color-data-purple-high-opacity {
+    background-color: $color-data-purple-high-opacity;
+  }
+  &.color-data-purple-medium-opacity {
+    background-color: $color-data-purple-medium-opacity;
+  }
+  &.color-data-purple-low-opacity {
+    background-color: $color-data-purple-low-opacity;
+  }
+  &.color-data-violet {
+    background-color: $color-data-violet;
+  }
+  &.color-data-violet-high-opacity {
+    background-color: $color-data-violet-high-opacity;
+  }
+  &.color-data-violet-medium-opacity {
+    background-color: $color-data-violet-medium-opacity;
+  }
+  &.color-data-violet-low-opacity {
+    background-color: $color-data-violet-low-opacity;
+  }
+  
 }
 
 .color-text-container {
@@ -433,13 +474,6 @@
     }
   }
 }
-
-//------- Theme based show/hide
-
-.is-neutral{ display:block }
-.is-virk { display:none }
-.is-borger{ display:none }
-
 
 //------- Component overview page boxes. 
 
