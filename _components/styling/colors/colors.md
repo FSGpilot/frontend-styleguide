@@ -29,18 +29,18 @@ lead: Introduktion af farverne
     <br />
     Nedenfor vises et eksempel med to blå farver. Hvis du generelt ønsker at ændre de blå farver gennem hele løsningen skal du overskrive '$color-blue-*' variablene. Hvis du derimod ønsker en anderledes linkfarve som ikke er koblet til de blå farver skal du overskrive de to '$color-link' variable.</p>
     <div class="code-highlight">
-      <p style='font-family: Consolas, Monaco, "Andale Mono", monospace; font-size:13px;'>
-        //------ Swatches and Theming ----------- <br />
-        //--------------------------------------- <br />
-        $color-blue-001:              #0059b3 !default;<br />
-        $color-blue-002:              #004080 !default;<br />
-        <br />
-        //------ colors variables ------------ <br />
-        //------------------------------------ <br />
-        //Links color
-        <br />
-        $color-link:                  $color-blue-001 !default;<br />
-        $color-link-hover:            $color-blue-002 !default;</p>
+    <p style='font-family: Consolas, Monaco, "Andale Mono", monospace; font-size:13px;'>
+      //------ Swatches and Theming ----------- <br />
+      //--------------------------------------- <br />
+      $color-blue-001:              #0059b3 !default;<br />
+      $color-blue-002:              #004080 !default;<br />
+      <br />
+      //------ colors variables ------------ <br />
+      //------------------------------------ <br />
+      //Links color
+      <br />
+      $color-link:                  $color-blue-001 !default;<br />
+      $color-link-hover:            $color-blue-002 !default;</p>
       </div>
   </div>
 </div>
