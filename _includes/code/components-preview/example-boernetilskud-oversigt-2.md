@@ -59,7 +59,7 @@ title: Example-boernetilskud-oversigt-2.html
                 <ul class="nav-primary">
                     <li>
                         <div class="overflow-menu">
-                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
+                            <button class="current button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
                                 data-js-target="#headeroverflow1" aria-haspopup="true"
                                 aria-expanded="false">
                                 <span>Oversigt</span>
