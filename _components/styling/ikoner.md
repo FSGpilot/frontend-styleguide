@@ -21,13 +21,148 @@ Ikonerne nedenfor har bestemte betydninger. Ikonerne kan anvendes på flere måd
 <p>Nedenfor er vist de ikoner som er inkluderet i styleguiden. Der er to forskellige tilgang til at indsætte ikoner på en side. Via en klasse (baggrundsbillede) eller som inline svg.</p>
 <h5>Ikoner indsat via klasser:</h5>
 <p>Følgende kode indsætter et 'alert'-ikon: <code>&lt;i class="icon icon-alert-outline"&gt;&lt;/i&gt;</code></p>
-{% include code/preview.html component="icons" %}
-{% include code/accordion.html component="icons" %}
 
 <h5>Ikoner indsat via inline svg:</h5>
 <p>I toppen af <code>&lt;body&gt;</code> er alle svg-ikoner indsat i et område som er skjult. Følgende kode linker til et af disse svg ikoner og indsætter det via dets <code>id</code>: <code>&lt;svg class="icon-svg" &lt;use xlink:href="#alert-outline"&gt;&lt;/use&gt;&lt;/svg&gt;</code></p>
 
-{% include code/preview.html component="icons--svg" %}
-{% include code/accordion.html component="icons--svg" %}
+<div class="component-preview mt-5">
+    <div class="container">
+        <h6>Navigationsikoner</h6>
+        <div class="row">
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <a class="popover js-tooltip" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><span class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span></a>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+        </div>
+        <h6>Kommunikationsikoner (feedback)</h6>
+        <div class="row">
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+        </div>
+        <h6>Funktionsikoner</h6>
+        <div class="row">
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon-box">
+                    <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
+                    <span class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></span>
+                    <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
