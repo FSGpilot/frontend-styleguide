@@ -5,12 +5,9 @@
     <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <!-- Mobile Specific Metas
 ================================================== -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Title and meta description
@@ -66,7 +63,7 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css">
 
 <!-- frontend styleguide stylesheet-->
-<script type="text/javascript">
+<script>
     var lnk = document.createElement('link');
     lnk.type='text/css';
     lnk.rel='stylesheet';
@@ -896,42 +893,44 @@
   <div id="code-table--bordered-zebra" class="accordion-content">
     
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table--zebra"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;thead&gt;</span>
-            <span class="nt">&lt;tr&gt;</span>
-                <span class="nt">&lt;th&gt;</span>Document title<span class="nt">&lt;/th&gt;</span>
-                <span class="nt">&lt;th&gt;</span>Description<span class="nt">&lt;/th&gt;</span>
-                <span class="nt">&lt;th&gt;</span>Year<span class="nt">&lt;/th&gt;</span>
-            <span class="nt">&lt;/tr&gt;</span>
-        <span class="nt">&lt;/thead&gt;</span>
-        <span class="nt">&lt;tbody&gt;</span>
-            <span class="nt">&lt;tr&gt;</span>
-                <span class="nt">&lt;td&gt;</span>Declaration of Independence<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;td&gt;</span>Statement adopted by the Continental Congress declaring independence
-                    from the British Empire.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;td&gt;</span>1776<span class="nt">&lt;/td&gt;</span>
-            <span class="nt">&lt;/tr&gt;</span>
-            <span class="nt">&lt;tr&gt;</span>
-                <span class="nt">&lt;td&gt;</span>Bill of Rights<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;td&gt;</span>The first ten amendments of the U.S. Constitution guaranteeing
-                    rights and freedoms.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;td&gt;</span>1791<span class="nt">&lt;/td&gt;</span>
-            <span class="nt">&lt;/tr&gt;</span>
-            <span class="nt">&lt;tr&gt;</span>
-                <span class="nt">&lt;td&gt;</span>Declaration of Sentiments<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;td&gt;</span>A document written during the Seneca Falls Convention outlining
-                    the rights that American women should be entitled to as
-                    citizens.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;td&gt;</span>1848<span class="nt">&lt;/td&gt;</span>
-            <span class="nt">&lt;/tr&gt;</span>
-            <span class="nt">&lt;tr&gt;</span>
-                <span class="nt">&lt;td&gt;</span>Emancipation Proclamation<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;td&gt;</span>An executive order granting freedom to slaves in designated
-                    southern states.<span class="nt">&lt;/td&gt;</span>
-                <span class="nt">&lt;td&gt;</span>1863<span class="nt">&lt;/td&gt;</span>
-            <span class="nt">&lt;/tr&gt;</span>
-        <span class="nt">&lt;/tbody&gt;</span>
-    <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table--responsive-scroll"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table--zebra"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;thead&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;th&gt;</span>Document title<span class="nt">&lt;/th&gt;</span>
+                    <span class="nt">&lt;th&gt;</span>Description<span class="nt">&lt;/th&gt;</span>
+                    <span class="nt">&lt;th&gt;</span>Year<span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;/thead&gt;</span>
+            <span class="nt">&lt;tbody&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Declaration of Independence<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Statement adopted by the Continental Congress declaring
+                        independence from the British Empire.<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>1776<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Bill of Rights<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>The first ten amendments of the U.S. Constitution guaranteeing
+                        rights and freedoms.<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>1791<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Declaration of Sentiments<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>A document written during the Seneca Falls Convention outlining
+                        the rights that American women should be entitled to
+                        as citizens.<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>1848<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Emancipation Proclamation<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>An executive order granting freedom to slaves in designated
+                        southern states.<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>1863<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;/tbody&gt;</span>
+        <span class="nt">&lt;/table&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 </div>

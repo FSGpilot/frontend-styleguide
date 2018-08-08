@@ -186,7 +186,6 @@ title: Example-praktikplads-page-4.html
                 <table class="mt-5 table table--zebra table--lines w-percent-100" id="js-datatable-example-praktikplads">
                     <thead>
                         <tr>
-                            <th></th>
                             <th>Elev</th>
                             <th>Fødselsdato</th>
                             <th>Uddannelse</th>
