@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
   <head>
     <!-- Basic Page Needs
 ================================================== -->
@@ -52,10 +52,9 @@
 <!--<link rel="stylesheet" href="/frontend-styleguide/css/styleguide.css">-->
 <style>
   body {
-    opacity: 0;
+    opacity: 0; //hide page until theme is downlaoded by js.
   }
 </style>
-
 <!-- Vender example stylesheets-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"> 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
@@ -1465,7 +1464,15 @@
   
     <p class="font-lead">A datatable is an arrangement of data in rows and columns that make comparing information easier. The following datatables enables the user to sort the data by clicking on the different headers or filter it by typing a text in the 'Search compute' field. Each row has a menu to the right, that enables performing some actions on it. Rows selected by checking the checkbox can be modified all together. The user can change rows width in the datatable settings.</p>
   
-  
+  <div class="alert alert-info" role="alert" aria-label="Bruger ekstern script informationsboks">
+  <div class="alert-body">
+    <h3 class="alert-heading">Kræver speciel implementering</h3>
+    <p class="alert-text">
+      Datatables  gør brug af et eksternt bibliotek (<a href="https://datatables.net/">datatables.net</a>) som skal inkluderes ud over standard filerne til Frontend Styleguiden.  
+    </p>
+  </div>
+</div>
+
 <div class="component-preview ">
     <ul class="unstyled-list preview-buttons">
         <li class="component-preview-item">
@@ -2951,30 +2958,6 @@
 
 
 </section>
-
-<h3 class="heading heading-margin-alt">Accessibility</h3>
-
-<p>As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.</p>
-
-<ul class="content-list">
-  <li>Display form controls in the same order in HTML as they appear on screen. Do not use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.</li>
-  <li>Visually align validation messages with the input fields, so people using screen magnifiers can read them quickly.</li>
-  <li>Group each set of thematically related controls in a fieldset element. Use the legend element to offer a label within each one. The fieldset and legend elements make it easier for screen reader users to navigate the form.</li>
-  <li>Use a single legend for fieldset (this is required). One example of a common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.</li>
-  <li>Embed multiple fieldsets and legends for more complex forms.</li>
-  <li>Keep your form blocks in a vertical pattern. This approach is ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.</li>
-</ul>
-
-<h4>Supporting screen readers</h4>
-
-<p><b>Note:</b> These code examples have been designed to support a range of screen readers. That said, they may not work with all versions.</p>
-
-<h5>Known issues</h5>
-
-<ul class="content-list">
-  <li>VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using <code>aria-labeledby="for-attribute-of-label id-of-legend id-of-additional-info"</code> on each input in the fieldset. Using <code>aria-labeledby</code> will overwrite the default text read by the screen reader, so it is important to include all relevant information.</li>
-  <li>VoiceOver on OS X currently does not support <code>aria-describedby</code>. Use <code>aria-labeledby</code> instead, and include all related fields, including, labels, legend, and hint text</li>
-</ul>
 
 
       </section>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<!--[if gt IE 8]><!--><html lang="da"><!--<![endif]-->
   <head>
     <!-- Basic Page Needs
 ================================================== -->
@@ -55,10 +55,9 @@
 <!--<link rel="stylesheet" href="/frontend-styleguide/css/styleguide.css">-->
 <style>
   body {
-    opacity: 0;
+    opacity: 0; //hide page until theme is downlaoded by js.
   }
 </style>
-
 <!-- Vender example stylesheets-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"> 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
@@ -844,7 +843,15 @@
             <p class="font-lead">A datatable is an arrangement of data in rows and columns that make comparing information easier. The following datatables enables the user to sort the data by clicking on the different headers or filter it by typing a text in the 'Search compute' field. Each row has a menu to the right, that enables performing some actions on it. Rows selected by checking the checkbox can be modified all together. The user can change rows width in the datatable settings.</p>
           
       
-          
+          <div class="alert alert-info" role="alert" aria-label="Bruger ekstern script informationsboks">
+  <div class="alert-body">
+    <h3 class="alert-heading">Kræver speciel implementering</h3>
+    <p class="alert-text">
+      Datatables  gør brug af et eksternt bibliotek (<a href="https://datatables.net/">datatables.net</a>) som skal inkluderes ud over standard filerne til Frontend Styleguiden.  
+    </p>
+  </div>
+</div>
+
 <div class="component-preview ">
     <ul class="unstyled-list preview-buttons">
         <li class="component-preview-item">

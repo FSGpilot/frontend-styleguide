@@ -5,7 +5,7 @@ title: Dkwds.html
 ---
 <!doctype html>
 
-<html lang="en-US">
+<html lang="da">
 
 <head>
     <title>Dkwds: Default</title>

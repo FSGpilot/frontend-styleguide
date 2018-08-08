@@ -5,7 +5,7 @@ title: Dkwds-framed.html
 ---
 <!doctype html>
 
-<html lang="en-US">
+<html lang="da">
 
 <head>
     <title>Dkwds Framed: Default</title>
