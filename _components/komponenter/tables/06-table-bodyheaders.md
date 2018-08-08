@@ -1,5 +1,5 @@
 ---
-title: Med titel i venstre kolonne
+title: Med titel i venstre kolonne 
 parent: Tables
 order: 06
 lead: 
