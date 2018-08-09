@@ -4,81 +4,15 @@ layout: styleguide
 title: Tilgængelighed
 category: UI components
 subcategory: Design og kode
-lead: Offentlige myndigheders hjemmesider og selvbetjeningsløsninger, skal leve op til visse tilgængelighedsstandarder. Disse standarder er med til at sikre, at løsningen er brugbar for alle  - inklusive brugere med nedsat syn, blindhed, nedsat hørelse, cognitive hæmninger og motoriske hæmninger. 
+lead: 
 order: 25
 ---
 
-Standarden for tilgængelighed hedder WCAG 2.0, og den er inddelt i 3 niveauer: A, AA og AAA.Det er besluttet at vi i Danmark skal leve op til niveau AA. 
-
-For hvert menupunkt i [komponentbiblioteket]({{site.baseurl}}/designandcode), vil retningslinjer for tilgængelighed være specificeret yderligere. 
-
-## Gør din løsning tilgængelig
-
-Indholdet på siden skal kunne opfattes af alle typer brugere. Dette betyder blandt bl.a:
-
-- Tekst-alternativer til alt ikke-tekstbaseret indhold er tilgængeligt
-- Indholdet af alle medier som lyd og video gengives med tekst
-- Elementerne på siden er struktureret i logisk rækkefølge
-- Der er tilstrækkelig kontrast mellem tekst og baggrund
-
-
-
-## Gør din løsning anvendelig
-
-Navigation og elementer i din brugerflade skal kunne bruges af de fleste.Dette betyder blandt bl.a at:
-
-- Man kan navigere gennem hele løsningen kun ved brug af tastatur
-- Man skal kunne slå eventuelle  tidsbegræsninger fra
-- Hyppige blink er undgået for at forhindre (epileptiske) anfald
-- Løsningen er navigerbar og at brugeren kan orienteres sig
-
-
-
-## Gør din løsning robust
-
-Koden til løsningen skal laves sådan, at forskellige teknologier og programmer (fx browsere og skærmlæsere) kan aflæse indholdet nogenlunde pålideligt. Dette betyder blandt bl.a at:
-
-- Løsningen skal kunne aflæses af gængse enheder, som fx mobilenheder
-- Løsningen skal kunne aflæse af gængse browsere
-- Løsningen skal kunne aflæses af hjælpemidler som fx skærmlæsere
-
-
-
-## Gør din løsning forståelig
-
-Både indholdet i din selvbetjeningsløsning og interaktionen med den skal være forståelig for brugeren. Dette betyder blandt bl.a at:
-
-- Siden sprog (fx dansk eller engelsk) skal kunne rent programmeringsmæssigt
-- Løsningen agerer forudsigeligt for brugeren uden overraskelser
-- Brugeren får hjælp til at udfylde formularer korrekt samt at rette fejl
-
-Læs mere om de enkelte punkter [her](http://arkitekturguiden.digitaliser.dk/godselvbetjening/kravbanken/Tilg%C3%A6ngelighed ) 
-
-
-## Links om tilgængelighed
-
-- Web Content Accessibility Guidelines (WCAG) 2.0
-
-  <http://www.w3.org/TR/WCAG20/>
-
-- Tips til at designe tilgængelige brugergrænseflader
-
-  <http://www.w3.org/WAI/gettingstarted/tips/designing.html>
-
-- WebAIM’s WCAG 2.0 Checklist
-
-  <http://webaim.org/standards/wcag/checklist>
-
-- W3C cheatsheet – accessibility: WCAG2 at a glance
-
-  <http://www.w3.org/2009/cheatsheet/#wcag2>
-
-- Techniques for WCAG 2.0
-
-  <http://www.w3.org/TR/WCAG20-TECHS/>
-
-- Ekstra: Section 508 Checklist
-
-  <http://webaim.org/standards/508/checklist>
-
-
+<h2>Tilgængelighedsattributter</h2>
+<p>Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.</p>
+<ul>
+  <li><code>aria-hidden="true"</code> og <code>aria-hidden="false"</code> bruges til at skjule og vise elementer for skærmlæsere.</li>
+  <li><code>.sr-only</code> klassen og mixin <code>@mixin sr-only()</code> bruges når elementer kun skal vises for skærmlæsere.</li>
+  <li><code>aria-expanded="true"</code> og <code>aria-expanded="false"</code> bruges til elementer som toggler mellem at være åbne og lukket.</li>
+  <li><code>aria-label=""</code> skal beskrive hvad funktionen af et element gør.</li>
+</ul> 
