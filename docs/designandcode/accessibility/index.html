@@ -18,9 +18,6 @@
 <meta property="og:title" content="Tilgængelighed | Frontend styleguide - version 2">
 
 
-<meta name="description" content="Offentlige myndigheders hjemmesider og selvbetjeningsløsninger, skal leve op til visse tilgængelighedsstandarder. Disse standarder er med til at sikre, at løsningen er brugbar for alle  - inklusive brugere med nedsat syn, blindhed, nedsat hørelse, cognitive hæmninger og motoriske hæmninger.">
-<meta property="og:description" content="Offentlige myndigheders hjemmesider og selvbetjeningsløsninger, skal leve op til visse tilgængelighedsstandarder. Disse standarder er med til at sikre, at løsningen er brugbar for alle  - inklusive brugere med nedsat syn, blindhed, nedsat hørelse, cognitive hæmninger og motoriske hæmninger.">
-
 
 
 
@@ -1357,92 +1354,15 @@
           </p>
           <h1 class="mt-0" id="tilgængelighed">Tilgængelighed</h1>
           
-            <p class="font-lead">Offentlige myndigheders hjemmesider og selvbetjeningsløsninger, skal leve op til visse tilgængelighedsstandarder. Disse standarder er med til at sikre, at løsningen er brugbar for alle  - inklusive brugere med nedsat syn, blindhed, nedsat hørelse, cognitive hæmninger og motoriske hæmninger.</p>
-          
       
-          <p>Standarden for tilgængelighed hedder WCAG 2.0, og den er inddelt i 3 niveauer: A, AA og AAA.Det er besluttet at vi i Danmark skal leve op til niveau AA.</p>
-
-<p>For hvert menupunkt i <a href="/frontend-styleguide/designandcode">komponentbiblioteket</a>, vil retningslinjer for tilgængelighed være specificeret yderligere.</p>
-
-<h2 id="gør-din-løsning-tilgængelig">Gør din løsning tilgængelig</h2>
-
-<p>Indholdet på siden skal kunne opfattes af alle typer brugere. Dette betyder blandt bl.a:</p>
-
+          <h2>Tilgængelighedsattributter</h2>
+<p>Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.</p>
 <ul>
-  <li>Tekst-alternativer til alt ikke-tekstbaseret indhold er tilgængeligt</li>
-  <li>Indholdet af alle medier som lyd og video gengives med tekst</li>
-  <li>Elementerne på siden er struktureret i logisk rækkefølge</li>
-  <li>Der er tilstrækkelig kontrast mellem tekst og baggrund</li>
+  <li><code>aria-hidden="true"</code> og <code>aria-hidden="false"</code> bruges til at skjule og vise elementer for skærmlæsere.</li>
+  <li><code>.sr-only</code> klassen og mixin <code>@mixin sr-only()</code> bruges når elementer kun skal vises for skærmlæsere.</li>
+  <li><code>aria-expanded="true"</code> og <code>aria-expanded="false"</code> bruges til elementer som toggler mellem at være åbne og lukket.</li>
+  <li><code>aria-label=""</code> skal beskrive hvad funktionen af et element gør.</li>
 </ul>
-
-<h2 id="gør-din-løsning-anvendelig">Gør din løsning anvendelig</h2>
-
-<p>Navigation og elementer i din brugerflade skal kunne bruges af de fleste.Dette betyder blandt bl.a at:</p>
-
-<ul>
-  <li>Man kan navigere gennem hele løsningen kun ved brug af tastatur</li>
-  <li>Man skal kunne slå eventuelle  tidsbegræsninger fra</li>
-  <li>Hyppige blink er undgået for at forhindre (epileptiske) anfald</li>
-  <li>Løsningen er navigerbar og at brugeren kan orienteres sig</li>
-</ul>
-
-<h2 id="gør-din-løsning-robust">Gør din løsning robust</h2>
-
-<p>Koden til løsningen skal laves sådan, at forskellige teknologier og programmer (fx browsere og skærmlæsere) kan aflæse indholdet nogenlunde pålideligt. Dette betyder blandt bl.a at:</p>
-
-<ul>
-  <li>Løsningen skal kunne aflæses af gængse enheder, som fx mobilenheder</li>
-  <li>Løsningen skal kunne aflæse af gængse browsere</li>
-  <li>Løsningen skal kunne aflæses af hjælpemidler som fx skærmlæsere</li>
-</ul>
-
-<h2 id="gør-din-løsning-forståelig">Gør din løsning forståelig</h2>
-
-<p>Både indholdet i din selvbetjeningsløsning og interaktionen med den skal være forståelig for brugeren. Dette betyder blandt bl.a at:</p>
-
-<ul>
-  <li>Siden sprog (fx dansk eller engelsk) skal kunne rent programmeringsmæssigt</li>
-  <li>Løsningen agerer forudsigeligt for brugeren uden overraskelser</li>
-  <li>Brugeren får hjælp til at udfylde formularer korrekt samt at rette fejl</li>
-</ul>
-
-<p>Læs mere om de enkelte punkter <a href="http://arkitekturguiden.digitaliser.dk/godselvbetjening/kravbanken/Tilg%C3%A6ngelighed">her</a></p>
-
-<h2 id="links-om-tilgængelighed">Links om tilgængelighed</h2>
-
-<ul>
-  <li>
-    <p>Web Content Accessibility Guidelines (WCAG) 2.0</p>
-
-    <p><a href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</a></p>
-  </li>
-  <li>
-    <p>Tips til at designe tilgængelige brugergrænseflader</p>
-
-    <p><a href="http://www.w3.org/WAI/gettingstarted/tips/designing.html">http://www.w3.org/WAI/gettingstarted/tips/designing.html</a></p>
-  </li>
-  <li>
-    <p>WebAIM’s WCAG 2.0 Checklist</p>
-
-    <p><a href="http://webaim.org/standards/wcag/checklist">http://webaim.org/standards/wcag/checklist</a></p>
-  </li>
-  <li>
-    <p>W3C cheatsheet – accessibility: WCAG2 at a glance</p>
-
-    <p><a href="http://www.w3.org/2009/cheatsheet/#wcag2">http://www.w3.org/2009/cheatsheet/#wcag2</a></p>
-  </li>
-  <li>
-    <p>Techniques for WCAG 2.0</p>
-
-    <p><a href="http://www.w3.org/TR/WCAG20-TECHS/">http://www.w3.org/TR/WCAG20-TECHS/</a></p>
-  </li>
-  <li>
-    <p>Ekstra: Section 508 Checklist</p>
-
-    <p><a href="http://webaim.org/standards/508/checklist">http://webaim.org/standards/508/checklist</a></p>
-  </li>
-</ul>
-
 
       </section>
     </div>

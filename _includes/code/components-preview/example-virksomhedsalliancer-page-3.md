@@ -268,7 +268,7 @@ title: Example-virksomhedsalliancer-page-3.html
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 footer-col">
-                    <div class=" align-left ">
+                    <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
                                 <span class="h6 weight-semibold">Ansvarlig myndighed</span>
@@ -280,7 +280,7 @@ title: Example-virksomhedsalliancer-page-3.html
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 footer-col">
-                    <div class=" align-right ">
+                    <div class=" align-text-right  ">
                         <ul class="unstyled-list">
                             <li>
                                 <a class="function-link" href="mailto:support@example.dk">support@example.dk</a>
