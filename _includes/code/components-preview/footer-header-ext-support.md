@@ -8,7 +8,7 @@ title: Footer-header-ext-support.html
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 footer-col">
-                    <div class="align-left">
+                    <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
                                 <p class="h6 weight-semibold" title="Ansvarlig myndighed"
@@ -26,7 +26,7 @@ title: Footer-header-ext-support.html
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
-                    <div class="align-left">
+                    <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
                                 <p class="h6 weight-semibold" title="Telefonisk support"
@@ -54,7 +54,7 @@ title: Footer-header-ext-support.html
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
-                    <div class="align-left">
+                    <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
                                 <p class="h6 weight-semibold" title="Skriftlig kontakt"

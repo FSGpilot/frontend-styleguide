@@ -107,11 +107,11 @@ title: Example-praktikplads-page-3.html
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
-                    <a href="#" class="function-link">Udskriv
-                        <svg class="icon-svg "><use xlink:href="#printer"></use></svg>
+                    <a href="#" class="function-link">
+                        <svg class="icon-svg "><use xlink:href="#printer"></use></svg>                        Udskriv
                     </a>
-                    <a href="" class="function-link">Hjælp
-                        <svg class="icon-svg "><use xlink:href="#help-circle-outline"></use></svg>
+                    <a href="" class="function-link">
+                        <svg class="icon-svg "><use xlink:href="#help-circle-outline"></use></svg>                        Hjælp
                     </a>
                 </div>
             </div>
@@ -282,7 +282,7 @@ title: Example-praktikplads-page-3.html
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 footer-col">
-                    <div class=" align-left ">
+                    <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
                                 <span class="h6 weight-semibold">Ansvarlig myndighed</span>
@@ -294,7 +294,7 @@ title: Example-praktikplads-page-3.html
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 footer-col">
-                    <div class=" align-right ">
+                    <div class=" align-text-right  ">
                         <ul class="unstyled-list">
                             <li>
                                 <a class="function-link" href="mailto:support@example.dk">support@example.dk</a>

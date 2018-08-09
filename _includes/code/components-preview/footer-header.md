@@ -8,7 +8,7 @@ title: Footer-header.html
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-9 footer-col">
-                    <div class=" align-left ">
+                    <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
                                 <p class="h6 weight-semibold" title="Ansvarlig myndighed"
@@ -24,7 +24,7 @@ title: Footer-header.html
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 footer-col">
-                    <div class=" align-left ">
+                    <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
                                 <p class="h6 weight-semibold" title="Kontakt" aria-label="Kontakt">Kontakt</p>

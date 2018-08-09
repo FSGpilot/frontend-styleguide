@@ -76,11 +76,8 @@ title: Example-aes-page-7.html
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
-                    <a href="" class="function-link">Gem kladde
-
-                        <svg class="icon-svg "><use xlink:href="#save"></use></svg>
-
-                    </a>
+                    <a href="" class="function-link">
+                        <svg class="icon-svg "><use xlink:href="#save"></use></svg>                        Gem kladde</a>
                 </div>
             </div>
         </div>
@@ -454,7 +451,7 @@ title: Example-aes-page-7.html
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 footer-col">
-                    <div class=" align-left ">
+                    <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
                                 <span class="h6 weight-semibold">Ansvarlig myndighed</span>
@@ -466,7 +463,7 @@ title: Example-aes-page-7.html
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 footer-col">
-                    <div class=" align-right ">
+                    <div class=" align-text-right  ">
                         <ul class="unstyled-list">
                             <li>
                                 <a class="function-link" href="mailto:support@example.dk">support@example.dk</a>
