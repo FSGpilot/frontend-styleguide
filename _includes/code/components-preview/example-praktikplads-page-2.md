@@ -107,11 +107,11 @@ title: Example-praktikplads-page-2.html
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
-                    <a href="#" class="function-link">
-                        <svg class="icon-svg "><use xlink:href="#printer"></use></svg>                        Udskriv
+                    <a href="#" class="function-link">Udskriv
+                        <svg class="icon-svg "><use xlink:href="#printer"></use></svg>
                     </a>
-                    <a href="" class="function-link">
-                        <svg class="icon-svg "><use xlink:href="#help-circle-outline"></use></svg>                        Hjælp
+                    <a href="" class="function-link">Hjælp
+                        <svg class="icon-svg "><use xlink:href="#help-circle-outline"></use></svg>
                     </a>
                 </div>
             </div>

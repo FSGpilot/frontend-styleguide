@@ -33,13 +33,13 @@ title: Buttons.html
     <button class="button button-tertiary" disabled tab-index="-1" aria-disabled="true">Disabled</button>
 
     <p class="h6">Knap med ikon</p>
-    <button class="button button-primary">
-        <svg class="icon-svg "><use xlink:href="#refresh"></use></svg> Refresh
+    <button class="button button-primary">Refresh
+        <svg class="icon-svg "><use xlink:href="#refresh"></use></svg>
     </button>
     <p class="h6">Funktionslink</p>
     <p>
-        <a href="#" class="function-link">
-            <svg class="icon-svg "><use xlink:href="#printer"></use></svg> Print
-            hele guiden</a>
+        <a href="#" class="function-link">Print hele guiden
+            <svg class="icon-svg "><use xlink:href="#printer"></use></svg>
+        </a>
     </p>
 </div>
