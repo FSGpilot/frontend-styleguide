@@ -66,11 +66,6 @@
     opacity: 0; //hide page until theme is downlaoded by js.
   }
 </style>
-<!-- Vender example stylesheets-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"> 
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css">
 
 <!-- frontend styleguide stylesheet-->
 <script>
@@ -1368,7 +1363,7 @@
           <p>Forklaring af farvevalg og sammenhæng til portalerne</p>
 
 <h2>Temahåndtering</h2>
-<p>Kort forklaring af baggrunden for temahåndtering</p>
+<p>Styleguiden er udviklet med 3 forskellige temaer. Standard temaet er det neutrale tema hvor primærfarven er grå. De to andre teamer er målrettet borger.dk og virk.dk.</p>
 
 <div class="accordion-bordered mb-6">
   <button class="button-unstyled accordion-button" aria-expanded="false" aria-controls="theme">
@@ -1376,7 +1371,24 @@
   </button>
   <div id="theme" class="accordion-content">
     <p class="h6">Temahåndtering</p>
-    <p>Tekst om hvordan man temahåndterer.</p>
+    <p>Styleguiden er udviklet med 3 forskellige temaer. Standard temaet er det neutrale tema hvor primærfarven er grå (#454545). De to andre temaer er målrettet borger.dk og virk.dk. Styling filerne til de to temaer kan findes i mappen <code>/src/stylesheets/themes</code>.</p>
+    <p>Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de to andre temaer er primærfarven og nolge få variationer i headeren (fx logo). Alt andet er ens på tværs af temaer.</p>
+    <p class="mb-2">Tema eksempel – borger.dk:</p>
+    <div class="code-highlight">
+      <code>
+        $color-primary: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#568331; //grøn<br />
+        $color-primary-medium: #3C5C22; //mørkere grøn<br />
+        $color-primary-dark:&nbsp;&nbsp;&nbsp; #233614; //mørkegrøn<br /><br />
+        .portal-header{<br />
+        &nbsp;&nbsp;  background-color: #f1f1f1;	<br />
+        }<br />
+        .logo{<br />
+        &nbsp;&nbsp; background-image: url('logo-borgerdk.svg');<br />
+        &nbsp;&nbsp;  width: 144px;<br />
+        &nbsp;&nbsp;  height: 36px;<br />
+        }
+      </code>
+    </div>
     <p class="h6">Tilpasningsmuligheder</p>
     <p>Alle farver i styleguiden er opsat med variable. Farverne i styleguiden kan skiftes ved at overskrive eksisterende farve-variable. <br />
     Alle farvevariable har en navngivning der starter med '$color-' og findes i filen '/scss/variables.scss'.<br />
@@ -2291,7 +2303,6 @@
     <script src="/frontend-styleguide/assets/js/styleguide.js"></script>
 
     <script src="/frontend-styleguide/assets/js/vendor/dkwds.js"></script>
-<script src="/frontend-styleguide/assets/js/vendor/dkwds-vendor-examples.js"></script>
 
   </body>
 </html>
