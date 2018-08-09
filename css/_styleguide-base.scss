@@ -967,7 +967,10 @@ code {
     width:4.4rem;
   }
   .icon-name {
-    white-space: nowrap;
+    white-space: pre-line;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 1.5rem;
     font-size:1.3rem;
   }
   .icon-code-name {
@@ -975,6 +978,8 @@ code {
     font-size: 1.3rem;
     font-weight: $font-weight-normal;
     line-height: 1.5rem;
+    text-align: center;
+    margin-top: 4px;
   }
 }
 
