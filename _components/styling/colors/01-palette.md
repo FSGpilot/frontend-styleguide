@@ -337,42 +337,42 @@ order: 01
 <h3 class="heading h5">Datavisualiseringsfarver</h3>
 <div class="color-row-container">
   <div class="row color-row">
-    <!-- color-data-turqoice START -->
+    <!-- color-data-turquoise START -->
     <div class="col-md-3">
-      <div class="color-container-medium color-data-turqoice"></div>
+      <div class="color-container-medium color-data-turquoise"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#56D4D6</p>
-        <p class="code-color-variable">$color-data-turqoice</p>
+        <p class="code-color-variable">$color-data-turquoise</p>
       </div>
     </div>
-    <!-- color-data-turqoice END -->
-    <!-- color-data-turqoice-high-opacity START -->
+    <!-- color-data-turquoise END -->
+    <!-- color-data-turquoise-high-opacity START -->
     <div class="col-md-3">
-      <div class="color-container-medium color-data-turqoice-high-opacity"></div>
+      <div class="color-container-medium color-data-turquoise-high-opacity"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#56D4D6</p>
-        <p class="code-color-variable">$color-data-turqoice-high-opacity</p>
+        <p class="code-color-variable">$color-data-turquoise-high-opacity</p>
       </div>
     </div>
-    <!-- color-data-turqoice-high-opacity END -->
-    <!-- color-data-turqoice-medium-opacity START -->
+    <!-- color-data-turquoise-high-opacity END -->
+    <!-- color-data-turquoise-medium-opacity START -->
     <div class="col-md-3">
-      <div class="color-container-medium color-data-turqoice-medium-opacity"></div>
+      <div class="color-container-medium color-data-turquoise-medium-opacity"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#56D4D6</p>
-        <p class="code-color-variable">$color-data-turqoice-medium-opacity</p>
+        <p class="code-color-variable">$color-data-turquoise-medium-opacity</p>
       </div>
     </div>
-    <!-- color-data-turqoice-medium-opacity END -->
-    <!-- color-data-turqoice-low-opacity START -->
+    <!-- color-data-turquoise-medium-opacity END -->
+    <!-- color-data-turquoise-low-opacity START -->
     <div class="col-md-3">
-      <div class="color-container-medium color-data-turqoice-low-opacity"></div>
+      <div class="color-container-medium color-data-turquoise-low-opacity"></div>
       <div class="color-text-container">
         <p class="code-color-hex">#56D4D6</p>
-        <p class="code-color-variable">$color-data-turqoice-low-opacity</p>
+        <p class="code-color-variable">$color-data-turquoise-low-opacity</p>
       </div>
     </div>
-    <!-- color-data-turqoice-low-opacity END -->
+    <!-- color-data-turquoise-low-opacity END -->
     <!-- color-data-teal START -->
     <div class="col-md-3">
       <div class="color-container-medium color-data-teal"></div>
@@ -553,6 +553,25 @@ order: 01
       </div>
     </div>
     <!-- color-data-violet-low-opacity END -->
+  </div>
+</div>
+
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
+    aria-expanded="false" aria-controls="color-implementation">
+    Implementering
+  </button>
+  <div id="color-implementation" class="accordion-content">
+    <p>Datavisualiseringsfarverne findes i seks farver, hvoraf hver farve findes i 4 versioner.</p> 
+    <ul>
+      <li><code>$color-data-X</code> (100%)</li>
+      <li><code>$color-data-X-high-opacity</code> (60%)</li>
+      <li><code>$color-data-X-medium-opacity</code> (30%)</li>
+      <li><code>$color-data-X-low-opacity</code> (10%)</li>
+    </ul>
+    <p>'high-opacity' har en høj procent opacity på 60%</p>
+    <p>'medium-opacity' har en middel procent opacity på 30%</p> 
+    <p>'low-opacity' har en lav procent opacity på 10%</p>
   </div>
 </div>
 
@@ -808,35 +827,35 @@ order: 01
           <p class="text-black">Sort på teal med lav gennemsigtighed</p>
         </div>
       </div>
-      <!-- color-data-turqoice-low-opacity end -->
-      <!-- color-data-turqoice start -->
-      <div class="color-container-small color-data-turqoice">
+      <!-- color-data-turquoise-low-opacity end -->
+      <!-- color-data-turquoise start -->
+      <div class="color-container-small color-data-turquoise">
         <div class="color-text-container">
           <p class="text-black">Sort på turkis</p>
         </div>
       </div>
-      <!-- color-data-turqoice end -->
-      <!-- color-data-turqoice-high-opacity start -->
-      <div class="color-container-small color-data-turqoice-high-opacity">
+      <!-- color-data-turquoise end -->
+      <!-- color-data-turquoise-high-opacity start -->
+      <div class="color-container-small color-data-turquoise-high-opacity">
         <div class="color-text-container">
           <p class="text-black">Sort på turkis med høj gennemsigtighed</p>
         </div>
       </div>
-      <!-- color-data-turqoice-high-opacity end -->
-      <!-- color-data-turqoice-medium-opacity start -->
-      <div class="color-container-small color-data-turqoice-medium-opacity">
+      <!-- color-data-turquoise-high-opacity end -->
+      <!-- color-data-turquoise-medium-opacity start -->
+      <div class="color-container-small color-data-turquoise-medium-opacity">
         <div class="color-text-container">
           <p class="text-black">Sort på turkis med middel gennemsigtighed</p>
         </div>
       </div>
-      <!-- color-data-turqoice-medium-opacity end -->
-      <!-- color-data-turqoice-low-opacity start -->
-      <div class="color-container-small color-data-turqoice-low-opacity">
+      <!-- color-data-turquoise-medium-opacity end -->
+      <!-- color-data-turquoise-low-opacity start -->
+      <div class="color-container-small color-data-turquoise-low-opacity">
         <div class="color-text-container">
           <p class="text-black">Sort på turkis med lav gennemsigtighed</p>
         </div>
       </div>
-      <!-- color-data-turqoice-low-opacity end -->
+      <!-- color-data-turquoise-low-opacity end -->
     </div>
   </div>
 </div>
