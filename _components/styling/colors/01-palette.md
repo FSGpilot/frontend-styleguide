@@ -27,7 +27,7 @@ order: 01
         <p class="code-color-hex">#3C5C22</p>
         <p class="code-color-variable">$primary-medium</p>
       </div>
-    </div> 
+    </div>
     <!-- borger medium END -->
     <!-- borger dark START -->
     <div class="col-md-3">
@@ -350,7 +350,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-turquoise-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#56D4D6</p>
+        <p class="code-color-hex">#9AE5E6</p>
         <p class="code-color-variable">$color-data-turquoise-high-opacity</p>
       </div>
     </div>
@@ -359,7 +359,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-turquoise-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#56D4D6</p>
+        <p class="code-color-hex">#CCF2F3</p>
         <p class="code-color-variable">$color-data-turquoise-medium-opacity</p>
       </div>
     </div>
@@ -368,7 +368,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-turquoise-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#56D4D6</p>
+        <p class="code-color-hex">#EEFAFA</p>
         <p class="code-color-variable">$color-data-turquoise-low-opacity</p>
       </div>
     </div>
@@ -386,7 +386,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-teal-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#15B094</p>
+        <p class="code-color-hex">#73D0BF</p>
         <p class="code-color-variable">$color-data-teal-high-opacity</p>
       </div>
     </div>
@@ -395,7 +395,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-teal-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#15B094</p>
+        <p class="code-color-hex">#B9E7DF</p>
         <p class="code-color-variable">$color-data-teal-medium-opacity</p>
       </div>
     </div>
@@ -404,7 +404,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-teal-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#15B094</p>
+        <p class="code-color-hex">#E7F7F4</p>
         <p class="code-color-variable">$color-data-teal-low-opacity</p>
       </div>
     </div>
@@ -422,7 +422,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-orange-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FF6A38</p>
+        <p class="code-color-hex">#FFA688</p>
         <p class="code-color-variable">$color-data-orange-high-opacity</p>
       </div>
     </div>
@@ -431,7 +431,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-orange-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FF6A38</p>
+        <p class="code-color-hex">#FFD2C3</p>
         <p class="code-color-variable">$color-data-orange-medium-opacity</p>
       </div>
     </div>
@@ -440,7 +440,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-orange-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#FF6A38</p>
+        <p class="code-color-hex">#FFF0Eb</p>
         <p class="code-color-variable">$color-data-orange-low-opacity</p>
       </div>
     </div>
@@ -458,7 +458,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-magenta-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#D81884</p>
+        <p class="code-color-hex">#E874B5</p>
         <p class="code-color-variable">$color-data-magenta-high-opacity</p>
       </div>
     </div>
@@ -467,7 +467,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-magenta-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#D81884</p>
+        <p class="code-color-hex">#F3BADA</p>
         <p class="code-color-variable">$color-data-magenta-medium-opacity</p>
       </div>
     </div>
@@ -476,7 +476,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-magenta-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#D81884</p>
+        <p class="code-color-hex">#FBE7F2</p>
         <p class="code-color-variable">$color-data-magenta-low-opacity</p>
       </div>
     </div>
@@ -494,7 +494,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-purple-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#8F2B8F</p>
+        <p class="code-color-hex">#BC80BC</p>
         <p class="code-color-variable">$color-data-purple-high-opacity</p>
       </div>
     </div>
@@ -503,7 +503,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-purple-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#8F2B8F</p>
+        <p class="code-color-hex">#DDBFDD</p>
         <p class="code-color-variable">$color-data-purple-medium-opacity</p>
       </div>
     </div>
@@ -512,7 +512,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-purple-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#8F2B8F</p>
+        <p class="code-color-hex">#F3E9F3</p>
         <p class="code-color-variable">$color-data-purple-low-opacity</p>
       </div>
     </div>
@@ -530,7 +530,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-violet-high-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#474E95</p>
+        <p class="code-color-hex">#9195BF</p>
         <p class="code-color-variable">$color-data-violet-high-opacity</p>
       </div>
     </div>
@@ -539,7 +539,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-violet-medium-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#474E95</p>
+        <p class="code-color-hex">#C8CADF</p>
         <p class="code-color-variable">$color-data-violet-medium-opacity</p>
       </div>
     </div>
@@ -548,7 +548,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-medium color-data-violet-low-opacity"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#474E95</p>
+        <p class="code-color-hex">#ECEDF4</p>
         <p class="code-color-variable">$color-data-violet-low-opacity</p>
       </div>
     </div>
@@ -562,7 +562,7 @@ order: 01
     Implementering
   </button>
   <div id="color-implementation" class="accordion-content">
-    <p>Datavisualiseringsfarverne findes i seks farver, hvoraf hver farve findes i 4 versioner.</p> 
+    <p>Datavisualiseringsfarverne findes i seks farver, hvoraf hver farve findes i 4 versioner.</p>
     <ul>
       <li><code>$color-data-X</code> (100%)</li>
       <li><code>$color-data-X-high-opacity</code> (60%)</li>
@@ -570,7 +570,7 @@ order: 01
       <li><code>$color-data-X-low-opacity</code> (10%)</li>
     </ul>
     <p>'high-opacity' har en høj procent opacity på 60%</p>
-    <p>'medium-opacity' har en middel procent opacity på 30%</p> 
+    <p>'medium-opacity' har en middel procent opacity på 30%</p>
     <p>'low-opacity' har en lav procent opacity på 10%</p>
   </div>
 </div>
