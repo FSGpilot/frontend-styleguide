@@ -32,42 +32,42 @@ Ikonerne nedenfor har bestemte betydninger. Ikonerne kan anvendes på flere måd
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                     <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                     <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
@@ -77,42 +77,42 @@ Ikonerne nedenfor har bestemte betydninger. Ikonerne kan anvendes på flere måd
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                     <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
@@ -122,42 +122,42 @@ Ikonerne nedenfor har bestemte betydninger. Ikonerne kan anvendes på flere måd
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                      <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                    <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
             <div class="col-6 col-sm-4 col-md-2">
                 <div class="icon-box">
                     <svg class="icon-svg "><use xlink:href="#alert-outline"></use></svg>
-                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name color-black"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
+                   <a class="popover js-tooltip" title="Forklarende tekst" data-tippy-trigger="click" role="tooltip" aria-label="Forklarende tekst" data-original-title="Forklarende tekst"><p class="icon-name"><span class="sr-only">Eksempel af </span><strong>Dansk betegnelse</strong></p></a>
                     <span class="icon-code-name"><span class="sr-only">Eksempel af </span>#alert-outline</span>
                 </div>
             </div>
