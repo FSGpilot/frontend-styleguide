@@ -15,8 +15,8 @@ subnav:
   href: '#solution-4'
 - text: løsning 5
   href: '#solution-5'
-- text: løsning 6
-  href: '#solution-6'
+# - text: løsning 6
+#   href: '#solution-6'
 ---
 
 <!-- Løsning 1: Aktindsigt -->
@@ -150,7 +150,7 @@ subnav:
 <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/strategiske-virksomhedsalliancer/virksomhedsalliancer-1">Demo strategiske virksomhedsalliancer</a>
 
 <!-- Løsning 6: Praktikplads -->
-<h2 id="solution-6">Løsning 6: Praktikplads</h2>
+<!-- <h2 id="solution-6">Løsning 6: Praktikplads</h2>
 <p>Se en eksemplarisk løsning, som demonstrerer hvordan en blanket kan opbygges med en klikbar tringuide</p>
 <div class="row">
   <div class="col-12 col-sm-12 col-md-4 col-lg-4">
@@ -169,4 +169,4 @@ subnav:
   </div>
 </div>
 <a class="button button-secondary mt-5" href="{{ site.baseurl }}/pages/page-templates/praktikplads/praktikplads-1">Demo praktikplads</a>
-
+ -->

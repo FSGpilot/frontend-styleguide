@@ -72,11 +72,10 @@ title: Example-flytning-page-5.html
         <div class="navbar">
             <div class="navbar-inner navbar-context-actions container">
                 <div class="nav-actions">
-                    <a href="#" class="function-link">Om digital flytning</a>
-                    <a href="" class="function-link">Sprog
-
-                        <svg class="icon-svg "><use xlink:href="#language"></use></svg>
-
+                    <a href="#" class="function-link">
+                        <svg class="icon-svg "><use xlink:href="#"></use></svg>                        Om digital flytning</a>
+                    <a href="" class="function-link">
+                        <svg class="icon-svg "><use xlink:href="#language"></use></svg>                        Sprog
                     </a>
                 </div>
             </div>
