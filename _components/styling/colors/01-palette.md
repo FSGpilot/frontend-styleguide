@@ -27,7 +27,7 @@ order: 01
         <p class="code-color-hex">#3C5C22</p>
         <p class="code-color-variable">$primary-medium</p>
       </div>
-    </div>
+    </div> 
     <!-- borger medium END -->
     <!-- borger dark START -->
     <div class="col-md-3">
