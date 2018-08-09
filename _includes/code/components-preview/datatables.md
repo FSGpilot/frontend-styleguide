@@ -450,7 +450,7 @@ title: Datatables.html
                 <td>$86,500</td>
             </tr>
             <tr>
-                <td>Shad Decker</td>½
+                <td>Shad Decker</td>
                 <td>Regional Director</td>
                 <td>Edinburgh</td>
                 <td>51</td>
