@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="118px" viewBox="0 0 128 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Trinindikatorer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-536.000000, -1654.000000)">
+            <g id="Trinindikatorer" transform="translate(536.000000, 1654.000000)">
+                <rect id="Rectangle-6" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="128" height="118"></rect>
+                <g id="ic_confirm" transform="translate(100.000000, 4.000000)">
+                    <g id="Shape">
+                        <polygon points="0 0 20 0 20 20 0 20"></polygon>
+                        <polygon fill="#212121" points="7.5 13.5 4 10 2.83333333 11.1666667 7.5 15.8333333 17.5 5.83333333 16.3333333 4.66666667"></polygon>
+                    </g>
+                </g>
+                <rect id="Rectangle-15" fill="#BFBFBF" fill-rule="nonzero" x="31" y="103" width="44" height="4"></rect>
+                <rect id="Rectangle-15" fill="#BFBFBF" fill-rule="nonzero" x="31" y="73" width="44" height="4"></rect>
+                <rect id="Rectangle-15" fill="#BFBFBF" fill-rule="nonzero" x="31" y="43" width="44" height="4"></rect>
+                <rect id="Rectangle-15" fill="#BFBFBF" fill-rule="nonzero" x="31" y="13" width="44" height="4"></rect>
+                <rect id="Rectangle-17" fill="#F5F5F5" fill-rule="nonzero" x="0" y="28" width="128" height="2"></rect>
+                <rect id="Rectangle-17" fill="#F5F5F5" fill-rule="nonzero" x="0" y="58" width="128" height="2"></rect>
+                <rect id="Rectangle-17" fill="#F5F5F5" fill-rule="nonzero" x="0" y="88" width="128" height="2"></rect>
+                <polygon id="1" fill="#454545" points="18.648 18 12.984 18 12.984 16.716 15.156 16.716 15.156 11.052 13.128 12.192 12.528 11.04 15.06 9.624 16.704 9.624 16.704 16.716 18.648 16.716"></polygon>
+                <path d="M18.552,46.668 L18.552,48 L12.744,48 L12.744,46.536 L15.372,44.232 C16.26,43.452 16.668,42.876 16.668,42.144 L16.668,41.988 C16.668,41.256 16.116,40.848 15.432,40.848 C14.568,40.848 14.16,41.412 13.968,42.096 L12.6,41.568 C12.96,40.452 13.86,39.48 15.564,39.48 C17.328,39.48 18.336,40.536 18.336,41.976 C18.336,43.368 17.388,44.256 16.224,45.216 L14.46,46.668 L18.552,46.668 Z" id="2" fill="#454545"></path>
+                <path d="M14.316,73.008 L15.144,73.008 C16.104,73.008 16.548,72.564 16.548,71.964 L16.548,71.88 C16.548,71.196 16.068,70.776 15.312,70.776 C14.58,70.776 14.004,71.148 13.596,71.784 L12.588,70.872 C13.152,70.092 13.944,69.48 15.36,69.48 C17.052,69.48 18.204,70.32 18.204,71.664 C18.204,72.744 17.472,73.392 16.596,73.572 L16.596,73.644 C17.568,73.824 18.348,74.496 18.348,75.684 C18.348,77.16 17.112,78.144 15.264,78.144 C13.632,78.144 12.816,77.4 12.288,76.584 L13.452,75.696 C13.824,76.368 14.328,76.848 15.264,76.848 C16.188,76.848 16.704,76.368 16.704,75.588 L16.704,75.504 C16.704,74.736 16.14,74.328 15.144,74.328 L14.316,74.328 L14.316,73.008 Z" id="3" fill="#454545"></path>
+                <path d="M17.676,108 L16.176,108 L16.176,106.38 L12.384,106.38 L12.384,105.036 L15.72,99.624 L17.676,99.624 L17.676,105.156 L18.768,105.156 L18.768,106.38 L17.676,106.38 L17.676,108 Z M16.08,101.16 L13.68,105.156 L16.176,105.156 L16.176,101.16 L16.08,101.16 Z" id="4" fill="#454545"></path>
+            </g>
+        </g>
+    </g>
+</svg>

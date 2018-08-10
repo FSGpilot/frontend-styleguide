@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="168px" height="96px" viewBox="0 0 168 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Farver</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-164.000000, -188.000000)" fill-rule="nonzero">
+            <g id="Farver" transform="translate(164.000000, 188.000000)">
+                <g id="Group">
+                    <rect id="Rectangle-4" fill="#454545" x="0" y="0" width="72" height="48"></rect>
+                    <rect id="Rectangle-4" fill="#747474" x="0" y="48" width="72" height="24"></rect>
+                    <rect id="Rectangle-4" fill="#999999" x="0" y="72" width="72" height="24"></rect>
+                </g>
+                <g id="Group" transform="translate(96.000000, 0.000000)">
+                    <rect id="Rectangle-4" fill="#454545" x="0" y="0" width="72" height="48"></rect>
+                    <rect id="Rectangle-4" fill="#747474" x="0" y="48" width="72" height="24"></rect>
+                    <rect id="Rectangle-4" fill="#999999" x="0" y="72" width="72" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

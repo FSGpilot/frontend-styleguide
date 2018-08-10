@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="101px" viewBox="0 0 136 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Overflow menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-884.000000, -2553.000000)" fill-rule="nonzero">
+            <g id="Overflow-menu" transform="translate(884.000000, 2553.000000)">
+                <polygon id="Rectangle-22" fill="#FFFFFF" points="0 8 105 8 113 0 121 8 136 8 134 101 0 101"></polygon>
+                <rect id="Rectangle-15" fill="#BFBFBF" x="24" y="74" width="60" height="4"></rect>
+                <rect id="Rectangle-15" fill="#BFBFBF" x="24" y="53" width="78" height="4"></rect>
+                <polygon id="Rectangle-15" fill="#BFBFBF" points="24 33 92 33 92 37 24 37"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,51 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="966 2403 280 176">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Footer);
-      }
-
-      .cls-2 {
-        fill: #d6d7d9;
-      }
-
-      .cls-3, .cls-4 {
-        fill: #aeb0b5;
-      }
-
-      .cls-3 {
-        stroke: #fff;
-        stroke-width: 6px;
-      }
-
-      .cls-4 {
-        stroke: #f1f1f1;
-        stroke-width: 2px;
-      }
-
-      .cls-5 {
-        fill: #f1f1f1;
-      }
-    </style>
-    <clipPath id="clip-Footer">
-      <rect x="966" y="2403" width="280" height="176"/>
-    </clipPath>
-  </defs>
-  <g id="Footer" class="cls-1">
-    <rect class="cls-5" x="966" y="2403" width="280" height="176"/>
-    <path id="Path_110" data-name="Path 110" class="cls-2" d="M0,0H227V25H0Z" transform="translate(993 2530)"/>
-    <path id="Path_73" data-name="Path 73" class="cls-3" d="M0,0H41.252" transform="translate(1024.571 2538.5)"/>
-    <path id="Path_84" data-name="Path 84" class="cls-4" d="M0,0H21.162" transform="translate(1106.193 2536.5)"/>
-    <path id="Path_95" data-name="Path 95" class="cls-4" d="M0,0H16.516" transform="translate(1141.193 2536.5)"/>
-    <path id="Path_91" data-name="Path 91" class="cls-4" d="M0,0H21.162" transform="translate(1071.193 2536.5)"/>
-    <path id="Path_85" data-name="Path 85" class="cls-4" d="M0,0H19.078" transform="translate(1106.193 2540.5)"/>
-    <path id="Path_94" data-name="Path 94" class="cls-4" d="M0,0H11.689" transform="translate(1141.193 2540.5)"/>
-    <path id="Path_90" data-name="Path 90" class="cls-4" d="M0,0H15.069" transform="translate(1071.193 2540.5)"/>
-    <path id="Path_86" data-name="Path 86" class="cls-4" d="M0,0H20.608" transform="translate(1106.193 2544.5)"/>
-    <path id="Path_93" data-name="Path 93" class="cls-4" d="M0,0H15.385" transform="translate(1141.193 2544.5)"/>
-    <path id="Path_89" data-name="Path 89" class="cls-4" d="M0,0H18.086" transform="translate(1071.193 2544.5)"/>
-    <path id="Path_87" data-name="Path 87" class="cls-4" d="M0,0H14.335" transform="translate(1106.193 2548.5)"/>
-    <path id="Path_92" data-name="Path 92" class="cls-4" d="M0,0H14.4" transform="translate(1141.193 2548.5)"/>
-    <path id="Path_88" data-name="Path 88" class="cls-4" d="M0,0H16.867" transform="translate(1071.193 2548.5)"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="120px" viewBox="0 0 128 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Footer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-184.000000, -1360.000000)" fill-rule="nonzero">
+            <g id="Footer" transform="translate(184.000000, 1360.000000)">
+                <rect id="Rectangle-6" fill="#454545" x="0" y="96" width="128" height="24"></rect>
+                <rect id="Rectangle-6" fill="#FFFFFF" x="0" y="0" width="128" height="96"></rect>
+                <rect id="Rectangle-6" fill="#F5F5F5" x="12" y="12" width="104" height="32"></rect>
+                <rect id="Rectangle-6" fill="#F5F5F5" x="12" y="52" width="104" height="32"></rect>
+            </g>
+        </g>
+    </g>
 </svg>

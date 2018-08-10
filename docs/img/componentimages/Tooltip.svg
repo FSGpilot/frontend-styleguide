@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="40px" viewBox="0 0 152 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Tooltip</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-172.000000, -2884.000000)" fill-rule="nonzero">
+            <g id="Tooltip" transform="translate(172.000000, 2884.000000)">
+                <path d="M6,-4.05009359e-13 L146,-4.05009359e-13 C149.313708,-4.05618078e-13 152,2.6862915 152,6 L152,26 C152,29.3137085 149.313708,32 146,32 L25.4086914,32 L18.9221191,39.3205566 L12.5532227,32 L6,32 C2.6862915,32 1.19116946e-13,29.3137085 1.17239551e-13,26 L0,6 C-1.87739444e-15,2.6862915 2.6862915,-4.06176998e-13 6,-4.06785716e-13 Z" id="Rectangle-23" fill="#FFFFFF"></path>
+                <rect id="Rectangle-10" fill="#F5F5F5" x="16" y="12" width="120" height="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

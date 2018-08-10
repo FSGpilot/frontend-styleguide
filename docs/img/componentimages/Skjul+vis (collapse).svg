@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="207px" height="124px" viewBox="0 0 207 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Skjul+vis (collapse)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-18.1%" y="-32.6%" width="136.3%" height="169.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.101960784   0 0 0 0 0.101960784   0 0 0 0 0.101960784  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-498.000000, -2844.000000)">
+            <g id="Skjul+vis-(collapse)" filter="url(#filter-1)" transform="translate(515.000000, 2860.000000)">
+                <polygon id="Rectangle-15" fill="#999999" fill-rule="nonzero" points="32 8 110 8 110 16 32 16"></polygon>
+                <polygon id="Rectangle-15-Copy-2" fill="#BFBFBF" fill-rule="nonzero" points="32 28 171 28 171 36 32 36"></polygon>
+                <polygon id="Rectangle-15-Copy-3" fill="#BFBFBF" fill-rule="nonzero" points="32 44 171 44 171 52 32 52"></polygon>
+                <polygon id="Rectangle-15-Copy" fill="#BFBFBF" fill-rule="nonzero" points="3 25 7 25 7 57 3 57"></polygon>
+                <polygon id="Rectangle-15" fill="#999999" fill-rule="nonzero" points="32 72 120 72 120 80 32 80"></polygon>
+                <g id="Radio-button-/-Large-/-Checked">
+                    <g id="Radio-button/Large/Marked">
+                        <g id="Marked-radio-button">
+                            <rect id="Bounding-box" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M12,22.2 C6.36669555,22.2 1.8,17.6333044 1.8,12 C1.8,6.36669555 6.36669555,1.8 12,1.8 C17.6333044,1.8 22.2,6.36669555 22.2,12 C22.2,17.6333044 17.6333044,22.2 12,22.2 Z" id="Radio" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            <path d="M12,20.95 C16.9429485,20.95 20.95,16.9429485 20.95,12 C20.95,7.05705149 16.9429485,3.05 12,3.05 C7.05705149,3.05 3.05,7.05705149 3.05,12 C3.05,16.9429485 7.05705149,20.95 12,20.95 Z M12,22.2 C6.36669555,22.2 1.8,17.6333044 1.8,12 C1.8,6.36669555 6.36669555,1.8 12,1.8 C17.6333044,1.8 22.2,6.36669555 22.2,12 C22.2,17.6333044 17.6333044,22.2 12,22.2 Z" id="Radio" fill="#454545" fill-rule="nonzero"></path>
+                            <path d="M12,18.2 C15.4241654,18.2 18.2,15.4241654 18.2,12 C18.2,8.57583455 15.4241654,5.8 12,5.8 C8.57583455,5.8 5.8,8.57583455 5.8,12 C5.8,15.4241654 8.57583455,18.2 12,18.2 Z" id="Path" fill="#454545" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Radio-button-/-Large-/-Unchecked-" transform="translate(0.000000, 65.000000)">
+                    <g id="Radio-button/Large/Unmarked">
+                        <g id="Marked-radio-button">
+                            <rect id="Bounding-box" x="0" y="0" width="24" height="24"></rect>
+                            <circle id="Oval-3" fill="#FFFFFF" fill-rule="nonzero" cx="12" cy="12" r="10"></circle>
+                            <path d="M12,20.95 C16.9429485,20.95 20.95,16.9429485 20.95,12 C20.95,7.05705149 16.9429485,3.05 12,3.05 C7.05705149,3.05 3.05,7.05705149 3.05,12 C3.05,16.9429485 7.05705149,20.95 12,20.95 Z M12,22.2 C6.36669555,22.2 1.8,17.6333044 1.8,12 C1.8,6.36669555 6.36669555,1.8 12,1.8 C17.6333044,1.8 22.2,6.36669555 22.2,12 C22.2,17.6333044 17.6333044,22.2 12,22.2 Z" id="Radio" fill="#1A1A1A" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

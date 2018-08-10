@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="29px" viewBox="0 0 81 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Badges</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-208.000000, -2590.000000)">
+            <g id="Badges" transform="translate(208.000000, 2590.000000)">
+                <rect id="Badge" fill="#212121" x="0" y="0" width="81" height="29"></rect>
+                <path d="M16.84,22 L12.64,14.84 L11.2,11.94 L11.14,11.94 L11.14,22 L8.64,22 L8.64,8.04 L11.54,8.04 L15.74,15.2 L17.18,18.1 L17.24,18.1 L17.24,8.04 L19.74,8.04 L19.74,22 L16.84,22 Z M29.02,22 L26.36,22 L26.36,16.52 L21.58,8.04 L24.54,8.04 L27.76,13.94 L27.8,13.94 L30.94,8.04 L33.82,8.04 L29.02,16.5 L29.02,22 Z M44.12,22 L44.12,16 L38.3,16 L38.3,22 L35.66,22 L35.66,8.04 L38.3,8.04 L38.3,13.66 L44.12,13.66 L44.12,8.04 L46.76,8.04 L46.76,22 L44.12,22 Z M59.24,22 L50.04,22 L50.04,8.04 L59.24,8.04 L59.24,10.38 L52.68,10.38 L52.68,13.66 L58.48,13.66 L58.48,16 L52.68,16 L52.68,19.66 L59.24,19.66 L59.24,22 Z M62.04,22 L62.04,8.04 L67.12,8.04 C70.76,8.04 73.14,10.38 73.14,15.02 C73.14,19.66 70.76,22 67.12,22 L62.04,22 Z M64.68,19.66 L67.12,19.66 C69.08,19.66 70.34,18.5 70.34,16.12 L70.34,13.92 C70.34,11.54 69.08,10.38 67.12,10.38 L64.68,10.38 L64.68,19.66 Z" id="NYHED" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

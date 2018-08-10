@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Spinner</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-567.000000, -2571.000000)" fill-rule="nonzero">
+            <g id="Spinner" transform="translate(567.000000, 2571.000000)">
+                <circle id="Oval-4" fill="#747474" cx="32.5" cy="5.5" r="5.5"></circle>
+                <circle id="Oval-4" fill="#454545" cx="51.5" cy="13.5" r="5.5"></circle>
+                <circle id="Oval-4" fill="#BFBFBF" cx="59.5" cy="32.5" r="5.5"></circle>
+                <circle id="Oval-4" fill="#BFBFBF" cx="51.5" cy="51.5" r="5.5"></circle>
+                <circle id="Oval-4" fill="#747474" cx="13.5" cy="13.5" r="5.5"></circle>
+                <circle id="Oval-4" fill="#BFBFBF" cx="5.5" cy="32.5" r="5.5"></circle>
+                <circle id="Oval-4" fill="#BFBFBF" cx="13.5" cy="51.5" r="5.5"></circle>
+                <circle id="Oval-4" fill="#BFBFBF" cx="32.5" cy="59.5" r="5.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,7 +4,7 @@ redirect_from:
 - /datatables/
 layout: styleguide
 type: component
-title: Datatabeller
+title: Advancerede tabeller
 category: UI components
 subcategory: Design og kode
 lead:

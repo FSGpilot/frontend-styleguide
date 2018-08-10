@@ -1,76 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="656 2606 280 176">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Tabs);
-      }
-
-      .cls-2, .cls-8 {
-        fill: #fff;
-      }
-
-      .cls-2, .cls-4, .cls-7 {
-        stroke: #d6d7d9;
-      }
-
-      .cls-2, .cls-3, .cls-7 {
-        stroke-width: 0.5px;
-      }
-
-      .cls-3, .cls-5 {
-        fill: #d6d7d9;
-      }
-
-      .cls-3 {
-        stroke: #f1f1f1;
-      }
-
-      .cls-4, .cls-6 {
-        fill: #979797;
-      }
-
-      .cls-4, .cls-5, .cls-6 {
-        stroke-width: 4px;
-      }
-
-      .cls-5, .cls-6 {
-        stroke: #aeb0b5;
-      }
-
-      .cls-10, .cls-7 {
-        fill: none;
-      }
-
-      .cls-9 {
-        stroke: none;
-      }
-
-      .cls-11 {
-        fill: #f1f1f1;
-      }
-    </style>
-    <clipPath id="clip-Tabs">
-      <rect x="656" y="2606" width="280" height="176"/>
-    </clipPath>
-  </defs>
-  <g id="Tabs" class="cls-1">
-    <rect class="cls-11" x="656" y="2606" width="280" height="176"/>
-    <g id="Rectangle_30" data-name="Rectangle 30" class="cls-2" transform="translate(728 2688)">
-      <path class="cls-9" d="M2,0H42.21a2,2,0,0,1,2,2V12a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z"/>
-      <path class="cls-10" d="M2,.25H42.21A1.75,1.75,0,0,1,43.96,2v9.5a.25.25,0,0,1-.25.25H.5a.25.25,0,0,1-.25-.25V2A1.75,1.75,0,0,1,2,.25Z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="232px" height="48px" viewBox="0 0 232 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Tabs</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-132.000000, -2284.000000)" fill-rule="nonzero">
+            <g id="Tabs" transform="translate(132.000000, 2284.000000)">
+                <rect id="Rectangle-19" fill="#FFFFFF" x="0" y="0" width="232" height="48"></rect>
+                <rect id="Rectangle-20" fill="#F5F5F5" x="16" y="18" width="38" height="12"></rect>
+                <rect id="Rectangle-20" fill="#999999" x="70" y="18" width="38" height="12"></rect>
+                <rect id="Rectangle-20" fill="#454545" x="70" y="34" width="38" height="4"></rect>
+                <rect id="Rectangle-20" fill="#F5F5F5" x="124" y="18" width="38" height="12"></rect>
+                <rect id="Rectangle-20" fill="#F5F5F5" x="178" y="18" width="38" height="12"></rect>
+            </g>
+        </g>
     </g>
-    <g id="Rectangle_31" data-name="Rectangle 31" class="cls-3" transform="translate(774 2688)">
-      <path class="cls-9" d="M2,0H42.21a2,2,0,0,1,2,2V12.25a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z"/>
-      <path class="cls-10" d="M2,.25H42.21A1.75,1.75,0,0,1,43.96,2v9.75a.25.25,0,0,1-.25.25H.5a.25.25,0,0,1-.25-.25V2A1.75,1.75,0,0,1,2,.25Z"/>
-    </g>
-    <g id="Rectangle_35" data-name="Rectangle 35" class="cls-3" transform="translate(820 2688)">
-      <path class="cls-9" d="M2,0H42.21a2,2,0,0,1,2,2V12.25a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z"/>
-      <path class="cls-10" d="M2,.25H42.21A1.75,1.75,0,0,1,43.96,2v9.75a.25.25,0,0,1-.25.25H.5a.25.25,0,0,1-.25-.25V2A1.75,1.75,0,0,1,2,.25Z"/>
-    </g>
-    <path id="Path_99" data-name="Path 99" class="cls-4" d="M0,0H30" transform="translate(735.002 2694.25)"/>
-    <path id="Path_100" data-name="Path 100" class="cls-5" d="M0,0H30" transform="translate(781.002 2694.25)"/>
-    <path id="Path_101" data-name="Path 101" class="cls-6" d="M0,0H30" transform="translate(827.002 2694.25)"/>
-    <line id="Line_65" data-name="Line 65" class="cls-7" x1="167" transform="translate(712.5 2700)"/>
-    <rect id="Rectangle_36" data-name="Rectangle 36" class="cls-8" width="43.2" height="2" transform="translate(728.5 2698.25)"/>
-  </g>
 </svg>

@@ -1,78 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="966 1570 280 176">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Checkbox);
-      }
-
-      .cls-2, .cls-3, .cls-7 {
-        fill: none;
-      }
-
-      .cls-2 {
-        stroke: #c9cacd;
-      }
-
-      .cls-2, .cls-3 {
-        stroke-width: 6px;
-      }
-
-      .cls-3, .cls-4 {
-        stroke: #d6d7d9;
-      }
-
-      .cls-4, .cls-6 {
-        fill: #fff;
-      }
-
-      .cls-10, .cls-5 {
-        fill: #d6d7d9;
-      }
-
-      .cls-5, .cls-8 {
-        stroke: #5b616a;
-        stroke-width: 0.5px;
-      }
-
-      .cls-8 {
-        fill: #5b616a;
-        fill-rule: evenodd;
-      }
-
-      .cls-10, .cls-9 {
-        stroke: none;
-      }
-
-      .cls-11 {
-        fill: #f1f1f1;
-      }
-    </style>
-    <clipPath id="clip-Checkbox">
-      <rect x="966" y="1570" width="280" height="176"/>
-    </clipPath>
-  </defs>
-  <g id="Checkbox" class="cls-1">
-    <rect class="cls-11" x="966" y="1570" width="280" height="176"/>
-    <g id="Group_5" data-name="Group 5" transform="translate(948 1560)">
-      <line id="Line_15" data-name="Line 15" class="cls-2" x2="94.379" transform="translate(119.63 98)"/>
-      <line id="Line_18" data-name="Line 18" class="cls-3" x2="94.379" transform="translate(119.63 114)"/>
-      <line id="Line_16" data-name="Line 16" class="cls-3" x2="94.379" transform="translate(119.63 82)"/>
-      <g id="Rectangle_6" data-name="Rectangle 6" class="cls-4" transform="translate(101 77)">
-        <rect class="cls-9" width="10" height="10" rx="2"/>
-        <rect class="cls-7" x="0.5" y="0.5" width="9" height="9" rx="1.5"/>
-      </g>
-      <g id="Rectangle_7" data-name="Rectangle 7" class="cls-5" transform="translate(101 93)">
-        <rect class="cls-9" width="10" height="10" rx="2"/>
-        <rect class="cls-7" x="0.25" y="0.25" width="9.5" height="9.5" rx="1.75"/>
-      </g>
-      <g id="Path_22" data-name="Path 22" class="cls-6" transform="translate(101 108.691)">
-        <path class="cls-9" d="M 7.5 9.5 L 2.5 9.5 C 1.397199988365173 9.5 0.5 8.602800369262695 0.5 7.5 L 0.5 2.5 C 0.5 1.397199988365173 1.397199988365173 0.5 2.5 0.5 L 7.5 0.5 C 8.602800369262695 0.5 9.5 1.397199988365173 9.5 2.5 L 9.5 7.5 C 9.5 8.602800369262695 8.602800369262695 9.5 7.5 9.5 Z"/>
-        <path class="cls-10" d="M 7.5 9 C 8.327099800109863 9 9 8.327099800109863 9 7.5 L 9 2.5 C 9 1.672899961471558 8.327099800109863 1 7.5 1 L 2.5 1 C 1.672899961471558 1 1 1.672899961471558 1 2.5 L 1 7.5 C 1 8.327099800109863 1.672899961471558 9 2.5 9 L 7.5 9 M 7.5 10 L 2.5 10 C 1.119289994239807 10 0 8.880709648132324 0 7.5 L 0 2.5 C 0 1.119289994239807 1.119289994239807 0 2.5 0 L 7.5 0 C 8.880709648132324 0 10 1.119289994239807 10 2.5 L 10 7.5 C 10 8.880709648132324 8.880709648132324 10 7.5 10 Z"/>
-      </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="42px" viewBox="0 0 114 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-543.000000, -807.000000)">
+            <g id="Checkbox" transform="translate(540.000000, 804.000000)">
+                <g id="Marked-checkbox-large" transform="translate(72.000000, 0.000000)">
+                    <rect id="Bounding-box" x="0" y="0" width="48" height="48"></rect>
+                    <rect id="Path" fill="#FFFFFF" x="3.6" y="3.6" width="40.8" height="40.8" rx="2"></rect>
+                    <path d="M5.6,3.6 L42.4,3.6 C43.5045695,3.6 44.4,4.4954305 44.4,5.6 L44.4,42.4 C44.4,43.5045695 43.5045695,44.4 42.4,44.4 L5.6,44.4 C4.4954305,44.4 3.6,43.5045695 3.6,42.4 L3.6,5.6 C3.6,4.4954305 4.4954305,3.6 5.6,3.6 Z M35.9972246,13.330558 L20.3089504,29.0188322 L12.0027754,20.7126571 L8.79722463,23.9182079 L20.3089504,35.4299337 L39.2027754,16.5361087 L35.9972246,13.330558 Z" id="Box" fill="#454545"></path>
+                </g>
+                <g id="Unmarked-checkbox-large">
+                    <rect id="Rectangle-3" x="0" y="0" width="48" height="48"></rect>
+                    <rect id="Path" fill="#FFFFFF" x="3.6" y="3.6" width="40.8" height="40.8" rx="2"></rect>
+                    <path d="M6.1,6.1 L6.1,41.9 L41.9,41.9 L41.9,6.1 L6.1,6.1 Z M5.6,3.6 L42.4,3.6 C43.5045695,3.6 44.4,4.4954305 44.4,5.6 L44.4,42.4 C44.4,43.5045695 43.5045695,44.4 42.4,44.4 L5.6,44.4 C4.4954305,44.4 3.6,43.5045695 3.6,42.4 L3.6,5.6 C3.6,4.4954305 4.4954305,3.6 5.6,3.6 Z" id="Box" fill="#454545" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
     </g>
-    <g id="ic_check" transform="translate(721 1576.182)">
-      <rect id="rectangle" class="cls-7" width="8" height="8" transform="translate(329 78)"/>
-      <path id="path" class="cls-8" d="M5.267,9.133l-1.4-1.4L3.4,8.2l1.867,1.867,4-4L8.8,5.6Z" transform="translate(326.733 74.267)"/>
-    </g>
-  </g>
 </svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="42px" viewBox="0 0 114 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Radio buttons</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-543.000000, -1991.000000)">
+            <g id="Radio-buttons" transform="translate(540.000000, 1988.000000)">
+                <g id="Radio-button-/-Large-/-Checked" transform="translate(72.000000, 0.000000)">
+                    <g id="Radio-button/Large/Marked">
+                        <g id="Marked-radio-button">
+                            <rect id="Bounding-box" x="0" y="0" width="48" height="48"></rect>
+                            <path d="M24,44.4 C12.7333911,44.4 3.6,35.2666089 3.6,24 C3.6,12.7333911 12.7333911,3.6 24,3.6 C35.2666089,3.6 44.4,12.7333911 44.4,24 C44.4,35.2666089 35.2666089,44.4 24,44.4 Z" id="Radio" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            <path d="M24,41.9 C33.885897,41.9 41.9,33.885897 41.9,24 C41.9,14.114103 33.885897,6.1 24,6.1 C14.114103,6.1 6.1,14.114103 6.1,24 C6.1,33.885897 14.114103,41.9 24,41.9 Z M24,44.4 C12.7333911,44.4 3.6,35.2666089 3.6,24 C3.6,12.7333911 12.7333911,3.6 24,3.6 C35.2666089,3.6 44.4,12.7333911 44.4,24 C44.4,35.2666089 35.2666089,44.4 24,44.4 Z" id="Radio" fill="#454545" fill-rule="nonzero"></path>
+                            <path d="M24,36.4 C30.8483309,36.4 36.4,30.8483309 36.4,24 C36.4,17.1516691 30.8483309,11.6 24,11.6 C17.1516691,11.6 11.6,17.1516691 11.6,24 C11.6,30.8483309 17.1516691,36.4 24,36.4 Z" id="Path" fill="#454545" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Radio-button-/-Large-/-Unchecked-">
+                    <g id="Radio-button/Large/Unmarked">
+                        <g id="Marked-radio-button">
+                            <rect id="Bounding-box" x="0" y="0" width="48" height="48"></rect>
+                            <circle id="Oval-3" fill="#FFFFFF" fill-rule="nonzero" cx="24" cy="24" r="20"></circle>
+                            <path d="M24,41.9 C33.885897,41.9 41.9,33.885897 41.9,24 C41.9,14.114103 33.885897,6.1 24,6.1 C14.114103,6.1 6.1,14.114103 6.1,24 C6.1,33.885897 14.114103,41.9 24,41.9 Z M24,44.4 C12.7333911,44.4 3.6,35.2666089 3.6,24 C3.6,12.7333911 12.7333911,3.6 24,3.6 C35.2666089,3.6 44.4,12.7333911 44.4,24 C44.4,35.2666089 35.2666089,44.4 24,44.4 Z" id="Radio" fill="#1A1A1A" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

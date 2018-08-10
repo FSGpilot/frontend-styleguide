@@ -1,74 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="656 2403 280 176">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Header);
-      }
-
-      .cls-2 {
-        fill: #d6d7d9;
-      }
-
-      .cls-3 {
-        fill: #fff;
-      }
-
-      .cls-4, .cls-8 {
-        fill: none;
-      }
-
-      .cls-4 {
-        stroke: #d6d7d9;
-        stroke-width: 0.5px;
-      }
-
-      .cls-5, .cls-7 {
-        fill: #aeb0b5;
-      }
-
-      .cls-5 {
-        stroke: #fff;
-        stroke-width: 6px;
-      }
-
-      .cls-10, .cls-11, .cls-6 {
-        fill: #f1f1f1;
-      }
-
-      .cls-6, .cls-7 {
-        stroke: #f1f1f1;
-      }
-
-      .cls-6 {
-        stroke-width: 4px;
-      }
-
-      .cls-7 {
-        stroke-width: 2px;
-      }
-
-      .cls-10, .cls-9 {
-        stroke: none;
-      }
-    </style>
-    <clipPath id="clip-Header">
-      <rect x="656" y="2403" width="280" height="176"/>
-    </clipPath>
-  </defs>
-  <g id="Header" class="cls-1">
-    <rect class="cls-11" x="656" y="2403" width="280" height="176"/>
-    <g id="Group_27" data-name="Group 27" transform="translate(656 2412)">
-      <rect id="Rectangle_26" data-name="Rectangle 26" class="cls-2" width="227" height="18" transform="translate(26 18)"/>
-      <rect id="Rectangle_40" data-name="Rectangle 40" class="cls-3" width="227" height="12" transform="translate(26 36)"/>
-      <path id="Path_108" data-name="Path 108" class="cls-4" d="M-.412.077h227.1" transform="translate(26.321 48.25)"/>
-      <path id="Path_73" data-name="Path 73" class="cls-5" d="M0,0H41.252" transform="translate(58.571 27.25)"/>
-      <path id="Path_75" data-name="Path 75" class="cls-6" d="M0,0H65.784" transform="translate(58.571 42.25)"/>
-      <path id="Path_76" data-name="Path 76" class="cls-7" d="M0,0H21.162" transform="translate(199.193 40.133)"/>
-      <path id="Path_77" data-name="Path 77" class="cls-7" d="M0,0H16.682" transform="translate(203.673 43.367)"/>
-      <g id="Path_109" data-name="Path 109" class="cls-8" transform="translate(196.321 23)">
-        <path class="cls-9" d="M1.5,0h21A1.5,1.5,0,0,1,24,1.5v5A1.5,1.5,0,0,1,22.5,8H1.5A1.5,1.5,0,0,1,0,6.5v-5A1.5,1.5,0,0,1,1.5,0Z"/>
-        <path class="cls-10" d="M 22.5 7.5 C 23.05139923095703 7.5 23.5 7.051400184631348 23.5 6.5 L 23.5 1.5 C 23.5 0.9485999941825867 23.05139923095703 0.5 22.5 0.5 L 1.5 0.5 C 0.9485999941825867 0.5 0.5 0.9485999941825867 0.5 1.5 L 0.5 6.5 C 0.5 7.051400184631348 0.9485999941825867 7.5 1.5 7.5 L 22.5 7.5 M 22.5 8 L 1.5 8 C 0.6715700030326843 8 -1.77635683940025e-15 7.32843017578125 -1.77635683940025e-15 6.5 L -1.77635683940025e-15 1.5 C -1.77635683940025e-15 0.6715700030326843 0.6715700030326843 0 1.5 0 L 22.5 0 C 23.32843017578125 0 24 0.6715700030326843 24 1.5 L 24 6.5 C 24 7.32843017578125 23.32843017578125 8 22.5 8 Z"/>
-      </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="120px" viewBox="0 0 128 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Header</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-888.000000, -1064.000000)" fill-rule="nonzero">
+            <g id="Header" transform="translate(888.000000, 1064.000000)">
+                <rect id="Rectangle-6" fill="#454545" x="0" y="0" width="128" height="24"></rect>
+                <rect id="Rectangle-6" fill="#FFFFFF" x="0" y="24" width="128" height="96"></rect>
+                <rect id="Rectangle-6" fill="#F5F5F5" x="12" y="36" width="104" height="32"></rect>
+                <rect id="Rectangle-6" fill="#F5F5F5" x="12" y="76" width="104" height="32"></rect>
+            </g>
+        </g>
     </g>
-  </g>
 </svg>

@@ -5,210 +5,212 @@ title: Design og kode
 category: UI components
 lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjeningsløsninger. Designsystemet gør det let og hurtigt at bygge løsninger, som er konsistente og logiske for brugeren. 
 ---
-
 <div class="row">
-  <div class="col-12">
-    <h3>Styling</h3>
-    <div class="container "> 
-      <div class="row componentbox-row">
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/colors"><img src="{{site.baseurl}}/assets/img/componentimages/placeholderimage.PNG" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Farver</p>
-          </div>
-        </div>
-        <div class="col-md-4 componentbox-col ">
-            <div class="componentbox-container">
-              <a href="{{site.baseurl}}/designandcode/grids/"><img src="{{site.baseurl}}/assets/img/componentimages/placeholderimage.PNG" alt=""></a>
-            </div>
-            <div class="componentbox-text-container">
-              <p class="h5">Grid</p>
-            </div>
-          </div>
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/ikoner/"><img src="{{site.baseurl}}/assets/img/componentimages/placeholderimage.PNG" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Ikoner</p>
-          </div>
-        </div>
-      </div>
-      <div class="row componentbox-row">
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/layout/"><img src="{{site.baseurl}}/assets/img/componentimages/placeholderimage.PNG" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Layout</p>
-          </div>
-        </div>
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/typography/"><img src="{{site.baseurl}}/assets/img/componentimages/placeholderimage.PNG" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Typografi</p>
-          </div>
-        </div>
-      </div>
+  <div class="col-12 col-sm-6 col-md-4">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/typography/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Typography.svg" alt=""></a>
     </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/typography/">Typografi</a></p>
   </div>
-  <div class="col-12">
-    <h3>Komponenter</h3>
-    <div class="container "> 
-      <div class="row componentbox-row">
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/accordions/"><img src="{{site.baseurl}}/assets/img/componentimages/Accordion.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Accordion</p>
-          </div>
-        </div>
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/buttons/"><img src="{{site.baseurl}}/assets/img/componentimages/Button.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Knapper</p>
-          </div>
-        </div>
-      </div>
-      <div class="row componentbox-row">
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/form-controls/#checkboxes"><img src="{{site.baseurl}}/assets/img/componentimages/Checkbox.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Checkbox</p>
-          </div>
-        </div>
-        <div class="col-md-4 componentbox-col ">
-            <div class="componentbox-container">
-              <a href="{{site.baseurl}}/designandcode/beskeder"><img src="{{site.baseurl}}/assets/img/componentimages/Alerts.svg" alt=""></a>
-            </div>
-            <div class="componentbox-text-container">
-              <p class="h5">Beskeder</p>
-            </div>
-          </div>
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/cards"><img src="{{site.baseurl}}/assets/img/componentimages/Cards.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Cards</p>
-          </div>
-        </div>
-      </div>
-      <div class="row componentbox-row">
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/tables"><img src="{{site.baseurl}}/assets/img/componentimages/Data_table.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Tabeller</p>
-          </div>
-        </div>
-        <div class="col-md-4 componentbox-col ">
-            <div class="componentbox-container">
-              <a href="{{site.baseurl}}/designandcode/headers/"><img src="{{site.baseurl}}/assets/img/componentimages/Header.svg" alt=""></a>
-            </div>
-            <div class="componentbox-text-container">
-              <p class="h5">Header</p>
-            </div>
-          </div>
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/footers/"><img src="{{site.baseurl}}/assets/img/componentimages/Footer.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Footer</p>
-          </div>
-        </div>
-      </div>
-      <div class="row componentbox-row">
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/form-controls/#dropdown"><img src="{{site.baseurl}}/assets/img/componentimages/Dropdown.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Dropdown</p>
-          </div>
-        </div>
-        <div class="col-md-4 componentbox-col ">
-            <div class="componentbox-container">
-              <a href="{{site.baseurl}}/designandcode/sidenav/"><img src="{{site.baseurl}}/assets/img/componentimages/Sidemenu.svg" alt=""></a>
-            </div>
-            <div class="componentbox-text-container">
-              <p class="h5">Sidenavigation</p>
-            </div>
-          </div>
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/form-controls/"><img src="{{site.baseurl}}/assets/img/componentimages/Form_controls.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Form</p>
-          </div>
-        </div>
-      </div>
-      <div class="row componentbox-row">
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/trinindikatorer"><img src="{{site.baseurl}}/assets/img/componentimages/Step_indicator.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Trinindikatorer</p>
-          </div>
-        </div>
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/typography/#lists"><img src="{{site.baseurl}}/assets/img/componentimages/List.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">List</p>
-          </div>
-        </div>
-      </div>
-      <div class="row componentbox-row">
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/modals"><img src="{{site.baseurl}}/assets/img/componentimages/Modal.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Modal</p>
-          </div>
-        </div>
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/form-controls/#radio-buttons"><img src="{{site.baseurl}}/assets/img/componentimages/Radio_buttons.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Radio Buttons</p>
-          </div>
-        </div>
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/search"><img src="{{site.baseurl}}/assets/img/componentimages/Search.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Søgefelt</p>
-          </div>
-        </div>
-      </div>
-      <div class="row componentbox-row">
-        <div class="col-md-4 componentbox-col ">
-          <div class="componentbox-container">
-            <a href="{{site.baseurl}}/designandcode/tabnav/"><img src="{{site.baseurl}}/assets/img/componentimages/Tabs.svg" alt=""></a>
-          </div>
-          <div class="componentbox-text-container">
-            <p class="h5">Tabs</p>
-          </div>
-        </div>
-      </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6 mt-sm-0">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/colors/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Farver.svg" alt=""></a>
     </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/colors/">Farver</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6 mt-md-0">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/ikoner/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Ikoner.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/ikoner/">Ikoner</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/kanter/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Streger.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/kanter/">Hjørner, streger og skygger</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/grids/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Grid.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/grids/">Grid</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/buttons/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Knapper.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/buttons/">Knapper</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/tags/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Tags.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/tags/">Tags</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/accordions/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Accordion.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/accordions/">Accordions</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/beskeder/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Beskeder.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/beskeder/">Beskeder (Alerts)</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/cards/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Cards.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/cards/">Cards</a></p>
+  </div>
+  
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/form-controls/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Form.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/form-controls/">Formular elementer</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/search/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Soegefelt.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/search/">Søgefelt</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/badges/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Badges.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/badges/">Badges</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/tables/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Tabeller.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/tables/">Tabeller</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/trinindikatorer/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Trinindikatorer.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/trinindikatorer/">Trinindikatorer</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/sidenav/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Sidenavigation.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/sidenav/">Sidenavigation</a></p>
+  </div>
+  
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/tabnav/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Tabs.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/tabnav/">Faneblade</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/spinner/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Spinner.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/spinner/">Spinner</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/overflowmenu/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Overflow menu.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/overflowmenu/">Overflow menu</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/modals/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Modal.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/modals/">Modalvinduer</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/tooltip/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Tooltip.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/tooltip/">Tooltip og popover</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/collapse/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Skjul+vis (collapse).svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/collapse/">Skjul og vis (Collapse)</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/headers/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Header.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/headers/">Headers</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/footers/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Footer.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/footers/">Footers</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/select2-multiselect/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Multiselect.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/select2-multiselect/">Multiselect dropdown</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/datatables/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/datatabeller.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/datatables/">Datatabeller</a></p>
   </div>
 </div>

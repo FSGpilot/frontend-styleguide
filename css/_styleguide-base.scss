@@ -776,6 +776,13 @@ code {
   }
 }
 
+.demo-component-box{
+  height: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .demo-img-placeholder{
   height: 150px;
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="136px" viewBox="0 0 144 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Sidenavigation</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-880.000000, -1352.000000)" fill-rule="nonzero">
+            <g id="Sidenavigation" transform="translate(880.000000, 1352.000000)">
+                <rect id="Rectangle-6" fill="#BFBFBF" x="0" y="0" width="144" height="16"></rect>
+                <polygon id="Rectangle-6" fill="#FFFFFF" points="0 16 144 16 144 136 0 136"></polygon>
+                <rect id="Rectangle-13" fill="#454545" x="12" y="28" width="20" height="64"></rect>
+                <rect id="Rectangle-6" fill="#F5F5F5" x="44" y="28" width="88" height="32"></rect>
+                <rect id="Rectangle-6" fill="#F5F5F5" x="44" y="68" width="88" height="24"></rect>
+                <rect id="Rectangle-6" fill="#F5F5F5" x="44" y="100" width="88" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

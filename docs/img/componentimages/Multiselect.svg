@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="160px" viewBox="0 0 220 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Multiselect-with-dropshadow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-17.2%" y="-24.2%" width="134.4%" height="151.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.101960784   0 0 0 0 0.101960784   0 0 0 0 0.101960784  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-490.000000, -1342.000000)">
+            <g id="Multiselect" filter="url(#filter-1)" transform="translate(510.000000, 1360.000000)">
+                <rect id="Rectangle-11" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="180" height="120"></rect>
+                <rect id="Rectangle-11" fill="#BFBFBF" fill-rule="nonzero" x="0" y="0" width="180" height="24"></rect>
+                <rect id="Rectangle-12" fill="#999999" fill-rule="nonzero" x="12" y="8" width="32" height="8" rx="4"></rect>
+                <rect id="Rectangle-12-Copy" fill="#999999" fill-rule="nonzero" x="52" y="8" width="32" height="8" rx="4"></rect>
+                <rect id="Rectangle-7" fill="#F5F5F5" fill-rule="nonzero" x="0" y="24" width="180" height="1"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="33" y="36" width="99" height="8"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="33" y="56" width="99" height="8"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="33" y="76" width="99" height="8"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="33" y="96" width="99" height="8"></rect>
+                <text id="JS" font-family="IBMPlexSans, IBM Plex Sans" font-size="24" font-weight="normal" fill="#1A1A1A">
+                    <tspan x="147" y="111">JS</tspan>
+                </text>
+                <g id="Unmarked-checkbox-large-Copy" transform="translate(12.000000, 34.000000)" fill="#454545" fill-rule="nonzero">
+                    <path d="M2.05882353,1.54411765 C1.77455932,1.54411765 1.54411765,1.77455932 1.54411765,2.05882353 L1.54411765,9.94117647 C1.54411765,10.2254407 1.77455932,10.4558824 2.05882353,10.4558824 L9.94117647,10.4558824 C10.2254407,10.4558824 10.4558824,10.2254407 10.4558824,9.94117647 L10.4558824,2.05882353 C10.4558824,1.77455932 10.2254407,1.54411765 9.94117647,1.54411765 L2.05882353,1.54411765 Z M2.05882353,4.57150657e-16 L9.94117647,4.57150657e-16 C11.0782333,1.25818605e-15 12,0.921766692 12,2.05882353 L12,9.94117647 C12,11.0782333 11.0782333,12 9.94117647,12 L2.05882353,12 C0.921766692,12 1.14915865e-15,11.0782333 0,9.94117647 L4.57150657e-16,2.05882353 C3.17901356e-16,0.921766692 0.921766692,2.08873953e-16 2.05882353,4.57150657e-16 Z" id="Box"></path>
+                </g>
+                <g id="Unmarked-checkbox-large-Copy-2" transform="translate(12.000000, 54.000000)" fill="#454545" fill-rule="nonzero">
+                    <path d="M2.05882353,1.54411765 C1.77455932,1.54411765 1.54411765,1.77455932 1.54411765,2.05882353 L1.54411765,9.94117647 C1.54411765,10.2254407 1.77455932,10.4558824 2.05882353,10.4558824 L9.94117647,10.4558824 C10.2254407,10.4558824 10.4558824,10.2254407 10.4558824,9.94117647 L10.4558824,2.05882353 C10.4558824,1.77455932 10.2254407,1.54411765 9.94117647,1.54411765 L2.05882353,1.54411765 Z M2.05882353,4.57150657e-16 L9.94117647,4.57150657e-16 C11.0782333,1.25818605e-15 12,0.921766692 12,2.05882353 L12,9.94117647 C12,11.0782333 11.0782333,12 9.94117647,12 L2.05882353,12 C0.921766692,12 1.14915865e-15,11.0782333 0,9.94117647 L4.57150657e-16,2.05882353 C3.17901356e-16,0.921766692 0.921766692,2.08873953e-16 2.05882353,4.57150657e-16 Z" id="Box"></path>
+                </g>
+                <g id="Unmarked-checkbox-large-Copy-3" transform="translate(12.000000, 74.000000)" fill="#454545" fill-rule="nonzero">
+                    <path d="M2.05882353,1.54411765 C1.77455932,1.54411765 1.54411765,1.77455932 1.54411765,2.05882353 L1.54411765,9.94117647 C1.54411765,10.2254407 1.77455932,10.4558824 2.05882353,10.4558824 L9.94117647,10.4558824 C10.2254407,10.4558824 10.4558824,10.2254407 10.4558824,9.94117647 L10.4558824,2.05882353 C10.4558824,1.77455932 10.2254407,1.54411765 9.94117647,1.54411765 L2.05882353,1.54411765 Z M2.05882353,4.57150657e-16 L9.94117647,4.57150657e-16 C11.0782333,1.25818605e-15 12,0.921766692 12,2.05882353 L12,9.94117647 C12,11.0782333 11.0782333,12 9.94117647,12 L2.05882353,12 C0.921766692,12 1.14915865e-15,11.0782333 0,9.94117647 L4.57150657e-16,2.05882353 C3.17901356e-16,0.921766692 0.921766692,2.08873953e-16 2.05882353,4.57150657e-16 Z" id="Box"></path>
+                </g>
+                <g id="Unmarked-checkbox-large-Copy-4" transform="translate(12.000000, 94.000000)" fill="#454545" fill-rule="nonzero">
+                    <path d="M2.05882353,1.54411765 C1.77455932,1.54411765 1.54411765,1.77455932 1.54411765,2.05882353 L1.54411765,9.94117647 C1.54411765,10.2254407 1.77455932,10.4558824 2.05882353,10.4558824 L9.94117647,10.4558824 C10.2254407,10.4558824 10.4558824,10.2254407 10.4558824,9.94117647 L10.4558824,2.05882353 C10.4558824,1.77455932 10.2254407,1.54411765 9.94117647,1.54411765 L2.05882353,1.54411765 Z M2.05882353,4.57150657e-16 L9.94117647,4.57150657e-16 C11.0782333,1.25818605e-15 12,0.921766692 12,2.05882353 L12,9.94117647 C12,11.0782333 11.0782333,12 9.94117647,12 L2.05882353,12 C0.921766692,12 1.14915865e-15,11.0782333 0,9.94117647 L4.57150657e-16,2.05882353 C3.17901356e-16,0.921766692 0.921766692,2.08873953e-16 2.05882353,4.57150657e-16 Z" id="Box"></path>
+                </g>
+                <g id="ic_arrow_dropdown" transform="translate(160.000000, 12.000000) scale(1, -1) translate(-160.000000, -12.000000) translate(148.000000, 0.000000)">
+                    <g id="Shape">
+                        <polygon points="0 0.24 24 0.24 24 23.28 0 23.28"></polygon>
+                        <polygon fill="#454545" points="7.41 8.4864 12 12.8832 16.59 8.4864 18 9.84 12 15.6 6 9.84"></polygon>
+                    </g>
+                </g>
+                <g id="Marked-checkbox-large" transform="translate(12.000000, 54.000000)">
+                    <rect id="Path" fill="#FFFFFF" x="0" y="0" width="12" height="12" rx="2"></rect>
+                    <path d="M2,0 L10,0 C11.1045695,-2.02906125e-16 12,0.8954305 12,2 L12,10 C12,11.1045695 11.1045695,12 10,12 L2,12 C0.8954305,12 1.3527075e-16,11.1045695 0,10 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z M9.52859548,2.86192881 L4.91439718,7.47612711 L2.47140452,5.03313445 L1.52859548,5.97594349 L4.91439718,9.36174519 L10.4714045,3.80473785 L9.52859548,2.86192881 Z" id="Box" fill="#454545"></path>
+                </g>
+                <g id="Marked-checkbox-large-Copy" transform="translate(12.000000, 74.000000)">
+                    <rect id="Path" fill="#FFFFFF" x="0" y="0" width="12" height="12" rx="2"></rect>
+                    <path d="M2,0 L10,0 C11.1045695,-2.02906125e-16 12,0.8954305 12,2 L12,10 C12,11.1045695 11.1045695,12 10,12 L2,12 C0.8954305,12 1.3527075e-16,11.1045695 0,10 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z M9.52859548,2.86192881 L4.91439718,7.47612711 L2.47140452,5.03313445 L1.52859548,5.97594349 L4.91439718,9.36174519 L10.4714045,3.80473785 L9.52859548,2.86192881 Z" id="Box" fill="#454545"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

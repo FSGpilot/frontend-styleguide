@@ -2,7 +2,7 @@
 permalink: /designandcode/utility/
 layout: styleguide
 type: component
-title: Hjælpefunktioner
+title: Hjælpeklasser (Utilities)
 category: UI components
 subcategory: Design og kode
 lead: 

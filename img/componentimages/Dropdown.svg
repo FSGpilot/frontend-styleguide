@@ -1,82 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1276 1990 280 176">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Dropdown);
-      }
-
-      .cls-2 {
-        fill: #fff;
-      }
-
-      .cls-3, .cls-5, .cls-9 {
-        fill: #d6d7d9;
-      }
-
-      .cls-3 {
-        stroke: #aeb0b5;
-      }
-
-      .cls-3, .cls-4, .cls-5 {
-        stroke-width: 6px;
-      }
-
-      .cls-4, .cls-6 {
-        fill: none;
-      }
-
-      .cls-4 {
-        stroke: #d6d7d9;
-      }
-
-      .cls-5 {
-        stroke: #f1f1f1;
-      }
-
-      .cls-7 {
-        fill: #979797;
-        fill-rule: evenodd;
-      }
-
-      .cls-8, .cls-9 {
-        stroke: none;
-      }
-
-      .cls-10 {
-        fill: #f1f1f1;
-      }
-    </style>
-    <clipPath id="clip-Dropdown">
-      <rect x="1276" y="1990" width="280" height="176"/>
-    </clipPath>
-  </defs>
-  <g id="Dropdown" class="cls-1">
-    <rect class="cls-10" x="1276" y="1990" width="280" height="176"/>
-    <g id="Group_13" data-name="Group 13" transform="translate(1276 1967)">
-      <g id="Path_43" data-name="Path 43" class="cls-2" transform="translate(81 88)">
-        <path class="cls-8" d="M 117.1084594726563 15.75 L 0.2499989718198776 15.75 L 0.2499989718198776 0.25 L 117.1084594726563 0.25 L 117.1084594726563 15.75 Z"/>
-        <path class="cls-9" d="M 116.8584594726563 15.5 L 116.8584594726563 0.5 L 0.4999989569187164 0.5 L 0.4999989569187164 15.5 L 116.8584594726563 15.5 M 117.3584594726563 16 L -1.032902673614444e-06 16 L -1.032902673614444e-06 0 L 117.3584594726563 0 L 117.3584594726563 16 Z"/>
-      </g>
-      <path id="Path_44" data-name="Path 44" class="cls-3" d="M73.605,0" transform="translate(88 96)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="120px" viewBox="0 0 180 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Dropdown</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview_illustrationer" transform="translate(-510.000000, -1360.000000)">
+            <g id="Dropdown" transform="translate(510.000000, 1360.000000)">
+                <rect id="Rectangle-11" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="180" height="120"></rect>
+                <rect id="Rectangle-11" fill="#BFBFBF" fill-rule="nonzero" x="0" y="0" width="180" height="24"></rect>
+                <rect id="Rectangle-12" fill="#999999" fill-rule="nonzero" x="12" y="8" width="68" height="8"></rect>
+                <rect id="Rectangle-7" fill="#F5F5F5" fill-rule="nonzero" x="0" y="24" width="180" height="1"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="12" y="36" width="120" height="8"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="12" y="56" width="120" height="8"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="12" y="76" width="120" height="8"></rect>
+                <rect id="Rectangle-10" fill="#F5F5F5" fill-rule="nonzero" x="12" y="96" width="120" height="8"></rect>
+                <g id="ic_arrow_dropdown" transform="translate(160.000000, 12.000000) scale(1, -1) translate(-160.000000, -12.000000) translate(148.000000, 0.000000)">
+                    <g id="Shape">
+                        <polygon points="0 0.24 24 0.24 24 23.28 0 23.28"></polygon>
+                        <polygon fill="#454545" points="7.41 8.4864 12 12.8832 16.59 8.4864 18 9.84 12 15.6 6 9.84"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
     </g>
-    <g id="Group_14" data-name="Group 14" transform="translate(1276 1982.5)">
-      <g id="Path_43-2" data-name="Path 43" class="cls-2" transform="translate(81 88)">
-        <path class="cls-8" d="M 117.1084594726563 15.75 L 0.2499989718198776 15.75 L 0.2499989718198776 0.25 L 117.1084594726563 0.25 L 117.1084594726563 15.75 Z"/>
-        <path class="cls-9" d="M 116.8584594726563 15.5 L 116.8584594726563 0.5 L 0.4999989569187164 0.5 L 0.4999989569187164 15.5 L 116.8584594726563 15.5 M 117.3584594726563 16 L -1.032902673614444e-06 16 L -1.032902673614444e-06 0 L 117.3584594726563 0 L 117.3584594726563 16 Z"/>
-      </g>
-      <path id="Path_44-2" data-name="Path 44" class="cls-3" d="M73.605,0" transform="translate(88 96)"/>
-    </g>
-    <g id="Group_15" data-name="Group 15" transform="translate(1276 1998)">
-      <g id="Path_43-3" data-name="Path 43" class="cls-2" transform="translate(81 88)">
-        <path class="cls-8" d="M 117.1084594726563 15.75 L 0.2499989718198776 15.75 L 0.2499989718198776 0.25 L 117.1084594726563 0.25 L 117.1084594726563 15.75 Z"/>
-        <path class="cls-9" d="M 116.8584594726563 15.5 L 116.8584594726563 0.5 L 0.4999989569187164 0.5 L 0.4999989569187164 15.5 L 116.8584594726563 15.5 M 117.3584594726563 16 L -1.032902673614444e-06 16 L -1.032902673614444e-06 0 L 117.3584594726563 0 L 117.3584594726563 16 Z"/>
-      </g>
-      <path id="Path_44-3" data-name="Path 44" class="cls-3" d="M73.605,0" transform="translate(88 96)"/>
-    </g>
-    <path id="Path_45" data-name="Path 45" class="cls-4" d="M0,0H58.87" transform="translate(1362 2063)"/>
-    <path id="Path_46" data-name="Path 46" class="cls-5" d="M0,0H70.963" transform="translate(1362 2079)"/>
-    <path id="Path_47" data-name="Path 47" class="cls-5" d="M0,0H50.941" transform="translate(1362 2094)"/>
-    <rect id="rectangle" class="cls-6" width="10" height="10" transform="translate(1458.3 2058.372)"/>
-    <path id="path" class="cls-7" d="M10.417,8.6,8.5,10.517,6.583,8.6,6,9.183l2.5,2.5,2.5-2.5Z" transform="translate(1454.8 2053.355)"/>
-  </g>
 </svg>

@@ -30,9 +30,11 @@ UI components:
   - href: /designandcode/beskeder/
   - href: /designandcode/cards/
   - href: /designandcode/form-controls/
+  - href: /designandcode/select2-multiselect/
   - href: /designandcode/search/
   - href: /designandcode/badges/
   - href: /designandcode/tables/
+  - href: /designandcode/datatables/
   - href: /designandcode/trinindikatorer/
   - href: /designandcode/sidenav/
   - href: /designandcode/tabnav/
@@ -43,8 +45,6 @@ UI components:
   - href: /designandcode/collapse/
   - href: /designandcode/headers/
   - href: /designandcode/footers/
-  - href: /designandcode/select2-multiselect/
-  - href: /designandcode/datatables/
 
 Getting started:
   - alternative_text: Overblik
