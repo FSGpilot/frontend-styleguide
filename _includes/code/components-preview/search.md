@@ -14,7 +14,7 @@ title: Search.html
         <input class="form-input input-width-xs" id="input-type-text" name="" title="Search"
             type="search">
         <button class="button button-primary ">
-            <svg class="icon-svg "><use xlink:href="#magnify"></use></svg>
+            <svg class="icon-svg m-0"><use xlink:href="#magnify"></use></svg>
             <span class="sr-only">Søg</span>
         </button>
     </div>

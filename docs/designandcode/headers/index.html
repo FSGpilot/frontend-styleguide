@@ -97,8 +97,9 @@
      <!--2A: Solutiuon header -->
     <div class="solution-header">
       <div class="solution-header-inner container">
-        <div class="solution-heading">
-            <a href="/frontend-styleguide/" title="Home" aria-label="Home">Frontend Styleguide</a>
+        <div class="solution-heading d-flex align-items-center">
+            <a href="/frontend-styleguide/" title="Home" aria-label="Home">Frontend Styleguide </a>
+            <div class="tag ml-3">BETA</div>
         </div>
         <button class="button button-secondary button-menu-open js-menu-open ml-auto" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
       </div>
@@ -1964,6 +1965,26 @@
 </div>
 
 
+<div class="accordion-bordered">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="header-tech">
+    Implementering
+  </button>
+  <div id="header-tech" aria-hidden="false" class="accordion-content">
+      <p>De overstående eksempler viser tre forskellige versioner af headeren. Med lidt, mellem og meget indhold.</p>
+      <p>Alt indhold i <code>&lt;nav&gt;</code> tagget vil på små skærme bliver vist i en burger-menu. Som standard vises denne burger-menu når skærmen er mindre end 992px bred. Man kan indstille hvornår der skal bruges burger-menu via variablen <code>$nav-responsive-breakpoint</code>.<br></p>
+      <p>Hvis man laver en header med lidt indhold, er det anbefalet at man indstiller <code>$nav-responsive-breakpoint</code> til at have en lavere værdi, fx. 768px. </p>
+  </div>
+</div>
+<div class="accordion-bordered accordion-docs">
+  <button class="button-unstyled accordion-button"
+      aria-expanded="true" aria-controls="header-docs">
+    Dokumentation
+  </button>
+  <div id="header-docs" class="accordion-content">
+    
+  </div>
+</div> 
       </section>
     </div>
 
