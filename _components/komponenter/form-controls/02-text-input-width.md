@@ -1,5 +1,5 @@
 ---
-title: Input bredde og validering
+title: Feltbredde
 parent: Form controls
 order: 02
 lead: 
@@ -51,7 +51,7 @@ lead:
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="text-input-width-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="text-input-width-docs" aria-hidden="false" class="accordion-content">
     

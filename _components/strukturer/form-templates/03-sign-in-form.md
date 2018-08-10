@@ -10,7 +10,7 @@ lead: A template for signing a user into a website or app
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="signin-form-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="signin-form-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

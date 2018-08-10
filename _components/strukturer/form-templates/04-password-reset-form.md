@@ -10,7 +10,7 @@ lead: A standard template for resetting a password
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="password-reset-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="password-reset-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

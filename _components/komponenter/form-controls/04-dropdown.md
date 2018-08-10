@@ -11,7 +11,7 @@ lead:
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="dropdown-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="dropdown-docs" aria-hidden="false" class="accordion-content">
    

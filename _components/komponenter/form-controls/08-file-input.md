@@ -10,7 +10,7 @@ lead: Lader brugeren vælge en fil.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="date-input-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="date-input-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Implementering</h4>

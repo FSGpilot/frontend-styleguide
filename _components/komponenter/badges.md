@@ -37,7 +37,7 @@ lead: Badges draw attention to new or important content.
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="label-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="label-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

@@ -30,7 +30,7 @@ order: 05
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="bodycopy-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="bodycopy-docs" class="accordion-content">
     

@@ -38,7 +38,7 @@ order: 01
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="alert-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="alert-docs" aria-hidden="false" class="accordion-content">
     

@@ -26,9 +26,9 @@
 }
 
 // Typography --------------
-.help-text{
-  border-top: 2px solid #205493;
-  color: #205493;
+.demo-typesetting{
+  border-top: 2px solid $color-data-violet;
+  color: $color-data-violet;
   padding-top: 1rem;
   text-align: center;
 }
@@ -730,7 +730,7 @@ code {
     }
   }
 }
-.page-basic-collapse-html, .page-modal-html, .page-text-input-html{
+.page-basic-collapse-html, .page-modal-html, .page-text-input-html, .page-tags-html{
   padding-top: 4px;
   padding-bottom: 4px;
 }
@@ -743,7 +743,7 @@ code {
 .page-basic-collapse-html{
   min-height: 150px;
 }
-.page-tags-html{
+.page-tags-html .container{
   min-height: 180px;
 }
 .page-date-input-html{

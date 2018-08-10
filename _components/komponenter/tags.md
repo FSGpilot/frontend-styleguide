@@ -31,7 +31,7 @@ lead:
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="accordion-bordered-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="accordion-bordered-docs" aria-hidden="false" class="accordion-content">
     

@@ -32,7 +32,7 @@ lead:
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="modal-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="modal-docs" class="accordion-content">
     

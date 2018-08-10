@@ -25,7 +25,7 @@ lead: A block that allows users to search for specific content if they know what
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="search-bar-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="search-bar-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>

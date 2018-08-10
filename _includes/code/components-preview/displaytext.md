@@ -10,7 +10,7 @@ title: Displaytext.html
             <p class="displayheading-1">
                 10 dage
                 <span class="text-positive"> Positiv</span>
-                <span class="text-negative">12°</span>
+                <span class="text-negative">Negativ</span>
             </p>
         </div>
         <div class="col-6">
@@ -18,7 +18,7 @@ title: Displaytext.html
             <p class="displayheading-2">
                 10 dage
                 <span class="text-positive"> Positiv</span>
-                <span class="text-negative">12°</span>
+                <span class="text-negative">Negativ</span>
             </p>
         </div>
     </div>

@@ -14,7 +14,7 @@ order: 06
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="link-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="link-docs" class="accordion-content" aria-hidden="false">
    

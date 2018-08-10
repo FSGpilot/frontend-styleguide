@@ -1,5 +1,5 @@
 ---
-title: Tekst area
+title: Tekstområde
 parent: Form controls
 order: 03
 lead: 
@@ -10,7 +10,7 @@ lead:
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="text-area-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="text-area-docs" aria-hidden="false" class="accordion-content">
   

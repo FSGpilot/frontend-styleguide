@@ -13,7 +13,7 @@ lead: Accordions are a list of headers that can be clicked to hide or reveal add
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
     aria-expanded="true" aria-controls="documentation">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="documentation" class="accordion-content">
     

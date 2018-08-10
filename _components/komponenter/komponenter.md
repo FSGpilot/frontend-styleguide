@@ -94,6 +94,14 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
     <p class="mt-4"><a href="/frontend-styleguide/designandcode/form-controls/">Formular elementer</a></p>
   </div>
 
+   <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/select2-multiselect/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/Multiselect.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/select2-multiselect/">Multiselect dropdown</a></p>
+  </div>
+
   <div class="col-12 col-sm-6 col-md-4 mt-6">
     <div class="p-4 bg-alternative demo-component-box">
       <a href="/frontend-styleguide/designandcode/search/" class="d-block align-text-center">
@@ -116,6 +124,14 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
       <img src="/frontend-styleguide/assets/img/componentimages/Tabeller.svg" alt=""></a>
     </div>
     <p class="mt-4"><a href="/frontend-styleguide/designandcode/tables/">Tabeller</a></p>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 mt-6">
+    <div class="p-4 bg-alternative demo-component-box">
+      <a href="/frontend-styleguide/designandcode/datatables/" class="d-block align-text-center">
+      <img src="/frontend-styleguide/assets/img/componentimages/datatabeller.svg" alt=""></a>
+    </div>
+    <p class="mt-4"><a href="/frontend-styleguide/designandcode/datatables/">Advancerede tabeller</a></p>
   </div>
 
   <div class="col-12 col-sm-6 col-md-4 mt-6">
@@ -196,21 +212,5 @@ lead: Designsystemet er din værktøjskasse til at bygge offentlige selvbetjenin
       <img src="/frontend-styleguide/assets/img/componentimages/Footer.svg" alt=""></a>
     </div>
     <p class="mt-4"><a href="/frontend-styleguide/designandcode/footers/">Footers</a></p>
-  </div>
-
-  <div class="col-12 col-sm-6 col-md-4 mt-6">
-    <div class="p-4 bg-alternative demo-component-box">
-      <a href="/frontend-styleguide/designandcode/select2-multiselect/" class="d-block align-text-center">
-      <img src="/frontend-styleguide/assets/img/componentimages/Multiselect.svg" alt=""></a>
-    </div>
-    <p class="mt-4"><a href="/frontend-styleguide/designandcode/select2-multiselect/">Multiselect dropdown</a></p>
-  </div>
-
-  <div class="col-12 col-sm-6 col-md-4 mt-6">
-    <div class="p-4 bg-alternative demo-component-box">
-      <a href="/frontend-styleguide/designandcode/datatables/" class="d-block align-text-center">
-      <img src="/frontend-styleguide/assets/img/componentimages/datatabeller.svg" alt=""></a>
-    </div>
-    <p class="mt-4"><a href="/frontend-styleguide/designandcode/datatables/">Datatabeller</a></p>
   </div>
 </div>

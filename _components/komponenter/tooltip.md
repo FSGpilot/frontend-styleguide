@@ -37,7 +37,7 @@ lead:
 <div class="accordion-bordered accordion-docs">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="tooltip-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="tooltip-docs" class="accordion-content">
     

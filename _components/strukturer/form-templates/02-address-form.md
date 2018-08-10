@@ -12,7 +12,7 @@ order: 02
 <div class="accordion-bordered">
   <button class="button-unstyled accordion-button"
       aria-expanded="true" aria-controls="address-form-docs">
-    Dokumentation
+    Brugervenlighed
   </button>
   <div id="address-form-docs" aria-hidden="false" class="accordion-content">
     <h4 class="heading">Accessibility</h4>
