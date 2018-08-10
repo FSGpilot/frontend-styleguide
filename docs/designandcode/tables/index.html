@@ -99,7 +99,7 @@
       <div class="solution-header-inner container">
         <div class="solution-heading d-flex align-items-center">
             <a href="/frontend-styleguide/" title="Home" aria-label="Home">Frontend Styleguide </a>
-            <div class="tag mx-3">BETA</div>
+            <div class="badge badge-large mx-3">BETA</div>
         </div>
         <button class="button button-secondary button-menu-open js-menu-open ml-auto" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
       </div>
@@ -553,7 +553,7 @@
       
 
 
-<a href="#table-uden-borderes">Uden border</a>
+<a href="#uden-ramme">Uden ramme</a>
     
   </li>
 
@@ -563,7 +563,7 @@
       
 
 
-<a href="#table-med-zebra-linier">Zebra linier</a>
+<a href="#zebralinier">Zebralinier</a>
     
   </li>
 
@@ -573,7 +573,17 @@
       
 
 
-<a href="#tabeller-med-forskellige-liniehøjde">Linjehøjde</a>
+<a href="#responsiv">Responsiv</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#forskellig-liniehøjde">Linjehøjde</a>
     
   </li>
 
@@ -1221,7 +1231,7 @@
       
 
 
-<a href="#table-uden-borderes">Uden border</a>
+<a href="#uden-ramme">Uden ramme</a>
     
   </li>
 
@@ -1231,7 +1241,7 @@
       
 
 
-<a href="#table-med-zebra-linier">Zebra linier</a>
+<a href="#zebralinier">Zebralinier</a>
     
   </li>
 
@@ -1241,7 +1251,17 @@
       
 
 
-<a href="#tabeller-med-forskellige-liniehøjde">Linjehøjde</a>
+<a href="#responsiv">Responsiv</a>
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+
+<a href="#forskellig-liniehøjde">Linjehøjde</a>
     
   </li>
 
@@ -1582,7 +1602,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/tables/02-table-borderless">
-  <h2 id="table-uden-borderes">Table uden borderes</h2>
+  <h2 id="uden-ramme">Uden ramme</h2>
   
   
 <div class="component-preview ">
@@ -1694,7 +1714,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/tables/03-table-zebra">
-  <h2 id="table-med-zebra-linier">Table med zebra linier</h2>
+  <h2 id="zebralinier">Zebralinier</h2>
   
   
 <div class="component-preview ">
@@ -1754,36 +1774,43 @@
         <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table--zebra"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;thead&gt;</span>
                 <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;th&gt;</span>Document title<span class="nt">&lt;/th&gt;</span>
-                    <span class="nt">&lt;th&gt;</span>Description<span class="nt">&lt;/th&gt;</span>
-                    <span class="nt">&lt;th&gt;</span>Year<span class="nt">&lt;/th&gt;</span>
+                    <span class="nt">&lt;th&gt;</span>Affaldstype<span class="nt">&lt;/th&gt;</span>
+                    <span class="nt">&lt;th&gt;</span>Farvekode<span class="nt">&lt;/th&gt;</span>
+                    <span class="nt">&lt;th&gt;</span>Beskrivelse<span class="nt">&lt;/th&gt;</span>
+                    <span class="nt">&lt;th&gt;</span>hvor ender det?<span class="nt">&lt;/th&gt;</span>
                 <span class="nt">&lt;/tr&gt;</span>
             <span class="nt">&lt;/thead&gt;</span>
             <span class="nt">&lt;tbody&gt;</span>
                 <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>Declaration of Independence<span class="nt">&lt;/td&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>Statement adopted by the Continental Congress declaring
-                        independence from the British Empire.<span class="nt">&lt;/td&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>1776<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Dagrenovation<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Grøn<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Madaffald, samt papir, pap eller plastik der ikke kan genanvendes,
+                        fordi der er madrester eller andet snask på.<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Alt det affald, du smider ud i din primære skraldespand,
+                        som er dagrenovationen, bliver hentet og kørt på forbrændingen.
+                        <span class="nt">&lt;/td&gt;</span>
                 <span class="nt">&lt;/tr&gt;</span>
                 <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>Bill of Rights<span class="nt">&lt;/td&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>The first ten amendments of the U.S. Constitution guaranteeing
-                        rights and freedoms.<span class="nt">&lt;/td&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>1791<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Bioaffald og kompost<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Beige<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Alt madaffald uden fødevareemballage.<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Bioaffaldet kommes i bionedbrydelige poser, som bliver komposteret
+                        til muld.<span class="nt">&lt;/td&gt;</span>
                 <span class="nt">&lt;/tr&gt;</span>
                 <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>Declaration of Sentiments<span class="nt">&lt;/td&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>A document written during the Seneca Falls Convention outlining
-                        the rights that American women should be entitled to
-                        as citizens.<span class="nt">&lt;/td&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>1848<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Glas<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Hvid<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Alle typer glas og flasker.<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>De hele vinflasker rengøres og genbruges af vinhuse, mens
+                        glasskårene bliver smeltet om til nyt glas.<span class="nt">&lt;/td&gt;</span>
                 <span class="nt">&lt;/tr&gt;</span>
                 <span class="nt">&lt;tr&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>Emancipation Proclamation<span class="nt">&lt;/td&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>An executive order granting freedom to slaves in designated
-                        southern states.<span class="nt">&lt;/td&gt;</span>
-                    <span class="nt">&lt;td&gt;</span>1863<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Elektronik<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Orange<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Genstande der har brugt strøm.<span class="nt">&lt;/td&gt;</span>
+                    <span class="nt">&lt;td&gt;</span>Det elektroniske affald bliver typisk kørt til et demonteringsanlæg,
+                        hvor det bliver skilt ad, så de forskellige dele kan
+                        genanvendes separat.<span class="nt">&lt;/td&gt;</span>
                 <span class="nt">&lt;/tr&gt;</span>
             <span class="nt">&lt;/tbody&gt;</span>
         <span class="nt">&lt;/table&gt;</span>
@@ -1800,7 +1827,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/tables/04-table-responsive">
-  <h2 id="table-responsive">Table (responsive)</h2>
+  <h2 id="responsiv">Responsiv</h2>
   
   
 <div class="component-preview ">

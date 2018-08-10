@@ -1,5 +1,5 @@
 ---
-title: Table (responsive)
+title: Responsiv
 parent: Tables
 order: 04
 lead: 

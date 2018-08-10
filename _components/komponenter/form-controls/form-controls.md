@@ -15,16 +15,16 @@ subnav:
   href: '#feltbredde'
 - text: Tekstområde
   href: '#tekstområde'
-- text: Select
-  href: '#select'
-- text: Checkbox
-  href: '#checkbox'
-- text: Radio knap
-  href: '#radio-knap'
-- text: Dato input
-  href: '#dato-input'
-- text: Fil input
-  href: '#fil-input'
+- text: Dropdown-menu
+  href: '#dropdown-menu'
+- text: Tjekboks
+  href: '#tjekboks'
+- text: Radioknap
+  href: '#radioknap'
+- text: Datovælger
+  href: '#datovælger'
+- text: Vedhæft fil
+  href: '#vedhæft-fil'
 ---
 
 {% include child-sections.html parent='Form controls' %}

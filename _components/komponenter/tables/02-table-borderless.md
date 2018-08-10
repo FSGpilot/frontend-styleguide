@@ -1,5 +1,5 @@
 ---
-title: Table uden borderes
+title: Uden ramme
 parent: Tables
 order: 02
 lead: 

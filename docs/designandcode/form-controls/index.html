@@ -99,7 +99,7 @@
       <div class="solution-header-inner container">
         <div class="solution-heading d-flex align-items-center">
             <a href="/frontend-styleguide/" title="Home" aria-label="Home">Frontend Styleguide </a>
-            <div class="tag mx-3">BETA</div>
+            <div class="badge badge-large mx-3">BETA</div>
         </div>
         <button class="button button-secondary button-menu-open js-menu-open ml-auto" aria-haspopup="menu" title="Åben mobil menu">Menu</button>
       </div>
@@ -505,7 +505,7 @@
       
 
 
-<a href="#select">Select</a>
+<a href="#dropdown-menu">Dropdown-menu</a>
     
   </li>
 
@@ -515,7 +515,7 @@
       
 
 
-<a href="#checkbox">Checkbox</a>
+<a href="#tjekboks">Tjekboks</a>
     
   </li>
 
@@ -525,7 +525,7 @@
       
 
 
-<a href="#radio-knap">Radio knap</a>
+<a href="#radioknap">Radioknap</a>
     
   </li>
 
@@ -535,7 +535,7 @@
       
 
 
-<a href="#dato-input">Dato input</a>
+<a href="#datovælger">Datovælger</a>
     
   </li>
 
@@ -545,7 +545,7 @@
       
 
 
-<a href="#fil-input">Fil input</a>
+<a href="#vedhæft-fil">Vedhæft fil</a>
     
   </li>
 
@@ -1203,7 +1203,7 @@
       
 
 
-<a href="#select">Select</a>
+<a href="#dropdown-menu">Dropdown-menu</a>
     
   </li>
 
@@ -1213,7 +1213,7 @@
       
 
 
-<a href="#checkbox">Checkbox</a>
+<a href="#tjekboks">Tjekboks</a>
     
   </li>
 
@@ -1223,7 +1223,7 @@
       
 
 
-<a href="#radio-knap">Radio knap</a>
+<a href="#radioknap">Radioknap</a>
     
   </li>
 
@@ -1233,7 +1233,7 @@
       
 
 
-<a href="#dato-input">Dato input</a>
+<a href="#datovælger">Datovælger</a>
     
   </li>
 
@@ -1243,7 +1243,7 @@
       
 
 
-<a href="#fil-input">Fil input</a>
+<a href="#vedhæft-fil">Vedhæft fil</a>
     
   </li>
 
@@ -1877,16 +1877,16 @@
 <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-area"</span><span class="nt">&gt;</span>Text area label<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-area"</span><span class="nt">&gt;</span>Tekstområde med label<span class="nt">&lt;/label&gt;</span>
 
         <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-input textarea input-width-m "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-area"</span>
             <span class="na">name=</span><span class="s">"input-area"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group input-error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Text area error<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label "</span> <span class="na">for=</span><span class="s">"input-error"</span><span class="nt">&gt;</span>Tekstområde med fejlbesked<span class="nt">&lt;/label&gt;</span>
 
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Hjælpsom error besked<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-error-message"</span> <span class="na">id=</span><span class="s">"input-error-message-input-error"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Hjælpsom fejlbesked<span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-input textarea input-width-m "</span> <span class="na">placeholder=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"input-error"</span>
             <span class="na">name=</span><span class="s">"input-area"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">aria-describedby=</span><span class="s">"input-error-message-input-error"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -1911,7 +1911,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/04-dropdown">
-  <h2 id="select">Select</h2>
+  <h2 id="dropdown-menu">Dropdown-menu</h2>
   
   
 <div class="component-preview preview-dropdown">
@@ -1970,7 +1970,7 @@
     <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form mb-7 input-width-m"</span><span class="nt">&gt;</span>
 
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"options"</span><span class="nt">&gt;</span>Select label<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-label"</span> <span class="na">for=</span><span class="s">"options"</span><span class="nt">&gt;</span>Dropdown label (select)<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">" form-select"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"options"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;option</span> <span class="na">value</span><span class="nt">&gt;&lt;/option&gt;</span>
 
@@ -2004,7 +2004,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/05-checkboxes">
-  <h2 id="checkbox">Checkbox</h2>
+  <h2 id="tjekboks">Tjekboks</h2>
   
   
 <div class="component-preview ">
@@ -2184,7 +2184,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/06-radio-buttons">
-  <h2 id="radio-knap">Radio knap</h2>
+  <h2 id="radioknap">Radioknap</h2>
   
   
 <div class="component-preview ">
@@ -2363,7 +2363,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/08-file-input">
-  <h2 id="fil-input">Fil input</h2>
+  <h2 id="vedhæft-fil">Vedhæft fil</h2>
   
     <p class="font-lead">Lader brugeren vælge en fil.</p>
   
@@ -2459,7 +2459,7 @@
 </section>
 
 <section class="styleguide-child-container content" id="section-/komponenter/form-controls/07-date-input">
-  <h2 id="dato-input">Dato input</h2>
+  <h2 id="datovælger">Datovælger</h2>
   
     <p class="font-lead">Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.</p>
   

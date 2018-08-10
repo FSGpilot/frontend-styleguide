@@ -7,7 +7,7 @@ title: Select.html
     <form class="form mb-7 input-width-m">
 
         <div class="form-group">
-            <label class="form-label" for="options">Select label</label>
+            <label class="form-label" for="options">Dropdown label (select)</label>
             <select class=" form-select" name="options" id="options">
                 <option value></option>
 

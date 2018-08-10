@@ -3,10 +3,10 @@ permalink: /preview-components/badges.html
 layout: iframed 
 title: Badges.html
 ---
-<h4>
+<div class="container">
+    <p class="h6">Stort badge</p>
+    <label class="badge badge-large">Nyhed</label>
 
-    Large badge</h4>
-<label class="badge badge-large">Nyhed</label>
-
-<h4>Small badge</h4>
-<label class="badge badge-small">Nyhed small</label>
+    <p class="h6">Lille badge</p>
+    <label class="badge badge-small">Lille nyhed</label>
+</div>

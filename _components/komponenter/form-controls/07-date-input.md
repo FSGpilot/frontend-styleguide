@@ -1,5 +1,5 @@
 ---
-title: Dato input
+title: Datovælger
 parent: Form controls
 order: 07
 lead: Tre seperate felter er den nemmeste måde for brugeren at indskrive dato.

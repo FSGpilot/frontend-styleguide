@@ -1,5 +1,5 @@
 ---
-title: Table med zebra linier
+title: Zebralinier
 parent: Tables
 order: 03
 lead: 

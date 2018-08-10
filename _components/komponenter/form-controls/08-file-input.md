@@ -1,5 +1,5 @@
 ---
-title: Fil input
+title: Vedhæft fil
 parent: Form controls
 order: 07
 lead: Lader brugeren vælge en fil.

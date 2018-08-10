@@ -11,12 +11,14 @@ lead: Tables show tabular data in columns and rows.
 subnav:
 - text: Standard
   href: '#table'
-- text: Uden border
-  href: '#table-uden-borderes'
-- text: Zebra linier
-  href: '#table-med-zebra-linier'
+- text: Uden ramme
+  href: '#uden-ramme'
+- text: Zebralinier
+  href: '#zebralinier'
+- text: Responsiv
+  href: '#responsiv'
 - text: Linjehøjde
-  href: '#tabeller-med-forskellige-liniehøjde'
+  href: '#forskellig-liniehøjde'
 - text: Med titel i venstre kolonne
   href: '#med-titel-i-venstre-kolonne'
 ---

@@ -1,5 +1,5 @@
 ---
-title: Radio knap
+title: Radioknap
 parent: Form controls
 order: 06
 lead: 

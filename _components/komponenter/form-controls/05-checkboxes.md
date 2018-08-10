@@ -1,5 +1,5 @@
 ---
-title: Checkbox
+title: Tjekboks
 parent: Form controls
 order: 05
 lead:
