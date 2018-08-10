@@ -1,5 +1,5 @@
 ---
-title: Tabeller med forskellige liniehøjde
+title: Forskellig liniehøjde
 parent: Tables
 order: 05
 lead: 
