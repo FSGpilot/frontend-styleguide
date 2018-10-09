@@ -660,6 +660,7 @@ pre {
   background-color: $color-gray-pale;
   font-family: $font-monospace;
   font-size: 1.3rem;
+  line-height: 1.4em;
 }
 
 pre {
@@ -700,7 +701,7 @@ code {
   font-family: $font-monospace;
   font-size: 1.3rem;
   font-weight: $font-weight-normal;
-  line-height: 1.5rem;
+  line-height: 1.4em;
 }
 
 
@@ -709,7 +710,8 @@ code {
   pre,
   code {
     background: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.4em;
     margin-top: 0;
     padding: 0;
   }
