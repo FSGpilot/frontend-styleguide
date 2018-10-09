@@ -11,7 +11,7 @@ title: Headings.html
             <h2>Heading 2</h2>
             <h3>Heading 3</h3>
             <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
+            <h4>Heading 5</h4>
             <h6>Heading 6</h6>
         </div>
         <div class="col-6">
@@ -20,7 +20,7 @@ title: Headings.html
             <div class="h2">Heading 2</div>
             <div class="h3">Heading 3</div>
             <div class="h4">Heading 4</div>
-            <div class="h5">Heading 5</div>
+            <div class="h4">Heading 5</div>
             <div class="h6">Heading 6</div>
         </div>
     </div>

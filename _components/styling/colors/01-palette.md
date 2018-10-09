@@ -8,7 +8,7 @@ order: 01
 <p>Om paletten</p>
 
 <!-- new setup start -->
-<h3 class="heading h5">Primærfarver (Temafarver)</h3>
+<h3 class="h4">Primærfarver (Temafarver)</h3>
 <div class="color-row-container">
   <div class="row color-row">
     <!-- borger primary START -->
@@ -72,7 +72,7 @@ order: 01
   </div>
 </div>
 
-<h3 class="heading h5">Gråtoneskala</h3>
+<h3 class="h4">Gråtoneskala</h3>
 <div class="color-row-container">
   <div class="row color-row">
     <!-- color-black start -->
@@ -141,7 +141,7 @@ order: 01
   </div>
 </div>
 
- <h3 class="heading h5">Beskeder (alerts)</h3>
+ <h3 class="h4">Beskeder (alerts)</h3>
 <div class="color-row-container">
   <div class="row color-row">
     <!-- color-success START -->
@@ -219,7 +219,7 @@ order: 01
   </div>
 </div>
 
-<h3 class="heading h5">Link farver</h3>
+<h3 class="h4">Link farver</h3>
 <div class="color-row-container">
 
   <div class="row color-row">
@@ -262,7 +262,7 @@ order: 01
   </div>
 </div>
 
-<h3 class="heading h5">Fokusfarver</h3>
+<h3 class="h4">Fokusfarver</h3>
 <div class="color-row-container">
   <div class="row color-row">
     <!-- color-focus START -->
@@ -277,7 +277,7 @@ order: 01
   </div>
 </div>
 
-<h3 class="heading h5">Baggrundsfarver</h3>
+<h3 class="h4">Baggrundsfarver</h3>
 <div class="color-row-container">
   <div class="row color-row">
   <!-- color-positive START -->
@@ -309,7 +309,7 @@ order: 01
   </div>
     <!-- color-negative END -->
 </div>
-<h3 class="heading h5">Positiv og negativ farver</h3>
+<h3 class="h4">Positiv og negativ farver</h3>
 <div class="color-row-container">
 
   <div class="row color-row">
@@ -317,7 +317,7 @@ order: 01
     <div class="col-md-3">
       <div class="color-container-large color-positive"></div>
       <div class="color-text-container">
-        <p class="code-color-hex">#3F9800</p>
+        <p class="code-color-hex">#358000</p>
         <p class="code-color-variable">$color-positive</p>
       </div>
     </div>
@@ -334,7 +334,7 @@ order: 01
   </div>
 </div>
 
-<h3 class="heading h5">Datavisualiseringsfarver</h3>
+<h3 class="h4">Datavisualiseringsfarver</h3>
 <div class="color-row-container">
   <div class="row color-row">
     <!-- color-data-turquoise START -->
@@ -582,7 +582,7 @@ order: 01
 <div class="color-row-container">
   <div class="row color-row">
     <div class="col-12 col-sm-12 col-md-6 col-md-lg">
-      <h3 class="heading h5">Normal tekst og links</h3>
+      <h3 class="h4">Normal tekst og links</h3>
       <!-- black-on-white start -->
       <div class="color-container-small bordered color-white mt-0">
         <div class="color-text-container">
@@ -620,7 +620,7 @@ order: 01
       <!-- link-on-gray end -->
     </div>
     <div class="col-12 col-sm-12 col-md-6 col-md-lg">
-      <h3 class="heading h5">Positiv og negativ tekst</h3>
+      <h3 class="h4">Positiv og negativ tekst</h3>
       <!-- negative on white start -->
       <div class="color-container-small bordered color-white mt-0">
         <div class="color-text-container">
@@ -654,7 +654,7 @@ order: 01
 </div>
 
 
-<h3 class="heading h5">Datavisualisering</h3>
+<h3 class="h4">Datavisualisering</h3>
 <div class="color-row-container">
   <div class="row color-row">
     <div class="col-12 col-sm-12 col-md-6 col-md-lg">

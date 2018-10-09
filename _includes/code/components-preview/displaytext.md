@@ -6,7 +6,7 @@ title: Displaytext.html
 <div class="container">
     <div class="row">
         <div class="col-6">
-            <p class="h6">Display text 1</p>
+            <p class="h5">Display text 1</p>
             <p class="displayheading-1">
                 10 dage
                 <span class="text-positive"> Positiv</span>
@@ -14,7 +14,7 @@ title: Displaytext.html
             </p>
         </div>
         <div class="col-6">
-            <p class="h6">Display text 2</p>
+            <p class="h5">Display text 2</p>
             <p class="displayheading-2">
                 10 dage
                 <span class="text-positive"> Positiv</span>

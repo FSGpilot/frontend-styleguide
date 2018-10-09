@@ -7,7 +7,7 @@ order: 04
 <p>Der er opsat en hjælpefunktion som automatisk generere klasser til display-egenskaben baseret på de definerede breakpoints i <code>$grid-breakpoints</code>. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/">Bootstraps Display Utility</a>.</p>
 Format: <code>d-{display}</code> og <code>d-{breakpoint}-{display}</code>
 
-<h6 class="mb-0">Display</h6>
+<h5 class="mb-0">Display</h5>
 <ul>
     <li><code>none</code></li>
     <li><code>inline-block</code></li>
@@ -15,7 +15,7 @@ Format: <code>d-{display}</code> og <code>d-{breakpoint}-{display}</code>
     <li><code>flex</code></li>
     <li><code>inline-flex</code></li>
 </ul>
-<h6 class="mb-0">Eksempel</h6>
+<h5 class="mb-0">Eksempel</h5>
 
 <table class="table">
   <thead>

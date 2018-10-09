@@ -13,7 +13,7 @@ title: Footer--big.html
                 <div class="col-12 col-sm-6 col-md-3">
                     <ul class="unstyled-list footer-primary-content">
                         <li class="footer-primary-link">
-                            <h5>Ansvarlig myndighed</h5>
+                            <h4>Ansvarlig myndighed</h4>
                         </li>
                         <li>
                             <a href="javascript:void(0);">Styrelsen for Institutioner og Uddannelsesstøtte</a>
@@ -24,7 +24,7 @@ title: Footer--big.html
                 <div class="col-12 col-sm-6 col-md-3">
                     <ul class="unstyled-list footer-primary-content">
                         <li class="footer-primary-link">
-                            <h5>Kontakt</h5>
+                            <h4>Kontakt</h4>
                         </li>
                         <address>
                             <li>
@@ -41,7 +41,7 @@ title: Footer--big.html
                 <div class="col-12 col-sm-6 col-md-3">
                     <ul class="unstyled-list footer-primary-content">
                         <li class="footer-primary-link">
-                            <h5>Lovgivning og jura</h5>
+                            <h4>Lovgivning og jura</h4>
                         </li>
 
                         <li>
@@ -63,7 +63,7 @@ title: Footer--big.html
                 <div class="col-12 col-sm-6 col-md-3">
                     <ul class="unstyled-list footer-primary-content">
                         <li class="footer-primary-link">
-                            <h5>Hjælp</h5>
+                            <h4>Hjælp</h4>
                         </li>
 
                         <li>

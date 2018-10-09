@@ -20,7 +20,7 @@ lead: Introduktion af farverne
     Implementering
   </button>
   <div id="theme" class="accordion-content">
-    <p class="h6">Temahåndtering</p>
+    <p class="h5">Temahåndtering</p>
     <p>Styleguiden er udviklet med 3 forskellige temaer. Standard temaet er det neutrale tema hvor primærfarven er grå (#454545). De to andre temaer er målrettet borger.dk og virk.dk. Styling filerne til de to temaer kan findes i mappen <code>/src/stylesheets/themes</code>.</p>
     <p>Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de to andre temaer er primærfarven og nolge få variationer i headeren (fx logo). Alt andet er ens på tværs af temaer.</p>
     <p class="mb-2">Tema eksempel – borger.dk:</p>
@@ -39,7 +39,7 @@ lead: Introduktion af farverne
         }
       </code>
     </div>
-    <p class="h6">Tilpasningsmuligheder</p>
+    <p class="h5">Tilpasningsmuligheder</p>
     <p>Alle farver i styleguiden er opsat med variable. Farverne i styleguiden kan skiftes ved at overskrive eksisterende farve-variable. <br />
     Alle farvevariable har en navngivning der starter med '$color-' og findes i filen '/scss/variables.scss'.<br />
     Farvevariablene kommer i to grupper: 'Swatches and Theming' og 'Component variables'. 'Swatches and Theming' definere alle farverne i farvepaletten. I 'Component variables', overføres disse farver til specifikke komponenter i styleguiden, fx links. <br />

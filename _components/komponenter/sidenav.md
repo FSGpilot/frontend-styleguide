@@ -16,14 +16,14 @@ lead:
     Implementering
   </button>
   <div id="sidenav-tech-docs" aria-hidden="false" class="accordion-content">
-    <h5>Sidenavigation</h5>
-    <h6>Aktivte menupunkter</h6>
+    <h4>Sidenavigation</h4>
+    <h5>Aktivte menupunkter</h5>
     <ul>
       <li>Teksten i det aktive menupunkt bliver styret af primærfarven, som og sættes med variablen <code>$color-primary</code></li>
       <li>Aktive menupunkter skal have <code>.current</code> klassen.</li>
       <li>Kun det sidste aktive menupunkt skal i stedet have <code>.active</code> klassen.</li>
     </ul>
-    <h6>Tilføj ikon og information i sidenavigation</h6>
+    <h5>Tilføj ikon og information i sidenavigation</h5>
     <ul>
       <li>For at tilføje et ikon til et punkt i sidenavigationen bruges klassen <code>.sidenav-icon-before</code>.</li>
       <li>For at tilføje information til et punkt i sidenavigationen bruges klassen <code>.sidenav-information</code>.</li>

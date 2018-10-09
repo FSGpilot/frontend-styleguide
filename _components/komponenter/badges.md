@@ -16,7 +16,7 @@ lead: Badges draw attention to new or important content.
     Implementering
   </button>
   <div id="code-documentation" class="accordion-content">
-    <h4>Implementering</h4>
+    <h3>Implementering</h3>
     <p>Alle badges skal have en <code>.badge</code> class på <code>&lt;label&gt;&lt;/label&gt;</code> elementet.</p>
     <p>Badges findes i to størrelser, store og små:</p>
     <ul>
@@ -40,23 +40,23 @@ lead: Badges draw attention to new or important content.
     Brugervenlighed
   </button>
   <div id="label-docs" aria-hidden="false" class="accordion-content">
-    <h4 class="heading">Accessibility</h4>
+    <h3>Accessibility</h3>
     <p>When labels are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</p>
-    <h4 class="heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="content-list">
+    <h3>Usability</h3>
+    <h4>When to use</h4>
+    <ul>
       <li>To draw attention to new, important content on a page that might otherwise be missed.</li>
       <li>To filter results with one or more tags.</li>
       <li>To indicate the number of new or unread items within a container. For example, to indicate the number of unread emails within a person’s inbox.</li>
     </ul>
-    <h5>When to consider something else</h5>
-    <ul class="content-list">
+    <h4>When to consider something else</h4>
+    <ul>
       <li>When users are likely to confuse a static label with a button. For example, when the label appears in the same area of the page as buttons.</li>
       <li>To call attention to new or updated content, consider changing the background color of the object itself or experiment with changing the font weight.</li>
       <li>When users already expect content to be updated frequently. For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.</li>
     </ul>
-    <h5>Guidance</h5>
-    <ul class="content-list">
+    <h4>Guidance</h4>
+    <ul>
       <li>Users frequently confuse labels as buttons. Always conduct usability testing to make sure your particular Implementering is not causing frustration.</li>
       <li>If your labels are not interactive, be sure to disable hover, focus, and active styles.</li>
       <li>Don’t mix interactive and static labels on your site. Once you establish a pattern for how labels behave, users will expect that behavior every time.</li>

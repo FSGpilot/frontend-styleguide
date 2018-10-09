@@ -10,7 +10,7 @@ order: 02
 <p>If you choose to customize beyond this palette, this <a href="http://webaim.org/resources/contrastchecker/">color contrast tool</a> is a useful resource for testing the compliance of any color combination.</p>
 <h4 class="heading">Fully accessible combinations</h4>
 
-<h5>Colors on a white background</h5>
+<h4>Colors on a white background</h4>
 
 <div class="grid-full color-outline">
   <div class="width-one-half">
@@ -61,7 +61,7 @@ order: 02
   </div>
 </div>
 
-<h5>Neutrals on a colored background</h5>
+<h4>Neutrals on a colored background</h4>
 
 <div class="grid-full">
   <div class="width-one-half">

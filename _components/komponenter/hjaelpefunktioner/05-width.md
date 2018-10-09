@@ -7,7 +7,7 @@ order: 05
 <p>Der er opsat en hjælpefunktion som automatisk generere klasser som styrer bredde i procent. De responsive klasser er baseret på de definerede breakpoints i <code>$grid-breakpoints</code>.</p>
 Format: <code>w-percent-{bredde}</code> og <code>w-percent-{breakpoint}-{bredde}</code>
 
-<h6 class="mb-0">Bredde</h6>
+<h5 class="mb-0">Bredde</h5>
 <ul>
     <li>10: <code>10%</code></li>
     <li>20: <code>20%</code></li>
@@ -21,7 +21,7 @@ Format: <code>w-percent-{bredde}</code> og <code>w-percent-{breakpoint}-{bredde}
     <li>100: <code>100%</code></li>
 </ul>
 
-<h6>Eksempel:</h6>
+<h5>Eksempel:</h5>
 <div class="code-highlight">
     <code>
         &lt;h1 class="w-percent-100"&gt; Dette element har en bredde på 100% &lt;/h1&gt; <br>

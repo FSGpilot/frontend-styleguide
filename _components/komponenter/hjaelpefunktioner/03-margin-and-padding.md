@@ -7,13 +7,13 @@ order: 03
 <p>Der er opsat hjælpefunktioner som generere klasser til margin og padding. Disse hjælpefunktioner er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/">Bootstraps Spacing Utilities</a>.</p>
 Format: <code>{css-egenskab}{retning}-{størrelse}</code> og <code>{css-egenskab}{retning}-{breakpoint}-{størrelse}</code>.
 
-<h6 class="mb-0">CSS egenskab:</h6>
+<h5 class="mb-0">CSS egenskab:</h5>
 <ul>
     <li><b>m</b> – for klasser som sætter <code>margin</code></li>
     <li><b>p</b> - for klasser som sætter <code>padding</code></li>
 </ul>
 
-<h6 class="mb-0">Retning:</h6>
+<h5 class="mb-0">Retning:</h5>
 <ul>
     <li><b>t</b> – for klasser som sætter <code>margin-top</code> eller <code>padding-top</code></li>
     <li><b>b</b> – for klasser som sætter <code>margin-bottom</code> eller <code>padding-bottom</code></li>
@@ -24,7 +24,7 @@ Format: <code>{css-egenskab}{retning}-{størrelse}</code> og <code>{css-egenskab
     <li><i>blank</i> – for klasser som sætter margin eller padding på alle 4 sider af elementet.</li>
 </ul>
 
-<h6 class="mb-0">Størrelse:</h6>
+<h5 class="mb-0">Størrelse:</h5>
 <ul>
     <li><b>0</b> – for klasser som fjerner alt <code>margin</code> eller <code>padding</code></li>
     <li><b>1</b> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 0.25</code></li>
@@ -40,7 +40,7 @@ Format: <code>{css-egenskab}{retning}-{størrelse}</code> og <code>{css-egenskab
 <code>$spacer</code> er sat til <code>8px.</code><br>
 Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</code> variablen.
 
-<h6 class="mb-0">Breakpoint:</h6>
+<h5 class="mb-0">Breakpoint:</h5>
 <ul>
     <li><i>blank</i> - for klasser som sætter <code>margin</code> eller <code>padding</code> for alle browserstørrelser.</li>
     <li><b>sm</b> - for klasser som sætter <code>margin</code> eller <code>padding</code> for browserstørrelser over 576px;</li>

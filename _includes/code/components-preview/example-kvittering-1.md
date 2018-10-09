@@ -100,11 +100,11 @@ title: Example-kvittering-1.html
                 </div>
                 <button class="button button-secondary">
                     <svg class="icon-svg "><use xlink:href="#download"></use></svg>                    Download kvittering som pdf</button>
-                <h2 class="h5 mt-7 mb-5">Hvad sker der nu</h2>
+                <h2 class="h4 mt-7 mb-5">Hvad sker der nu</h2>
                 <p>Sagens parter vil indenfor 7 hverdage modtage en kvittering
                     med journalnummer og oplysninger om, hvornår AES forventer
                     at have en udtalelse klar.</p>
-                <h2 class="h5 mt-7 mb-5">Husk betaling</h2>
+                <h2 class="h4 mt-7 mb-5">Husk betaling</h2>
                 <p class="mt-0 mb-0">Gebyret for udtalelsen skal sættes ind på vores konto i Danske
                     Bank:</p>
                 <div class="row">
@@ -127,7 +127,7 @@ title: Example-kvittering-1.html
                     <p class="mt-0 mb-0">Gebyr: 6.220 kr.</p>
                     <p class="mt-0 mb-0">Ved overførslen skal I oplyse skadelidtes CPR-nr.: 1702671913</p>
                 </div>
-                <h2 class="h5">Ved spørgsmål eller supplerende oplysninger</h2>
+                <h2 class="h4">Ved spørgsmål eller supplerende oplysninger</h2>
                 <div class="mt-4">
                     <p class="mt-0 mb-0">Kontakt AES på aes@aes.dk eller 72 00 60 00</p>
                     <p class="mt-0 mb-0">Referencenummer: 28346863</p>

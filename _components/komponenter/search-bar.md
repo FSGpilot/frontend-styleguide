@@ -16,7 +16,7 @@ lead: A block that allows users to search for specific content if they know what
     Implementering
   </button>
   <div id="search-code-documentation" class="accordion-content">
-    <h5>Søgefelt</h5>
+    <h4>Søgefelt</h4>
     <p>Du kan styre søgefeltets bredde via input-width- og input-char- se mere under punktet formular elementer og input bredde og validering.</p>
     <p>Du bør som oftest implementere auto-suggest på søgefelter, så brugeren foreslås relevante søge ord/sætninger</p>
   </div>

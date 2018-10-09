@@ -6,7 +6,7 @@ title: Sidenav--compare.html
 <div class="container mt-6 mb-6">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col">
-            <h5>Normal sidenavigation</h5>
+            <h4>Normal sidenavigation</h4>
 
             <h6 class="h6 mt-6">1 level</h6>
 
@@ -272,7 +272,7 @@ title: Sidenav--compare.html
         </div>
 
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 sidebar-col">
-            <h5 class="mt-6 mt-md-0">Sidenavigation med information</h5>
+            <h4 class="mt-6 mt-md-0">Sidenavigation med information</h4>
 
             <h6 class="h6 mt-6">1 level</h6>
 

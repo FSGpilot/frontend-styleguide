@@ -13,22 +13,22 @@ order: 01
     Implementering
   </button>
   <div id="border-radius-docs" class="accordion-content">
-    <h5>Statiske hjørner</h5>
+    <h4>Statiske hjørner</h4>
     <ul>
         <li><p>Statiske hjørner er lige og har en <code>border-radius: 0px;</code></p></li>
         <li><p>For at få lige hjørner bruges variablen <code>$static-border-radius</code></p></li>
     </ul>
-    <p class="h6 mb-3">Eksempel:</p>
+    <p class="h5 mb-3">Eksempel:</p>
     <div class="code-highlight">
         <code>border-radius: $static-border-radius;</code>
     </div>
-    <h5>Interaktive hjørner</h5>
+    <h4>Interaktive hjørner</h4>
     <ul>
         <li><p>Interaktive hjørner er runde og har en <code>border-radius: 4px;</code></p></li>
         <li><p>For at få runde hjørner bruges variablen <code>$interactive-border-radius</code></p></li>
         <li><p>Interaktive hjørner bør kun bruges til håndtering af interaktive elementer, da det er meningen at differentiere indhold fra aktion.</p></li>
     </ul>
-    <p class="h6 mb-3">Eksempel:</p>
+    <p class="h5 mb-3">Eksempel:</p>
     <div class="code-highlight">
         <code>border-radius: $interactive-border-radius;</code>
     </div>

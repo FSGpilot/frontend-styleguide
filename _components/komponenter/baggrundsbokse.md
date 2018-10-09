@@ -73,7 +73,7 @@ lead: Baggrundsbokse are a list of headers that can be clicked to hide or reveal
   </div>
 </div>
 
-<h6>Deprecated</h6>
+<h5>Deprecated</h5>
 
 <div class="accordion">
   <ul class="unstyled-list">

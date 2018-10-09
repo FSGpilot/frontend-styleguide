@@ -4,7 +4,7 @@ layout: iframed
 title: Datatable.html
 ---
 <div class="table-container">
-    <h5>Table title</h5>
+    <h4>Table title</h4>
     <section class="menu">
         <div class="selected-rows-menu">
             <button class="menu-selection-button" type="button">

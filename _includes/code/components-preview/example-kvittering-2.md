@@ -105,7 +105,7 @@ title: Example-kvittering-2.html
                         </tr>
                     </tbody>
                 </table>
-                <h3 class="h5">Oplysninger om skadelidte</h3>
+                <h3 class="h4">Oplysninger om skadelidte</h3>
                 <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
                     <tbody>
                         <tr>
@@ -118,7 +118,7 @@ title: Example-kvittering-2.html
                         </tr>
                     </tbody>
                 </table>
-                <h3 class="h5">Oplysninger om sagen</h3>
+                <h3 class="h4">Oplysninger om sagen</h3>
                 <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
                     <tbody>
                         <tr>
@@ -147,7 +147,7 @@ title: Example-kvittering-2.html
                         </tr>
                     </tbody>
                 </table>
-                <h3 class="h5">Yderligere oplysninger</h3>
+                <h3 class="h4">Yderligere oplysninger</h3>
                 <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
                     <tbody>
                         <tr>
@@ -166,7 +166,7 @@ title: Example-kvittering-2.html
                     </tbody>
                 </table>
                 <h2>Bilagsoversigt</h2>
-                <h3 class="h5">Første undersøgelse af skade</h3>
+                <h3 class="h4">Første undersøgelse af skade</h3>
                 <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
                     <thead>
                         <tr>
@@ -185,7 +185,7 @@ title: Example-kvittering-2.html
                         </tr>
                     </tbody>
                 </table>
-                <h3 class="h5">Oplysninger om varigt mén</h3>
+                <h3 class="h4">Oplysninger om varigt mén</h3>
                 <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
                     <thead>
                         <tr>
@@ -210,7 +210,7 @@ title: Example-kvittering-2.html
                         </tr>
                     </tbody>
                 </table>
-                <h3 class="h5">Første undersøgelse af skade</h3>
+                <h3 class="h4">Første undersøgelse af skade</h3>
                 <table class="table table--borderless table--responsive-headers table--compact mt-6">
                     <thead>
                         <tr>
