@@ -600,7 +600,7 @@ order: 01
       <!-- gray-on-white start -->
       <div class="color-container-small bordered color-white">
         <div class="color-text-container">
-          <p class="text-gray">Hjælpetekst på hvid</p>
+          <p class="form-hint">Hjælpetekst på hvid</p>
         </div>
       </div>
       <!-- gray-on-white end -->
