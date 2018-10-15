@@ -19,7 +19,7 @@ title: Modal.html
                     Modal
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <p>Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -45,7 +45,7 @@ title: Modal.html
                     Modal
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <p>Modalens indhold. Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation

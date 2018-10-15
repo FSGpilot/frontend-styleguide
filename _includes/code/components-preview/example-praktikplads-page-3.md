@@ -27,7 +27,7 @@ title: Example-praktikplads-page-3.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Praktikplads AUB
                 </a>
@@ -143,7 +143,7 @@ title: Example-praktikplads-page-3.html
         </p>
 
     </header>
-    <section class="page-content content">
+    <section class="page-content">
         <h2>Jeres elevpoint</h2>
         <p class="mt-4 mb-0">Her kan I se, om I har opfyldt jeres mål for elevpoint for 2019.</p>
         <div class="row">
@@ -318,7 +318,7 @@ title: Example-praktikplads-page-3.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

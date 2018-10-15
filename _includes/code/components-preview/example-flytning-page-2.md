@@ -27,7 +27,7 @@ title: Example-flytning-page-2.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Digital flytning
                 </a>
@@ -85,122 +85,109 @@ title: Example-flytning-page-2.html
     <!-- collapsible nav end-->
 </header>
 
-<section class="container page-container">
-    <div class="row">
-        <div class="col-12">
+<main class="container page-container">
 
-            <div class="overflow-menu  overflow-menu--open-right ">
-                <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
-                    aria-haspopup="true" aria-expanded="false">
-                    Trin 2 af 5
-                    <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
-                    <span class="sr-only">Åbner overflow menu</span>
-                </button>
-                <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
+    <div class="overflow-menu  overflow-menu--open-right ">
+        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
+            aria-haspopup="true" aria-expanded="false">
+            Trin 2 af 5
+            <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+            <span class="sr-only">Åbner overflow menu</span>
+        </button>
+        <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
 
-                    <ul class='sidenav-list'>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-1'>
-                                1. Oversigt
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-2'
-                                class='active'>
-                                2. Personer
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-3'>
-                                3. Adresse
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-4'>
-                                4. Særlig flytning
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-5'>
-                                5. Lægevalg
-                            </a>
-                        </li>
-                    </ul>
+            <ul class='sidenav-list'>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-1'>
+                        1. Oversigt
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-2'
+                        class='active'>
+                        2. Personer
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-3'>
+                        3. Adresse
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-4'>
+                        4. Særlig flytning
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-5'>
+                        5. Lægevalg
+                    </a>
+                </li>
+            </ul>
 
-                </div>
-            </div>
-
-            <div class="content">
-                <h1>Personer</h1>
-                <div class="mt-0">
-                    <p class="font-lead">Her kan du vælge hvilke personer i din husstand du ønsker
-                        at anmelde flytning for. Din eventuelle ægtefælle og
-                        eventuelle børn kan vælges.</p>
-                </div>
-                <p class="mt-6">Hvis der er flere personer i din husstand, som skal medtages
-                    i flytteanmeldelsen, skal de tilføjes særskilt ved angivelse
-                    af CPR-nr. Angiv maks 5 cpr-numre (10 cifre uden bindestreg)</p>
-                <a href="#" class="icon-link">Regler i forbindelse med flytning når vi har børn sammen
-                    <svg
-                        class="icon-svg ">
-                        <use xlink:href="#open-in-new"></use>
-                        </svg>
-                </a>
-                <h2 class="mt-7">Valgte personer</h2>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                        <table class="table table--borderless table--compact table--responsive-headers mt-3 mb-5">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Navn</th>
-                                    <th>CPR nummer</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="form-group">
-                                            <input id="id-person-1" type="checkbox" name="Checkbox for Klaus" value="" class="  "
-                                                disabled checked>
-                                            <label for="id-person-1" class="checkbox"></label>
-                                        </div>
-                                    </td>
-                                    <td>Klaus Egegreen Hansen</td>
-                                    <td>090889-2210</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="form-group">
-                                            <input id="id-person-2" type="checkbox" name="Checkbox for Line" value="" class="  ">
-                                            <label for="id-person-2" class=""></label>
-                                        </div>
-                                    </td>
-                                    <td>Line Von Larsen</td>
-                                    <td>240789-4695</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div>
-                    <button class="button button-secondary">
-                        <svg class="icon-svg "><use xlink:href="#add"></use></svg>                        Tilføj personer</button>
-                </div>
-
-                <a href="/frontend-styleguide/pages/page-templates/digital-flytning/flytning-3"
-                    class="button button-primary mt-9">Næste</a>
-                <div class="breadcrumb">
-                    <a href="/frontend-styleguide/pages/page-templates/digital-flytning/flytning-1"
-                        class="button button-ghost">Tilbage</a>
-                </div>
-            </div>
         </div>
     </div>
-</section>
+
+    <h1>Personer</h1>
+    <p class="font-lead">Her kan du vælge hvilke personer i din husstand du ønsker at anmelde flytning
+        for. Din eventuelle ægtefælle og eventuelle børn kan vælges.</p>
+    <p class="mt-6">Hvis der er flere personer i din husstand, som skal medtages i flytteanmeldelsen,
+        skal de tilføjes særskilt ved angivelse af CPR-nr. Angiv maks 5 cpr-numre
+        (10 cifre uden bindestreg)</p>
+    <a href="#" class="icon-link">Regler i forbindelse med flytning når vi har børn sammen<svg class="icon-svg "><use xlink:href="#open-in-new"></use></svg></a>
+    <h2 class="mt-7">Valgte personer</h2>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <table class="table table--borderless table--compact table--responsive-headers mt-3 mb-5">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Navn</th>
+                        <th>CPR nummer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-group ">
+                                <input id="id-person-1" type="checkbox" name="Checkbox for Klaus" value="" class="  "
+                                    disabled checked>
+                                <label for="id-person-1" class="checkbox"></label>
+                            </div>
+                        </td>
+                        <td>Klaus Egegreen Hansen</td>
+                        <td>090889-2210</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group ">
+                                <input id="id-person-2" type="checkbox" name="Checkbox for Line" value="" class="  ">
+                                <label for="id-person-2" class=""></label>
+                            </div>
+                        </td>
+                        <td>Line Von Larsen</td>
+                        <td>240789-4695</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <button class="button button-secondary">
+            <svg class="icon-svg "><use xlink:href="#add"></use></svg> Tilføj
+            personer</button>
+    </div>
+
+    <nav class="page-navigation">
+        <a href="/frontend-styleguide/pages/page-templates/digital-flytning/flytning-3"
+            class="button button-primary">Næste</a>
+        <a href="/frontend-styleguide/pages/page-templates/digital-flytning/flytning-1"
+            class="button button-ghost">Tilbage</a>
+    </nav>
+</main>
 
 <footer>
     <div class="footer">
@@ -243,7 +230,7 @@ title: Example-flytning-page-2.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

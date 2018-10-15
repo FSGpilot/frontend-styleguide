@@ -27,7 +27,7 @@ title: Example-praktikplads-page-1.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Praktikplads AUB
                 </a>
@@ -139,7 +139,7 @@ title: Example-praktikplads-page-1.html
     <header class="page-header">
         <h1>2021</h1>
     </header>
-    <section class="page-content content">
+    <section class="page-content">
         <h3 class="mb-0">Forskudsopgørelse</h3>
         <p class="mt-0">
             <a href="/frontend-styleguide/pages/page-templates/praktikplads/praktikplads-4">Se beregningerne for jeres virksomhed</a>
@@ -196,7 +196,7 @@ title: Example-praktikplads-page-1.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

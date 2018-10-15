@@ -27,7 +27,7 @@ title: Example-kvittering-1.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Vejledende udtalelse fra AES i privat erstatningssag
                 </a>
@@ -73,7 +73,7 @@ title: Example-kvittering-1.html
     <!-- collapsible nav end-->
 </header>
 
-<section class="container page-container">
+<main class="container page-container">
 
     <div class="alert alert alert-success alert--show-icon" role="alert" aria-label="success">
         <div class="alert-body">
@@ -89,54 +89,45 @@ title: Example-kvittering-1.html
         </div>
     </div>
 
-    <div class="row ">
-        <div class="col-12">
-            <div class="content">
-                <h1 class="mb-0 mt-5">Kvittering</h1>
-                <p class="form-hint mt-2">Referencenummer: 28346863</p>
-                <div class="mt-0 mb-4">
-                    <p>Hvis du ønsker dokumentation på fremsendelse kan du downloade
-                        anmodningen.</p>
-                </div>
-                <button class="button button-secondary">
-                    <svg class="icon-svg "><use xlink:href="#download"></use></svg>                    Download kvittering som pdf</button>
-                <h2 class="h4 mt-7 mb-5">Hvad sker der nu</h2>
-                <p>Sagens parter vil indenfor 7 hverdage modtage en kvittering
-                    med journalnummer og oplysninger om, hvornår AES forventer
-                    at have en udtalelse klar.</p>
-                <h2 class="h4 mt-7 mb-5">Husk betaling</h2>
-                <p class="mt-0 mb-0">Gebyret for udtalelsen skal sættes ind på vores konto i Danske
-                    Bank:</p>
-                <div class="row">
-                    <div class="col-12 col-sm-3 col-md-3 col-lg-3">
-                        <table class="table table--borderless table--compact">
-                            <tbody>
-                                <tr>
-                                    <td class="weight-semibold">Reg.nr.:</td>
-                                    <td>0216</td>
-                                </tr>
-                                <tr>
-                                    <td class="weight-semibold">Kontonr.:</td>
-                                    <td>4069068936</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <p class="mt-0 mb-0">Gebyr: 6.220 kr.</p>
-                    <p class="mt-0 mb-0">Ved overførslen skal I oplyse skadelidtes CPR-nr.: 1702671913</p>
-                </div>
-                <h2 class="h4">Ved spørgsmål eller supplerende oplysninger</h2>
-                <div class="mt-4">
-                    <p class="mt-0 mb-0">Kontakt AES på aes@aes.dk eller 72 00 60 00</p>
-                    <p class="mt-0 mb-0">Referencenummer: 28346863</p>
-                </div>
-                <br>
-                <button class="button button-secondary mt-5">Opret ny sag</button>
-            </div>
+    <h1 class="mb-0 mt-5">Kvittering</h1>
+    <p class="form-hint mt-2">Referencenummer: 28346863</p>
+    <p class="mt-0 mb-4">Hvis du ønsker dokumentation på fremsendelse kan du downloade anmodningen.</p>
+    <button class="button button-secondary">
+        <svg class="icon-svg "><use xlink:href="#download"></use></svg> Download
+        kvittering som pdf</button>
+    <h2 class="h4 mt-7">Hvad sker der nu</h2>
+    <p>Sagens parter vil indenfor 7 hverdage modtage en kvittering med journalnummer
+        og oplysninger om, hvornår AES forventer at have en udtalelse klar.</p>
+    <h2 class="h4 mt-7">Husk betaling</h2>
+    <p class="my-0">Gebyret for udtalelsen skal sættes ind på vores konto i Danske Bank:</p>
+    <div class="row">
+        <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+            <table class="table table--borderless table--compact">
+                <tbody>
+                    <tr>
+                        <td class="weight-semibold">Reg.nr.:</td>
+                        <td>0216</td>
+                    </tr>
+                    <tr>
+                        <td class="weight-semibold">Kontonr.:</td>
+                        <td>4069068936</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-</section>
+    </div>
+    <div class="mt-4">
+        <p class="mt-0 mb-0">Gebyr: 6.220 kr.</p>
+        <p class="mt-0 mb-0">Ved overførslen skal I oplyse skadelidtes CPR-nr.: 1702671913</p>
+    </div>
+    <h2 class="h4">Ved spørgsmål eller supplerende oplysninger</h2>
+    <div class="mt-4">
+        <p class="mt-0 mb-0">Kontakt AES på aes@aes.dk eller 72 00 60 00</p>
+        <p class="mt-0 mb-0">Referencenummer: 28346863</p>
+    </div>
+    <br>
+    <button class="button button-secondary mt-5">Opret ny sag</button>
+</main>
 
 <footer>
     <div class="footer">
@@ -179,7 +170,7 @@ title: Example-kvittering-1.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

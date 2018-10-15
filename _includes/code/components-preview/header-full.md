@@ -26,7 +26,7 @@ title: Header-full.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Home" aria-label="Home">En langt langt længere løsningstitel</a>
             </div>
 
@@ -244,7 +244,7 @@ title: Header-full.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

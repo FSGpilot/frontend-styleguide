@@ -27,7 +27,7 @@ title: Example-kvittering-2.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Vejledende udtalelse fra AES i privat erstatningssag
                 </a>
@@ -72,7 +72,7 @@ title: Example-kvittering-2.html
     <!-- collapsible nav end-->
 </header>
 
-<section class="container  page-container">
+<main class="container  page-container">
 
     <div class="alert alert alert-success alert--show-icon" role="alert" aria-label="success">
         <div class="alert-body">
@@ -83,156 +83,155 @@ title: Example-kvittering-2.html
 
     <div class="row">
         <div class="col-12 col-lg-8">
-            <div class="content">
-                <h1 class="mt-5">Kvittering</h1>
-                <p class="font-lead">Nedenfor finder du dine indtastninger fra de foregående sider.</p>
-                <button class="button button-secondary">
-                    <svg class="icon-svg "><use xlink:href="#printer"></use></svg>                    Udskriv kvittering</button>
-                <h2>Dine oplysninger</h2>
-                <table class="table table--borderless table--compact table--responsive-headers">
-                    <tbody>
-                        <tr>
-                            <th class="w-percent-md-30">Virksomhedens navn</th>
-                            <td>Forsikringens forsikring (enhed)</td>
-                        </tr>
-                        <tr>
-                            <th class="w-percent-md-30">Kontaktperson</th>
-                            <td>John Doe<br>privatskade@ff.dk<br>+45 1234 5678</td>
-                        </tr>
-                        <tr>
-                            <th class="w-percent-md-30">Afsender er</th>
-                            <td>Forsikringens forsikring (enhed)</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3 class="h4">Oplysninger om skadelidte</h3>
-                <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
-                    <tbody>
-                        <tr>
-                            <th class="w-percent-md-30">Skadelidtes navn</th>
-                            <td>Susanne Maria Zaggariasen</td>
-                        </tr>
-                        <tr>
-                            <th class="w-percent-md-30">Skadelidtes CPR</th>
-                            <td>110687-1478</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3 class="h4">Oplysninger om sagen</h3>
-                <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
-                    <tbody>
-                        <tr>
-                            <th class="w-percent-md-30">Sagstype</th>
-                            <td>Erstatningsansvarloven</td>
-                        </tr>
-                        <tr>
-                            <th class="w-percent-md-30">Emne</th>
-                            <td>Mén (6.220 kr.)</td>
-                        </tr>
-                        <tr>
-                            <th class="w-percent-md-30">Skadedato</th>
-                            <td>1/10-2017</td>
-                        </tr>
-                        <tr>
-                            <th class="w-percent-md-30">Sagsnummer</th>
-                            <td>prsk013456</td>
-                        </tr>
-                        <tr>
-                            <th class="w-percent-md-30">Verserende retsag</th>
-                            <td>Nej</td>
-                        </tr>
-                        <tr>
-                            <th class="w-percent-md-30">Skadelidtes advokat</th>
-                            <td>Nej</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3 class="h4">Yderligere oplysninger</h3>
-                <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
-                    <tbody>
-                        <tr>
-                            <th class="w-percent-md-30">Faktuelle oplysninger</th>
-                            <td>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis
-                                sem lacinia nonummy. Proin mollis lorem non
-                                dolor. In hac habitasse platea dictumst. Nulla
-                                ultrices odio. Donec augue. Phasellus dui. Maecenas
-                                facilisis nisl vitae nibh. Proin vel seo est
-                                vitae eros pretium dignissim. Aliquam aliquam
-                                sodales orci. Suspendisse potenti. Nunc adipiscing
-                                euismod arcu. Quisque facilisis mattis lacus.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h2>Bilagsoversigt</h2>
-                <h3 class="h4">Første undersøgelse af skade</h3>
-                <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
-                    <thead>
-                        <tr>
-                            <th>Original titel</th>
-                            <th>Navngivning</th>
-                            <th>Kommentar</th>
-                            <th>Størrelse</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>prn1023152_attest.pdf</td>
-                            <td>Journal fra egen læge</td>
-                            <td>2/10-2017</td>
-                            <td>2,3 mb</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3 class="h4">Oplysninger om varigt mén</h3>
-                <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
-                    <thead>
-                        <tr>
-                            <th>Original titel</th>
-                            <th>Navngivning</th>
-                            <th>Kommentar</th>
-                            <th>Størrelse</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>prn1023152_attest.pdf</td>
-                            <td>Journal fra egen læge</td>
-                            <td>2/10-2017</td>
-                            <td>2,3 mb</td>
-                        </tr>
-                        <tr>
-                            <td>prn1023152_attest.pdf</td>
-                            <td>Journal fra egen læge</td>
-                            <td>2/10-2017</td>
-                            <td>2,3 mb</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3 class="h4">Første undersøgelse af skade</h3>
-                <table class="table table--borderless table--responsive-headers table--compact mt-6">
-                    <thead>
-                        <tr>
-                            <th>Original titel</th>
-                            <th>Navngivning</th>
-                            <th>Kommentar</th>
-                            <th>Størrelse</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>prn1023152_attest.pdf</td>
-                            <td>Journal fra egen læge</td>
-                            <td>2/10-2017</td>
-                            <td>2,3 mb</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
+            <h1 class="mt-5">Kvittering</h1>
+            <p class="font-lead">Nedenfor finder du dine indtastninger fra de foregående sider.</p>
+            <button class="button button-secondary">
+                <svg class="icon-svg "><use xlink:href="#printer"></use></svg>                Udskriv kvittering</button>
+            <h2>Dine oplysninger</h2>
+            <table class="table table--borderless table--compact table--responsive-headers mb-7">
+                <tbody>
+                    <tr>
+                        <th class="w-percent-md-30">Virksomhedens navn</th>
+                        <td>Forsikringens forsikring (enhed)</td>
+                    </tr>
+                    <tr>
+                        <th class="w-percent-md-30">Kontaktperson</th>
+                        <td>John Doe<br>privatskade@ff.dk<br>+45 1234 5678</td>
+                    </tr>
+                    <tr>
+                        <th class="w-percent-md-30">Afsender er</th>
+                        <td>Forsikringens forsikring (enhed)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="h4">Oplysninger om skadelidte</h3>
+            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+                <tbody>
+                    <tr>
+                        <th class="w-percent-md-30">Skadelidtes navn</th>
+                        <td>Susanne Maria Zaggariasen</td>
+                    </tr>
+                    <tr>
+                        <th class="w-percent-md-30">Skadelidtes CPR</th>
+                        <td>110687-1478</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="h4">Oplysninger om sagen</h3>
+            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+                <tbody>
+                    <tr>
+                        <th class="w-percent-md-30">Sagstype</th>
+                        <td>Erstatningsansvarloven</td>
+                    </tr>
+                    <tr>
+                        <th class="w-percent-md-30">Emne</th>
+                        <td>Mén (6.220 kr.)</td>
+                    </tr>
+                    <tr>
+                        <th class="w-percent-md-30">Skadedato</th>
+                        <td>1/10-2017</td>
+                    </tr>
+                    <tr>
+                        <th class="w-percent-md-30">Sagsnummer</th>
+                        <td>prsk013456</td>
+                    </tr>
+                    <tr>
+                        <th class="w-percent-md-30">Verserende retsag</th>
+                        <td>Nej</td>
+                    </tr>
+                    <tr>
+                        <th class="w-percent-md-30">Skadelidtes advokat</th>
+                        <td>Nej</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="h4">Yderligere oplysninger</h3>
+            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+                <tbody>
+                    <tr>
+                        <th class="w-percent-md-30">Faktuelle oplysninger</th>
+                        <td>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis
+                            sem lacinia nonummy. Proin mollis lorem non dolor.
+                            In hac habitasse platea dictumst. Nulla ultrices
+                            odio. Donec augue. Phasellus dui. Maecenas facilisis
+                            nisl vitae nibh. Proin vel seo est vitae eros pretium
+                            dignissim. Aliquam aliquam sodales orci. Suspendisse
+                            potenti. Nunc adipiscing euismod arcu. Quisque facilisis
+                            mattis lacus.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Bilagsoversigt</h2>
+            <h3 class="h4">Første undersøgelse af skade</h3>
+            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+                <thead>
+                    <tr>
+                        <th>Original titel</th>
+                        <th>Navngivning</th>
+                        <th>Kommentar</th>
+                        <th>Størrelse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>prn1023152_attest.pdf</td>
+                        <td>Journal fra egen læge</td>
+                        <td>2/10-2017</td>
+                        <td>2,3 mb</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="h4">Oplysninger om varigt mén</h3>
+            <table class="table table--borderless table--compact table--responsive-headers mt-6 mb-7">
+                <thead>
+                    <tr>
+                        <th>Original titel</th>
+                        <th>Navngivning</th>
+                        <th>Kommentar</th>
+                        <th>Størrelse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>prn1023152_attest.pdf</td>
+                        <td>Journal fra egen læge</td>
+                        <td>2/10-2017</td>
+                        <td>2,3 mb</td>
+                    </tr>
+                    <tr>
+                        <td>prn1023152_attest.pdf</td>
+                        <td>Journal fra egen læge</td>
+                        <td>2/10-2017</td>
+                        <td>2,3 mb</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="h4">Første undersøgelse af skade</h3>
+            <table class="table table--borderless table--responsive-headers table--compact mt-6">
+                <thead>
+                    <tr>
+                        <th>Original titel</th>
+                        <th>Navngivning</th>
+                        <th>Kommentar</th>
+                        <th>Størrelse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>prn1023152_attest.pdf</td>
+                        <td>Journal fra egen læge</td>
+                        <td>2/10-2017</td>
+                        <td>2,3 mb</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-</section>
+</main>
 
 <footer>
     <div class="footer">
@@ -275,7 +274,7 @@ title: Example-kvittering-2.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

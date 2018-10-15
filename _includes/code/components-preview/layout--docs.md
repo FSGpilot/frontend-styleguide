@@ -49,7 +49,8 @@ title: Layout--docs.html
     at b_footer (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:129:3)
     at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:40:85)
     at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:40:1)
-    at entity.render.then.html (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\@frctl\nunjucks\src\extensions\render.js:44:21)</pre>
+    at entity.render.then.html (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\@frctl\nunjucks\src\extensions\render.js:44:21)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</pre>
     </code>
 
         </div>

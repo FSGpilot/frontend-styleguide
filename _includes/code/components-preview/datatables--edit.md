@@ -48,7 +48,7 @@ title: Datatables--edit.html
                     Datatable details row edit
                 </h1>
             </header>
-            <main class="modal__content content" id="modal-edit-content">
+            <main class="modal__content" id="modal-edit-content">
                 <div class="row">
                     <div class="col-12">
                         <div class="alert alert-error alert--show-icon" role="alert" aria-label="Beskedbox der viser en fejlmeddelselse">
@@ -101,7 +101,7 @@ title: Datatables--edit.html
                     Godkend slet
                 </h1>
             </header>
-            <main class="modal__content content" id="modal-delete-content">
+            <main class="modal__content" id="modal-delete-content">
                 <p>Er du sikker på at du gerne vil slette rækken?</p>
             </main>
             <footer class="modal__footer">

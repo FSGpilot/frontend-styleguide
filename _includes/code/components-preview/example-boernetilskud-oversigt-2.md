@@ -27,7 +27,7 @@ title: Example-boernetilskud-oversigt-2.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Familieydelser - børnetilskud
                 </a>
@@ -140,7 +140,7 @@ title: Example-boernetilskud-oversigt-2.html
         <h1>Oversigt</h1>
         <p class="font-lead">Brug en af de følgende funktioner, til at administrere børnetilskud:</p>
     </header>
-    <section class="page-content content">
+    <section class="page-content">
         <div class="row">
 
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">

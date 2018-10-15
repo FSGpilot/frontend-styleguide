@@ -22,7 +22,7 @@
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Ansøg om indsigt
                 </a>
@@ -67,63 +67,58 @@
     <!-- collapsible nav end-->
 </header>
 
-<section class="container page-container">
-    <div class="row">
-        <div class="col-12">
+<main class="container page-container">
 
-            <div class="overflow-menu  overflow-menu--open-right ">
-                <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
-                    aria-haspopup="true" aria-expanded="false">
-                    Trin 1 af 3
-                    <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
-                    <span class="sr-only">Åbner overflow menu</span>
-                </button>
-                <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
+    <div class="overflow-menu  overflow-menu--open-right ">
+        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
+            aria-haspopup="true" aria-expanded="false">
+            Trin 1 af 3
+            <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+            <span class="sr-only">Åbner overflow menu</span>
+        </button>
+        <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
 
-                    <ul class='sidenav-list'>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/aktindsigt/aktindsigt-1'
-                                class='active'>
-                                1. Inden du går igang
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/aktindsigt/aktindsigt-2'>
-                                2. Oplysninger om dig
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/aktindsigt/aktindsigt-3'>
-                                3. Bekræft oplysninger
-                            </a>
-                        </li>
-                    </ul>
+            <ul class='sidenav-list'>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/aktindsigt/aktindsigt-1'
+                        class='active'>
+                        1. Inden du går igang
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/aktindsigt/aktindsigt-2'>
+                        2. Oplysninger om dig
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/aktindsigt/aktindsigt-3'>
+                        3. Bekræft oplysninger
+                    </a>
+                </li>
+            </ul>
 
-                </div>
-            </div>
-
-            <div class="content">
-                <h1>Inden du går igang</h1>
-                <p class="font-lead">Inden du går igang, skal du være opmærksom på:</p>
-                <ul>
-                    <li class="mt-6">At alle oplysninger kan ændres, efter at du har indtastet
-                        dem. Det gælder dog ikke, når løsningen er sendt.</li>
-                    <li class="mt-6">At oplysningerne ikke bliver brugt i andre sammenhænge,
-                        med mindre du får andet af vide.</li>
-                    <li class="mt-6">At du kan forvente en afgørelse i løbet af 14 dage. Ansøgningen
-                        er underlagt lov om indsigt på området, Vær opmærksom
-                        på, at nedenstående oplysninger ikke benyttes i andre
-                        sammenhænge, med mindre andet er anført.</li>
-                </ul>
-                <h2 class="mb-0">Hvis du vil klage</h2>
-                <p class="mb-0 mt-4">Klager skal være modtaget senest to måneder efter afgørelsen
-                    af din ansøgning.</p>
-                <a href="/frontend-styleguide/pages/page-templates/aktindsigt/aktindsigt-2"
-                    class="button button-primary mt-7">Næste</a>
-            </div>
         </div>
     </div>
-</section>
+
+    <h1>Inden du går igang</h1>
+    <p class="font-lead">Inden du går igang, skal du være opmærksom på:</p>
+    <ul>
+        <li class="mt-6">At alle oplysninger kan ændres, efter at du har indtastet dem. Det gælder
+            dog ikke, når løsningen er sendt.</li>
+        <li class="mt-6">At oplysningerne ikke bliver brugt i andre sammenhænge, med mindre du
+            får andet af vide.</li>
+        <li class="mt-6">At du kan forvente en afgørelse i løbet af 14 dage. Ansøgningen er underlagt
+            lov om indsigt på området, Vær opmærksom på, at nedenstående oplysninger
+            ikke benyttes i andre sammenhænge, med mindre andet er anført.</li>
+    </ul>
+    <h2 class="mb-0">Hvis du vil klage</h2>
+    <p class="mb-0 mt-4">Klager skal være modtaget senest to måneder efter afgørelsen af din ansøgning.</p>
+
+    <nav class="page-navigation">
+        <a href="/frontend-styleguide/pages/page-templates/aktindsigt/aktindsigt-2"
+            class="button button-primary">Næste</a>
+    </nav>
+</main>
 
 <footer>
     <div class="footer">
@@ -166,7 +161,7 @@
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

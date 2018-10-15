@@ -27,7 +27,7 @@ title: Example-boernetilskud-ansoegning-2.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Familieydelser - børnetilskud
                 </a>
@@ -158,22 +158,22 @@ title: Example-boernetilskud-ansoegning-2.html
                 </li>
                 <li>
                     <a href='#'>
-                        3.
+                        3. Hvornår blev du eller bliver du enlig?
                     </a>
                 </li>
                 <li>
                     <a href='#'>
-                        4.
+                        4. Hvornår blev du eller bliver du enlig?
                     </a>
                 </li>
                 <li>
                     <a href='#'>
-                        5.
+                        5. Hvornår blev du eller bliver du enlig?
                     </a>
                 </li>
                 <li>
                     <a href='#'>
-                        6.
+                        6. Hvornår blev du eller bliver du enlig?
                     </a>
                 </li>
             </ul>
@@ -181,7 +181,7 @@ title: Example-boernetilskud-ansoegning-2.html
         </div>
     </div>
 
-    <section class="page-content content">
+    <section class="page-content">
         <h1 class="mt-0">Hvornår blev du eller bliver du enlig?</h1>
 
         <div class="alert alert-info alert--paragraph" role="alert" aria-label="Adresse info">
@@ -236,13 +236,11 @@ title: Example-boernetilskud-ansoegning-2.html
 
         </div>
     </section>
-    <footer class="page-footer">
-        <div class="button-column">
-            <a href="#" class="button button-primary">Næste</a>
-            <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1"
-                class="button button-ghost">Tilbage</a>
-        </div>
-    </footer>
+    <nav class="page-navigation">
+        <a href="#" class="button button-primary">Næste</a>
+        <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-1"
+            class="button button-ghost">Tilbage</a>
+    </nav>
 </main>
 
 <footer>

@@ -27,7 +27,7 @@ title: Example-aes-page-8.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Vejledende udtalelse fra AES i privat erstatningssag
                 </a>
@@ -88,198 +88,188 @@ title: Example-aes-page-8.html
     <!-- collapsible nav end-->
 </header>
 
-<section class="container page-container">
-    <div class="row">
-        <div class="col-12">
+<main class="container page-container">
 
-            <div class="overflow-menu  overflow-menu--open-right ">
-                <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
-                    aria-haspopup="true" aria-expanded="false">
-                    Trin 8 af 9
-                    <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
-                    <span class="sr-only">Åbner overflow menu</span>
-                </button>
-                <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
+    <div class="overflow-menu  overflow-menu--open-right ">
+        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
+            aria-haspopup="true" aria-expanded="false">
+            Trin 8 af 9
+            <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+            <span class="sr-only">Åbner overflow menu</span>
+        </button>
+        <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
 
-                    <ul class='sidenav-list'>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-1'>
-                                1. Oplysninger om afsender
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-2'>
-                                2. Hvis AES har spørgsmål til sagen
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-3'>
-                                3. Oplysninger om skadelidte
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-4'>
-                                4. Sagens natur
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-5'>
-                                5. Oplysninger om sagen
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-6'>
-                                6. Tilføj dokumentation for første undersøgelse af skaden
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-7'>
-                                7. Tilføj dokumentation fra sagen
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-8'
-                                class='active'>
-                                8. Tilføj kommentarer til sagen
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-9'>
-                                9. Opsummering
-                            </a>
-                        </li>
-                    </ul>
+            <ul class='sidenav-list'>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-1'>
+                        1. Oplysninger om afsender
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-2'>
+                        2. Hvis AES har spørgsmål til sagen
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-3'>
+                        3. Oplysninger om skadelidte
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-4'>
+                        4. Sagens natur
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-5'>
+                        5. Oplysninger om sagen
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-6'>
+                        6. Tilføj dokumentation for første undersøgelse af skaden
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-7'>
+                        7. Tilføj dokumentation fra sagen
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-8'
+                        class='active'>
+                        8. Tilføj kommentarer til sagen
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-9'>
+                        9. Opsummering
+                    </a>
+                </li>
+            </ul>
 
-                </div>
-            </div>
+        </div>
+    </div>
 
-            <div class="content">
-                <h1>Tilføj kommentarer til sagen</h1>
-                <div class="mt-0">
+    <h1>Tilføj kommentarer til sagen</h1>
+    <div class="mt-0">
 
-                    <div class="form-group">
-                        <input id="id-comments-1" type="checkbox" name="Faktuelle oplysninger" value="Faktuelle oplysninger"
-                            class=" checkbox-large js-checkbox-toggle-content" data-js-target='#collapse-check'
-                            aria-controls='collapse-check' aria-expanded='false'>
-                        <label for="id-comments-1" class="">Faktuelle oplysninger</label>
-                    </div>
+        <div class="form-group ">
+            <input id="id-comments-1" type="checkbox" name="Faktuelle oplysninger" value="Faktuelle oplysninger"
+                class=" checkbox-large js-checkbox-toggle-content" data-js-target='#collapse-check'
+                aria-controls='collapse-check' aria-expanded='false'>
+            <label for="id-comments-1" class="">Faktuelle oplysninger</label>
+        </div>
 
-                    <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
-                        <div class="py-4">
+        <div id="collapse-check" aria-hidden="true" class="box-border-l collapsed">
+            <div class="py-4">
 
-                            <div class="form-group">
-                                <label class="form-label " for="id-comment-1-expanded">Kommentar</label>
+                <div class="form-group">
+                    <label class="form-label " for="id-comment-1-expanded">Kommentar</label>
 
-                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
-                                    id="id-comment-1-expanded" name="Kommentar"
-                                    type="text"></textarea>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3">
-
-                    <div class="form-group">
-                        <input id="id-comments-2" type="checkbox" name="Spørgsmål til AES" value="Spørgsmål til AES"
-                            class=" checkbox-large js-checkbox-toggle-content" data-js-target='#collapse-check1'
-                            aria-controls='collapse-check' aria-expanded='false'>
-                        <label for="id-comments-2" class="">Spørgsmål til AES</label>
-                    </div>
-
-                    <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
-                        <div class="py-4">
-
-                            <div class="form-group">
-                                <label class="form-label " for="id-comment-2-expanded">Kommentar</label>
-
-                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
-                                    id="id-comment-2-expanded" name="Kommentar"
-                                    type="text"></textarea>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3">
-
-                    <div class="form-group">
-                        <input id="id-comments-3" type="checkbox" name="Instruks til AES" value="Instruks til AES"
-                            class=" checkbox-large js-checkbox-toggle-content" data-js-target='#collapse-check2'
-                            aria-controls='collapse-check' aria-expanded='false'>
-                        <label for="id-comments-3" class="">Instruks til AES</label>
-                    </div>
-
-                    <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
-                        <div class="py-4">
-
-                            <div class="form-group">
-                                <label class="form-label " for="id-comment-3-expanded">Kommentar</label>
-
-                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
-                                    id="id-comment-3-expanded" name="Kommentar"
-                                    type="text"></textarea>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-3">
-
-                    <div class="form-group">
-                        <input id="id-comments-4" type="checkbox" name="Særlige forsikringsbetingelser"
-                            value="Særlige forsikringsbetingelser" class=" checkbox-large js-checkbox-toggle-content"
-                            data-js-target='#collapse-check3' aria-controls='collapse-check'
-                            aria-expanded='false'>
-                        <label for="id-comments-4" class="">Særlige forsikringsbetingelser</label>
-                    </div>
-
-                    <div id="collapse-check3" aria-hidden="true" class="box-border-l collapsed">
-                        <div class="py-4">
-
-                            <div class="form-group">
-                                <label class="form-label " for="id-comment-4-expanded">Kommentar</label>
-
-                                <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
-                                    id="id-comment-4-expanded" name="Kommentar"
-                                    type="text"></textarea>
-                            </div>
-
-                        </div>
-                    </div>
+                    <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                        id="id-comment-1-expanded" name="Kommentar" type="text"></textarea>
                 </div>
 
-                <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-9"
-                    class="button button-primary mt-7">Næste</a>
-                <div class="breadcrumb">
-                    <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-7"
-                        class="button button-ghost">Tilbage</a>
-                </div>
             </div>
         </div>
     </div>
-</section>
+    <div class="mt-3">
+
+        <div class="form-group ">
+            <input id="id-comments-2" type="checkbox" name="Spørgsmål til AES" value="Spørgsmål til AES"
+                class=" checkbox-large js-checkbox-toggle-content" data-js-target='#collapse-check1'
+                aria-controls='collapse-check' aria-expanded='false'>
+            <label for="id-comments-2" class="">Spørgsmål til AES</label>
+        </div>
+
+        <div id="collapse-check1" aria-hidden="true" class="box-border-l collapsed">
+            <div class="py-4">
+
+                <div class="form-group">
+                    <label class="form-label " for="id-comment-2-expanded">Kommentar</label>
+
+                    <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                        id="id-comment-2-expanded" name="Kommentar" type="text"></textarea>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="mt-3">
+
+        <div class="form-group ">
+            <input id="id-comments-3" type="checkbox" name="Instruks til AES" value="Instruks til AES"
+                class=" checkbox-large js-checkbox-toggle-content" data-js-target='#collapse-check2'
+                aria-controls='collapse-check' aria-expanded='false'>
+            <label for="id-comments-3" class="">Instruks til AES</label>
+        </div>
+
+        <div id="collapse-check2" aria-hidden="true" class="box-border-l collapsed">
+            <div class="py-4">
+
+                <div class="form-group">
+                    <label class="form-label " for="id-comment-3-expanded">Kommentar</label>
+
+                    <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                        id="id-comment-3-expanded" name="Kommentar" type="text"></textarea>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="mt-3">
+
+        <div class="form-group ">
+            <input id="id-comments-4" type="checkbox" name="Særlige forsikringsbetingelser"
+                value="Særlige forsikringsbetingelser" class=" checkbox-large js-checkbox-toggle-content"
+                data-js-target='#collapse-check3' aria-controls='collapse-check'
+                aria-expanded='false'>
+            <label for="id-comments-4" class="">Særlige forsikringsbetingelser</label>
+        </div>
+
+        <div id="collapse-check3" aria-hidden="true" class="box-border-l collapsed">
+            <div class="py-4">
+
+                <div class="form-group">
+                    <label class="form-label " for="id-comment-4-expanded">Kommentar</label>
+
+                    <textarea class="form-input textarea input-width-m input-width-m" placeholder=""
+                        id="id-comment-4-expanded" name="Kommentar" type="text"></textarea>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="page-navigation">
+        <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-9"
+            class="button button-primary">Næste</a>
+        <a href="/frontend-styleguide/pages/page-templates/AES-erstatningssag/aes-7"
+            class="button button-ghost">Tilbage</a>
+    </nav>
+</main>
 
 <footer>
     <div class="footer">
@@ -322,7 +312,7 @@ title: Example-aes-page-8.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

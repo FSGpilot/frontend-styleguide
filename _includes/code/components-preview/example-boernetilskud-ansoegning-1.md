@@ -27,7 +27,7 @@ title: Example-boernetilskud-ansoegning-1.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Familieydelser - børnetilskud
                 </a>
@@ -181,7 +181,7 @@ title: Example-boernetilskud-ansoegning-1.html
 
         <h1 class="mt-0">Hvilke børn søger du tilskud til?</h1>
     </header>
-    <section class="page-content content">
+    <section class="page-content">
         <div class="row">
             <div class="col-12 col-md-8 col-lg-5">
                 <h2 class="h3 mb-4">Jeg søger tilskud til:</h2>
@@ -196,7 +196,7 @@ title: Example-boernetilskud-ansoegning-1.html
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group ">
                             <input id="checkbox-id-1" type="checkbox" name="" value="checkbox1_selected"
                                 class=" checkbox-large " disabled>
                             <label for="checkbox-id-1" class="">Keld Hedagaardsen <br> 353535-3535 <br> Fælles</label>
@@ -210,13 +210,13 @@ title: Example-boernetilskud-ansoegning-1.html
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group ">
                             <input id="checkbox-id-2" type="checkbox" name="" value="checkbox2_selected"
                                 class=" checkbox-large " disabled>
                             <label for="checkbox-id-2" class="">Anita Hedagaardsen <br> 353535-3535 <br> Fælles</label>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group ">
                             <input id="checkbox-id-3" type="checkbox" name="" value="checkbox3_selected"
                                 class=" checkbox-large ">
                             <label for="checkbox-id-3" class=""><b>Ylmig Hedagaardsen</b> <br> 353535-3535 <br>                                Fælles</label>
@@ -231,10 +231,10 @@ title: Example-boernetilskud-ansoegning-1.html
             </div>
 
     </section>
-    <footer class="page-footer">
+    <nav class="page-navigation">
         <a href="/frontend-styleguide/pages/page-templates/boernetilskud/boernetilskud-2"
             class="button button-primary">Næste</a>
-    </footer>
+    </nav>
 </main>
 
 <footer>

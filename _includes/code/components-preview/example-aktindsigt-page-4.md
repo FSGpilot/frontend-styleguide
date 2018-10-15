@@ -27,7 +27,7 @@ title: Example-aktindsigt-page-4.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Ansøg om indsigt
                 </a>
@@ -72,7 +72,7 @@ title: Example-aktindsigt-page-4.html
     <!-- collapsible nav end-->
 </header>
 
-<section class="container page-container">
+<main class="container page-container">
 
     <div class="alert alert alert-success alert--show-icon" role="alert" aria-label="success">
         <div class="alert-body">
@@ -82,34 +82,30 @@ title: Example-aktindsigt-page-4.html
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="content">
+    <h1 class="mt-5">Kvittering</h1>
+    <label class="form-label">Navn</label>
+    <p class="mt-0">Karen Jensen</p>
+    <div class="mt-5">
+        <label class="form-label">Adresse</label>
+        <p class="mt-0">Vængetstræde 77 <br> 0081 Købstad</p>
+    </div>
+    <div class="mt-5">
+        <label class="form-label">Alder</label>
+        <p class="mt-0">39</p>
+    </div>
+    <div class="mt-5">
+        <label class="form-label">Tidligere ansøgninger</label>
+        <p class="mt-0">Nej</p>
+    </div>
 
-                <h1 class="mt-5">Kvittering</h1>
+    <button href="#" class="button button-secondary mt-7">
+        <svg class="icon-svg "><use xlink:href="#download"></use></svg> Gem
+        som pdf</button> <br>
+    <button href="#" class="button button-secondary mt-3">
+        <svg class="icon-svg "><use xlink:href="#printer"></use></svg> Print
+    </button>
 
-                <label class="form-label">Navn</label>
-                <p class="mt-0">Karen Jensen</p>
-                <div class="mt-5">
-                    <label class="form-label">Adresse</label>
-                    <p class="mt-0">Vængetstræde 77 <br> 0081 Købstad</p>
-                </div>
-                <div class="mt-5">
-                    <label class="form-label">Alder</label>
-                    <p class="mt-0">39</p>
-                </div>
-                <div class="mt-5">
-                    <label class="form-label">Tidligere ansøgninger</label>
-                    <p class="mt-0">Nej</p>
-                </div>
-
-                <button href="#" class="button button-secondary mt-7">
-                    <svg class="icon-svg "><use xlink:href="#download"></use></svg>                    Gem som pdf</button> <br>
-                <button href="#" class="button button-secondary mt-3">
-                    <svg class="icon-svg "><use xlink:href="#printer"></use></svg>                    Print
-                </button>
-
-</section>
+</main>
 
 <footer>
     <div class="footer">
@@ -152,7 +148,7 @@ title: Example-aktindsigt-page-4.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

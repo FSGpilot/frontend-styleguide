@@ -27,7 +27,7 @@ title: Example-praktikplads-page-4.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Praktikplads AUB
                 </a>
@@ -139,7 +139,7 @@ title: Example-praktikplads-page-4.html
     <header class="page-header">
         <h1>Erhvervsuddannede medarbejdere i 2021</h1>
     </header>
-    <section class="page-content content">
+    <section class="page-content">
         <div class="mt-6">
 
             <div class="form-group">
@@ -166,7 +166,7 @@ title: Example-praktikplads-page-4.html
         </div>
         <div class="mt-3">
 
-            <div class="form-group">
+            <div class="form-group ">
                 <input id="id-view1" type="radio" name="Vælg visning" value="Elevpoint" class="  ">
                 <label for="id-view1" class="">Elevpoint</label>
             </div>
@@ -174,7 +174,7 @@ title: Example-praktikplads-page-4.html
         </div>
         <div class="mt-0">
 
-            <div class="form-group">
+            <div class="form-group ">
                 <input id="id-view2" type="radio" name="Vælg visning" value="Aftaleperiode"
                     class="  " checked>
                 <label for="id-view2" class="">Aftaleperiode</label>
@@ -245,7 +245,7 @@ title: Example-praktikplads-page-4.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

@@ -27,7 +27,7 @@ title: Example-flytning-page-5.html
     <!--2A: Solutiuon header -->
     <div class="solution-header">
         <div class="container solution-header-inner">
-            <div class="solution-heading content">
+            <div class="solution-heading">
                 <a href="#" title="Hjem" aria-label="logo link">
                     Digital flytning
                 </a>
@@ -85,7 +85,7 @@ title: Example-flytning-page-5.html
     <!-- collapsible nav end-->
 </header>
 
-<section class="container page-container">
+<main class="container page-container">
 
     <div class="alert alert alert-error alert--show-icon" role="alert" aria-label="error">
         <div class="alert-body">
@@ -98,131 +98,121 @@ title: Example-flytning-page-5.html
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-12">
+    <div class="overflow-menu  overflow-menu--open-right ">
+        <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
+            aria-haspopup="true" aria-expanded="false">
+            Trin 5 af 5
+            <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
+            <span class="sr-only">Åbner overflow menu</span>
+        </button>
+        <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
 
-            <div class="overflow-menu  overflow-menu--open-right ">
-                <button class="button-overflow-menu js-dropdown " data-js-target="#overflow_steps"
-                    aria-haspopup="true" aria-expanded="false">
-                    Trin 5 af 5
-                    <svg class="icon-svg"><use xlink:href="#menu-down"></use></svg>
-                    <span class="sr-only">Åbner overflow menu</span>
-                </button>
-                <div class="overflow-menu-inner" id="overflow_steps" aria-hidden="true">
+            <ul class='sidenav-list'>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-1'>
+                        1. Oversigt
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-2'>
+                        2. Personer
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-3'>
+                        3. Adresse
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-4'>
+                        4. Særlig flytning
+                        <span class='sidenav-icon'>
+                            <svg class='icon-svg'><use xlink:href='#check'></use></svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-5'
+                        class='active'>
+                        5. Lægevalg
+                    </a>
+                </li>
+            </ul>
 
-                    <ul class='sidenav-list'>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-1'>
-                                1. Oversigt
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-2'>
-                                2. Personer
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-3'>
-                                3. Adresse
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-4'>
-                                4. Særlig flytning
-                                <span class='sidenav-icon'>
-                                    <svg class='icon-svg'><use xlink:href='#check'></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-5'
-                                class='active'>
-                                5. Lægevalg
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-
-            <div class="content">
-                <h1>Lægevalg</h1>
-                <div class="mt-0">
-
-                    <div class="alert alert alert-info alert--paragraph" role="alert" aria-label="warning">
-                        <div class="alert-body">
-                            <p class="alert-heading">Når du anmelder flytning skal du altid vælge læge
-                                også selv om det er tidligere læge du ønsker.</p>
-                            <p
-                                class="alert-text"><br>Du kan kontakte Folkeregisteret, på telefonnr.
-                                3366 3366, såfremt der er lukket for tilgang
-                                til læger inden for en radius af 5 km.<br><br>Flytter
-                                du inden for Københavns kommune, men uden for
-                                lægens 5 km grænse, kan du beholde lægen. Du
-                                skal acceptere ikke at kunne få sygebesøg af
-                                lægen.<br><br>Flytter du tik Københavns kommune
-                                uden for lægens km grænse, kan du kun beholde
-                                din læge, hvis du opfylder betingelserne og
-                                accepterer ikke at kunne få sygebesøg af lægen.<br><br>Betingelserne
-                                i § 1 stk 9, i Bekendtgørelsen om valg og skift
-                                af alment praktiserende læge og om behandling
-                                hos læge i praksissektoren for at kunne beholde
-                                lægen.<br><br>Du vil modtage dit nye sundhedskort
-                                i løbet af 2-3 uger. Hvis du ikke modtager dit
-                                nye sundhedskort, skal du kontakte kommunen
-                                inden 60 dage fra din flyttedato. Ellers kommer
-                                du til at betale for dit nye kort.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="mt-6">
-                    <label class="form-label">Ny adresse</label>
-                    <p class="mt-0">Odensegade 23, 4.tv. 2100 København Ø</p>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                        <table class="table table--borderless table--compact table--responsive-headers mt-5">
-                            <thead>
-                                <tr>
-                                    <th>Personer som flytter</th>
-                                    <th>Læge efter flytning</th>
-                                    <th>Afstand</th>
-                                    <th class="align-text-md-right">Skift læge</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Klaus Egegreen Hansen</td>
-                                    <td>John Doe <br>Østerbrogade 893 18.tv. <br>2100
-                                        København Ø</td>
-                                    <td>0,6 Km</td>
-                                    <td class="align-text-md-right">
-                                        <a href="#"> <svg class='icon-svg'><use xlink:href='#pencil'></use></svg></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <a href="#" class="button button-primary mt-7">Næste</a>
-                <div class="breadcrumb">
-                    <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-4'
-                        class="button button-ghost">Tilbage</a>
-                </div>
-            </div>
         </div>
     </div>
-</section>
+
+    <h1>Lægevalg</h1>
+    <div class="mt-0">
+
+        <div class="alert alert alert-info alert--paragraph" role="alert" aria-label="warning">
+            <div class="alert-body">
+                <p class="alert-heading">Når du anmelder flytning skal du altid vælge læge også selv
+                    om det er tidligere læge du ønsker.</p>
+                <p class="alert-text"><br>Du kan kontakte Folkeregisteret, på telefonnr. 3366 3366,
+                    såfremt der er lukket for tilgang til læger inden for en
+                    radius af 5 km.<br><br>Flytter du inden for Københavns kommune,
+                    men uden for lægens 5 km grænse, kan du beholde lægen. Du
+                    skal acceptere ikke at kunne få sygebesøg af lægen.<br><br>Flytter
+                    du tik Københavns kommune uden for lægens km grænse, kan
+                    du kun beholde din læge, hvis du opfylder betingelserne
+                    og accepterer ikke at kunne få sygebesøg af lægen.<br><br>Betingelserne
+                    i § 1 stk 9, i Bekendtgørelsen om valg og skift af alment
+                    praktiserende læge og om behandling hos læge i praksissektoren
+                    for at kunne beholde lægen.<br><br>Du vil modtage dit nye
+                    sundhedskort i løbet af 2-3 uger. Hvis du ikke modtager
+                    dit nye sundhedskort, skal du kontakte kommunen inden 60
+                    dage fra din flyttedato. Ellers kommer du til at betale
+                    for dit nye kort.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="mt-6">
+        <label class="form-label">Ny adresse</label>
+        <p class="mt-0">Odensegade 23, 4.tv. 2100 København Ø</p>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <table class="table table--borderless table--compact table--responsive-headers mt-5">
+                <thead>
+                    <tr>
+                        <th>Personer som flytter</th>
+                        <th>Læge efter flytning</th>
+                        <th>Afstand</th>
+                        <th class="align-text-md-right">Skift læge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Klaus Egegreen Hansen</td>
+                        <td>John Doe <br>Østerbrogade 893 18.tv. <br>2100 København
+                            Ø</td>
+                        <td>0,6 Km</td>
+                        <td class="align-text-md-right">
+                            <a href="#"> <svg class='icon-svg'><use xlink:href='#pencil'></use></svg></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <nav class="page-navigation">
+        <a href="#" class="button button-primary">Næste</a>
+        <a href='/frontend-styleguide/pages/page-templates/digital-flytning/flytning-4'
+            class="button button-ghost">Tilbage</a>
+    </nav>
+</main>
 
 <footer>
     <div class="footer">
@@ -265,7 +255,7 @@ title: Example-flytning-page-5.html
                     Kontakt
                 </h1>
             </header>
-            <main class="modal__content content">
+            <main class="modal__content">
                 <div class="alert alert-warning" role="alert" aria-label="Beskedbox der viser en advarsel">
                     <div class="alert-body">
                         <h3 class="alert-heading">Vi har noget information af advarende karakter</h3>

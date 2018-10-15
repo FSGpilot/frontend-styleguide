@@ -10,7 +10,7 @@ title: Cards.html
             <div class="card">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header" aria-label="Card header">Header</p>
+                    <p class="h6 header-title" title="Card header" aria-label="Card header">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -63,7 +63,7 @@ title: Cards.html
             <div class="card">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header" aria-label="Card header">Header</p>
+                    <p class="h6 header-title" title="Card header" aria-label="Card header">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -105,7 +105,7 @@ title: Cards.html
                 </div>
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header" aria-label="Card header">Header</p>
+                    <p class="h6 header-title" title="Card header" aria-label="Card header">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -140,7 +140,7 @@ title: Cards.html
             <div class="card">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header" aria-label="Card header">Header</p>
+                    <p class="h6 header-title" title="Card header" aria-label="Card header">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -176,7 +176,7 @@ title: Cards.html
             <div class="card">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header" aria-label="Card header">Header</p>
+                    <p class="h6 header-title" title="Card header" aria-label="Card header">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
@@ -200,7 +200,7 @@ title: Cards.html
             <div class="card">
 
                 <div class="card-header">
-                    <p class="h5 header-title" title="Card header" aria-label="Card header">Header</p>
+                    <p class="h6 header-title" title="Card header" aria-label="Card header">Header</p>
                     <p class="sub-header">Understøttende tekst</p>
                 </div>
 
