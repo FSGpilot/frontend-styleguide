@@ -3,7 +3,7 @@ primary:
   - href: /examples/
 #  - href: /getting-started/
 #  - href: /faellesoffentlige-krav/
-#  - href: /whats-new/
+  - href: /about/
 
 mobile:
   - href: /designandcode/
@@ -12,7 +12,7 @@ mobile:
     categorynav: 'Page templates'
 #  - href: /getting-started/
 #  - href: /faellesoffentlige-krav/
-#  - href: /whats-new/
+  - href: /about/
 
 UI components:
   - alternative_text: Overblik
@@ -61,11 +61,11 @@ Page templates:
   - href: /examples/
   - href: /examples/pageexamples/
 
-What’s new:
+About:
   - alternative_text: Overblik
-    href: /whats-new/
-  - href: /whats-new/releases/
-  - href: /whats-new/updates/
-  - href: /whats-new/product-roadmap/
-  - href: /whats-new/research/
-  - href: /whats-new/component-status/
+    href: /about/
+  - href: /about/releases/
+# - href: /about/updates/
+# - href: /about/product-roadmap/
+# - href: /about/research/
+# - href: /about/component-status/

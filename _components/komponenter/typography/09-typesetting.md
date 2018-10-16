@@ -15,7 +15,7 @@ order: 07
     Implementering
   </button>
   <div id="typesetting-docs-tech" aria-hidden="true" class="accordion-content">
-    <p>For at give en max-bredde på 75 karaktere skal brødteksten være placeret inde i et html-element som har klassen <code>.content</code></p>
+    <p>Alle tekstelementer her automatiske en max-bredde på 75 karaktere.</p>
     <p>Bredden er styret af variablen <code>$text-max-width</code> in <code>src/stylesheets/core/<wbr>_variables.scss</code>.</p>
   </div>
 </div>
