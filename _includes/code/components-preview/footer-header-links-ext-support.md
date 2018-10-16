@@ -11,7 +11,7 @@ title: Footer-header-links-ext-support.html
                     <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
-                                <p class="h6 weight-semibold" title="Ansvarlig myndighed"
+                                <p class="h5 weight-semibold" title="Ansvarlig myndighed"
                                     aria-label="Ansvarlig myndighed">Ansvarlig myndighed</p>
                             </li>
                         </ul>
@@ -29,7 +29,7 @@ title: Footer-header-links-ext-support.html
                     <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
-                                <p class="h6 weight-semibold" title="Hjælpende links"
+                                <p class="h5 weight-semibold" title="Hjælpende links"
                                     aria-label="Hjælpende links">Hjælpende links</p>
                             </li>
                         </ul>
@@ -60,7 +60,7 @@ title: Footer-header-links-ext-support.html
                     <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
-                                <p class="h6 weight-semibold" title="Telefonisk support"
+                                <p class="h5 weight-semibold" title="Telefonisk support"
                                     aria-label="Telefonisk support">Telefonisk support</p>
                             </li>
                         </ul>
@@ -88,7 +88,7 @@ title: Footer-header-links-ext-support.html
                     <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
-                                <p class="h6 weight-semibold" title="Skriftlig kontakt"
+                                <p class="h5 weight-semibold" title="Skriftlig kontakt"
                                     aria-label="Skriftlig kontakt">Skriftlig kontakt</p>
                             </li>
                         </ul>

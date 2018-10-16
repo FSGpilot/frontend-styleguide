@@ -11,7 +11,7 @@ title: Footer-header.html
                     <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <p class="h6 weight-semibold" title="Ansvarlig myndighed"
+                                <p class="h5 weight-semibold" title="Ansvarlig myndighed"
                                     aria-label="Ansvarlig myndighed">Ansvarlig myndighed</p>
                             </li>
                             <li>
@@ -27,7 +27,7 @@ title: Footer-header.html
                     <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <p class="h6 weight-semibold" title="Kontakt" aria-label="Kontakt">Kontakt</p>
+                                <p class="h5 weight-semibold" title="Kontakt" aria-label="Kontakt">Kontakt</p>
                             </li>
                             <li>
                                 <a class="function-link" href="mailto:support@stil.dk">support@stil.dk</a>

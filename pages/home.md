@@ -30,19 +30,19 @@ title: Frontend Styleguiden
 <div class="row">
   <div class="col-12 col-md-4">
     <div class="bg-alternative demo-img-placeholder"></div>
-    <h6>Komponenter og styling</h6>
+    <h3 class="h5">Komponenter og styling</h3>
     <p>Udforsk designsystemets styling elementer og komponenter</p>
     <a href="{{ site.baseurl }}/designandcode/">Design og kode</a>
   </div>
   <div class="col-12 col-md-4 mt-6 mt-md-0">
     <div class="bg-alternative demo-img-placeholder"></div>
-    <h6>Side eksempler</h6>
+    <h3 class="h5">Side eksempler</h3>
     <p>Der er lavet en række eksempelløsninger som viser hvordan man bruger designsystemet til at lave selvbetjeningsløsninger.</p>
     <a href="{{ site.baseurl }}/examples/">Se eksempler</a>
   </div>
   <div class="col-12 col-md-4 mt-6 mt-md-0">
     <div class="bg-alternative demo-img-placeholder"></div>
-    <h6>Bidrag til designsystemet</h6>
+    <h3 class="h5">Bidrag til designsystemet</h3>
     <p>Giv input og opret gerne issues på github hvis du har spørgsmål eller finder fejl i systemt.</p>
     <a href="https://github.com/FSGpilot/frontend-styleguide-components">Bidrag til designsystemet</a>
   </div>

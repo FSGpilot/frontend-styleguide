@@ -111,7 +111,7 @@ title: Example-b-page1.html
                     <div class="align-left">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold" title="Ansvarlig myndighed"
+                                <span class="h5 weight-semibold" title="Ansvarlig myndighed"
                                     aria-label="Ansvarlig myndighed">Undervisningsministeriet</span>
                             </li>
                             <li>

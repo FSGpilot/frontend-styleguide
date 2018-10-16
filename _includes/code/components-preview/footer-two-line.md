@@ -11,7 +11,7 @@ title: Footer-two-line.html
                     <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold" title="Ansvarlig myndighed"
+                                <span class="h5 weight-semibold" title="Ansvarlig myndighed"
                                     aria-label="Ansvarlig myndighed">Undervisningsministeriet</span>
                             </li>
                             <li>

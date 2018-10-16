@@ -4,7 +4,7 @@ layout: iframed
 title: Table--lineheight.html
 ---
 <div class="container">
-    <p class="h6">Normal</p>
+    <p class="h5">Normal</p>
     <div class="table--responsive-scroll">
         <table class="table">
             <thead>
@@ -44,7 +44,7 @@ title: Table--lineheight.html
         </table>
     </div>
 
-    <p class="h6">Klasse: compact</p>
+    <p class="h5">Klasse: compact</p>
     <div class="table--responsive-scroll">
         <table class="table table--compact">
             <thead>
@@ -84,7 +84,7 @@ title: Table--lineheight.html
         </table>
     </div>
 
-    <p class="h6">Klasse: extracompact</p>
+    <p class="h5">Klasse: extracompact</p>
     <div class="table--responsive-scroll">
         <table class="table table--extracompact">
             <thead>

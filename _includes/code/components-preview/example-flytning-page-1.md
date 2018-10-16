@@ -37,7 +37,7 @@ title: Example-flytning-page-1.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Styrelsen for Eksempler</h6>
+                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p>
                     <button class="button-unstyled button-contact" data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
@@ -207,7 +207,7 @@ title: Example-flytning-page-1.html
         <div class="col-12 col-sm-12 col-md-4 col-lg-4">
             <div class="card mt-6">
                 <div class="card-header">
-                    <p class="h6 header-title" title="Card header" aria-label="Card header adressebeskyttelse">Adressebeskyttelse</p>
+                    <p class="h5 header-title" title="Card header" aria-label="Card header adressebeskyttelse">Adressebeskyttelse</p>
                     <p class="sub-header">Her kan du kan oprette, rette eller slette dine adressebeskyttelser.</p>
                 </div>
                 <div class="card-action">
@@ -224,7 +224,7 @@ title: Example-flytning-page-1.html
         <div class="col-12 col-sm-12 col-md-4 col-lg-4">
             <div class="card mt-6">
                 <div class="card-header">
-                    <p class="h6 header-title" title="Card header" aria-label="Card header adressebeskyttelse">Udrejse</p>
+                    <p class="h5 header-title" title="Card header" aria-label="Card header adressebeskyttelse">Udrejse</p>
                     <p class="sub-header">Hvis du flytter til udlandet, skal du benytte nedenstående
                         link.</p>
                 </div>
@@ -242,7 +242,7 @@ title: Example-flytning-page-1.html
         <div class="col-12 col-sm-12 col-md-4 col-lg-4">
             <div class="card mt-6">
                 <div class="card-header">
-                    <p class="h6 header-title" title="Card header" aria-label="Card header adressebeskyttelse">Fuldmagt</p>
+                    <p class="h5 header-title" title="Card header" aria-label="Card header adressebeskyttelse">Fuldmagt</p>
                     <p class="sub-header">Afgiv en eller flere fulmagt til at anmelde flytning.</p>
                 </div>
                 <div class="card-action">
@@ -267,7 +267,7 @@ title: Example-flytning-page-1.html
                     <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold">Ansvarlig myndighed</span>
+                                <span class="h5 weight-semibold">Ansvarlig myndighed</span>
                             </li>
                             <li>
                                 <p>Styrelsen for Eksempel</p>

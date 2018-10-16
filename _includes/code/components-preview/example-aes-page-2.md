@@ -37,7 +37,7 @@ title: Example-aes-page-2.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Styrelsen for Eksempler</h6>
+                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p>
                     <p>Support: 72 20 60 00 ·
@@ -191,7 +191,7 @@ title: Example-aes-page-2.html
                     <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold">Ansvarlig myndighed</span>
+                                <span class="h5 weight-semibold">Ansvarlig myndighed</span>
                             </li>
                             <li>
                                 <p>Styrelsen for Eksempel</p>

@@ -11,7 +11,7 @@ title: Footer-logo.html
                     <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
-                                <p class="h6 weight-semibold" title="Ansvarlig myndighed"
+                                <p class="h5 weight-semibold" title="Ansvarlig myndighed"
                                     aria-label="Ansvarlig myndighed">Ansvarlig myndighed</p>
                             </li>
                         </ul>
@@ -26,7 +26,7 @@ title: Footer-logo.html
                     <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
-                                <p class="h6 weight-semibold" title="Hjælpende links"
+                                <p class="h5 weight-semibold" title="Hjælpende links"
                                     aria-label="Hjælpende links">Hjælpende links</p>
                             </li>
                         </ul>
@@ -57,7 +57,7 @@ title: Footer-logo.html
                     <div class="align-text-left">
                         <ul class="unstyled-list">
                             <li>
-                                <p class="h6 weight-semibold" title="Kontakt" aria-label="Kontakt">Kontakt</p>
+                                <p class="h5 weight-semibold" title="Kontakt" aria-label="Kontakt">Kontakt</p>
                             </li>
                         </ul>
                         <ul class="unstyled-list">

@@ -4,7 +4,7 @@ layout: iframed
 title: Table--responsive.html
 ---
 <div class="container">
-    <p class="h6">Overflow scroll</p>
+    <p class="h5">Overflow scroll</p>
     <p>Wrap table in .table--responsive-scroll</p>
     <div class="table--responsive-scroll">
         <table class="table">
@@ -54,7 +54,7 @@ title: Table--responsive.html
 </div>
 
 <div class="container pt-6">
-    <p class="h6">Responsive headers</p>
+    <p class="h5">Responsive headers</p>
     <p>Add .table--responsive-headers class to table</p>
     <table class="table table--borderless table--responsive-headers">
         <thead>

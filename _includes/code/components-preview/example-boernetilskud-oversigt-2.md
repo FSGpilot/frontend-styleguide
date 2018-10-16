@@ -37,7 +37,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Styrelsen for Eksempler</h6>
+                <h6 class="h5 authority-name"> Styrelsen for Eksempler</h6>
 
                 <p>Tlf.: 33 28 38 38</p>
 
@@ -146,7 +146,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                 <div class="card">
                     <div class="card-header">
-                        <p class="h6 header-title" title="Card header" aria-label="Card header">Beskeder</p>
+                        <p class="h5 header-title" title="Card header" aria-label="Card header">Beskeder</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -168,7 +168,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
                 <div class="card">
                     <div class="card-header">
-                        <p class="h6 header-title" title="Card header" aria-label="Card header">Udbetalinger</p>
+                        <p class="h5 header-title" title="Card header" aria-label="Card header">Udbetalinger</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -190,7 +190,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
                 <div class="card">
                     <div class="card-header">
-                        <p class="h6 header-title" title="Card header" aria-label="Card header">Sager</p>
+                        <p class="h5 header-title" title="Card header" aria-label="Card header">Sager</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -214,7 +214,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
                 <div class="card">
                     <div class="card-header">
-                        <p class="h6 header-title" title="Card header" aria-label="Card header">Ansøgninger</p>
+                        <p class="h5 header-title" title="Card header" aria-label="Card header">Ansøgninger</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -236,7 +236,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
                 <div class="card">
                     <div class="card-header">
-                        <p class="h6 header-title" title="Card header" aria-label="Card header">Ændringer</p>
+                        <p class="h5 header-title" title="Card header" aria-label="Card header">Ændringer</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -258,7 +258,7 @@ title: Example-boernetilskud-oversigt-2.html
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6">
                 <div class="card">
                     <div class="card-header">
-                        <p class="h6 header-title" title="Card header" aria-label="Card header">Dokumentation</p>
+                        <p class="h5 header-title" title="Card header" aria-label="Card header">Dokumentation</p>
                     </div>
                     <div class="card-content bg-alternative py-4">
                         <div class="content">
@@ -288,7 +288,7 @@ title: Example-boernetilskud-oversigt-2.html
                     <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold">Ansvarlig myndighed</span>
+                                <span class="h5 weight-semibold">Ansvarlig myndighed</span>
                             </li>
                             <li>
                                 <p>Styrelsen for Eksempel</p>

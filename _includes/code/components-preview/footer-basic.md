@@ -11,7 +11,7 @@ title: Footer-basic.html
                     <div class=" align-text-left ">
                         <ul class="unstyled-list inline-list ">
                             <li>
-                                <span class="h6 weight-semibold">Undervisningsministeriet</span>
+                                <span class="h5 weight-semibold">Undervisningsministeriet</span>
                             </li>
                             <li>
                                 <p>Styrelsen for IT og læring</p>

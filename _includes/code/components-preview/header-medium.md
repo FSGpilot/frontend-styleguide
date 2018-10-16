@@ -32,7 +32,7 @@ title: Header-medium.html
             <!--2B: Solution header: Authority name + text-->
             <div class="solution-info">
                 <!-- nav-secondary -->
-                <h6 class="h6 authority-name">Myndighedsnavn</h6>
+                <h6 class="h5 authority-name">Myndighedsnavn</h6>
                 <p>Support: 12 34 56 78 ·
                     <button class="button-unstyled button-contact"
                         data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
@@ -97,7 +97,7 @@ title: Header-medium.html
         </div>
 
         <div class="solution-info-mobile">
-            <h6 class="h6 authority-name">Myndighedsnavn</h6>
+            <h6 class="h5 authority-name">Myndighedsnavn</h6>
             <p>Support: 12 34 56 78 ·
                 <button class="button-unstyled button-contact"
                     data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>

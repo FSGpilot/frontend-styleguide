@@ -253,7 +253,7 @@ title: Example-kvittering.html
                     <div class=" align-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold">Ministeriet for Eksempel</span>
+                                <span class="h5 weight-semibold">Ministeriet for Eksempel</span>
                             </li>
                             <li>
                                 <p>Styrelsen for Eksempel</p>

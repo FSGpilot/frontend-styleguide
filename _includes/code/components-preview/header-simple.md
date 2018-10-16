@@ -37,7 +37,7 @@ title: Header-simple.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Myndighedsnavn</h6>
+                <h6 class="h5 authority-name"> Myndighedsnavn</h6>
 
                 <p>Support: 12 34 56 78</p>
 

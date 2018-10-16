@@ -37,7 +37,7 @@ title: Example-praktikplads-page-2.html
             <div class="solution-info">
                 <!-- nav-secondary -->
 
-                <h6 class="h6 authority-name"> Praktikplads-AUB</h6>
+                <h6 class="h5 authority-name"> Praktikplads-AUB</h6>
 
                 <p>
                     <button class="button-unstyled button-contact" data-micromodal-trigger="modal-contact">Kontakt<svg class="icon-svg "><use xlink:href="#menu-right"></use></svg></button>
@@ -165,7 +165,7 @@ title: Example-praktikplads-page-2.html
                     <div class=" align-text-left ">
                         <ul class="unstyled-list">
                             <li>
-                                <span class="h6 weight-semibold">Ansvarlig myndighed</span>
+                                <span class="h5 weight-semibold">Ansvarlig myndighed</span>
                             </li>
                             <li>
                                 <p>Styrelsen for Eksempel</p>
