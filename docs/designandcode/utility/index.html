@@ -1509,14 +1509,14 @@
 
 <p>Format: <code>align-text-{retning}</code> og <code>align-text-{breakpoint}-{retning}</code></p>
 
-<h6 class="mb-0">Retning:</h6>
+<h5 class="mb-0">Retning:</h5>
 <ul>
     <li>Left:&nbsp;&nbsp;&nbsp;<code>text-align: left</code></li>
     <li>Center:&nbsp;<code>text-align: center</code></li>
     <li>Right:&nbsp;&nbsp;<code>text-align: right</code></li>
 </ul>
 
-<h6 class="mb-0">Eksempel:</h6>
+<h5 class="mb-0">Eksempel:</h5>
 <div class="code-highlight">
     <code>
         &lt;h1 class="align-text-right"&gt; Tekst til højre &lt;/h1&gt; <br />
@@ -1532,13 +1532,13 @@
   <p>Der er opsat hjælpefunktioner som generere klasser til margin og padding. Disse hjælpefunktioner er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/">Bootstraps Spacing Utilities</a>.</p>
 <p>Format: <code>{css-egenskab}{retning}-{størrelse}</code> og <code>{css-egenskab}{retning}-{breakpoint}-{størrelse}</code>.</p>
 
-<h6 class="mb-0">CSS egenskab:</h6>
+<h5 class="mb-0">CSS egenskab:</h5>
 <ul>
     <li><b>m</b> – for klasser som sætter <code>margin</code></li>
     <li><b>p</b> - for klasser som sætter <code>padding</code></li>
 </ul>
 
-<h6 class="mb-0">Retning:</h6>
+<h5 class="mb-0">Retning:</h5>
 <ul>
     <li><b>t</b> – for klasser som sætter <code>margin-top</code> eller <code>padding-top</code></li>
     <li><b>b</b> – for klasser som sætter <code>margin-bottom</code> eller <code>padding-bottom</code></li>
@@ -1549,7 +1549,7 @@
     <li><i>blank</i> – for klasser som sætter margin eller padding på alle 4 sider af elementet.</li>
 </ul>
 
-<h6 class="mb-0">Størrelse:</h6>
+<h5 class="mb-0">Størrelse:</h5>
 <ul>
     <li><b>0</b> – for klasser som fjerner alt <code>margin</code> eller <code>padding</code></li>
     <li><b>1</b> – for klasser som sætter <code>margin</code> eller <code>padding</code> til <code>$spacer * 0.25</code></li>
@@ -1565,7 +1565,7 @@
 <p><code>$spacer</code> er sat til <code>8px.</code><br />
 Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</code> variablen.</p>
 
-<h6 class="mb-0">Breakpoint:</h6>
+<h5 class="mb-0">Breakpoint:</h5>
 <ul>
     <li><i>blank</i> - for klasser som sætter <code>margin</code> eller <code>padding</code> for alle browserstørrelser.</li>
     <li><b>sm</b> - for klasser som sætter <code>margin</code> eller <code>padding</code> for browserstørrelser over 576px;</li>
@@ -1582,7 +1582,7 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</co
   <p>Der er opsat en hjælpefunktion som automatisk generere klasser til display-egenskaben baseret på de definerede breakpoints i <code>$grid-breakpoints</code>. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/">Bootstraps Display Utility</a>.</p>
 <p>Format: <code>d-{display}</code> og <code>d-{breakpoint}-{display}</code></p>
 
-<h6 class="mb-0">Display</h6>
+<h5 class="mb-0">Display</h5>
 <ul>
     <li><code>none</code></li>
     <li><code>inline-block</code></li>
@@ -1590,7 +1590,7 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</co
     <li><code>flex</code></li>
     <li><code>inline-flex</code></li>
 </ul>
-<h6 class="mb-0">Eksempel</h6>
+<h5 class="mb-0">Eksempel</h5>
 
 <table class="table">
   <thead>
@@ -1659,7 +1659,7 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</co
   <p>Der er opsat en hjælpefunktion som automatisk generere klasser som styrer bredde i procent. De responsive klasser er baseret på de definerede breakpoints i <code>$grid-breakpoints</code>.</p>
 <p>Format: <code>w-percent-{bredde}</code> og <code>w-percent-{breakpoint}-{bredde}</code></p>
 
-<h6 class="mb-0">Bredde</h6>
+<h5 class="mb-0">Bredde</h5>
 <ul>
     <li>10: <code>10%</code></li>
     <li>20: <code>20%</code></li>
@@ -1673,7 +1673,7 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</co
     <li>100: <code>100%</code></li>
 </ul>
 
-<h6>Eksempel:</h6>
+<h5>Eksempel:</h5>
 <div class="code-highlight">
     <code>
         &lt;h1 class="w-percent-100"&gt; Dette element har en bredde på 100% &lt;/h1&gt; <br />
@@ -1690,14 +1690,14 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</co
   <p>Der er opsat en hjælpefunktion som automatisk genererer klasser som styrer baggrundsfarver. </p>
 <p>Format: <code>bg-{baggrund}</code></p>
 
-<h6 class="mb-0">Baggrundsfarver</h6>
+<h5 class="mb-0">Baggrundsfarver</h5>
 <ul>
     <li>Normal: <code>$background-normal</code></li>
     <li>Alternativ: <code>$background-alternative</code></li>
     <li>Modal: <code>$background-modal</code></li>
 </ul>
 
-<h6>Eksempel:</h6>
+<h5>Eksempel:</h5>
 <div class="code-highlight">
     <code>
         &lt;div class="bg-normal"&gt; Dette element har hvid baggrund &lt;/div&gt; <br />
@@ -1723,7 +1723,7 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</co
         <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
           <div class="align-left">
             <ul class="unstyled-list">
-              <li><p class="h6 semibold" title="Ansvarlig myndighed" aria-label="Ansvarlig myndighed">Ansvarlig myndighed</p></li>
+              <li><p class="h5 semibold" title="Ansvarlig myndighed" aria-label="Ansvarlig myndighed">Ansvarlig myndighed</p></li>
             </ul>
             <ul class="unstyled-list">
               <li><p>Erhvervsstyrelsen og Digitaliseringsstyrelsen</p></li>
@@ -1743,7 +1743,7 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til <code>$spacers</co
         <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-col">
           <div class="align-left">
             <ul class="unstyled-list">
-              <li><p class="h6 semibold"  title="Skriftlig kontakt" aria-label="Skriftlig kontakt">Bidrag til arbejdet</p></li>
+              <li><p class="h5 semibold"  title="Skriftlig kontakt" aria-label="Skriftlig kontakt">Bidrag til arbejdet</p></li>
             </ul>
             <ul class="unstyled-list">
               <li><p><a class="function-link" href="https://github.com/FSGpilot/frontend-styleguide">Github repository</a></p></li>
