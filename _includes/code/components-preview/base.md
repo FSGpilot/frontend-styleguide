@@ -43,22 +43,22 @@ title: Base.html
             <code class="Error-stack">
         <pre>Template render error: (unknown path)
   Error: Could not render component '@footer' - component not found.
-    at Object.exports.prettifyError (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:34:15)
-    at C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:486:31
-    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:41:12)
-    at b_footer (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:129:3)
-    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:40:85)
-    at b_body (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:111:1)
-    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:36:83)
-    at b_header (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:99:1)
-    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:32:85)
-    at b_banner (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:88:1)
-    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:28:85)
-    at b_skipnav (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:77:1)
-    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:24:86)
-    at b_styles (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:65:1)
-    at new_cls.root [as rootRenderFunc] (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:20:85)
-    at new_cls.render (C:\Projects\FaellesoffentligStyleguide\Code\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:479:15)</pre>
+    at Object.exports.prettifyError (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\lib.js:34:15)
+    at C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:486:31
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:41:12)
+    at b_footer (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:129:3)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:40:85)
+    at b_body (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:111:1)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:36:83)
+    at b_header (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:99:1)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:32:85)
+    at b_banner (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:88:1)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:28:85)
+    at b_skipnav (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:77:1)
+    at eval (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:24:86)
+    at b_styles (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:65:1)
+    at new_cls.root [as rootRenderFunc] (eval at _compile (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:565:24), <anonymous>:20:85)
+    at new_cls.render (C:\Projects\FaellesoffentligStyleguide\Code\fsgpilot\dk-web-design-standards-components\node_modules\nunjucks\src\environment.js:479:15)</pre>
     </code>
 
         </div>
