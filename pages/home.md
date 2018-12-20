@@ -4,10 +4,10 @@ layout: landing
 title: Frontend Styleguiden
 ---
 
-<div class="alert alert-info" role="alert" aria-label="Styleguiden er gået i beta">
+<div class="alert alert-info" role="alert" aria-label="Denne version af styleguiden er udfaset">
   <div class="alert-body">
-      <p class="alert-heading">BETA</p>
-      <p class="alert-text">Frontend Styleguiden er den kommende fælles guide til selvbetjeningsløsninger, der skal på borger.dk og Virk. Hjælp os gerne med at forbedre den via <a href="https://github.com/FSGpilot/frontend-styleguide-components">GitHub</a>.</p>
+      <p class="alert-heading">UDFASET</p>
+      <p class="alert-text">Frontend Styleguiden bliver til Det Fælles Designsystem. Frontend Styleguiden var arbejdstitlen for pilotprojektet. Det Fælles Designsystem er nu i beta frem mod udgivelse i Q1 2019. <a href="https://detfaellesdesignsystem.github.io/dkfds-docs/">Gå til Det Fælles Designsystem.</a> </p>
   </div>
 </div>
 
