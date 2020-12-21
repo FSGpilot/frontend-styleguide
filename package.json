@@ -63,7 +63,7 @@
     "js-cookie": "^2.2.0",
     "mdi": "^2.0.46",
     "merge-stream": "^1.0.0",
-    "node-notifier": "^4.6.0",
+    "node-notifier": "^8.0.1",
     "normalize.css": "^3.0.3",
     "nswatch": "^0.2.0",
     "run-sequence": "^1.1.5",
